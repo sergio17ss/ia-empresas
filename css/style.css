@@ -21,6 +21,7 @@
     --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
     --max-width: 1140px;
     --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: Georgia, 'Times New Roman', serif;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -99,10 +100,10 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .hero h1 {
+    font-family: var(--font-heading);
     font-size: 2.2rem;
-    font-weight: 800;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
+    font-weight: 700;
+    line-height: 1.25;
     color: var(--text);
     max-width: 700px;
     margin-bottom: 14px;
@@ -200,9 +201,9 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .section-header h2 {
+    font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
-    letter-spacing: -0.02em;
     margin-bottom: 6px;
 }
 
@@ -401,11 +402,11 @@ img { max-width: 100%; height: auto; display: block; }
 .tag-guia { background: #d1fae5; color: #065f46; }
 
 .article-body h3 {
+    font-family: var(--font-heading);
     font-size: 1.05rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.4;
     margin-bottom: 8px;
-    letter-spacing: -0.01em;
 }
 .article-body h3 a { color: var(--text); }
 .article-body h3 a:hover { color: var(--primary); }
@@ -612,10 +613,10 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .article-header h1 {
+    font-family: var(--font-heading);
     font-size: 2rem;
-    font-weight: 800;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
+    font-weight: 700;
+    line-height: 1.25;
     margin-bottom: 12px;
 }
 
@@ -644,10 +645,10 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .article-content h2 {
+    font-family: var(--font-heading);
     font-size: 1.4rem;
     font-weight: 700;
     margin: 40px 0 16px;
-    letter-spacing: -0.02em;
     padding-top: 16px;
     border-top: 1px solid var(--border);
 }
@@ -792,6 +793,11 @@ img { max-width: 100%; height: auto; display: block; }
 
 .comparison-table tr:hover,
 .price-table tr:hover {
+    background: var(--bg-alt);
+}
+
+.comparison-table tbody tr:nth-child(even),
+.price-table tbody tr:nth-child(even) {
     background: var(--bg-alt);
 }
 
@@ -998,6 +1004,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .related-articles h3 {
+    font-family: var(--font-heading);
     font-size: 1rem;
     margin-bottom: 12px;
 }
@@ -1009,6 +1016,35 @@ img { max-width: 100%; height: auto; display: block; }
 .related-articles li {
     margin-bottom: 6px;
     font-size: 0.9rem;
+}
+
+/* Methodology Banner */
+.methodology-banner {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.methodology-banner .methodology-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.methodology-banner p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.methodology-banner strong {
+    color: var(--text);
 }
 
 /* ============================================
