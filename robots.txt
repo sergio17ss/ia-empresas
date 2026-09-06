@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /css/
+Disallow: /img/
+
+Sitemap: https://ia-empresas.es/sitemap.xml
