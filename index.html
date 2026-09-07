@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Comparativas y análisis independientes de herramientas de inteligencia artificial para empresas. Precios reales en euros, opiniones y guías para PYMEs en España.">
+    <meta name="description" content="Comparativas y análisis independientes de herramientas de inteligencia artificial para empresas. Precios reales, opiniones y guías para PYMEs en España.">
     <meta name="keywords" content="herramientas IA empresas, inteligencia artificial empresas, software IA pymes, comparativas ia">
     <meta name="author" content="IA Empresas">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="IA Empresas — Comparativas de Herramientas IA para Empresas">
-    <meta property="og:description" content="Análisis independientes de herramientas de inteligencia artificial para empresas. Precios en euros, sin publicidad disfrazada.">
+    <meta property="og:description" content="Análisis independientes de herramientas de inteligencia artificial para empresas. Precios reales, sin publicidad disfrazada.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ia-empresas.es">
+    <meta property="og:url" content="https://sergio17ss.github.io/ia-empresas/">
     <title>IA Empresas — Comparativas de Herramientas IA para Empresas en España</title>
-    <link rel="canonical" href="https://ia-empresas.es">
+    <link rel="canonical" href="https://sergio17ss.github.io/ia-empresas/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -26,18 +26,18 @@
             {
                 "@type": "WebSite",
                 "name": "IA Empresas",
-                "url": "https://ia-empresas.es",
+                "url": "https://sergio17ss.github.io/ia-empresas/",
                 "description": "Comparativas y análisis independientes de herramientas de IA para empresas",
                 "potentialAction": {
                     "@type": "SearchAction",
-                    "target": "https://ia-empresas.es/buscar?q={search_term_string}",
+                    "target": "https://sergio17ss.github.io/ia-empresas/?q={search_term_string}",
                     "query-input": "required name=search_term_string"
                 }
             },
             {
                 "@type": "Organization",
                 "name": "IA Empresas",
-                "url": "https://ia-empresas.es"
+                "url": "https://sergio17ss.github.io/ia-empresas/"
             }
         ]
     }
@@ -49,50 +49,48 @@
     <header class="site-header">
         <div class="container">
             <div class="header-top">
-                <a href="/" class="logo">
-                    <span class="logo-icon">⚙</span>
+                <a href="./" class="logo">
                     <span class="logo-text">IA<strong>Empresas</strong></span>
                 </a>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="/herramientas-ia/">Herramientas IA</a></li>
-                        <li><a href="/comparativas/">Comparativas</a></li>
-                        <li><a href="/guias/">Guías</a></li>
-                        <li><a href="/casos-uso/">Casos de Uso</a></li>
-                        <li><a href="/noticias/">Noticias</a></li>
+                        <li><a href="./herramientas-ia/">Herramientas IA</a></li>
+                        <li><a href="./comparativas/">Comparativas</a></li>
+                        <li><a href="./guias/">Guías</a></li>
                     </ul>
                 </nav>
-                <button class="menu-toggle" aria-label="Menú">☰</button>
+                <button class="menu-toggle" aria-label="Menú"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
             </div>
         </div>
     </header>
 
-    <!-- Hero — Informativo -->
+    <!-- Hero -->
     <section class="hero">
         <div class="container">
             <h1>Elige la <span class="highlight">herramienta de IA</span> correcta para tu empresa</h1>
             <p class="hero-subtitle">Comparativas honestas, precios en euros y análisis independientes de herramientas de inteligencia artificial para PYMEs. Sin publicidad disfrazada.</p>
-            <div class="hero-search">
-                <input type="text" placeholder='Busca: "ChatGPT", "Claude", "chatbot"...' class="search-input">
+            <div class="hero-search" role="search">
+                <input type="text" placeholder='Busca: "ChatGPT", "Claude", "chatbot"...' class="search-input" aria-label="Buscar artículos">
                 <button class="search-btn">Buscar</button>
             </div>
+            <div id="search-results" class="search-results" hidden></div>
         </div>
     </section>
 
-    <!-- Stats -->
+    <!-- Stats (reales) -->
     <div class="stats-bar">
         <div class="container">
             <div class="stats-inner">
                 <div class="stat">
-                    <div class="stat-num">82</div>
+                    <div class="stat-num" id="stat-articles">8</div>
                     <div class="stat-label">Artículos publicados</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-num">25</div>
+                    <div class="stat-num">14</div>
                     <div class="stat-label">Herramientas analizadas</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-num">5</div>
+                    <div class="stat-num">3</div>
                     <div class="stat-label">Categorías cubiertas</div>
                 </div>
                 <div class="stat">
@@ -111,36 +109,22 @@
                 <p>Reviews y comparativas actualizadas para cada área de tu negocio</p>
             </div>
             <div class="category-grid">
-                <a href="/herramientas-ia/chatbots-atencion-cliente/" class="category-card">
-                    <div class="category-icon" style="background:#dbeafe;">💬</div>
+                <a href="./herramientas-ia/" class="category-card">
+                    <div class="category-icon" style="background:#dbeafe;">A</div>
                     <div>
-                        <h3>Chatbots y Atención al Cliente</h3>
-                        <p>Zendesk AI, Intercom Fin, Tidio y más</p>
+                        <h3>Herramientas IA</h3>
+                        <p>Reseñas de ChatGPT, Claude, Gemini, Jasper y más</p>
                     </div>
                 </a>
-                <a href="/herramientas-ia/herramientas-marketing/" class="category-card">
-                    <div class="category-icon" style="background:#fef3c7;">📈</div>
-                    <div>
-                        <h3>Herramientas de Marketing</h3>
-                        <p>Jasper AI, HubSpot IA, Canva IA</p>
-                    </div>
-                </a>
-                <a href="/herramientas-ia/herramientas-productividad/" class="category-card">
-                    <div class="category-icon" style="background:#d1fae5;">⚡</div>
-                    <div>
-                        <h3>Productividad</h3>
-                        <p>Notion AI, Monday.com, ClickUp</p>
-                    </div>
-                </a>
-                <a href="/comparativas/" class="category-card">
-                    <div class="category-icon" style="background:#ede9fe;">⚖️</div>
+                <a href="./comparativas/" class="category-card">
+                    <div class="category-icon" style="background:#ede9fe;">C</div>
                     <div>
                         <h3>Comparativas</h3>
-                        <p>ChatGPT vs Claude vs Gemini</p>
+                        <p>ChatGPT vs Claude vs Gemini, opciones gratuitas y más</p>
                     </div>
                 </a>
-                <a href="/guias/" class="category-card">
-                    <div class="category-icon" style="background:#fce7f3;">📘</div>
+                <a href="./guias/" class="category-card">
+                    <div class="category-icon" style="background:#d1fae5;">G</div>
                     <div>
                         <h3>Guías de Implementación</h3>
                         <p>Paso a paso para PYMEs</p>
@@ -159,14 +143,14 @@
                         <h2>Las herramientas mejor valoradas</h2>
                         <p>Nuestra puntuación editorial sobre 10. Ninguna empresa puede influir en ella.</p>
                     </div>
-                    <a href="/comparativas/" class="section-link">Ver todas →</a>
+                    <a href="./comparativas/" class="section-link">Ver todas</a>
                 </div>
             </div>
             <ol class="rank-list">
                 <li class="rank-item">
                     <span class="rank-pos">1</span>
                     <div class="rank-body">
-                        <a class="rank-name" href="/herramientas-ia/claude-ai-empresas/">Claude for Work</a>
+                        <a class="rank-name" href="./herramientas-ia/claude-ai-empresas/">Claude for Work</a>
                         <span class="rank-meta">Escritura y análisis · $30/usuario/mes</span>
                     </div>
                     <div class="rank-bar-wrap"><div class="rank-bar-fill" style="width:92%;"></div></div>
@@ -175,7 +159,7 @@
                 <li class="rank-item">
                     <span class="rank-pos">2</span>
                     <div class="rank-body">
-                        <a class="rank-name" href="/herramientas-ia/chatgpt-enterprise/">ChatGPT Enterprise</a>
+                        <a class="rank-name" href="./herramientas-ia/chatgpt-enterprise/">ChatGPT Enterprise</a>
                         <span class="rank-meta">Versatilidad · ~$60/usuario/mes</span>
                     </div>
                     <div class="rank-bar-wrap"><div class="rank-bar-fill" style="width:90%;"></div></div>
@@ -184,7 +168,7 @@
                 <li class="rank-item">
                     <span class="rank-pos">3</span>
                     <div class="rank-body">
-                        <a class="rank-name" href="/comparativas/chatgpt-vs-claude-vs-gemini/">Google Gemini</a>
+                        <a class="rank-name" href="./herramientas-ia/gemini-workspace/">Google Gemini</a>
                         <span class="rank-meta">Integración Google · $20/usuario/mes</span>
                     </div>
                     <div class="rank-bar-wrap"><div class="rank-bar-fill" style="width:86%;"></div></div>
@@ -193,7 +177,7 @@
                 <li class="rank-item">
                     <span class="rank-pos">4</span>
                     <div class="rank-body">
-                        <a class="rank-name" href="/herramientas-ia/chatbots-atencion-cliente/">Intercom Fin</a>
+                        <a class="rank-name" href="./herramientas-ia/chatbots-atencion-cliente/">Intercom Fin</a>
                         <span class="rank-meta">Chatbot IA · $0.99/resolución</span>
                     </div>
                     <div class="rank-bar-wrap"><div class="rank-bar-fill" style="width:88%;"></div></div>
@@ -202,14 +186,14 @@
                 <li class="rank-item">
                     <span class="rank-pos">5</span>
                     <div class="rank-body">
-                        <a class="rank-name" href="/herramientas-ia/chatbots-atencion-cliente/">Tidio Lyro</a>
+                        <a class="rank-name" href="./herramientas-ia/chatbots-atencion-cliente/">Tidio Lyro</a>
                         <span class="rank-meta">Chatbot accesible · Gratis — €29/mes</span>
                     </div>
                     <div class="rank-bar-wrap"><div class="rank-bar-fill" style="width:82%;"></div></div>
                     <span class="rank-score">8.2</span>
                 </li>
             </ol>
-            <p style="margin-top:16px;font-size:0.85rem;color:var(--text-secondary);">Actualizado en septiembre 2026 · <a href="/comparativas/">Ver análisis completos →</a></p>
+            <p style="margin-top:16px;font-size:0.85rem;color:var(--text-secondary);">Actualizado en septiembre 2026 · <a href="./comparativas/">Ver análisis completos</a></p>
         </div>
     </section>
 
@@ -222,14 +206,50 @@
                         <h2>Últimas reviews y comparativas</h2>
                         <p>Análisis recientes de nuestro equipo editorial</p>
                     </div>
-                    <a href="/herramientas-ia/" class="section-link">Ver todas →</a>
+                    <a href="./herramientas-ia/" class="section-link">Ver todos</a>
                 </div>
             </div>
             <div class="articles-grid">
                 <article class="article-card">
                     <div class="article-body">
                         <span class="article-tag tag-herramientas">Herramientas IA</span>
-                        <h3><a href="/herramientas-ia/chatgpt-enterprise/">ChatGPT Enterprise: Precio, Funciones y Opiniones 2026</a></h3>
+                        <h3><a href="./herramientas-ia/jasper-ai/">Jasper AI: La Herramienta de IA para Marketing 2026</a></h3>
+                        <p>Review completa de Jasper AI. Precio, plantillas, calidad de output y comparativa con alternativas más baratas.</p>
+                        <div class="article-meta">
+                            <span>10 min lectura</span>
+                            <span>·</span>
+                            <span>Sep 2026</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-body">
+                        <span class="article-tag tag-comparativa">Comparativa</span>
+                        <h3><a href="./comparativas/herramientas-ia-gratuitas/">Las 10 Mejores Herramientas IA Gratuitas para Empresas</a></h3>
+                        <p>Todas las herramientas probadas en planes gratuitos. Límites reales y cuándo merece la pena pasar a pago.</p>
+                        <div class="article-meta">
+                            <span>13 min lectura</span>
+                            <span>·</span>
+                            <span>Sep 2026</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-body">
+                        <span class="article-tag tag-herramientas">Herramientas IA</span>
+                        <h3><a href="./herramientas-ia/gemini-workspace/">Google Gemini for Workspace: Funciones, Precios y Review</a></h3>
+                        <p>Gemini integrado en Gmail, Docs y Sheets. ¿Merece la pena para empresas que ya usan el ecosistema Google?</p>
+                        <div class="article-meta">
+                            <span>10 min lectura</span>
+                            <span>·</span>
+                            <span>Sep 2026</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-body">
+                        <span class="article-tag tag-herramientas">Herramientas IA</span>
+                        <h3><a href="./herramientas-ia/chatgpt-enterprise/">ChatGPT Enterprise: Precio, Funciones y Opiniones 2026</a></h3>
                         <p>Análisis completo del plan empresarial de OpenAI. Precio, seguridad, funciones y comparativa con alternativas.</p>
                         <div class="article-meta">
                             <span>12 min lectura</span>
@@ -241,7 +261,7 @@
                 <article class="article-card">
                     <div class="article-body">
                         <span class="article-tag tag-herramientas">Herramientas IA</span>
-                        <h3><a href="/herramientas-ia/claude-ai-empresas/">Claude AI para Empresas: Precio, Funciones y Opiniones</a></h3>
+                        <h3><a href="./herramientas-ia/claude-ai-empresas/">Claude AI para Empresas: Precio, Funciones y Opiniones</a></h3>
                         <p>La alternativa seria a ChatGPT. Análisis de Claude for Work: precio, seguridad y por qué está ganando terreno.</p>
                         <div class="article-meta">
                             <span>11 min lectura</span>
@@ -253,7 +273,7 @@
                 <article class="article-card">
                     <div class="article-body">
                         <span class="article-tag tag-comparativa">Comparativa</span>
-                        <h3><a href="/comparativas/chatgpt-vs-claude-vs-gemini/">ChatGPT vs Claude vs Gemini: Comparativa Completa 2026</a></h3>
+                        <h3><a href="./comparativas/chatgpt-vs-claude-vs-gemini/">ChatGPT vs Claude vs Gemini: Comparativa Completa 2026</a></h3>
                         <p>Las tres grandes IA para uso empresarial. Precio, funciones, seguridad y qué elegir según tu empresa.</p>
                         <div class="article-meta">
                             <span>15 min lectura</span>
@@ -265,7 +285,7 @@
                 <article class="article-card">
                     <div class="article-body">
                         <span class="article-tag tag-herramientas">Chatbots IA</span>
-                        <h3><a href="/herramientas-ia/chatbots-atencion-cliente/">Los 8 Mejores Chatbots IA para Atención al Cliente</a></h3>
+                        <h3><a href="./herramientas-ia/chatbots-atencion-cliente/">Los 8 Mejores Chatbots IA para Atención al Cliente</a></h3>
                         <p>Zendesk AI, Intercom Fin, Tidio y más. Comparativa con precios reales y opiniones de usuarios.</p>
                         <div class="article-meta">
                             <span>14 min lectura</span>
@@ -277,7 +297,7 @@
                 <article class="article-card">
                     <div class="article-body">
                         <span class="article-tag tag-guia">Guía</span>
-                        <h3><a href="/guias/guia-implementar-ia-pyme/">Guía Completa para Implementar IA en tu Pyme</a></h3>
+                        <h3><a href="./guias/guia-implementar-ia-pyme/">Guía Completa para Implementar IA en tu Pyme</a></h3>
                         <p>Cómo empezar a usar inteligencia artificial en tu empresa paso a paso. Errores comunes y herramientas recomendadas.</p>
                         <div class="article-meta">
                             <span>18 min lectura</span>
@@ -299,40 +319,25 @@
             </div>
             <div class="trust-grid">
                 <div class="trust-item">
-                    <div class="trust-icon" style="background:#eff6ff;color:#2563eb;">🔍</div>
+                    <div class="trust-icon" style="background:#eff6ff;color:#2563eb;">T</div>
                     <h3>Probamos cada herramienta</h3>
                     <p>Usamos activamente cada software antes de publicar el análisis. Sin opiniones de segunda mano.</p>
                 </div>
                 <div class="trust-item">
-                    <div class="trust-icon" style="background:#f0fdf4;color:#16a34a;">💶</div>
+                    <div class="trust-icon" style="background:#f0fdf4;color:#16a34a;">P</div>
                     <h3>Precios en euros, siempre</h3>
                     <p>Todos los precios están actualizados en euros para España. Sin sorpresas al registrarte.</p>
                 </div>
                 <div class="trust-item">
-                    <div class="trust-icon" style="background:#fff7ed;color:#ea580c;">✓</div>
+                    <div class="trust-icon" style="background:#fff7ed;color:#ea580c;">2</div>
                     <h3>Transparencia total</h3>
                     <p>Las recomendaciones se basan en rendimiento real. Siempre indicamos si hay relación de afiliación.</p>
                 </div>
                 <div class="trust-item">
-                    <div class="trust-icon" style="background:#f5f3ff;color:#7c3aed;">🔄</div>
+                    <div class="trust-icon" style="background:#f5f3ff;color:#7c3aed;">A</div>
                     <h3>Actualizaciones constantes</h3>
                     <p>Revisamos precios, funciones y rankings cada mes. Lo que ves siempre es información vigente.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="section">
-        <div class="container">
-            <div class="newsletter-cta">
-                <h2>Newsletter: IA para tu empresa</h2>
-                <p>Recibe cada semana las mejores herramientas de IA, consejos prácticos y novedades del sector. Solo contenido útil, sin spam.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="tu@email.com" required>
-                    <button type="submit">Suscribirme</button>
-                </form>
-                <p class="newsletter-disclaimer">Sin spam. Cancela cuando quieras.</p>
             </div>
         </div>
     </section>
@@ -342,8 +347,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="/" class="logo" style="color:#e2e8f0;">
-                        <span class="logo-icon">⚙</span>
+                    <a href="./" class="logo" style="color:#e2e8f0;">
                         <span class="logo-text">IA<strong>Empresas</strong></span>
                     </a>
                     <p>Comparativas y análisis independientes de herramientas de inteligencia artificial para empresas, en español y con precios en euros.</p>
@@ -351,29 +355,27 @@
                 <div class="footer-col">
                     <h4>Categorías</h4>
                     <ul>
-                        <li><a href="/herramientas-ia/chatbots-atencion-cliente/">Chatbots IA</a></li>
-                        <li><a href="/herramientas-ia/herramientas-marketing/">Marketing IA</a></li>
-                        <li><a href="/herramientas-ia/herramientas-productividad/">Productividad IA</a></li>
-                        <li><a href="/comparativas/">Comparativas</a></li>
-                        <li><a href="/guias/">Guías</a></li>
+                        <li><a href="./herramientas-ia/">Herramientas IA</a></li>
+                        <li><a href="./comparativas/">Comparativas</a></li>
+                        <li><a href="./guias/">Guías</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Herramientas</h4>
+                    <h4>Artículos destacados</h4>
                     <ul>
-                        <li><a href="/herramientas-ia/chatgpt-enterprise/">ChatGPT Enterprise</a></li>
-                        <li><a href="/herramientas-ia/claude-ai-empresas/">Claude for Work</a></li>
-                        <li><a href="/comparativas/chatgpt-vs-claude-vs-gemini/">ChatGPT vs Claude</a></li>
-                        <li><a href="/herramientas-ia/chatbots-atencion-cliente/">Mejores chatbots IA</a></li>
+                        <li><a href="./herramientas-ia/chatgpt-enterprise/">ChatGPT Enterprise</a></li>
+                        <li><a href="./herramientas-ia/claude-ai-empresas/">Claude for Work</a></li>
+                        <li><a href="./comparativas/chatgpt-vs-claude-vs-gemini/">ChatGPT vs Claude</a></li>
+                        <li><a href="./herramientas-ia/chatbots-atencion-cliente/">Mejores chatbots IA</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Empresa</h4>
                     <ul>
-                        <li><a href="/sobre/">Sobre nosotros</a></li>
-                        <li><a href="/metodologia/">Metodología</a></li>
-                        <li><a href="/contacto/">Contacto</a></li>
-                        <li><a href="/privacidad/">Privacidad</a></li>
+                        <li><a href="./sobre/">Sobre nosotros</a></li>
+                        <li><a href="./metodologia/">Metodología</a></li>
+                        <li><a href="./contacto/">Contacto</a></li>
+                        <li><a href="./privacidad/">Privacidad</a></li>
                     </ul>
                 </div>
             </div>

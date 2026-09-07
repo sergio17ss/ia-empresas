@@ -2,6 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /js/
 Disallow: /css/
-Disallow: /img/
 
-Sitemap: https://ia-empresas.es/sitemap.xml
+Sitemap: https://sergio17ss.github.io/ia-empresas/sitemap.xml
