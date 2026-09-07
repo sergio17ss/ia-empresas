@@ -47,10 +47,10 @@
 
 | # | Título | Keyword | Estado |
 |---|--------|---------|--------|
-| 17 | Herramientas IA para Marketing Top 12 | ia para marketing | ⬜ Pendiente |
-| 18 | Software IA para Ventas | software ia ventas | ⬜ Pendiente |
-| 19 | IA para RRHH: Herramientas Reclutamiento | ia rrhh reclutamiento | ⬜ Pendiente |
-| 20 | IA para Contabilidad y Finanzas | ia contabilidad finanzas | ⬜ Pendiente |
+| 17 | Herramientas IA para Marketing Top 12 | ia para marketing | ✅ Publicado |
+| 18 | Software IA para Ventas | software ia ventas | ✅ Publicado |
+| 19 | IA para RRHH: Herramientas Reclutamiento | ia rrhh reclutamiento | ✅ Publicado |
+| 20 | IA para Contabilidad y Finanzas | ia contabilidad finanzas | ✅ Publicado |
 
 #### Guías (4 pendientes)
 

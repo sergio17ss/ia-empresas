@@ -45,6 +45,10 @@ document.addEventListener('DOMContentLoaded', function() {
         { title: 'Zendesk AI: Atención al Cliente con IA para 2026', url: 'herramientas-ia/zendesk-ai/', keywords: 'canva diseño magic studio imagenes' },
         { title: 'Intercom Fin: El Chatbot IA de Soporte que Resuelve sin Humanos en 2026', url: 'herramientas-ia/intercom-fin/', keywords: 'canva diseño magic studio imagenes' },
         { title: 'Canva IA (Magic Studio): Diseño para Empresas en 2026', url: 'herramientas-ia/canva-ia/', keywords: 'canva diseño magic studio imagenes' },
+        { title: 'Las 12 Mejores Herramientas de IA para Marketing en 2026', url: 'comparativas/ia-para-marketing/', keywords: 'ia marketing herramientas contenido seo' },
+        { title: 'Software de IA para Ventas: Las Mejores Herramientas en 2026', url: 'comparativas/software-ia-ventas/', keywords: 'ia ventas crm leads scoring' },
+        { title: 'IA para RRHH y Reclutamiento: Herramientas en 2026', url: 'comparativas/ia-rrhh-reclutamiento/', keywords: 'ia rrhh reclutamiento seleccion' },
+        { title: 'IA para Contabilidad y Finanzas: Herramientas para 2026', url: 'comparativas/ia-contabilidad-finanzas/', keywords: 'ia contabilidad finanzas facturacion' },
     ];
 
     function runSearch(query) {
