@@ -38,10 +38,10 @@
 | 10 | HubSpot IA: Funciones del CRM Inteligente | hubspot ia funciones | ✅ Publicado |
 | 11 | Notion AI: Automatiza tu Productividad | notion ai review | ✅ Publicado |
 | 12 | Monday.com con IA | monday ia proyectos | ✅ Publicado |
-| 13 | ClickUp AI: Alternativa Económica | clickup ai precio | ⬜ Pendiente |
-| 14 | Zendesk AI: Atención al Cliente IA | zendesk ai | ⬜ Pendiente |
-| 15 | Intercom Fin: Chatbot IA Soporte | intercom fin ia | ⬜ Pendiente |
-| 16 | Canva IA (Magic Studio) | canva ia diseño | ⬜ Pendiente |
+| 13 | ClickUp AI: Alternativa Económica | clickup ai precio | ✅ Publicado |
+| 14 | Zendesk AI: Atención al Cliente IA | zendesk ai | ✅ Publicado |
+| 15 | Intercom Fin: Chatbot IA Soporte | intercom fin ia | ✅ Publicado |
+| 16 | Canva IA (Magic Studio) | canva ia diseño | ✅ Publicado |
 
 #### Comparativas (4 pendientes)
 

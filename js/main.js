@@ -40,7 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
         { title: 'Los 8 Mejores Chatbots IA para Atención al Cliente', url: 'herramientas-ia/chatbots-atencion-cliente/', keywords: 'zendesk intercom tidio chatbot soporte' },
         { title: 'ChatGPT vs Claude vs Gemini: Comparativa Completa 2026', url: 'comparativas/chatgpt-vs-claude-vs-gemini/', keywords: 'comparativa chatgpt claude gemini' },
         { title: 'Las 10 Mejores Herramientas IA Gratuitas para Empresas', url: 'comparativas/herramientas-ia-gratuitas/', keywords: 'gratis gratuitas herramientas ia' },
-        { title: 'Guía Completa para Implementar IA en tu Pyme', url: 'guias/guia-implementar-ia-pyme/', keywords: 'guia implementar pyme paso a paso' }
+        { title: 'Guía Completa para Implementar IA en tu Pyme', url: 'guias/guia-implementar-ia-pyme/', keywords: 'guia implementar pyme paso a paso' },
+        { title: 'ClickUp AI: La Alternativa Económica para Gestión de Proyectos en 2026', url: 'herramientas-ia/clickup-ai/', keywords: 'canva diseño magic studio imagenes' },
+        { title: 'Zendesk AI: Atención al Cliente con IA para 2026', url: 'herramientas-ia/zendesk-ai/', keywords: 'canva diseño magic studio imagenes' },
+        { title: 'Intercom Fin: El Chatbot IA de Soporte que Resuelve sin Humanos en 2026', url: 'herramientas-ia/intercom-fin/', keywords: 'canva diseño magic studio imagenes' },
+        { title: 'Canva IA (Magic Studio): Diseño para Empresas en 2026', url: 'herramientas-ia/canva-ia/', keywords: 'canva diseño magic studio imagenes' },
     ];
 
     function runSearch(query) {
