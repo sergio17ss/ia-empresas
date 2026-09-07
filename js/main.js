@@ -29,6 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Índice de artículos publicados (se actualiza a medida que se publican)
     const articleIndex = [
+        { title: 'Microsoft 365 Copilot para Empresas: Precio, Funciones y Opiniones 2026', url: 'herramientas-ia/copilot-microsoft/', keywords: 'microsoft copilot word excel outlook teams 365' },
+        { title: 'HubSpot IA: Funciones del CRM Inteligente para 2026', url: 'herramientas-ia/hubspot-ia/', keywords: 'hubspot crm breeze marketing ventas' },
+        { title: 'Notion AI: Automatiza la Productividad de tu Empresa en 2026', url: 'herramientas-ia/notion-ai/', keywords: 'notion ai notas productividad workspace' },
+        { title: 'Monday.com con IA: Gestión de Proyectos Inteligente en 2026', url: 'herramientas-ia/monday-ia/', keywords: 'monday proyectos automatizaciones tareas' },
         { title: 'ChatGPT Enterprise: Precio, Funciones y Opiniones 2026', url: 'herramientas-ia/chatgpt-enterprise/', keywords: 'chatgpt openai enterprise gpt-4' },
         { title: 'Claude AI para Empresas: Precio, Funciones y Opiniones', url: 'herramientas-ia/claude-ai-empresas/', keywords: 'claude anthropic escritura analisis' },
         { title: 'Google Gemini for Workspace: Funciones, Precios y Review', url: 'herramientas-ia/gemini-workspace/', keywords: 'google gemini workspace gmail docs sheets' },

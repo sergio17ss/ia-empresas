@@ -2,14 +2,14 @@
 
 > **Estado:** En progreso  
 > **Última actualización:** 7 septiembre 2026  
-> **Artículos publicados:** 8 / 50  
+> **Artículos publicados:** 12 / 50  
 > **Objetivo:** 50 artículos (base) — ampliable a más  
 
 ---
 
 ## ESTADO DE ARTÍCULOS
 
-### ✅ Publicados (8)
+### ✅ Publicados (12)
 
 | # | Título | URL | Palabras |
 |---|--------|-----|----------|
@@ -21,6 +21,10 @@
 | 6 | Google Gemini for Workspace | `/herramientas-ia/gemini-workspace/` | ~2,800 |
 | 7 | Las 10 Mejores IA Gratuitas | `/comparativas/herramientas-ia-gratuitas/` | ~3,000 |
 | 8 | Jasper AI para Marketing | `/herramientas-ia/jasper-ai/` | ~2,500 |
+| 9 | Microsoft 365 Copilot | `/herramientas-ia/copilot-microsoft/` | ~2,600 |
+| 10 | HubSpot IA | `/herramientas-ia/hubspot-ia/` | ~2,500 |
+| 11 | Notion AI | `/herramientas-ia/notion-ai/` | ~2,300 |
+| 12 | Monday.com con IA | `/herramientas-ia/monday-ia/` | ~2,400 |
 
 ---
 
@@ -30,10 +34,10 @@
 
 | # | Título | Keyword | Estado |
 |---|--------|---------|--------|
-| 9 | Copilot de Microsoft para Empresas | copilot microsoft empresas | ⬜ Pendiente |
-| 10 | HubSpot IA: Funciones del CRM Inteligente | hubspot ia funciones | ⬜ Pendiente |
-| 11 | Notion AI: Automatiza tu Productividad | notion ai review | ⬜ Pendiente |
-| 12 | Monday.com con IA | monday ia proyectos | ⬜ Pendiente |
+| 9 | Copilot de Microsoft para Empresas | copilot microsoft empresas | ✅ Publicado |
+| 10 | HubSpot IA: Funciones del CRM Inteligente | hubspot ia funciones | ✅ Publicado |
+| 11 | Notion AI: Automatiza tu Productividad | notion ai review | ✅ Publicado |
+| 12 | Monday.com con IA | monday ia proyectos | ✅ Publicado |
 | 13 | ClickUp AI: Alternativa Económica | clickup ai precio | ⬜ Pendiente |
 | 14 | Zendesk AI: Atención al Cliente IA | zendesk ai | ⬜ Pendiente |
 | 15 | Intercom Fin: Chatbot IA Soporte | intercom fin ia | ⬜ Pendiente |
@@ -122,10 +126,10 @@
 
 | Fase | Artículos | Publicados | Pendientes |
 |------|-----------|------------|------------|
-| Fase 1 | 20 | 8 | 12 |
+| Fase 1 | 20 | 12 | 8 |
 | Fase 2 | 17 | 0 | 17 |
 | Fase 3 | 9 | 0 | 9 |
-| **TOTAL** | **46 + 4 extra = 50** | **8** | **42** |
+| **TOTAL** | **46 + 4 extra = 50** | **12** | **38** |
 
 ---
 

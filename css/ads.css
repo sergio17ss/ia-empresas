@@ -1,0 +1,72 @@
+/* ============================================================
+   IA Empresas — Estructura de anuncios (AdSense-ready)
+   Slots preparados: sin anuncio muestran placeholder sin CLS.
+   La carga real se activa desde js/ads.js cuando exista cliente
+   AdSense configurado y consentimiento RGPD.
+   ============================================================ */
+
+.ad-slot {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 24px 0;
+    padding: 8px 0;
+    text-align: center;
+    overflow: hidden;
+    /* Altura mínima anti-CLS mientras no hay anuncio */
+    min-height: 100px;
+    background: transparent;
+}
+
+/* Etiqueta "Publicidad" (requisito de transparencia AdSense) */
+.ad-slot::before {
+    content: "Publicidad";
+    display: block;
+    width: 100%;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-secondary, #666);
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+/* Variantes */
+.ad-slot-leaderboard {
+    min-height: 90px;
+}
+.ad-slot-rectangle {
+    min-height: 250px;
+}
+.ad-slot-in-article {
+    min-height: 120px;
+    background: rgba(0, 0, 0, 0.015);
+    border-radius: 8px;
+}
+.ad-slot-home {
+    min-height: 100px;
+}
+
+/* El bloque real de anuncio, inyectado por ads.js */
+.ad-slot .adsbygoogle {
+    max-width: 100%;
+}
+
+/* Ocultar etiqueta si ya hay anuncio renderizado */
+.ad-slot.has-ad::before {
+    display: none;
+}
+
+/* Responsive: en móvil los leaderboards se encogen solos (AdSense
+   responsive lo gestiona); forzamos centrado y sin desbordes. */
+@media (max-width: 600px) {
+    .ad-slot-leaderboard {
+        min-height: 60px;
+    }
+    .ad-slot-rectangle {
+        min-height: 220px;
+    }
+}
