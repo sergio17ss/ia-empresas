@@ -378,6 +378,17 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .rank-name:hover { color: var(--primary); }
 
+/* Fila completa del ranking clicable */
+.rank-name::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+.rank-item {
+    position: relative;
+}
+
 .rank-meta {
     font-size: 0.8rem;
     color: var(--text-secondary);
@@ -421,10 +432,25 @@ img { max-width: 100%; height: auto; display: block; }
     border-radius: var(--radius);
     overflow: hidden;
     transition: box-shadow 0.15s, border-color 0.15s;
+    position: relative;
 }
 .article-card:hover {
     box-shadow: var(--shadow-md);
     border-color: #cbd5e1;
+}
+
+/* Tarjeta completamente clicable: el enlace del título se extiende
+   sobre toda la tarjeta (patrón "stretched link") */
+.article-body h3 a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    z-index: 1;
+}
+
+.article-card:hover h3 a {
+    color: var(--primary);
 }
 
 .article-thumb {
