@@ -69,24 +69,24 @@
 
 | # | Título | Keyword | Estado |
 |---|--------|---------|--------|
-| 25 | IA para Ecommerce | ia ecommerce ventas | ⬜ Pendiente |
-| 26 | IA para Agencias de Marketing | ia agencias marketing | ⬜ Pendiente |
-| 27 | IA para Consultoras | ia consultoras productividad | ⬜ Pendiente |
-| 28 | IA para Clínicas y Consultorios | ia clinicas pacientes | ⬜ Pendiente |
-| 29 | IA para Abogados | ia abogados | ⬜ Pendiente |
-| 30 | IA para Restaurantes | ia restaurantes | ⬜ Pendiente |
-| 31 | IA para Educación | ia educacion herramientas | ⬜ Pendiente |
-| 32 | IA para Logística | ia logistica cadena suministro | ⬜ Pendiente |
+| 25 | IA para Ecommerce | - | ✅ Publicado 2026-09-09 |
+| 26 | IA para Agencias de Marketing | - | ✅ Publicado 2026-09-09 |
+| 27 | IA para Consultoras | - | ✅ Publicado 2026-09-09 |
+| 28 | IA para Clinicas y Consultorios | - | ✅ Publicado 2026-09-09 |
+| 29 | IA para Abogados | - | ✅ Publicado 2026-09-09 |
+| 30 | IA para Restaurantes | - | ✅ Publicado 2026-09-09 |
+| 31 | IA para Educacion | - | ✅ Publicado 2026-09-09 |
+| 32 | IA para Logistica | - | ✅ Publicado 2026-09-09 |
 
 #### Reseñas IA — Nuevas (5 artículos)
 
 | # | Título | Keyword | Estado |
 |---|--------|---------|--------|
-| 33 | Cursor AI: Editor de Código con IA | cursor ai review | ⬜ Pendiente |
-| 34 | Midjourney para Empresas | midjourney empresas | ⬜ Pendiente |
-| 35 | Synthesia: Videos con Avatares IA | synthesia videos ia | ⬜ Pendiente |
-| 36 | Perplexity AI: Buscador con IA | perplexity ai empresas | ⬜ Pendiente |
-| 37 | Dify.ai: Flujos IA sin Código | dify.ai empresas | ⬜ Pendiente |
+| 33 | Cursor AI | - | ✅ Publicado 2026-09-09 |
+| 34 | Midjourney | - | ✅ Publicado 2026-09-09 |
+| 35 | Synthesia | - | ✅ Publicado 2026-09-09 |
+| 36 | Perplexity AI | - | ✅ Publicado 2026-09-09 |
+| 37 | Dify.ai | - | ✅ Publicado 2026-09-09 |
 
 #### Guías Avanzadas (4 artículos)
 
