@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Los errores más comunes al implementar IA en una empresa y cómo evitarlos con datos reales: el 80,3% de los proyectos no entregan valor. Diagnóstico, señales de alarma y plan de 90 días.">
+    <meta name="keywords" content="errores implementar ia, errores ia empresas, fracaso proyectos ia, como evitar errores ia, implementacion ia fallos">
+    <meta name="author" content="IA Empresas">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Errores Comunes al Implementar IA en tu Empresa (y Cómo Evitarlos)">
+    <meta property="og:description" content="Por qué fracasa el 80,3% de los proyectos de IA, los tres patrones que lo explican y un plan de 90 días para no repetirlos.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sergio17ss.github.io/ia-empresas/herramientas-ia/errores-implementar-ia/">
+    <title>Errores Comunes al Implementar IA en tu Empresa (y Cómo Evitarlos) | IA Empresas</title>
+    <link rel="canonical" href="https://sergio17ss.github.io/ia-empresas/herramientas-ia/errores-implementar-ia/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/ads.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Errores Comunes al Implementar IA en tu Empresa (y Cómo Evitarlos)",
+        "description": "Diagnóstico de por qué fallan los proyectos de IA, los tres patrones de fracaso documentados por RAND y Gartner, y un plan de 90 días.",
+        "author": {
+            "@type": "Organization",
+            "name": "IA Empresas"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "IA Empresas"
+        },
+        "datePublished": "2026-09-08"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Por qué fracasan la mayoría de los proyectos de IA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Según la RAND Corporation (2025), el 80,3% de los proyectos de IA empresarial no entregan su valor esperado. Los tres patrones que explican casi todos los fracasos son la mala calidad de los datos, la baja madurez organizativa y la deriva del caso de uso. Ninguno es un problema tecnológico: son problemas de proceso y de liderazgo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto tarda en fracasar un proyecto de IA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El tiempo medio hasta el fracaso es de 13,7 meses, según S&P Global. Los proyectos se suelen abandonar durante la prueba de concepto o poco después, cuando se descubre que los datos no están preparados o que el caso de uso no tiene un beneficio medible."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué caracteriza a los proyectos de IA que sí funcionan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El análisis de RAND sobre los ganadores coincide en tres factores: los datos ya estaban ordenados antes de empezar, la estructura de decisión ya estaba definida, y el caso de uso estaba formulado de forma tan estrecha que era difícil que la ambición se desviara del objetivo."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-top">
+                <a href="../../" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1.2l2.1-1.6-2-3.4-2.4 1a7 7 0 0 0-2-1.2L14.2 3h-4l-.4 2.6a7 7 0 0 0-2 1.2l-2.4-1-2 3.4 2.1 1.6a7 7 0 0 0 0 2.4L3.4 14.8l2 3.4 2.4-1a7 7 0 0 0 2 1.2l.4 2.6h4l.4-2.6a7 7 0 0 0 2-1.2l2.4 1 2-3.4-2.1-1.6c.06-.4.1-.8.1-1.2z"/></svg>
+                    <span class="logo-text">IA<span class="logo-accent">Empresas</span></span>
+                </a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../../herramientas-ia/">Herramientas IA</a></li>
+                        <li><a href="../../comparativas/">Comparativas</a></li>
+                        <li><a href="../../guias/">Guías</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Menú"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+            </div>
+        </div>
+    </header>
+
+    <article class="article-page">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../../">Inicio</a> → 
+                <a href="../../herramientas-ia/">Herramientas IA</a> → 
+                <span>Errores al implementar IA</span>
+            </nav>
+            <div class="ad-slot ad-slot-leaderboard" data-ad-slot=""></div>
+
+            <div class="methodology-banner">
+                <span class="methodology-icon" aria-hidden="true"></span>
+                <p><strong>Metodología:</strong> Análisis basado en el metaanálisis de la RAND Corporation sobre 65 proyectos de IA (2025), los informes de Gartner de abril 2026, el estudio S&P Global y patrones observados en implementaciones de pymes españolas, actualizado a septiembre 2026.</p>
+            </div>
+
+            <div class="article-header">
+                <span class="article-category-badge">Guía</span>
+                <h1>Errores Comunes al Implementar IA en tu Empresa (y Cómo Evitarlos)</h1>
+                <p class="article-subtitle">El 80,3% de los proyectos de IA no entregan el valor que prometían. Lo que la mayoría de los informes no cuentan es que las causas son siempre las mismas, que no son tecnológicas y que se pueden evitar con un plan de 90 días.</p>
+                <div class="article-meta-bar">
+                    <span class="meta-author">Por el equipo de IA Empresas</span>
+                    <span class="meta-date">8 septiembre 2026</span>
+                    <span class="meta-reading">14 min de lectura</span>
+                    <span class="meta-updated">Actualizado: septiembre 2026</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+
+                <div class="tldr-box">
+                    <h2>Resumen en 60 segundos</h2>
+                    <ul>
+                        <li><strong>El dato:</strong> el 80,3% de los proyectos de IA fracasan a la hora de aportar valor (RAND 2025, confirmado por Gartner 2026), el doble que los proyectos de software clásicos</li>
+                        <li><strong>Causas:</strong> tres patrones repetidos — datos mal preparados, madurez organizativa insuficiente y deriva del caso de uso</li>
+                        <li><strong>Ninguna es tecnológica:</strong> la IA funciona; la ejecución falla</li>
+                        <li><strong>Tiempo medio hasta el fracaso:</strong> 13,7 meses</li>
+                        <li><strong>Antídoto:</strong> un solo caso de uso, datos inventariados, decisión previa sobre quién mide</li>
+                        <li><strong>Plan de 90 días:</strong> diagnóstico (30), priorización (30), un caso productivo (30)</li>
+                    </ul>
+                </div>
+
+                <div class="toc">
+                    <h3>Índice</h3>
+                    <ol>
+                        <li><a href="#cifras">Las cifras que debes conocer antes de empezar</a></li>
+                        <li><a href="#patrones">Los tres patrones que explican casi todos los fracasos</a></li>
+                        <li><a href="#errores">Los 8 errores concretos (y cómo esquivar cada uno)</a></li>
+                        <li><a href="#alarmas">Señales de alarma en los primeros meses</a></li>
+                        <li><a href="#ganadores">Qué hacen distinto los proyectos que funcionan</a></li>
+                        <li><a href="#duelo">Duelo: construir en casa vs comprar SaaS</a></li>
+                        <li><a href="#plan">Plan de 90 días para no repetir los errores</a></li>
+                        <li><a href="#veredicto">Veredicto por perfil de empresa</a></li>
+                    </ol>
+                </div>
+
+                <h2 id="cifras">Las cifras que debes conocer antes de empezar</h2>
+
+                <p>La RAND Corporation publicó a finales de 2025 un metaanálisis de 65 proyectos empresariales de IA con un resultado demoledor: el 80,3% de los proyectos no proporcionan el valor empresarial esperado, una tasa el doble de alta que la de los proyectos de software tradicionales. El desglose es aún más revelador: el 33,8% de los proyectos se abandonan antes de entrar en producción, el 28,4% llegan a producción pero no aportan el beneficio esperado, y el 18,1% funcionan técnicamente pero no amortizan lo que costaron.</p>
+
+                <p>Gartner confirmó la tendencia en abril de 2026 para la infraestructura de TI: solo el 28% de los proyectos de IA de infraestructura proporcionan el retorno prometido, uno de cada cinco fracasa por completo y el 57% de los directivos de infraestructura y operaciones reconocen al menos un fracaso. El mismo Gartner proyectó que el 60% de los proyectos de IA sin datos preparados serían abandonados antes de finales de 2026. El informe MIT GenAI Divide va más lejos y estima que el 95% de los pilotos no generan un retorno cuantificable.</p>
+
+                <p>La buena noticia es que los fracasos no son aleatorios. El estudio de RAND no encontró 65 problemas distintos: encontró tres patrones que se repiten. Y los tres tienen solución. El punto de partida es dejar de tratar la implementación de IA como un proyecto de compra de software y empezar a tratarla como un proyecto de cambio de proceso.</p>
+
+                <div class="ad-slot ad-slot-rectangle" data-ad-slot=""></div>
+
+                <h2 id="patrones">Los tres patrones que explican casi todos los fracasos</h2>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Patrón de fracaso</th>
+                                <th>Qué significa en la práctica</th>
+                                <th>Quién debe resolverlo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Calidad y preparación de datos</strong></td>
+                                <td>El 85% de los proyectos fallidos citan los datos como causa principal; solo el 12% de las organizaciones tienen datos suficientemente ordenados para la IA</td>
+                                <td>Dirección de operaciones o datos; no el departamento de compras</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Madurez organizativa</strong></td>
+                                <td>Casi dos tercios de las organizaciones quedan atrapadas en modo piloto, incapaces de escalar; el 42% abandonó la mayoría de sus proyectos en 2025</td>
+                                <td>Dirección general; necesita responsables con autoridad real</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Deriva del caso de uso</strong></td>
+                                <td>El piloto empieza estrecho y se va ampliando hasta volverse inmanejable, o se elige un caso sin beneficio medible para la empresa</td>
+                                <td>El responsable del proyecto, con comité que impida ampliar el alcance</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La causa principal del 80% es la deuda silenciosa de los datos. Gartner calcula que el 85% de los proyectos de IA fracasan por su mala calidad, y que solo el 12% de las organizaciones tienen datos en condiciones de alimentar un modelo. Las organizaciones que sí consiguen resultados dedican entre el 40% y el 50% del presupuesto del proyecto a preparar datos. La lección incómoda es esta: si tu empresa no sabe dónde están sus datos de clientes, sus precios o su histórico de operaciones, la IA no va a resolverlo. Va a amplificar el desorden más rápido que cualquier otra tecnología.</p>
+
+                <h2 id="errores">Los 8 errores concretos (y cómo esquivar cada uno)</h2>
+
+                <h3>Error 1: comprar la herramienta antes que el caso de uso</h3>
+                <p><strong>El problema:</strong> la empresa adquiere una licencia corporativa de una plataforma de IA y después busca dónde aplicarla. Resultado: un equipo con una herramienta cara que no resuelve un problema concreto y sin métricas de éxito definidas.</p>
+                <p><strong>La solución:</strong> primero se define el proceso que duele (volumen, horas, errores), después se elige la herramienta. La tecnología se alquila; el caso de uso se diagnostica.</p>
+
+                <h3>Error 2: no levantar un baseline antes del piloto</h3>
+                <p><strong>El problema:</strong> "implementamos un chatbot y no sabemos si funciona". Sin medir horas, volumen y errores antes del piloto, es imposible defender el retorno después.</p>
+                <p><strong>La solución:</strong> dos semanas de registro previo con cronómetro o con datos del sistema de ticketing/ERP. Es la inversión más barata del proyecto completo.</p>
+
+                <h3>Error 3: ignorar el estado de los datos</h3>
+                <p><strong>El problema:</strong> lanzar el piloto con datos que están en hojas de cálculo, a medio digitalizar o con campos inconsistentes. El modelo aprende de basura y el equipo concluye que "la IA no funciona".</p>
+                <p><strong>La solución:</strong> inventariar antes de empezar: qué datos existen, en qué formato, quién los mantiene y con qué frecuencia se actualizan. Si los datos no están listos, la primera fase del proyecto es ordenarlos.</p>
+
+                <h3>Error 4: no formar al equipo y esperar adopción</h3>
+                <p><strong>El problema:</strong> la dirección compra la herramienta, pero nadie enseña a usarla. Los empleados la evitan o la usan mal, y la desconfianza se instala. DataCamp encontró que las organizaciones con programas maduros de capacitación en IA duplican sus reportes de ROI positivo.</p>
+                <p><strong>La solución:</strong> dedicar al menos dos horas semanales a formación práctica durante el primer mes, con casos reales de la propia empresa, no con ejemplos genéricos del proveedor.</p>
+
+                <h3>Error 5: medir el éxito demasiado pronto</h3>
+                <p><strong>El problema:</strong> evaluar el proyecto a los tres meses y descartarlo porque aún no hay retorno. Los datos muestran que los proyectos con maduración de 12-18 meses tienen el doble de probabilidad de ROI positivo que los evaluados a los 6 meses.</p>
+                <p><strong>La solución:</strong> definir un horizonte de evaluación realista según el tipo de proyecto (3-6 meses para un chatbot; 6-12 para una plataforma) y no juzgarlo antes de tiempo.</p>
+
+                <h3>Error 6: escalar desde el primer día</h3>
+                <p><strong>El problema:</strong> en lugar de un piloto controlado, se despliega en toda la empresa. Cualquier fallo se amplifica y la iniciativa se politiza. Gartner estima que el 77% de los proyectos de IA agéntica fracasan precisamente al escalar.</p>
+                <p><strong>La solución:</strong> un piloto de 30 días con un equipo pequeño, un proceso, un departamento. El objetivo del piloto no es impresionar: es aprender antes de ampliar.</p>
+
+                <h3>Error 7: delegar decisiones sin supervisión humana</h3>
+                <p><strong>El problema:</strong> la IA genera una respuesta, una puntuación o un documento y se envía sin revisión. Un error automatizado se replica a escala. En 2025 el 42% de las empresas ya había descartado al menos una iniciativa por este tipo de incidentes de confianza.</p>
+                <p><strong>La solución:</strong> definir formalmente qué decisiones puede tomar la IA sola y cuáles exigen aprobación humana. La regla "la IA redacta, el humano aprueba" es la mínima exigible en atención al cliente o comunicación externa.</p>
+
+                <h3>Error 8: subestimar los costes totales</h3>
+                <p><strong>El problema:</strong> presupuestar solo la licencia. La integración con el CRM, la limpieza de datos, la formación y el mantenimiento suman entre el 60% y el 80% del coste del primer año según los datos de implantación en pymes.</p>
+                <p><strong>La solución:</strong> presupuestar el coste total: licencia + integración + datos + formación + mantenimiento (15-20% del coste inicial cada año) + coste de la API cuando el uso crezca.</p>
+
+                <h2 id="alarmas">Señales de alarma en los primeros meses</h2>
+
+                <p>La mayoría de los proyectos fallidos no colapsan de golpe: se degradan durante meses. Estas son las señales que indican que el proyecto está en la trayectoria del 80%:</p>
+
+                <ul>
+                    <li><strong>El piloto se alarga sin fecha de fin:</strong> supera los 90 días sin una decisión formal de escalar o descartar. Es la definición del modo piloto permanente, donde quedan dos de cada tres organizaciones.</li>
+                    <li><strong>El equipo deja de usar la herramienta a las seis semanas:</strong> usan las primeras semanas, vuelven a las hojas de cálculo y nadie lo reporta.</li>
+                    <li><strong>Nadie puede decir cuánto cuesta el proyecto:</strong> si el coste acumulado no se conoce, el presupuesto ya se ha superado.</li>
+                    <li><strong>El responsable no tiene autoridad:</strong> el proyecto depende de decisiones de varios departamentos que no están coordinadas.</li>
+                    <li><strong>Se mide el uso de la herramienta en lugar del resultado:</strong> "200 consultas al día" no es un beneficio; el beneficio es cuántos euros ahorran esas consultas.</li>
+                </ul>
+
+                <p>El tiempo medio hasta el fracaso es de 13,7 meses según S&P Global. Eso significa que la mayoría de las empresas pierde más de un año antes de admitir que un proyecto no funciona. La señal de alarma más fiable es la más simple: si a los 90 días no puedes presentar una métrica de negocio con mejora demostrada, el proyecto necesita un rediseño, no más paciencia.</p>
+
+                <h2 id="ganadores">Qué hacen distinto los proyectos que funcionan</h2>
+
+                <p>RAND también analizó el 19,7% que sí entrega valor. Los proyectos ganadores coincidían en tres cosas:</p>
+
+                <ol>
+                    <li><strong>El dominio de datos ya estaba ordenado</strong> antes de empezar, no durante el proyecto.</li>
+                    <li><strong>La estructura de decisión ya estaba clara:</strong> se sabía quién aprobaba qué, quién medía el resultado y quién tenía el presupuesto.</li>
+                    <li><strong>El caso de uso estaba formulado de forma estrecha:</strong> tan concreta que la deriva del alcance era casi imposible.</li>
+                </ol>
+
+                <p>La conclusión es incómoda para quienes confían en la tecnología como palanca de cambio: los proyectos que funcionan son los que hacen los deberes antes del primer entrenamiento del modelo. No hay atajo. Ni tampoco conviene sobre-actuar: no hace falta un Chief AI Officer. Las empresas que vinculan el liderazgo del proyecto a un rol existente (el responsable de operaciones, el de TI o el director general en una pyme) obtienen mejores resultados que las que crean un puesto de moda sin autoridad real sobre el presupuesto.</p>
+
+                <h2 id="duelo">Duelo: construir en casa vs comprar SaaS</h2>
+
+                <p>Uno de los errores más caros es equivocarse de estrategia de construcción. Las dos opciones y sus letras pequeñas:</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Criterio</th>
+                                <th>Construir con framework (LangChain, etc.)</th>
+                                <th>Comprar SaaS (copilotos, chatbots gestionados)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Coste real</strong></td>
+                                <td>Infraestructura + desarrollador + mantenimiento continuo. El coste por proyecto supera los 5.000-20.000 € con facilidad</td>
+                                <td>Licencia mensual: desde 10-60 €/usuario/mes según plataforma</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tiempo hasta producir</strong></td>
+                                <td>Semanas o meses</td>
+                                <td>Días</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Control de datos</strong></td>
+                                <td>Total: puedes mantener los datos en tu infraestructura</td>
+                                <td>Depende de la política de retención y región del proveedor</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Riesgo principal</strong></td>
+                                <td>Sobre-ingeniería y abandono: el 60% de estos proyectos se caen por datos o alcance</td>
+                                <td>No cubre tu caso específico y acabas pagando una herramienta que nadie usa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La regla práctica que aplican los equipos de datos: compra SaaS para procesos estándar (atención al cliente, redacción, análisis de documentos comunes) y construye solo cuando el proceso sea tan específico que ningún SaaS lo cubra razonablemente. Las pymes sin equipo técnico dedicado no deberían construir casi nada en el primer año. La opción de construir un RAG casero sobre documentos legales o técnicos con un framework genérico es el camino más rápido hacia la estadística del 80% cuando no hay un desarrollador senior con tiempo asignado.</p>
+
+                <h2 id="plan">Plan de 90 días para no repetir los errores</h2>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fase</th>
+                                <th>Días</th>
+                                <th>Acción concreta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1. Diagnóstico</strong></td>
+                                <td>1-30</td>
+                                <td>Inventariar datos disponibles y procesos candidatos. Levantar baseline de horas y coste de los tres procesos más repetitivos. Definir quién decide y quién mide.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2. Priorización</strong></td>
+                                <td>31-60</td>
+                                <td>Elegir entre 3 y 5 candidatos con beneficio medible en 90 días y un solo dominio de datos limpio. Descartar los que exigen limpiar datos de varios sistemas.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3. Un caso productivo</strong></td>
+                                <td>61-90</td>
+                                <td>Implementar UN caso de uso completo, no una prueba de concepto, con formación del equipo y métricas pre/post. El éxito en este caso es la base del escalado.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Quien empieza directamente con una plataforma corporativa multi-departamento acaba en la estadística de Gartner del 60% abandonado. El plan de 90 días no es conservadura: es el único camino que tiene métricas en cada fase.</p>
+
+                <h2 id="veredicto">Veredicto por perfil de empresa</h2>
+
+                <div class="rating-box">
+                    <div class="rating-score">Perfiles de riesgo</div>
+                    <div class="rating-text">
+                        <p>Los errores son los mismos en todos los tamaños, pero el coste es distinto. La pyme sin equipo técnico debe comprar SaaS, elegir un solo proceso y no construir nada el primer año: su riesgo es la sobre-compra y la falta de adopción. La gran empresa tiene el problema inverso: su riesgo es el piloto infinito, los silos de datos y la deriva política del alcance; necesita un comité con presupuesto y plazos reales. Y el perfil de presupuesto bajo debe recordar que el error de medición es el más caro de todos: el plan gratuito de la herramienta no cuesta dinero, pero las dos semanas de baseline cuestan tiempo que casi nadie quiere invertir y que marca la diferencia entre el 19,7% y el 80,3%.</p>
+                    </div>
+                </div>
+
+                <div class="related-articles">
+                    <h3>Artículos relacionados</h3>
+                    <ul>
+                        <li><a href="../roi-ia-empresas/">Calcular el ROI real de tus herramientas de IA</a></li>
+                        <li><a href="../automatizacion-procesos-ia/">Automatización de procesos con IA: guía práctica</a></li>
+                        <li><a href="../../guias/guia-implementar-ia-pyme/">Guía completa para implementar IA en tu pyme</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 IA Empresas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/ads.js"></script>
+</body>
+</html>
