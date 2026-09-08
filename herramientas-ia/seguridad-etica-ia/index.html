@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seguridad y ética de la IA en empresas: riesgos reales de fuga de datos, obligaciones del AI Act en 2026, sanciones y checklist de cumplimiento RGPD. Guía práctica para pymes y grandes empresas.">
+    <meta name="keywords" content="seguridad ia empresas, etica ia, ai act 2026, comunia legal ia rgpd, cumplimiento ia espana, fuga de datos ia">
+    <meta name="author" content="IA Empresas">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Seguridad y Ética de la IA en Empresas: Guía de Cumplimiento 2026">
+    <meta property="og:description" content="Riesgos reales de la IA (fugas de datos, sesgos), obligaciones del AI Act y RGPD con fechas y sanciones, y checklist práctica para tu empresa.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sergio17ss.github.io/ia-empresas/herramientas-ia/seguridad-etica-ia/">
+    <title>Seguridad y Ética de la IA en Empresas: Guía de Cumplimiento 2026 | IA Empresas</title>
+    <link rel="canonical" href="https://sergio17ss.github.io/ia-empresas/herramientas-ia/seguridad-etica-ia/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/ads.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Seguridad y Ética de la IA en Empresas: Guía de Cumplimiento 2026",
+        "description": "Riesgos reales de la IA, obligaciones del AI Act y RGPD con fechas, sanciones y una checklist práctica para empresas en España.",
+        "author": {
+            "@type": "Organization",
+            "name": "IA Empresas"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "IA Empresas"
+        },
+        "datePublished": "2026-09-08"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Qué riesgos legales tiene usar IA en mi empresa en 2026?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dos marcos principales: el RGPD (por el tratamiento de datos personales) y el AI Act, cuyo 2 de agosto de 2026 es la fecha general de aplicación. Las sanciones del AI Act llegan hasta 35 millones de euros o el 7% de la facturación mundial para prácticas prohibidas, y hasta 15 millones o el 3% para obligaciones de sistemas de alto riesgo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Puedo introducir datos de clientes en ChatGPT o Claude para uso interno?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Solo con un plan de empresa que garantice que tus datos no se usan para entrenar modelos y con políticas de retención de datos verificadas. En los planes gratuitos y de consumo personal existe riesgo real de que los datos se usen para entrenamiento o se retengan más tiempo. Antes de subir nada, revisa la política de retención y activa el control de desactivación de entrenamiento."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué es AESIA y qué tiene que ver con mi empresa?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Es la Agencia Española de Supervisión de la Inteligencia Artificial, autoridad designada en España para supervisar el AI Act. Inspecciona a proveedores y desplegadores de sistemas de IA, especialmente los clasificados como de alto riesgo (RRHH, crédito, educación, sanidad). Conviene operar preparado para responder a una inspección, no para evitarla por improbable."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-top">
+                <a href="../../" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1.2l2.1-1.6-2-3.4-2.4 1a7 7 0 0 0-2-1.2L14.2 3h-4l-.4 2.6a7 7 0 0 0-2 1.2l-2.4-1-2 3.4 2.1 1.6a7 7 0 0 0 0 2.4L3.4 14.8l2 3.4 2.4-1a7 7 0 0 0 2 1.2l.4 2.6h4l.4-2.6a7 7 0 0 0 2-1.2l2.4 1 2-3.4-2.1-1.6c.06-.4.1-.8.1-1.2z"/></svg>
+                    <span class="logo-text">IA<span class="logo-accent">Empresas</span></span>
+                </a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../../herramientas-ia/">Herramientas IA</a></li>
+                        <li><a href="../../comparativas/">Comparativas</a></li>
+                        <li><a href="../../guias/">Guías</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Menú"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+            </div>
+        </div>
+    </header>
+
+    <article class="article-page">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../../">Inicio</a> → 
+                <a href="../../herramientas-ia/">Herramientas IA</a> → 
+                <span>Seguridad y ética de la IA</span>
+            </nav>
+            <div class="ad-slot ad-slot-leaderboard" data-ad-slot=""></div>
+
+            <div class="methodology-banner">
+                <span class="methodology-icon" aria-hidden="true"></span>
+                <p><strong>Metodología:</strong> Esta guía es informativa y no constituye asesoramiento legal. Se basa en el Reglamento (UE) 2024/1689 (AI Act) y su calendario vigente tras el Reglamento (UE) 2026/1744, en el RGPD, en las comunicaciones de la AEPD y AESIA y en fuentes de seguridad de sistemas de IA, actualizado a septiembre 2026.</p>
+            </div>
+
+            <div class="article-header">
+                <span class="article-category-badge">Guía</span>
+                <h1>Seguridad y Ética de la IA en Empresas: Guía de Cumplimiento 2026</h1>
+                <p class="article-subtitle">La IA que usas a diario tiene dos riesgos que no vienen en la factura: los datos que se van fuera del control de tu empresa y las decisiones que un algoritmo toma sobre personas. El AI Act ya está en aplicación escalonada y el cumplimiento tiene fecha. Esta guía explica qué toca y desde cuándo.</p>
+                <div class="article-meta-bar">
+                    <span class="meta-author">Por el equipo de IA Empresas</span>
+                    <span class="meta-date">8 septiembre 2026</span>
+                    <span class="meta-reading">14 min de lectura</span>
+                    <span class="meta-updated">Actualizado: septiembre 2026</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+
+                <div class="tldr-box">
+                    <h2>Resumen en 60 segundos</h2>
+                    <ul>
+                        <li><strong>Fecha clave:</strong> el 2 de agosto de 2026 es la fecha general de aplicación del AI Act; las prohibiciones del artículo 5 están vigentes desde febrero de 2025</li>
+                        <li><strong>Riesgo nº 1:</strong> fuga de datos corporativos a través de herramientas de IA sin control (los planes de consumo pueden usar tus datos para entrenar)</li>
+                        <li><strong>Riesgo nº 2:</strong> decisiones automatizadas sobre personas (selección de personal, crédito, evaluación de rendimiento) clasificadas como alto riesgo</li>
+                        <li><strong>Sanciones:</strong> hasta 35 M€ o 7% de facturación mundial (prácticas prohibidas); 15 M€ o 3% (alto riesgo); 7,5 M€ o 1,5% (información incorrecta)</li>
+                        <li><strong>En España:</strong> AESIA supervisa el AI Act; la AEPD, el RGPD. Ninguna de las dos ha congelado la actividad</li>
+                        <li><strong>Acción mínima:</strong> inventario de herramientas de IA, revisión de retención de datos y un responsable de IA antes de fin de año</li>
+                    </ul>
+                </div>
+
+                <div class="callout callout-info">
+                    <strong>Aviso:</strong> esta guía tiene carácter informativo y no sustituye el asesoramiento legal. Para decisiones sobre tu caso concreto, consulta con tu asesor jurídico o tu delegado de protección de datos.
+                </div>
+
+                <div class="toc">
+                    <h3>Índice</h3>
+                    <ol>
+                        <li><a href="#marco">El marco: qué leyes te tocan y desde cuándo</a></li>
+                        <li><a href="#datos">El riesgo número 1: fuga de datos corporativos</a></li>
+                        <li><a href="#alto-riesgo">Los sistemas de alto riesgo y el caso RRHH</a></li>
+                        <li><a href="#duelo">Duelo de datos: Claude vs ChatGPT para uso empresarial</a></li>
+                        <li><a href="#etica">Ética: sesgo, transparencia y supervisión humana</a></li>
+                        <li><a href="#checklist">Checklist de cumplimiento para tu empresa</a></li>
+                        <li><a href="#veredicto">Veredicto por perfil de empresa</a></li>
+                    </ol>
+                </div>
+
+                <h2 id="marco">El marco: qué leyes te tocan y desde cuándo</h2>
+
+                <p>En 2026 conviven dos marcos con calendarios distintos y sanciones que se suman. El RGPD, vivo desde 2018, regula todo tratamiento de datos personales, incluido el que hacen las herramientas de IA. El Reglamento Europeo de Inteligencia Artificial (Reglamento UE 2024/1689, el AI Act) regula los sistemas de IA por su nivel de riesgo y se aplica directamente en España sin necesidad de transposición.</p>
+
+                <p>El calendario del AI Act, tras el ajuste introducido por el Reglamento (UE) 2026/1744 (el Ómnibus digital sobre IA, en vigor desde el 27 de julio de 2026), es el siguiente:</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Qué se activa</th>
+                                <th>A quién afecta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>2 febrero 2025</strong></td>
+                                <td>Prácticas prohibidas (art. 5): manipulación subliminal, scoring social, vigilancia biométrica masiva en tiempo real</td>
+                                <td>Todas las empresas europeas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Desde 2025</strong></td>
+                                <td>Alfabetización en IA (art. 4): obligación de que el personal tenga conocimientos suficientes</td>
+                                <td>Empresas que despliegan IA</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2 agosto 2025</strong></td>
+                                <td>Obligaciones de modelos de uso general (GPAI), gobernanza y parte del régimen sancionador</td>
+                                <td>Proveedores (OpenAI, Anthropic, etc.) y quienes hacen fine-tuning a gran escala</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2 agosto 2026</strong></td>
+                                <td>Fecha general de aplicación: transparencia (art. 50) y resto de obligaciones</td>
+                                <td>Todas las empresas que despliegan o proveen sistemas de IA</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2 diciembre 2027</strong></td>
+                                <td>Sistemas de alto riesgo del Anexo III (RRHH, crédito, educación, sanidad)</td>
+                                <td>Empresas que despliegan esos sistemas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2 agosto 2028</strong></td>
+                                <td>Sistemas de alto riesgo embebidos en productos regulados (Anexo I)</td>
+                                <td>Fabricantes y distribuidores</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Dos errores comunes: decir que "el AI Act se retrasa" y que por tanto no obliga. Lo que se ha aplazado es un capítulo concreto (las obligaciones plenas de los sistemas de alto riesgo); las prohibiciones, la transparencia y el régimen sancionador tienen su propio calendario y están ya en vigor o a punto. El segundo error es pensar que por comprar IA a un proveedor estadounidense "no te toca": el AI Act distingue roles, y quien despliega un sistema de IA en el mercado europeo tiene obligaciones propias aunque el software venga de fuera.</p>
+
+                <p>Las sanciones del AI Act, en su régimen aplicable desde agosto de 2025 salvo el artículo 101 (multas a proveedores de modelos de uso general), alcanzan: hasta 35 millones de euros o el 7% del volumen de negocios mundial por prácticas prohibidas; hasta 15 millones o el 3% por incumplimientos de sistemas de alto riesgo; y hasta 7,5 millones o el 1,5% por suministrar información incorrecta. Para pymes y startups los importes se ajustan, pero las cifras siguen siendo significativas.</p>
+
+                <div class="ad-slot ad-slot-rectangle" data-ad-slot=""></div>
+
+                <h2 id="datos">El riesgo número 1: fuga de datos corporativos</h2>
+
+                <p>La amenaza más frecuente en empresas no es un ataque exterior: es un empleado que pega una respuesta de un cliente, un contrato o una base de datos en una herramienta de IA de consumo. El problema no es la acción en sí, es lo que ocurre con esos datos después, y ahí las políticas de los proveedores marcan diferencias importantes.</p>
+
+                <p>En los planes personales y gratuitos de las principales plataformas, los datos de tus conversaciones pueden utilizarse para entrenar modelos, y la retención de los historiales no está pensada para secretos empresariales. Cada conversación con datos personales es, además, un tratamiento sujeto al RGPD: necesitas base legal y, según el caso, una evaluación de impacto. La AEPD mantiene abiertos expedientes relacionados con IA y tratamiento de datos de personas físicas, y en 2026 el escrutinio se ha intensificado sobre el uso de sistemas de IA en selección de personal, control de presencia y atención al cliente.</p>
+
+                <p>La regla operativa para una empresa: lo público no se sube a cuentas personales. Las conversaciones con datos de clientes, empleados o proveedores deben ir a planes de empresa con garantías documentadas de que los datos no se usan para entrenar y con políticas de retención claras. Si la herramienta no ofrece esa garantía por contrato, no se usa para ese contenido, por muy cómoda que sea.</p>
+
+                <p>Hay además un riesgo técnico que conviene no ignorar. Los sistemas de IA que leen documentos o interactúan con bases de datos son vulnerables a técnicas conocidas: inyección de instrucciones ocultas en el prompt, envenenamiento de los datos con los que se alimenta el modelo o fugas del contexto entre usuarios. OWASP mantiene un catálogo de vulnerabilidades específico para aplicaciones de LLM cuya primera edición, la del Top 10, incluye desde la inyección de prompts hasta la fuga de información sensible. Al desplegar una IA integrada con tus sistemas, el análisis de esos riesgos debería formar parte de la revisión de seguridad, igual que se hace con cualquier otra aplicación.</p>
+
+                <h2 id="alto-riesgo">Los sistemas de alto riesgo y el caso RRHH</h2>
+
+                <p>El AI Act no trata toda la IA igual. Para los sistemas clasificados de alto riesgo exige, entre otros, la evaluación de riesgos, la gobernanza de datos, la documentación técnica, el registro y la supervisión humana. El caso más relevante para la mayoría de las empresas es el área de recursos humanos: los sistemas de IA utilizados para seleccionar o evaluar candidatos y trabajadores están en el Anexo III, lo que equivale a la categoría de alto riesgo.</p>
+
+                <p>En la práctica, un filtro automático de currículos, un sistema de puntuación de candidatos o una herramienta que evalúa el rendimiento de empleados a partir de datos de actividad son sistemas de alto riesgo, con independencia de lo "ligera" que sea la herramienta. La obligación de documentar cómo se evita el sesgo y quién supervisa las decisiones no es opcional. La AEPD ya ha abierto procedimientos sancionadores por sesgo algorítmico en cribado de CVs y en valoración de siniestros, por lo que el debate no es teórico.</p>
+
+                <p>El desplegador (tu empresa) tiene obligaciones propias: no basta con que el proveedor diga que cumple. Debes poder mostrar qué datos usa el sistema, cómo se mitiga la discriminación y qué decisión humana existe por encima. El marco que pide el regulador no es más burocracia: es exactamente lo que una selección responsable de personal ya debería documentar en papel. La IA solo obliga a que ese documento exista en formato auditable.</p>
+
+                <h2 id="duelo">Duelo de datos: Claude vs ChatGPT para uso empresarial</h2>
+
+                <p>Cuando una empresa decide qué asistente de IA autoriza para uso interno, la decisión más relevante no es la calidad del texto: es qué pasa con los datos. Comparadas en ese criterio, las dos plataformas principales en mercado español:</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Criterio</th>
+                                <th>Anthropic (Claude)</th>
+                                <th>OpenAI (ChatGPT)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Uso de tus datos para entrenar</strong></td>
+                                <td>Los planes comerciales (Pro, Team, Enterprise) no entrenan con tus datos</td>
+                                <td>Los planes comerciales (Team, Enterprise) no entrenan con tus datos; el plan gratuito y Plus sí</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Retención de conversaciones</strong></td>
+                                <td>Política de retención corta por defecto en planes comerciales</td>
+                                <td>Retención configurable; en Enterprise hay plazos de retención de datos negociados</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Región de tratamiento</strong></td>
+                                <td>Opciones UE para clientes enterprise</td>
+                                <td>Datos almacenados en EE. UU.; contratos con garantías UE disponibles en Enterprise</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Alto riesgo / uso crítico</strong></td>
+                                <td>Claude para Uso de Consumo está pensado para límites domésticos, no para uso crítico sin supervisión</td>
+                                <td>ChatGPT no está diseñado para decisiones de alto riesgo (diagnósticos médicos, etc.)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La letra pequeña es idéntica en ambos: la garantía real solo existe con la cuenta de empresa correcta, no con la cuenta de consumo que te creaste para probar. Y ninguna de las dos está pensada para decisiones de alto riesgo sobre personas sin revisión humana. La conclusión práctica: elige por contrato y política de retención, no por preferencia de marca, y no subas datos personales o confidenciales a una cuenta gratuita pase lo que pase. Las políticas exactas de cada plan cambian con frecuencia; verifícalas en la documentación oficial del proveedor antes de autorizar su uso interno.</p>
+
+                <h2 id="etica">Ética: sesgo, transparencia y supervisión humana</h2>
+
+                <p>El sesgo en IA no es un defecto exótico: es un espejo de los datos con los que se entrena. Si el histórico de selección de una empresa favoreció durante años a un perfil determinado, un filtro entrenado con esos datos reproducirá y amplificará esa preferencia. El modo de vigilarlo no es pedir a la herramienta que "sea justa": es auditar las decisiones que toma, comparando grupos de personas y resultados, y corregir los datos antes que el modelo.</p>
+
+                <p>La transparencia es la segunda pata. Desde el 2 de agosto de 2026, el artículo 50 del AI Act exige informar a las personas de que están interactuando con un sistema de IA cuando proceda, por ejemplo al usar chatbots que simulan a una persona. Eso se traduce en decisiones concretas de producto: un chatbot de atención al cliente que "se hace pasar" por humano infringe, y la misma regla aplica a contenidos o imágenes manipuladas. Para una empresa, cumplir la transparencia es tan simple como etiquetar lo que es IA de forma visible y comprobable en el registro de la conversación.</p>
+
+                <p>La supervisión humana cierra el círculo. El AI Act parte de que los sistemas de alto riesgo no deciden solos: debe existir una persona capaz de intervenir, de no aplicar la decisión si es incorrecta y de documentar por qué. En la práctica empresarial eso se traduce en una regla ya enunciada en las demás guías de este sitio: la IA redacta, el humano aprueba. En selección, en atención al cliente y en comunicación externa, la excepción a esa regla debe justificarse caso por caso, y nunca por defecto.</p>
+
+                <h2 id="checklist">Checklist de cumplimiento para tu empresa</h2>
+
+                <ol>
+                    <li><strong>Inventario de sistemas de IA:</strong> lista todas las herramientas de IA en uso (licencias corporativas y cuentas de consumo descubiertas en la empresa), los datos que manejan y su rol en cada proceso.</li>
+                    <li><strong>Clasificación por riesgo:</strong> marca cada sistema como mínimo, limitado o alto riesgo. El filtro de CVs o la puntuación de candidatos es alto riesgo, no "herramienta de productividad".</li>
+                    <li><strong>Revisión de las políticas de datos de cada proveedor:</strong> ¿entrena con tus datos? ¿cuánto retiene las conversaciones? ¿dónde se tratan? Exige la garantía por contrato, no por pantalla.</li>
+                    <li><strong>Formación obligatoria:</strong> el artículo 4 exige alfabetización en IA del personal. Dos horas prácticas por equipo son el mínimo razonable, y además duplican la probabilidad de retorno positivo, como muestran los estudios de DataCamp.</li>
+                    <li><strong>Designar un responsable de IA:</strong> en una pyme puede ser el responsable de operaciones o el DPO; en grandes empresas, un comité con presupuesto. Evaluar una inspección de AESIA sin responsable asignado es la forma más rápida de suspenderla.</li>
+                    <li><strong>Supervisión humana documentada:</strong> para cada sistema de alto riesgo, deja escrito quién revisa las decisiones y cómo se escala una decisión dudosa al humano.</li>
+                </ol>
+
+                <p>Si tu empresa vende al sector público, añade el esquema nacional de seguridad para los sistemas de IA desplegados. Y si alguien te intenta vender que la certificación ISO 42001 equivale al cumplimiento del AI Act, desconfía: la certificación ayuda a auditarlo, pero la conformidad tiene requisitos propios del reglamento.</p>
+
+                <h2 id="veredicto">Veredicto por perfil de empresa</h2>
+
+                <div class="rating-box">
+                    <div class="rating-score">Perfiles de riesgo</div>
+                    <div class="rating-text">
+                        <p>La pyme sin DPO debería empezar por el inventario y la revisión de políticas de retención de datos, porque su exposición mayor es la fuga silenciosa a través de cuentas de consumo: es el riesgo más barato de cerrar y el que más sanciones ha generado. La gran empresa con procesos de RRHH o evaluación automatizados está en el peor cruce posible (alto riesgo + sanciones de 15 M€ + reputación) y debería tratar el cumplimiento del Anexo III como proyecto con presupuesto y fecha, no como lectura de normativa. Y el perfil de presupuesto bajo tiene a su favor que las obligaciones del AI Act de riesgo mínimo y limitado son asumibles con un checklist, mientras que el coste de ignorarlo (una multa, una inspección de la AEPD) supera con creces el de una tarde de inventario. En los tres perfiles, la regla ética tiene premio económico: la empresa que puede demostrar que audita sus decisiones de IA, que informa a las personas y que mantiene un humano por encima del algoritmo, es la que pasa sin sustos una inspección y la que sus clientes y empleados no denuncian.</p>
+                    </div>
+                </div>
+
+                <div class="related-articles">
+                    <h3>Artículos relacionados</h3>
+                    <ul>
+                        <li><a href="../errores-implementar-ia/">Errores comunes al implementar IA</a></li>
+                        <li><a href="../../herramientas-ia/chatgpt-enterprise/">ChatGPT Enterprise: análisis completo</a></li>
+                        <li><a href="../../herramientas-ia/claude-ai-empresas/">Claude AI para empresas: análisis completo</a></li>
+                        <li><a href="../../guias/guia-implementar-ia-pyme/">Guía completa para implementar IA en tu pyme</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 IA Empresas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/ads.js"></script>
+</body>
+</html>
