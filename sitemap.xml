@@ -151,6 +151,18 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://iatodopyme.com/cookies/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://iatodopyme.com/aviso-legal/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://iatodopyme.com/herramientas-ia/clickup-ai/</loc>
     <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
