@@ -27,6 +27,13 @@
   --accent-tint:  #F3E9E5;   /* tinte muy sutil para filas/focos destacados */
   --night:        #17150F;   /* footer / paneles oscuros (tinta, no azul) */
 
+  /* ==== TINTA POR CATEGORÍA (contraste editorial, estilo prensa) ====
+     Cada sección con su color de cabecera de diario.
+     Inspirado en softwareguia.com y topesdegama.com (secciones con identidad). */
+  --cat-herramientas: #9E2B25;  /* óxido — reseñas y análisis de herramientas */
+  --cat-comparativas:  #355E3B; /* verde bosque — duelos y comparativas */
+  --cat-guia:          #274369; /* azul tinta profundo — guías paso a paso */
+
   /* ==== TIPOGRAFÍA ==== */
   --font:          'Source Sans 3', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-serif:    'Newsreader', Georgia, 'Times New Roman', serif;   /* títulos / entradilla */
@@ -372,7 +379,25 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: 0;
 }
 /* todas las etiquetas del mismo tono: fuera los fondos pastel */
-.tag-herramientas, .tag-comparativa, .tag-guia { background: none; color: var(--accent); }
+.tag-herramientas { background: none; color: var(--cat-herramientas); }
+.tag-comparativa   { background: none; color: var(--cat-comparativas); }
+.tag-guia          { background: none; color: var(--cat-guia); }
+
+/* hover de tarjeta tintado por categoría (contraste entre secciones) */
+.article-card:has(.tag-herramientas) h3 a:hover { color: var(--cat-herramientas); }
+.article-card:has(.tag-comparativa) h3 a:hover   { color: var(--cat-comparativas); }
+.article-card:has(.tag-guia) h3 a:hover          { color: var(--cat-guia); }
+
+/* hubs por categoría: cabecera con regla y kicker de su tinta */
+body.page-herramientas .section-header { border-bottom: 2px solid var(--cat-herramientas); }
+body.page-herramientas .section-header h2::before,
+body.page-herramientas .section-link { color: var(--cat-herramientas); }
+body.page-comparativas .section-header { border-bottom: 2px solid var(--cat-comparativas); }
+body.page-comparativas .section-header h2::before,
+body.page-comparativas .section-link { color: var(--cat-comparativas); }
+body.page-guia .section-header { border-bottom: 2px solid var(--cat-guia); }
+body.page-guia .section-header h2::before,
+body.page-guia .section-link { color: var(--cat-guia); }
 
 .article-body h3 {
   font-family: var(--font-serif);
