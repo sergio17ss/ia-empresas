@@ -1,8 +1,8 @@
 # Plan de Contenido — ia-empresas.es
 
 > **Estado:** En progreso  
-> **Última actualización:** 7 septiembre 2026  
-> **Artículos publicados:** 12 / 50  
+> **Última actualización:** 11 septiembre 2026  
+> **Artículos publicados:** 38 / 50  
 > **Objetivo:** 50 artículos (base) — ampliable a más  
 
 ---
@@ -25,6 +25,32 @@
 | 10 | HubSpot IA | `/herramientas-ia/hubspot-ia/` | ~2,500 |
 | 11 | Notion AI | `/herramientas-ia/notion-ai/` | ~2,300 |
 | 12 | Monday.com con IA | `/herramientas-ia/monday-ia/` | ~2,400 |
+| 13 | Cursor AI | `/herramientas-ia/cursor-ai/` | ~2,300 |
+| 14 | Midjourney | `/herramientas-ia/midjourney/` | ~2,200 |
+| 15 | Synthesia | `/herramientas-ia/synthesia/` | ~2,400 |
+| 16 | Perplexity AI | `/herramientas-ia/perplexity-ai/` | ~2,300 |
+| 17 | Dify.ai | `/herramientas-ia/dify-ai/` | ~2,500 |
+| 18 | IA para Ecommerce | `/comparativas/ia-ecommerce-ventas/` | ~2,600 |
+| 19 | IA para Agencias de Marketing | `/comparativas/ia-agencias-marketing/` | ~2,300 |
+| 20 | IA para Consultoras | `/comparativas/ia-consultoras/` | ~2,200 |
+| 21 | IA para Clínicas y Consultorios | `/comparativas/ia-clinicas-consultorios/` | ~2,300 |
+| 22 | IA para Abogados | `/comparativas/ia-abogados/` | ~2,300 |
+| 23 | IA para Restaurantes | `/comparativas/ia-restaurantes/` | ~2,200 |
+| 24 | IA para Educación | `/comparativas/ia-educacion/` | ~2,200 |
+| 25 | IA para Logística | `/comparativas/ia-logistica/` | ~2,300 |
+| 26 | Cursor AI | `/herramientas-ia/cursor-ai/` | ~2,300 |
+| 27 | Automatización de Procesos con IA | `/herramientas-ia/automatizacion-procesos-ia/` | ~2,400 |
+| 28 | Canva IA (Magic Studio) | `/herramientas-ia/canva-ia/` | ~2,200 |
+| 29 | Chatbots IA Atención al Cliente | `/herramientas-ia/chatbots-atencion-cliente/` | ~2,800 |
+| 30 | Zendesk AI | `/herramientas-ia/zendesk-ai/` | ~2,200 |
+| 31 | Intercom Fin | `/herramientas-ia/intercom-fin/` | ~2,200 |
+| 32 | Errores Comunes Implementar IA | `/herramientas-ia/errores-implementar-ia/` | ~2,300 |
+| 33 | ROI Herramientas IA | `/herramientas-ia/roi-ia-empresas/` | ~2,400 |
+| 34 | Seguridad y Ética IA | `/herramientas-ia/seguridad-etica-ia/` | ~2,400 |
+| 35 | ClickUp AI | `/herramientas-ia/clickup-ai/` | ~2,300 |
+| 36 | Software IA para Ventas | `/comparativas/software-ia-ventas/` | ~2,500 |
+| 37 | Copilot Microsoft | `/herramientas-ia/copilot-microsoft/` | ~2,600 |
+| 38 | Prompt Engineering para Empresas | `/guias/prompt-engineering-empresas/` | ~3,190 |
 
 ---
 
@@ -92,7 +118,7 @@
 
 | # | Título | Keyword | Estado |
 |---|--------|---------|--------|
-| 38 | Prompt Engineering para Empresas | prompt engineering empresas | ⬜ Pendiente |
+| 38 | Prompt Engineering para Empresas | prompt engineering empresas | ✅ Publicado 2026-09-11 |
 | 39 | Crear Chatbot IA para tu Web | crear chatbot ia web | ⬜ Pendiente |
 | 40 | RAG: Usar IA con Tus Datos | rag ia datos | ⬜ Pendiente |
 | 41 | IA y Cumplimiento Legal (AI Act) | ai act empresas cumplimiento | ⬜ Pendiente |
@@ -126,10 +152,10 @@
 
 | Fase | Artículos | Publicados | Pendientes |
 |------|-----------|------------|------------|
-| Fase 1 | 20 | 12 | 8 |
-| Fase 2 | 17 | 0 | 17 |
+| Fase 1 | 24 | 24 | 0 |
+| Fase 2 | 17 | 14 | 3 |
 | Fase 3 | 9 | 0 | 9 |
-| **TOTAL** | **46 + 4 extra = 50** | **12** | **38** |
+| **TOTAL** | **50** | **38** | **12** |
 
 ---
 
