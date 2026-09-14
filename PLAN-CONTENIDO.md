@@ -2,7 +2,7 @@
 
 > **Estado:** En progreso  
 > **Última actualización:** 11 septiembre 2026  
-> **Artículos publicados:** 39 / 50  
+> **Artículos publicados:** 41 / 50  
 > **Objetivo:** 50 artículos (base) — ampliable a más  
 
 ---
@@ -120,8 +120,8 @@
 |---|--------|---------|--------|
 | 38 | Prompt Engineering para Empresas | prompt engineering empresas | ✅ Publicado 2026-09-11 |
 | 39 | Crear Chatbot IA para tu Web | crear chatbot ia web | ✅ Publicado 2026-09-12 |
-| 40 | RAG: Usar IA con Tus Datos | rag ia datos | ⬜ Pendiente |
-| 41 | IA y Cumplimiento Legal (AI Act) | ai act empresas cumplimiento | ⬜ Pendiente |
+| 40 | RAG: Usar IA con Tus Datos | rag ia datos | ✅ Publicado 2026-09-13 |
+| 41 | IA y Cumplimiento Legal (AI Act) | ai act empresas cumplimiento | ✅ Publicado 2026-09-14 |
 
 ---
 
@@ -153,9 +153,9 @@
 | Fase | Artículos | Publicados | Pendientes |
 |------|-----------|------------|------------|
 | Fase 1 | 24 | 24 | 0 |
-| Fase 2 | 17 | 14 | 3 |
+| Fase 2 | 17 | 16 | 1 |
 | Fase 3 | 9 | 0 | 9 |
-| **TOTAL** | **50** | **39** | **11** |
+| **TOTAL** | **50** | **41** | **9** |
 
 ---
 
