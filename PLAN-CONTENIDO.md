@@ -2,7 +2,7 @@
 
 > **Estado:** En progreso  
 > **Última actualización:** 15 septiembre 2026  
-> **Artículos publicados:** 42 / 50  
+> **Artículos publicados:** 43 / 50  
 > **Objetivo:** 50 artículos (base) — ampliable a más  
 
 ---
@@ -132,7 +132,7 @@
 | # | Título | Keyword | Estado |
 |---|--------|---------|--------|
 | 42 | Informe: Estado IA Empresarial España 2026 | ia empresas españa informe | ✅ Publicado 2026-09-15 |
-| 43 | ¿Cuánto Ahorran las Pymes con IA? | ahorro pymes ia | ⬜ Pendiente |
+| 43 | ¿Cuánto Ahorran las Pymes con IA? | ahorro pymes ia | ✅ Publicado 2026-09-16 |
 | 44 | ROI Real: Empresas Españolas con IA | empresas españolas ia exito | ⬜ Pendiente |
 | 45 | Guía de Compra: Elegir Herramienta IA | elegir herramienta ia negocio | ⬜ Pendiente |
 | 46 | Futuro de la IA Empresarial 2027-2030 | futuro ia empresarial | ⬜ Pendiente |
@@ -154,8 +154,8 @@
 |------|-----------|------------|------------|
 | Fase 1 | 24 | 24 | 0 |
 | Fase 2 | 17 | 16 | 1 |
-| Fase 3 | 9 | 1 | 8 |
-| **TOTAL** | **50** | **42** | **8** |
+| Fase 3 | 9 | 2 | 7 |
+| **TOTAL** | **50** | **43** | **7** |
 
 ---
 
