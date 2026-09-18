@@ -134,7 +134,7 @@
 | 42 | Informe: Estado IA Empresarial España 2026 | ia empresas españa informe | ✅ Publicado 2026-09-15 |
 | 43 | ¿Cuánto Ahorran las Pymes con IA? | ahorro pymes ia | ✅ Publicado 2026-09-16 |
 | 44 | ROI Real: Empresas Españolas con IA | empresas españolas ia exito | ✅ Publicado 2026-09-17 |
-| 45 | Guía de Compra: Elegir Herramienta IA | elegir herramienta ia negocio | ⬜ Pendiente |
+| 45 | Guía de Compra: Elegir Herramienta IA | elegir herramienta ia negocio | ✅ Publicado 2026-09-18 |
 | 46 | Futuro de la IA Empresarial 2027-2030 | futuro ia empresarial | ⬜ Pendiente |
 
 #### Contenido de Nicho Long-Tail (4 artículos)
@@ -154,8 +154,8 @@
 |------|-----------|------------|------------|
 | Fase 1 | 24 | 24 | 0 |
 | Fase 2 | 17 | 16 | 1 |
-| Fase 3 | 9 | 3 | 6 |
-| **TOTAL** | **50** | **44** | **6** |
+| Fase 3 | 9 | 4 | 5 |
+| **TOTAL** | **50** | **45** | **5** |
 
 ---
 
