@@ -96,3 +96,53 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+// ===== Banner de consentimiento de cookies (GA4) =====
+(function() {
+    var STORAGE_KEY = 'iatodopyme_consent';
+    var saved = null;
+    try { saved = localStorage.getItem(STORAGE_KEY); } catch(e) {}
+
+    function setConsent(valor) {
+        // analytics_storage granted solo si acepta
+        var estado = (valor === 'aceptado') ? 'granted' : 'denied';
+        try {
+            if (typeof gtag === 'function') {
+                gtag('consent', 'update', {
+                    'analytics_storage': estado,
+                    'ad_storage': estado,
+                    'ad_user_data': estado,
+                    'ad_personalization': estado
+                });
+            }
+        } catch(e) {}
+        try { localStorage.setItem(STORAGE_KEY, valor); } catch(e) {}
+        var banner = document.getElementById('iatodopyme-cookie-banner');
+        if (banner) banner.remove();
+    }
+
+    // Solo mostrar banner si no hay decisión guardada
+    if (!saved) {
+        document.addEventListener('DOMContentLoaded', function() {
+            var banner = document.createElement('div');
+            banner.id = 'iatodopyme-cookie-banner';
+            banner.setAttribute('role', 'dialog');
+            banner.setAttribute('aria-label', 'Aviso de cookies');
+            banner.innerHTML =
+                '<div class="cookie-banner-content">' +
+                '<p>Usamos Google Analytics (cookies) para medir el tráfico y mejorar el contenido. ' +
+                'Al pulsar "Aceptar" consientes su uso. Más info en nuestra <a href="/cookies/" rel="noopener">política de cookies</a>.</p>' +
+                '<div class="cookie-banner-actions">' +
+                '<button id="iatodopyme-cookie-accept" type="button">Aceptar</button>' +
+                '<button id="iatodopyme-cookie-reject" type="button">Rechazar</button>' +
+                '</div></div>';
+            document.body.appendChild(banner);
+
+            document.getElementById('iatodopyme-cookie-accept').addEventListener('click', function() {
+                setConsent('aceptado');
+            });
+            document.getElementById('iatodopyme-cookie-reject').addEventListener('click', function() {
+                setConsent('rechazado');
+            });
+        });
+    }
+})();

@@ -629,3 +629,46 @@ body.page-guia .section-link { color: var(--cat-guia); }
 .side-module li:last-child { border-bottom: none; }
 .side-module a { color: var(--ink); line-height: 1.4; display: block; }
 .side-module a:hover { color: var(--accent); }
+
+/* ===== Banner de consentimiento de cookies ===== */
+#iatodopyme-cookie-banner {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 10000;
+  background: var(--bg, #fff);
+  color: var(--ink, #111);
+  border-top: 2px solid var(--accent, #c00);
+  box-shadow: 0 -4px 16px rgba(0,0,0,0.18);
+  padding: 14px 16px;
+}
+.cookie-banner-content {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+}
+.cookie-banner-content p {
+  flex: 1 1 300px;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+.cookie-banner-content a { color: var(--accent, #c00); font-weight: 600; }
+.cookie-banner-actions { display: flex; gap: 10px; }
+.cookie-banner-actions button {
+  padding: 9px 18px;
+  border: 1px solid var(--accent, #c00);
+  background: transparent;
+  color: var(--ink, #111);
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+.cookie-banner-actions button#iatodopyme-cookie-accept {
+  background: var(--accent, #c00);
+  color: #fff;
+}
+.cookie-banner-actions button:hover { opacity: 0.85; }
