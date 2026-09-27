@@ -455,7 +455,7 @@
                 </div>
 
                 <div class="callout callout-info">
-                    <strong>Nota de precios:</strong> Las tarifas indicadas son aproximadas en euros según los planes oficiales de cada fabricante en septiembre de 2026 y pueden variar con el tipo de cambio, el volumen de mensajes y los tokens de cada conversación. Consulta siempre la página oficial del proveedor antes de contratar.
+                    <strong>Nota de precios:</strong> Las tarifas indicadas son aproximadas en euros según los planes oficiales de cada fabricante en septiembre de 2026 y pueden variar con el tipo de cambio, el volumen de mensajes y los tokens de cada conversación. Las cifras de los asistentes generativos se han contrastado con los <a href="https://openai.com/chatgpt/pricing/" rel="noopener nofollow" target="_blank">planes oficiales de ChatGPT</a> y <a href="https://www.anthropic.com/pricing" rel="noopener nofollow" target="_blank">los precios oficiales de Claude</a>, y las de las plataformas open source con la <a href="https://docs.dify.ai/" rel="noopener nofollow" target="_blank">documentación oficial de Dify</a>. Consulta siempre la página oficial del proveedor antes de contratar.
                 </div>
 
                 <p>Si a esto le sumas el coste oculto (el tiempo de tu equipo para preparar e indexar la documentación, y el coste de tokens del modelo si pagas por uso), un presupuesto realista para una pyme tipo con un asistente sobre 200-500 documentos es de <strong>25 a 45 €/mes</strong> con las plataformas sin código, y de <strong>50 a 150 €/mes</strong> si necesitas integraciones avanzadas o nube gestionada. Las opciones de gran empresa, como un despliegue serio en Vertex o Copilot con decenas de miles de documentos y volúmenes altos, saltan por encima de esos rangos, pero entonces ya estás hablando de un proyecto con presupuesto propio.</p>
@@ -521,7 +521,7 @@
 
                 <p><strong>Segundo, la exposición interna.</strong> El gran riesgo del RAG es más simple de lo que parece: un asistente que responde todo lo que hay en la biblioteca. Si metes nóminas, expedientes o datos de clientes en la misma base que usa un asistente público, estás abriendo una puerta. La solución práctica es la segmentación: bases de conocimiento separadas por finalidad y acceso, y nunca mezclar información personal sensible con asistentes orientados a clientes.</p>
 
-                <p><strong>Tercero, la Ley de Inteligencia Artificial de la UE.</strong> Afecta de lleno a los sistemas de IA desplegados en la Unión desde su régimen de obligaciones generales: transparencia (el usuario debe saber que habla con un sistema de IA), supervisión humana y trazabilidad. Un asistente RAG que se presenta como IA, cita fuentes y deriva a humano cuando toca cumple el espíritu de la norma; un bot que se hace pasar por persona no. En <a href="../../herramientas-ia/seguridad-etica-ia/">nuestra guía de seguridad y ética en IA</a> desarrollamos todo el marco.</p>
+                <p><strong>Tercero, la Ley de Inteligencia Artificial de la UE.</strong> El <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" rel="noopener nofollow" target="_blank">Reglamento (UE) 2024/1689 (AI Act)</a> afecta de lleno a los sistemas de IA desplegados en la Unión desde su régimen de obligaciones generales: transparencia (el usuario debe saber que habla con un sistema de IA), supervisión humana y trazabilidad. El calendario de aplicación y las orientaciones para empresas los publica la <a href="https://digital-strategy.ec.europa.eu/en/policies/ai-act" rel="noopener nofollow" target="_blank">Comisión Europea</a>, y la <a href="https://www.aepd.es/" rel="noopener nofollow" target="_blank">AEPD</a> es la autoridad designada para supervisarlo en España junto con el RGPD. Un asistente RAG que se presenta como IA, cita fuentes y deriva a humano cuando toca cumple el espíritu de la norma; un bot que se hace pasar por persona no. En <a href="../../herramientas-ia/seguridad-etica-ia/">nuestra guía de seguridad y ética en IA</a> desarrollamos todo el marco.</p>
 
                 <div class="callout callout-warning">
                     <strong>Aviso:</strong> este apartado es orientación general, no asesoramiento jurídico. Si tu sector maneja datos personales sensibles (salud, RRHH, menores), consulta con un abogado especializado en protección de datos antes de desplegar cualquier sistema de IA con documentación interna.
@@ -581,6 +581,19 @@
                     <summary>¿Cómo evito que mi asistente RAG invente respuestas o use datos desactualizados?</summary>
                     <p>Con tres prácticas: dale documentos actualizados y bien estructurados, configura el prompt para que responda solo con la información recuperada y diga "no lo sé" en lugar de inventar, y revisa los registros de conversación las primeras semanas. Establece un calendario de actualización de la base de conocimiento y usa un set fijo de preguntas de prueba para detectar cuándo una respuesta deja de ser correcta.</p>
                 </details>
+
+                <h2 id="fuentes">Fuentes</h2>
+
+                <p>Los precios en euros, el funcionamiento técnico de las plataformas y el marco normativo citado en esta guía proceden de la documentación oficial de los fabricantes y de las instituciones reguladoras siguientes:</p>
+
+                <ul>
+                    <li><a href="https://docs.dify.ai/" rel="noopener nofollow" target="_blank">Dify — documentación oficial</a>: comportamiento de la base de conocimiento, del pipeline de fragmentación y vectorización y del sistema de citas de fuentes que explica esta guía.</li>
+                    <li><a href="https://platform.openai.com/docs" rel="noopener nofollow" target="_blank">OpenAI — documentación de la plataforma</a> y <a href="https://openai.com/chatgpt/pricing/" rel="noopener nofollow" target="_blank">precios oficiales de ChatGPT</a>: contraste de la comparativa de precios y del funcionamiento de la recuperación de contexto en la API.</li>
+                    <li><a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" rel="noopener nofollow" target="_blank">Anthropic — documentación de prompt engineering</a>: recomendación oficial de instruir al modelo para que responda solo con el contexto recuperado en lugar de completar con su memoria general.</li>
+                    <li><a href="https://www.aepd.es/" rel="noopener nofollow" target="_blank">AEPD — Agencia Española de Protección de Datos</a>: criterio oficial sobre qué datos personales pueden enviarse a una herramienta de IA y qué garantías exige un plan de empresa.</li>
+                    <li><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" rel="noopener nofollow" target="_blank">Reglamento (UE) 2024/1689 (AI Act) — texto oficial en EUR-Lex</a>: obligaciones de transparencia, supervisión humana y trazabilidad exigidas a los asistentes de IA en la Unión.</li>
+                    <li><a href="https://digital-strategy.ec.europa.eu/en/policies/ai-act" rel="noopener nofollow" target="_blank">Comisión Europea — AI Act</a>: calendario de aplicación del Reglamento y orientaciones para empresas.</li>
+                </ul>
 
                 <div class="related-articles">
                     <h3>Artículos relacionados</h3>

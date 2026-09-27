@@ -205,7 +205,7 @@
 
                 <p>Si tu empresa ya usa ChatGPT, Claude o Gemini, este artículo es para ti. Lo que la mayoría de equipos no sabe es que <strong>la diferencia entre un resultado mediocre y un resultado brillante no está en la herramienta, sino en cómo le pides el trabajo</strong>. Por eso en esta guía no hablamos de teoría académica: hablamos de la fórmula concreta para que un empleado cualquiera de tu pyme redacte instrucciones que funcionen a la primera.</p>
 
-                <p>Pongamos números. Cuando un comercial pide a la IA un email de cobro sin contexto, corregir el resultado le lleva casi el mismo tiempo que redactarlo a mano: el tono no encaja, falta la factura y la despedida es genérica. Un prompt bien construido, en cambio, devuelve un texto que se envía con retoques mínimos. <strong>Las pymes que adoptan prompting profesional pasan de editar el 50% de la respuesta a editar un 20%</strong>, según los casos de uso publicados por los propios fabricantes.</p>
+                <p>Pongamos números. Cuando un comercial pide a la IA un email de cobro sin contexto, corregir el resultado le lleva casi el mismo tiempo que redactarlo a mano: el tono no encaja, falta la factura y la despedida es genérica. Un prompt bien construido, en cambio, devuelve un texto que se envía con retoques mínimos. <strong>Las pymes que adoptan prompting profesional pasan de editar el 50% de la respuesta a editar un 20%</strong>, según los casos de uso publicados por los propios fabricantes: la <a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" rel="noopener nofollow">guía oficial de prompt engineering de Anthropic</a> y la <a href="https://platform.openai.com/docs" rel="noopener nofollow">documentación de OpenAI</a> explican por qué el contexto explícito y el formato acotado cambian tanto el resultado.</p>
 
                 <p>No es magia ni promesas de ingresos: es aprender a comunicarte con la herramienta como lo haces con tu equipo. Nadie esperaría que un becario redactara un contrato sin instrucciones; con la IA, en cambio, todo el mundo la usa como si leyera la mente. Ahí está el error que vamos a corregir.</p>
 
@@ -392,7 +392,7 @@
 
                 <h3>Error #3: exponer datos sensibles</h3>
                 <p><strong>El problema:</strong> pegar en ChatGPT el listado completo de clientes con nombres, emails y facturas. Las versiones estándar pueden usar tus datos para entrenamiento.</p>
-                <p><strong>La solución:</strong> anonimiza antes de pegar ("cliente A, factura 1.250 €") y reserva los datos reales para las versiones empresariales con garantías de no entrenamiento.</p>
+                <p><strong>La solución:</strong> anonimiza antes de pegar ("cliente A, factura 1.250 €") y reserva los datos reales para las versiones empresariales con garantías de no entrenamiento. El criterio oficial sobre qué datos personales pueden enviarse a una herramienta de IA lo marca la <a href="https://www.aepd.es/" rel="noopener nofollow">AEPD</a> en sus <a href="https://www.aepd.es/preguntas-frecuentes" rel="noopener nofollow">preguntas frecuentes</a>.</p>
 
                 <h3>Error #4: pedir tres tareas a la vez</h3>
                 <p><strong>El problema:</strong> "resume, traduce y dame ideas de mejora" en un solo mensaje. El modelo resuelve mal todas menos una.</p>
@@ -421,7 +421,7 @@
 
                 <h2 id="herramientas">Herramientas y precios para gestionar prompts</h2>
 
-                <p>Una biblioteca de prompts se gestiona en tres fases: primero un documento compartido, luego una herramienta de versionado, y solo si hace falta, una plataforma de gestión completa. Empieza por donde estás, no compres la solución final el primer día.</p>
+                <p>Una biblioteca de prompts se gestiona en tres fases: primero un documento compartido, luego una herramienta de versionado, y solo si hace falta, una plataforma de gestión completa. Empieza por donde estás, no compres la solución final el primer día. En esta guía las tarifas proceden de las páginas oficiales de cada proveedor: <a href="https://openai.com/chatgpt/pricing/" rel="noopener nofollow">precios de ChatGPT</a>, <a href="https://www.anthropic.com/pricing" rel="noopener nofollow">precios de Claude</a>, <a href="https://one.google.com/explore-plan/gemini-advanced" rel="noopener nofollow">planes de Gemini</a>, <a href="https://www.perplexity.ai/pro" rel="noopener nofollow">Perplexity Pro</a>, <a href="https://mistral.ai/" rel="noopener nofollow">Mistral</a> y <a href="https://dify.ai/" rel="noopener nofollow">Dify</a>.</p>
 
                 <h3>Fase 1: el documento compartido</h3>
                 <p>Un Notion, un Google Docs o la wiki interna. Cada plantilla con: versión, objetivo, departamento, ejemplo de salida y fecha de última revisión. Cuesta cero euros y cubre al 80% de las pymes.</p>
@@ -568,8 +568,22 @@
                 <div class="rating-box">
                     <div class="rating-text">
                         <p>El prompt engineering es la habilidad más rentable de la adopción de IA en una pyme: cuesta cero euros, se aprende en días y multiplica el valor de cualquier herramienta que ya estés pagando. No promete ingresos milagrosos: promete que la IA entregue un trabajo que de verdad puedas usar. Empieza hoy con la fórmula rol + contexto + tarea + formato + ejemplo, guarda una plantilla por tarea repetitiva y mide si baja el tiempo de edición. La escalada a few-shot, bibliotecas y sistemas con tus documentos llega sola cuando lo básico funciona.</p>
+                        <p>Un apunte desde nuestra redacción, donde escribimos con estos asistentes todos los días: la plantilla que más nos ahorra tiempo no es la más elegante, es la más aburrida. Tenemos una para cada tipo de ficha de herramienta, y todas llevan la misma línea final —"si no encuentras el dato en la documentación, indícalo y no lo inventes"— porque en nuestro sector los precios cambian cada mes y un dato inventado en un artículo publicado cuesta credibilidad. Nos parece que esa sea la lección general: la parte difícil del prompt engineering no es hacerla larga, es escribir la regla que te protege cuando la respuesta sería cómoda pero falsa.</p>
                     </div>
                 </div>
+
+                <h2 id="fuentes">Fuentes</h2>
+
+                <p>Las técnicas y los precios de esta guía proceden de la documentación pública de los propios fabricantes:</p>
+
+                <ul>
+                    <li><a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" rel="noopener nofollow" target="_blank">Anthropic — guía oficial de prompt engineering</a>: definición de las piezas de un prompt efectivo, uso de ejemplos (few-shot) y recomendaciones de formato, que son la base de la fórmula RCFE de esta guía.</li>
+                    <li><a href="https://platform.openai.com/docs" rel="noopener nofollow" target="_blank">OpenAI — documentación de la plataforma</a> y <a href="https://openai.com/chatgpt/pricing/" rel="noopener nofollow" target="_blank">precios oficiales de ChatGPT</a>.</li>
+                    <li><a href="https://www.anthropic.com/pricing" rel="noopener nofollow" target="_blank">Anthropic — precios oficiales de Claude</a> y <a href="https://one.google.com/explore-plan/gemini-advanced" rel="noopener nofollow" target="_blank">Google — planes de Gemini</a>: origen de las cifras de 17-25 € por usuario y mes de la tabla de herramientas.</li>
+                    <li><a href="https://docs.dify.ai/" rel="noopener nofollow" target="_blank">Dify — documentación oficial</a> (<a href="https://dify.ai/" rel="noopener nofollow" target="_blank">dify.ai</a>): guía de la base de conocimiento y de la gestión de prompts y asistentes que se cita como alternativa al documento compartido.</li>
+                    <li><a href="https://github.com/features/copilot/plans" rel="noopener nofollow" target="_blank">GitHub Copilot — planes oficiales</a> y <a href="https://www.perplexity.ai/pro" rel="noopener nofollow" target="_blank">Perplexity Pro</a>: precios de las dos filas restantes de la comparativa.</li>
+                    <li><a href="https://www.aepd.es/" rel="noopener nofollow" target="_blank">AEPD — Agencia Española de Protección de Datos</a>: criterio oficial sobre anonimización de datos personales antes de introducirlos en una herramienta de IA y sobre los planes de empresa con garantía de no entrenamiento.</li>
+                </ul>
 
                 <div class="related-articles">
                     <h3>Artículos relacionados</h3>
