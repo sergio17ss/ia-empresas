@@ -1,8 +1,8 @@
 # Plan de Contenido — ia-empresas.es
 
 > **Estado:** En progreso  
-> **Última actualización:** 25 septiembre 2026  
-> **Artículos publicados:** 47 / 50  
+> **Última actualización:** 30 septiembre 2026  
+> **Artículos publicados:** 49 / 50  
 > **Objetivo:** 50 artículos (base) — ampliable a más  
 > **Límite operativo (orquestador):** 60 artículos (DEPLOY/IONOS); al llegar a 60, los artículos pasan a RENOVARSE en vez de añadir nuevos.  
 
@@ -143,8 +143,8 @@
 | # | Título | Keyword | Estado |
 |---|--------|---------|--------|
 | 47 | IA para Contadores | ia contadores | ✅ Publicado 2026-09-25 |
-| 48 | IA para Dentistas | ia dentistas | ⬜ Pendiente |
-| 49 | IA para Fotógrafos de Boda | ia fotografia boda | ⬜ Pendiente |
+| 48 | IA para Dentistas | ia dentistas | ✅ Publicado 2026-09-29 |
+| 49 | IA para Fotógrafos de Boda | ia fotografia boda | ✅ Publicado 2026-09-30 |
 | 50 | IA para Entrenadores Personales | ia entrenadores | ⬜ Pendiente |
 
 ---
@@ -156,7 +156,7 @@
 | Fase 1 | 24 | 24 | 0 |
 | Fase 2 | 17 | 16 | 1 |
 | Fase 3 | 9 | 6 | 3 |
-| **TOTAL** | **50** | **47** | **3** |
+| **TOTAL** | **50** | **49** | **1** |
 
 ---
 
