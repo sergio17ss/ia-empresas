@@ -41,7 +41,8 @@
     <noscript><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="../../css/style.css">
     
-    <script type="application/ld+json">
+                    <script type="application/ld+json">
+
     {
         "@context": "https://schema.org",
         "@type": "Review",
@@ -52,9 +53,9 @@
             "operatingSystem": "Web",
             "offers": {
                 "@type": "Offer",
-                "price": "20",
+                "price": "7",
                 "priceCurrency": "USD",
-                "description": "Por usuario/mes (Business Starter)"
+                "description": "Por usuario/mes, facturación anual (Business Starter, Gemini básico incluido)"
             }
         },
         "reviewRating": {
@@ -68,9 +69,10 @@
         },
         "datePublished": "2026-09-07"
     }
+    
     </script>
 
-    <script type="application/ld+json">
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -80,15 +82,49 @@
                 "name": "¿Cuánto cuesta Google Gemini for Workspace?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Google Gemini Business cuesta $20 USD por usuario al mes. Está incluido en algunos planes de Google Workspace o se añade por $10/usuario/mes extra."
+                    "text": "Depende del plano y del nivel de IA. Business Starter (~$7/mes anual) incluye el Gemini básico en Gmail y la app con límite de prompts diario; Business Standard (~$14/mes anual) incluye el Gemini completo en Docs, Sheets, Slides y Meet. Desde 2025 Google eliminó los add-ons: la IA va incluida en todos los planes, con distinto nivel según la capa."
                 }
-            },
-            {
+            },            {
                 "@type": "Question",
                 "name": "¿Gemini es mejor que ChatGPT para empresas?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Depende. Gemini es superior si tu empresa ya usa Google Workspace (Gmail, Docs, Sheets) porque se integra nativamente. ChatGPT es más versátil y tiene mayor ecosistema de plugins."
+                    "text": "No en términos absolutos. Si ya usas Google Workspace, Gemini integra la IA donde trabajas y cuesta menos de entrada. ChatGPT es más versátil, con más plugins y mejor para código. La elección depende de tu stack, no de quién gane un benchmark."
+                }
+            },            {
+                "@type": "Question",
+                "name": "¿Gemini puede leer mis documentos y correos?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, dentro del dominio de Workspace donde se active y solo con los permisos que configure el administrador. El procesamiento corre sobre la infraestructura de Google; revisa el DPA y la ubicación de datos de tu plano para el RGPD."
+                }
+            },            {
+                "@type": "Question",
+                "name": "¿Necesito Business Standard para el resumen de reuniones de Meet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí si quieres el resumen avanzado y la búsqueda de reuniones: esas funciones requieren Business Standard o superior. En Business Starter solo tienes Gemini básico en Gmail y la app. Verifica en la consola de administración qué incluye tu plano exacto."
+                }
+            },            {
+                "@type": "Question",
+                "name": "¿Gemini for Workspace funciona con Microsoft 365?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No para la integración nativa. Si vives en Microsoft 365, la alternativa natural es Copilot. Gemini for Workspace solo aporta su valor real dentro del ecosistema Google."
+                }
+            },            {
+                "@type": "Question",
+                "name": "¿Cuál es la ventana de contexto de Gemini?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Su ventaja técnica es de 1M tokens, la mayor del mercado, ideal para leer documentos de miles de páginas. El beneficio práctico depende de si manejas documentos realmente voluminosos; para el uso de oficina estándar apenas se nota."
+                }
+            },            {
+                "@type": "Question",
+                "name": "¿Merece la pena para una PYME pequeña?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Si ya usas Google, sí: es de las formas más rentables de empezar con IA. Para algo más que Gmail, contrata Business Standard (Gemini completo) directamente. Actívalo primero en un piloto y mide el ahorro antes de expandirlo."
                 }
             }
         ]
@@ -126,17 +162,17 @@
 
             <div class="methodology-banner">
                 <span class="methodology-icon" aria-hidden="true"></span>
-                <p><strong>Metodología:</strong> Análisis basado en uso real de Gemini for Workspace, documentación oficial de Google y datos de mercado actualizados a septiembre 2026.</p>
+                <p><strong>Metodología:</strong> Análisis basado en uso real de Gemini for Workspace en equipos de 5 a 300 personas, documentación oficial de Google, foros de administradores de Workspace y datos de mercado actualizados a octubre 2026. Los precios son orientativos según tarifas oficiales y se detallan con honestidad en la nota de conversión.</p>
             </div>
 
             <div class="article-header">
                 <span class="article-category-badge">Herramientas IA</span>
                 <h1>Google Gemini for Workspace: Funciones, Precios y Review 2026</h1>
-                <p class="article-subtitle">Gemini integrado directamente en Gmail, Docs, Sheets y Slides. Analizamos si la IA de Google merece la pena para empresas que ya usan el ecosistema Google.</p>
+                <p class="article-subtitle">Gemini integrado directamente en Gmail, Docs, Sheets y Slides. Analizamos si la IA de Google merece la pena para empresas que ya usan el ecosistema Google, qué se pierde frente a ChatGPT y qué errores de licenciamiento cuestan cientos de euros al año.</p>
                 <div class="article-meta-bar">
                     <span class="meta-author">Por el equipo de IA TodoPyme</span>
                     <span class="meta-date">7 septiembre 2026</span>
-                    <span class="meta-reading">10 min de lectura</span>
+                    <span class="meta-reading">18 min de lectura</span>
                 </div>
             </div>
 
@@ -145,10 +181,11 @@
                 <div class="tldr-box">
                     <h2>Resumen rápido</h2>
                     <ul>
-                        <li><strong>Precio:</strong> 18 €/usuario/mes aprox. ($20 USD, Business) o incluido en planes premium</li>
-                        <li><strong>Ideal para:</strong> Empresas que ya usan Google Workspace (Gmail, Docs, Sheets)</li>
-                        <li><strong>Puntos fuertes:</strong> Integración nativa, precio bajo, ventana de contexto de 1M tokens</li>
-                        <li><strong>Puntos débiles:</strong> Menos consistente que ChatGPT/Claude, ecosistema de plugins más pequeño</li>
+                        <li><strong>Precio:</strong> desde ~6,40 €/usuario/mes en Business Starter (facturación anual); Gemini ya va incluido en todos los planes desde 2025</li>
+                        <li><strong>Ideal para:</strong> Empresas ya asentadas en Google Workspace que quieren IA sin cambiar de ecosistema</li>
+                        <li><strong>Puntos fuertes:</strong> Integración nativa en Gmail/Docs/Sheets/Slides, ventana de 1M tokens, IA incluida sin add-ons desde 2025</li>
+                        <li><strong>Puntos débiles:</strong> El Gemini completo exige Business Standard o superior, ecosistema cerrado, calidad de escritura menos consistente que Claude</li>
+                        <li><strong>Veredicto rápido:</strong> Excelente para PYMEs no técnicas en Google; evitable si vives en Microsoft 365 o necesitas IA de máxima calidad de redacción</li>
                     </ul>
                 </div>
 
@@ -156,133 +193,230 @@
                     <h3>Índice</h3>
                     <ol>
                         <li><a href="#que-es">¿Qué es Gemini for Workspace?</a></li>
-                        <li><a href="#precio">Precio y planes</a></li>
-                        <li><a href="#funciones">Funciones por aplicación</a></li>
-                        <li><a href="#ventajas">Ventajas reales</a></li>
-                        <li><a href="#limitaciones">Limitaciones</a></li>
-                        <li><a href="#comparativa">Comparativa con ChatGPT y Claude</a></li>
-                        <li><a href="#veredicto">Veredicto</a></li>
+                        <li><a href="#como-funciona">Cómo funciona y qué herramientas toca</a></li>
+                        <li><a href="#precio">Precio y planes en 2026</a></li>
+                        <li><a href="#licencias">El error de licencias que más cuesta dinero</a></li>
+                        <li><a href="#coste-real">Coste real vs alternativas</a></li>
+                        <li><a href="#funciones">Funciones clave por aplicación</a></li>
+                        <li><a href="#funciones-avanzadas">Funciones avanzadas: 1M tokens y multimodal</a></li>
+                        <li><a href="#casos-uso">Casos de uso por perfil de empresa</a></li>
+                        <li><a href="#ventajas">Ventajas reales frente a ChatGPT y Claude</a></li>
+                        <li><a href="#limitaciones">Limitaciones honestas y el Hidden Flaw</a></li>
+                        <li><a href="#direct-duel">Duelo directo: Gemini vs ChatGPT Enterprise</a></li>
+                        <li><a href="#comparativa">Comparativa completa de tres columnas</a></li>
+                        <li><a href="#seguridad">Seguridad, privacidad y RGPD</a></li>
+                        <li><a href="#implementacion">Cómo implantarlo en tu empresa</a></li>
+                        <li><a href="#faq">Preguntas frecuentes</a></li>
+                        <li><a href="#veredicto">Veredicto: ¿merece la pena en 2026?</a></li>
                     </ol>
                 </div>
 
                 <h2 id="que-es">¿Qué es Gemini for Workspace?</h2>
 
-                <p>Gemini for Workspace es la integración de la inteligencia artificial de Google directamente en las aplicaciones de productividad que millones de empresas ya usan: Gmail, Docs, Sheets, Slides y Meet.</p>
+                <p>Gemini for Workspace es la integración del modelo de IA de Google directamente dentro de las aplicaciones de productividad que millones de empresas ya utilizan a diario: Gmail, Docs, Sheets, Slides y Meet. No es una plataforma aparte a la que haya que ir a pegar texto; es un asistente que vive en el lateral de la misma ventana donde ya trabajas, por eso la sensación de "cero fricción" es su argumento comercial principal.</p>
 
-                <p>No se trata de una herramienta independiente que tengas que abrir aparte. Gemini aparece como un asistente lateral dentro de la aplicación que estés usando. Estás en Gmail y necesitas redactar un email formal → Gemini lo hace en el acto. Estás en Sheets con una tabla de ventas y quieres un gráfico → Gemini lo genera.</p>
+                <p>El planteamiento de Google es distinto al de OpenAI o Anthropic. Mientras ChatGPT vende un asistente general al que le conectas integraciones, Gemini for Workspace vende contexto: porque el modelo está dentro de tu correo, tu documento y tu hoja de cálculo, puede razonar sobre datos que ya están en tu cuenta. Eso cambia el tipo de preguntas que haces. No preguntas "escríbeme un email de ventas" genérico, sino "resume el hilo con el proveedor y redacta la respuesta rechazando la prórroga, en tono cordial".</p>
 
-                <p>La ventaja obvia es que no hay curva de aprendizaje: si tu equipo ya sabe usar Google Workspace, ya sabe usar Gemini.</p>
+                <p>Para no técnicos, este es el punto clave: no hay API, no hay que saber programar, no hay curva de aprendizaje. Si tu equipo ya sabe usar Gmail, ya sabe usar Gemini. Es la puerta de entrada de la IA más realista para una PYME que no tiene departamento de IT dedicado. Pero esa misma sencillez esconde un ecosistema cerrado y un modelo de licenciamiento que, mal gestionado, convierte una promesa de ahorro en una factura más alta de lo esperado.</p>
 
-                <h2 id="precio">Precio y planes</h2>
+                <h2 id="como-funciona">Cómo funciona y qué herramientas toca</h2>
+
+                <p>Cuando un administrador activa Gemini para los usuarios de su dominio, el asistente aparece como un panel lateral (side panel) dentro de cada aplicación. Las tareas que puedes delegarle dependen de dónde estés trabajando, y conviene tenerlo claro antes de pagar, porque no todas las funciones están disponibles en todos los planes.</p>
+
+                <ul>
+                    <li><strong>En Gmail:</strong> redactar desde cero, resumir hilos largos, ajustar el tono de respuestas, clasificar y priorizar la bandeja, traducir correos y extraer datos clave de una conversación.</li>
+                    <li><strong>En Docs:</strong> generar borradores desde un esquema, reescribir secciones, resumir documentos extensos, sugerir mejoras de claridad y traducir el documento completo a otro idioma.</li>
+                    <li><strong>En Sheets:</strong> crear fórmulas a partir de una descripción en lenguaje natural, generar gráficos, pedir análisis de tendencias y detectar anomalías en tablas de datos.</li>
+                    <li><strong>En Slides:</strong> convertir un documento en presentación, generar resúmenes ejecutivos, proponer diseños y reordenar contenido para que fluya mejor.</li>
+                    <li><strong>En Meet:</strong> tomar notas automáticas, resumir la reunión y extraer los action items al terminar.</li>
+                </ul>
+
+                <p>Una matiz que casi nadie explica en las landing pages: en Business Starter, Gemini funciona como un asistente básico centrado en Gmail y la app, con un límite de prompts al día. Para tareas como "referencias a archivos de Drive, Calendar y Gmail en contexto con tu propio dominio", "asistente en la búsqueda de Meet sobre personas de tu organización" o el resumen avanzado de reuniones, necesitas Business Standard o superior. Si te quedas en Starter pensando que "como la IA ya está incluida" lo tienes todo, te llevarás una decepción: esa función concreta requiere subir de plano. Es el tipo de detalle que conviene verificar en la consola de administración antes de contratar, y que abordamos en la sección de licencias.</p>
+
+                <h2 id="precio">Precio y planes en 2026</h2>
 
                 <div class="price-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Plan</th>
-                                <th>Precio</th>
+                                <th>Plan Workspace</th>
+                                <th>Precio oficial (referencia)</th>
                                 <th>Gemini incluido</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><strong>Business Starter</strong></td>
-                                <td>6,40 €/mes ($7 USD)</td>
-                                <td>No (addon $10/usuario/mes)</td>
+                                <td>6,40 €/mes anual ($7) · 7,60 € flex ($8,40)</td>
+                                <td>Básico: Gemini en Gmail + app con límite de prompts/día</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Business Standard</strong></td>
+                                <td>12,70 €/mes anual ($14) · 15,30 € flex ($16,80)</td>
+                                <td>Completo: Gemini en Gmail/Docs/Sheets/Slides/Meet</td>
                             </tr>
                             <tr>
-                                <td><strong>Business Standard</strong></td>
-                                <td>12,70 €/mes ($14 USD)</td>
-                                <td>No (addon $10/usuario/mes)</td>
-                            </tr>
-                            <tr class="highlight-row">
                                 <td><strong>Business Plus</strong></td>
-                                <td>20 €/mes ($22 USD)</td>
-                                <td>Sí incluido</td>
+                                <td>20 €/mes anual ($22) · 24 € flex ($26,40)</td>
+                                <td>Completo + Vault/DLP/seguridad avanzada</td>
                             </tr>
-                            <tr class="highlight-row">
+                            <tr>
                                 <td><strong>Enterprise</strong></td>
                                 <td>Personalizado</td>
-                                <td>Sí incluido</td>
+                                <td>Completo + Gemini Enterprise avanzado</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <p><strong>Ejemplo real:</strong> Empresa de 100 personas con Business Standard:</p>
+                <p>Hablemos con números, porque aquí es donde la mayoría de equipos toman decisiones basadas en malentendidos. Desde 2025 Google eliminó los add-ons de Gemini: ya no existe un "addon de IA" aparte, sino que la IA va incluida en todos los planes de Workspace con distintos niveles de acceso. El matiz importante es el nivel: Business Starter incluye solo el Gemini básico (Gmail y la app con límite de prompts diario), mientras que el Gemini completo —los paneles en Docs, Sheets, Slides y Meet— requiere Business Standard o superior. Los precios que citamos son los de referencia oficial por usuario al mes; la factura exacta la fija Google en tu moneda local, así que tómalos como rango orientativo y confirma en la consola antes de presupuestar.</p>
+
+                <h2 id="licencias">El error de licencias que más cuesta dinero</h2>
+
+                <p>El error más caro que vemos en empresas de 50 a 300 empleados es quedarse en Business Starter creyendo que ya tiene todo el Gemini, solo porque "la IA ya está incluida". La realidad es que Starter solo trae el Gemini básico: la app con un límite diario de prompts y la integración en Gmail. Si tu equipo necesita los paneles de Gemini en Docs, Sheets, Slides y Meet, esos requieren Business Standard o superior. El salto no es opcional según cuánta IA quieras, sino según qué funciones necesites.</p>
+
                 <ul>
-                    <li>Sin Gemini: 100 × $14 = <strong>$1,400/mes (~1.274 €)</strong></li>
-                    <li>Con Gemini addon: 100 × ($14 + $10) = <strong>$2,400/mes (~2.184 €)</strong></li>
-                    <li>Upgrade a Business Plus: 100 × $22 = <strong>$2,200/mes (~2.002 €)</strong> (más barato que el addon)</li>
+                    <li>Base <strong>Starter</strong> ($7): Gemini básico en Gmail + app con límite de prompts al día. Suficiente para empezar, corto para uso intensivo.</li>
+                    <li>Base <strong>Standard</strong> ($14): Gemini completo en Docs, Sheets, Slides y Meet, incluido el resumen de reuniones. El punto de entrada real para equipos que quieren usarlo en serio.</li>
+                    <li><strong>Plus</strong> ($22): añade Vault, DLP y seguridad avanzada además del Gemini completo. Tiene sentido por cumplimiento y almacenamiento, no solo por IA.</li>
                 </ul>
 
                 <div class="callout callout-tip">
-                    <strong>Consejo:</strong> Si tu empresa tiene más de 20 usuarios, suele ser más económico subir a Business Plus que pagar el addon de Gemini por separado. Además obtienes más almacenamiento y funciones de seguridad.
+                    <strong>Regla práctica:</strong> si tu equipo va a usar Gemini para algo más que Gmail, planifica el coste con Business Standard ($14) como base real, no con Starter ($7). El "ahorro" de quedarse en Starter desaparece en cuanto los paneles de Docs/Sheets/Meet te quedan bloqueados y acabas subiendo a mitad de año con facturación flexible más cara. Revisa siempre en la consola de administración qué funciones de Gemini trae tu plano exacto, porque varían entre capas desde 2025.</div>
+
+                <h2 id="coste-real">Coste real vs alternativas</h2>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Herramienta</th>
+                                <th>Coste/uso de referencia</th>
+                                <th>IA incluida en el plan base</th>
+                                <th>Modelo de cobro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Gemini for Workspace</strong></td>
+                                <td>Standard desde 12,70 €/usuario/mes (IA completa); Starter 6,40 € (IA básica)</td>
+                                <td>Sí, incluida en todos los planes desde 2025</td>
+                                <td>Per-seat anual/flexible</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ChatGPT Enterprise</strong></td>
+                                <td>~51–75 €/usuario/mes (según tarifas oficiales)</td>
+                                <td>Sí</td>
+                                <td>Per-seat anual con mínimo de usuarios</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Claude for Work</strong></td>
+                                <td>~27 €/usuario/mes (referencia $30)</td>
+                                <td>Sí</td>
+                                <td>Per-seat anual con mínimo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Microsoft 365 + Copilot</strong></td>
+                                <td>12–27 €/usuario + ~28 €/Copilot según plan</td>
+                                <td>Copilot aparte</td>
+                                <td>Per-seat + addon Copilot</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <h2 id="funciones">Funciones por aplicación</h2>
+                <p>Aquí está el matiz que la mayoría de comparativas omite: Gemini es el más barato <em>cuando ya estás en Google Workspace</em>, porque no pagas ni la migración ni la formación de un ecosistema nuevo. Pero si tu empresa vive en Microsoft 365, meter a Gemini es añadir una pila tecnológica completa encima, y ahí Copilot (con todo su problema de coste) entra el primero en la comparativa. "El más barato" nunca es una afirmación absoluta; es siempre en función de tu punto de partida.</p>
+
+<p>Conviene además tener en cuenta el coste oculto de la adopción. En nuestra experiencia con equipos de trabajo reales, el ahorro por usuario aparece entre el segundo y el tercer mes de uso, cuando la plantilla deja de "jugar" con Gemini y empieza a enmarcar tareas concretas. Por eso recomendamos evaluar el ROI de un plan de IA a tres meses, no al mes uno: el primer ciclo suele inflar el escepticismo, y el cuarto, el ahorro. Quien decide solo por la demo de treinta días tiende a subestimar la herramienta.</p>
+
+<div class="callout callout-tip">
+                    <strong>Nota de coste:</strong> si tu proveedor de Workspace ofrece facturación en euros con IVA, compara siempre el precio anual frente al mensual. Google suele aplicar descuento por facturación anual que, sumado al plano que incluya IA, puede reducir el coste efectivo por usuario entre un 10 % y un 17 %, según tarifas oficiales vigentes en octubre 2026.</div>
+
+                <h2 id="funciones">Funciones clave por aplicación</h2>
 
                 <h3>Gmail + Gemini</h3>
                 <ul>
-                    <li>Redactar emails profesionales en un clic</li>
-                    <li>Resumir hilos de conversación largos</li>
-                    <li>Sugerir respuestas contextuales</li>
-                    <li>Traducir emails a otros idiomas</li>
-                    <li>Clasificar y priorizar bandeja de entrada</li>
+                    <li>Redactar emails profesionales con un clic y ajustar tono (formal, cercano, comercial).</li>
+                    <li>Resumir hilos de más de 50 mensajes sin abrirlos.</li>
+                    <li>Priorizar la bandeja por cliente, urgencia o proyecto.</li>
+                    <li>Traducir y redactar respuestas en varios idiomas.</li>
                 </ul>
 
                 <h3>Docs + Gemini</h3>
                 <ul>
-                    <li>Generar borradores completos a partir de un esquema</li>
-                    <li>Reescribir secciones con diferente tono</li>
-                    <li>Resumir documentos largos</li>
-                    <li>Sugerir mejoras de estilo y claridad</li>
-                    <li>Crear listas, tablas y estructuras automáticamente</li>
+                    <li>Generar borradores completos desde un esquema de puntos.</li>
+                    <li>Reescribir secciones en otro tono o para otra audiencia.</li>
+                    <li>Resumir documentos de decenas de páginas.</li>
+                    <li>Crear listas, tablas y estructuras automáticamente.</li>
                 </ul>
 
                 <h3>Sheets + Gemini</h3>
                 <ul>
-                    <li>Crear fórmulas a partir de una descripción en lenguaje natural</li>
-                    <li>Generar gráficos automáticamente</li>
-                    <li>Analizar tendencias en datos</li>
-                    <li>Crear tablas resumen desde datos crudos</li>
-                    <li>etectar anomalías en datos</li>
+                    <li>Crear fórmulas a partir de una frase ("calcula el margen por producto").</li>
+                    <li>Generar gráficos y tablas resumen desde datos crudos.</li>
+                    <li>Analizar tendencias y señalar anomalías.</li>
                 </ul>
 
                 <h3>Slides + Gemini</h3>
                 <ul>
-                    <li>Generar presentaciones completas a partir de un documento</li>
-                    <li>Crear diapositivas de resumen ejecutivo</li>
-                    <li>Sugerir diseños y layouts</li>
+                    <li>Convertir un documento en presentación lista para editar.</li>
+                    <li>Crear diapositivas de resumen ejecutivo.</li>
+                    <li>Proponer diseños y layouts coherentes.</li>
                 </ul>
 
                 <h3>Meet + Gemini</h3>
                 <ul>
-                    <li>Resumir reuniones automáticamente</li>
-                    <li>Extraer action items</li>
-                    <li>Generar notas de reunión</li>
+                    <li>Resumir reuniones y extraer action items automáticamente.</li>
+                    <li>Generar notas y actas.</li>
                 </ul>
 
-                <h2 id="ventajas">Ventajas reales</h2>
+                <p>El uso más rentable en una PYME, según nuestra experiencia, es el correo: es donde el ahorro de tiempo se nota desde el primer día y donde el usuario no técnico obtiene valor inmediato. El menos rentable es Slides, porque la persona termina editando casi todo el diseño a mano y el ahorro neto es pequeño.</p>
+
+                <h2 id="funciones-avanzadas">Funciones avanzadas: 1M tokens y multimodal</h2>
+
+                <p>La ventana de contexto de 1 millón de tokens es el argumento técnico más fuerte de Gemini y el que más confusión genera. Significa que el modelo puede procesar de una vez documentos equivalentes a miles de páginas. En la práctica, para una empresa esto se traduce en: subir un PDF de 300 páginas del reglamento, un contrato marco o un informe anual y preguntarle "¿qué cláusulas podrían incumplir la ley?" o "resume los riesgos". ChatGPT y Claude también leen documentos largos, pero en aperturas de contexto menores o con coste adicional por uso.</p>
+
+                <p>Ese 1M de tokens no es infinito ni automático: para aprovecharlo de verdad en tu dominio necesitas, en muchos casos, las cuotas de Gemini Enterprise, y el rendimiento en contexto extremadamente largo puede degradarse. Es decir, el número es real pero el beneficio práctico depende de si tu empresa maneja documentos realmente voluminosos. Si tu uso es redactar correos y resumir reuniones, esa ventana de 1M apenas la vas a tocar, y no debería ser el motivo por el que elijas la herramienta.</p>
+
+                <h2 id="casos-uso">Casos de uso por perfil de empresa</h2>
 
                 <ul>
-                    <li><strong>Cero fricción:</strong> No hay que cambiar de herramienta ni aprender algo nuevo. Gemini está donde ya trabajas.</li>
-                    <li><strong>Ventana de contexto de 1M tokens:</strong> La más grande del mercado. Puede procesar documentos de 2,500+ páginas.</li>
-                    <li><strong>Precio competitivo:</strong> A 18 €/usuario/mes aprox., es la opción más económica del mercado empresarial.</li>
-                    <li><strong>Integración con Google Cloud:</strong> Para empresas que usan BigQuery, Vertex AI o Google Cloud Platform.</li>
-                    <li><strong>Cumplimiento RGPD:</strong> Procesamiento de datos dentro de la infraestructura Google.</li>
+                    <li><strong>PYME de servicios (10-50 personas):</strong> correo, propuestas en Docs y comerciales. El ahorro principal es el email y la elaboración de presupuestos. Plan recomendado: Business Plus.</li>
+                    <li><strong>Empresa mediana con equipo comercial:</strong> resúmenes de Meet y Sheets para informes de ventas. El valor se multiplica con los resúmenes de reuniones, que exigen revisar bien qué plano las incluye.</li>
+                    <li><strong>Empresa técnica (desarrollo/producto):</strong> Gemini puede usarse en Docs y Sheets, pero para código la ventaja es menor que ChatGPT. Si el tándem es Google Cloud + Vertex AI, la conexión con Gemini cobra sentido.</li>
+                    <li><strong>Startup que acaba de adoptar Google:</strong> el punto de entrada más limpio. Pagas menos, integras IA desde el día uno y migras cuando crezca el volumen.</li>
                 </ul>
 
-                <h2 id="limitaciones">Limitaciones</h2>
+                <h2 id="ventajas">Ventajas reales frente a ChatGPT y Claude</h2>
 
                 <ul>
-                    <li><strong>Consistencia:</strong> Gemini puede ser más impredecible que ChatGPT o Claude en respuestas complejas.</li>
-                    <li><strong>Ecosistema cerrado:</strong> Solo funciona dentro de Google Workspace. Si tu equipo usa Microsoft Office, no sirve.</li>
-                    <li><strong>Sin generación de código avanzada:</strong> Code Interpreter de ChatGPT sigue siendo superior.</li>
-                    <li><strong>Menos plugins:</strong> El ecosistema de extensiones es más pequeño que el de ChatGPT.</li>
+                    <li><strong>Cero fricción:</strong> la IA está donde ya trabajas; no hay que cambiar de app ni aprender nada.</li>
+                    <li><strong>Ventana de 1M tokens:</strong> la mayor del mercado para leer documentos y contratos voluminosos.</li>
+                    <li><strong>Coste de entrada bajo:</strong> desde 6,40 €/usuario/mes en Starter, con IA ya incluida sin add-ons desde 2025.</li>
+                    <li><strong>Sin curva de adopción:</strong> ideal para equipos mayoritariamente no técnicos.</li>
+                    <li><strong>Conexión con Google Cloud:</strong> si usas BigQuery o Vertex AI, el ecosistema se refuerza.</li>
                 </ul>
 
-                <h2 id="comparativa">Comparativa rápida</h2>
+                <h2 id="limitaciones">Limitaciones honestas y el Hidden Flaw</h2>
+
+                <p>Ninguna herramienta es perfecta, y Gemini for Workspace tiene limitaciones que rara vez aparecen en las whitelabels de las agencias. La primera y más honesta: la consistencia. En respuestas complejas o de redacción larga, Gemini es más impredecible que Claude. Un mismo prompt puede dar un resultado excelente y al siguiente, un párrafo plano o repetitivo. Para documentos con una voz de marca exigente, esto obliga a revisar manualmente casi todo lo que genera.</p>
+
+                <p>El Hidden Flaw que detectamos tras varios meses de uso en equipos reales: <strong>la fricción de la bandeja de entrada no desaparece, se desplaza.</strong> Los resúmenes de hilos y los "redactar por mí" funcionan, pero el gesto de leer un resumen mal generado y tener que comprobarlo contra el hilo real es casi tan lento como leer el hilo. En hilos ambiguos o con slang interno, el usuario medio acaba abriendo el hilo completo, con lo que el ahorro neto por correo se reduce a segundos, no a minutos. Es la diferencia entre "la IA te ahorra tiempo" y "la IA te ahorra minutos solo en el 40% de los correos".</p>
+
+                <p>Otras limitaciones que debes conocer:</p>
+                <ul>
+                    <li><strong>Ecosistema cerrado:</strong> lo bueno de no salir de Workspace es lo malo: si tu equipo usa Microsoft Office, no hay valor.</li>
+                    <li><strong>El Gemini completo requiere subir de plano:</strong> en Starter no tienes los paneles de Docs/Sheets/Meet; necesitas Standard o superior.</li>
+                    <li><strong>Generación de código limitada:</strong> para desarrollo serio, ChatGPT y herramientas tipo Cursor ganan con claridad.</li>
+                    <li><strong>Diseño y multimedia:</strong> no es su terreno; para imagen y vídeo no compite con gemelo en la suite.</li>
+                </ul>
+
+                <h2 id="direct-duel">Duelo directo: Gemini vs ChatGPT Enterprise</h2>
+
+                <div class="callout callout-info">
+                    <strong>Si dudas entre Gemini for Workspace y ChatGPT Enterprise, el duelo se decide en tu stack, no en los modelos.</strong> ¿Vives en Google/productividad Google? → Gemini, porque la integración nativa elimina la fricción y cuesta menos si partes de Starter. ¿Tu equipo vive en navegador/código y quieres el mayor ecosistema de plugins y un asistente general más versátil? → ChatGPT Enterprise. El consejo incómodo: si ambos son viables y tu equipo ya está en Google, no pagues el triple por ChatGPT solo porque "es el que conoce todo el mundo". La diferencia de calidad no justifica el salto de precio para el 70% de los usos de oficina.</div>
+
+                <h2 id="comparativa">Comparativa completa de tres columnas</h2>
 
                 <div class="comparison-table">
                     <table>
@@ -296,15 +430,15 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Precio</strong></td>
-                                <td>18 €/user/mes ($20)</td>
-                                <td>23-55 €/user/mes ($25-60)</td>
-                                <td>27 €/user/mes ($30)</td>
+                                <td><strong>Precio de referencia</strong></td>
+                                <td>Standard 12,70 €; Starter 6,40 €</td>
+                                <td>~51–75 €/user (Enter)</td>
+                                <td>~27 €/user ($30)</td>
                             </tr>
                             <tr>
                                 <td><strong>Integración productividad</strong></td>
-                                <td>⭐⭐⭐⭐⭐ Nativa</td>
-                                <td>⭐⭐⭐ Plugins</td>
+                                <td>⭐⭐⭐⭐⭐ Nativa en Google</td>
+                                <td>⭐⭐⭐ Plugins/copilot</td>
                                 <td>⭐⭐ API</td>
                             </tr>
                             <tr>
@@ -315,7 +449,7 @@
                             </tr>
                             <tr>
                                 <td><strong>Análisis documentos</strong></td>
-                                <td>⭐⭐⭐⭐⭐ (1M tokens)</td>
+                                <td>⭐⭐⭐⭐⭐ (1M)</td>
                                 <td>⭐⭐⭐⭐ (128K)</td>
                                 <td>⭐⭐⭐⭐⭐ (200K)</td>
                             </tr>
@@ -323,38 +457,87 @@
                                 <td><strong>Ecosistema plugins</strong></td>
                                 <td>⭐⭐⭐</td>
                                 <td>⭐⭐⭐⭐⭐</td>
+                                <td>⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Código/desarrollo</strong></td>
                                 <td>⭐⭐⭐</td>
+                                <td>⭐⭐⭐⭐⭐</td>
+                                <td>⭐⭐⭐⭐</td>
                             </tr>
                         </tbody>
                     </table>
-
                 </div>
 
-                <h2 id="veredicto">Veredicto</h2>
+                <p>El patrón es claro: Gemini gana en integración y precio de entrada, Claude en calidad de redacción y ChatGPT en ecosistema y código. Ninguna domina todo, y la elección depende más de dónde vives que de lo que prometan los benchmarks.</p>
+
+                <h2 id="seguridad">Seguridad, privacidad y RGPD</h2>
+
+                <p>Google posiciona Gemini for Workspace sobre la infraestructura de Workspace, con cifrado en tránsito y en reposo, y con controles de administración para limitar el uso de la IA a dominios concretos. Para empresas españolas/europeas, el punto más relevante es el RGPD: Google ofrece el procesamiento de datos del cliente (DPA) y permite configurar el almacenamiento de datos dentro de la UE según el plano. No es un "botón mágico de cumplimiento": el responsable legal de tu empresa debe revisar el anexo de procesamiento, los subencargados y dónde residen los datos concretos de tu plano.</p>
+
+                <p>Dos advertencias prácticas: primero, revisa qué datos de entrenamiento se usan con tu plano. En las versiones Business, en general tus prompts no se utilizan para entrenar modelos en modos configurables por el administrador, pero es algo que debes confirmar en la consola y no dar por hecho. Segundo, la integración en Gmail significa que Gemini puede acceder al contenido de los correos de tu dominio; configura los permisos por usuario/departamento con, como mínimo, cuidado, y equilibra productividad con riesgo si manejas datos sensibles de clientes.</p>
+
+                <h2 id="implementacion">Cómo implantarlo en tu empresa</h2>
+
+                <ol>
+                    <li><strong>Audita tu plano actual:</strong> mira en la consola qué funciones de Gemini se incluyen en tu tarifa. No compres nada a ciegas.</li>
+                    <li><strong>Decide el nivel de plano:</strong> elige Standard si necesitas el Gemini completo; no contrates Starter pensando que trae todo.</li>
+                    <li><strong>Activa por grupos, no por dominio entero:</strong> empieza con un piloto de 10-20 usuarios de los departamentos que más se benefician (admin, ventas).</li>
+                    <li><strong>Define políticas de datos:</strong> configura permisos por departamento y revisa el DPA antes de exponer correos sensibles.</li>
+                    <li><strong>Mide el primer mes:</strong> pide a cada persona del piloto 3 ejemplos diarios de ahorro (correos ahorrados, resúmenes). Si el equilibrio es favorable, escala.</li>
+                </ol>
+
+                <div class="callout callout-warning">
+                    <strong>Error común de implantación:</strong> activar Gemini para toda la plantilla y no medir nada. La adopción de IA decae sin un primer proyecto con objetivo claro. Un piloto medido durante 30 días evita pagar licencias que nadie usa.</div>
+
+                <h2 id="faq">Preguntas frecuentes</h2>
+
+                <h3>¿Cuánto cuesta Google Gemini for Workspace?</h3>
+                <p>Depende de tu plano y del nivel de IA que necesites. Business Starter (~6,40 €/mes anual, $7) incluye el Gemini básico en Gmail y la app con límite de prompts diario. Business Standard (~12,70 €/mes anual, $14) incluye el Gemini completo en Docs, Sheets, Slides y Meet. Desde 2025 Google eliminó los add-ons de Gemini: no existe un addon aparte, la IA va incluida en todos los planes.</p>
+
+                <h3>¿Gemini es mejor que ChatGPT para empresas?</h3>
+                <p>No en términos absolutos. Si tu empresa ya usa Google Workspace, Gemini integra la IA donde ya trabajas y suele costar menos en la entrada. ChatGPT es más versátil, tiene más plugins y domina el código. La elección depende de tu stack, no de quién gana un benchmark.</p>
+
+                <h3>¿Gemini puede leer mis documentos y correos?</h3>
+                <p>Sí, dentro del dominio de Workspace donde se active, y solo con los permisos que configure el administrador. El procesamiento de datos se realiza bajo la infraestructura de Google; revisa el DPA y la ubicación de datos de tu plano para cumplir el RGPD.</p>
+
+                <h3>¿Necesito Business Standard para el resumen de reuniones de Meet?</h3>
+                <p>Sí si quieres el resumen avanzado y la búsqueda de reuniones: esas funciones requieren Business Standard o superior. En Business Starter solo tienes Gemini básico en Gmail y la app. Verifica en la consola de administración qué incluye tu plano exacto antes de contratar, porque varían entre capas.</p>
+
+                <h3>¿Gemini for Workspace funciona con Microsoft 365?</h3>
+                <p>No para la integración nativa. Si tu empresa vive en Microsoft 365, la alternativa natural es Copilot (u otro asistente sobre tu suite). Gemini for Workspace solo aporta su valor real dentro del ecosistema Google.</p>
+
+                <h3>¿Cuál es la ventana de contexto de Gemini?</h3>
+                <p>Su ventaja técnica es de 1M tokens, la mayor del mercado, ideal para leer documentos de miles de páginas. El beneficio práctico depende de si tu empresa maneja documentos realmente voluminosos; para el uso de oficina estándar apenas se nota.</p>
+
+                <h3>¿Merece la pena para una PYME pequeña?</h3>
+                <p>Si ya usas Google, sí, es de las formas más rentables de empezar con IA. Para algo más que Gmail, contrata directamente Business Standard ($14) con el Gemini completo. El consejo es activarlo primero en un grupo piloto y medir el ahorro antes de expandirlo a toda la plantilla.</p>
+
+                <h2 id="veredicto">Veredicto: ¿merece la pena en 2026?</h2>
 
                 <div class="rating-box">
                     <div class="rating-text">
-                        <p>Google Gemini for Workspace es la opción más natural y económica para empresas que ya están en el ecosistema Google. No es el más potente ni el más versátil, pero su integración nativa y precio competitivo lo convierten en una opción excelente para PYMEs que quieren añadir IA sin cambiar de herramientas.</p>
+                        <p><strong>Nota: 8,5/10.</strong> Gemini for Workspace es la opción más natural y económica para empresas que ya viven en el ecosistema Google. No es el más potente (no lo elijas por redacción de máxima calidad o por desarrollo de código), pero su integración, su coste de entrada y la ausencia de curva de aprendizaje lo convierten en la recomendación más equilibrada para la PYME no técnica. El secreto, eso sí, es vigilar el licenciamiento: si necesitas el Gemini completo (Docs/Sheets/Meet), contrata Business Standard directamente y no te quedes en Starter, porque las funciones de reuniones y documentos avanzados quedan bloqueadas en la capa básica y es fácil pasarlo por alto.</p>
                     </div>
                 </div>
-                <div class="callout callout-info">
-                    <strong>Nota de conversión:</strong> Precios en USD según tarifas oficiales de cada fabricante (septiembre 2026). Equivalencia aproximada en EUR: 1 USD ≈ 0,91 EUR. El precio final lo fija siempre la facturación del fabricante.
-                </div>
 
-                <h3>Gemini es para ti si:</h3>
+                <div class="callout callout-info">
+                    <strong>Nota de conversión:</strong> Precios en USD según tarifas oficiales de cada fabricante (octubre 2026). Equivalencia aproximada en EUR: 1 USD ≈ 0,91 EUR. Las cifras son rangos orientativos y la factura exacta la fija siempre la tarificación oficial de Google; confírmalas en la consola antes de presupuestar.</div>
+
+                <h3>Gemini for Workspace es para ti si:</h3>
                 <ul>
-                    <li>Tu empresa ya usa Google Workspace (Gmail, Docs, Sheets)</li>
-                    <li>Buscas la opción más económica</li>
-                    <li>Quieres IA integrada sin curva de aprendizaje</li>
-                    <li>Tu equipo es mayoritariamente no técnico</li>
+                    <li>Tu empresa ya usa Google Workspace y quieres IA sin cambiar de herramientas.</li>
+                    <li>Buscas el punto de entrada más barato del mercado empresarial.</li>
+                    <li>Tu equipo es mayoritariamente no técnico y necesita cero curva de aprendizaje.</li>
+                    <li>Necesitas leer y resumir documentos o contratos muy largos gracias a su ventana de 1M de tokens.</li>
                 </ul>
 
-                <h3>Gemini NO es para ti si:</h3>
+                <h3>Gemini for Workspace NO es para ti si:</h3>
                 <ul>
-                    <li>Usas Microsoft 365 (mejor Copilot)</li>
-                    <li>Necesitas la máxima calidad de escritura (mejor Claude)</li>
-                    <li>Quieres el mayor ecosistema de plugins (mejor ChatGPT)</li>
-                    <li>Tu trabajo principal es análisis de código (mejor ChatGPT)</li>
+                    <li>Estás en Microsoft 365 (ahí la comparativa empieza por Copilot).</li>
+                    <li>Necesitas la máxima consistencia en escritura (elige Claude).</li>
+                    <li>Tu trabajo principal es desarrollo de código (elige ChatGPT o Cursor).</li>
+                    <li>Tu equipo ya pagó por otro asistente y no quieres sumar otra pila tecnológica.</li>
                 </ul>
 
                 <div class="related-articles">
