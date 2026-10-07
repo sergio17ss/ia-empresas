@@ -72,34 +72,7 @@
     }
     </script>
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "SoftwareApplication",
-            "name": "Herramientas de IA para Contadores",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web",
-            "offers": {
-                "@type": "Offer",
-                "price": "13",
-                "priceCurrency": "EUR",
-                "description": "Desde 13 €/mes en planes de un usuario (Quipu con IA) hasta paquetes profesionales para asesorías (a3innuva, Kabilio)"
-            }
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "4.2",
-            "bestRating": "5"
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "IA TodoPyme"
-        },
-        "datePublished": "2026-09-25"
-    }
-    </script>
+    
 
     <script type="application/ld+json">
     {
@@ -111,7 +84,7 @@
                 "name": "¿Qué IA usan los contadores y asesorías en España en 2026?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Según el Barómetro de la Asesoría de Wolters Kluwer publicado en junio de 2026, siete de cada diez despachos profesionales españoles ya utilizan IA en su trabajo diario. Los usos más extendidos son el reconocimiento automático de facturas (OCR), la conciliación bancaria y la generación de pre-asientos contables (Quipu Genius AI, Holded, a3innuva de Wolters Kluwer, Kabilio), la preparación de borradores de modelos fiscales y los asistentes generales (ChatGPT, Copilot, Claude) para resúmenes y primeros borradores. La revisión humana final sigue siendo obligatoria por responsabilidad profesional."
+                    "text": "Los usos consolidados en el despacho español son cuatro: el reconocimiento automático de facturas y tickets, que extrae proveedor, NIF, base imponible, IVA y concepto; la propuesta de pre-asiento contable sobre el plan de cuentas ya aprendido; la conciliación bancaria con propuesta de contrapartida; y el borrador de los modelos fiscales. Los asistentes generalistas (ChatGPT, Claude, Copilot) se usan encima, para resumir, redactar y contrastar. El Barómetro de la Asesoría de Wolters Kluwer, en su quinta edición de junio de 2026, estima que siete de cada diez despachos profesionales españoles ya usan IA en su día a día, y el INE situaba en el primer trimestre de 2025 el uso de IA en el 21,1% de las Empresas de 10 o más empleados. La revisión humana final sigue siendo obligatoria por responsabilidad Profesional."
                 }
             },
             {
@@ -119,7 +92,15 @@
                 "name": "¿Cuánto cuesta la IA para un despacho contable?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Un contador autónomo puede empezar con Quipu y su asistente Genius AI por unos 13-17 € al mes según tarifa y promoción, o con un asistente general como ChatGPT Plus o Claude Pro por unos 18 € al mes. Una pyme que usa Holded con contabilidad incluida parte de unos 29 € al mes. Un despacho profesional que trabaja sobre software clásico como a3asesor o a3innuva (Wolters Kluwer) o automatiza su cartera con Kabilio paga rangos de mercado de 100-400 € mensuales según módulos y volumen de documentos. Todos los precios son orientativos y sin IVA."
+                    "text": "Un contador autónomo puede empezar por unos 31 € al mes sumando Quipu Starter, desde 13 €/mes, y un asistente individual como ChatGPT Plus o Claude Pro, 20 US$/mes. Una asesoría pequeña se mueve entre 60 y 200 € al mes: un gestor de 25-50 € más los asientos de asistente del equipo. Un despacho con sociedades y nóminas que trabaja sobre suite Profesional, a3asesor o a3innuva, y añade un automatizador por volumen se sitúa en el orden de 300 a 700 € al mes. Para las cifras cerradas de cada fabricante, mira la tabla de precios: los rangos de las suites profesionales y de los automatizadores por volumen no tienen tarifa pública y hay que confirmarlos con el fabricante."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuántas horas ahorra de verdad y cuándo se amortiza la licencia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depende de una sola variable que ningún fabricante pública: los minutos que la herramienta ahorra en cada documento. La ecuación es coste anual igual a 12 por la suma de licencias, y horas recuperadas igual a documentos por minutos ahorrados dividido entre 60. Si divides el coste anual entre las horas recuperadas al año obtienes tu precio de equilibrio: la tarifa por hora a partir de la cual la licencia da dinero. En los escenarios ilustrativos de este artículo ese umbral va de unos 10 € por hora en una asesoría pequeña a unos 25 € por hora en un despacho unipersonal. Mide tus propios minutos durante un trimestre antes de renovar nada."
                 }
             },
             {
@@ -127,15 +108,15 @@
                 "name": "¿Es legal subir facturas y datos de clientes a ChatGPT o Copilot?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Nunca en cuentas gratuitas o personales. Una factura contiene datos personales que la AEPD, en su decálogo 'Cuidado con lo que le confIAs' (enero 2026), pide explícitamente no compartir con herramientas de IA: nombre, dirección, DNI, datos financieros y contractuales. Solo se debe hacer con planes empresariales que garanticen contractualmente que los datos no se usan para entrenar modelos y con una política de retención clara. En el tratamiento de datos contables, el responsable último es siempre el despacho."
+                    "text": "En cuentas gratuitas o personales, no. La factura contiene datos personales, nombre, dirección, NIF, datos económicos y contractuales, y la AEPD, en su decálogo «Cuidado con lo que le confías» de enero de 2026, pide expresamente no compartirlos con herramientas de IA. Sí es viable con planes empresariales, que garantizan contractualmente que el contenido no se usa para entrenar, y con un encargo de tratamiento conforme al RGPD donde se concrete quién actúa como responsable y quién como encargado. El despacho sigue siendo el responsable último: la RGPD no se delega en el contrato con el proveedor."
                 }
             },
             {
                 "@type": "Question",
-                "name": "¿Debe mi software de facturación cumplir Verifactu?",
+                "name": "¿Debe mi software de facturación cumplir VERI*FACTU?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Sí, la mayoría de obligados debe tener su sistema informático de facturación adaptado al Reglamento VERI*FACTU (Real Decreto 1007/2023): el 1 de enero de 2027 para contribuyentes del Impuesto sobre Sociedades y el 1 de julio de 2027 para el resto, según el calendario vigente tras el Real Decreto-ley 15/2025. Si eliges software con IA en 2026, lo razonable es que ya esté adaptado, para no migrar un año después. La AEAT ofrece además una aplicación gratuita de facturación para profesionales con baja facturación."
+                    "text": "Si el programa expide facturas, sí. El Reglamento VERI*FACTU, aprobado por el Real Decreto 1007/2023, obliga a que el sistema informático de facturación genere, guarde o remita el registro de facturación con huella digital, encadenado al registro anterior y con firma electrónica, e incluya el código QR. La entrada en vigor obligatoria es el 1 de enero de 2027 para contribuyentes del Impuesto sobre Sociedades y el 1 de julio de 2027 para el resto, según la disposición final cuarta modificada por el Real Decreto-ley 15/2025. Antes de esas fechas el periodo es de pruebas y se puede facturar con un sistema antiguo. La AEAT pública además una aplicación gratuita para profesionales con baja facturación."
                 }
             },
             {
@@ -143,7 +124,7 @@
                 "name": "¿Puede la IA sustituir a un contable?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "No. La IA acelera las tareas repetitivas y estructuradas (lectura de facturas, conciliaciones, borradores de asientos y de modelos), pero la interpretación de operaciones atípicas, el criterio de valoración contable y la responsabilidad profesional siguen recayendo en la persona. El Consejo General de Economistas ha impulsado en 2026 la formación gratuita de sus colegiados en IA junto a Microsoft y Founderz, y la propia profesión acepta que la supervisión humana es innegociable. El contable que usa IA deja de registrar y se dedica a asesorar."
+                    "text": "No, y no por una cuestión técnica sino de responsabilidad. La IA acelera lo estructurado y repetible: leer el documento, proponer la cuenta, cuadrar el banco, rellenar el borrador. No puede decidir el criterio de valoración de una operación atípica, defender un criterio ante una inspección ni responder por la firma. El resultado esperado no es menos personal contable, es el mismo equipo con el tiempo reasignado: de registrar documentos a asesorar. El Consejo General de Economistas impulsó en 2026 la formación gratuita de sus colegiados en IA junto a Microsoft y Founderz, y la supervisión humana es la frontera que la profesión no está dispuesta a mover."
                 }
             },
             {
@@ -151,7 +132,15 @@
                 "name": "¿Qué riesgo tiene que la AEAT use IA para el control fiscal?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "El Plan Anual de Control Tributario y Aduanero 2026, publicado en marzo de 2026, consolida el uso de inteligencia artificial y análisis masivo de datos para seleccionar riesgos fiscales, cruzar información de facturas (VERI*FACTU, SII) y detectar tramas de facturación irregular. Eso significa que los datos que el despacho soporta digitalmente se contrastan con programas de análisis automatizado. La gestión ordenada, trazable y con conciliaciones al día deja de ser una buena práctica y se convierte en la única defensa eficaz ante un control predictivo."
+                    "text": "El Plan Anual de Control Tributario y Aduanero 2026 consolida el uso de inteligencia artificial y el análisis masivo de datos para seleccionar riesgos, cruzar información de facturación, con el SII y VERI*FACTU como fuentes, y detectar tramas irregulares. La consecuencia práctica es que los datos que tu despacho soporta de forma digital acaban cruzados por programas automatizados. La defensa no es una declaración, es una contabilidad con registros íntegros, trazables y sin omisiones, que es exactamente lo que el Reglamento VERI*FACTU obliga a garantizar en los sistemas de facturación."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué pasa con el AI Act en un despacho contable?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Reglamento (UE) 2024/1689 no certifica herramientas ni proveedores, y ni su anexo III ni el artículo 6.3 enumeran los servicios de gestión contable o de asesoramiento fiscal: usar IA para contabilizar no convierte por sí solo al despacho en un sistema de alto riesgo. Lo que sí tiene calendario es la alfabetización en IA del artículo 4, en vigor desde el 2 de febrero de 2025, y la transparencia del artículo 50, aplicable desde el 2 de agosto de 2026, que obliga a declarar el carácter generado por IA de los contenidos y a informar cuando una persona está hablando con un sistema. El resto del calendario, aplicación general y alto riesgo el 2 de agosto de 2027, exige seguimiento, no un rediseño inmediato."
                 }
             }
         ]
@@ -189,18 +178,18 @@
 
             <div class="methodology-banner">
                 <span class="methodology-icon" aria-hidden="true"></span>
-                <p><strong>Metodología:</strong> Análisis basado en documentación oficial de los fabricantes y de los organismos que regulan la profesión contable en España (AEAT, ICAC, INE, AEPD, Consejo General de Economistas), con precios verificados en las tarifas públicas de cada herramienta, actualizado a septiembre 2026. Este artículo no constituye asesoramiento fiscal.</p>
+                <p><strong>Metodología:</strong> Análisis basado en documentación oficial de los fabricantes y de los organismos que regulan la profesión contable en España (AEAT, ICAC, INE, AEPD, Consejo General de Economistas), con precios verificados el 3 de octubre de 2026 en las tarifas públicas de cada herramienta y con todas las fuentes enlazadas al final. Este artículo no constituye asesoramiento fiscal ni jurídico.</p>
             </div>
 
             <div class="article-header">
                 <span class="article-category-badge">Comparativas</span>
                 <h1>IA para Contadores: Herramientas para Despachos y Asesorías en 2026</h1>
-                <p class="article-subtitle">En un sector donde el 13,4% de las microempresas ya usa IA y donde el software de facturación deberá cumplir VERI*FACTU en 2027, el despacho contable se juega su eficiencia: la IA ya lee facturas, concilia bancos y prepara asientos antes de que el asesor los revise. Esta guía separa las herramientas españolas de gestión contable con IA de los asistentes generalistas, y sitúa la frontera de la responsabilidad profesional y del RGPD.</p>
+                <p class="article-subtitle">En un sector donde el 13,4% de las microempresas ya usa IA y donde el software de facturación deberá cumplir VERI*FACTU en 2027, el despacho contable se juega su eficiencia: la IA ya lee facturas, concilia bancos y prepara asientos antes de que el asesor los revise. ésta guía separa las herramientas españolas de gestión contable con IA de los asistentes generalistas, y sitúa la frontera de la responsabilidad Profesional y del RGPD.</p>
                 <div class="article-meta-bar">
                     <span class="meta-author">Por el equipo de IA TodoPyme</span>
-                    <span class="meta-date">25 septiembre 2026</span>
-                    <span class="meta-reading">14 min de lectura</span>
-                    <span class="meta-updated">Actualizado: septiembre 2026</span>
+                    <span class="meta-date">7 octubre 2026</span>
+                    <span class="meta-reading">36 min de lectura</span>
+                    <span class="meta-updated">Actualizado: 7 octubre 2026</span>
                 </div>
             </div>
 
@@ -210,7 +199,7 @@
                     <h2>Resumen rápido (TL;DR)</h2>
                     <ul>
                         <li><strong>Precio de entrada:</strong> desde 13-17 €/mes con Quipu y su asistente Genius AI, o ~18 €/mes con un asistente general (ChatGPT Plus, Claude Pro); las suites profesionales para asesorías (a3innuva Expert AI, Kabilio) se mueven entre 100 y 400 €/mes según módulos y volumen</li>
-                        <li><strong>Adopción real:</strong> el INE situó en 2025 el uso de IA en el 21,1% de las empresas de 10 o más empleados y en el 13,4% de las microempresas, y el Barómetro de la Asesoría de Wolters Kluwer (junio 2026) estima que siete de cada diez despachos ya la usan en su día a día</li>
+                        <li><strong>Adopción real:</strong> el INE situó en 2025 el uso de IA en el 21,1% de las Empresas de 10 o más empleados y en el 13,4% de las microempresas, y el Barómetro de la Asesoría de Wolters Kluwer (junio 2026) estima que siete de cada diez despachos ya la usan en su día a día</li>
                         <li><strong>Por qué ahora:</strong> VERI*FACTU y la factura electrónica B2B obligan a digitalizar la facturación entre 2027 y 2028, y el Plan de Control Tributario 2026 consolida el uso de IA por la AEAT para la selección de riesgos</li>
                         <li><strong>Puntos fuertes:</strong> la lectura de facturas, los pre-asientos y la conciliación bancaria con IA devuelven horas reales en cada cierre trimestral</li>
                         <li><strong>Puntos débiles:</strong> el riesgo de automatizar errores sin revisión humana, la protección de datos según la AEPD (nunca subir facturas de clientes a cuentas gratuitas) y el coste de los paquetes profesionales de asesoría</li>
@@ -218,40 +207,45 @@
                 </div>
 
                 <div class="callout callout-info">
-                    <strong>Regla de oro:</strong> en contabilidad, la IA es una herramienta de propuesta y de borrador, nunca la firma. El asiento propuesto, el modelo fiscal generado y la conciliación automática deben pasar siempre por la revisión de la persona responsable antes de presentarse a la Administración: la responsabilidad profesional no se delega en un algoritmo.
+                    <strong>Regla de oro:</strong> en contabilidad, la IA es una herramienta de propuesta y de borrador, nunca la firma. El asiento propuesto, el modelo fiscal generado y la conciliación automática deben pasar siempre por la revisión de la persona responsable antes de presentarse a la Administración: la responsabilidad Profesional no se delega en un algoritmo.
                 </div>
 
                 <div class="toc">
                     <h3>Índice</h3>
                     <ol>
                         <li><a href="#que-hace">Qué hace la IA en un despacho contable (y qué no)</a></li>
-                        <li><a href="#contexto-2026">El contexto de septiembre 2026: VERI*FACTU, factura electrónica y el control con IA de la AEAT</a></li>
+                        <li><a href="#contexto-2026">El contexto normativo de 2026: VERI*FACTU, factura electrónica y el control con IA de la AEAT</a></li>
                         <li><a href="#herramientas">Las 7 herramientas por área de trabajo</a></li>
                         <li><a href="#via-ia">La vía IA del asesor: del OCR al asiento en cuatro pasos</a></li>
-                        <li><a href="#riesgos">Protección de datos, AEPD, RGPD y responsabilidad profesional</a></li>
+                        <li><a href="#cuando-no-automatizar">Cuándo no automatizar: los límites reales del OCR y de la IA contable</a></li>
+                        <li><a href="#riesgos">Protección de datos, AEPD, RGPD y responsabilidad Profesional</a></li>
+                        <li><a href="#ai-act-despacho">AI Act: qué obligaciones con calendario tocan de verdad a un despacho</a></li>
                         <li><a href="#precios">Tabla comparativa de precios en euros</a></li>
+                        <li><a href="#coste-real-despacho">El coste real: cuánto factura tu despacho para amortizar la licencia</a></li>
                         <li><a href="#duelo">El duelo: Kabilio vs Quipu Genius AI</a></li>
                         <li><a href="#como-elegir">Cómo elegir según el tamaño del despacho</a></li>
+                        <li><a href="#salida-y-proveedor">Dependencia y coste de salida: qué pasa el día que quieres cambiar de proveedor</a></li>
                         <li><a href="#veredicto">Veredicto por perfil de asesoría</a></li>
                         <li><a href="#faq">Preguntas frecuentes</a></li>
+                        <li><a href="#fuentes">Fuentes</a></li>
                     </ol>
                 </div>
 
                 <h2 id="que-hace">Qué hace la IA en un despacho contable (y qué no)</h2>
 
-                <p>La contabilidad profesional tiene una parte mecánica (leer facturas, clasificar gastos, cuadrar bancos, generar asientos, preparar modelos) y una parte de criterio (valorar operaciones atípicas, resolver dudas, decidir cómo documentar y por qué). La IA en 2026 ha conquistado la primera parte con rapidez y apenas roza la segunda. Las herramientas de gestión contable con IA integrada trabajan sobre el ciclo de facturación, la conciliación bancaria y la contabilización; los asistentes generalistas trabajan sobre los documentos que se les sube y pueden inventar criterios con total naturalidad. Conocer esta frontera es la primera competencia del contable que usa IA en España.</p>
+                <p>La contabilidad Profesional tiene una parte mecánica (leer facturas, clasificar gastos, cuadrar bancos, generar asientos, preparar modelos) y una parte de criterio (valorar operaciones atípicas, resolver dudas, decidir cómo documentar y por qué). La IA en 2026 ha conquistado la primera parte con rapidez y apenas roza la segunda. Las herramientas de gestión contable con IA integrada trabajan sobre el ciclo de facturación, la conciliación bancaria y la contabilización; los asistentes generalistas trabajan sobre los documentos que se les sube y pueden inventar criterios con total naturalidad. Conocer ésta frontera es la primera competencia del contable que usa IA en España.</p>
 
-                <p>El dato de partida es contundente y de fuente oficial: según la <a href="https://www.ine.es/dyngs/Prensa/ETICCE20241T2025.htm" target="_blank" rel="nofollow noopener">Encuesta sobre el uso de TIC y comercio electrónico en las empresas del INE</a>, en el primer trimestre de 2025 el 21,1% de las empresas de 10 o más empleados ya utilizaba tecnologías de inteligencia artificial (8,7 puntos más que un año antes) y el 13,4% de las microempresas, con el sector servicios —donde encajan las asesorías— liderando la adopción con un 25,7%. Y entre quién ya la usa, la IA se destina sobre todo al marketing y las ventas y a la organización de los procesos de administración o gestión empresarial, según los <a href="http://ontsi.es/es/publicaciones/indicadores-de-uso-de-inteligencia-artificial-en-espana-2025" target="_blank" rel="nofollow noopener">indicadores de uso de IA en España del Observatorio Nacional de Tecnología y Sociedad (ONTSI, Red.es)</a> — es decir, la gestión documental y el back office contable están entre los destinos claros de la IA en la empresa española y dentro del alcance directo del despacho.</p>
+                <p>El dato de partida es contundente y de fuente oficial: según la <a href="https://www.ine.es/dyngs/Prensa/ETICCE20241T2025.htm" target="_blank" rel="nofollow noopener">Encuesta sobre el uso de TIC y comercio electrónico en las Empresas del INE</a>, en el primer trimestre de 2025 el 21,1% de las Empresas de 10 o más empleados ya utilizaba tecnologías de inteligencia artificial (8,7 puntos más que un año antes) y el 13,4% de las microempresas, con el sector servicios —donde encajan las asesorías— liderando la adopción con un 25,7%. Y entre quién ya la usa, la IA se destina sobre todo al marketing y las ventas y a la organización de los procesos de administración o gestión empresarial, según los <a href="http://ontsi.es/es/publicaciones/indicadores-de-uso-de-inteligencia-artificial-en-espana-2025" target="_blank" rel="nofollow noopener">indicadores de uso de IA en España del Observatorio Nacional de Tecnología y Sociedad (ONTSI, Red.es)</a> — es decir, la gestión documental y el back office contable están entre los destinos claros de la IA en la Empresa española y dentro del alcance directo del despacho.</p>
 
                 <p>Dentro del propio despacho, la transformación es aún más acelerada. El <a href="https://www.wolterskluwer.com/es-es/tax-and-accounting" target="_blank" rel="nofollow noopener">Barómetro de la Asesoría de Wolters Kluwer</a>, publicado en su quinta edición en junio de 2026, estima que siete de cada diez despachos profesionales españoles ya utilizan la inteligencia artificial en su trabajo diario, con el software de gestión (a3, Sage, Holded, Quipu) como puerta de entrada natural: la IA llega al despacho dentro del programa que ya usa, no como un producto aparte. Las tareas donde está consolidada en 2026: <strong>reconocimiento de facturas y tickets</strong> (OCR que extrae proveedor, NIF, base, IVA y concepto), <strong>pre-asientos contables</strong> (propuestas que el asesor convierte en asientos con un clic), <strong>conciliación bancaria automática</strong>, <strong>borradores de modelos fiscales</strong> (303, 130, 111, 200, 390) y <strong>primeras respuestas a clientes</strong>. Las tareas donde no está consolidada y conviene desconfiar: la interpretación de operaciones complejas, la valoración de elementos patrimoniales y cualquier conclusión que se pretenda firmar sin verificar contra el marco que anualmente actualiza el <a href="https://www.icac.gob.es/contabilidad/consultas-boicac" target="_blank" rel="nofollow noopener">ICAC a través de las consultas del BOICAC</a>.</p>
 
-                <p>El retorno económico, en cierres trimestrales, se nota en horas reales. Un auxiliar contable que registra facturas a mano dedica de 2 a 4 minutos por documento, y la mayoría de las asesorías acumula miles de facturas al trimestre; con un sistema que lee la factura, propone la cuenta y el asiento, la primera pasada se hace en segundos y el contable concentra su tiempo en revisar las excepciones (el 5-15% que la IA marca como ambiguas). Esas horas son las que financian la licencia y las que permiten al despacho subir el porcentaje de facturación de valor añadido. Si quieres el marco completo de cuánto recupera una empresa por cada euro invertido, lo tienes desarrollado en la <a href="../../guias/roi-real-empresas-ia/">guía de ROI real de la IA en empresas españolas</a>.</p>
+                <p>El retorno económico, en cierres trimestrales, se nota en horas reales y, a diferencia de casi todo lo que se cuenta sobre IA, es medible. Si divides los documentos registrados en un mes entre las horas que el equipo dedica a capturarlos y validarlos, obtienes los minutos por documento que la herramienta tiene que ahorrar para pagarse. Ese es el único número que no puedes heredar de ningún fabricante, de ninguna comparativa ni de este artículo: se mide, y tarda un trimestre entero en medirse con fiabilidad. La aritmética completa, con los umbrales de amortización por tamaño de despacho, está en <a href="#coste-real-despacho">El coste real: cuánto factura tu despacho para amortizar la licencia</a>.</p>
 
-                <h2 id="contexto-2026">El contexto de septiembre 2026: VERI*FACTU, factura electrónica y el control con IA de la AEAT</h2>
+                <h2 id="contexto-2026">El contexto normativo de 2026: VERI*FACTU, factura electrónica y el control con IA de la AEAT</h2>
 
                 <p>Hay tres cambios regulatorios y operativos que convierten 2026 en el año en que la IA deja de ser opcional en el despacho español. El primero es el Reglamento VERI*FACTU, aprobado por el Real Decreto 1007/2023, que obliga a que los sistemas informáticos de facturación garanticen la integridad, trazabilidad e inalterabilidad de los registros de facturación. Tras la modificación introducida por el Real Decreto-ley 15/2025, la obligación de adaptar los sistemas será efectiva el <strong>1 de enero de 2027</strong> para los contribuyentes del Impuesto sobre Sociedades y el <strong>1 de julio de 2027</strong> para el resto de obligados, como aclara la propia <a href="https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes.html" target="_blank" rel="nofollow noopener">Agencia Tributaria en sus preguntas frecuentes sobre VERI*FACTU</a>. Para las asesorías la implicación es doble: sus clientes deben facturar en sistemas conformes y el programa que recomiendan debe estar actualizado — o tendrán que migrar un año después de haber implantado la IA.</p>
 
-                <p>El segundo es la factura electrónica B2B entre empresas y profesionales, impulsada por la Ley Crea y Crece, cuyo despliegue obligatorio se está produciendo entre 2027 y 2028 mediante los reales decretos dictados en este ejercicio. La AEAT ofrece además, para profesionales con baja facturación, una <a href="https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/presentacion-declaraciones-ayuda-tecnica/aplicacion-gratuita-verifactu-aeat.html" target="_blank" rel="nofollow noopener">aplicación gratuita VERI*FACTU</a> que genera facturas verificables con código QR y remite los registros directamente a la Sede electrónica. El despacho que hoy digitaliza con IA su gestión documental no adelanta solo una tendencia: se prepara para dos obligaciones legales con un único esfuerzo.</p>
+                <p>El segundo es la factura electrónica B2B entre Empresas y profesionales, impulsada por la Ley Crea y Crece, cuyo despliegue obligatorio se está produciendo entre 2027 y 2028 mediante los reales decretos dictados en este ejercicio. La AEAT ofrece además, para profesionales con baja facturación, una <a href="https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/presentacion-declaraciones-ayuda-tecnica/aplicacion-gratuita-verifactu-aeat.html" target="_blank" rel="nofollow noopener">aplicación gratuita VERI*FACTU</a> que genera facturas verificables con código QR y remite los registros directamente a la Sede electrónica. El despacho que hoy digitaliza con IA su gestión documental no adelanta sólo una tendencia: se prepara para dos obligaciones legales con un único esfuerzo.</p>
 
                 <p>El tercero, y el que más debate genera, es el control. Las <a href="https://sede.agenciatributaria.gob.es/Sede/planificacion/plan-general-control-tributario.html" target="_blank" rel="nofollow noopener">Directrices del Plan Anual de Control Tributario y Aduanero 2026</a>, publicadas en marzo de 2026, consolidan el uso de inteligencia artificial y análisis masivo de datos para la selección de riesgos fiscales: cruce de información financiera y de facturas (con el SII y VERI*FACTU como fuentes), identificación de tramas de facturación irregular y segmentación de comportamientos por tipologías. En la práctica, cada factura que el despacho contabiliza se vuelve un dato que la administración puede contrastar de forma automatizada. La noticia no es mala para quien trabaja ordenado: es el argumento definitivo para que la contabilidad del cliente esté al día, entera y trazable — exactamente lo que la IA de gestión bien implantada garantiza.</p>
 
@@ -262,11 +256,11 @@
 
                 <h2 id="herramientas">Las 7 herramientas por área de trabajo</h2>
 
-                <p>Las herramientas se ordenan por el sitio donde trabajan: software de gestión contable con IA integrada, plataformas de automatización específicas para asesorías y asistentes generales de apoyo. En cada una se indica precio orientativo en euros de septiembre de 2026 según tarifas públicas y rangos de mercado verificados.</p>
+                <p>Las herramientas se ordenan por el sitio donde trabajan: software de gestión contable con IA integrada, plataformas de automatización específicas para asesorías y asistentes generales de apoyo. En cada una se indica precio orientativo en euros, con las tarifas públicas y los rangos de mercado verificados el 3 de octubre de 2026.</p>
 
                 <h3>Software de gestión con IA integrada</h3>
 
-                <p><strong>1. Quipu (asistente Genius AI)</strong> — El programa español de facturación y contabilidad para autónomos y pequeñas empresas, parte del grupo TeamSystem, incorpora desde 2022 un asistente de IA propio (Genius AI) que lee facturas y tickets con el OCR, clasifica gastos, propone la categorización contable, prepara los modelos fiscales prerrellenados (303, 130, 349) y facilita la conciliación bancaria. Su página de producto <a href="https://getquipu.com/es/gestion-cobros-y-pagos" target="_blank" rel="nofollow noopener">detalla planes, el asistente Genius AI y el estado de adaptación a VeriFactu</a> (obligatoria para empresas desde enero de 2027 y para autónomos desde julio de 2027).</p>
+                <p><strong>1. Quipu (asistente Genius AI)</strong> — El programa español de facturación y contabilidad para autónomos y pequeñas Empresas, parte del grupo TeamSystem, incorpora desde 2022 un asistente de IA propio (Genius AI) que lee facturas y tickets con el OCR, clasifica gastos, propone la categorización contable, prepara los modelos fiscales prerrellenados (303, 130, 349) y facilita la conciliación bancaria. Su página de producto <a href="https://getquipu.com/es/gestion-cobros-y-pagos" target="_blank" rel="nofollow noopener">detalla planes, el asistente Genius AI y el estado de adaptación a VeriFactu</a> (obligatoria para Empresas desde enero de 2027 y para autónomos desde julio de 2027).</p>
                 <p><strong>Para qué sirve:</strong> autónomos, micropymes y asesorías pequeñas que quieren cerrar la facturación y los modelos con una interfaz sencilla y un OCR de tickets muy maduro. No es un ERP: se queda corto en contabilidad analítica e inventario.</p>
                 <p><strong>Precio:</strong> desde 13 €/mes en el plan Starter con promoción del 50% los primeros meses (17 €/mes tarifa regular), 23-30 €/mes en Solution (conciliación, 250 escaneos, API) y hasta 36-59 €/mes en los planes Business y Premium. Los usuarios adicionales se contratan aparte. Sin IVA.</p>
 
@@ -274,7 +268,7 @@
                 <p><strong>Para qué sirve:</strong> pymes de 3 a 50 empleados y asesorías pequeñas que quieren un único stack con módulos conectados.</p>
                 <p><strong>Precio:</strong> desde 15 €/mes el plan Plus de facturación y desde 29 €/mes el Básico con contabilidad e impuestos incluidos, según <a href="https://www.holded.com/es" target="_blank" rel="nofollow noopener">tarifas públicas de Holded</a>; planes para asesorías por cartera. Precios orientativos sin IVA.</p>
 
-                <h3>Software profesional para asesorías</h3>
+                <h3>Software Profesional para asesorías</h3>
 
                 <p><strong>3. a3asesor / a3innuva con Expert AI (Wolters Kluwer)</strong> — La suite de Wolters Kluwer es el software de gestión más implantado en las asesorías fiscales y contables españolas: a3asesor Eco cubre contabilidad, fiscalidad, inmovilizado y tesorería para despachos, y a3innuva es su línea online con ADN asesor. En 2026 la compañía ha acentuado la IA: lanzó <strong>a3innuva Nómina Expert AI</strong>, un agente integrado en el software de nóminas que responde con datos laborales verificados, y su dirección confirma el uso de IA, aprendizaje automático y análisis predictivo en todos sus flujos, como recoge su <a href="https://www.wolterskluwer.com/es-es/solutions/a3" target="_blank" rel="nofollow noopener">portal de soluciones a3</a>. Es la vía para los despachos que no quieren cambiar de programa: la IA llega dentro de la herramienta que ya usan.</p>
                 <p><strong>Para qué sirve:</strong> asesorías medianas y grandes con cartera de sociedades y nóminas, que buscan automatización sin renunciar al programa tradicional de doble partida.</p>
@@ -288,19 +282,19 @@
 
                 <p><strong>5. Microsoft Copilot</strong> — El asistente de IA integrado en el ecosistema Microsoft 365: contabiliza la lectura de un correo de cliente, prepara la primera respuesta, resume un PDF de extractos, explica un artículo de una norma o redacta la primera comunicación de un requerimiento, todo dentro del correo y la suite que ya usa el despacho. Para la gestión documental cotidiana es la herramienta de menor fricción porque no obliga a cambiar la forma de trabajar.</p>
                 <p><strong>Para qué sirve:</strong> tareas de apoyo sobre documentos (resúmenes, comparaciones, borradores) dentro del correo y de Office. Nunca como fuente de criterio fiscal sin verificación.</p>
-                <p><strong>Precio:</strong> Copilot Pro desde ~20 €/usuario/mes y licencias empresariales por asiento en el rango de 22-32 €/usuario/mes según contrato.</p>
+                <p><strong>Precio:</strong> Microsoft 365 Copilot está en 15,60 €/usuario/mes con pago anual en promoción hasta el 31 de diciembre de 2026 y exige una licencia de Microsoft 365 por separado; el precio de la versión personal Copilot Pro es otro y no debe confundirse con el de Empresa.</p>
 
-                <p><strong>6. ChatGPT Plus / Team</strong> — Para el contador autónomo es la puerta de entrada: resumir sentencias o informes de auditoría, esquematizar un articulado, preparar el borrador de un informe, traducir documentación o explicar criterios de otras jurisdicciones. Con la regla estricta de no subir información de clientes a cuentas personales (o usar solo cuentas de empresa con garantías contractuales), es un multiplicador de horas real.</p>
+                <p><strong>6. ChatGPT Plus / Business</strong> — Para el contador autónomo es la puerta de entrada: resumir sentencias o informes de auditoría, esquematizar un articulado, preparar el borrador de un informe, traducir documentación o explicar criterios de otras jurisdicciones. Con la regla estricta de no subir información de clientes a cuentas personales (o usar sólo cuentas de Empresa con garantías contractuales), es un multiplicador de horas real.</p>
                 <p><strong>Para qué sirve:</strong> primeros borradores y análisis de documentos. Sus límites son los conocidos: puede inventar referencias normativas y no conoce la base española con la fiabilidad de una herramienta especializada.</p>
-                <p><strong>Precio:</strong> Plus 20 USD/mes (≈18 €) y Team alrededor de 25 USD/usuario/mes (≈23 €), según tarifas de OpenAI.</p>
+                <p><strong>Precio:</strong> Plus 20 US$/mes y Business desde 21 € por usuario al mes con pago anual (105 € el asiento Premium), con un mínimo de 2 usuarios y sin entrenamiento con los datos de Empresa, según las <a href="https://openai.com/business/pricing/" target="_blank" rel="nofollow noopener">tarifas de ChatGPT Business</a>.</p>
 
                 <p><strong>7. Claude Pro</strong> — El competidor de ChatGPT con mejor reputación en análisis de documentos largos y redacción cuidada. Su ventana de contexto amplia permite subir un expediente completo o una memoria y trabajar sobre ella sin fragmentar, lo que encaja bien con los informes largos que maneja un asesoría (memorias, informes de auditoría, expedientes). Mismas precauciones que ChatGPT respecto a confidencialidad y verificación.</p>
-                <p><strong>Para qué sirve:</strong> redacción profesional y análisis de documentación extensa en español con calidad de texto notable.</p>
-                <p><strong>Precio:</strong> 20 USD/mes (≈18 €) por asiento y Team desde 25 USD/usuario/mes (≈23 €).</p>
+                <p><strong>Para qué sirve:</strong> redacción Profesional y análisis de documentación extensa en español con calidad de texto notable.</p>
+                <p><strong>Precio:</strong> 20 US$/mes (≈18 €) por asiento y Claude Team a 20 US$/asiento/mes con pago anual o 25 US$ mensual, según las <a href="https://www.anthropic.com/pricing" target="_blank" rel="nofollow noopener">tarifas de Anthropic</a>.</p>
 
                 <h2 id="via-ia">La vía IA del asesor: del OCR al asiento en cuatro pasos</h2>
 
-                <p>Da igual qué herramienta se elija: el flujo de trabajo que la IA ha estandarizado en el despacho español en 2026 sigue siempre la misma secuencia. <strong>Primero, captura.</strong> El documento llega por correo, WhatsApp o la app del cliente; el OCR lo lee y extrae los datos clave (proveedor, NIF, fecha, base, IVA, concepto) sin teclearlos. <strong>Segundo, propuesta.</strong> El sistema clasifica el gasto, propone la cuenta contable y genera el pre-asiento con el plan de la cartera que se le ha enseñado. <strong>Tercero, revisión.</strong> El asesor revisa por excepciones: solo los documentos marcados como ambiguos o atípicos requieren intervención manual. <strong>Cuarto, cierre y modelo.</strong> Con la contabilidad al día, los modelos fiscales (IVA, retenciones, Sociedades) se generan casi solos y el despacho los valida antes de presentar.</p>
+                <p>Da igual qué herramienta se elija: el flujo de trabajo que la IA ha estandarizado en el despacho español en 2026 sigue siempre la misma secuencia. <strong>Primero, captura.</strong> El documento llega por correo, WhatsApp o la app del cliente; el OCR lo lee y extrae los datos clave (proveedor, NIF, fecha, base, IVA, concepto) sin teclearlos. <strong>Segundo, propuesta.</strong> El sistema clasifica el gasto, propone la cuenta contable y genera el pre-asiento con el plan de la cartera que se le ha enseñado. <strong>Tercero, revisión.</strong> El asesor revisa por excepciones: sólo los documentos marcados como ambiguos o atípicos requieren intervención manual. <strong>Cuarto, cierre y modelo.</strong> Con la contabilidad al día, los modelos fiscales (IVA, retenciones, Sociedades) se generan casi solos y el despacho los valida antes de presentar.</p>
 
                 <figure>
                     <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&amp;q=80" alt="Profesional revisando cuadros y gráficos financieros generados con análisis de datos en un ordenador portátil" loading="lazy" width="1200" height="800">
@@ -309,30 +303,92 @@
 
                 <p>Este flujo encaja con lo que la profesión ve venir. El <a href="https://www.wolterskluwer.com/es-es/tax-and-accounting" target="_blank" rel="nofollow noopener">Informe Future Ready Accountant de Wolters Kluwer</a> insiste en que la adopción de IA en los despachos europeos está creciendo y que el reto no es técnico, sino de confianza y de revisión: la mayoría de la profesión reconoce que la IA acelera las tareas rutinarias, pero también que la supervisión humana es innegociable para mantener la confianza pública en la cifra. El que automatiza el registro sin automatizar la revisión no gana horas: multiplica el riesgo.</p>
 
-                <h2 id="riesgos">Protección de datos, AEPD, RGPD y responsabilidad profesional</h2>
+<h2 id="cuando-no-automatizar">Cuándo no automatizar: los límites reales del OCR y de la IA contable</h2>
 
-                <p>El despacho contable trata datos personales de sus clientes (nóminas, facturas, declaraciones, cuentas) y tiene un deber reforzado de confidencialidad derivado del RGPD, de la LOPDGDD y de su propia relación contractual con el cliente. En enero de 2026 la <a href="https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa/aepd-publica-decalogo-recomendaciones-proteger-privacidad-al-usar-ia" target="_blank" rel="nofollow noopener">AEPD publicó su decálogo «Cuidado con lo que le confIAs»</a>, en el que pide de forma explícita no compartir con las herramientas de IA datos personales ni información sensible: nombre completo, dirección, teléfono, DNI/NIE, imágenes y detalles financieros o contractuales. Para la asesoría, la conclusión es directa: las facturas y nóminas de los clientes no entran en asistentes generalistas gratuitos; entran en herramientas con contrato de encargo de tratamiento claro y garantías de que los datos no se usan para entrenar modelos.</p>
+<p>Todo lo anterior da la impresión de que la automatización del despacho es una función continua. No lo es: es una distribución. Funciona muy bien en el centro y falla en la cola, y la cola es exactamente donde vive el riesgo contable y el riesgo Profesional. La pregunta útil no es si la IA es buena, sino qué parte de tu cartera es del centro y qué parte de la cola.</p>
+
+<h3>Los documentos que el OCR no resuelve</h3>
+
+<p>El reconocimiento óptico funciona con documentos generados por software: PDF limpios, texto nítido, estructura predecible. Se degrada de forma previsible en cinco casos, y los cinco aparecen en cualquier cartera real:</p>
+
+<ul>
+    <li><strong>Capturas torcidas o con sombra:</strong> una foto de móvil hecha de lado o con la luz de una lámpara baja hace fallar la extracción de NIF y de importes, que son justo los campos que el asiento necesita.</li>
+    <li><strong>Papel doblado, grapado o con solapamientos:</strong> cuando el grapa cruza la línea de importes, el motor de OCR lee los números en orden equivocado y produce una base imponible plausible pero falsa.</li>
+    <li><strong>Facturas de varias páginas con tablas densas:</strong> albaranes, anexos de suministro, facturas con cientos de líneas de material. La extracción funciona por bloques y los totales no siempre cuadran con la suma de las líneas.</li>
+    <li><strong>Anotaciones manuscritas y albaranes escritos a mano:</strong> nada que hacer aquí, y en un despacho con clientes de obra o de alimentación es una parte nada desdeñable del volumen.</li>
+    <li><strong>Documentos en otro idioma o con formatos mixtos:</strong> proveedores internacionales, documentación técnica en inglés o alemán. La extracción suele funcionar y la clasificación contable, no.</li>
+</ul>
+
+<p>La conclusión operativa es que el OCR no es un sustituto del tecleo: es un acelerador del tecleo. En el mejor caso te ahorra la introducción del dato; en el peor, te ahorra teclear un dato equivocado, que es un problema distinto y bastante más caro de resolver.</p>
+
+<h3>Las operaciones que deben quedarse fuera del piloto automático</h3>
+
+<p>Hay un segundo conjunto de casos, más importante que el anterior, donde la decisión no es técnica sino de criterio. Un sistema que propone asientos funciona con patrones; el despacho que responde de la operación cuando algo va mal no puede trabajar con patrones.</p>
+
+<ul>
+    <li><strong>Operaciones intracomunitarias:</strong> la inversión del sujeto pasivo, la comprobación del NIF-IVA del cliente y la declaración intracomunitaria no se deducen de una factura: se contrastan contra el registro de operaciones intracomunitarias.</li>
+    <li><strong>Retenciones de IRPF:</strong> los porcentajes del 7% y del 15% se aplican según la operación y no al revés, y un error ahí no lo detecta el sistema, lo detecta la declaración.</li>
+    <li><strong>Regímenes especiales:</strong> IVA agrario, intracomunitario, operaciones exentas y el resto de regímenes que alteran la estructura de la factura. El modelo que se puede leer bien no siempre es el modelo que se contabiliza bien.</li>
+    <li><strong>Inmovilizado, amortizaciones y provisiones:</strong> la dotación anual de un inmovilizado no viene en la factura; viene en el histórico del activo y en un calendario. Cualquier herramienta que la calcule desde cero está inventándosela.</li>
+    <li><strong>Imputación de gastos mixtos y prorratas:</strong> un gasto mixto que sirve para la actividad y para el patrimonio personal exige reparto de base imponible, y ese reparto es criterio Profesional.</li>
+    <li><strong>Operaciones con partes vinculadas:</strong> exigen revisión de precios de transferencia y contraste con la documentación específica, y nunca deben entrar en un circuito automático.</li>
+</ul>
+
+<p>Una advertencia estructural sobre VERI*FACTU que conviene tener clara antes de recomendar programa: el reglamento se aplica a los sistemas informáticos <em>que se utilizan para expedir facturas</em>. Un software que el despacho usa sólo para capturar y contabilizar las facturas de sus clientes no es un sistema de facturación, aunque tenga OCR: la obligación recae sobre quien expide. La pregunta que hay que hacerle al fabricante no es si tiene IA, sino si su sistema está certificado para el RRSIF y en qué modalidad, VERI*FACTU o no.</p>
+
+<div class="callout callout-warning">
+    <strong>El error que sí cuesta caro:</strong> automatizar la entrada y automatizar también la revisión. Cuando la herramienta propone asientos y la persona acepta en bloque lo que parece razonable, un error de criterio deja de ser un borrador y pasa a ser una partida aceptada. El expediente de cada asiento debería poder reconstruir qué lo propuso, con qué dato de origen y quién lo validó; si eso no es posible en tu sistema, has automatizado la rendición de cuentas, no el trabajo contable.
+</div>
+
+
+                <h2 id="riesgos">Protección de datos, AEPD, RGPD y responsabilidad Profesional</h2>
+
+                <p>El despacho contable trata datos personales de sus clientes (nóminas, facturas, declaraciones, cuentas) y tiene un deber reforzado de confidencialidad derivado del RGPD, de la LOPDGDD y de su propia relación contractual con el cliente. En enero de 2026 la <a href="https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa/aepd-publica-decalogo-recomendaciones-proteger-privacidad-al-usar-ia" target="_blank" rel="nofollow noopener">AEPD publicó su decálogo «Cuidado con lo que le confías»</a>, en el que pide de forma explícita no compartir con las herramientas de IA datos personales ni información sensible: nombre completo, dirección, teléfono, DNI/NIE, imágenes y detalles financieros o contractuales. Para la asesoría, la conclusión es directa: las facturas y nóminas de los clientes no entran en asistentes generalistas gratuitos; entran en herramientas con contrato de encargo de tratamiento claro y garantías de que los datos no se usan para entrenar modelos.</p>
 
                 <p>La <a href="https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa/la-aepd-publica-una-guia-para-adaptar-al-rgpd-los-productos-y" target="_blank" rel="nofollow noopener">guía de la AEPD para adecuar al RGPD los tratamientos que incorporan inteligencia artificial</a> fija el marco: la IA puede tratar datos en distintas etapas de su ciclo de vida, y el responsable del tratamiento —que en la práctica es el despacho que usa la herramienta con los datos de sus clientes— debe acreditar base legal, información, ejercicio de derechos y control sobre la toma de decisiones automatizada. Añadir una herramienta de IA a la operativa no es un cambio de software: es una revisión de los contratos de encargo y de la evaluación de riesgos de cada tratamiento.</p>
 
-                <p>El segundo frente es la responsabilidad profesional. La profesión contable y auditora ha trasladado a los organismos reguladores internacionales la necesidad de reglas de transparencia algorítmica, supervisión humana documentada y confidencialidad: el <a href="https://www.economistas.es/" target="_blank" rel="nofollow noopener">Consejo General de Economistas de España</a> ha participado activamente en las consultas que preparan la normativa global de IA en auditoría, donde defiende que las evidencias generadas por IA, la documentación del razonamiento profesional y el control sobre los proveedores tecnológicos sean requisitos sin los cuales no puede ejercerse el criterio profesional. Y mientras tanto, en 2026 el CGE ha firmado con Microsoft y Founderz un acuerdo para <a href="http://formacion.economistas.es/cursoinfor.php?idCursoMasInfo=1456" target="_blank" rel="nofollow noopener">formar gratuitamente a los economistas colegiados en inteligencia artificial</a>, en la línea de que la profesión aprenda a usar la IA con criterio, seguridad y responsabilidad.</p>
+                <p>El segundo frente es la responsabilidad Profesional. La profesión contable y auditora ha trasladado a los organismos reguladores internacionales la necesidad de reglas de transparencia algorítmica, supervisión humana documentada y confidencialidad: el <a href="https://www.economistas.es/" target="_blank" rel="nofollow noopener">Consejo General de Economistas de España</a> ha participado activamente en las consultas que preparan la normativa global de IA en auditoría, donde defiende que las evidencias generadas por IA, la documentación del razonamiento Profesional y el control sobre los proveedores tecnológicos sean requisitos sin los cuales no puede ejercerse el criterio Profesional. Y mientras tanto, en 2026 el CGE ha firmado con Microsoft y Founderz un acuerdo para <a href="http://formacion.economistas.es/cursoinfor.php?idCursoMasInfo=1456" target="_blank" rel="nofollow noopener">formar gratuitamente a los economistas colegiados en inteligencia artificial</a>, en la línea de que la profesión aprenda a usar la IA con criterio, seguridad y responsabilidad.</p>
 
                 <div class="callout callout-warning">
                     <strong>Lo que nunca debe hacer una asesoría con IA:</strong> subir facturas, nóminas o expedientes de clientes a cuentas gratuitas de herramientas generalistas, presentar un modelo o una declaración sin revisión humana, delegar el criterio de valoración contable a un chatbot, o mantener datos de clientes fuera de un encargo de tratamiento conforme al RGPD. La AEPD y el marco del AI Act apuntan en la misma dirección: transparencia, exactitud y supervisión.
                 </div>
 
+<h2 id="ai-act-despacho">AI Act: qué obligaciones con calendario tocan de verdad a un despacho</h2>
+
+<p>La pregunta más frecuente sobre el Reglamento (UE) 2024/1689 en una asesoría es si hay que certificar la herramienta. La respuesta corta es que ningún fabricante tiene esa certificación y el Reglamento no ofrece ninguna: no existe una lista de herramientas de IA conformes. Lo que existe es un calendario de obligaciones para quienes usan y despliegan sistemas, del que al despacho le tocan tres tramos concretos.</p>
+
+<h3>Lo que ya está en vigor</h3>
+
+<ul>
+    <li><strong>Alfabetización en IA (artículo 4), desde el 2 de febrero de 2025:</strong> obliga a que los proveedores y quienes despliegan sistemas de IA adopten medidas para que su personal tenga un nivel suficiente de conocimientos. Para un despacho, esto no es paperwork europeo: es que la formación en IA del equipo deje de ser opcional, y esa es una decisión interna tuya.</li>
+    <li><strong>Obligaciones de los modelos de propósito general (artículo 53), desde el 2 de agosto de 2025:</strong> recaen sobre los proveedores de los modelos, no sobre quien los usa. El despacho no tiene que hacer nada aquí, pero sí tiene que leer la documentación técnica que le da el proveedor.</li>
+    <li><strong>Transparencia (artículo 50), desde el 2 de agosto de 2026:</strong> es el tramo que sí corre de tu bolsillo. Obliga a informar de que está hablando con un sistema de IA cuando una persona interactúa con él, y a declarar que un contenido ha sido generado o alterado por IA cuando se pública con esa condición. En la práctica, en un despacho: si pones un chatbot en el portal del cliente que responde sobre su contabilidad, hay que decirlo; y si entregas un informe o un análisis marcado como generado por IA sin marcarlo, no.</li>
+</ul>
+
+<h3>Lo que no se activa por usar IA en la contabilidad</h3>
+
+<p>Ni el anexo III ni el artículo 6.3 del Reglamento enumeran los servicios de gestión contable, de asesoría fiscal o de auditoría. La clasificación de alto riesgo se activa por el uso a que se destina el sistema, no por el sector del que vienes: usar IA para registrar facturas, conciliar bancos o preparar borradores de modelos no convierte el despacho en un utilizador de un sistema de alto riesgo. El tramo de aplicación general y de alto riesgo del 2 de agosto de 2027 y el de alto riesgo embebido en productos ya regulados del 2 de agosto de 2028 exigen seguimiento, no un rediseño de la operativa del despacho.</p>
+
+<p>Matiz importante: si el despacho despliega IA para seleccionar personal, evaluar su desempeño o distribuir tareas en función del comportamiento de las personas, ahí sí entra una categoría de alto riesgo del anexo III. Es un caso de uso distinto del registro contable, pero conviene tenerlo en el inventario de sistemas.</p>
+
+<div class="callout callout-info">
+    <strong>Lo que de verdad te va a saltar antes que el AI Act:</strong> el encargo de tratamiento con cada proveedor conforme al RGPD, el criterio de la AEPD sobre el uso de IA con datos personales, la responsabilidad Profesional frente al cliente y las cláusulas que firmaste en tu propio contrato con el cliente sobre confidencialidad. El AI Act llega después de esa lista. Ninguna de las tres anteriores se resuelve comprando una herramienta que diga que cumple el Reglamento.
+</div>
+
+<p>Y una advertencia de método, porque es la que más se distingue: una herramienta que en su web afirma ser «totalmente compatible con el AI Act» no acredita nada. Lo que sí acredita es el contrato, la documentación del proveedor sobre qué datos procesa y dónde, y quién responde si hay un incidente. Cuando alguien afirme cumplimiento, pide el documento que lo respalda.</p>
+
                 <h2 id="precios">Tabla comparativa de precios en euros</h2>
 
-                <p>Precios orientativos de entrada en euros, sin IVA, según tarifas públicas y rangos de mercado verificados en septiembre de 2026.</p>
+                <p>Precios orientativos de entrada en euros, sin IVA, según tarifas públicas y rangos de mercado verificados el 3 de octubre de 2026.</p>
 
                 <div class="price-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Herramienta</th>
+                                <th>Kabilio</th>
                                 <th>Precio de entrada</th>
-                                <th>Modelo</th>
-                                <th>Área</th>
+                                <th>Kabilio</th>
+                                <th>Kabilio</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -343,7 +399,7 @@
                                 <td>Facturación + contabilidad + OCR</td>
                             </tr>
                             <tr>
-                                <td><strong>Holded</strong></td>
+                                <td><strong>Precio</strong></td>
                                 <td>Desde 29 €/mes (contabilidad)</td>
                                 <td>Suscripción por plan</td>
                                 <td>ERP con IA (facturas, conciliación)</td>
@@ -352,10 +408,10 @@
                                 <td><strong>a3asesor / a3innuva Expert AI</strong></td>
                                 <td>Rango de mercado ~150-350 €/mes</td>
                                 <td>Por módulos</td>
-                                <td>Suite profesional despachos</td>
+                                <td>Suite Profesional despachos</td>
                             </tr>
                             <tr>
-                                <td><strong>Kabilio</strong></td>
+                                <td><strong>Precio</strong></td>
                                 <td>Desde ~100-400 €/mes según volumen</td>
                                 <td>Por volumen/cartera</td>
                                 <td>Automatización contable para asesorías</td>
@@ -367,8 +423,8 @@
                                 <td>Apoyo en correo y documentos</td>
                             </tr>
                             <tr>
-                                <td><strong>ChatGPT Plus / Team</strong></td>
-                                <td>18 €/mes (20 USD) / ~23 € (Team)</td>
+                                <td><strong>ChatGPT Plus / Business</strong></td>
+                                <td>Plus 20 US$/mes; Business desde 21 €/usuario/mes (anual)</td>
                                 <td>Por asiento</td>
                                 <td>Apoyo general</td>
                             </tr>
@@ -383,14 +439,82 @@
                                 <td colspan="3"><strong>≈60-120 €/mes:</strong> Quipu Solution u Holded para la gestión (25-30 €) + una licencia Copilot o ChatGPT para el equipo (20-25 € × 2-3 asientos) = OCR, conciliación y apoyo documental sin cambiar de flujo</td>
                             </tr>
                             <tr class="highlight-row">
-                                <td><strong>Stack despacho profesional (asesoría contable)</strong></td>
+                                <td><strong>Stack despacho Profesional (asesoría contable)</strong></td>
                                 <td colspan="3"><strong>≈300-700 €/mes:</strong> a3asesor o a3innuva con IA para el núcleo (150-350 €) + Kabilio u otro automatizador para la cartera (100-400 €) según volumen de facturas = automatización del registro y revisiones por excepciones</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <p><strong>Nota de conversión:</strong> 1 USD = 0,91 € según tipo de referencia aproximado de septiembre de 2026. Los precios de OpenAI y Anthropic se facturan en dólares y el importe final en euros lo fija el fabricante.</p>
+                <p><strong>Nota sobre los importes en euros:</strong> OpenAI y Anthropic no publican un tipo de cambio de referencia y el importe en euros que te factura lo determina el fabricante según tu país y tu forma de pago. Los importes en euros de ésta tabla son orientativos y sirven para comparar, no para elaborate un presupuesto.</p>
+
+<h2 id="coste-real-despacho">El coste real: cuánto factura tu despacho para amortizar la licencia</h2>
+
+<p>Todo lo que cuesta la IA en un despacho se reduce a una ecuación de tres variables: lo que pagas al año, cuántos documentos procesas y cuántos minutos ahorra la herramienta en cada documento. Las dos primeras las tienes en la <a href="#precios">tabla de precios</a>. La tercera no la pública ningún fabricante y no se puede pedir prestada a otro despacho: se mide, y tarda un trimestre entero en medirse con fiabilidad.</p>
+
+<p>La aritmética es elemental. El coste anual es doce veces la suma de tus licencias. Las horas recuperadas en un trimestre son los documentos de ese trimestre multiplicados por los minutos ahorrados por documento, divididos entre 60. Y el precio de equilibrio —el número que decide— es el coste anual dividido entre las horas recuperadas en el año: la tarifa por hora a partir de la cual la licencia deja de costarte dinero. Si ese umbral queda por debajo de lo que cobra tu despacho por una hora de trabajo, has comprado ahorro de tiempo, no ahorro de dinero.</p>
+
+<div class="price-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Kabilio</th>
+                <th>Licencias (€/mes)</th>
+                <th>Coste anual</th>
+                <th>Facturas/trimestre</th>
+                <th>Min. ahorrados por factura</th>
+                <th>Horas/año recuperadas</th>
+                <th>Precio de equilibrio (€/hora)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Contador autónomo</strong><br>Quipu Starter + 1 asistente</td>
+                <td>31</td>
+                <td>372 €</td>
+                <td>150</td>
+                <td>1,5</td>
+                <td>15,0</td>
+                <td>24,80</td>
+            </tr>
+            <tr>
+                <td><strong>Asesoría de 2-3 personas</strong><br>Quipu Solution + 3 asientos de asistente</td>
+                <td>99</td>
+                <td>1.188 €</td>
+                <td>900</td>
+                <td>2,0</td>
+                <td>120</td>
+                <td>9,90</td>
+            </tr>
+            <tr>
+                <td><strong>Despacho con sociedades y nóminas</strong><br>Suite a3 + automatizador por volumen</td>
+                <td>750</td>
+                <td>9.000 €</td>
+                <td>4.000</td>
+                <td>2,5</td>
+                <td>667</td>
+                <td>13,50</td>
+            </tr>
+            <tr class="highlight-row">
+                <td><strong>Despacho grande</strong><br>Suite a3 + dos automatizadores</td>
+                <td>2.500</td>
+                <td>30.000 €</td>
+                <td>12.000</td>
+                <td>3,0</td>
+                <td>2.400</td>
+                <td>12,50</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>ésta tabla es una plantilla con supuestos declarados, no una promesa de resultados. Los minutos por documento son un supuesto deliberadamente conservador que tienes que sustituir por tu propia medición, y los precios de las suites profesionales y los automatizadores por volumen son rangos de mercado sin tarifa pública, no cifras contratadas. Lo que sí es sólido es la estructura: los tres perfiles con más volumen trituran el umbral de equilibrio, porque el coste de las licencias crece más despacio que el número de documentos. Esa es exactamente la razón por la que la automatización se defiende en el despacho grande y casi nunca en el unipersonal.</p>
+
+<div class="callout callout-tip">
+    <strong>Cómo medir tus propios minutos en un trimestre:</strong> saca del programa contable el número de documentos registrados en el mes con más carga, cronometra durante una semana cuánto tarda una persona en capturarlos y validar los campos de una muestra, y apunta el porcentaje que el sistema marca como ambiguo. Con esos tres números —documentos, minutos y tasa de excepción— puedes rellenar la tabla con datos reales y decidir con criterio si la licencia se paga. Si la tasa de excepción supera el veinte por ciento, el problema no es la herramienta: es que tu cartera tiene operaciones que un OCR no va a resolver por ti.
+</div>
+
+<p>Un apunte honesto sobre las cifras que circulan: cualquier porcentaje de ahorro que te ofrezcan sin metodología verificable es una estimación comercial, no un dato. La <a href="../../guias/roi-real-Empresas-ia/">guía de ROI real de la IA en Empresas españolas</a> desarrolla el marco completo para convertir horas recuperadas en euros por sector y para detectar los tres errores más habituales en las proyecciones de retorno que te presentan los fabricantes.</p>
 
                 <h2 id="duelo">El duelo: Kabilio vs Quipu Genius AI</h2>
 
@@ -400,7 +524,7 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>Criterio</th>
+                                <th>Kabilio</th>
                                 <th>Kabilio</th>
                                 <th>Quipu (Genius AI)</th>
                             </tr>
@@ -442,19 +566,85 @@
                 <ul>
                     <li><strong>Contador autónomo:</strong> Quipu (13-17 €) para facturación, OCR y modelos + ChatGPT Plus o Claude Pro (18 €) para análisis y borradores. Coste: 35-70 €/mes, con la regla estricta de no subir datos de clientes a cuentas personales.</li>
                     <li><strong>Asesoría pequeña (2-5 personas):</strong> Quipu o Holded como núcleo (25-50 €) + licencias de Copilot para el equipo. Añade Kabilio cuando el volumen de facturas supere lo que el equipo puede revisar. Coste: 60-200 €/mes según asientos y cartera.</li>
-                    <li><strong>Despacho profesional (asesoría contable con sociedades y nóminas):</strong> a3asesor o a3innuva con Expert AI como sistema (150-350 €) + un automatizador específico como Kabilio para el registro (100-400 €). Coste: desde 300 €/mes, justificado por horas de auxiliar recuperadas y por el argumento de trazabilidad ante la AEAT.</li>
+                    <li><strong>Despacho Profesional (asesoría contable con sociedades y nóminas):</strong> a3asesor o a3innuva con Expert AI como sistema (150-350 €) + un automatizador específico como Kabilio para el registro (100-400 €). Coste: desde 300 €/mes, justificado por horas de auxiliar recuperadas y por el argumento de trazabilidad ante la AEAT.</li>
                 </ul>
 
                 <div class="callout callout-tip">
-                    <strong>Plan de implantación recomendado:</strong> 1) revisa con el fabricante que el software esté adaptado a VERI*FACTU y a factura electrónica antes de comprar nada, 2) prueba la IA con una cartera real no confidencial durante un trimestre completo, 3) mide horas de registro ahorradas por tipo de documento y tasa de excepciones, 4) formaliza los contratos de encargo con la herramienta elegida y solo entonces extiende a toda la cartera. En contabilidad, la revisión va antes que la automatización.
+                    <strong>Plan de implantación recomendado:</strong> 1) revisa con el fabricante que el software esté adaptado a VERI*FACTU y a factura electrónica antes de comprar nada, 2) prueba la IA con una cartera real no confidencial durante un trimestre completo, 3) mide horas de registro ahorradas por tipo de documento y tasa de excepciones, 4) formaliza los contratos de encargo con la herramienta elegida y sólo entonces extiende a toda la cartera. En contabilidad, la revisión va antes que la automatización.
                 </div>
+
+<h2 id="salida-y-proveedor">Dependencia y coste de salida: qué pasa el día que quieres cambiar de proveedor</h2>
+
+<p>En contabilidad la dependencia no es teórica, porque los datos contables son el producto del despacho. Y hay dos salidas muy distintas que conviene no confundir: salir del asistente de IA, que es un trámite, y salir del programa contable, que es un proyecto. La segunda tiene fecha en el calendario.</p>
+
+<h3>Salir del asistente: la exportación no es automática</h3>
+
+<p>Los asistentes generalistas hacen la parte que peor se documenta: el historial de lo que tu equipo le ha pedido. Las políticas de exportación actuales son bastante menos generosas de lo que sugiere el marketing, y conviene conocerlas <em>antes</em> de comprar:</p>
+
+<ul>
+    <li><strong>OpenAI:</strong> la exportación automática está disponible en los planes individuales, pero <em>no</em> en ChatGPT Business, Enterprise ni ChatGPT for Healthcare. En esos espacios hay que solicitarla a quien administra el espacio de trabajo, y la entrega puede tardar hasta siete días. El enlace de descarga caduca a las 24 horas de recibirse.</li>
+    <li><strong>Anthropic:</strong> la exportación individual funciona en los planes Free, Pro y Max. En Team y Enterprise sólo el Primary Owner puede exportar; los miembros de la organización no tienen opción de autoexportación. El enlace caduca también a las 24 horas y lo exportado no se puede importar en otra cuenta personal: no hay migración entre cuentas personales.</li>
+</ul>
+
+<p>La lectura práctica: el historial de análisis vive en el proveedor y hay que sacarlo a mano, y además hay que pedirlo a tiempo al administrador del espacio para que no caduque el enlace. Y ojo con un detalle fino: en Anthropic, los mensajes, archivos y proyectos borrados no entran en las exportaciones iniciadas después del borrado. Si el despacho va borrando conversaciones conforme las cierra, está destruyendo su propio archivo.</p>
+
+<h3>Salir del programa contable: la AEAT ya ha resuelto el caso</h3>
+
+<p>Aquí la respuesta está escrita en las <a href="https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes.html" target="_blank" rel="nofollow noopener">preguntas frecuentes de la Agencia Tributaria sobre sistemas informáticos de facturación y VERI*FACTU</a>, y es más tranquilizadora de lo que parece:</p>
+
+<ul>
+    <li><strong>Exportar es la vía recomendada.</strong> La AEAT señala que prácticamente todos los programas de facturación tienen entre sus utilidades la exportación de los registros generados, sin necesidad de conservar el propio sistema, y considera esa posibilidad la más aconsejable para no incurrir en el supuesto del artículo 201 bis.</li>
+    <li><strong>Guardar el histórico en el programa antiguo sí se puede, con una condición:</strong> el sistema no adaptado al RRSIF sólo puede conservarse si ya no permite expedir facturas —normalmente porque se ha desinstalado o porque se ha modificado para que sea imposible emitir nuevas a partir de una fecha— y se usa exclusivamente para guardar o consultar las facturas históricas.</li>
+    <li><strong>Lo que sí se sanciona es la tenencia de un sistema no adaptado que todavía puede facturar:</strong> el artículo 201 bis.2 de la Ley General Tributaria prevé multa pecuniaria fija de 50.000 € por cada ejercicio.</li>
+    <li><strong>Irse de VERI*FACTU tampoco es libre:</strong> una vez que la obligación está vigente, si el obligado empieza a expedir y remitir registros en modalidad VERI*FACTU debe permanecer en ella, al menos, hasta la finalización del año natural en que se produzca el primer envío.</li>
+    <li><strong>Antes de la fecha, no hay problema:</strong> el periodo anterior a la entrada en vigor del RRSIF es un periodo de pruebas, y en él se puede facturar con sistemas antiguos no adaptados.</li>
+</ul>
+
+<p>Y una recomendación práctica de la propia AEAT que ahorra mucho dinero: antes que migrar, preguntar al fabricante si existe una versión adaptada al RRSIF con la que actualizar el programa actual. La actualización suele ser mucho más barata que el cambio de proveedor.</p>
+
+<h3>El coste de salida que nadie pone en el presupuesto</h3>
+
+<p>Hay un coste que no aparece en ninguna tarifa y que en un despacho pequeño es el que de verdad duele: el conocimiento acumulado en la herramienta. Cada año de uso deposita en el programa una capa de automatismos, plantillas, atajos y criterios aprendidos que nadie ha documentado. El día que hay que salir, el programa que se compara con el candidato no es el mismo que se comparó hace tres años, y la migración incluye mapear el plan de cuentas, recalcular histórico, formar al equipo y volver a validar las automatizaciones que fallaban en silencio y nadie notó.</p>
+
+<div class="comparison-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Pregunta que hay que hacer antes de firmar</th>
+                <th>Por qué importa en un despacho</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>¿Puedo exportar todos mis registros contables en formato estándar?</strong></td>
+                <td>Es la diferencia entre cambiar de herramienta y reconstruir la contabilidad desde cero. La AEAT apunta además a la exportación como la opción más advisable.</td>
+            </tr>
+            <tr>
+                <td><strong>¿Cuál es el plazo de conservación y de borrado de los datos de clientes?</strong></td>
+                <td>Determina qué pasa con las nóminas, las declaraciones y los expedientes cuando cancelas: si no hay plazo definido, el dato se queda en el proveedor.</td>
+            </tr>
+            <tr>
+                <td><strong>¿Quiénes son los encargados y subencargados, y dónde se procesa la información?</strong></td>
+                <td>La AEPD y el RGPD exigen que esa cadena esté identificada. Si la respuesta es «depende del modelo que se use», pregúntalo con un caso concreto.</td>
+            </tr>
+            <tr>
+                <td><strong>¿Cuál es el compromiso mínimo y cómo se renueva?</strong></td>
+                <td>Los planes anuales abaratan el precio unitario y castigan la salida. Un despacho que prevea volumen cambiante prefiere un mes de margen.</td>
+            </tr>
+            <tr>
+                <td><strong>¿Cuánto cuesta añadir un usuario a mitad de año y cómo se factura?</strong></td>
+                <td>En un despacho el equipo crece a rachas. Los recargos por usuarios añadidos a mitad de período son la forma más común de «sorpresa» en la factura anual.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>El principio que resume todo lo anterior es sencillo y funciona en cualquier sector: <strong>el coste de salida no lo pagas el día que te vas, lo pagas el día que te quieres ir y no puedes</strong>. Un sistema de gestión cuya exportación de registros no está documentada, cuya retención de datos no está escrita o que sólo puede abandonar quien administra el espacio de trabajo no es más caro de comprar. Es más caro de depender.</p>
 
                 <h2 id="veredicto">Veredicto por perfil de asesoría</h2>
 
-                <div class="rating-box">
-                    <div class="rating-text">
-                        <p>Septiembre de 2026 es, probablemente, el mejor momento para que un despacho contable español dé el paso: VERI*FACTU y la factura electrónica B2B obligarán a digitalizar la facturación entre 2027 y 2028, la AEAT ya selecciona riesgos con inteligencia artificial según su Plan de Control 2026, y la IA de gestión contable española ha alcanzado un nivel de madurez en el que propone asientos, concilia bancos y prepara modelos con una revisión humana manejable. El retorno no es especulativo: son horas de auxiliar de cada cierre trimestral, exactamente la partida que más cuesta controlar en una asesoría. La fórmula ganadora en 2026 es combinar una buena herramienta de gestión con IA integrada (Quipu, Holded, a3) con una capa de automatización para el volumen (Kabilio) y un asistente de apoyo para el criterio (ChatGPT, Claude o Copilot), con la revisión profesional como frontera innegociable. El contable no desaparece: deja de registrar y se dedica a lo que ninguna IA puede firmar, el asesoramiento.</p>
-                    </div>
+                <div class="callout callout-tip">
+                    <p>Octubre de 2026 es, probablemente, el mejor momento para que un despacho contable español dé el paso: VERI*FACTU y la factura electrónica B2B obligarán a digitalizar la facturación entre 2027 y 2028, la AEAT ya selecciona riesgos con inteligencia artificial según su Plan de Control 2026, y la IA de gestión contable española ha alcanzado un nivel de madurez en el que propone asientos, concilia bancos y prepara modelos con una revisión humana manejable. El retorno no es especulativo: son horas de auxiliar de cada cierre trimestral, exactamente la partida que más cuesta controlar en una asesoría. La fórmula ganadora en 2026 es combinar una buena herramienta de gestión con IA integrada (Quipu, Holded, a3) con una capa de automatización para el volumen (Kabilio) y un asistente de apoyo para el criterio (ChatGPT, Claude o Copilot), con la revisión Profesional como frontera innegociable. El contable no desaparece: deja de registrar y se dedica a lo que ninguna IA puede firmar, el asesoramiento.</p>
                 </div>
 
                 <h3>Estas herramientas son para ti si:</h3>
@@ -469,45 +659,78 @@
                 <ul>
                     <li>Pretendes presentar modelos o declaraciones sin revisión humana de los borradores generados</li>
                     <li>No tienes control sobre qué datos de clientes entran en cada herramienta (riesgo AEPD/RGPD)</li>
-                    <li>Tu volumen no justifica el coste de las plataformas de automatización profesional (Kabilio) ni de las suites de asesoría</li>
+                    <li>Tu volumen no justifica el coste de las plataformas de automatización Profesional (Kabilio) ni de las suites de asesoría</li>
                     <li>Esperas que la IA sustituya tu criterio de valoración en lugar de acelerar tu operativa y dejar el criterio para ti</li>
                 </ul>
 
                 <div class="callout callout-info">
-                    <strong>No es asesoramiento fiscal:</strong> este artículo informa sobre herramientas y contexto normativo vigente a septiembre de 2026. Antes de implantar cualquier solución y en cada cierre, contrasta criterios con las fuentes oficiales (AEAT, ICAC, AEPD) y con la documentación técnica de tu proveedor. Cada despacho debe validar su propio caso.
+                    <strong>No es asesoramiento fiscal:</strong> este artículo informa sobre herramientas y contexto normativo vigente el 3 de octubre de 2026. Antes de implantar cualquier solución y en cada cierre, contrasta criterios con las fuentes oficiales (AEAT, ICAC, AEPD) y con la documentación técnica de tu proveedor. Cada despacho debe validar su propio caso.
                 </div>
 
                 <h2 id="faq">Preguntas frecuentes</h2>
 
-                <h3>¿Qué IA usan los contadores y asesorías en España en 2026?</h3>
-                <p>Según el Barómetro de la Asesoría de Wolters Kluwer (junio de 2026), siete de cada diez despachos profesionales españoles ya utilizan IA en su trabajo diario. Los usos más extendidos son el reconocimiento automático de facturas (OCR), la conciliación bancaria y la generación de pre-asientos contables (Quipu Genius AI, Holded, a3innuva, Kabilio), la preparación de borradores de modelos fiscales y los asistentes generales (ChatGPT, Copilot, Claude) para resúmenes y primeros borradores. La revisión humana final sigue siendo obligatoria por responsabilidad profesional.</p>
+                <h3 id="faq-1">¿Qué IA usan los contadores y asesorías en España en 2026?</h3>
+                <p>Los usos consolidados en el despacho español son cuatro: el reconocimiento automático de facturas y tickets, que extrae proveedor, NIF, base imponible, IVA y concepto; la propuesta de pre-asiento contable sobre el plan de cuentas ya aprendido; la conciliación bancaria con propuesta de contrapartida; y el borrador de los modelos fiscales. Los asistentes generalistas (ChatGPT, Claude, Copilot) se usan encima, para resumir, redactar y contrastar. El Barómetro de la Asesoría de Wolters Kluwer, en su quinta edición de junio de 2026, estima que siete de cada diez despachos profesionales españoles ya usan IA en su día a día, y el INE situaba en el primer trimestre de 2025 el uso de IA en el 21,1% de las Empresas de 10 o más empleados. La revisión humana final sigue siendo obligatoria por responsabilidad Profesional.</p>
 
-                <h3>¿Cuánto cuesta la IA para un despacho contable?</h3>
-                <p>Un contador autónomo puede empezar con Quipu y su asistente Genius AI por unos 13-17 € al mes según tarifa y promoción, o con un asistente general como ChatGPT Plus o Claude Pro por unos 18 € al mes. Una pyme que usa Holded con contabilidad incluida parte de unos 29 € al mes. Un despacho profesional sobre a3asesor/a3innuva (Wolters Kluwer) o con automatización por volumen (Kabilio) paga rangos de mercado de 100-400 € mensuales según módulos y documentos. Todos los precios son orientativos y sin IVA.</p>
+                <h3 id="faq-2">¿Cuánto cuesta la IA para un despacho contable?</h3>
+                <p>Un contador autónomo puede empezar por unos 31 € al mes sumando Quipu Starter, desde 13 €/mes, y un asistente individual como ChatGPT Plus o Claude Pro, 20 US$/mes. Una asesoría pequeña se mueve entre 60 y 200 € al mes: un gestor de 25-50 € más los asientos de asistente del equipo. Un despacho con sociedades y nóminas que trabaja sobre suite Profesional, a3asesor o a3innuva, y añade un automatizador por volumen se sitúa en el orden de 300 a 700 € al mes. Para las cifras cerradas de cada fabricante, mira la tabla de precios: los rangos de las suites profesionales y de los automatizadores por volumen no tienen tarifa pública y hay que confirmarlos con el fabricante.</p>
 
-                <h3>¿Es legal subir facturas y datos de clientes a ChatGPT o Copilot?</h3>
-                <p>Nunca en cuentas gratuitas o personales. Una factura contiene datos personales que la AEPD, en su decálogo «Cuidado con lo que le confIAs» (enero 2026), pide explícitamente no compartir con herramientas de IA: nombre, dirección, DNI, datos financieros y contractuales. Solo debe hacerse con planes empresariales que garanticen contractualmente que los datos no se usan para entrenar modelos, con política de retención clara y encargo de tratamiento conforme al RGPD. El responsable último es siempre el despacho.</p>
+                <h3 id="faq-3">¿Cuántas horas ahorra de verdad y cuándo se amortiza la licencia?</h3>
+                <p>Depende de una sola variable que ningún fabricante pública: los minutos que la herramienta ahorra en cada documento. La ecuación es coste anual igual a 12 por la suma de licencias, y horas recuperadas igual a documentos por minutos ahorrados dividido entre 60. Si divides el coste anual entre las horas recuperadas al año obtienes tu precio de equilibrio: la tarifa por hora a partir de la cual la licencia da dinero. En los escenarios ilustrativos de este artículo ese umbral va de unos 10 € por hora en una asesoría pequeña a unos 25 € por hora en un despacho unipersonal. Mide tus propios minutos durante un trimestre antes de renovar nada.</p>
 
-                <h3>¿Debe mi software de facturación cumplir VERI*FACTU?</h3>
-                <p>La mayoría de los obligados debe tener su sistema informático de facturación adaptado al Reglamento VERI*FACTU (Real Decreto 1007/2023): el 1 de enero de 2027 para contribuyentes del Impuesto sobre Sociedades y el 1 de julio de 2027 para el resto, según el calendario vigente tras el Real Decreto-ley 15/2025. Si eliges software en 2026, lo razonable es que ya esté adaptado, para no migrar un año después. La AEAT ofrece además una aplicación gratuita de facturación para profesionales con baja facturación.</p>
+                <h3 id="faq-4">¿Es legal subir facturas y datos de clientes a ChatGPT o Copilot?</h3>
+                <p>En cuentas gratuitas o personales, no. La factura contiene datos personales, nombre, dirección, NIF, datos económicos y contractuales, y la AEPD, en su decálogo «Cuidado con lo que le confías» de enero de 2026, pide expresamente no compartirlos con herramientas de IA. Sí es viable con planes empresariales, que garantizan contractualmente que el contenido no se usa para entrenar, y con un encargo de tratamiento conforme al RGPD donde se concrete quién actúa como responsable y quién como encargado. El despacho sigue siendo el responsable último: la RGPD no se delega en el contrato con el proveedor.</p>
 
-                <h3>¿Puede la IA sustituir a un contable?</h3>
-                <p>No. La IA acelera las tareas repetitivas y estructuradas (lectura de facturas, conciliaciones, borradores), pero la interpretación de operaciones atípicas, el criterio de valoración y la responsabilidad profesional siguen recayendo en la persona. El Consejo General de Economistas impulsó en 2026 la formación de sus colegiados en IA junto a Microsoft y Founderz, y la propia profesión acepta que la supervisión humana es innegociable. El contable que usa IA deja de registrar y se dedica a asesorar.</p>
+                <h3 id="faq-5">¿Debe mi software de facturación cumplir VERI*FACTU?</h3>
+                <p>Si el programa expide facturas, sí. El Reglamento VERI*FACTU, aprobado por el Real Decreto 1007/2023, obliga a que el sistema informático de facturación genere, guarde o remita el registro de facturación con huella digital, encadenado al registro anterior y con firma electrónica, e incluya el código QR. La entrada en vigor obligatoria es el 1 de enero de 2027 para contribuyentes del Impuesto sobre Sociedades y el 1 de julio de 2027 para el resto, según la disposición final cuarta modificada por el Real Decreto-ley 15/2025. Antes de esas fechas el periodo es de pruebas y se puede facturar con un sistema antiguo. La AEAT pública además una aplicación gratuita para profesionales con baja facturación.</p>
 
-                <h3>¿Qué riesgo tiene que la AEAT use IA para el control fiscal?</h3>
-                <p>El Plan Anual de Control Tributario y Aduanero 2026 consolida el uso de inteligencia artificial y análisis masivo de datos para seleccionar riesgos, cruzar información de facturas (VERI*FACTU, SII) y detectar tramas irregulares. Eso significa que los datos que el despacho soporta digitalmente se contrastan con programas automatizados. La gestión ordenada, trazable y con conciliaciones al día deja de ser una buena práctica y se convierte en la única defensa eficaz ante el control predictivo.</p>
+                <h3 id="faq-6">¿Puede la IA sustituir a un contable?</h3>
+                <p>No, y no por una cuestión técnica sino de responsabilidad. La IA acelera lo estructurado y repetible: leer el documento, proponer la cuenta, cuadrar el banco, rellenar el borrador. No puede decidir el criterio de valoración de una operación atípica, defender un criterio ante una inspección ni responder por la firma. El resultado esperado no es menos personal contable, es el mismo equipo con el tiempo reasignado: de registrar documentos a asesorar. El Consejo General de Economistas impulsó en 2026 la formación gratuita de sus colegiados en IA junto a Microsoft y Founderz, y la supervisión humana es la frontera que la profesión no está dispuesta a mover.</p>
+
+                <h3 id="faq-7">¿Qué riesgo tiene qué la AEAT use IA para el control fiscal?</h3>
+                <p>El Plan Anual de Control Tributario y Aduanero 2026 consolida el uso de inteligencia artificial y el análisis masivo de datos para seleccionar riesgos, cruzar información de facturación, con el SII y VERI*FACTU como fuentes, y detectar tramas irregulares. La consecuencia práctica es que los datos que tu despacho soporta de forma digital acaban cruzados por programas automatizados. La defensa no es una declaración, es una contabilidad con registros íntegros, trazables y sin omisiones, que es exactamente lo que el Reglamento VERI*FACTU obliga a garantizar en los sistemas de facturación.</p>
+
+                <h3 id="faq-8">¿Qué pasa con el AI Act en un despacho contable?</h3>
+                <p>El Reglamento (UE) 2024/1689 no certifica herramientas ni proveedores, y ni su anexo III ni el artículo 6.3 enumeran los servicios de gestión contable o de asesoramiento fiscal: usar IA para contabilizar no convierte por sí sólo al despacho en un sistema de alto riesgo. Lo que sí tiene calendario es la alfabetización en IA del artículo 4, en vigor desde el 2 de febrero de 2025, y la transparencia del artículo 50, aplicable desde el 2 de agosto de 2026, que obliga a declarar el carácter generado por IA de los contenidos y a informar cuando una persona está hablando con un sistema. El resto del calendario, aplicación general y alto riesgo el 2 de agosto de 2027, exige seguimiento, no un rediseño inmediato.</p>
 
                 <div class="related-articles">
                     <h3>Artículos relacionados</h3>
                     <ul>
                         <li><a href="../../comparativas/ia-contabilidad-finanzas/">IA para contabilidad y finanzas: herramientas de análisis financiero</a></li>
-                        <li><a href="../../herramientas-ia/automatizacion-procesos-ia/">Automatización de procesos con IA en empresas</a></li>
-                        <li><a href="../../herramientas-ia/seguridad-etica-ia/">Seguridad y ética de la IA en empresas: guía de cumplimiento 2026</a></li>
-                        <li><a href="../../guias/roi-real-empresas-ia/">Empresas españolas con IA: el ROI real en euros, sector a sector</a></li>
+                        <li><a href="../../herramientas-ia/automatizacion-procesos-ia/">Automatización de procesos con IA en Empresas</a></li>
+                        <li><a href="../../herramientas-ia/seguridad-etica-ia/">Seguridad y ética de la IA en Empresas: guía de cumplimiento 2026</a></li>
+                        <li><a href="../../guias/roi-real-Empresas-ia/">Empresas españolas con IA: el ROI real en euros, sector a sector</a></li>
                         <li><a href="../../comparativas/chatgpt-vs-claude-vs-gemini/">ChatGPT vs Claude vs Gemini: comparativa completa 2026</a></li>
                         <li><a href="../../guias/ia-ai-act-cumplimiento/">Cumplimiento del AI Act para pymes en 2026</a></li>
                     </ul>
                 </div>
+
+<h2 id="fuentes">Fuentes</h2>
+
+<p>Todos los precios, fechas, cifras y referencias normativas de este artículo proceden de las fuentes siguientes, consultadas el <strong>3 de octubre de 2026</strong>. Las cifras que no tienen fuente pública (rangos de suites profesionales y de automatizadores por volumen) aparecen siempre marcadas como rango de mercado, y los escenarios de amortización se presentan con sus supuestos declarados.</p>
+
+<ul>
+    <li><strong>Agencia Tributaria.</strong> <a href="https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes.html" rel="noopener nofollow" target="_blank">Sistemas informáticos de facturación y VERI*FACTU — preguntas frecuentes</a> — ámbito de aplicación del reglamento (sólo sistemas que expiden facturas), requisitos del registro de facturación, calendario de entrada en vigor, periodo de pruebas, recomendación de exportar registros, régimen de tenencia del sistema antiguo y las cuantías del artículo 201 bis de la Ley General Tributaria. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Agencia Tributaria.</strong> <a href="https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/presentacion-declaraciones-ayuda-tecnica/aplicacion-gratuita-verifactu-aeat.html" rel="noopener nofollow" target="_blank">Aplicación gratuita VERI*FACTU</a> — herramienta de facturación para profesionales con baja facturación. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Agencia Tributaria.</strong> <a href="https://sede.agenciatributaria.gob.es/Sede/planificacion/plan-general-control-tributario.html" rel="noopener nofollow" target="_blank">Plan Anual de Control Tributario y Aduanero</a> — directrices de control y uso de inteligencia artificial y análisis masivo de datos para la selección de riesgos. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Agencia Española de Protección de Datos.</strong> <a href="https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa/aepd-publica-decalogo-recomendaciones-proteger-privacidad-al-usar-ia" rel="noopener nofollow" target="_blank">Decálogo «Cuidado con lo que le confías»</a> — recomendación de no compartir datos personales ni información sensible con herramientas de IA. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Agencia Española de Protección de Datos.</strong> <a href="https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa/la-aepd-publica-una-guia-para-adaptar-al-rgpd-los-productos-y" rel="noopener nofollow" target="_blank">Guía para adaptar al RGPD los productos y servicios que incorporan inteligencia artificial</a> — criterio sobre base legal, información, derechos y decisiones automatizadas. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Instituto Nacional de Estadística.</strong> <a href="https://www.ine.es/dyngs/Prensa/ETICCE20241T2025.htm" rel="noopener nofollow" target="_blank">Encuesta sobre el uso de TIC y comercio electrónico en las Empresas</a> — porcentaje de uso de IA en Empresas de 10 o más empleados y en microempresas, primer trimestre de 2025. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Observatorio Nacional de Tecnología y Sociedad (ONTSI).</strong> <a href="http://ontsi.es/es/publicaciones/indicadores-de-uso-de-inteligencia-artificial-en-espana-2025" rel="noopener nofollow" target="_blank">Indicadores de uso de inteligencia artificial en España 2025</a> — destinos de uso de la IA en la Empresa española. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Wolters Kluwer.</strong> <a href="https://www.wolterskluwer.com/es-es/tax-and-accounting" rel="noopener nofollow" target="_blank">Barómetro de la Asesoría y Future Ready Accountant</a> — penetración de la IA en los despachos profesionales y peso de la supervisión humana. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Wolters Kluwer.</strong> <a href="https://www.wolterskluwer.com/es-es/solutions/a3" rel="noopener nofollow" target="_blank">soluciones a3 (a3asesor y a3innuva)</a> — alcance funcional de la suite para asesorías y con agentes de IA integrados. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Instituto de Censores Jurados de Cuentas de España.</strong> <a href="https://www.icac.gob.es/contabilidad/consultas-boicac" rel="noopener nofollow" target="_blank">Consultas del BOICAC</a> — criterio contable ante operaciones singulares y sobre la aplicación de nuevas tecnologías. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Consejo General de Economistas de España.</strong> <a href="http://formacion.economistas.es/cursoinfor.php?idCursoMasInfo=1456" rel="noopener nofollow" target="_blank">Formación de colegiados en inteligencia artificial</a> — acuerdo con Microsoft y Founderz para formar a los colegiados. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Unión Europea.</strong> <a href="https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=OJ:L_202401689" rel="noopener nofollow" target="_blank">Reglamento (UE) 2024/1689 (AI Act)</a> — calendario de aplicación: prohibiciones y artículo 4 (2 de febrero de 2025), modelos de propósito general (2 de agosto de 2025), transparencia del artículo 50 (2 de agosto de 2026), aplicación general y alto riesgo (2 de agosto de 2027) y alto riesgo en productos regulados (2 de agosto de 2028); clasificación de alto riesgo del anexo III y del artículo 6.3. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>TeamSystem.</strong> <a href="https://getquipu.com/es/gestion-cobros-y-pagos" rel="noopener nofollow" target="_blank">Quipu — planes y asistente Genius AI</a> — tarifas por plan y estado de adaptación a VERI*FACTU. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Holded.</strong> <a href="https://www.holded.com/es" rel="noopener nofollow" target="_blank">Holded — tarifas públicas</a> — planes con facturación y con contabilidad e impuestos incluidos. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Kabilio.</strong> <a href="https://www.kabilio.es/" rel="noopener nofollow" target="_blank">Kabilio — plataforma de IA contable para asesorías</a> — integraciones con programas contables y modelo de cobro por volumen, sin tarifa pública. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>OpenAI.</strong> <a href="https://openai.com/business/pricing/" rel="noopener nofollow" target="_blank">Precios de ChatGPT Business</a> — asiento Standard desde 21 € por usuario al mes, Premium desde 105 €, mínimo de 2 usuarios y no entrenamiento con datos de Empresa. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>OpenAI.</strong> <a href="https://help.openai.com/en/articles/7260999-how-do-i-export-my-chatgpt-history-and-data" rel="noopener nofollow" target="_blank">Exportar el historial y los datos de ChatGPT</a> — disponibilidad de la exportación en planes Business, Enterprise y Healthcare, plazo de hasta 7 días y caducidad del enlace de 24 horas. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Anthropic.</strong> <a href="https://www.anthropic.com/pricing" rel="noopener nofollow" target="_blank">Precios de Claude</a> — planes Pro y Team, y condición de pago. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Anthropic.</strong> <a href="https://privacy.claude.com/en/articles/9450526-export-your-claude-data" rel="noopener nofollow" target="_blank">Exportar los datos de Claude</a> — exportación individual en Free, Pro y Max, exportación de organización sólo para el Primary Owner en Team y Enterprise, caducidad del enlace de 24 horas y no importación de lo exportado en otra cuenta personal. Consultado el 3 de octubre de 2026.</li>
+    <li><strong>Microsoft.</strong> <a href="https://www.microsoft.com/es-es/microsoft-365/business/microsoft-365-copilot" rel="noopener nofollow" target="_blank">Microsoft 365 Copilot</a> — precio por usuario y requisito de licencia de Microsoft 365. Consultado el 3 de octubre de 2026.</li>
+</ul>
 
             </div>
         </div>

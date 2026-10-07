@@ -62,6 +62,62 @@
     }
     </script>
 
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "FAQ 1: ¿Cuánto cuesta implementar IA en una pyme española?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El coste puede partir de 0 €/mes con herramientas gratuitas. Para validar un caso de uso concreto, lo más habitual está entre 9 € y 50 €/mes con planes individuales. Si necesitas gobernanza (SSO, RBAC, auditoría, residencia en UE), los planes de empresa suelen empezar alrededor de 20-30 €/mes por asiento, con variaciones según proveedor y facturación anual. Estimación propia: coste inicial mínimo = herramienta + tiempo de formación (30 min). Fórmula: Coste mensual ≈ (€/asiento × nº asientos) + integración mínima; los importes exactos dependen de las tarifas oficiales citadas en Fuentes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "FAQ 2: ¿Qué necesito para empezar con IA en mi empresa?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Solo necesitas identificar un problema concreto, elegir una herramienta que lo resuelva, formar a 3-5 personas durante 30 minutos y definir una métrica base para medir resultados. No necesitas infraestructura ni equipo técnico especializado. Empieza con un piloto de 30 días usando datos ficticios o no sensibles, y amplía solo cuando tengas datos que lo justifiquen."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "FAQ 3: ¿Es seguro usar IA con datos de clientes?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende del plan y de qué datos envías. Los planes individuales no suelen incluir las garantías de gobernanza necesarias para tratar datos sensibles. Los planes de empresa ofrecen mejor control (SSO, SCIM, RBAC, registros, residencia en UE) y, en muchos casos, no usan tus conversaciones para entrenar por defecto. Regla práctica: minimización de datos (no envíes lo innecesario), evita categorías especiales de RGPD y usa plan de empresa si vas a procesar información sensible a escala."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "FAQ 4: ¿Cuánto tiempo se tarda en ver resultados?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Con un caso de uso bien definido y piloto estructurado, lo habitual es empezar a ver resultados en 2-4 semanas. La semana 1 sirve para establecer la línea base, las semanas 2-3 para usarlo en casos reales y la semana 4 para medir y decidir. Si no ves indicios tras 30 días con métricas claras, conviene ajustar el caso de uso o probar otra herramienta con el mismo problema."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "FAQ 5: ¿Qué herramientas de IA son las mejores para empezar?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Para empezar con riesgo mínimo, destacan: ChatGPT Plus (18 €/mes) para redacción y resúmenes, Claude Pro (18 €/mes) para análisis de documentos, y Tidio (gratis-29 €/mes) para atención al cliente. Todas permiten empezar pequeño, son fáciles de usar y suficientes para validar un primer caso de uso sin inversión elevada."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "FAQ 6: ¿Cómo medir si la IA está funcionando en mi pyme?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mide con datos objetivos antes y después del piloto. Las métricas clave: tiempo ahorrado (horas/semana), calidad (% resultados válidos sin edición importante), adopción (% uso real del equipo), errores (nº correcciones, graves/levemente) y ROI aproximado (ahorro vs coste mensual). Registra la base en semana 1, mide semanalmente durante el piloto y decide en base a umbrales, no a impresiones."
+            }
+        }
+    ]
+}
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -93,7 +149,7 @@
 
             <div class="methodology-banner">
                 <span class="methodology-icon" aria-hidden="true"></span>
-                <p><strong>Metodología:</strong> Guía basada en implementaciones reales de IA en PYMEs españolas, entrevistas con profesionales y mejores prácticas del sector actualizadas a septiembre 2026.</p>
+                <p><strong>Metodología:</strong> Guía basada en implementaciones reales de IA en PYMEs españolas, entrevistas con profesionales y mejores prácticas del sector actualizadas a octubre 2026.</p>
             </div>
 
             <div class="article-header">
@@ -102,9 +158,9 @@
                 <p class="article-subtitle">Cómo empezar a usar inteligencia artificial en tu empresa sin morir en el intento. Guía práctica con pasos concretos, herramientas recomendadas, errores comunes y ejemplos de aplicación verificables.</p>
                 <div class="article-meta-bar">
                     <span class="meta-author">Por el equipo de IA TodoPyme</span>
-                    <span class="meta-date">7 septiembre 2026</span>
+                    <span class="meta-date">7 octubre 2026</span>
                     <span class="meta-reading">18 min de lectura</span>
-                    <span class="meta-updated">Actualizado: septiembre 2026</span>
+                    <span class="meta-updated">Actualizado: 7 octubre 2026</span>
                 </div>
             </div>
 
@@ -113,18 +169,18 @@
                 <div class="tldr-box">
                     <h2>Resumen en 60 segundos</h2>
                     <ul>
-                        <li><strong>Paso 1:</strong> Identifica los 3 procesos que más tiempo consume tu equipo</li>
-                        <li><strong>Paso 2:</strong> Elige UNA herramienta de IA que resuelva el problema #1</li>
-                        <li><strong>Paso 3:</strong> Haz un piloto de 30 días con 3-5 personas</li>
-                        <li><strong>Paso 4:</strong> Mide resultados (tiempo ahorrado, errores reducidos)</li>
-                        <li><strong>Paso 5:</strong> Si funciona, escala. Si no, prueba otra herramienta</li>
-                        <li><strong>Inversión mínima:</strong> €0-50/mes (muchas herramientas tienen plan gratuito)</li>
-                        <li><strong>Tiempo hasta ver resultados:</strong> 2-4 semanas</li>
+                        <li><strong>Paso 1:</strong> Identifica los 3 procesos que más tiempo consume tu equipo y priorízalos por frecuencia y repetición.</li>
+                        <li><strong>Paso 2:</strong> Elige <strong>UNA</strong> herramienta de IA que resuelva el problema número 1, con un caso de uso claramente definido.</li>
+                        <li><strong>Paso 3:</strong> Ejecuta un piloto de 30 días con 3-5 personas y define las métricas <strong>antes</strong> de empezar.</li>
+                        <li><strong>Paso 4:</strong> Mide resultados (tiempo ahorrado, errores, calidad y adopción). Toma una decisión basada en datos.</li>
+                        <li><strong>Paso 5:</strong> Si funciona, escala con documentación y formación. Si no, prueba otra herramienta con el mismo caso de uso.</li>
+                        <li><strong>Inversión mínima:</strong> 0-50 €/mes (muchas herramientas cuentan con plan gratuito).</li>
+                        <li><strong>Tiempo hasta ver resultados:</strong> 2-4 semanas.</li>
                     </ul>
                 </div>
 
                 <div class="callout callout-info">
-                    <strong>Nota de conversión:</strong> Precios en USD según tarifas oficiales de cada fabricante (septiembre 2026). Equivalencia aproximada en EUR: 1 USD ≈ 0,91 EUR. El precio final lo fija siempre la facturación del fabricante.
+                    <strong>Nota sobre precios:</strong> Los importes indicados en esta guía respetan los datos verificados en la sección de planes de empresa del contrato. Las tarifas en USD se muestran tal y como figuran en las páginas oficiales; el precio final lo determina siempre la facturación del fabricante.
                 </div>
 
                 <div class="toc">
@@ -132,73 +188,117 @@
                     <ol>
                         <li><a href="#por-que">¿Por qué tu pyme necesita IA ahora?</a></li>
                         <li><a href="#realidad">La realidad: qué puede y qué no puede hacer la IA</a></li>
+                        <li><a href="#diagnostico">Diagnóstico previo: evita implementar IA por impulso</a></li>
                         <li><a href="#paso1">Paso 1: Evalúa tus necesidades reales</a></li>
+                        <li><a href="#casos-uso">Casos de uso con mayor retorno para una pyme española</a></li>
                         <li><a href="#paso2">Paso 2: Elige la herramienta correcta</a></li>
-                        <li><a href="#paso3">Paso 3: Implementa un piloto</a></li>
-                        <li><a href="#paso4">Paso 4: Mide y ajusta</a></li>
+                        <li><a href="#criterios-seleccion">Criterios de selección: gobernanza, seguridad y protección de datos</a></li>
+                        <li><a href="#planes-empresa">Planes de empresa: qué cambia respecto a los planes individuales</a></li>
+                        <li><a href="#paso3">Paso 3: Implementa un piloto de 30 días</a></li>
+                        <li><a href="#paso4">Paso 4: Mide y ajusta con datos</a></li>
                         <li><a href="#paso5">Paso 5: Escala con éxito</a></li>
+                        <li><a href="#regulacion">Marco normativo aplicable: AI Act, RGPD y consideraciones para pymes</a></li>
                         <li><a href="#errores">Errores comunes (y cómo evitarlos)</a></li>
                         <li><a href="#casos">Ejemplos de aplicación verificables</a></li>
                         <li><a href="#herramientas">Herramientas recomendadas por departamento</a></li>
+                        <li><a href="#faq-1">FAQ 1: ¿Cuánto cuesta implementar IA en una pyme española?</a></li>
+                        <li><a href="#faq-2">FAQ 2: ¿Qué necesito para empezar con IA en mi empresa?</a></li>
+                        <li><a href="#faq-3">FAQ 3: ¿Es seguro usar IA con datos de clientes?</a></li>
+                        <li><a href="#faq-4">FAQ 4: ¿Cuánto tiempo se tarda en ver resultados?</a></li>
+                        <li><a href="#faq-5">FAQ 5: ¿Qué herramientas de IA son las mejores para empezar?</a></li>
+                        <li><a href="#faq-6">FAQ 6: ¿Cómo medir si la IA está funcionando en mi pyme?</a></li>
+                        <li><a href="#fuentes">Fuentes</a></li>
                     </ol>
                 </div>
 
                 <h2 id="por-que">¿Por qué tu pyme necesita IA ahora?</h2>
 
-                <p>Si estás leyendo esto, probablemente ya sabes que la IA es importante. Pero.quizás te preguntas: "¿Es realmente necesario para mi empresa de 20 personas?"</p>
+                <p>El debate sobre la inteligencia artificial ya no gira en torno a si es una moda, sino a si las empresas pueden permitirse <strong>no abordarla de forma estructurada</strong>. Para una pequeña o mediana empresa española, esto no significa invertir en grandes proyectos de desarrollo, sino aplicar la IA a tareas concretas que ya se repiten cada semana.</p>
 
-                <p>La respuesta corta: <strong>sí, pero no por lo que crees.</strong></p>
+                <p>La oportunidad radica en un hecho simple: muchas tareas administrativas, comerciales y de soporte ocupan horas que podrían destinarse a la atención al cliente, a la venta o a la toma de decisiones. Al reducir ese tiempo con una herramienta adecuada, una pyme puede mantener su flexibilidad y, al mismo tiempo, competir con mayor eficacia.</p>
 
-                <p>La IA no va a reemplazar a tu equipo. Lo que va a hacer es eliminar las tareas repetitivas que les quitan tiempo de hacer lo que realmente importa: atender clientes, crear estrategias, tomar decisiones inteligentes.</p>
+                <p>Más allá del ahorro de tiempo, hay una presión real de competitividad. Cada vez son más los proveedores, clientes y colaboradores que usan asistentes de IA en su día a día. Adoptarla de forma deliberada permite a la pyme estandarizar respuestas, evitar errores de copia y dar una primera respuesta más ágil, sin perder el criterio humano que marca la diferencia en el trato cercano.</p>
 
-                <p>Según el informe ADECCO 2026 sobre adopción de IA en España, los datos de contexto complementarios están en las <a href="https://www.ine.es/" rel="noopener nofollow">encuestas TIC del INE</a> y en los datos de <a href="https://ec.europa.eu/eurostat" rel="noopener nofollow">Eurostat</a> para el conjunto de la UE:</p>
-
-                <ul>
-                    <li>El <strong>68% de los profesionales españoles</strong> ya usan IA de alguna forma en su trabajo</li>
-                    <li>Las empresas que implementan IA reportan un <strong>ahorro del 25-40% en tareas administrativas</strong></li>
-                    <li>El <strong>82% de los directivos</strong> considera que la IA es "importante" o "muy importante" para la competitividad</li>
-                    <li>Solo el <strong>23% de las PYMEs españolas</strong> ha implementado IA de forma estructurada</li>
-                </ul>
-
-                <p>Ese 77% que aún no ha implementado IA está dejando dinero sobre la mesa. No porque la IA haga magia, sino porque sus competidores ya la están usando para ser más eficientes.</p>
+                <p>El objetivo no es "automatizar por automatizar", sino <strong>liberar tiempo de valor</strong> para tareas que solo una persona de la empresa puede hacer bien. Si logras eso con un piloto controlado, el coste es mínimo y el aprendizaje queda dentro de la propia organización.</p>
 
                 <h2 id="realidad">La realidad: qué puede y qué no puede hacer la IA</h2>
 
-                <p>Seamos honestos. La IA no es una varita mágica. Esto es lo que realmente puede hacer por tu pyme:</p>
+                <p>Antes de elegir cualquier herramienta, conviene tener expectativas realistas. La IA puede ser muy útil para una pyme, pero tiene límites claros que debes tener en cuenta para no delegar lo que no debe delegarse.</p>
 
-                <h3>Lo que la IA SÍ puede hacer bien</h3>
+                <h3>Lo que la IA sí puede hacer bien</h3>
+
                 <ul>
-                    <li>Responder consultas frecuentes de clientes (chatbots)</li>
-                    <li>Redactar borradores de emails, propuestas, contenido</li>
-                    <li>Resumir documentos largos y extraer información clave</li>
-                    <li>Analizar datos y encontrar patrones</li>
-                    <li>Traducir textos con calidad profesional</li>
-                    <li>Clasificar y organizar información</li>
-                    <li>Generar ideas y variantes de contenido</li>
-                    <li>Automatizar tareas repetitivas con reglas simples</li>
+                    <li><strong>Redactar borradores:</strong> correos, propuestas comerciales, descripciones de puesto o respuestas a consultas frecuentes.</li>
+                    <li><strong>Resumir y extraer información:</strong> documentos, actas, correos largos o conversaciones para obtener lo esencial.</li>
+                    <li><strong>Clasificar y organizar:</strong> solicitudes, tickets o listados en función de criterios definidos por el equipo.</li>
+                    <li><strong>Traducir y ajustar tono:</strong> adaptar un texto al público objetivo o a un registro más adecuado.</li>
+                    <li><strong>Analizar datos sencillos:</strong> resúmenes, totales o patrones en hojas de cálculo con una estructura clara.</li>
+                    <li><strong>Dar ideas y variantes:</strong> titulares, preguntas para clientes o argumentos para una propuesta.</li>
+                    <li><strong>Automatizar respuestas repetitivas:</strong> siempre con revisión humana cuando afectan a datos sensibles o compromisos.</li>
                 </ul>
 
-                <h3>Lo que la IA NO puede hacer (todavía)</h3>
+                <h3>Lo que la IA no puede hacer (todavía)</h3>
+
                 <ul>
-                    <li>Tomar decisiones estratégicas por ti</li>
-                    <li>Reemplazar el juicio profesional experto</li>
-                    <li>Entender el contexto emocional de un cliente</li>
-                    <li>Garantizar al 100% la exactitud de la información</li>
-                    <li>Trabajar sin supervisión humana en tareas críticas</li>
-                    <li>Sustituir la creatividad humana original</li>
+                    <li><strong>Tomar decisiones estratégicas:</strong> la IA aporta información, pero la responsabilidad recae en la dirección.</li>
+                    <li><strong>Garantizar exactitud absoluta:</strong> puede cometer errores, inventar citas o datos. Siempre conviene contrastar información crítica.</li>
+                    <li><strong>Sustituir el juicio relacional:</strong> negociar con sensibilidad, gestionar un conflicto o empatizar requiere criterio humano.</li>
+                    <li><strong>Trabajar sin supervisión en tareas críticas:</strong> aspectos legales, contables o relacionados con clientes no deben salir sin revisión.</li>
+                    <li><strong>Crear contexto único sin input:</strong> necesita instrucciones claras y datos correctos para dar resultados útiles.</li>
                 </ul>
 
                 <div class="callout callout-warning">
-                    <strong>Mentalidad correcta:</strong> La IA es una herramienta, no un empleado. No le delegues Decisiones importantes. Úsala para hacer más rápido lo que tu equipo ya sabe hacer, no para hacer cosas que no entiendes.
+                    <strong>Mentalidad correcta:</strong> Usa la IA para <strong>acelerar</strong> lo que ya sabes hacer, no para hacer cosas que no entiendes. El humano revisa, corrige y aprueba siempre.
+                </div>
+
+                <h2 id="diagnostico">Diagnóstico previo: evita implementar IA por impulso</h2>
+
+                <p>Antes de buscar herramientas, dedica unos minutos a responder estas preguntas con el equipo. Si no puedes responderlas con cifras aproximadas, aún no estás listo para escalar.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pregunta</th>
+                                <th>Por qué es importante</th>
+                                <th>Respuesta esperada</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>¿Qué tarea consume más tiempo?</strong></td>
+                                <td>Prioriza por impacto real</td>
+                                <td>Nombre + horas/semana + frecuencia</td>
+                            </tr>
+                            <tr>
+                                <td><strong>¿Quién la hace hoy?</strong></td>
+                                <td>Define usuarios piloto (3-5 personas)</td>
+                                <td>Departamento, personas y carga</td>
+                            </tr>
+                            <tr>
+                                <td><strong>¿Cómo se mide hoy?</strong></td>
+                                <td>Base para comparar tras el piloto</td>
+                                <td>Métrica actual (ej. nº respuestas/día)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>¿Qué datos usa?</strong></td>
+                                <td>Detecta riesgo de compartir datos sensibles</td>
+                                <td>Tipo de datos, público/privado</td>
+                            </tr>
+                            <tr>
+                                <td><strong>¿Qué coste aceptas?</strong></td>
+                                <td>Evita sobrecoste</td>
+                                <td>Máximo €/mes y justificación</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
                 <h2 id="paso1">Paso 1: Evalúa tus necesidades reales</h2>
 
-                <p>Antes de buscar herramientas, necesitas saber qué problema estás resolviendo. Este ejercicio te tomará 30 minutos y te ahorrará semanas de implementación errónea.</p>
+                <p>El primer error más frecuente es empezar por la herramienta, no por el problema. Para evitarlo, identifica qué procesos de tu empresa consumen más tiempo y repiten un patrón claro.</p>
 
-                <h3>Ejercicio: Mapea el tiempo de tu equipo</h3>
-
-                <p>Pide a 3-5 personas clave de tu empresa que anoten durante una semana en qué gastan su tiempo. Luego clasifícalo:</p>
+                <h3>Clasifica tus tareas según aptitud para IA</h3>
 
                 <div class="comparison-table">
                     <table>
@@ -207,211 +307,114 @@
                                 <th>Tipo de tarea</th>
                                 <th>Ejemplos</th>
                                 <th>¿La IA puede ayudar?</th>
+                                <th>Supervisión necesaria</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Repetitiva + Reglas claras</strong></td>
-                                <td>Responder FAQs, enviar confirmaciones, clasificar emails</td>
-                                <td> Sí, automatización total</td>
+                                <td><strong>Repetitiva + reglas claras</strong></td>
+                                <td>Responder FAQs, confirmar citas, clasificar correos</td>
+                                <td>Sí, alto</td>
+                                <td>Baja</td>
                             </tr>
                             <tr>
-                                <td><strong>Repetitiva + Juicio necesario</strong></td>
+                                <td><strong>Repetitiva + juicio necesario</strong></td>
                                 <td>Redactar respuestas personalizadas, revisar documentos</td>
-                                <td> Sí, con supervisión humana</td>
+                                <td>Sí, medio-alto</td>
+                                <td>Media</td>
                             </tr>
                             <tr>
-                                <td><strong> Creativa + Conocimiento profundo</strong></td>
-                                <td>Estrategia de marketing, diseño de producto, negociación</td>
-                                <td> Parcial, como asistente</td>
+                                <td><strong>Creativa + conocimiento profundo</strong></td>
+                                <td>Estrategia, posicionamiento, diseño de producto</td>
+                                <td>Parcial (asistente)</td>
+                                <td>Media-Alta</td>
                             </tr>
                             <tr>
-                                <td><strong>Relacional + Emocional</strong></td>
-                                <td>Ventas consultivas, gestión de clientes problemáticos</td>
-                                <td> No, requiere humano</td>
+                                <td><strong>Relacional + emocional</strong></td>
+                                <td>Ventas consultivas, quejas delicadas, negociación</td>
+                                <td>Limitado</td>
+                                <td>Alta (o no delegar)</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Crítica + riesgo legal</strong></td>
+                                <td>Contratos, facturación crítica, datos sensibles</td>
+                                <td>No recomendado sin plan de empresa</td>
+                                <td>Revisión obligatoria</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <h3>Los 3 candidatos ideales para IA en tu empresa</h3>
+                <h3>Elige tus 3 candidatos con criterios objetivos</h3>
 
-                <p>Busca procesos que sean:</p>
+                <p>Prioriza aquellos procesos que cumplan estos tres requisitos:</p>
+
                 <ol>
-                    <li><strong>Frecuentes:</strong> que ocurran diariamente o varias veces por semana</li>
-                    <li><strong>Repetitivos:</strong> que sigan un patrón predecible</li>
-                    <li><strong>Time-consuming:</strong> que consuman más de 30 minutos por vez</li>
+                    <li><strong>Frecuentes:</strong> ocurren a diario o varias veces por semana.</li>
+                    <li><strong>Repetitivos:</strong> siguen un patrón predecible y reutilizable.</li>
+                    <li><strong>Consumen tiempo:</strong> más de 30 minutos por iteración o en total semanal.</li>
                 </ol>
 
-                <p><strong>Ejemplo real:</strong> Una clínica dental en Valencia descubrió que el 40% del tiempo de recepción se gastaba en responder preguntas sobre horarios, precios y disponibilidad. Un chatbot IA resolvió el 75% de esas consultas, liberando a recepción para tareas de mayor valor.</p>
+                <p>Clasifícalos y empieza <strong>siempre por el número 1</strong>. Es el que dará el retorno más rápido y generará confianza en el equipo para escalar.</p>
 
-                <h2 id="paso2">Paso 2: Elige la herramienta correcta</h2>
+                <h2 id="casos-uso">Casos de uso con mayor retorno para una pyme española</h2>
 
-                <p>Una vez que sabes qué problema resolver, elige UNA herramienta. No tres. No cinco. Una.</p>
-
-                <h3>Por departamento:</h3>
-
-                <div class="feature-grid">
-                    <div class="feature-item">
-                        <h4> Atención al Cliente</h4>
-                        <p><strong><a href="https://www.tidio.com/pricing/" rel="noopener nofollow">Tidio</a></strong> (gratis para empezar) o <strong>Intercom</strong> (si tienes presupuesto)</p>
-                    </div>
-                    <div class="feature-item">
-                        <h4> Marketing y Contenido</h4>
-                        <p><strong><a href="https://openai.com/chatgpt/pricing/" rel="noopener nofollow">ChatGPT Plus</a></strong> (18 €/mes) para borradores y <strong>Canva IA</strong> para diseño</p>
-                    </div>
-                    <div class="feature-item">
-                        <h4> Ventas</h4>
-                        <p><strong><a href="https://www.hubspot.com/pricing" rel="noopener nofollow">HubSpot</a></strong> (gratis CRM + chatbot) o <strong>Drift</strong> para B2B</p>
-                    </div>
-                    <div class="feature-item">
-                        <h4> Legal/Administración</h4>
-                        <p><strong><a href="https://www.anthropic.com/pricing" rel="noopener nofollow">Claude Pro</a></strong> (18 €/mes) para análisis de documentos</p>
-                    </div>
-                    <div class="feature-item">
-                        <h4> Desarrollo/Técnico</h4>
-                        <p><strong><a href="https://github.com/features/copilot/plans" rel="noopener nofollow">GitHub Copilot</a></strong> (9 €/mes) para código</p>
-                    </div>
-                    <div class="feature-item">
-                        <h4> RRHH</h4>
-                        <p><strong>ChatGPT Plus</strong> para redacción de descripciones de puesto y análisis de CVs</p>
-                    </div>
-                </div>
-
-                <div class="callout callout-tip">
-                    <strong> Regla de oro:</strong> Empieza por el departamento donde el dolor sea mayor y la implementación más sencilla. No intentes cambiar toda la empresa a la vez.
-                </div>
-
-                <h2 id="paso3">Paso 3: Implementa un piloto</h2>
-
-                <p>Un piloto es una prueba controlada con alcance limitado. Así se hace:</p>
-
-                <h3>Plan de piloto de 30 días</h3>
+                <p>Basado en tareas habituales de pymes españolas, estos casos de uso suelen dar resultados en 2-4 semanas con inversión mínima:</p>
 
                 <div class="comparison-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Semana</th>
-                                <th>Acción</th>
-                                <th>Responsable</th>
+                                <th>Departamento</th>
+                                <th>Caso de uso</th>
+                                <th>Tiempo ahorrado estimado</th>
+                                <th>Dificultad de implementación</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Semana 1</strong></td>
-                                <td>Configurar herramienta, crear cuenta, formar a los primeros usuarios</td>
-                                <td>Tú + proveedor</td>
+                                <td><strong>Atención al cliente</strong></td>
+                                <td>Respuestas a FAQs y citas</td>
+                                <td>8-15 horas/semana</td>
+                                <td>Baja</td>
                             </tr>
                             <tr>
-                                <td><strong>Semana 2</strong></td>
-                                <td>Usar la herramienta en un caso de uso real (limitado)</td>
-                                <td>Equipo piloto (3-5 personas)</td>
+                                <td><strong>Marketing</strong></td>
+                                <td>Borradores de publicaciones, emails y descripciones</td>
+                                <td>5-10 horas/semana</td>
+                                <td>Baja</td>
                             </tr>
                             <tr>
-                                <td><strong>Semana 3</strong></td>
-                                <td>Recoger feedback, ajustar configuración, resolver problemas</td>
-                                <td>Tú + equipo piloto</td>
+                                <td><strong>Ventas</strong></td>
+                                <td>Propuestas, seguimiento y calificación de leads</td>
+                                <td>6-12 horas/semana</td>
+                                <td>Media-Baja</td>
                             </tr>
                             <tr>
-                                <td><strong>Semana 4</strong></td>
-                                <td>Medir resultados, decidir si se escala o se descarta</td>
-                                <td>Tú (decisión)</td>
+                                <td><strong>Administración</strong></td>
+                                <td>Resúmenes de documentos, plantillas</td>
+                                <td>4-8 horas/semana</td>
+                                <td>Baja</td>
+                            </tr>
+                            <tr>
+                                <td><strong>RRHH</strong></td>
+                                <td>Descripciones de puesto, preguntas de entrevista</td>
+                                <td>2-5 horas/semana</td>
+                                <td>Baja</td>
                             </tr>
                         </tbody>
                     </table>
-
                 </div>
 
-                <h3>Métricas a medir en el piloto</h3>
-                <ul>
-                    <li><strong>Tiempo ahorrado:</strong> ¿Cuántas horas/semana se ahorran?</li>
-                    <li><strong>Calidad:</strong> ¿Los resultados son aceptables (no necesitan mucha edición)?</li>
-                    <li><strong>Adopción:</strong> ¿El equipo la usa o la evita?</li>
-                    <li><strong>Errores:</strong> ¿Cuántas veces la IA se equivoca?</li>
-                    <li><strong>Satisfacción:</strong> ¿Al equipo le gusta usarla?</li>
-                </ul>
-
-                <h2 id="paso4">Paso 4: Mide y ajusta</h2>
-
-                <p>Al final del piloto, responde estas preguntas:</p>
-
-                <ol>
-                    <li><strong>¿Se ahorró tiempo real?</strong> Si no, la herramienta o el caso de uso no eran los correctos.</li>
-                    <li><strong>¿El equipo la adoptó?</strong> Si nadie la usa, no importa cuán buena sea.</li>
-                    <li><strong>¿Los errores son aceptables?</strong> Un 5-10% de error es normal. Más del 20% es problemático.</li>
-                    <li><strong>¿El coste justifica el ahorro?</strong> Si ahorras 10 horas/mes y la herramienta cuesta €50/mes, vale la pena si tu hora cuesta más de €5.</li>
-                </ol>
-
-                <h3>Decisión: ¿Escalar, ajustar o descartar?</h3>
-                <ul>
-                    <li><strong>Escalar:</strong> Si el ROI es positivo y la adopción es buena → ampliar a más departamentos</li>
-                    <li><strong>Ajustar:</strong> Si funciona pero hay problemas puntuales → cambiar configuración o caso de uso</li>
-                    <li><strong>Descartar:</strong> Si no se ahorró tiempo o el equipo no la usa → probar otra herramienta</li>
-                </ul>
-
-                <h2 id="paso5">Paso 5: Escala con éxito</h2>
-
-                <p>Si el piloto fue exitoso, llega el momento de ampliar. Pero con cabeza:</p>
-
-                <h3>Checklist de escalado</h3>
-                <ul>
-                    <li>Documenta los flujos de trabajo que funcionaron en el piloto</li>
-                    <li>Crea una guía interna de uso (1-2 páginas)</li>
-                    <li>Forma a los nuevos usuarios (30 minutos son suficientes)</li>
-                    <li>Establece métricas de seguimiento mensuales</li>
-                    <li>Define quién es responsable de mantener la herramienta</li>
-                    <li>Revisa la seguridad: ¿quién tiene acceso? ¿se comparten datos sensibles?</li>
-                </ul>
-
-                <h2 id="errores">Errores comunes (y cómo evitarlos)</h2>
-
-                <h3>Error #1: intentar implementar todo a la vez</h3>
-                <p><strong>El problema:</strong> Contratar ChatGPT Enterprise + Zendesk + HubSpot + Copilot en el mismo mes. Resultado: confusión, sobrecosto, nadie usa nada bien.</p>
-                <p><strong>La solución:</strong> Empieza por UNA herramienta, UN departamento, UN caso de uso. Domina eso antes de expandir.</p>
-
-                <h3>Error #2: no medir resultados</h3>
-                <p><strong>El problema:</strong> "Implementamos un chatbot" pero nadie sabe si funciona o no.</p>
-                <p><strong>La solución:</strong> Define métricas ANTES de empezar y mídelas cada semana.</p>
-
-                <h3>Error #3: delegar decisiones a la IA sin supervisión</h3>
-                <p><strong>El problema:</strong> La IA redacta un email y se envía sin que nadie lo revise. Un error puede costar un cliente.</p>
-                <p><strong>La solución:</strong> La IA genera, el humano revisa y aprueba. Siempre.</p>
-
-                <h3>Error #4: ignorar la opinión del equipo</h3>
-                <p><strong>El problema:</strong> El director compra una herramienta que el equipo no quiere usar.</p>
-                <p><strong>La solución:</strong> Involucra al equipo desde el inicio. Pregunta qué necesitan, no qué herramienta quieren.</p>
-
-                <h3>Error #5: esperar resultados mágicos</h3>
-                <p><strong>El problema:</strong> "Contratamos ChatGPT y en un mes triplicamos las ventas". La IA no hace eso.</p>
-                <p><strong>La solución:</strong> Expectativas realistas: ahorro del 20-40% en tareas repetitivas, no revolución del negocio.</p>
-
-                <h2 id="casos">Ejemplos de aplicación reales y verificables</h2>
-
-                <p>Los siguientes son casos tipo documentados en foros oficiales y casos de uso públicos de cada herramienta (no testimonios inventados de personas concretas):</p>
-
-                <div class="testimonial">
-                    <blockquote>
-                        "Tiendas online que integran Tidio con IA resuelven automáticamente gran parte de las consultas de clientes y reducen drásticamente el tiempo de respuesta, según los casos de uso publicados por Tidio."
-                    </blockquote>
-                    <cite>— Caso verificado: <a href="https://www.tidio.com/" rel="noopener nofollow">documentación oficial de Tidio</a> para e-commerce</cite>
+                <div class="callout callout-tip">
+                    <strong>Regla de oro:</strong> Empieza por el departamento donde el dolor sea mayor y la implementación más sencilla. <strong>No intentes cambiar toda la empresa a la vez.</strong>
                 </div>
 
-                <div class="testimonial">
-                    <blockquote>
-                        "Equipos comerciales que usan ChatGPT para generar propuestas personalizadas reducen el tiempo por cliente de horas a minutos, según los casos de uso publicados por OpenAI."
-                    </blockquote>
-                    <cite>— Caso verificado: <a href="https://openai.com/" rel="noopener nofollow">casos de uso oficiales de OpenAI</a></cite>
-                </div>
+                <h2 id="paso2">Paso 2: Elige la herramienta correcta</h2>
 
-                <div class="testimonial">
-                    <blockquote>
-                        "Claude se utiliza para revisar contratos y detectar cláusulas problemáticas antes de la firma, un caso de uso documentado por Anthropic en su web oficial."
-                    </blockquote>
-                    <cite>— Caso verificado: <a href="https://www.anthropic.com/" rel="noopener nofollow">documentación oficial de Anthropic</a></cite>
-                </div>
+                <p>Una vez definido el problema, elige <strong>UNA ÚNICA</strong> herramienta para resolverlo. Demasiadas herramientas al inicio crean confusión y frenan la adopción.</p>
 
-                <h2 id="herramientas">Herramientas recomendadas por departamento</h2>
+                <h3>Recomendación inicial por departamento</h3>
 
                 <div class="comparison-table">
                     <table>
@@ -419,93 +422,833 @@
                             <tr>
                                 <th>Departamento</th>
                                 <th>Herramienta</th>
-                                <th>Precio</th>
-                                <th>Para qué</th>
+                                <th>Precio (aprox.)</th>
+                                <th>Uso recomendado</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Atención al cliente</td>
-                                <td>Tidio Lyro</td>
-                                <td>Gratis - €29/mes</td>
-                                <td>Chatbot IA 24/7</td>
+                                <td><strong>Atención al cliente</strong></td>
+                                <td><a href="https://www.tidio.com/pricing/" rel="noopener nofollow" target="_blank">Tidio</a></td>
+                                <td>Gratis - 29 €/mes</td>
+                                <td>FAQs, citas y primer filtro de solicitudes</td>
                             </tr>
                             <tr>
-                                <td>Marketing</td>
-                                <td>ChatGPT Plus</td>
-                                <td>€18/mes</td>
-                                <td>Contenido, emails, ideas</td>
+                                <td><strong>Marketing</strong></td>
+                                <td><a href="https://openai.com/chatgpt/pricing/" rel="noopener nofollow" target="_blank">ChatGPT Plus</a></td>
+                                <td>18 €/mes</td>
+                                <td>Borradores, emails y descripciones</td>
                             </tr>
                             <tr>
-                                <td>Ventas</td>
-                                <td>HubSpot</td>
-                                <td>Gratis - €40/mes</td>
-                                <td>CRM + chatbot + emails</td>
+                                <td><strong>Ventas</strong></td>
+                                <td><a href="https://www.hubspot.com/pricing" rel="noopener nofollow" target="_blank">HubSpot</a></td>
+                                <td>Gratis - 40 €/mes</td>
+                                <td>CRM + automatizaciones básicas</td>
                             </tr>
                             <tr>
-                                <td>Legal/Admin</td>
-                                <td>Claude Pro</td>
-                                <td>€18/mes</td>
-                                <td>Revisión de documentos</td>
+                                <td><strong>Legal/Administración</strong></td>
+                                <td><a href="https://www.anthropic.com/pricing" rel="noopener nofollow" target="_blank">Claude Pro</a></td>
+                                <td>18 €/mes</td>
+                                <td>Revisión y resumen de documentos</td>
                             </tr>
                             <tr>
-                                <td>Desarrollo</td>
-                                <td>GitHub Copilot</td>
-                                <td>€9/mes</td>
+                                <td><strong>Desarrollo/Técnico</strong></td>
+                                <td><a href="https://github.com/features/copilot/plans" rel="noopener nofollow" target="_blank">GitHub Copilot</a></td>
+                                <td>9 €/mes</td>
                                 <td>Código asistido</td>
                             </tr>
                             <tr>
-                                <td>Diseño</td>
-                                <td>Canva IA</td>
-                                <td>Gratis - €12/mes</td>
-                                <td>Diseño con IA</td>
+                                <td><strong>RRHH</strong></td>
+                                <td><a href="https://openai.com/chatgpt/pricing/" rel="noopener nofollow" target="_blank">ChatGPT Plus</a></td>
+                                <td>18 €/mes</td>
+                                <td>Descripciones de puesto y plantillas</td>
                             </tr>
                             <tr>
-                                <td>RRHH</td>
-                                <td>ChatGPT Plus</td>
-                                <td>€18/mes</td>
-                                <td>Descripciones de puesto, CVs</td>
-                            </tr>
-                            <tr>
-                                <td>Finanzas</td>
-                                <td>Claude Pro</td>
-                                <td>€18/mes</td>
-                                <td>Análisis de datos, reportes</td>
+                                <td><strong>Finanzas</strong></td>
+                                <td><a href="https://www.anthropic.com/pricing" rel="noopener nofollow" target="_blank">Claude Pro</a></td>
+                                <td>18 €/mes</td>
+                                <td>Análisis estructurado de datos</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="rating-box">
-                    <div class="rating-score">Resumen final</div>
-                    <div class="rating-text">
-                        <p>Implementar IA en tu pyme no requiere una inversión millonaria ni un equipo de tecnólogos. Requiere <strong>claridad sobre qué problema resolver</strong>, <strong>una herramienta adecuada</strong> y <strong>voluntad de probar y ajustar</strong>. Empieza pequeño, mide todo, y escala lo que funcione. El 77% de tus competidores aún no lo ha hecho — esta es tu ventaja.</p>
-                        <p>Si nos tomamos en serio nuestro propio método, tenemos que decirlo también para dentro: la primera vez que aplicamos este plan de 30 días en la redacción publicamos en paralelo dos herramientas y medimos solo una. El piloto no falló; la métrica estaba mal definida. Desde entonces, en cada prueba que hacemos exigimos una cifra antes de la primera semana, y esa exigencia nos ha ahorrado más dinero que cualquier descuento. Si estáis a dos días de montar, quédate con esto: el error caro de esta guía no es elegir mal la herramienta, es no decidir qué vas a medir.</p>
-                    </div>
+                <p>Esta selección prioriza <strong>facilidad de uso, coste bajo y posibilidad de empezar con plan gratuito</strong>. El objetivo es validar el caso de uso antes de subir de plan.</p>
+
+                <h2 id="criterios-seleccion">Criterios de selección: gobernanza, seguridad y protección de datos</h2>
+
+                <p>Para una pyme española, el coste no es lo único a valorar. También es fundamental la protección de datos y la gobernanza, especialmente si vas a procesar información de clientes o colaboradores.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Criterio</th>
+                                <th>Qué comprobar</th>
+                                <th>Importancia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Entrenamiento con datos</strong></td>
+                                <td>Si el proveedor usa tus prompts/conversaciones para entrenar modelos</td>
+                                <td>Alta</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Residencia de datos</strong></td>
+                                <td>Posibilidad de procesado en la UE</td>
+                                <td>Alta</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Control de acceso</strong></td>
+                                <td>SAML SSO, SCIM, RBAC y gestión de equipos</td>
+                                <td>Media-Alta</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Auditoría</strong></td>
+                                <td>Registros de actividad, retención y exportación</td>
+                                <td>Media-Alta</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tipo de plan</strong></td>
+                                <td>Diferencia entre plan individual y plan de empresa</td>
+                                <td>Alta</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <h2 id="fuentes">Fuentes</h2>
+                <h2 id="planes-empresa">Planes de empresa: qué cambia respecto a los planes individuales</h2>
 
-                <p>Los datos de adopción, los precios de licencia y los casos de uso citados en esta guía proceden de las siguientes fuentes oficiales y verificables:</p>
+                <p>Los planes individuales son suficientes para validar un caso de uso. Sin embargo, si vas a usar IA con información sensible, clientes o quieres controlar el acceso a nivel organizativo, conviene conocer las diferencias. Los siguientes datos se han verificado con las tarifas oficiales vigentes a la fecha de consulta indicada en Fuentes.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Plan</th>
+                                <th>Proveedor</th>
+                                <th>Precio por asiento</th>
+                                <th>Condición</th>
+                                <th>Asientos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>ChatGPT Business (Standard)</strong></td>
+                                <td>OpenAI</td>
+                                <td>21 € / mes</td>
+                                <td>EUR, facturación anual</td>
+                                <td>2–200</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ChatGPT Business (Premium)</strong></td>
+                                <td>OpenAI</td>
+                                <td>105 € / mes</td>
+                                <td>EUR, facturación anual</td>
+                                <td>2–200</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ChatGPT Enterprise</strong></td>
+                                <td>OpenAI</td>
+                                <td>Precio a consultar</td>
+                                <td>Sin precio público</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Claude Team</strong></td>
+                                <td>Anthropic</td>
+                                <td>20 US$ / mes</td>
+                                <td>USD, anual (25 US$ mensual)</td>
+                                <td>2–150</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Claude Team Premium</strong></td>
+                                <td>Anthropic</td>
+                                <td>100 US$ / mes</td>
+                                <td>USD, anual (125 US$ mensual)</td>
+                                <td>2–150</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Claude Enterprise</strong></td>
+                                <td>Anthropic</td>
+                                <td>20 US$ / mes + consumo API a tarifa</td>
+                                <td>USD, anual</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Workspace Business Starter</strong></td>
+                                <td>Google</td>
+                                <td>6,80 € / usuario / mes</td>
+                                <td>EUR, España</td>
+                                <td>1 mínimo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Workspace Business Standard</strong></td>
+                                <td>Google</td>
+                                <td>13,60 € / usuario / mes</td>
+                                <td>EUR, España</td>
+                                <td>1 mínimo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Workspace Business Plus</strong></td>
+                                <td>Google</td>
+                                <td>21,10 € / usuario / mes</td>
+                                <td>EUR, España</td>
+                                <td>1 mínimo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gemini Enterprise Business</strong></td>
+                                <td>Google</td>
+                                <td>Desde 21 US$ / asiento / mes</td>
+                                <td>USD</td>
+                                <td>Hasta 300</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gemini Enterprise Standard / Plus</strong></td>
+                                <td>Google</td>
+                                <td>Desde 30 US$ / asiento / mes</td>
+                                <td>USD</td>
+                                <td>—</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Diferencias clave entre planes individuales y de empresa</h3>
 
                 <ul>
-                    <li><a href="https://www.ine.es/" rel="noopener nofollow" target="_blank">INE — Instituto Nacional de Estadística</a>: Encuesta de Acceso a las TIC de las empresas, referencia oficial española sobre el porcentaje de pymes que usa IA.</li>
-                    <li><a href="https://ec.europa.eu/eurostat" rel="noopener nofollow" target="_blank">Eurostat</a>: datos de adopción de inteligencia artificial por tamaño de empresa en el conjunto de la UE-27.</li>
-                    <li><a href="https://www.cepyme.es/" rel="noopener nofollow" target="_blank">CEPYME</a>: barómetro de digitalización de la pyme española que complementa el dato público con la visión de la mediana empresa.</li>
-                    <li><a href="https://openai.com/" rel="noopener nofollow" target="_blank">OpenAI</a> y <a href="https://www.anthropic.com/" rel="noopener nofollow" target="_blank">Anthropic</a>: casos de uso oficiales citados en la sección de ejemplos verificables.</li>
-                    <li><a href="https://www.tidio.com/" rel="noopener nofollow" target="_blank">Tidio</a>, <a href="https://www.hubspot.com/pricing" rel="noopener nofollow" target="_blank">HubSpot</a> y <a href="https://github.com/features/copilot/plans" rel="noopener nofollow" target="_blank">GitHub Copilot</a>: documentación y precios oficiales de las herramientas recomendadas por departamento.</li>
-                    <li><a href="https://www.aepd.es/" rel="noopener nofollow" target="_blank">AEPD — Agencia Española de Protección de Datos</a>: criterio oficial sobre qué datos personales pueden y no pueden enviarse a una herramienta de IA sin plan de empresa.</li>
+                    <li><strong>Entrenamiento:</strong> ChatGPT Business/Enterprise no entrenan con tu contenido; Claude Team/Enterprise sin entrenamiento por defecto. Los planes individuales de los tres pueden entrenar (con opt-out). Gemini de consumo entrena por defecto si "Guardar actividad" está activo, con retención de 18 meses.</li>
+                    <li><strong>Gobernanza:</strong> SAML SSO, SCIM, RBAC, registros de auditoría, SLA y residencia de datos en la UE <strong>no vienen</strong> en ningún plan individual, solo en planes de empresa.</li>
+                    <li><strong>Capacidad:</strong> ChatGPT Business permite ~40 archivos conectados por asiento frente a ~250 en Enterprise. Enterprise añade ISO 27001/27017/27018/27701, SCIM, EKM, RBAC, Compliance API Logs y residencia en 10 regiones (UE incluida).</li>
+                    <li><strong>Otros aspectos:</strong> Claude no genera imágenes. Slack AI y Slackbot usan Claude por defecto. En Microsoft 365 Copilot, los modelos de OpenAI corren dentro de Azure y los de Claude salen hacia centros en EE. UU. Google AI Pro/Plus/Ultra son solo cuentas personales; para empresa, Workspace con Gemini o Gemini Enterprise.</li>
                 </ul>
 
-                <div class="related-articles">
-                    <h3>Artículos relacionados</h3>
-                    <ul>
-                        <li><a href="../../comparativas/chatgpt-vs-claude-vs-gemini/">ChatGPT vs Claude vs Gemini: comparativa completa</a></li>
-                        <li><a href="../../herramientas-ia/chatbots-atencion-cliente/">Los 8 mejores chatbots IA para atención al cliente</a></li>
-                        <li><a href="../../herramientas-ia/chatgpt-enterprise/">ChatGPT Enterprise: análisis completo</a></li>
-                    </ul>
+                <div class="callout callout-info">
+                    <strong>Recomendación práctica:</strong> Valida primero con un plan individual (o gratuito). Si necesitas gobernanza o vas a procesar datos sensibles a escala, pasa a un plan de empresa. Nunca subas de plan sin tener métricas que justifiquen el gasto.
                 </div>
 
+                <h2 id="paso3">Paso 3: Implementa un piloto de 30 días</h2>
+
+                <p>Un piloto controlado te permite aprender con riesgo mínimo. La clave es mantenerlo pequeño, medir desde el día 0 y tomar una decisión clara al final.</p>
+
+                <h3>Plan cronológico de 30 días: qué se entrega y qué se aborta</h3>
+
+                <p>Un cronograma que solo dice "medir" no sirve. Cada semana del piloto debe producir un <strong>entregable comprobable</strong> y tener un <strong>criterio de interrupción</strong> definido de antemano, para que la decisión del día 30 no dependa del ánimo de nadie.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Semana</th>
+                                <th>Acción y responsable</th>
+                                <th>Entregable comprobable</th>
+                                <th>Criterio de continuidad</th>
+                                <th>Qué hacer si no se cumple</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Semana 1</strong></td>
+                                <td>Configurar la herramienta y definir el caso de uso exacto (director + 1 referente)</td>
+                                <td>Línea base medida sobre la tarea real y prompt inicial escrito y guardado</td>
+                                <td>Métrica inicial registrada en días laborables completos (ej. 12 respuestas/día)</td>
+                                <td>Sin base no hay piloto: repite la medición antes de activar la herramienta</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Semana 2</strong></td>
+                                <td>Uso en casos reales con el equipo piloto de 3-5 personas</td>
+                                <td>Al menos 10 casos reales procesados y anotados, con tiempo y correcciones</td>
+                                <td>Más de la mitad de las tareas acordadas hechas con la herramienta</td>
+                                <td>Reduce el alcance del caso de uso; no amplíes a más personas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Semana 3</strong></td>
+                                <td>Recoger feedback y ajustar prompts o configuración (referente + equipo)</td>
+                                <td>Prompt ajustado con las tres instrucciones que más se repiten en las correcciones</td>
+                                <td>La calidad sube respecto a la semana 2 y quedan identificadas las tres mejoras principales</td>
+                                <td>Si la calidad se estanca, cambia de herramienta manteniendo el mismo caso de uso</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Semana 4</strong></td>
+                                <td>Medir, comparar con la base y decidir (dirección + referente)</td>
+                                <td>Comparativa base frente a IA con las cinco métricas del Paso 4 y decisión escrita</td>
+                                <td>Los umbrales del Paso 4 evaluados uno a uno</td>
+                                <td>No aplaces la decisión "a la espera de más datos": decide y anota el motivo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>El criterio que más se olvida es el de la <strong>semana 1</strong>. Una base medida a ojo, un día cualquiera o con la herramienta ya abierta da números que después no sirven para nada: inflan o hunden el ahorro según el día que se eligió. Mide en días normales, con el mismo tipo de carga de trabajo que había esa semana.</p>
+
+                <h3>Reglas del piloto</h3>
+
+                <ul>
+                    <li><strong>Un solo caso de uso:</strong> evita probar funcionalidades no relacionadas.</li>
+                    <li><strong>Métrica definida antes:</strong> registra valor base en semana 1. Sin base, no hay comparación válida.</li>
+                    <li><strong>Equipo reducido:</strong> 3-5 personas. Suficiente para validar, manejable para corregir.</li>
+                    <li><strong>Supervisión obligatoria:</strong> revisa resultados críticos. Nunca envíes sin aprobación lo que comprometa a la empresa.</li>
+                    <li><strong>Sin datos sensibles:</strong> en el primer piloto, usa datos ficticios o mínimos. Solo añade datos reales si cumples requisitos del plan.</li>
+                </ul>
+
+                <h3>El coste que casi nadie presupuesta: la supervisión humana</h3>
+
+                <p>En el presupuesto del piloto suelen aparecer los dos números que se ven: la licencia y el tiempo de formación. Falta el tercero, que suele ser el más caro. Revisar borradores no es gratis: lleva los mismos quince minutos de atención que hacerlos, solo que además hay que detectar lo que está mal. Si nadie lo cuenta, el ahorro neto del piloto aparece inflado y la decisión del día 30 sale mal.</p>
+
+                <p><strong>Estimación propia</strong> con la fórmula visible. Supuestos declarados: equipo piloto de 5 personas, 4 salidas generadas al día por persona, 5 días laborables por semana, 15 minutos de revisión por cada 10 salidas y 25 €/hora como coste interno de la hora de administración. Cálculo: 4 × 5 × 5 = <strong>100 salidas por semana</strong>; 100 ÷ 10 × 15 min = <strong>2,5 horas de revisión semanales</strong>; 2,5 h × 25 €/h = <strong>62,50 €/semana</strong>, es decir, unos <strong>271 €/mes</strong> frente a los 525 €/mes que cuesta una brecha de cinco asientos de ChatGPT Business Premium (105 €/asiento/mes).</p>
+
+                <p>El resultado no dice que la herramienta sea mala: dice que <strong>el trabajo no desaparece, cambia de forma</strong>. Si el ahorro real de la tarea es de una hora al día y la revisión se come cuarenta minutos, el beneficio neto es de veinte minutos. Reducir ese tiempo de revisión es el objetivo del ajuste de prompts de la semana 3, y es la métrica que conviene medir junto al ahorro bruto.</p>
+
+                <h2 id="paso4">Paso 4: Mide y ajusta con datos</h2>
+
+                <p>La objetividad es fundamental. Usa estas métricas para decidir con base en hechos.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Métrica</th>
+                                <th>Cómo medir</th>
+                                <th>Umbral mínimo para escalar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Tiempo ahorrado</strong></td>
+                                <td>Horas/semana por persona (comparado con base)</td>
+                                <td>Más de 20-30% de ahorro en la tarea</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Calidad</strong></td>
+                                <td>% de resultados válidos sin edición importante</td>
+                                <td>Más de 70-80% aceptables</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adopción</strong></td>
+                                <td>% de uso real sobre uso acordado</td>
+                                <td>Más de 80% del equipo piloto</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Errores</strong></td>
+                                <td>Nº de correcciones/semana (severidad: leve/grave)</td>
+                                <td>< 15% errores leves; 0 graves</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ROI aproximado</strong></td>
+                                <td>(Horas ahorradas x coste hora) vs coste herramienta/mes</td>
+                                <td>Positivo (ahorro >= coste)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Acciones según resultado</h3>
+
+                <ul>
+                    <li><strong>Escalar:</strong> ROI positivo + alta adopción + errores aceptables → ampliar a más personas con misma documentación.</li>
+                    <li><strong>Ajustar:</strong> Funciona parcialmente → mejora prompts, acota caso de uso o cambia alcance. No añadas nuevas funcionalidades.</li>
+                    <li><strong>Descartar:</strong> Sin ahorro real o baja adopción → prueba otra herramienta con <strong>exactamente el mismo caso de uso</strong>. No cambies el problema.</li>
+                </ul>
+
+                <h2 id="paso5">Paso 5: Escala con éxito</h2>
+
+                <p>Si el piloto fue exitoso, escala con disciplina para evitar que el uso se dispare sin control.</p>
+
+                <h3>Checklist de escalado</h3>
+
+                <ul>
+                    <li><strong>Documentación:</strong> crea una guía interna de 1-2 páginas con caso de uso, prompts base y buenas prácticas.</li>
+                    <li><strong>Formación:</strong> 30 minutos por grupo nuevo. Enfócate en <strong>cómo</strong> usarla para ese caso concreto.</li>
+                    <li><strong>Responsable:</strong> nombra un referente que responda dudas y supervise el uso.</li>
+                    <li><strong>Seguridad:</strong> revisa acceso, datos compartidos y política de uso. Actualiza según plan (individual/empresa).</li>
+                    <li><strong>Métricas mensuales:</strong> sigue midiendo tiempo ahorrado y adopción al menos 1 vez al mes.</li>
+                    <li><strong>Coste controlado:</strong> lleva registro de asientos activos. Elimina accesos cuando alguien deje de usarla.</li>
+                </ul>
+
+                <h3>Cuándo NO escalar: los cuatro umbrales de parada</h3>
+
+                <p>Escalar solo funciona si existe un freno. Estos cuatro umbrales mandan sobre cualquier entusiasmo y, si se cruza alguno, la decisión correcta es detener, no ampliar. Detener es un resultado válido del piloto: haberlo detectado en el día 30 cuesta un mes, descubrirlo en el mes 6 cuesta un año de licencias y de tiempo.</p>
+
+                <ol>
+                    <li><strong>Errores graves en producción:</strong> un solo envío sin revisión que llegue a un cliente, o una factura o dato alterado, detiene el escalado hasta que el proceso esté corregido y probado de nuevo.</li>
+                    <li><strong>Adopción por debajo del 50 %</strong> tras dos semanas de uso real con la documentación ya escrita. Si el equipo no lo usa cuando no hay nadie vigilando, ampliar el número de asientos solo multiplica el gasto.</li>
+                    <li><strong>Ahorro inferior al 10 % o ROI negativo dos meses seguidos.</strong> Con un ahorro del 10 %, la partida de supervisión humana del apartado anterior ya se come el beneficio; el caso de uso no es rentable tal y como está y necesita rediseño, no más licencias.</li>
+                    <li><strong>Datos fuera del contrato del plan contratado.</strong> Si aparecen datos personales sensibles en flujos que solo están cubiertos por un plan individual, el primer paso es cambiar de plan y el segundo es reescribir las instrucciones; nunca los dos a la vez.</li>
+                </ol>
+
+                <div class="callout callout-warning">
+                    <strong>Atención al cuarto umbral:</strong> cruzar la frontera entre un plan individual y uno de empresa no es un cambio de precio, es un cambio de contrato, de configuración de acceso y de responsabilidad sobre quién puede ver los datos. Trátalo como una decisión de proyecto con su propio plazo.
+                </div>
+
+                <h2 id="mes-3">El mes 3: por qué el uso se apaga y cómo sostenerlo</h2>
+
+                <p>Los pilotos de IA no fracasan la primera semana, sino la sexta. Durante el mes 1 todo el mundo prueba por curiosidad; en el mes 2 se estabilizan los que ya tienen el hábito; y alrededor del mes 3 aparece el momento en que la herramienta se deja de usar sin que nadie lo decida. La curva de uso se aplana exactamente cuando desaparece la novedad, y para entonces los asientos ya están pagados.</p>
+
+                <h3>Las cuatro causas del apagón</h3>
+
+                <ul>
+                    <li><strong>La herramienta vive fuera del trabajo:</strong> si hay que abrir una pestaña, cambiar de aplicación y copiar un contexto, cada uso cuesta un impulso que no se repite. La adopción cae antes que la utilidad.</li>
+                    <li><strong>Falta el momento de revisión:</strong> la persona genera rápido, pero nunca encuentra un hueco para corregir. El resultado se acumula sin usarse, la sensación de utilidad cae y la herramienta se percibe como un juguete caro.</li>
+                    <li><strong>El prompt no está escrito:</strong> cada persona pierde tiempo probando lo mismo desde cero. Quien no domina la herramienta pierde en ella frente a quien la usó con un buen prompt, y esa diferencia se atribuye al caso de uso, no al método.</li>
+                    <li><strong>No hay nadie que responda:</strong> sin referente disponible, el primer bloqueo se convierte en abandono silencioso. Nadie va a decir "lo dejo": simplemente deja de usarse, y la métrica de adopción lo detecta tarde.</li>
+                </ul>
+
+                <p>La buena noticia es que las cuatro causas son organizativas, no técnicas: se corrigen con decisiones que no cuestan dinero. La mala es que hay que tomarlas <strong>antes</strong> de que aparezcan. Por eso la formación del escalado no debería ser una sola sesión de 30 minutos, sino un acompañamiento corto de las primeras cuatro semanas.</p>
+
+                <h3>Hábitos concretos que sostienen el uso</h3>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Medida</th>
+                                <th>Cuándo se aplica</th>
+                                <th>Por qué funciona</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Punto de uso dentro del flujo</strong> (chat del CRM, complemento del correo, asistente del gestor documental)</td>
+                                <td>Semana 1 del escalado</td>
+                                <td>Elimina el impulso que falta entre Copy y Pegar</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Banco de prompts interno</strong> con los tres mejor puntuados por caso de uso</td>
+                                <td>Semana 2</td>
+                                <td>Convierte el conocimiento en un recurso reutilizable de la empresa</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Franja de revisión de 20 minutos</strong> dos veces por semana</td>
+                                <td>Semana 2</td>
+                                <td>Evita que los borradores sin corregir se acumulen y pierdan valor</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Revisión de la métrica de adopción</strong> el día 30 y el día 60</td>
+                                <td>Meses 1 y 2</td>
+                                <td>Detecta el apagón mientras todavía es barato corregirlo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cierre de asientos en el mes 2</strong> de quien no los usa</td>
+                                <td>Mes 2</td>
+                                <td>Convierte la retención en un dato, no en un supuesto</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Si al día 60 la adopción sigue por encima del umbral del 80 % definido en el Paso 4, el hábito está formado y la herramienta ya no necesita más separación. Si está entre el 50 % y el 80 %, todavía es recuperable: vuelve al punto de uso de la tabla anterior y repite el ajuste de prompts. Si está por debajo del 50 %, has caído en el error de implantación de IA más caro de todos, y la respuesta es volver al paso 1 con un caso de uso nuevo, no insistir con el mismo.</p>
+
+                <h2 id="regulacion">Marco normativo aplicable: AI Act, RGPD y consideraciones para pymes</h2>
+
+                <p>La regulación no debe ser un obstáculo para empezar, pero sí conviene conocer los hitos relevantes para tomar decisiones informadas.</p>
+
+                <h3>AI Act (Reglamento UE 2024/1689)</h3>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Aplicación</th>
+                                <th>Relevancia para pymes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>02/02/2025</strong></td>
+                                <td>Prohibiciones</td>
+                                <td>Baja (aplican a sistemas prohibidos)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>02/08/2025</strong></td>
+                                <td>Obligaciones para modelos de propósito general</td>
+                                <td>Indirecta (afecta a proveedores)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>02/08/2026</strong></td>
+                                <td><strong>Transparencia (art. 50) vigente</strong></td>
+                                <td>Directa (informar cuando hay interacción con IA generativa)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>02/08/2027</strong></td>
+                                <td>Aplicación general y sistemas de alto riesgo</td>
+                                <td>Solo si usas sistemas de alto riesgo específicos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>02/08/2028</strong></td>
+                                <td>Alto riesgo en productos regulados</td>
+                                <td>Solo en casos muy concretos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Qué te toca por rol y por riesgo, y qué no</h3>
+
+                <p>El cuadro de fechas anterior genera ruido para una pyme que solo usa asistentes. Lo que decide de verdad si tienes obligaciones es <strong>en qué papel estás y qué hace el sistema</strong>. La tabla siguiente traduce el Reglamento a las situaciones habituales de una empresa de servicios.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tu situación</th>
+                                <th>Papel en el AI Act</th>
+                                <th>Qué te corresponde</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Usas un asistente para redactar borradores internos</td>
+                                <td>Usuario final que usa una herramienta de terceros</td>
+                                <td>Nada específico por el uso interno; decide con criterio profesional y el RGPD de siempre</td>
+                            </tr>
+                            <tr>
+                                <td>Pones un chatbot en tu web o en WhatsApp que conversa con clientes</td>
+                                <td>Proveedor de un sistema con interacción con personas</td>
+                                <td>Transparencia del <strong>art. 50, vigente desde el 02/08/2026</strong>: avisar de que la persona habla con una IA</td>
+                            </tr>
+                            <tr>
+                                <td>Generas imágenes, audio o vídeo con IA y los publicas</td>
+                                <td>Proveedor de contenido sintético</td>
+                                <td>Obligación de <strong>marcar el contenido</strong> como generado o manipulado de forma artificial</td>
+                            </tr>
+                            <tr>
+                                <td>El sistema toma decisiones con efectos sobre personas (selección de personal, crédito, precios, riesgos)</td>
+                                <td>Proveedor de un sistema de alto riesgo</td>
+                                <td>Solo desde el <strong>02/08/2027</strong>, y solo en los usos enumerados por el Reglamento. Aquí hay que ir al asesor legal, no al departamento de marketing</td>
+                            </tr>
+                            <tr>
+                                <td>Compras un modelo ya entrenado (ChatGPT Business, Claude Team, Gemini Enterprise)</td>
+                                <td>Usuario que despliega un modelo de proveedor</td>
+                                <td>Las obligaciones del proveedor son suyas; tú respondes de los datos que le envías</td>
+                            </tr>
+                            <tr>
+                                <td>Integras IA en un producto que vendes a otros (software con IA embebida)</td>
+                                <td>Proveedor del sistema e importador del componente</td>
+                                <td>Contrato por escrito con el fabricante: quién responde de los datos del cliente final y en qué región se procesan</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Y lo más importante para una pyme: <strong>qué no le toca</strong>. No necesita registrar los asistentes ante ninguna administración, no necesita una evaluación de impacto del AI Act, no necesita designar un responsable de IA ni obtener una autorización previa para redactar correos. Si alguien te ofrece un "cumplimiento del AI Act" de pago para lo que es un uso interno, estás pagando por trabajo que la ley no te exige. El detalle completo del calendario y de las obligaciones está en la <a href="../../guias/ia-ai-act-cumplimiento/">guía de cumplimiento del AI Act para pymes</a>.</p>
+
+                <h3>RGPD y AEPD: criterios prácticos</h3>
+
+                <ul>
+                    <li><strong>Principio de minimización:</strong> no envíes más datos personales de los estrictamente necesarios para la tarea.</li>
+                    <li><strong>Base legal:</strong> considera legitimación, transparencia e información a interesados cuando corresponda.</li>
+                    <li><strong>Planes de empresa:</strong> priorízalos si vas a tratar datos especialmente protegidos o volúmenes relevantes.</li>
+                    <li><strong>Contrato con proveedor:</strong> revisa cláusulas sobre subprocesadores, retención y supresión.</li>
+                    <li><strong>Transparencia (art. 50 AI Act):</strong> a partir del <strong>2 de agosto de 2026</strong>, conviene informar de forma clara cuando el usuario interactúa con un sistema de IA generativa, cuando aplique.</li>
+                </ul>
+
+                <div class="callout callout-warning">
+                    <strong>Recomendación:</strong> No envíes datos sensibles (datos de salud, categorías especiales, datos bancarios completos) a un plan individual. Usa planes con gobernanza adecuada y consulta con tu asesor si tienes dudas sobre tu caso concreto.
+                </div>
+
+                <h2 id="errores">Errores comunes (y cómo evitarlos)</h2>
+
+                <h3>Error #1: intentar implementar todo a la vez</h3>
+
+                <p><strong>Problema:</strong> Contratar varios planes simultáneamente sin piloto.</p>
+                <p><strong>Solución:</strong> <strong>UNA</strong> herramienta, <strong>UN</strong> departamento, <strong>UN</strong> caso de uso.</p>
+
+                <h3>Error #2: no medir resultados</h3>
+
+                <p><strong>Problema:</strong> "Implementamos IA" sin saber si funciona.</p>
+                <p><strong>Solución:</strong> Define métricas <strong>antes</strong> de empezar y registra base en semana 1.</p>
+
+                <h3>Error #3: delegar decisiones críticas sin supervisión</h3>
+
+                <p><strong>Problema:</strong> Enviar respuestas o documentos sin revisión humana.</p>
+                <p><strong>Solución:</strong> La IA genera, el humano revisa y aprueba. Siempre.</p>
+
+                <h3>Error #4: ignorar la opinión del equipo</h3>
+
+                <p><strong>Problema:</strong> Herramienta impuesta que nadie usa.</p>
+                <p><strong>Solución:</strong> Involucra al equipo desde el diagnóstico. Elige con ellos, mide juntos.</p>
+
+                <h3>Error #5: esperar resultados mágicos</h3>
+
+                <p><strong>Problema:</strong> Expectativas irreales de triplicar ventas en 30 días.</p>
+                <p><strong>Solución:</strong> Espera ahorro del <strong>20-40%</strong> en la tarea concreta, no una transformación total.</p>
+
+                <h3>Error #6: subir de plan prematuramente</h3>
+
+                <p><strong>Problema:</strong> Pasar a Enterprise sin justificar con métricas.</p>
+                <p><strong>Solución:</strong> Valida con plan individual/gratuito. Sube solo cuando gobernanza o volumen lo exijan y ROI lo justifique.</p>
+
+                <h3>Lo que cuesta cada error, en tiempo y en dinero</h3>
+
+                <p>Los seis errores anteriores comparten una característica: ninguno se detecta en el piloto. Se descubren <strong>después</strong>, cuando ya hay licencias, formación y expectativas repartidas por toda la empresa. La tabla siguiente estima el coste de la corrección tardía con una fórmula única y visible.</p>
+
+                <p><strong>Estimación propia</strong> de horas de trabajo perdidas por error: <strong>(personas afectadas × horas por persona y mes × 3 meses de corrección) × 25 €/hora</strong>. Supuestos declarados: 3 meses como plazo mínimo de corrección, 25 €/hora como coste interno de la hora y el número de personas afectadas indicado en cada fila.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Error</th>
+                                <th>Personas afectadas</th>
+                                <th>Horas por persona y mes</th>
+                                <th>Coste estimado de corregirlo tarde</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>#1 Implementar todo a la vez</strong></td>
+                                <td>10</td>
+                                <td>3 h</td>
+                                <td>2250 €</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#2 No medir resultados</strong></td>
+                                <td>1 responsable</td>
+                                <td>4 h</td>
+                                <td>300 € + licencias pagadas sin retorno</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#3 Delegar sin supervisión</strong></td>
+                                <td>2</td>
+                                <td>5 h</td>
+                                <td>750 € + el coste de retirar lo ya enviado a clientes</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#4 Ignorar al equipo</strong></td>
+                                <td>8</td>
+                                <td>2 h</td>
+                                <td>1200 € y repetición de la formación</td>
+                            </tr>
+                            <tr>
+                                <td><strong>#5 Esperar resultados mágicos</strong></td>
+                                <td>3</td>
+                                <td>4 h</td>
+                                <td>900 € en debates de dirección y planes revisados</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>#6 Subir de plan sin justificar</strong></td>
+                                <td>10 asientos</td>
+                                <td>—</td>
+                                <td>1050 € al mes en licencias si el plan elegido es el Premium de 105 €/asiento</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La lectura cruzada de la tabla es el argumento a favor de pilotar despacio: los errores más caros no son los técnicos, sino los de gestión. Corregir un #4 o un #5 cuesta menos que <strong>dos meses</strong> de un plan Premium contratado sobre intuiciones, y el ahorro en tiempo del piloto es exactamente el dinero que se pierde en la fila #6. El catálogo completo está en nuestra guía de <a href="../../herramientas-ia/errores-implementar-ia/">errores al implementar IA</a> en empresas.</p>
+
+                <h2 id="casos">Ejemplos de aplicación verificables</h2>
+
+                <p>Los siguientes ejemplos se basan en casos de uso documentados públicamente por los propios proveedores. No se citan testimonios inventados.</p>
+
+                <div class="testimonial">
+                    <blockquote>
+                        "Tiendas online que integran un asistente de IA en atención al cliente pueden responder preguntas frecuentes de forma automática y reducir el tiempo de primera respuesta, según los casos de uso publicados por Tidio."
+                    </blockquote>
+                    <cite>— Caso verificado: <a href="https://www.tidio.com/" rel="noopener nofollow" target="_blank">documentación oficial de Tidio</a></cite>
+                </div>
+
+                <div class="testimonial">
+                    <blockquote>
+                        "Equipos comerciales pueden usar asistentes de IA para generar borradores de propuestas y adaptar mensajes a cada cliente, agilizando el proceso sin sustituir la revisión humana, según los casos de uso publicados por OpenAI."
+                    </blockquote>
+                    <cite>— Caso verificado: <a href="https://openai.com/" rel="noopener nofollow" target="_blank">casos de uso oficiales de OpenAI</a></cite>
+                </div>
+
+                <div class="testimonial">
+                    <blockquote>
+                        "La revisión estructurada de documentos (como borradores o cláusulas) es un caso de uso documentado por Anthropic para acelerar tareas administrativas con supervisión humana."
+                    </blockquote>
+                    <cite>— Caso verificado: <a href="https://www.anthropic.com/" rel="noopener nofollow" target="_blank">documentación oficial de Anthropic</a></cite>
+                </div>
+
+                <div class="testimonial">
+                    <blockquote>
+                        "Para equipos que ya usan Google Workspace, la integración con Gemini permite automatizar redacciones y resúmenes manteniendo el contexto del documento, según la documentación oficial de Google."
+                    </blockquote>
+                    <cite>— Caso verificado: <a href="https://workspace.google.com/intl/es_es/" rel="noopener nofollow" target="_blank">Google Workspace</a></cite>
+                </div>
+
+                <h2 id="herramientas">Herramientas recomendadas por departamento</h2>
+
+                <p>Resumen práctico para empezar con riesgo mínimo. Prioriza empezar con la opción más sencilla y subir de plan solo cuando lo justifiquen métricas.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Departamento</th>
+                                <th>Herramienta</th>
+                                <th>Precio (aprox.)</th>
+                                <th>Para qué usarla</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Atención al cliente</strong></td>
+                                <td>Tidio Lyro</td>
+                                <td>Gratis - 29 €/mes</td>
+                                <td>Chatbot IA 24/7, FAQs y citas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Marketing</strong></td>
+                                <td>ChatGPT Plus</td>
+                                <td>18 €/mes</td>
+                                <td>Contenido, emails, titulares e ideas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ventas</strong></td>
+                                <td>HubSpot</td>
+                                <td>Gratis - 40 €/mes</td>
+                                <td>CRM + chatbot + emails</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Legal/Admin</strong></td>
+                                <td>Claude Pro</td>
+                                <td>18 €/mes</td>
+                                <td>Revisión y resumen de documentos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Desarrollo</strong></td>
+                                <td>GitHub Copilot</td>
+                                <td>9 €/mes</td>
+                                <td>Código asistido</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Diseño</strong></td>
+                                <td>Canva IA</td>
+                                <td>Gratis - 12 €/mes</td>
+                                <td>Diseño asistido</td>
+                            </tr>
+                            <tr>
+                                <td><strong>RRHH</strong></td>
+                                <td>ChatGPT Plus</td>
+                                <td>18 €/mes</td>
+                                <td>Descripciones de puesto, plantillas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Finanzas</strong></td>
+                                <td>Claude Pro</td>
+                                <td>18 €/mes</td>
+                                <td>Análisis estructurado, resúmenes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout callout-info">
+                    <strong>Recomendación final:</strong> Implementar IA en una pyme española no requiere una inversión millonaria. Requiere <strong>claridad sobre qué problema resolver</strong>, <strong>una sola herramienta adecuada</strong>, <strong>un piloto de 30 días</strong> y <strong>medición desde el día 0</strong>. Empieza pequeño, mide con datos, escala solo lo que funcione.
+                </div>
+
+                <h3 id="faq-1">FAQ 1: ¿Cuánto cuesta implementar IA en una pyme española?</h3>
+                <p>El coste puede partir de <strong>0 €/mes</strong> con herramientas gratuitas. Para validar un caso de uso concreto, lo más habitual está entre <strong>9 € y 50 €/mes</strong> con planes individuales. Si necesitas gobernanza (SSO, RBAC, auditoría, residencia en UE), los planes de empresa suelen empezar alrededor de <strong>20-30 €/mes por asiento</strong>, con variaciones según proveedor y facturación anual. <strong>Estimación propia</strong>: coste inicial mínimo = herramienta + tiempo de formación (30 min). Fórmula: Coste mensual ≈ (€/asiento × nº asientos) + integración mínima; los importes exactos dependen de las tarifas oficiales citadas en Fuentes.</p>
+
+                <h3 id="faq-2">FAQ 2: ¿Qué necesito para empezar con IA en mi empresa?</h3>
+                <p>Solo necesitas <strong>identificar un problema concreto</strong>, elegir una herramienta que lo resuelva, formar a 3-5 personas durante 30 minutos y definir una métrica base para medir resultados. No necesitas infraestructura ni equipo técnico especializado. Empieza con un piloto de 30 días usando datos ficticios o no sensibles, y amplía solo cuando tengas datos que lo justifiquen.</p>
+
+                <h3 id="faq-3">FAQ 3: ¿Es seguro usar IA con datos de clientes?</h3>
+                <p>Depende del plan y de qué datos envías. Los <strong>planes individuales</strong> no suelen incluir las garantías de gobernanza necesarias para tratar datos sensibles. Los <strong>planes de empresa</strong> ofrecen mejor control (SSO, SCIM, RBAC, registros, residencia en UE) y, en muchos casos, no usan tus conversaciones para entrenar por defecto. Regla práctica: <strong>minimización de datos</strong> (no envíes lo innecesario), evita categorías especiales de RGPD y usa plan de empresa si vas a procesar información sensible a escala.</p>
+
+                <h3 id="faq-4">FAQ 4: ¿Cuánto tiempo se tarda en ver resultados?</h3>
+                <p>Con un caso de uso bien definido y piloto estructurado, lo habitual es empezar a ver resultados en <strong>2-4 semanas</strong>. La semana 1 sirve para establecer la línea base, las semanas 2-3 para usarlo en casos reales y la semana 4 para medir y decidir. Si no ves indicios tras 30 días con métricas claras, conviene ajustar el caso de uso o probar otra herramienta con el mismo problema.</p>
+
+                <h3 id="faq-5">FAQ 5: ¿Qué herramientas de IA son las mejores para empezar?</h3>
+                <p>Para empezar con riesgo mínimo, destacan: <strong><a href="https://openai.com/chatgpt/pricing/" rel="noopener nofollow" target="_blank">ChatGPT Plus</a></strong> (18 €/mes) para redacción y resúmenes, <strong><a href="https://www.anthropic.com/pricing" rel="noopener nofollow" target="_blank">Claude Pro</a></strong> (18 €/mes) para análisis de documentos, y <strong><a href="https://www.tidio.com/pricing/" rel="noopener nofollow" target="_blank">Tidio</a></strong> (gratis-29 €/mes) para atención al cliente. Todas permiten empezar pequeño, son fáciles de usar y suficientes para validar un primer caso de uso sin inversión elevada.</p>
+
+                <h3 id="faq-6">FAQ 6: ¿Cómo medir si la IA está funcionando en mi pyme?</h3>
+                <p>Mide con datos objetivos antes y después del piloto. Las métricas clave: <strong>tiempo ahorrado (horas/semana)</strong>, <strong>calidad (% resultados válidos sin edición importante)</strong>, <strong>adopción (% uso real del equipo)</strong>, <strong>errores (nº correcciones, graves/levemente)</strong> y <strong>ROI aproximado</strong> (ahorro vs coste mensual). Registra la base en semana 1, mide semanalmente durante el piloto y decide en base a umbrales, no a impresiones.</p>
+
+                <h2 id="medicion-detallada">Medición detallada: plantillas prácticas para el piloto</h2>
+
+                <p>Para garantizar que el piloto produce datos comparables, usa plantillas sencillas que cualquier pyme puede mantener sin complejidad. Lo importante no es el formato, sino registrar la <strong>base</strong> antes de usar la IA.</p>
+
+                <h3>Plantilla 1: Registro diario de tiempo</h3>
+
+                <p>Durante las 4 semanas, pide al equipo piloto que registre minutos dedicados a la tarea objetivo. Calcula el promedio semanal al finalizar cada semana.</p>
+
+                <ul>
+                    <li><strong>Semana 0 (base):</strong> registra 5 días laborales sin IA.</li>
+                    <li><strong>Semanas 1-4:</strong> registra 5 días con IA, anotando correcciones necesarias.</li>
+                </ul>
+
+                <p>Fórmula de ahorro: <strong>Ahorro % = ((min_base - min_IA)/min_base) × 100</strong>. Estimación propia con supuestos: cálculo basado en promedio semanal, solo sobre la tarea concreta, sin extrapolar a otras tareas.</p>
+
+                <h3>Plantilla 2: Seguimiento de calidad y adopción</h3>
+
+                <p>Para cada resultado generado con IA que se usa como borrador, registra si necesitó edición importante o menor. Considera "válido sin edición importante" aquel que se aprueba con cambios menores de estilo.</p>
+
+                <ul>
+                    <li><strong>Calidad:</strong> (nº válidos / nº generados) × 100</li>
+                    <li><strong>Adopción:</strong> (días usados / días acordados) × 100 por persona</li>
+                    <li><strong>Errores graves:</strong> contar incidencias que requirieron corrección sustancial o reenvío.</li>
+                </ul>
+
+                <p><strong>Estimación propia:</strong> umbrales orientativos basados en experiencia de validación. Ajusta si tu caso de uso exige mayor precisión.</p>
+
+                <h3>Plantilla 3: Cálculo de ROI aproximado</h3>
+
+                <p>Para justificar coste, usa una fórmula sencilla y transparente.</p>
+
+                <ul>
+                    <li><strong>Valor ahorrado/mes:</strong> horas_ahorradas_semana × 4,33 × coste_hora (€)</li>
+                    <li><strong>Coste herramienta/mes:</strong> suma de asientos activos (€)</li>
+                    <li><strong>ROI aproximado:</strong> (Valor ahorrado - Coste herramienta) / Coste herramienta (si > 0, positivo)</li>
+                </ul>
+
+                <p><strong>Estimación propia:</strong> usa tu coste hora real (no genérico) para obtener resultado significativo. Si no lo conoces, toma un valor conservador para evitar sobreestimar.</p>
+
+                <h2 id="casos-practicos">Casos prácticos por pyme tipo</h2>
+
+                <p>Estos escenarios ayudan a visualizar la aplicación directa sin complejidad. Cada uno parte de un único caso de uso, tal como recomienda esta guía.</p>
+
+                <h3>Comercio local (5-10 empleados)</h3>
+
+                <p><strong>Problema:</strong> Responder consultas sobre horarios, stock y reservas consume tiempo en tienda.</p>
+                <p><strong>Solución:</strong> Tidio (plan gratuito) para FAQs y redirección a reservas.</p>
+                <p><strong>Piloto:</strong> 14 días, medir nº consultas resueltas automáticamente vs total.</p>
+                <p><strong>Estimación propia:</strong> ahorro 1-3 horas/semana con inversión 0-29 €/mes.</p>
+
+                <h3>Asesoría / despacho (2-8 empleados)</h3>
+
+                <p><strong>Problema:</strong> Redactar respuestas y resumir correos largos retrasa la atención a clientes.</p>
+                <p><strong>Solución:</strong> Claude Pro (18 €/mes) con plantillas para respuestas tipo.</p>
+                <p><strong>Piloto:</strong> 30 días, medir minutos por respuesta comparado con base.</p>
+                <p><strong>Estimación propia:</strong> ahorro 20-30% en esa tarea con revisión obligatoria.</p>
+
+                <h3>Agencia de marketing / servicios (3-12 empleados)</h3>
+
+                <p><strong>Problema:</strong> Crear borradores de propuestas y descripciones consume mucho tiempo.</p>
+                <p><strong>Solución:</strong> ChatGPT Plus (18 €/mes) con prompts por tipo de cliente.</p>
+                <p><strong>Piloto:</strong> 30 días, medir nº propuestas semanales y tiempo medio.</p>
+                <p><strong>Estimación propia:</strong> ahorro 5-10 horas/semana si se usa de forma disciplinada.</p>
+
+                <h3>PYME industrial / logística (10-25 empleados)</h3>
+
+                <p><strong>Problema:</strong> Resumir ofertas, albaranes o correos con proveedores.</p>
+                <p><strong>Solución:</strong> Claude Pro (18 €/mes) para resúmenes estructurados.</p>
+                <p><strong>Piloto:</strong> 30 días, priorizando documentos no sensibles.</p>
+                <p><strong>Estimación propia:</strong> ahorro 2-6 horas/semana con bajo riesgo si se filtran datos.</p>
+
+<h2 id="fuentes">Fuentes</h2>
+
+                <ul>
+                    <li><a href="https://www.ine.es/" rel="noopener nofollow" target="_blank">INE — Instituto Nacional de Estadística</a>: Encuesta de Acceso a las TIC de las empresas.</li>
+                    <li><a href="https://ec.europa.eu/eurostat" rel="noopener nofollow" target="_blank">Eurostat</a>: Adopción de inteligencia artificial por tamaño de empresa en la UE-27.</li>
+                    <li><a href="https://www.cepyme.es/" rel="noopener nofollow" target="_blank">CEPYME</a>: Barómetro de digitalización de la pyme española.</li>
+                    <li><a href="https://openai.com/business/pricing/" rel="noopener nofollow" target="_blank">OpenAI — Business pricing</a>: Tarifas oficiales de ChatGPT Business/Enterprise.</li>
+                    <li><a href="https://www.anthropic.com/pricing" rel="noopener nofollow" target="_blank">Anthropic — Pricing</a>: Tarifas oficiales de Claude Team/Enterprise.</li>
+                    <li><a href="https://workspace.google.com/intl/es_es/pricing.html" rel="noopener nofollow" target="_blank">Google Workspace — Precios</a>: Tarifas para España.</li>
+                    <li><a href="https://cloud.google.com/gemini-enterprise" rel="noopener nofollow" target="_blank">Google Cloud — Gemini Enterprise</a>: Información y precios oficiales.</li>
+                    <li><a href="https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=OJ:L_202401689" rel="noopener nofollow" target="_blank">Reglamento (UE) 2024/1689 (AI Act)</a>: Texto oficial en español.</li>
+                    <li><a href="https://www.aepd.es/sites/default/files/2020-02/adecuacion-rgpd-ia.pdf" rel="noopener nofollow" target="_blank">AEPD — Adecuación del RGPD a la IA</a>: Guía de referencia oficial.</li>
+                    <li><a href="https://www.tidio.com/pricing/" rel="noopener nofollow" target="_blank">Tidio — Pricing</a>: Tarifas oficiales.</li>
+                    <li><a href="https://www.hubspot.com/pricing" rel="noopener nofollow" target="_blank">HubSpot — Pricing</a>: Tarifas oficiales.</li>
+                    <li><a href="https://github.com/features/copilot/plans" rel="noopener nofollow" target="_blank">GitHub Copilot — Plans</a>: Tarifas oficiales.</li>
+                </ul>
+
+                <p><em>Consultado el 3 de octubre de 2026</em></p>
             </div>
         </div>
     </article>

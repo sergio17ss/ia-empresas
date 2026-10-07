@@ -41,66 +41,104 @@
     <noscript><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="../../css/style.css">
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "SoftwareApplication",
-            "name": "Herramientas de IA para Consultoras",
-            "applicationCategory": "BusinessApplication",
-            "operatingSystem": "Web",
-            "offers": {
-                "@type": "Offer",
-                "price": "18",
-                "priceCurrency": "EUR",
-                "description": "Desde 18 EUR/mes por asiento (ChatGPT Plus, Claude Pro, Notion AI)"
-            }
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "4.5",
-            "bestRating": "5"
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "IA TodoPyme"
-        },
-        "datePublished": "2026-09-09"
-    }
-    </script>
+    
 
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "¿Qué IA usan las consultoras para trabajar más rápido?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Las mas adoptadas son: asistentes generales (ChatGPT Plus o Claude Pro) para analisis y redaccion, Microsoft 365 Copilot para informes y presentaciones dentro de Office, Notion AI o Coda AI como base de conocimiento de la firma, Gamma para presentaciones, y Zapier o Make para automatizar entregas repetitivas. En analitica, Power BI Copilot y Looker Studio con resumen IA son el estandar para clientes."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "¿Cuánto cuesta un stack de IA para una consultora pequeña?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Una consultora de 5 personas puede operar con unos 250-400 euros al mes: ChatGPT Plus o Claude Pro por asiento (18 EUR), Microsoft 365 Copilot por asiento (30 EUR, opcional solo para quienes generan informes), Notion AI por miembro (10 EUR) y Zapier o Make (desde 20 EUR). Herramientas premium como Gamma (desde 10 EUR por asiento) o Power BI Pro (12 EUR por usuario) se anaden segun los entregables del cliente."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "¿La IA de las consultoras sustituye a los consultores?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No sustituye el criterio, pero comprime el trabajo de produccion: analisis de datos, primeros borradores, presentaciones y actas se hacen en una fraccion del tiempo, y el tiempo liberado se reorienta a la relacion con el cliente y al pensamiento estrategico, que es justo lo que se factura."
-                }
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta montar un stack de IA para una consultora pequeña?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Con planes de Empresa y una firma de diez personas, la cifra sale de multiplicar precios oficiales. Diez asientos de ChatGPT Business Standard a 21 € son 210 € al mes y 2.520 € al año. Diez de Claude Team a 20 US$ son 200 US$ al mes y 2.400 US$ al año. Diez miembros de Notion Business a 19,50 € son 195 € al mes. Una suscripción de Zapier Professional cuesta desde 19,99 US$ al mes, y n8n Starter está en 20 € al mes pagando anual. No hay que convertir a una moneda común porque cada proveedor cobra en la suya. A eso hay que sumarle el coste de redactar y mantener la regla de aislamiento por cliente, que es tiempo y no aparece en ninguna factura."
             }
-        ]
-    }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Plan individual o plan de Empresa para una consultora?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El corte está en dos personas, no en diez. Con una sola persona, Claude Pro a 17 US$ al mes pagando anual (200 US$ por adelantado) es suficiente y evita la administración de accesos. En cuanto hay un segundo usuario, el plan de Empresa empieza a tener sentido, aunque el salto de precio sea grande: 42 € al mes por dos asientos de ChatGPT Business Standard. La razón es que SAML SSO, SCIM, control de acceso por roles, registro de auditoría, SLA y residencia en la Unión Europea no vienen en ningún plan individual. Con dos cuentas personales tienes dos accesos que no se revocan al marcharse y ningún registro de quién preguntó qué."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo ahorra de verdad la IA a una consultora?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "La mejora se concentra en la fase de producción documental, no en el ciclo completo del proyecto. En un informe de diagnóstico, escribir, maquetar y sintetizar es una parte del trabajo; el resto son entrevistas, análisis compartido con el cliente y defensa de las conclusiones. Si la producción documental se acorta a la mitad, el tiempo total del proyecto se mueve mucho menos que eso, porque el cuello de botella se traslada al trabajo con el cliente. La única forma de saber qué pasa en tu firma es medir el tiempo real de tres entregables antes y después, y ponerlo junto al ingreso facturado por cada uno."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Puedo meter datos de cliente en mi cuenta personal de IA?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, si esos datos identificables están cubiertos por un acuerdo de confidencialidad. Los planes individuales de los tres grandes asistentes pueden entrenar con el contenido salvo que se desactive la opción, mientras que ChatGPT Business y Enterprise no entrenan con el contenido de Empresa y Claude Team y Enterprise operan sin entrenamiento por defecto. En el caso de Google la diferencia es más tajante: las cuentas personales de Gemini entrenan por defecto si el guardado de actividad está activo y retienen la actividad 18 meses, y los planes Google AI Pro, Plus y Ultra son solo cuentas personales. Para trabajo de Empresa, la vía es Workspace con Gemini o un plan de equipo, con contrato de encargo y base jurídica."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Puede una IA cruzarte datos entre dos clientes?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, y es el fallo más caro de una consultora que usa IA sin procedimiento. Si toda la firma comparte un único espacio de trabajo, la información de un encargo queda disponible para cualquier otro, y la capacidad de conectar fuentes crece con el plan: ChatGPT Business permite alrededor de 40 archivos conectados por asiento y ChatGPT Enterprise unos 250. La mitigación no es tecnológica, es de procedimiento: un espacio por cliente y nunca uno global, una regla escrita de qué información puede entrar en cada herramienta, la prohibición de cuentas personales para material de cliente y una revisión de cinco minutos antes de cada entrega. Notion publica además que la retención cero con los proveedores de modelo, el SCIM y el registro de auditoría están en el nivel Enterprise, no en Business."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué exige el AI Act a una consultora que usa IA en sus entregables?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El Reglamento (UE) 2024/1689 entra por tramos. El artículo 4 y las prohibiciones son exigibles desde el 2 de febrero de 2025, las obligaciones para modelos de propósito general desde el 2 de agosto de 2025, y las de transparencia del artículo 50 desde el 2 de agosto de 2026. Ese último tramo es el que obliga a la consultora: informar del uso de IA en los flujos y marcar el contenido generado de forma identificable. En la práctica significa una nota de uso de IA en el entregable y una convención interna sobre qué se etiqueta. Después, la aplicación general y los sistemas de alto riesgo llegan el 2 de agosto de 2027, y el alto riesgo en productos regulados el 2 de agosto de 2028. El RGPD no se sustituye: hay que determinar base jurídica, informar a los interesados y firmar contrato de encargo con el proveedor."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Subir herramientas de IA reduce los ingresos de una consultora que factura por horas?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Puede, y es el riesgo que ninguna comparativa menciona. Si la producción documental se acorta y la tarifa sigue siendo por hora, el ingreso por informe baja aunque el margen suba. La salida es cambiar el modelo antes de que el efecto se note: pasar parte de la cartera a precio cerrado por proyecto, o subir la tarifa por hora en la línea que ahora incluye más análisis y más iteraciones. El error clásico es medir solo las horas ahorradas y declarar éxito mientras la facturación por entregable cae. Un cálculo de ROI real en Empresas con IA mide el ingreso, no el esfuerzo."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cuándo tiene sentido contratar a un integrador externo?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "En tres casos. Cuando hay que cruzar más de una fuente de datos —ERP del cliente, CRM propio, hojas de cálculo e histórico de proyectos—, porque ahí el trabajo es de arquitectura y no de selección de herramienta. Cuando hay que demostrar cumplimiento en vez de solo cumplir: residencia de datos por escrito, auditoría de accesos y un procedimiento de aislamiento entre clientes validado por alguien de fuera. Y cuando varios clientes con requisitos distintos comparten la misma arquitectura, porque un externo diseña una vez y una firma interna lo rediseña en cada proyecto. No hace falta integrador para montar un asistente con plan de Empresa, ordenar una base de conocimiento ni automatizar el acta de una reunión."
+            }
+        }
+    ]
+}
+    </script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "IA para Consultoras: Herramientas de Productividad en 2026",
+    "inLanguage": "es-ES",
+    "articleSection": "Comparativas",
+    "about": {
+        "@type": "SoftwareApplication",
+        "name": "IA para Consultoras (herramientas comparadas)",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web"
+    },
+    "author": {
+        "@type": "Organization",
+        "name": "IA TodoPyme"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "IA TodoPyme"
+    },
+    "datePublished": "2026-09-09",
+    "dateModified": "2026-10-03"
+}
     </script>
 
 </head>
@@ -134,307 +172,774 @@
 
             <div class="methodology-banner">
                 <span class="methodology-icon" aria-hidden="true"></span>
-                <p><strong>Metodología:</strong> Análisis basado en documentación oficial de cada fabricante, uso real en firmas de consultoría y precios verificados, actualizado a septiembre 2026.</p>
+                <p><strong>Metodología:</strong> Análisis basado en documentación oficial de cada fabricante, uso real en firmas de consultoría y precios verificados, actualizado a octubre 2026.</p>
             </div>
 
             <div class="article-header">
                 <span class="article-category-badge">Comparativas</span>
                 <h1>IA para Consultoras: Herramientas de Productividad en 2026</h1>
-                <p class="article-subtitle">La consultora vende criterio y entrega documentos. La IA ha comprimido la mitad de producción de ese ciclo: análisis, informes y presentaciones. Esta guía ordena las 9 herramientas que más horas ahorran a una firma de consultoría española.</p>
+                <p class="article-subtitle">La consultora vende criterio y entrega documentos. La IA ha comprimido la mitad de producción de ese ciclo: análisis, informes y presentaciones. ésta guía ordena las 9 herramientas que más horas ahorran a una firma de consultoría española.</p>
                 <div class="article-meta-bar">
                     <span class="meta-author">Por el equipo de IA TodoPyme</span>
-                    <span class="meta-date">9 septiembre 2026</span>
+                    <span class="meta-date">7 octubre 2026</span>
                     <span class="meta-reading">12 min de lectura</span>
-                    <span class="meta-updated">Actualizado: septiembre 2026</span>
+                    <span class="meta-updated">Actualizado: 7 octubre 2026</span>
                 </div>
             </div>
 
             <div class="article-content">
-
                 <div class="tldr-box">
-                    <h2>Resumen rápido</h2>
-                    <ul>
-                        <li><strong>Precio de entrada:</strong> 18 €/mes por asiento (ChatGPT Plus o Claude Pro) — el retorno se nota en la primera semana</li>
-                        <li><strong>Ideal para:</strong> firmas de consultoría, analistas y asesores que producen informes, presentaciones y análisis para clientes</li>
-                        <li><strong>Puntos fuertes:</strong> compresión del trabajo de producción (análisis, borradores, decks), base de conocimiento de la firma, automatización de entregas</li>
-                        <li><strong>Puntos débiles:</strong> el coste por asiento se multiplica, exige control de confidencialidad por cliente, y la calidad del output depende del criterio de quien revisa</li>
-                    </ul>
-                </div>
+                                    <ul>
+                                        <li><strong>Punto de partida:</strong> una consultora no necesita nueve herramientas, necesita cuentas de Empresa. ChatGPT Business Standard cuesta 21 € por asiento al mes facturados anualmente y Claude Team 20 US$ por asiento al mes, ambos con mínimo de dos asientos.</li>
+                                        <li><strong>Lo que vendes no es el texto:</strong> vendes criterio. La IA comprime la fase de producción y libera horas; si tu tarifa es por hora y no cambias el modelo, ese ahorro sale directamente de la facturación.</li>
+                                        <li><strong>El coste que no aparece en la factura:</strong> aislar proyectos por cliente, trazar fuentes y revisar antes de entregar. Son horas, y son las que deciden si el ahorro es real.</li>
+                                        <li><strong>El fallo que casi nadie comenta:</strong> un plan de Empresa no aísla los encargos por sí sólo. Sin una regla de separación por cliente, el asistente de la firma acaba cruzando datos entre proyectos, y eso es un problema de responsabilidad Profesional, no de tecnología.</li>
+                                        <li><strong>El umbral que decide:</strong> por debajo de dos personas, el plan individual basta. A partir de ahí, SAML SSO, SCIM, control de acceso por roles, registro de auditoría, SLA y residencia en la UE sólo existen en planes de Empresa.</li>
+                                    </ul>
+                                </div>
 
-                <div class="callout callout-info">
-                    <strong>Regla de la firma:</strong> en consultoría, la IA cambia el reparto de horas — no el precio del proyecto. Quien adopta bien la IA entrega mejor análisis y más iteraciones por el mismo presupuesto, no menos horas facturadas al cliente.
-                </div>
+                                <div class="toc">
+                                    <h3>Índice</h3>
+                                    <ol>
+                                        <li><a href="#la-respuesta-corta">La respuesta corta</a></li>
+                                        <li><a href="#por-que-nueve-herramientas-y-no-una">Por qué nueve herramientas y no una</a></li>
+                                        <li><a href="#el-coste-real-para-una-consultora-de-diez-personas">El coste real para una consultora de diez personas</a></li>
+                                        <li><a href="#precios-2026">Precios 2026, con unidad y condición</a></li>
+                                        <li><a href="#el-aislamiento-entre-proyectos">El aislamiento entre proyectos: el fallo que no aparece en la documentación</a></li>
+                                        <li><a href="#el-corte-que-decide-la-compra">El corte que decide la compra</a></li>
+                                        <li><a href="#residencia-de-datos-y-ai-act">Residencia de datos y calendario del AI Act</a></li>
+                                        <li><a href="#tabla-comparativa">Tabla comparativa por área de trabajo</a></li>
+                                        <li><a href="#tabla-por-caso-de-uso">Tabla por caso de uso</a></li>
+                                        <li><a href="#la-herramienta-a-la-que-casi-todo-esto-le-da-igual">La herramienta a la que casi todo esto le da igual</a></li>
+                                        <li><a href="#lo-que-debe-hacer-siempre-una-persona">Lo que debe hacer siempre una persona</a></li>
+                                        <li><a href="#errores-de-implantacion">Errores de implantación y lo que cuestan</a></li>
+                                        <li><a href="#plan-de-90-dias">Plan de 90 días</a></li>
+                                        <li><a href="#cuando-contratar-un-integrador">Cuándo contratar un integrador</a></li>
+                                        <li><a href="#veredicto-por-perfil">Veredicto por perfil de firma</a></li>
+                                        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                                        <li><a href="#fuentes">Fuentes</a></li>
+                                    </ol>
+                                </div>
 
-                <div class="toc">
-                    <h3>Índice</h3>
-                    <ol>
-                        <li><a href="#que-es">Qué hace la IA en una consultora</a></li>
-                        <li><a href="#herramientas">Las 9 herramientas por área</a></li>
-                        <li><a href="#como-elegir">Cómo elegir el stack según la firma</a></li>
-                        <li><a href="#precios">Tabla comparativa de precios</a></li>
-                        <li><a href="#errores">Errores habituales y riesgos</a></li>
-                        <li><a href="#veredicto">Veredicto por perfil de firma</a></li>
-                        <li><a href="#faq">Preguntas frecuentes</a></li>
-                    </ol>
-                </div>
+                                <h2 id="la-respuesta-corta">La respuesta corta</h2>
 
-                <h2 id="que-es">Qué hace la IA en una consultora</h2>
+                                <p>Una consultora que busca productivity con IA en 2026 <strong>no tiene un problema de herramientas</strong>: tiene un problema de <strong>cuentas y de aislamiento</strong>. La recomendación es montar dos capas y nada más. La primera es un asistente general con plan de Empresa, que es donde se produce el ahorro real de horas: análisis, primer borrador, resumen de documentos. La segunda es un sistema que deje constancia de qué se usó en cada entregable, porque en consultoría la trazabilidad no es buena práctica, es defensa Profesional.</p>
 
-                <p>El trabajo de una consultora se divide en dos mitades: la de pensar (diagnóstico, estrategia, recomendaciones) y la de producir (informes, presentaciones, actas, análisis). La IA ha comprimido principalmente la segunda mitad, y eso cambia la economía del proyecto: las tareas de producción que antes ocupaban el 40-50% de las horas de un engagement ahora se resuelven en una fracción.</p>
+                                <p>El número de partida es concreto. ChatGPT Business Standard está en <strong>21 € por asiento al mes</strong> con facturación anual en euros y exige entre 2 y 200 asientos. Claude Team está en <strong>20 US$ por asiento al mes</strong> pagando anual, o 25 US$ pagando mensual, para equipos de 2 a 150. Con diez personas, la primera opción son 210 € al mes y la segunda 200 US$ al mes. No hace falta convertir a una moneda común: cada proveedor cobra en la suya y la factura llega en la suya.</p>
 
-                <p>El segundo efecto es cualitativo: con el mismo presupuesto, una firma con IA puede iterar más. Tres versiones de un informe en vez de una, dos escenarios extra de un modelo financiero, un deck rediseñado la noche antes de la reunión con el comité de dirección. Esa capacidad de iteración es lo que el cliente percibe como calidad y lo que protege el margen de la firma.</p>
+                                <p><strong>La segunda capa no se compra, se escribe</strong>. Consiste en <strong>una regla de la firma con tres líneas</strong>: qué información de cliente puede entrar en cada herramienta, qué espacio de trabajo se usa para cada encargo, y qué comprobación se hace antes de que un documento salga por la puerta. Sin esas tres líneas, la IA multiplica el riesgo de la firma en lugar de reducirlo, porque acelera exactamente el proceso donde el error se paga caro.</p>
 
-                <p>El tercer efecto es la acumulación de conocimiento: las bases de conocimiento con IA (Notion AI, Coda AI) convierten los informes de proyectos pasados en material reutilizable. El consultor junior que antes tardaba tres días en entender el contexto de un cliente ahora lo recibe sintetizado en una hora, con las fuentes dentro de la propia base.</p>
+                                <p>Lo que la IA no hace en una consultora, y conviene decir de entrada, <strong>es sustituir el criterio</strong>. No hay ningún modelo que sepa qué le conviene a un cliente cuando el cliente no lo dice. Lo que sí hace es <strong>comprimir la fase de producción</strong>: preparar un primer borrador, extraer cifras de un Excel, ordenar las actas de una reunión de dirección. Esa fase era la más lenta y la peor pagada. El problema de las firmas no es que la IA la mejore, es que con una tarifa por hora mejorada esa mejora se traduzca en menos ingresos en lugar de más margen.</p>
 
-                <h2 id="herramientas">Las 9 herramientas por área</h2>
+                                <div class="callout">
+                                    <strong>La conclusión que casi nadie escribe en sus comparativas</strong>
+                                    La herramienta de IA es la parte fácil de decidir. Lo difícil es qué haces con las horas que libera: si las conviertes en más análisis para el mismo cliente, en más iteraciones antes de la reunión o en un precio por proyecto en vez de por hora. Esa decisión es de dirección, no dedepartmento de sistemas, y es la que determina el retorno.
+                                </div>
 
-                <h3>Asistente general de análisis</h3>
+                                <h2 id="por-que-nueve-herramientas-y-no-una">Por qué nueve herramientas y no una</h2>
 
-                <p><strong>1. ChatGPT Plus</strong> — La herramienta de primer borrador y análisis de cualquier consultor: procesa documentos, resume entrevistas, redacta secciones, compara marcos de trabajo y realiza análisis preliminares de datos. Su fuerza en consultoría es la versatilidad: sirve para el informe, el análisis, la traducción de jerga del cliente y la preparación de entrevistas.</p>
-                <p><strong>Para qué sirve:</strong> producción diaria de documentos de trabajo. Es la herramienta que cualquier consultor usa desde el primer día sin curva de aprendizaje.</p>
-                <p><strong>Precio:</strong> 20 USD/mes (≈18 €) por asiento. Pro a 200 USD/mes (≈182 €) para uso intensivo.</p>
+                                <p>Las listas de «las mejores herramientas de IA para consultores» suelen tener un problema estructural: cuentan asistentes, herramientas de presentaciones, bases de conocimiento, automatizadores y analítica como si fueran intercambiables. No lo son. Cada una vive en una capa distinta del flujo de trabajo de una consultora y falla de una manera distinta. <strong>Equipos</strong> falla por diseño, no por contenido. <strong>Base de conocimiento</strong> falla por orden, no por modelo. <strong>Equipos</strong> falla por undocumentedos. <strong>Equipos</strong> falla por modelo de datos, no por asistente.</p>
 
-                <p><strong>2. Claude Pro (Anthropic)</strong> — El preferido para análisis largo de documentos y redacción cuidada. Su ventana de contexto amplia permite subir un informe completo de 100 páginas o un contrato y trabajar sobre él sin fragmentarlo. En 2026, Claude es la alternativa seria a ChatGPT en las firmas donde prima el análisis de documentos extensos.</p>
-                <p><strong>Para qué sirve:</strong> revisión y síntesis de documentación larga, análisis legal-contractual preliminar y redacción de informes con tono profesional.</p>
-                <p><strong>Precio:</strong> 20 USD/mes (≈18 €) por asiento. Team desde 25 USD/usuario/mes (≈23 €) con mínimo 5 usuarios.</p>
+                                <p>La primera capa es el asistente general, y ahí <strong>el criterio de elección es estrecho</strong>. Cualquiera de los dos asistentes principales sirve para el 80 % de las tareas: resumir una entrevista, estructurar un marco de trabajo, comparar dos enfoques, traducir la jerga del cliente. Cambiar de uno a otro a mitad de proyecto no pierde nada relevante en el entregable. Eso explica por qué la elección entre ellos importa mucho menos que la elección entre <strong>cuenta personal y cuenta de Empresa</strong>.</p>
 
-                <h3>Informes y presentaciones en Office</h3>
+                                <p><strong>La segunda capa es donde vive el trabajo de producción</strong> en formato final: <strong>Word, Excel, PowerPoint</strong>, Outlook. Si la firma ya vive en Office, la IA integrada evita el copiar y pegar entre herramientas, y eso tiene un valor que no aparece en ninguna tabla de precios: la fricción. Un informe que se escribe en el documento donde ya están los datos no necesita sincronización, ni exports, ni versiones contradictorias. Los datos concretos están en la <a href="../../herramientas-ia/copilot-microsoft/">ficha de Microsoft 365 Copilot</a>.</p>
 
-                <p><strong>3. Microsoft 365 Copilot</strong> — La IA integrada en Word, Excel, PowerPoint, Outlook y Teams. Para una consultora es la herramienta de mayor retorno en horas de producción: redacta informes en Word con datos del documento, genera diapositivas de un deck a partir de un documento, analiza tablas en Excel con lenguaje natural y resume las cadenas de email del proyecto. El asiento incluye la IA de Microsoft 365 sin necesidad de herramientas externas.</p>
-                <p><strong>Para qué sirve:</strong> firmas que viven en Office (la inmensa mayoría). Es la capa que ahorra horas de formato, actas y presentaciones dentro del propio flujo de trabajo, sin copiar y pegar entre herramientas.</p>
-                <p><strong>Precio:</strong> 30 USD/usuario/mes (≈27 €) en facturación anual, sobre una licencia base de Microsoft 365 Business Standard (12,50 €/usuario/mes). Es decir, el coste real por asiento es de unos 40 €/mes.</p>
+                                <p>La tercera capa es el conocimiento acumulado. Es la que <strong>más efecto estructural</strong> tiene y la que peor se vende, porque no se ve en una demo. Una base de conocimiento con IA convierte los informes de proyectos pasados en material consultable por el equipo junior, que antes tardaba días en entender el contexto de un cliente. El límite es brutal y no es del modelo: <strong>una base desordenada amplifica sus propios errores</strong>. Documentos duplicados, obsoletos y sin fecha en el título producen respuestas que parecen certeras y son de un proyecto que ya terminó. El origen de esto está en la <a href="../../herramientas-ia/notion-ai/">ficha de Notion AI</a>.</p>
 
-                <h3>Presentaciones con IA</h3>
+                                <p><strong>La cuarta capa es la automatización</strong> de entregas repetitivas: <strong>acta de reunión</strong> que se genera al cerrar la llamada, registro en el CRM al enviarse un formulario, archivado del documento en la base. Aquí el precio no es lo relevante; lo relevante es que el proceso esté escrito. Un automatizador sobre un proceso no documentado no ahorra nada, porque nadie sabe qué se debería automatizar. La guía de <a href="../../herramientas-ia/automatizacion-procesos-ia/">automatización de procesos con IA</a> entra en ese detalle.</p>
 
-                <p><strong>4. Gamma</strong> — Genera presentaciones, documentos y microsites completas a partir de un prompt o de un documento. La consultora produce el contenido y Gamma lo maqueta con una estética cuidada, incluidas las diapositivas de datos. Su uso es frecuente en entregables intermedios y propuestas comerciales donde la velocidad importa más que el diseño a medida.</p>
-                <p><strong>Para qué sirve:</strong> propuestas comerciales, presentaciones internas y primeros decks de proyecto. Para el deck final de un comité de dirección, la mayoría de firmas sigue puliendo en PowerPoint, pero Gamma reduce el punto de partida de días a minutos.</p>
-                <p><strong>Precio:</strong> plan gratuito con créditos; Plus desde 10 €/mes, Pro desde 20 €/mes por usuario.</p>
+                                <p><strong>La quinta capa es la analítica</strong> que se entrega al cliente. Un tablero que <strong>se explica sólo</strong> en la reunión tiene más valor de consulta que un tablero que necesita un analista presente. Pero el copiloto analítico no arregla un modelo de datos mal construido: genera la narrativa sobre lo que le dan. Esa distinción la puedes ver aplicada a otro sector en la <a href="../../comparativas/ia-contabilidad-finanzas/">comparativa de IA para contabilidad y finanzas</a>.</p>
 
-                <h3>Base de conocimiento de la firma</h3>
+                                <h2 id="el-coste-real-para-una-consultora-de-diez-personas">El coste real para una consultora de diez personas</h2>
 
-                <p><strong>5. Notion AI</strong> — Notion es el estándar de documentación interna de miles de consultoras: wikis de proyecto, actas, bases de datos de clientes y metodologías. Con Notion AI, la base se convierte en un asistente que responde preguntas con el contexto de la propia firma ("¿qué recomendamos en el último proyecto de transformación digital para un retail?"), redacta documentos y resume reuniones. Lo analizamos en detalle en nuestra review de Notion AI.</p>
-                <p><strong>Para qué sirve:</strong> convertir el conocimiento acumulado en activo consultable. Es la herramienta donde la IA más beneficio estructural aporta: cada hora de un consultor senior queda documentada y reutilizable.</p>
-                <p><strong>Precio:</strong> Notion para equipos desde 8 €/usuario/mes, más el add-on de IA (con cambios de pricing en 2026 que conviene verificar): rango habitual de 10-25 €/usuario/mes con IA incluida según el plan.</p>
+                                <p>Aquí conviene hacer la aritmética con las cifras oficiales y dejar los supuestos a la vista, en vez de dar rangos. Los importes por asiento que siguen están tomados de la página de precios de cada proveedor y el total es multiplicación directa, sin tipos de cambio ni descuentos no publicados.</p>
 
-                <p><strong>6. Coda AI</strong> — El competidor de Notion con un enfoque más orientado a documentos interactivos y tablas. Su IA permite generar paquetes de trabajo completos (briefings, cronogramas, tableros) desde un documento de entrada y automatizar flujos entre documentos y herramientas externas sin código.</p>
-                <p><strong>Para qué sirve:</strong> firmas que gestionan mucha información tabulada (planes de proyecto, seguimiento de acciones, matrices de riesgo) y quieren que la IA mantenga esos documentos vivos.</p>
-                <p><strong>Precio:</strong> gratuito para uso básico; Team desde 10 €/usuario/mes con funciones de IA según plan.</p>
+                                <p><strong>El supuesto base es una firma de diez personas</strong>, <strong>todas usando la misma capa de asistente general y la misma base de conocimiento, y una sola suscripción de automatización para la oficina. Se paga el asistente anual, la base de conocimiento anual y la automatización una vez. No se incluye Microsoft 365 Copilot porque depende de la licencia base que cada firma ya tenga contratada, y esavariable no es comparable entre firmas</strong>.</p>
 
-                <h3>Investigación con fuentes verificables</h3>
+                                <div class="price-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Escenario (10 personas)</th>
+                                                <th>Precio unitario oficial</th>
+                                                <th>Criterio</th>
+                                                <th>Coste mensual</th>
+                                                <th>Coste anual</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Asistente general: ChatGPT Business Standard</strong></td>
+                                                <td>21 € por asiento al mes, facturación anual en euros</td>
+                                                <td>10 × 21 €</td>
+                                                <td>210 €</td>
+                                                <td>2.520 €</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Asistente general: Claude Team (alternativa)</strong></td>
+                                                <td>20 US$ por asiento al mes pagando anual</td>
+                                                <td>10 × 20 US$</td>
+                                                <td>200 US$</td>
+                                                <td>2.400 US$</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Base de conocimiento: Notion Business</strong></td>
+                                                <td>19,50 € por miembro al mes pagando anual</td>
+                                                <td>10 × 19,50 €</td>
+                                                <td>195 €</td>
+                                                <td>2.340 €</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Automatización de entregas: Zapier Professional</strong></td>
+                                                <td>Desde 19,99 US$ al mes</td>
+                                                <td>1 suscripción para la firma</td>
+                                                <td>19,99 US$</td>
+                                                <td>239,88 US$</td>
+                                            </tr>
+                                            <tr class="highlight-row">
+                                                <td><strong>Stack mínimo con ChatGPT (estimación propia)</strong></td>
+                                                <td>Suma de las tres filas anteriores</td>
+                                                <td>210 € + 195 € + 19,99 US$</td>
+                                                <td>≈ 425 € más el equivalente en euros de la suscripción de automatización</td>
+                                                <td>≈ 5.100 €</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
-                <p><strong>7. Perplexity Pro</strong> — Buscador con IA que responde con citas y fuentes enlazadas. Para un consultor, la diferencia clave frente a un chat clásico es la verificabilidad: cada dato de mercado, cada cifra de sector, cada referencia normativa lleva su fuente. Es la herramienta de investigación rápida que alimenta los análisis de mercado y los benchmarks de competencia.</p>
-                <p><strong>Para qué sirve:</strong> investigación preliminar de sectores, tamaños de mercado, marcos regulatorios y mejores prácticas, con fuentes que el consultor puede verificar antes de citarlas en un informe.</p>
-                <p><strong>Precio:</strong> gratuito con límites; Pro 20 USD/mes (≈18 €) con búsquedas ilimitadas y modelos avanzados.</p>
+                                <p>La conclusión del cuadro no es que la IA sea cara. Es que <strong>el coste por persona se multiplica y la base de conocimiento pesa casi tanto como el asistente</strong>. <strong>En una firma de diez personas, Notion Business cuesta 195 € al mes frente a los 210 € del asistente: casi la mitad del presupuesto mensual se va enalmacenamiento y consulta de lo que la firma ya escribió. Si la base de conocimiento todavía no existe, ese es el dinero que se está pagando por no tener orden</strong>.</p>
 
-                <h3>Automatización de entregas</h3>
+                                <p>Ahora el reverso, que es <strong>la parte que casi ningún análisis de ROI presenta</strong>. Una operación mensual de <strong>estimación propia</strong>: escribir la regla de aislamiento por cliente, revisar qué documentos tiene cada espacio y comprobar quién accede a qué. Si eso lleva dos horas al mes, son 24 horas al año. A una tarifa de consultant de 95 €/hora, la regla de aislamiento cuesta 2.280 € al año. Almost las 5.100 € del stack. La comparación no es para desalentar la compra: es para que el cálculo se haga con las dos cifras delante y no sólo con la barata.</p>
 
-                <p><strong>8. Zapier / Make</strong> — Las plataformas de automatización sin código que conectan las herramientas de la firma: cuando se cierra una reunión en Teams, se genera el acta con IA y se archiva en Notion; cuando el cliente envía un formulario, se crea el registro en el CRM y se envía el documento de inicio de proyecto. Con los motores de IA integrados (Zapier Agents, Make AI) la automatización no es solo "si pasa X, haz Y": es un flujo que decide y redacta.</p>
-                <p><strong>Para qué sirve:</strong> eliminar el trabajo administrativo repetitivo que cada consultor arrastra entre proyecto y proyecto: actas, registros, archivos, seguimientos.</p>
-                <p><strong>Precio:</strong> Zapier desde 19,99 €/mes (1.000 tareas); Make desde 9 €/mes (10.000 operaciones). Ambos con plan gratuito limitado para empezar.</p>
+                                <p>Un segundo supuesto de estimación propia: el <strong>tiempo de producción de un informe de diagnóstico</strong> baja de 40 a 18 horas con asistente y base de conocimiento. Son 22 horas por informe. Con cuatro informes al mes y esos mismos 22 euros de coste marginal de licencia, el margen por informe sube de forma clara <strong>si el proyecto se cobra por horas</strong>, porque delivers más rápido. Si el proyecto se cobra a precio cerrado y el cliente no pide más, el ingreso es el mismo y el margen sube. En ambos casos la licence se paga sola. La tercera posibilidad, la que arruina a las firmas, es mantener la tarifa por hora y recortar Deliberadamente las horas facturables: eso no es eficiencia, es dejar ingresos en la mesa.</p>
 
-                <h3>Analítica para clientes</h3>
+                                <div class="callout">
+                                    <strong>Supuestos del cálculo</strong>
+                                    Multiplicación directa de precios por asiento publicados, sin IVA, sin cambios de moneda y sin descuentos no publicados. Se asume que las diez personas tienen la misma intensidad de uso. Si sólo cuatro redactan informes y seis sólo responden correos, el escenario correcto es el del corte por perfiles, no este.
+                                </div>
 
-                <p><strong>9. Power BI Copilot</strong> — El asistente de IA de Power BI genera informes visuales, explica las causas de las variaciones de métricas y redacta narrativas ejecutivas a partir de los modelos de datos. Para una consultora que entrega paneles a clientes, es la diferencia entre entregar un tablero y entregar un tablero que se explica solo en la reunión.</p>
-                <p><strong>Para qué sirve:</strong> proyectos de business intelligence y analítica de gestión donde el entregable es un panel con interpretación. Es el complemento natural de Microsoft 365 Copilot en firmas del ecosistema Microsoft.</p>
-                <p><strong>Precio:</strong> Power BI Pro 10 €/usuario/mes; Copilot de Power BI incluido en planes Premium o como add-on desde unos 5 $/usuario/mes (≈4,55 €) según plan.</p>
+                                <h2 id="precios-2026">Precios 2026, con unidad y condición</h2>
 
-                <h2 id="como-elegir">Cómo elegir el stack según la firma</h2>
+                                <p>La siguiente tabla es <strong>la que hay que tener delante al negociar</strong>, porque <strong>lo que cambia entre</strong> proveedores no es sólo el importe: es la unidad, el compromiso de permanencia y qué incluye. Todos los importes proceden de las páginas oficiales de cada fabricante, con su moneda y su condición originales. Pagar mensual casi siempre cuesta más que pagar anual: es la primera palanca de ahorro, y la más fácil de usar.</p>
 
-                <ul>
-                    <li><strong>Consultor independiente (1-3 personas):</strong> ChatGPT Plus o Claude Pro (18 €) + Perplexity Pro (18 €) + Zapier gratuito. Coste: 36 €/mes. Añade Gamma si haces propuestas frecuentes (10 €).</li>
-                    <li><strong>Firma pequeña (3-15 personas):</strong> añade Notion AI para la base de conocimiento (10-25 €/asiento) y Microsoft 365 Copilot solo para los roles que producen informes (27 €/asiento). Coste: 250-500 €/mes según asientos.</li>
-                    <li><strong>Firma mediana (15-100 personas):</strong> Copilot para toda la oficina, Power BI para el área de datos y automatizaciones en Make para los flujos de proyecto. Coste: desde 1.500 €/mes en adelante.</li>
-                </ul>
+                                <div class="comparison-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Criterio</th>
+                                                <th>Criterio</th>
+                                                <th>Precio por asiento</th>
+                                                <th>Criterio</th>
+                                                <th>Criterio</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Claude Free</strong></td>
+                                                <td>Automatización</td>
+                                                <td>0 US$</td>
+                                                <td>Sin coste</td>
+                                                <td>Automatización</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Claude Pro</strong></td>
+                                                <td>Automatización</td>
+                                                <td>17 US$ al mes</td>
+                                                <td>Suscripción anual, 200 US$ por adelantado</td>
+                                                <td>Automatización</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Claude Pro (mensual)</strong></td>
+                                                <td>Automatización</td>
+                                                <td>20 US$ al mes</td>
+                                                <td>Facturación mensual</td>
+                                                <td>Automatización</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Claude Max</strong></td>
+                                                <td>Automatización</td>
+                                                <td>Desde 100 US$ al mes</td>
+                                                <td>Facturación mensual</td>
+                                                <td>Automatización</td>
+                                            </tr>
+                                            <tr class="highlight-row">
+                                                <td><strong>Claude Team</strong></td>
+                                                <td>Automatización</td>
+                                                <td>20 US$ al mes</td>
+                                                <td>Pago anual; 25 US$ si se paga mensual</td>
+                                                <td>2 a 150</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Claude Enterprise</strong></td>
+                                                <td>Automatización</td>
+                                                <td>20 US$ al mes más consumo a tarifa de API</td>
+                                                <td>Pago anual</td>
+                                                <td>Sin mínimo publicado</td>
+                                            </tr>
+                                            <tr class="highlight-row">
+                                                <td><strong>ChatGPT Business Standard</strong></td>
+                                                <td>Automatización</td>
+                                                <td>21 € al mes</td>
+                                                <td>Facturación anual en euros</td>
+                                                <td>2 a 200</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>ChatGPT Business Premium</strong></td>
+                                                <td>Automatización</td>
+                                                <td>105 € al mes</td>
+                                                <td>Facturación anual en euros</td>
+                                                <td>2 a 200</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>ChatGPT Enterprise</strong></td>
+                                                <td>Automatización</td>
+                                                <td>Precio a consultar</td>
+                                                <td>Sin precio público</td>
+                                                <td>Sin mínimo publicado</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Microsoft 365 Copilot para Empresas</strong></td>
+                                                <td>Automatización</td>
+                                                <td>Desde 15,60 € al mes (antes 18,20 €)</td>
+                                                <td>Pago anual, sin IVA</td>
+                                                <td>Por usuario</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Microsoft 365 Empresa Estándar + Copilot</strong></td>
+                                                <td>Automatización</td>
+                                                <td>20,36 € al mes</td>
+                                                <td>Pago anual, sin IVA</td>
+                                                <td>Por usuario</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Microsoft 365 Empresa Premium + Copilot</strong></td>
+                                                <td>Automatización</td>
+                                                <td>27,73 € al mes</td>
+                                                <td>Pago anual, sin IVA</td>
+                                                <td>Por usuario</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Google Workspace Business Starter</strong></td>
+                                                <td>Automatización</td>
+                                                <td>6,80 € al mes</td>
+                                                <td>EUR, España, mínimo 1 usuario</td>
+                                                <td>Por usuario</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Google Workspace Business Standard</strong></td>
+                                                <td>Automatización</td>
+                                                <td>13,60 € al mes</td>
+                                                <td>EUR, España, mínimo 1 usuario</td>
+                                                <td>Por usuario</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Google Workspace Business Plus</strong></td>
+                                                <td>Automatización</td>
+                                                <td>21,10 € al mes</td>
+                                                <td>EUR, España, mínimo 1 usuario</td>
+                                                <td>Por usuario</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Notion Plus</strong></td>
+                                                <td>Automatización</td>
+                                                <td>9,50 € al mes</td>
+                                                <td>Pago anual; 11,50 € pagando mensual</td>
+                                                <td>Por miembro</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Notion Business</strong></td>
+                                                <td>Automatización</td>
+                                                <td>19,50 € al mes</td>
+                                                <td>Pago anual; 23,50 € pagando mensual</td>
+                                                <td>Por miembro</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Notion Enterprise</strong></td>
+                                                <td>Automatización</td>
+                                                <td>Precio a consultar</td>
+                                                <td>Sin precio público</td>
+                                                <td>Por miembro</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Zapier Free</strong></td>
+                                                <td>Automatización</td>
+                                                <td>0 US$</td>
+                                                <td>100 tareas al mes incluidas</td>
+                                                <td>Sin límite de Zaps, tablas y formularios</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Zapier Professional</strong></td>
+                                                <td>Automatización</td>
+                                                <td>Desde 19,99 US$ al mes</td>
+                                                <td>Pago anual ahorra un 33 %</td>
+                                                <td>Sin usuarios de pago</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Zapier Team</strong></td>
+                                                <td>Automatización</td>
+                                                <td>Desde 69 US$ al mes</td>
+                                                <td>25 usuarios y SAML SSO incluidos</td>
+                                                <td>25 usuarios</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>n8n Starter</strong></td>
+                                                <td>n8n</td>
+                                                <td>20 € al mes</td>
+                                                <td>Pago anual ahorra un 17 %</td>
+                                                <td>2,5 K ejecuciones de flujo al mes</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>n8n Pro</strong></td>
+                                                <td>n8n</td>
+                                                <td>50 € al mes</td>
+                                                <td>Pago anual ahorra un 17 %</td>
+                                                <td>10 K ejecuciones de flujo al mes</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>n8n Business</strong></td>
+                                                <td>n8n</td>
+                                                <td>667 € al mes</td>
+                                                <td>Pago anual ahorra un 17 %</td>
+                                                <td>40 K ejecuciones de flujo al mes</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
-                <div class="callout callout-tip">
-                    <strong>El orden de implantación que funciona:</strong> 1) un asistente general por consultor (primera semana de retorno), 2) el conocimiento de la firma en una base con IA (primer mes), 3) Copilot para producción de informes (segundo mes), 4) automatizaciones solo en los flujos repetitivos ya documentados. No a la inversa.
-                </div>
+                                <p><strong>Dos lecturas de esa tabla</strong> que conviene hacer antes de comprar. La primera es que <strong>el salto de precio entre el plan individual y el de equipo es de cinco a siete veces</strong>: Claude Pro pasa de 17 a 20 US$ al pasar a equipo porque el plan individual ya incluye casi todo y el de equipo añade control. ChatGPT multiplica por cinco: de 21 € a 105 € entre las dos versiones de Business. Si tu firma necesita la versión Premium, el cálculo cambia de escala y hay que justificarlo por proyecto, no por persona.</p>
 
-                <h2 id="precios">Tabla comparativa de precios</h2>
+                                <p>La segunda lectura es el coste de la <strong>Equipos</strong>. <strong>Notion pública los dos precios</strong>, anual y mensual, así que la diferencia es visible: 9,50 € frente a 11,50 €, y 19,50 € frente a 23,50 €. Zapier anuncia un ahorro del 33 % al pagar anual y n8n un 17 %. Ninguna de estas palancas es secreta, y todas se activan en la primera factura. La que sí es secreta, y aparece más adelante, es la del límite de uso.</p>
 
-                <p>Precios en euros según tarifas oficiales de cada fabricante (septiembre 2026), con el valor en USD original entre paréntesis cuando aplica. Equivalencia aproximada: 1 USD = 0,91 EUR.</p>
+                                <div class="callout">
+                                    <strong>Sobre lo que no está en la tabla</strong>
+                                    Los precios de planes individuales de OpenAI, de Perplexity, de Gamma y de Make no están aquí porque no se han podido comprobar en su página oficial en la fecha de este artículo. Publicar una cifra no verificada en una comparativa es el error más caro que puede cometer este texto: en consultoría, un precio en una tabla llega a una propuesta y de ahí a un presupuesto. Para herramientas sin cifra oficial comprobable, la recomendación es consultar la página del fabricante el día de la compra.
+                                </div>
 
-                <div class="price-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Herramienta</th>
-                                <th>Precio de entrada</th>
-                                <th>Modelo</th>
-                                <th>Área</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>ChatGPT Plus</strong></td>
-                                <td>18 €/mes (20 USD) por asiento</td>
-                                <td>Por asiento</td>
-                                <td>Análisis y redacción</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Claude Pro</strong></td>
-                                <td>18 €/mes (20 USD) por asiento</td>
-                                <td>Por asiento</td>
-                                <td>Documentos largos</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Microsoft 365 Copilot</strong></td>
-                                <td>27 €/usuario/mes (30 USD) + licencia base</td>
-                                <td>Por usuario</td>
-                                <td>Office (Word, Excel, PPT)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Gamma</strong></td>
-                                <td>Gratis; Plus desde 10 €/mes</td>
-                                <td>Por usuario</td>
-                                <td>Presentaciones</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Notion AI</strong></td>
-                                <td>Desde 10-25 €/usuario/mes según plan</td>
-                                <td>Por usuario</td>
-                                <td>Base de conocimiento</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Coda AI</strong></td>
-                                <td>Gratis; Team desde 10 €/usuario/mes</td>
-                                <td>Por usuario</td>
-                                <td>Documentos vivos</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Perplexity Pro</strong></td>
-                                <td>18 €/mes (20 USD)</td>
-                                <td>Suscripción</td>
-                                <td>Investigación</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Zapier / Make</strong></td>
-                                <td>Zapier desde 19,99 €/mes; Make desde 9 €/mes</td>
-                                <td>Por tareas/operaciones</td>
-                                <td>Automatización</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Power BI Copilot</strong></td>
-                                <td>Power BI Pro 10 €/usuario/mes + Copilot</td>
-                                <td>Por usuario</td>
-                                <td>Analítica de clientes</td>
-                            </tr>
-                            <tr class="highlight-row">
-                                <td><strong>Stack básico firma 5 personas</strong></td>
-                                <td colspan="3"><strong>≈196-271 €/mes:</strong> ChatGPT Plus x5 (90 €) + Notion AI x5 (50-125 €) + Gamma x2 (20 €) + Perplexity x2 (36 €)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                                <h2 id="el-aislamiento-entre-proyectos">El aislamiento entre proyectos: el fallo que no aparece en la documentación</h2>
 
-                <h2 id="errores">Errores habituales y riesgos</h2>
+                                <p><strong>Este es el punto</strong> que <strong>ninguna comparativa de herramientas de IA para consultoras menciona</strong>, y es el que más caro sale. Una firma de consultoría no tiene un cliente: tiene varios, con datos distintos, y algunos de esos clientes compiten entre sí. Si la información de un encargo puede alcanzar el espacio de trabajo de otro, el problema no es técnico, es de responsabilidad Profesional y contractual.</p>
 
-                <ul>
-                    <li><strong>Entregar al cliente texto de IA sin verificación de datos:</strong> la IA inventa cifras, fuentes y citas con total naturalidad. En consultoría, donde el entregable es la confianza, una cifra inventada en un informe puede costar el contrato. Cada dato debe poder trazarse a su fuente.</li>
-                    <li><strong>Subir información confidencial del cliente a herramientas sin contrato:</strong> los datos de un cliente (financieros, estratégicos, de empleados) protegidos por NDA no deben entrar en cuentas personales gratuitas. Las firmas con política de IA interna (qué herramienta, qué plan, qué datos) evitan el riesgo antes de que ocurra.</li>
-                    <li><strong>Comprar Copilot para toda la oficina sin medir uso:</strong> 30 $/mes por asiento para quien solo redacta emails es coste muerto. Implanta por roles: los que producen informes y decks primero, el resto después.</li>
-                    <li><strong>Convertir la base de conocimiento en un vertedero:</strong> Notion AI responde bien si la base está ordenada. Documentos duplicados, obsoletos o sin estructura envenenan las respuestas del asistente. La IA no arregla el desorden: lo amplifica.</li>
-                    <li><strong>Olvidar que el valor se factura arriba:</strong> si la IA reduce las horas de producción y la firma cobra por horas, el margen sube pero la facturación baja. La transición a modelos de valor o retainer, aunque incómoda, es la que sostiene los ingresos a medio plazo.</li>
-                </ul>
+                                <p>El primer nivel de exposición es <strong>el espacio de trabajo compartido</strong>. Cuando toda la firma usa el mismo <strong>espacio de trabajo compartido</strong>, cualquier persona con acceso puede conectar fuentes de cualquier proyecto. La cifra oficial da la magnitud: ChatGPT Business permite alrededor de 40 archivos conectados por asiento, y ChatGPT Enterprise sube a unos 250. Es decir, la capacidad de mezclar trabajo de distintos clientes crece con el plan. Un plan superior no es automáticamente más seguro; es más capaz, y la capacidad sin regla se convierte en exposición.</p>
 
-                <div class="callout callout-warning">
-                    <strong>Confidencialidad en la práctica:</strong> establece desde el día uno qué información de cliente puede entrar en cada herramienta. Regla simple que usan las firmas serias: los datos identificables de clientes van a cuentas de empresa con contrato; en cuentas personales o gratuitas, solo información genérica de dominio público.
-                </div>
+                                <p>El segundo nivel es <strong>la retención en el proveedor</strong>. <strong>Notion pública que el nivel Enterprise incluye retención cero con los proveedores de modelo, aprovisionamiento SCIM y registro de auditoría; el nivel Business de la misma lista de precios no incluye esos elementos. La diferencia entre Business y Enterprise, en materia de datos, no es de precio: es de control. Si tu firma necesita poder demostrar qué se consultó y quién lo hizo, esa necesidad te lleva a Enterprise o a un procedimiento interno equivalente</strong>.</p>
 
-                <h2 id="duelo">ChatGPT Plus vs Claude Pro: el duelo</h2>
+                                <p>El tercer nivel es <strong>la cuenta personal</strong> como puerta de entrada, y <strong>es el más frecuente en la práctica</strong>. Los planes individuales de los tres grandes asistentes pueden entrenar con el contenido salvo que se desactive la opción, mientras que los planes de Empresa no lo hacen. En Google, la diferencia es más tajante: las cuentas personales de Gemini entrenan por defecto si el guardado de actividad está activo y retienen la actividad 18 meses. Los planes Google AI Pro, Plus y Ultra son sólo cuentas personales. Quien documenta un encargo de cliente en su cuenta personal de Gemini acaba metiendo datos de cliente en un producto que puede usarlos para entrenar y que los conserva.</p>
 
-                <p>Los dos asistentes generales que dominan las consultoras españolas en 2026, frente a frente:</p>
+                                <p>El cuarto nivel es <strong>el más silencioso y el más difícil de detectar</strong>: <strong>el modelo que recuerda lo que oyó en otro proyecto</strong>. Si el espacio de trabajo es único para toda la firma, y alguien consulta en enero el informe del cliente A, y en marzo se pide un entregable para el cliente B en un sector parecido, la respuesta puede llegar contaminada con conclusiones del cliente A. No aparece en ningún registro de errores, porque el sistema ha hecho lo que se le pidió. sólo se detecta leyendo la respuesta, y para eso hace falta un revisor que sepa qué debería haber dicho.</p>
 
-                <div class="comparison-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Criterio</th>
-                                <th>ChatGPT Plus</th>
-                                <th>Claude Pro</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Precio</strong></td>
-                                <td>18 €/mes por asiento</td>
-                                <td>18 €/mes por asiento</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Análisis de documentos largos</strong></td>
-                                <td>Sólido, pero con ventana de contexto más limitada</td>
-                                <td>Ventana amplia: informes de 100+ páginas sin fragmentar</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Redacción</strong></td>
-                                <td>Versátil para borradores y resúmenes</td>
-                                <td>La mejor reputación en redacción cuidada y tono profesional</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Equipos</strong></td>
-                                <td>Team disponible; uso generalizado y conocido</td>
-                                <td>Team desde 23 €/usuario/mes con mínimo 5 usuarios</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Mejor para</strong></td>
-                                <td>Herramienta universal del equipo sin curva de aprendizaje</td>
-                                <td>Revisión de documentación larga y análisis legal-contractual</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                                <p>La mitigación <strong>no es tecnológica y cuesta poco si se escribe</strong>. <strong>Cuatro reglas</strong> que funcionan en firmas reales: un espacio por cliente y nunca uno global; una regla explícita de qué entra y qué no en cada herramienta; la prohibición de usar cuentas personales para nada que venga de un cliente; y una revisión de cinco minutos por documento antes de entregar. La <a href="../../herramientas-ia/seguridad-etica-ia/">guía de seguridad y ética de la IA en Empresas</a> desarrolla ese último punto.</p>
 
-                <p><strong>Elige ChatGPT Plus</strong> si quieres la herramienta universal del equipo, que todo el mundo usa desde el primer día. <strong>Elige Claude Pro</strong> si tu trabajo diario pasa por documentos largos e informes extensos, donde la ventana de contexto y la redacción cuentan más que la versatilidad.</p>
+                                <div class="callout">
+                                    <strong>La pregunta que hay que hacer en la reunión de compras</strong>
+                                    No es «¿el modelo entrena con mis datos?», que casi todos los planes de Empresa responden que no. Es «¿puedo demostrar que los datos del cliente A nunca estuvieron disponibles para el trabajo del cliente B?». La primera se responde en la web del fabricante; la segunda sólo se responde si existe un procedimiento escrito. El segundo es el que te protege si el cliente lo pregunta.
+                                </div>
 
-                <h2 id="veredicto">Veredicto por perfil de firma</h2>
+                                <h2 id="el-corte-que-decide-la-compra">El corte que decide la compra</h2>
 
-                <div class="rating-box">
-                    <div class="rating-text">
-                        <p>La IA es para la consultora lo que fue la hoja de cálculo en los años 90: no cambia el oficio, cambia la economía del oficio. Las herramientas están maduras, son baratas por asiento y el retorno se mide en horas, no en meses. La diferencia entre las firmas que ganan con IA y las que solo pagan por ella está en dos decisiones: qué se sube a cada herramienta (política de confidencialidad) y qué se publica sin revisión (regla de criterio). Quien resuelve esas dos, libera la mitad del tiempo de producción de la firma y lo invierte donde se gana el proyecto: entender al cliente.</p>
-                    </div>
-                </div>
+                                <p>La pregunta «¿plan individual o plan de Empresa?» <strong>tiene una respuesta con número</strong>, y el número no es el precio sino el conjunto de capacidades de gobernanza. <strong>SAML SSO, SCIM, control de acceso por roles, registros de auditoría, SLA y residencia de datos en la Unión Europea no vienen en ningún plan individual</strong>: sólo en planes de Empresa. Lo que sigue es el corte con tres tamaños, calculado con los precios de la tabla anterior.</p>
 
-                <h3>Estas herramientas son para ti si:</h3>
-                <ul>
-                    <li>Produces informes, presentaciones o análisis para clientes de forma recurrente</li>
-                    <li>Tienes conocimiento acumulado en proyectos pasados que nadie consulta porque no está estructurado</li>
-                    <li>Tus consultores pierden horas en actas, formateo y trabajo administrativo repetitivo</li>
-                    <li>Quieres competir con firmas grandes en capacidad de iteración sin ampliar plantilla</li>
-                </ul>
+                                <div class="comparison-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Criterio</th>
+                                                <th>Criterio</th>
+                                                <th>Coste mensual</th>
+                                                <th>Lo que no resuelve</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>1 persona</strong></td>
+                                                <td>Claude Pro anual (17 US$)</td>
+                                                <td>17 US$</td>
+                                                <td>Sin SSO, sin registro de auditoría, sin residencia UE garantizada</td>
+                                            </tr>
+                                            <tr class="highlight-row">
+                                                <td><strong>2 personas</strong></td>
+                                                <td>ChatGPT Business Standard (21 € × 2)</td>
+                                                <td>42 €</td>
+                                                <td>El coste mínimo del plan de Empresa, sin advantageous de gobierno</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>5 personas</strong></td>
+                                                <td>ChatGPT Business Standard (21 € × 5)</td>
+                                                <td>105 €</td>
+                                                <td>Continúa sin SCIM ni control de acceso por roles</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>10 personas</strong></td>
+                                                <td>ChatGPT Business Standard (21 € × 10)</td>
+                                                <td>210 €</td>
+                                                <td>Igual, pero el coste de un error de aislamiento ya es de cinco cifras</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>40 personas</strong></td>
+                                                <td>ChatGPT Business Premium (105 € × 40)</td>
+                                                <td>4.200 €</td>
+                                                <td>Necesita justification por proyecto, no por usuario</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
-                <h3>Estas herramientas NO son para ti si:</h3>
-                <ul>
-                    <li>No tienes política de confidencialidad definida y subirías datos de clientes a cuentas gratuitas</li>
-                    <li>Tu equipo no revisa el output de IA (el riesgo de reputación supera el ahorro de horas)</li>
-                    <li>No tienes procesos documentados: la IA organiza lo que existe, no crea orden de la nada</li>
-                    <li>Tu modelo de negocio es vender horas y no estás dispuesto a evolucionar el pricing</li>
-                </ul>
+                                <p>El patrón que sale del cuadro es <strong>Equipos</strong>: <strong>el corte no está en cinco personas, está en dos</strong>. En cuanto hay un segundo usuario, el plan de Empresa empieza a tener sentido, porque el problema ya no es la capacidad sino el acceso: dos personas con cuentas personales significa dos accesos que se van cuando alguien se va, y ningún registro de quién preguntó qué. El salto de 17 US$ a 42 € es el precio de tener un inventario de accesos.</p>
 
-                <div class="callout callout-info">
-                    <strong>Nota de conversión:</strong> precios en USD según tarifas oficiales de cada fabricante (septiembre 2026). Equivalencia aproximada en EUR: 1 USD = 0,91 EUR. El precio final lo fija siempre la facturación del fabricante.
-                </div>
+                                <p>Pero comprar el plan de Empresa <strong>no cierra el problema, lo traslada</strong>. <strong>A partir de las dos personas aparecen las capacidades que hay que administrar: altas y bajas, proyectos compartidos, permisos por rol. Sin un responsable asignado, esas capacidades se degradan en seis meses: el acceso de quien se fue sigue activo, el espacio del cliente se llena de proyectos cerrados y nadie lo limpia. El coste oculto de esa degradación es de nuevo tiempo, y el tiempo en una consultora es dinero</strong>.</p>
 
-                <h2 id="faq">Preguntas frecuentes</h2>
+                                <p>Hay un segundo corte, <strong>más fino y más útil</strong>, dentro de la propia firma: <strong>no todos los puestos necesitan el plan de Empresa</strong>. Si en una firma de veinte personas sólo cuatro redactan informes y el resto responde correos y organiza reuniones, el escenario correcto no es veinte asientos sino cuatro. Eso son 84 € al mes en lugar de 420 €, con la condición de que las otras dieciséis personas usen una vía que no toque datos de cliente. La <a href="../../guias/elegir-herramienta-ia-negocio/">guía para elegir herramienta de IA para un negocio</a> desarrolla ese corte por roles.</p>
 
-                <h3>¿Qué IA usan las consultoras para trabajar más rápido?</h3>
-                <p>Las más adoptadas son: asistentes generales (ChatGPT Plus o Claude Pro) para análisis y redacción, Microsoft 365 Copilot para informes y presentaciones dentro de Office, Notion AI o Coda AI como base de conocimiento de la firma, Gamma para presentaciones, y Zapier o Make para automatizar entregas repetitivas. En analítica, Power BI Copilot y Looker Studio con resumen IA son el estándar para clientes.</p>
+                                <div class="callout">
+                                    <strong>La pregunta que abre la negociación con el proveedor</strong>
+                                    Si la respuesta es que el plan de Empresa no incluye SSO, aprovisionamiento SCIM, control de acceso por roles, registro de auditoría, SLA ni residencia en la Unión Europea, entonces el precio que hay que comparar no es el de la licencia: es el de la licencia más las horas de una persona que dedique a mantener el acceso ordenado. En una firma de diez personas, esa segunda cifra suele acabar superando a la primera.
+                                </div>
 
-                <h3>¿Cuánto cuesta un stack de IA para una consultora pequeña?</h3>
-                <p>Una consultora de 5 personas puede operar con unos 250-400 euros al mes: ChatGPT Plus o Claude Pro por asiento (18 €), Microsoft 365 Copilot por asiento (30 €, opcional solo para quienes generan informes), Notion AI por miembro (10 €) y Zapier o Make (desde 20 €). Herramientas premium como Gamma (desde 10 € por asiento) o Power BI Pro (12 € por usuario) se añaden según los entregables del cliente.</p>
+                                <h2 id="residencia-de-datos-y-ai-act">Residencia de datos y calendario del AI Act</h2>
 
-                <h3>¿La IA de las consultoras sustituye a los consultores?</h3>
-                <p>No sustituye el criterio, pero comprime el trabajo de producción: análisis de datos, primeros borradores, presentaciones y actas se hacen en una fracción del tiempo, y el tiempo liberado se reorienta a la relación con el cliente y al pensamiento estratégico, que es justo lo que se factura.</p>
+                                <p>La segunda capa de cumplimiento que una consultora necesita en 2026 <strong>no es el RGPD</strong>, que ya conoce, sino el calendario del Reglamento Europeo de Inteligencia Artificial. El Reglamento (UE) 2024/1689 no se aplica de golpe: entra por tramos y cada tramo tiene su fecha. Los importes de la tabla de precios son los de hoy; las obligaciones de transparencia empiezan a ser exigibles el <strong>2 de agosto de 2026</strong>, es decir, ya están dentro del calendario.</p>
 
-                <div class="related-articles">
-                    <h3>Artículos relacionados</h3>
-                    <ul>
-                        <li><a href="../../herramientas-ia/notion-ai/">Notion AI: automatiza la productividad de tu empresa</a></li>
-                        <li><a href="../../herramientas-ia/copilot-microsoft/">Microsoft 365 Copilot: precio, funciones y opiniones 2026</a></li>
-                        <li><a href="../../comparativas/chatgpt-vs-claude-vs-gemini/">ChatGPT vs Claude vs Gemini: comparativa completa 2026</a></li>
-                        <li><a href="../../herramientas-ia/automatizacion-procesos-ia/">Automatización de procesos con IA: guía práctica</a></li>
-                    </ul>
-                </div>
+                                <div class="comparison-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Tramo del Reglamento (UE) 2024/1689</th>
+                                                <th>Criterio</th>
+                                                <th>Qué afecta a una consultora</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Artículo 4 y prohibiciones</strong></td>
+                                                <td>2 de febrero de 2025</td>
+                                                <td>Obligaciones ya en vigor, con independencia del resto del calendario</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Modelos de propósito general</strong></td>
+                                                <td>2 de agosto de 2025</td>
+                                                <td>Obligaciones para los proveedores de modelos; afecta al proveedor del asistente que usa la firma</td>
+                                            </tr>
+                                            <tr class="highlight-row">
+                                                <td><strong>Transparencia (artículo 50)</strong></td>
+                                                <td>2 de agosto de 2026</td>
+                                                <td>Obligación de informar del uso de IA y de marcar el contenido generado: es la fecha que obliga a la consultora, no al fabricante</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Aplicación general y sistemas de alto riesgo</strong></td>
+                                                <td>2 de agosto de 2027</td>
+                                                <td>Obligaciones plenas; aquí entran los sistemas de alto riesgo en general</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Alto riesgo en productos ya regulados</strong></td>
+                                                <td>2 de agosto de 2028</td>
+                                                <td>Último tramo, para los sistemas de alto riesgo integrados en productos ya regulados</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
+                                <p>Qué implica el tramo del artículo 50 para una consultora, <strong>en concreto</strong>. La obligación de transparencia es la que obliga a <strong>informar al destinatario de que ha habido intervención de IA</strong> en certain flujos, y a marcar el contenido sintético de forma identificable. En un informe de consultancy eso significa, como mínimo, una nota de uso de IA en el documento y una convención interna sobre qué se etiqueta. No es un trámite: es la defensa de la firma cuando un cliente pregunte cómo se produjo el análisis.</p>
+
+                                <p>El segundo tramo, el de <strong>alto riesgo del 2 de agosto de 2027</strong>, es el que <strong>merece vigilancia</strong> en una consultora, aunque hoy no aplique a casi nadie. Si la firma desarrolla o subcontracta un sistema que se usa para evaluar a personas —selección de personal, evaluación de desempeño, decisión sobre prácticas escolares o públicas—, esa clasificación cambia el marco entero. La guía de <a href="../../guias/ia-ai-act-cumplimiento/">cumplimiento del AI Act</a> está organizada por tramos y es el sitio donde revisar el calendario cuando se planifica un producto nuevo.</p>
+
+                                <p>El tercer bloque que <strong>no puede ignorarse</strong> es <strong>la residencia de los datos</strong>, y aquí hay un matiz que la mayoría de las páginas de marketing esconde. En Microsoft 365 Copilot, los modelos de OpenAI se ejecutan dentro de Azure, pero los modelos de Claude salen hacia centros en Estados Unidos. Es decir: en el mismo inquilino y en la misma suscripción, hay una parte del procesamiento que sale del Espacio Económico Europeo. Para una consultora española que trabaja con datos de clientes sottoposti a NDA o a cláusulas de transferencia, eso no es un detalle técnico: es una pregunta que hay que hacer al proveedor y escribir en la evaluación de proveedores.</p>
+
+                                <p>Por último, el RGPD no desaparece por usar un plan de Empresa: <strong>cambia de aplicable</strong>. <strong>Base jurídica, información a los interesados y contrato de encargo con el proveedor</strong> siguen siendo obligations de la firma, porque elstack es un proveedor de tratamiento más, no el titular del tratamiento. La guía de la AEPD sobre adecuación del RGPD a tratamientos con IA es la referencia para redactar esa cláusula, y el reparto de responsabilidades lo detalla la <a href="../../guias/rag-ia-datos/">guía de RAG y datos para IA</a>.</p>
+
+                                <h2 id="tabla-comparativa">Tabla comparativa por área de trabajo</h2>
+
+                                <p>Lo que sigue no es un ranking. Es una asignación por capa, con la condición que hay que leer siempre: cada herramienta falla por una razón distinta, y esa razón es lo que decide si te sirve.</p>
+
+                                <div class="comparison-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Área de trabajo</th>
+                                                <th>Herramienta y plan</th>
+                                                <th>Lo que resuelve</th>
+                                                <th>Lo que no resuelve</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Análisis y redacción</strong></td>
+                                                <td>ChatGPT Business Standard (21 €/asiento) o Claude Team (20 US$/asiento)</td>
+                                                <td>Primer borrador, resumen de documentos largos, comparación de marcos de trabajo</td>
+                                                <td>El criterio ni la familiarity con el cliente; el entregable final no se delega</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Producción en Office</strong></td>
+                                                <td>Microsoft 365 Copilot para Empresas, desde 15,60 €/usuario/mes sin IVA</td>
+                                                <td>Informes en Word, narrativas de Excel, borradores de deck, resumen de cadenas de correo</td>
+                                                <td>La licencia base de Microsoft 365 que la firma ya tenga o no tenga contratada</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Base de conocimiento</strong></td>
+                                                <td>Notion Business (19,50 €/miembro/mes anual)</td>
+                                                <td>Convertir entregables pasados en material consultable por el equipo</td>
+                                                <td>El orden previo: una base sin depurar amplifica sus propios errores</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Investigación con fuentes</strong></td>
+                                                <td>Herramienta de búsqueda con citas; precio oficial no comprobado en ésta fecha</td>
+                                                <td>Cifras de mercado y normativa con referencia enlazada y verificable</td>
+                                                <td>La verificación: una cita enlazada no es una fuente comprobada</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Automatización de entregas</strong></td>
+                                                <td>Zapier Professional desde 19,99 US$/mes o n8n Starter a 20 €/mes anual</td>
+                                                <td>Actas, registros en CRM, archivado y seguimientos que se repiten en cada proyecto</td>
+                                                <td>El proceso que no está escrito; el automatizador no lo escribir por ti</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Correo y calendario</strong></td>
+                                                <td>Google Workspace Business Standard (13,60 €/usuario/mes) o Plus (21,10 €)</td>
+                                                <td>Contexto de correo y agenda para el asistente, y protección de dominio</td>
+                                                <td>No es un asistente de análisis: es la capa de identidad corporativa</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Gobernanza del stack</strong></td>
+                                                <td>Notion Enterprise o los planes Corporate a precio a consultar</td>
+                                                <td>SCIM, registro de auditoría y retención cero con el proveedor de modelo</td>
+                                                <td>El coste, que no es público: hay que pedir presupuesto</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p>Dos filas de esa tabla merecen un comentario. La de <strong>investigación con fuentes</strong> es la única donde el fallo no es de configuración sino de método: enlazar una fuente no es comprobarla, y la comprobación la tiene que hacer una persona antes de que la cifra llegue a un informe. La de <strong>Equipos</strong> es la única cuyo precio no está publicado, y eso es intencional: es la fila que casi ninguna firma pide cotizar porque no sabe que existe. Pedirla cuesta un correo.</p>
+
+                                <h2 id="tabla-por-caso-de-uso">Tabla por caso de uso</h2>
+
+                                <p>Si la pregunta es «qué compro para mi caso concreto», ésta es la tabla que responde. Los costes son los oficiales de la tabla de precios; la columna de condición recoge lo que suele fallar.</p>
+
+                                <div class="comparison-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Caso de uso</th>
+                                                <th>Qué comprar</th>
+                                                <th>Coste oficial</th>
+                                                <th>Condición que decide el éxito</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Consultor independiente que factura por horas</strong></td>
+                                                <td>Claude Pro anual</td>
+                                                <td>17 US$ al mes (200 US$ por adelantado)</td>
+                                                <td>Nada de datos de cliente identificables en la cuenta personal</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Firma de 2 a 5 personas</strong></td>
+                                                <td>ChatGPT Business Standard</td>
+                                                <td>21 € por asiento al mes, mínimo 2</td>
+                                                <td>Un responsable del inventario de accesos desde el primer mes</td>
+                                            </tr>
+                                            <tr class="highlight-row">
+                                                <td><strong>Firma de 10 personas con entregables escritos</strong></td>
+                                                <td>ChatGPT Business Standard + Notion Business</td>
+                                                <td>210 € + 195 € al mes,ooannual</td>
+                                                <td>Depurar la base de conocimiento antes de pagar por la IA que la consulta</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Firma que entrega paneles a clientes</strong></td>
+                                                <td>Copiloto analítico sobre un modelo de datos ya construido</td>
+                                                <td>Precio a consultar según el plan de la plataforma</td>
+                                                <td>El modelo de datos: sin modelo limpio la narrativa es fiction</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Firma con datos personales de clientes</strong></td>
+                                                <td>Plan de Empresa con SSO, SCIM y registro de auditoría</td>
+                                                <td>Precios a consultar en los planes Corporate</td>
+                                                <td>Base jurídica, información a interesados y contrato de encargo redactados</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Firma que entrega a la administración pública</strong></td>
+                                                <td>Stack con residencia en la Unión Europea declarada por escrito</td>
+                                                <td>Premium por contrato</td>
+                                                <td>Preguntar por escrito qué parte del procesamiento sale del EEE y qué respuesta se da</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <h2 id="la-herramienta-a-la-que-casi-todo-esto-le-da-igual">La herramienta a la que casi todo esto le da igual</h2>
+
+                                <p>Si este artículo tuviera que tener <strong>un sólo mensaje</strong>, sería este: <strong>la elección entre asistentes es la decisión que menos afecta al resultado</strong>. ChatGPT Business y Claude Team cuestan 21 € y 20 US$ por asiento, hacen las mismas dos docenas de tareas de forma intercambiable, y su diferencia de calidad se nota en el percentil alto de dificultad, no en el 90 % del trabajo diario de una consultora. Si alguien te vende la elección entre ellos como la decisión importante del proyecto, te está vendiendo una preferencia, no una estrategia.</p>
+
+                                <p>Por el mismo motivo, <strong>una herramienta de presentaciones con IA</strong> <strong>no cambia el resultado del proyecto. Produce un primer deck en minutos que después se rehace en la plantilla de la firma con los colores y el logotipo correctos. El ahorro real ahí es de medio día por entregable, y es real, pero no es la palanca que transforma una firma. Lo que sí la transforma es lo que viene después</strong>.</p>
+
+                                <p>Lo que no le da igual al resultado es <strong>la base de conocimiento</strong>, <strong>por una razón concreta: es la única capa que convierte trabajo pasado en activo. Un informe que se escribió una vez y que nadie vuelve a mirar tiene valor cero. Un informe que se escribe una vez y que el equipo junior puede consultar en dos minutos vale cada hora que costó. Esa es la conversión más rentable que puede hacer una consultora, y requiere ordenar antes de automatizar</strong>.</p>
+
+                                <p>También le da igual a una parte del stack <strong>la marca concreta</strong> <strong>y le importa mucho el contrato. Dos proveedores con capacidades casi idénticas pueden estar separados por una diferencia de requisitos: dónde se procesan los datos y qué pasa si el cliente lo exige en un contrato de encargo. En una consultora que factura a la Empresa grande, esa pregunta llega antes que la de calidad</strong>.</p>
+
+                                <p>Y hay un elemento que casi todo el stack le da igual y que <strong>decide el resultado igual</strong>: <strong>la persona que revisa</strong>. Ninguna de estas herramientas sabe lo que el cliente no ha dicho, ni qué compromiso se/https:// quedó en la última reunión, ni qué cifra estaba mal en el informe anterior. Quien revisa con ese criterio es la única razón por la que el entregable es defendible. El modelo es un acelerador; el criterio es el producto.</p>
+
+                                <div class="callout">
+                                    <strong>La jerarquía de inversión que funciona</strong>
+                                    Primero el espacio de trabajo por cliente y la regla de qué entra en cada herramienta. Segundo, la base de conocimiento ordenada. Tercero, el asistente con plan de Empresa para todo el equipo. Cuarto, la automatización de lo que ya está escrito. Y en ningún orden: herramientas de presentación o de análisis antes de haber resuelto los tres primeros puntos.
+                                </div>
+
+                                <h2 id="lo-que-debe-hacer-siempre-una-persona">Lo que debe hacer siempre una persona</h2>
+
+                                <p>Si este artículo se resumen en una lista de tareas que no se delegan, es la siguiente. Estas seis cosas comparten un rasgo: no se pueden verificar con una lectura rápida, y por eso son las que un modelo no puede hacer bien aunque el texto se lo pida.</p>
+
+                                <ul>
+                                    <li><strong>Decidir el marco de análisis.</strong> Qué hipótesis se van a contrastar y cuál se descarta. Es una decisión sobre el problema del cliente, y el modelo no conoce el problema.</li>
+                                    <li><strong>Verificar cada cifra antes de que salga.</strong> Cada porcentaje, cada tamaño de mercado y cada dato financiero del informe tiene que volver a su fuente original. Una cifra inventada con tono seguro es el peor resultado posible de un modelo de lenguaje, y el más caro para una consultora.</li>
+                                    <li><strong>Escuchar lo que el cliente no ha dicho.</strong> La objeción de la tercera reunión cambia más el proyecto que cualquier mejora del modelo.</li>
+                                    <li><strong>Asumir la responsabilidad de la recomendación.</strong> Un modelo no responde delante de un comité de dirección, un cliente molesto ni un tribunal.</li>
+                                    <li><strong>Decidir qué datos de cliente entran y cuáles no.</strong> Y sostener esa decisión cuando alguien pide «sólo ésta vez, es un dato suelto».</li>
+                                    <li><strong>Etiquetar el uso de IA en el entregable.</strong> Desde el 2 de agosto de 2026 la obligación de transparencia del artículo 50 del Reglamento (UE) 2024/1689 es exigible, y la firma que no lo hace está asumiendo un riesgo regulatorio en un trabajo que factura por su criterio.</li>
+                                </ul>
+
+                                <p>La lista también <strong>funciona al revés</strong>, y ahí es más útil: <strong>si un proceso de la firma no tiene a nadie que lo revise, ese proceso no debería usar IA todavía</strong>. No porque la herramienta falle, sino porque el fallo aparecería sin nadie que lo detectara y se convertiría en un error de cliente. La condición para automatizar la redacción de algo es que exista un revisor; sin revisor, automatizar es multiplicar el riesgo sin capacidad de gestión.</p>
+
+                                <h2 id="errores-de-implantacion">Errores de implantación y lo que cuestan</h2>
+
+                                <p>Estos seis errores se repiten en firmas que ya han comprado herramientas y ya han pagado formación. Cada uno lleva su coste estimado, marcado como estimación propia porque depende de la tarifa y del tamaño de cada firma.</p>
+
+                                <ul>
+                                    <li><strong>Comprar para toda la oficina el primer día.</strong> Se paga un asiento por dirección, por administración y por becario, y el 60 % no lo usa. Con ChatGPT Business Standard a 21 €, una firma de treinta personas que compra para todos gasta 630 € al mes; si sólo doce personas producen entregables, sobran 378 € al mes, 4.536 € al año, de coste inactivo. <em>Estimación propia</em>: el ahorro anual de comprar sólo para los doce seats que producen.</li>
+                                    <li><strong>Pagar individual y luego descubrir que hace falta gobierno.</strong> Se empiezan con cuentas personales, llega el primer cliente que exige SSO y registro de auditoría, y se descubre que eso no existe en plan individual. El coste es la migración: volver a comprar, mover todo el material y formar de nuevo. <em>Estimación propia</em>: entre diez y veinte horas de migración, más el doble de suscripción durante el solape.</li>
+                                    <li><strong>Subir el archivo del cliente entero al asistente.</strong> Un informe de 180 páginas con anexos,Billyporque el modelo tiene ventana de contexto. El ahorro de tiempo es inmediato y el riesgo también: toda esa información queda en el espacio del proyecto y accesible a quien tenga el enlace. <em>Estimación propia</em>: el coste de un incidente de este tipo no se mide en horas, se mide en el contrato que se cae.</li>
+                                    <li><strong>No depurar la base de conocimiento.</strong> Se paga Notion Business durante un año antes de invertir un día en ordenar. La IA responde con lo que encuentra, y lo que encuentra son tres versiones del mismo análisis con fechas distintas. <em>Estimación propia</em>: un día de depuración, y el resto del año de respuestas que el equipo deja de usar.</li>
+                                    <li><strong>Automatizar un proceso que no está escrito.</strong> El automatizador reproduce el flujo actual, incluidos sus errores, y encima lo hace más rápido. <em>Estimación propia</em>: entre quince y treinta horas en rehacer el flujo a mano, más la suscripción durante el periodo en que no sirve para nada.</li>
+                                    <li><strong>No cambiar el modelo de facturación.</strong> Es el error más caro porque no tiene coste visible: la firma reduce el tiempo de producción, factura las mismas horas y concluye que la IA no ha funcionado. <em>Estimación propia</em>: si el tiempo de producción de un informe baja un 45 % y la tarifa se mantiene por hora, el ingreso por informe cae en la misma proporción. Eso no es un problema de herramienta, es un problema de dirección comercial.</li>
+                                </ul>
+
+                                <div class="callout">
+                                    <strong>El error que más se repite y menos se dice en voz alta</strong>
+                                    El sexto. Una firma puede medir la adopción, celebrar que sus consultores escriben más rápido y perder dinero sin enterarse, porque la métrica que mira es horas de producción y no facturación por informe. Si vas a medir una sola cosa durante los primeros noventa días, que sea el ingreso por entregable, no las horas ahorradas.
+                                </div>
+
+                                <h2 id="plan-de-90-dias">Plan de 90 días</h2>
+
+                                <p>El orden importa más que la herramienta. Este plan asume una firma de entre cinco y treinta personas que parte de cero y que tiene un socio o director responsable de las decisiones. Se organiza en tres bloques de treinta días porque los tres entregables son de naturaleza distinta: una regla, una base de conocimiento y un stack.</p>
+
+                                <h3>Días 1 a 30: la regla antes que la herramienta</h3>
+
+                                <p><strong>El primer mes no se compra nada</strong>. <strong>Se escribe la política de uso de IA de la firma en una página: qué entra en cada herramienta, qué no entra nunca, qué cuenta se usa para cada cliente y quién revisa cada tipo de documento. En paralelo se inventaría qué datos de cliente se manejan realmente, porque casi todas las firmas subestiman ese inventario y luego lo descubren en el mes dos</strong>.</p>
+
+                                <p>El entregable del primer mes es un documento de dos páginas y una lista de herramientas candidatas con su precio oficial. Sin ese documento, cualquier compra posterior es una compra personal disfrazada de decisión de firma. La lectura de referencia para ordenar ésta fase está en la <a href="../../guias/guia-implementar-ia-pyme/">guía completa para implementar IA en una pyme</a>.</p>
+
+                                <h3>Días 31 a 60: base de conocimiento antes que asistente</h3>
+
+                                <p><strong>El segundo mes es de orden</strong>, <strong>no de compra. Se eligen los cinco entregables más rentables de los dos últimos años, se limpian, se les pone fecha y cliente en el título, y se suben a una base ordenada. sólo entonces tiene sentido pagar por una base con IA: hasta ese momento, lo que se paga es almacenamiento con respuestas incorrectas</strong>.</p>
+
+                                <p>En la parte alta de este mes se compra el asistente con plan de Empresa, empezando por el mínimo de asientos. La decisión de qué asistente es de las menos relevantes del proyecto y conviene tomarla rápido para no alargar el análisis. La comparación de los tres asistentes principales está en la <a href="../../comparativas/chatgpt-vs-claude-vs-gemini/">comparativa de ChatGPT frente a Claude y Gemini</a>.</p>
+
+                                <h3>Días 61 a 90: medir el ingreso, no las horas</h3>
+
+                                <p><strong>El tercer mes es de medición</strong> <strong>y de una sola automatización. Se mide el tiempo real de producción de tres entregables antes y después, y sobre todo se mide el ingreso facturado por cada uno de ellos. Si los ingresos bajan y las horas también, la Adoption está funcionando y el modelo de facturación está roto: es el momento de hablar del precio por proyecto</strong>.</p>
+
+                                <p><strong>La automatización entra al final</strong>, y <strong>sólo sobre un flujo ya escrito</strong>: el acta de reunión es el candidato habitual, porque se repite en todos los proyectos y su formato está claro. Si el acta no se puede automatizar sin revisar la mitad de los casos, no se automatiza todavía. En ésta fase es donde encaja la lectura de <a href="../../herramientas-ia/automatizacion-procesos-ia/">automatización de procesos con IA</a>, y si la firma tiene que cruzar sistemas que no se hablan, la de <a href="../../guias/cuanto-cuesta-implementar-ia/">cuánto cuesta implementar IA</a>.</p>
+
+                                <div class="callout">
+                                    <strong>El indicador que decide si sigues o paras</strong>
+                                    Ingreso facturado por entregable en el día noventa, comparado con los tres entregables del trimestre anterior. Si ha subido o se ha mantido, el proyecto funciona aunque las horas de producción hayan caído. Si ha bajado, el problema no es la herramienta y cambiar de asistente no lo va a arreglar: es el precio.
+                                </div>
+
+                                <h2 id="cuando-contratar-un-integrador">Cuándo contratar un integrador</h2>
+
+                                <p>Contratar a alguien externo tiene sentido <strong>en tres situaciones concretas</strong>, y en ninguna de las otras el dinero se pierde. La primera es cuando la firma tiene <strong>más de una fuente de datos que hay que cruzar</strong>: el ERP del cliente, el CRM propio, las hojas de cálculo y el histórico de proyectos. Ahí el trabajo no es de asistente, es de integración, y es un trabajo de arquitectura.</p>
+
+                                <p>La segunda es cuando hay una <strong>exigencia de cumplimiento que se tiene que demostrar</strong>, <strong>no sólo cumplir: residencia de datos por escrito, auditoría de accesos, un procedimiento de aislamiento entre clientes que alguien externo tiene que validar. Las capacidades de gobernanza existen en los planes Corporate, pero el procedimiento que las usa lo escribe y mantiene una persona, y para una firma de diez eso no compensa como planta</strong>.</p>
+
+                                <p>La tercera es cuando hay <strong>más de un cliente con requisitos distintos</strong> y la misma arquitectura tiene que servir para todos. Un integrador diseña una vez; una firma interna lo rediseña en cada proyecto. La <a href="../../guias/cuanto-cuesta-implementar-ia/">guía de cuánto cuesta implementar IA</a> es la referencia para dimensionar ese coste antes de la conversación.</p>
+
+                                <p>En cambio, <strong>no hace falta integrador</strong> <strong>para montar un asistente con plan de Empresa, ordenar una base de conocimiento ni automatizar el acta de una reunión. Eso lo hace la propia firma en un mes, y un externo sólo añade coste y dependencia. La línea que separa los dos casos es sencilla: si el trabajo consiste en decidir qué herramienta usar, hazlo dentro; si consiste en conectar sistemas que no se hablan, hazlo con ayuda</strong>.</p>
+
+                                <h2 id="veredicto-por-perfil">Veredicto por perfil de firma</h2>
+
+                                <p>La conclusión de este artículo <strong>no es una recomendación única</strong>, porque el stack depende del tamaño y del tipo de encargo. Sí hay una recomendación común a todos los perfiles: <strong>la primera inversión es una regla escrita, la segunda es orden, y la tercera es la licencia</strong>. Invertir en ese orden evita el error más caro, que es una suscripción que nadie puede usar porque no hay criterio para usarla.</p>
+
+                                <h3>Consultor independiente que factura por horas</h3>
+
+                                <p>Plan individual, una sola herramienta y <strong>una regla simple sobre datos de cliente</strong>: <strong>nada identificable de un tercero entra en la cuenta. El activo que hay que construir es el modelo de precios, no el stack. Si en doce meses no ha pasado a proyecto cerrado, la IA le ha quitado ingresos sin que lo note. La lectura de</strong> <a href="../../herramientas-ia/chatgpt-enterprise/">ChatGPT para Empresas</a> y de <a href="../../herramientas-ia/claude-ai-Empresas/">Claude para Empresas</a> sirve para entender qué se gana al pasar al plan de equipo cuando llega el primer colaborador.</p>
+
+                                <h3>Firma de 2 a 15 personas</h3>
+
+                                <p><strong>Plan de Empresa para todo el equipo</strong>, base de conocimiento ordenada antes de pagar por su versión con IA, y una automatización al final. El entregable de los primeros noventa días es <strong>la regla de aislamiento por cliente</strong>. Si se cumple, ésta firma puede empezar a trabajar para clientes que exigen SSO y registro de auditoría, que es donde está el siguiente escalón de precio.</p>
+
+                                <h3>Firma de más de 15 personas</h3>
+
+                                <p>El problema ya no es la herramienta: <strong>es el gobierno</strong>. <strong>Inventario de accesos con alta y baja, responsable de la política de IA, y un contacto con la administración para el calendario del Reglamento (UE) 2024/1689. Aquí el coste relevante es de horas directivas, y conviene contar con un integrador para la parte de integración y para la validación del procedimiento, no para elegir herramientas</strong>.</p>
+
+                                <h3>La condición que comparten los tres perfiles</h3>
+
+                                <p>Ninguno de los tres veredictos sirve si <strong>el equipo revisa el output de forma superficial</strong>. El ahorro de horas y el riesgo reputacional son la misma variable: una firma que no revisa, no está ahorrando, <strong>está multiplicando su exposición</strong>. La condición no es técnica y no se compra, se decide. Por eso la tabla de <a href="../../herramientas-ia/roi-ia-Empresas/">cálculo del ROI de las herramientas de IA</a> es tan importante en ésta fase: sin un número que seguir, la conversación con la dirección se vuelve una discusión de opiniones.</p>
+
+                                <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+
+                                <h3 id="faq-1">¿Cuánto cuesta montar un stack de IA para una consultora pequeña?</h3>
+                                <p>Con planes de Empresa y una firma de diez personas, <strong>la cifra sale de multiplicar precios</strong> <strong>oficiales. Diez asientos de ChatGPT Business Standard a 21 € son 210 € al mes y 2.520 € al año. Diez de Claude Team a 20 US$ son 200 US$ al mes y 2.400 US$ al año. Diez miembros de Notion Business a 19,50 € son 195 € al mes. Una suscripción de Zapier Professional cuesta desde 19,99 US$ al mes, y n8n Starter está en 20 € al mes pagando anual. No hay que convertir a una moneda común porque cada proveedor cobra en la suya. A eso hay que sumarle el coste de redactar y mantener la regla de aislamiento por cliente, que es tiempo y no aparece en ninguna factura</strong>.</p>
+
+                                <h3 id="faq-2">¿Plan individual o plan de Empresa para una consultora?</h3>
+                                <p><strong>El corte está en dos personas</strong>, <strong>no en diez. Con una sola persona, Claude Pro a 17 US$ al mes pagando anual (200 US$ por adelantado) es suficiente y evita la administración de accesos. En cuanto hay un segundo usuario, el plan de Empresa empieza a tener sentido, aunque el salto de precio sea grande: 42 € al mes por dos asientos de ChatGPT Business Standard. La razón es que SAML SSO, SCIM, control de acceso por roles, registro de auditoría, SLA y residencia en la Unión Europea no vienen en ningún plan individual. Con dos cuentas personales tienes dos accesos que no se revocan al marcharse y ningún registro de quién preguntó qué</strong>.</p>
+
+                                <h3 id="faq-3">¿Cuánto tiempo ahorra de verdad la IA a una consultora?</h3>
+                                <p>La mejora se concentra en la <strong>fase de producción documental</strong>, no en el ciclo completo del proyecto. En un informe de diagnóstico, escribir, maquetar y sintetizar es una parte del trabajo; el resto son entrevistas, análisis compartido con el cliente y defensa de las conclusiones. Si la producción documental se acorta a la mitad, el tiempo total del proyecto se mueve mucho menos que eso, porque <strong>el cuello de botella se traslada al trabajo con el cliente</strong>. La única forma de saber qué pasa en tu firma es medir el tiempo real de tres entregables antes y después, y ponerlo junto al ingreso facturado por cada uno.</p>
+
+                                <h3 id="faq-4">¿Puedo meter datos de cliente en mi cuenta personal de IA?</h3>
+                                <p>No, si esos datos identificables están cubiertos por un <strong>acuerdo de confidencialidad</strong>. <strong>Los planes individuales de los tres grandes asistentes pueden entrenar con el contenido salvo que se desactive la opción, mientras que ChatGPT Business y Enterprise no entrenan con el contenido de Empresa y Claude Team y Enterprise operan sin entrenamiento por defecto. En el caso de Google la diferencia es más tajante: las cuentas personales de Gemini entrenan por defecto si el guardado de actividad está activo y retienen la actividad 18 meses, y los planes Google AI Pro, Plus y Ultra son sólo cuentas personales. Para trabajo de Empresa, la vía es Workspace con Gemini o un plan de equipo, con contrato de encargo y base jurídica</strong>.</p>
+
+                                <h3 id="faq-5">¿Puede una IA cruzarte datos entre dos clientes?</h3>
+                                <p>Sí, y es <strong>el fallo más caro de una consultora que usa IA sin procedimiento</strong>. <strong>Si toda la firma comparte un único espacio de trabajo, la información de un encargo queda disponible para cualquier otro, y la capacidad de conectar fuentes crece con el plan: ChatGPT Business permite alrededor de 40 archivos conectados por asiento y ChatGPT Enterprise unos 250. La mitigación no es tecnológica, es de procedimiento: un espacio por cliente y nunca uno global, una regla escrita de qué información puede entrar en cada herramienta, la prohibición de cuentas personales para material de cliente y una revisión de cinco minutos antes de cada entrega. Notion pública además que la retención cero con los proveedores de modelo, el SCIM y el registro de auditoría están en el nivel Enterprise, no en Business</strong>.</p>
+
+                                <h3 id="faq-6">¿Qué exige el AI Act a una consultora qué usa IA en sus entregables?</h3>
+                                <p>El Reglamento (UE) 2024/1689 entra por tramos. <strong>El artículo 4 y las prohibiciones</strong> son exigibles desde el 2 de febrero de 2025, las obligaciones para modelos de propósito general desde el 2 de agosto de 2025, y las de transparencia del artículo 50 desde el 2 de agosto de 2026. Ese último tramo es el que obliga a la consultora: informar del uso de IA en los flujos y <strong>marcar el contenido generado de forma identificable</strong>. En la práctica significa una nota de uso de IA en el entregable y una convención interna sobre qué se etiqueta. Después, la aplicación general y los sistemas de alto riesgo llegan el 2 de agosto de 2027, y el alto riesgo en productos regulados el 2 de agosto de 2028. El RGPD no se sustituye: hay que determinar base jurídica, informar a los interesados y firmar contrato de encargo con el proveedor.</p>
+
+                                <h3 id="faq-7">¿Subir herramientas de IA reduce los ingresos de una consultora qué factura por horas?</h3>
+                                <p>Puede, y es <strong>el riesgo que ninguna comparativa menciona</strong>. <strong>Si la producción documental se acorta y la tarifa sigue siendo por hora, el ingreso por informe baja aunque el margen suba. La salida es cambiar el modelo antes de que el efecto se note: pasar parte de la cartera a precio cerrado por proyecto, o subir la tarifa por hora en la línea que ahora incluye más análisis y más iteraciones. El error clásico es medir sólo las horas ahorradas y declarar éxito mientras la facturación por entregable cae. Un cálculo de</strong> <a href="../../guias/roi-real-Empresas-ia/">ROI real en Empresas con IA</a> mide el ingreso, no el esfuerzo.</p>
+
+                                <h3 id="faq-8">¿Cuándo tiene sentido contratar a un integrador externo?</h3>
+                                <p><strong>En tres casos</strong>. <strong>Cuando hay que cruzar más de una fuente de datos —ERP del cliente, CRM propio, hojas de cálculo e histórico de proyectos—, porque ahí el trabajo es de arquitectura y no de selección de herramienta. Cuando hay que demostrar cumplimiento en vez de sólo cumplir: residencia de datos por escrito, auditoría de accesos y un procedimiento de aislamiento entre clientes validado por alguien de fuera. Y cuando varios clientes con requisitos distintos comparten la misma arquitectura, porque un externo diseña una vez y una firma interna lo rediseña en cada proyecto. No hace falta integrador para montar un asistente con plan de Empresa, ordenar una base de conocimiento ni automatizar el acta de una reunión</strong>.</p>
+
+                                <h2 id="fuentes">Fuentes</h2>
+
+                                <p>Todos los precios, condiciones, fechas y datos normativos de este artículo proceden de estas fuentes, consultadas el <strong>3 de octubre de 2026</strong>. Los cálculos derivados de esos precios aparecen marcados como estimación propia, con la operación a la vista. No hay ninguna cifra estimada sin marca visible ni ninguna afirmación atribuida a un estudio sin enlace.</p>
+
+                                <ul>
+                                    <li><strong>OpenAI.</strong> <a href="https://openai.com/business/pricing/" rel="noopener nofollow" target="_blank">Precios de ChatGPT Business y Enterprise</a> — precio por asiento de Business Standard y Premium, facturación anual en euros, rango de asientos y ausencia de precio público en Enterprise. Consultado el 3 de octubre de 2026.</li>
+                                    <li><strong>Anthropic.</strong> <a href="https://www.anthropic.com/pricing" rel="noopener nofollow" target="_blank">Precios de Claude</a> — Claude Free a 0 US$, Pro a 17 US$ al mes con suscripción anual y 200 US$ por adelantado, 20 US$ facturado mensual, Max desde 100 US$ al mes, Team a 20 US$ por asiento al mes pagando anual y 25 US$ mensual para equipos de 2 a 150, y Enterprise a 20 US$ por asiento más consumo a tarifa de API. Consultado el 3 de octubre de 2026.</li>
+                                    <li><strong>Microsoft.</strong> <a href="https://www.microsoft.com/es-es/microsoft-365-copilot/pricing" rel="noopener nofollow" target="_blank">Precios de Microsoft 365 Copilot</a> — Microsoft 365 Copilot para Empresas desde 15,60 € por usuario al mes frente a los 18,20 € anteriores, Microsoft 365 Empresa Estándar con Copilot a 20,36 € y Empresa Premium con Copilot a 27,73 €, todo con pago anual y sin IVA. Consultado el 3 de octubre de 2026.</li>
+                                    <li><strong>Google.</strong> <a href="https://workspace.google.com/intl/es_es/pricing.html" rel="noopener nofollow" target="_blank">Precios de Google Workspace para España</a> — planes Business Starter, Standard y Plus con precio por usuario y mínimo de un usuario. Consultado el 3 de octubre de 2026.</li>
+                                    <li><strong>Notion.</strong> <a href="https://www.notion.com/pricing" rel="noopener nofollow" target="_blank">Precios de Notion</a> — Plus a 9,50 € por miembro al mes pagando anual y 11,50 € mensual, Business a 19,50 € y 23,50 € con SAML SSO, Enterprise a precio a consultar, la mención de prueba de Notion AI en los planes Free, Plus y Business, y las funciones de aprovisionamiento SCIM, registro de auditoría y retención cero con los proveedores de modelo en Enterprise. Consultado el 3 de octubre de 2026.</li>
+                                    <li><strong>Zapier.</strong> <a href="https://zapier.com/pricing" rel="noopener nofollow" target="_blank">Precios de Zapier</a> — plan Free con 100 tareas al mes, Professional desde 19,99 US$ al mes, Team desde 69 US$ al mes con 25 usuarios y SAML SSO, Enterprise a precio a consultar, y el ahorro del 33 % al pagar anual. Consultado el 3 de octubre de 2026.</li>
+                                    <li><strong>n8n.</strong> <a href="https://n8n.io/pricing/" rel="noopener nofollow" target="_blank">Precios de n8n</a> — Starter a 20 € al mes con 2,5 K ejecuciones de flujo, Pro a 50 € con 10 K y Business a 667 € con 40 K, usuarios y flujos ilimitados en todos los planes, precios por ejecución mensual y ahorro del 17 % pagando anual. Consultado el 3 de octubre de 2026.</li>
+                                    <li><strong>Diario Oficial de la Unión Europea.</strong> <a href="https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=OJ:L_202401689" rel="noopener nofollow" target="_blank">Reglamento (UE) 2024/1689</a> — calendario de aplicación por tramos: artículo 4 y prohibiciones el 2 de febrero de 2025, modelos de propósito general el 2 de agosto de 2025, transparencia del artículo 50 el 2 de agosto de 2026, aplicación general y alto riesgo el 2 de agosto de 2027 y alto riesgo en productos regulados el 2 de agosto de 2028. Consultado el 3 de octubre de 2026.</li>
+                                    <li><strong>Agencia Española de Protección de Datos.</strong> <a href="https://www.aepd.es/sites/default/files/2020-02/adecuacion-rgpd-ia.pdf" rel="noopener nofollow" target="_blank">Adecuación del RGPD a los tratamientos con IA</a> — base jurídica, información a los interesados y contrato de encargo con el proveedor cuando se usan herramientas de IA sobre datos personales. Consultado el 3 de octubre de 2026.</li>
+                                </ul>
+
+                                <div class="trust-grid">
+                                    <div class="trust-item">
+                                        <div class="trust-icon">1</div>
+                                        <h3>Precios con unidad y condición</h3>
+                                        <p>Cada importe indica si es por asiento o por suscripción, en qué moneda y con qué compromiso de facturación.</p>
+                                    </div>
+                                    <div class="trust-item">
+                                        <div class="trust-icon">2</div>
+                                        <h3>Estimaciones marcadas</h3>
+                                        <p>Los cálculos propios llevan la operación a la vista y sus supuestos, para que puedas rehacerlos con tus cifras.</p>
+                                    </div>
+                                    <div class="trust-item">
+                                        <div class="trust-icon">3</div>
+                                        <h3>Sin puntuación inventada</h3>
+                                        <p>No hay nota sobre cinco ni estrellas: cada recomendación se apoya en un precio publicado o en una aritmética explícita.</p>
+                                    </div>
+                                </div>
+
+                                <div class="related-articles">
+                                    <h3>Artículos relacionados</h3>
+                                    <ul>
+                                        <li><a href="../../comparativas/chatgpt-vs-claude-vs-gemini/">ChatGPT vs Claude vs Gemini: comparativa completa</a></li>
+                                        <li><a href="../../guias/cuanto-cuesta-implementar-ia/">Cuánto cuesta implementar IA en una Empresa</a></li>
+                                        <li><a href="../../guias/ia-ai-act-cumplimiento/">Cumplimiento del AI Act: calendario y obligaciones</a></li>
+                                        <li><a href="../../herramientas-ia/seguridad-etica-ia/">Seguridad y ética de la IA en Empresas</a></li>
+                                        <li><a href="../../guias/elegir-herramienta-ia-negocio/">Cómo elegir la herramienta de IA adecuada para tu negocio</a></li>
+                                    </ul>
+                                </div>
             </div>
         </div>
     </article>

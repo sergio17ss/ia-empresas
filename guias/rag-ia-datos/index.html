@@ -65,60 +65,60 @@
     </script>
 
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "¿Qué es RAG y para qué sirve en una pyme?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "RAG (Retrieval-Augmented Generation) es una técnica que conecta un modelo de IA a tus propios documentos. Antes de responder, el sistema busca la información relevante en tu base de conocimiento (catálogos, tarifas, procedimientos, contratos) y genera la respuesta apoyándose en ella. El resultado es que la IA responde con tus datos reales en lugar de inventar."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "¿Cuánto cuesta montar un sistema RAG en mi empresa en euros?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Puedes montar un primer sistema con 0 € de licencia usando plataformas con plan gratuito como Dify (open source) o Chatbase. Un plan de pago realista para una pyme ronda entre 25 y 100 € al mes según plataforma y volumen de mensajes. Las opciones gestionadas de grandes nubes (Google Vertex AI Search o Microsoft Copilot Studio) se facturan sobre todo por uso y para volúmenes bajos parten de decenas de euros al mes. A eso suma el tiempo de tu equipo y el coste de los modelos si se paga por token."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "¿RAG o fine-tuning: cuál necesito para usar mis datos con la IA?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "En la inmensa mayoría de casos de una pyme conviene RAG: añade tus documentos sin reentrenar el modelo, permite actualizar la información al instante y es más barato y auditable. El fine-tuning sirve para que el modelo adopte un tono o formato propios a partir de muchos ejemplos, pero no para meter datos factuales que cambian. Empieza siempre con RAG y solo plantéate fine-tuning si necesitas un estilo muy definido."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "¿Es seguro y legal usar RAG con datos de clientes en España?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Sí, siempre que respetes el RGPD y la nueva normativa europea de IA. RAG devuelve información de tus documentos y, en las plataformas con garantías de no entrenamiento, los datos no se usan para entrenar modelos. Debes asegurarte de que el proveedor cumple el RGPD, controlar quién accede a la base de conocimiento, anonimizar cuando sea posible y supervisar lo que el asistente responde. Para datos personales sensibles, valora alojamiento o procesamiento en la Unión Europea."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "¿Necesito saber programar para montar un sistema RAG en mi pyme?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No, para empezar. Plataformas como Chatbase permiten subir tus documentos y tener un asistente funcional en una tarde sin código. Dify, en su modo visual, también permite construir asistentes con tu base de conocimiento sin programar, aunque para integraciones avanzadas (CRM, bases de datos, APIs) conviene apoyo técnico. Programar solo es imprescindible si quieres construir el pipeline completo por tu cuenta con modelos y bases vectoriales."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "¿Cómo evito que mi asistente RAG invente respuestas o use datos desactualizados?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Con tres prácticas: dale documentos actualizados y bien estructurados, configura el prompt para que responda solo con la información recuperada y diga 'no lo sé' en lugar de inventar, y revisa los registros de conversación las primeras semanas. Establece un calendario de actualización de la base de conocimiento y usa un set fijo de preguntas de prueba para detectar cuándo una respuesta deja de ser correcta."
-                }
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Qué es RAG y para qué sirve en una pyme?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "RAG (Retrieval-Augmented Generation) es una técnica que conecta un modelo de IA a tus propios documentos. Antes de responder, el sistema busca la información relevante en tu base de conocimiento (catálogos, tarifas, procedimientos, contratos) y genera la respuesta apoyándose en ella. El resultado es que la IA responde con tus datos reales en lugar de inventar."
             }
-        ]
-    }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta montar un sistema RAG en mi Empresa en euros?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Puedes montar un primer sistema con 0 € de licencia usando plataformas con plan gratuito como Dify (open source) o Chatbase. Un plan de pago realista para una pyme ronda entre 25 y 100 € al mes según plataforma y volumen de mensajes. Las opciones gestionadas de grandes nubes (Google Vertex AI Search o Microsoft Copilot Studio) se facturan sobre todo por uso y para volúmenes bajos parten de decenas de euros al mes. A eso suma el tiempo de tu equipo y el coste de los modelos si se paga por token."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿RAG o fine-tuning: cuál necesito para usar mis datos con la IA?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "En la inmensa mayoría de casos de una pyme conviene RAG: añade tus documentos sin reentrenar el modelo, permite actualizar la información al instante y es más barato y auditable. El fine-tuning sirve para que el modelo adopte un tono o formato propios a partir de muchos ejemplos, pero no para meter datos factuales que cambian. Empieza siempre con RAG y solo plantéate fine-tuning si necesitas un estilo muy definido."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Es seguro y legal usar RAG con datos de clientes en España?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, siempre que respetes el RGPD y la nueva normativa europea de IA. RAG devuelve información de tus documentos y, en las plataformas con garantías de no entrenamiento, los datos no se usan para entrenar modelos. Debes asegurarte de que el proveedor cumple el RGPD, controlar quién accede a la base de conocimiento, anonimizar cuando sea posible y supervisar lo que el asistente responde. Para datos personales sensibles, valora alojamiento o procesamiento en la Unión Europea."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Necesito saber programar para montar un sistema RAG en mi pyme?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, para empezar. Plataformas como Chatbase permiten subir tus documentos y tener un asistente funcional en una tarde sin código. Dify, en su modo visual, también permite construir asistentes con tu base de conocimiento sin programar, aunque para integraciones avanzadas (CRM, bases de datos, APIs) conviene apoyo técnico. Programar solo es imprescindible si quieres construir el pipeline completo por tu cuenta con modelos y bases vectoriales."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cómo evito que mi asistente RAG invente respuestas o use datos desactualizados?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Con tres prácticas: dale documentos actualizados y bien estructurados, configura el prompt para que responda solo con la información recuperada y diga \"no lo sé\" en lugar de inventar, y revisa los registros de conversación las primeras semanas. Establece un calendario de actualización de la base de conocimiento y usa un set fijo de preguntas de prueba para detectar cuándo una respuesta deja de ser correcta."
+            }
+        }
+    ]
+}
     </script>
 
 </head>
@@ -152,18 +152,18 @@
 
             <div class="methodology-banner">
                 <span class="methodology-icon" aria-hidden="true"></span>
-                <p><strong>Metodología:</strong> Guía basada en la documentación oficial de OpenAI, Anthropic, Google y Microsoft sobre RAG, pruebas propias de las plataformas citadas (Dify, Chatbase) y precios oficiales de cada fabricante en euros, actualizada a septiembre de 2026.</p>
+                <p><strong>Metodología:</strong> Guía basada en la documentación oficial de OpenAI, Anthropic, Google y Microsoft sobre RAG y en las páginas de precios oficiales de cada fabricante. Todas las cifras de coste se han contrastado con la web de cada proveedor el 3 de octubre de 2026 y cada importe tiene su enlace en el apartado Fuentes.</p>
             </div>
 
             <div class="article-header">
                 <span class="article-category-badge">Guía</span>
                 <h1>RAG: Cómo Usar la IA con tus Propios Datos en tu PYME</h1>
-                <p class="article-subtitle">La IA genérica responde de todo pero no conoce tu negocio. RAG (Retrieval-Augmented Generation) conecta ChatGPT, Claude, Gemini o cualquier modelo con tus catálogos, tarifas, contratos y procedimientos. Aprende qué es, cómo montarlo esta misma semana, cuánto cuesta en euros y qué herramientas elegir sin ser informático.</p>
+                <p class="article-subtitle">La IA genérica responde de todo pero no conoce tu negocio. RAG (Retrieval-Augmented Generation) conecta ChatGPT, Claude, Gemini o cualquier modelo con tus catálogos, tarifas, contratos y procedimientos. Aprende qué es, cómo montarlo ésta misma semana, cuánto cuesta en euros y qué herramientas elegir sin ser informático.</p>
                 <div class="article-meta-bar">
                     <span class="meta-author">Por el equipo de IA TodoPyme</span>
-                    <span class="meta-date">13 septiembre 2026</span>
-                    <span class="meta-reading">17 min de lectura</span>
-                    <span class="meta-updated">Actualizado: septiembre 2026</span>
+                    <span class="meta-date">7 octubre 2026</span>
+                    <span class="meta-reading">28 min de lectura</span>
+                    <span class="meta-updated">Actualizado: 7 octubre 2026</span>
                 </div>
             </div>
 
@@ -178,6 +178,8 @@
                         <li><a href="#como-funciona">Cómo funciona RAG por dentro (sin tecnicismos)</a></li>
                         <li><a href="#quick-duel">Quick Duel: RAG a medida vs RAG con nube gestionada</a></li>
                         <li><a href="#comparativa">Comparativa de plataformas RAG y precios en euros</a></li>
+                        <li><a href="#coste-real">El coste real de un RAG: lo que cuesta cada 1.000 consultas</a></li>
+                        <li><a href="#limites-planes">Lo que no incluye el plan barato: los límites que aparecen en el mes 3</a></li>
                         <li><a href="#paso-a-paso">Paso a paso: monta tu primer RAG esta semana</a></li>
                         <li><a href="#errores">Errores comunes (y cómo evitarlos)</a></li>
                         <li><a href="#rgpd">RAG, RGPD y la nueva Ley de Inteligencia Artificial</a></li>
@@ -191,21 +193,21 @@
 
                 <p>Seguro que te ha pasado: le preguntas a ChatGPT por los precios de tu competencia y responde con seguridad, pero cuando le pides tu propia tarifa, el catálogo de tu último trimestre o el procedimiento interno de devoluciones, inventa. No porque sea mala herramienta, sino porque <strong>no conoce tu negocio</strong>. Los modelos de lenguaje se entrenan con información pública y no tienen acceso a tus documentos.</p>
 
-                <p><strong>RAG</strong> (por sus siglas en inglés, <em>Retrieval-Augmented Generation</em>, generación aumentada por recuperación) es la técnica que resuelve ese agujero. Funciona como un bibliotecario experto: antes de responder, el sistema <strong>busca la información relevante en tu propia base de conocimiento</strong>, la extrae y se la entrega al modelo de IA junto con la pregunta. Así, el modelo responde apoyándose en tus datos reales, no en suposiciones.</p>
+                <p><strong>TodoPyme</strong> (por sus siglas en inglés, <em>Retrieval-Augmented Generation</em>, generación aumentada por recuperación) es la técnica que resuelve ese agujero. Funciona como un bibliotecario experto: antes de responder, el sistema <strong>busca la información relevante en tu propia base de conocimiento</strong>, la extrae y se la entrega al modelo de IA junto con la pregunta. Así, el modelo responde apoyándose en tus datos reales, no en suposiciones.</p>
 
-                <p>La imagen mental más útil es la de un empleado nuevo con acceso a toda la documentación de la empresa: no sabe nada de memoria, pero consulta los manuales antes de contestar. RAG hace exactamente eso con la IA: <strong>la memoria del modelo sigue siendo general, pero ahora tiene acceso a una biblioteca que tú controlas</strong>, actualizas y proteges.</p>
+                <p>La imagen mental más útil es la de un empleado nuevo con acceso a toda la documentación de la Empresa: no sabe nada de memoria, pero consulta los manuales antes de contestar. RAG hace exactamente eso con la IA: <strong>la memoria del modelo sigue siendo general, pero ahora tiene acceso a una biblioteca que tú controlas</strong>, actualizas y proteges.</p>
 
-                <p>Para una pyme española esto no es tecnología de grandes corporaciones. Es la misma base que usan los chatbots de atención al cliente que responden con tu política de envíos, los asistentes internos que contestan a partir de tu manual de procedimientos o los buscadores que resuelven dudas de facturación consultando tus documentos. Y el punto clave para tu bolsillo: <strong>puedes montarlo con euros que caben en una suscripción, sin contratar a un equipo de datos</strong>. Si todavía no tienes claro dónde empieza la IA en tu empresa, lee antes la <a href="../../guias/guia-implementar-ia-pyme/">guía completa para implementar IA en tu pyme</a>.</p>
+                <p>Para una pyme española esto no es tecnología de grandes corporaciones. Es la misma base que usan los chatbots de atención al cliente que responden con tu política de envíos, los asistentes internos que contestan a partir de tu manual de procedimientos o los buscadores que resuelven dudas de facturación consultando tus documentos. Y el punto clave para tu bolsillo: <strong>puedes montarlo con euros que caben en una suscripción, sin contratar a un equipo de datos</strong>. Si todavía no tienes claro dónde empieza la IA en tu Empresa, lee antes la <a href="../../guias/guia-implementar-ia-pyme/">guía completa para implementar IA en tu pyme</a>.</p>
 
                 <h2 id="problema">El problema que resuelve: las alucinaciones</h2>
 
-                <p>El mayor riesgo de usar IA en una empresa no es que las respuestas sean rudas o imprecisas: es que sean <strong>convincentes y falsas a la vez</strong>. A esto se le llama alucinación: el modelo redacta un párrafo perfectamente razonado con datos inventados. Sin RAG, una IA que responde sobre tu negocio es una ruleta rusa en cada mensaje.</p>
+                <p>El mayor riesgo de usar IA en una Empresa no es que las respuestas sean rudas o imprecisas: es que sean <strong>convincentes y falsas a la vez</strong>. A esto se le llama alucinación: el modelo redacta un párrafo perfectamente razonado con datos inventados. Sin RAG, una IA que responde sobre tu negocio es una ruleta rusa en cada mensaje.</p>
 
-                <p>Pongamos un caso concreto. Un comercial quiere saber la política de garantía de un producto concreto que dejaste de fabricar. Sin RAG, la IA puede responder con la garantía legal genérica (correcta) mezclada con una promesa comercial que nunca hiciste (peligrosa). Con RAG, el sistema recupera la ficha del producto y la política real de tu empresa y el modelo solo puede responder dentro de ese marco.</p>
+                <p>Pongamos un caso concreto. Un comercial quiere saber la política de garantía de un producto concreto que dejaste de fabricar. Sin RAG, la IA puede responder con la garantía legal genérica (correcta) mezclada con una promesa comercial que nunca hiciste (peligrosa). Con RAG, el sistema recupera la ficha del producto y la política real de tu Empresa y el modelo sólo puede responder dentro de ese marco.</p>
 
                 <p>RAG no elimina las alucinaciones para siempre: las reduce de forma drástica y, sobre todo, <strong>las convierte en detectables</strong>. Al recuperar fragmentos de tus documentos, puedes auditar de dónde sale cada respuesta, algo imposible cuando el modelo responde de memoria. Muchas plataformas incluso muestran la fuente ("según el documento 'política-de-garantia.pdf', sección 3") para que el lector compruebe la respuesta.</p>
 
-                <p>Hay un matiz de honestidad que conviene recordar: <strong>RAG funciona tan bien como tus documentos</strong>. Si la base de conocimiento tiene precios de hace un año o procedimientos derogados, el asistente responderá con seguridad sobre datos obsoletos. La tecnología pone el vehículo; tú pones el combustible. De ahí que buena parte de esta guía hable de cómo preparar bien esa documentación.</p>
+                <p>Hay un matiz de honestidad que conviene recordar: <strong>RAG funciona tan bien como tus documentos</strong>. Si la base de conocimiento tiene precios de hace un año o procedimientos derogados, el asistente responderá con seguridad sobre datos obsoletos. La tecnología pone el vehículo; tú pones el combustible. De ahí que buena parte de ésta guía hable de cómo preparar bien esa documentación.</p>
 
                 <h2 id="casos">Casos de uso de RAG en pymes españolas</h2>
 
@@ -237,7 +239,7 @@
                                 <td>La IA extrae número, importe y fecha de cada factura recibida</td>
                             </tr>
                             <tr>
-                                <td><strong>Buscador interno de la empresa</strong></td>
+                                <td><strong>Buscador interno de la Empresa</strong></td>
                                 <td>Todos los documentos del departamento</td>
                                 <td>"¿Qué procedimiento usamos para reclamar un error bancario?"</td>
                             </tr>
@@ -255,7 +257,7 @@
                     </table>
                 </div>
 
-                <p>El patrón que se repite en todos los casos es el mismo: <strong>información que existe en la empresa pero que nadie es capaz de encontrar a la velocidad necesaria</strong>. RAG convierte esa documentación dormida en una capacidad de respuesta inmediata, tanto hacia fuera (clientes) como hacia dentro (equipo). Si el caso de uso es el comercial o el chatbot web, en <a href="../../herramientas-ia/chatbots-atencion-cliente/">nuestra comparativa de chatbots de atención al cliente</a> tienes herramientas concretas con sus precios.</p>
+                <p>El patrón que se repite en todos los casos es el mismo: <strong>información que existe en la Empresa pero que nadie es capaz de encontrar a la velocidad necesaria</strong>. RAG convierte esa documentación dormida en una capacidad de respuesta inmediata, tanto hacia fuera (clientes) como hacia dentro (equipo). Si el caso de uso es el comercial o el chatbot web, en <a href="../../herramientas-ia/chatbots-atencion-cliente/">nuestra comparativa de chatbots de atención al cliente</a> tienes herramientas concretas con sus precios.</p>
 
                 <h2 id="como-funciona">Cómo funciona RAG por dentro (sin tecnicismos)</h2>
 
@@ -269,7 +271,7 @@
                     <li><strong>Recuperación + generación:</strong> cuando llega la pregunta, el sistema encuentra los fragmentos más parecidos, se los pasa al modelo de lenguaje junto con la pregunta y el modelo redacta la respuesta citando ese contexto.</li>
                 </ol>
 
-                <p>El resultado de ese circuito es que el modelo de lenguaje (el "cerebro") no aporta conocimiento de tu negocio: lo aporta tu base de conocimiento, y el cerebro solo redacta. Por eso se llama <em>generación aumentada por recuperación</em>: la generación (redactar) está aumentada (completada) por la recuperación (tu documentación).</p>
+                <p>El resultado de ese circuito es que el modelo de lenguaje (el "cerebro") no aporta conocimiento de tu negocio: lo aporta tu base de conocimiento, y el cerebro sólo redacta. Por eso se llama <em>generación aumentada por recuperación</em>: la generación (redactar) está aumentada (completada) por la recuperación (tu documentación).</p>
 
                 <div class="callout callout-tip">
                     <strong>Regla mental:</strong> la IA de RAG no "aprende" tus datos: los consulta en cada respuesta. Como un buscador que lee antes de contestar. Esto tiene una ventaja enorme para ti: cuando cambias la documentación, la respuesta cambia al siguiente minuto, sin reentrenar nada.
@@ -283,8 +285,8 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>Criterio</th>
-                                <th>RAG</th>
+                                <th>Curva</th>
+                                <th>Curva</th>
                                 <th>Fine-tuning</th>
                             </tr>
                         </thead>
@@ -300,12 +302,12 @@
                                 <td>Lento: hay que reentrenar cada vez</td>
                             </tr>
                             <tr>
-                                <td><strong>Trazabilidad</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>Alta: sabes de qué documento salió cada dato</td>
                                 <td>Baja: el dato se integra en el modelo</td>
                             </tr>
                             <tr>
-                                <td><strong>Coste</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>Bajo: subes archivos y pagas uso</td>
                                 <td>Alto: entrenamiento + hardware o API</td>
                             </tr>
@@ -317,7 +319,7 @@
                             <tr>
                                 <td><strong>Veredicto pyme</strong></td>
                                 <td>La opción en el 95% de los casos</td>
-                                <td>Solo para equipos técnicos con necesidad real</td>
+                                <td>sólo para equipos técnicos con necesidad real</td>
                             </tr>
                         </tbody>
                     </table>
@@ -333,7 +335,7 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>Criterio</th>
+                                <th>Curva</th>
                                 <th>RAG a medida (Dify / Chatbase)</th>
                                 <th>RAG cloud gestionado (Google Vertex / Copilot Studio)</th>
                             </tr>
@@ -360,14 +362,14 @@
                                 <td>El ecosistema propio (Gemini en Google, Azure OpenAI en MS)</td>
                             </tr>
                             <tr>
-                                <td><strong>Integraciones</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>Vía APIs y conectores de la propia plataforma</td>
                                 <td>Nativas con Workspace, SharePoint, Power Platform, GCP</td>
                             </tr>
                             <tr>
                                 <td><strong>Coste de entrada</strong></td>
-                                <td>0 € (gratis autoalojado); desde ~15-40 €/mes en cloud</td>
-                                <td>Por uso: volúmenes bajos desde ~10-30 €/mes; Copilot desde ~185 €/mes con plan</td>
+                                <td>Chatbase Hobby 40 US$/mes; Dify Professional 590 US$/workspace/año</td>
+                                <td>Google Standard Search 1,50 US$ por 1.000 consultas + 5 US$/GB/mes indexado; Microsoft 365 Copilot 15,60 €/usuario/mes</td>
                             </tr>
                             <tr>
                                 <td><strong>Tiempo hasta publicar</strong></td>
@@ -380,90 +382,259 @@
 
                 <p><strong>Análisis:</strong> el RAG a medida con Dify o Chatbase gana en flexibilidad, precio de entrada y control. Chatbase te da un asistente sobre documentos en una tarde; Dify te deja construir el pipeline completo, elegir el modelo (incluidos europeos como Mistral si tu sector exige soberanía) y autoalojarlo si necesitas que los datos no salgan de tu infraestructura.</p>
 
-                <p>El RAG gestionado de Google o Microsoft gana cuando tu empresa <strong>ya vive dentro de ese ecosistema</strong>. Si todo tu correo, documentos y SharePoint están en Google Workspace o Microsoft 365, la integración con Vertex o Copilot Studio es nativa: indexas tu Drive y tu SharePoint casi con un clic, y el asistente consulta el contenido de la suite. Su contra es la vinculación al ecosistema y una curva técnica mayor para sacarle partido real.</p>
+                <p>El RAG gestionado de Google o Microsoft gana cuando tu Empresa <strong>ya vive dentro de ese ecosistema</strong>. Si todo tu correo, documentos y SharePoint están en Google Workspace o Microsoft 365, la integración con Vertex o Copilot Studio es nativa: indexas tu Drive y tu SharePoint casi con un clic, y el asistente consulta el contenido de la suite. Su contra es la vinculación al ecosistema y una curva técnica mayor para sacarle partido real.</p>
 
                 <p><strong>Veredicto del duelo:</strong> si tu pyme empieza hoy, monta el primer RAG a medida con Chatbase o Dify para validar el caso en una semana. Si ya eres fiel a Google o Microsoft y manejas decenas de miles de documentos dentro de su suite, Copilot Studio o Vertex AI Search son la evolución natural a medio plazo. Ambas rutas están en la comparativa siguiente con sus precios.</p>
 
                 <h2 id="comparativa">Comparativa de plataformas RAG y precios en euros</h2>
 
-                <p>Hechas las presentaciones, así queda el mercado para una pyme española en septiembre de 2026. Los precios son orientativos en euros según los planes oficiales de cada fabricante; recuerda que el volumen de mensajes, tokens y documentos puede mover la factura final.</p>
+                <p>Hechas las presentaciones, así queda el mercado para una pyme española en octubre de 2026. Los precios son orientativos en euros según los planes oficiales de cada fabricante; recuerda que el volumen de mensajes, tokens y documentos puede mover la factura final.</p>
 
                 <div class="comparison-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Herramienta</th>
-                                <th>Tipo</th>
-                                <th>Precio aprox. (EUR/mes)</th>
+                                <th>Curva</th>
+                                <th>Curva</th>
+                                <th>Precio oficial en la web del proveedor</th>
                                 <th>Curva</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Chatbase</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>Sin código, RAG con tus documentos</td>
-                                <td>0 € gratis; desde 39 €; Pro ~99 €</td>
-                                <td>Baja</td>
+                                <td>Free 0 US$ (50 créditos/mes); Hobby 40 US$/mes (700 créditos); Standard 150 US$/mes (4.000); Pro 500 US$/mes (15.000)</td>
+                                <td>Media</td>
                             </tr>
                             <tr>
-                                <td><strong>Dify</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>Open source, low-code con base de conocimiento</td>
-                                <td>0 € autoalojado; cloud desde ~15 € por créditos</td>
+                                <td>Community self-hosted 0 €; Sandbox cloud 0 US$; Professional 590 US$/workspace/año; Team 1.590 US$/workspace/año</td>
                                 <td>Media</td>
                             </tr>
                             <tr>
-                                <td><strong>Botpress</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>Low-code con flujos y RAG</td>
-                                <td>0 € (plan gratuito); desde ~99 €</td>
+                                <td>Free 0 US$ (25 conversaciones/mes, sin Ampliar); Plus 150 US$/mes con pago anual; Team 750 US$/mes con pago anual</td>
                                 <td>Media</td>
                             </tr>
                             <tr>
-                                <td><strong>Voiceflow</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>Low-code, diseño de flujos con conocimiento</td>
-                                <td>0 € (limitado); desde ~99 €</td>
+                                <td>Sin tarifa pública: la web sólo ofrece prueba gratuita y presupuesto bajo petición para Empresas</td>
                                 <td>Media</td>
                             </tr>
                             <tr>
                                 <td><strong>Intercom Fin</strong></td>
                                 <td>Sin código, RAG orientado a soporte</td>
-                                <td>Desde ~79 € de plataforma + pago por resolución</td>
-                                <td>Baja</td>
+                                <td>Fin desde 0,99 US$ por resolución; en modo independiente, 0,99 US$ por resolución con mínimo mensual (50 resoluciones = 49,50 US$)</td>
+                                <td>Media</td>
                             </tr>
                             <tr>
                                 <td><strong>Zendesk AI</strong></td>
                                 <td>RAG dentro de la plataforma de soporte</td>
-                                <td>Suite desde ~55 €/agente + IA por interacción</td>
-                                <td>Baja</td>
+                                <td>Suite Team 55 €/agente/mes con pago anual; 5 resoluciones automatizadas incluidas por agente y mes; resolución extra 1,50 € o 2,00 € por uso</td>
+                                <td>Media</td>
                             </tr>
                             <tr>
                                 <td><strong>Google Vertex AI Search</strong></td>
                                 <td>Nube gestionada, indexa web, Drive y documentos</td>
-                                <td>Por uso; volúmenes bajos desde ~10-30 €</td>
+                                <td>Standard Search 1,50 US$/1.000 consultas; Enterprise core 4 US$/1.000; Advanced Generative Answers +4 US$/1.000; indexación 5 US$/GB/mes tras 10 GB gratis</td>
                                 <td>Media-alta</td>
                             </tr>
                             <tr>
-                                <td><strong>Microsoft Copilot Studio</strong></td>
+                                <td><strong>Microsoft 365 Copilot</strong></td>
                                 <td>Nube gestionada integrada en Microsoft 365</td>
-                                <td>Pago por mensaje (~0,01 €) o plan con 25.000 mensajes ~185 €</td>
+                                <td>15,60 €/usuario/mes con pago anual (promocional hasta el 31 de diciembre de 2026; antes 18,20 €), siempre sobre una licencia de Microsoft 365 ya pagada</td>
                                 <td>Media-alta</td>
                             </tr>
                             <tr>
-                                <td><strong>OpenAI (GPTs / Assistants API)</strong></td>
-                                <td>Conocimiento subido en GPTs; API por token</td>
-                                <td>ChatGPT Team ~25 €/usuario; API por uso</td>
-                                <td>Baja-media</td>
+                                <td><strong>OpenAI (API)</strong></td>
+                                <td>File Search y Assistants sobre tus documentos; pago por token</td>
+                                <td>Sin cuota de plataforma: File Search a 2,50 US$/1.000 llamadas, almacenamiento a 0,10 US$/GB/día y embeddings desde 0,02 US$/millón de tokens</td>
+                                <td>Media</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <div class="callout callout-info">
-                    <strong>Nota de precios:</strong> Las tarifas indicadas son aproximadas en euros según los planes oficiales de cada fabricante en septiembre de 2026 y pueden variar con el tipo de cambio, el volumen de mensajes y los tokens de cada conversación. Las cifras de los asistentes generativos se han contrastado con los <a href="https://openai.com/chatgpt/pricing/" rel="noopener nofollow" target="_blank">planes oficiales de ChatGPT</a> y <a href="https://www.anthropic.com/pricing" rel="noopener nofollow" target="_blank">los precios oficiales de Claude</a>, y las de las plataformas open source con la <a href="https://docs.dify.ai/" rel="noopener nofollow" target="_blank">documentación oficial de Dify</a>. Consulta siempre la página oficial del proveedor antes de contratar.
+                    <strong>Nota de precios:</strong> todas las cifras de ésta tabla se han copiado de la página oficial de cada proveedor el <strong>3 de octubre de 2026</strong> y cada una tiene su enlace en el apartado Fuentes. Los proveedores cobran en dólares o en euros según el caso, y muchos facturan por créditos, conversaciones o resoluciones en lugar de porGB, así que la factura real depende del uso. Consulta siempre la página oficial del proveedor antes de contratar.
                 </div>
 
-                <p>Si a esto le sumas el coste oculto (el tiempo de tu equipo para preparar e indexar la documentación, y el coste de tokens del modelo si pagas por uso), un presupuesto realista para una pyme tipo con un asistente sobre 200-500 documentos es de <strong>25 a 45 €/mes</strong> con las plataformas sin código, y de <strong>50 a 150 €/mes</strong> si necesitas integraciones avanzadas o nube gestionada. Las opciones de gran empresa, como un despliegue serio en Vertex o Copilot con decenas de miles de documentos y volúmenes altos, saltan por encima de esos rangos, pero entonces ya estás hablando de un proyecto con presupuesto propio.</p>
+                <p>Con los precios reales sobre la mesa, el coste mensual de una pyme tipo se mueve en una horquilla mucho más alta que la que sueleircular por blogs. Un asistente con <strong>Chatbase Hobby son 40 US$ al mes</strong> (unos 700 créditos, que se consumen según el tamaño y el número de conversaciones). Un <strong>Dify Professional son 590 US$ por workspace y año</strong>, unos 49 US$ equivalentes al mes, más los impuestos que se aplican a los planes cloud. Con <strong>Botpress Plus el salto es real: 150 US$ al mes</strong>. En la nube gestionada, <strong>Microsoft 365 Copilot cuesta 15,60 € por usuario al mes</strong> con pago anual y se suma a la licencia de Microsoft 365 que ya pagas: para cinco personas son 78 €/mes sólo de IA. <strong>Voiceflow ya no pública ninguna tarifa</strong>, así que cualquier cifra que te den por escrito es una estimación comercial, no un precio de lista.</p>
 
-                <p>Dos apuntes prácticos. Primero: <strong>los planes gratuitos de Chatbase, Dify, Botpress y Voiceflow permiten montar el piloto con tus documentos y medir resultados sin gastar un euro</strong>; la decisión de pago se toma con datos. Segundo: si tu negocio vive de la atención al cliente, mira las fichas de <a href="../../herramientas-ia/intercom-fin/">Intercom Fin</a> y <a href="../../herramientas-ia/zendesk-ai/">Zendesk AI</a>; su modelo de precio por resolución encaja muy bien cuando ya pagas la plataforma de soporte.</p>
+                <p>Dos apuntes prácticos. Primero: <strong>los planes gratuitos de Chatbase, Dify Sandbox y Botpress permiten montar el piloto con tus documentos y medir resultados sin gastar un euro</strong>, aunque con límites que no vienen escritos en la caja y que te explicamos en el apartado siguiente. En Voiceflow lo que hay es una prueba gratuita sin tarjeta, no un plan permanente. La decisión de pago se toma con datos, no con suposiciones. Segundo: si tu negocio vive de la atención al cliente, mira las fichas de <a href="../../herramientas-ia/intercom-fin/">Intercom Fin</a> y <a href="../../herramientas-ia/zendesk-ai/">Zendesk AI</a>; su modelo de precio por resolución automática encaja muy bien cuando ya pagas la plataforma de soporte.</p>
+
+                <h2 id="coste-real">El coste real de un RAG: lo que cuesta cada 1.000 consultas</h2>
+
+                <p>La tabla anterior mezcla monedas, comodidades de pago y unidades distintas, y por eso no se puede leer como un ranking. Para decidir de verdad hay que normalizar, y en IA la unidad casi nunca es el mes: <strong>es la consulta resuelta</strong>. Un plan por asiento cobra lo mismo da igual cuánto se use; un plan por créditos cobra según el tamaño de cada conversación; una nube gestionada cobra por consulta y además por gigabyte indexado. Comparar un 40 US$ al mes con un 1,50 US$ por 1.000 consultas sin explicar esa diferencia es comparar dos cosas que no son del mismo tipo.</p>
+
+                <p>ésta es la traducción de todas las tarifas a una misma unidad, con precios oficiales del <strong>3 de octubre de 2026</strong>. Léela con la columna de la derecha abierta, porque ahí está la mitad del coste real: lo que no escala con el número de consultas.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Curva</th>
+                                <th>Unidad de cobro</th>
+                                <th>Coste de 1.000 consultas</th>
+                                <th>Lo que se cobra aparte</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Google Standard Search</strong></td>
+                                <td>Por consulta</td>
+                                <td>1,50 US$</td>
+                                <td>Indexación: 5 US$/GB al mes una vez superados los 10 GB gratis</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Enterprise (respuestas generativas)</strong></td>
+                                <td>Por consulta</td>
+                                <td>4 US$</td>
+                                <td>Misma indexación; requiere contrato Enterprise</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Advanced Generative Answers</strong></td>
+                                <td>Por consulta</td>
+                                <td>4 US$ + 4 US$ = 8 US$</td>
+                                <td>El segundo 4 US$ es el recargo del modo de IA</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google, grounding sobre tu propia base</strong></td>
+                                <td>Por solicitud de grounding</td>
+                                <td>2,50 US$</td>
+                                <td>sólo cuando el sistema recupera de tus datos, no de la web</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google, grounding con Google Search</strong></td>
+                                <td>Por solicitud de grounding</td>
+                                <td>35,1375 US$</td>
+                                <td>La misma función, pero cuesta casi diez veces más</td>
+                            </tr>
+                            <tr>
+                                <td><strong>OpenAI File Search</strong></td>
+                                <td>Una llamada de herramienta por consulta</td>
+                                <td>2,50 US$</td>
+                                <td>Almacenamiento 0,10 US$/GB/día y embeddings desde 0,02 US$/millón de tokens</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Intercom Fin (modo independiente)</strong></td>
+                                <td>Por resolución</td>
+                                <td>0,99 US$</td>
+                                <td>Mínimo mensual: 50 resoluciones equivalen a 49,50 US$ aún si no las uses</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Zendesk Suite Team</strong></td>
+                                <td>Por resolución automatizada</td>
+                                <td>5 incluidas por agente y mes; 1,50 € cada resolución extra (o 2,00 € por uso)</td>
+                                <td>55 €/agente al mes con pago anual, que es la base de la plataforma</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Chatbase Hobby</strong></td>
+                                <td>Créditos de mensajes</td>
+                                <td>Variable: 700 créditos al mes por 40 US$</td>
+                                <td>10 MB de contenido de entrenamiento por agente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dify Professional</strong></td>
+                                <td>Créditos de mensajes</td>
+                                <td>Variable: 5.000 créditos al mes por 590 US$ al año</td>
+                                <td>5 GB de almacenamiento de conocimiento y 500 documentos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La fila que más surprise es la quinta. <strong>35,1375 US$ frente a 2,50 US$ por mil solicitudes</strong> es la diferencia entre anclar la respuesta en los documentos que tú has subido y anclar la respuesta en una búsqueda abierta en la web para la misma operación de grounding. Es casi <strong>catorce veces</strong>. Si tu RAG va a responder sobre tu catálogo, tus tarifas o tus procedimientos, la pregunta correcta no es si el grounding es caro, sino <strong>sobre qué grounding estás pagando</strong>: el que busca en tu base de conocimiento o el que busca en internet.</p>
+
+                <p>El almacenamiento merece su propia aritmética, porque se cuela en la factura de forma silenciosa. OpenAI cobra los File Search a 0,10 US$ por gigabyte y día, que equivale a unos 3 US$ por gigabyte y mes si el almacenamiento se mantiene los treinta días; Google factura la indexación a 5 US$ por gigabyte y mes una vez superados los 10 GB gratuitos. Traducido: <strong>50 GB de documentos en File Search rondan los 150 US$ al mes y en Google rondan los 200 US$</strong> (sólo se cobran los 40 GB que superan la parte gratis). Ojo con el matiz: no es la misma magnitud en los dos casos, porque en un sistema se factura el fichero original y en el otro los vectores que genera la indexación. Sirve para dimensionar, no para decir que uno es más barato.</p>
+
+                <div class="callout callout-tip">
+                    <strong>Umbral de decisión:</strong> el plan fijo de Chatbase Hobby cuesta 40 US$ al mes. Al precio de 1,50 US$ por 1.000 consultas de Google Standard Search, esos 40 US$ equivalen a unas <strong>26.700 consultas mensuales</strong>. Por debajo de ese volumen, la tarifa fija gana en precio simple y además te da integraciones que ya están incluidas; por encima, una nube gestionada cobra por uso y la factura deja de estar acotada. Es una simplificación deliberada —no incluye las diferencias de funciones entre una cosa y otra— pero sirve para decidir dónde empieza el debate.
+                </div>
+
+                <p>La conclusión práctica es que <strong>el precio de lista sólo cuenta una parte</strong>. El presupuesto real de un RAG son cuatro partidas: suscripción o uso, almacenamiento e indexación, deducted integración con lo que ya usas (CRM, agenda, gestor de tickets) y, la que se olvida siempre, las horas de tu equipo limpiando la documentación. Los tres primeros salen de la tabla; el cuarto no sale de ninguna y suele ser el mayor.</p>
+
+                <h2 id="limites-planes">Lo que no incluye el plan barato: los límites que aparecen en el mes 3</h2>
+
+                <p>Un piloto con plan gratuito sale bien casi siempre, y ese es exactamente el problema: la parte relevante de la letra pequeña no se ve hasta que el sistema ya está en producción y alguien tiene que subir el documento nuevo. <strong>Los tres límites que matan proyectos de RAG no son de precio, sino de volumen, inactividad y.wikimedia recarga automática</strong>. Estos son los valores oficiales, leídos de las páginas de precios el 3 de octubre de 2026.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Curva</th>
+                                <th>Límite oficial</th>
+                                <th>Qué significa en tu día a día</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Chatbase Free</strong></td>
+                                <td>50 créditos al mes, 1 miembro, 1 MB de contenido por agente</td>
+                                <td>La propia web avisa de que los agentes de IA <strong>se eliminan tras 14 días de inactividad</strong>. Un piloto que se enfría dos semanas desaparece</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Chatbase Hobby (40 US$)</strong></td>
+                                <td>700 créditos, 2 miembros, 10 MB por agente</td>
+                                <td>10 MB es el techo real de tu base de conocimiento, y es por agente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Chatbase Standard (150 US$)</strong></td>
+                                <td>4.000 créditos, 3 miembros, 20 MB por agente</td>
+                                <td>A 20 MB, un catálogo con fichas de producto e imágenes entra justo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Chatbase Pro (500 US$)</strong></td>
+                                <td>15.000 créditos, 5 miembros, 40 MB por agente</td>
+                                <td>5 miembros es un límite de proyecto: a partir del sexto usuario necesitas Enterprise</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dify Sandbox (0 US$)</strong></td>
+                                <td>200 créditos, 1 miembro, 5 apps, 50 documentos, 50 MB, 10 solicitudes de conocimiento por minuto</td>
+                                <td>Con 10 solicitudes por minuto, encadenar pruebas bloquea temporalmente la carga de documentos durante el minuto siguiente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dify Professional (590 US$/año)</strong></td>
+                                <td>5.000 créditos, 3 miembros, 50 apps, 500 documentos, 5 GB</td>
+                                <td>La web lo dice literalmente: al llegar al límite, <strong>los documentos nuevos dejarán de subirse</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dify Team (1.590 US$/año)</strong></td>
+                                <td>10.000 créditos, 50 miembros, 1.000 documentos, 20 GB</td>
+                                <td>Los planes cloud no incluyen impuestos: el importe final se calcula al pagar</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Botpress Free (0 US$)</strong></td>
+                                <td>25 conversaciones al mes, 3 asientos, 3 agentes IA, 100 MB, sin complementos</td>
+                                <td>Tope estricto: no hay forma de ampliar sin cambiar de plan</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Botpress Plus (150 US$/mes anual)</strong></td>
+                                <td>250 conversaciones, 3 asientos, 1 GB vectorial y 10 GB de ficheros</td>
+                                <td>Al llegar al 95% del consumo se compra sólo un paquete de 100 conversaciones y <strong>no se puede desactivar</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Botpress Team (750 US$/mes anual)</strong></td>
+                                <td>1.500 conversaciones, asientos ilimitados, 5 GB vectoriales y 50 GB de ficheros</td>
+                                <td>Las conversaciones sin usar de un paquete <strong>caducan a fin de mes</strong>: no se arrastran al siguiente</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Si sólo te quedas con una advertencia de ésta tabla, que sea ésta: <strong>el techo de almacenamiento no es un aviso, es un stopper</strong>. En Dify, al agotar los 5 GB la plataforma deja de aceptar documentos nuevos. Es decir, el sistema sigue respondiendo perfectamente con la documentación antigua mientras tu equipo cree que está actualizado. En Chatbase el equivalente son los 10, 20 y 40 MB por agente. Ninguno de los dos límites aparece como una tarifa aparte, y los dos se convierten en un problema justo cuando el proyecto empieza a funcionar.</p>
+
+                <p>El segundo aviso es el consumo que se factura sólo. En Botpress los paquetes de 100 conversaciones se añaden automáticamente al 95% del cuota y la propia web confirma que esa recarga <strong>no se puede desactivar</strong>: para dejar de gastar hay que pausar el producto entero. En Chatbase el complemento de recarga automática cuesta 40 US$ por cada 1.000 créditos de mensajes. Son importes pequeños, pero se acumulan en silencio durante meses.</p>
+
+                <p>El tercero son los complementos que nadie presupuesta. En Chatbase, quitar la marca <em>Powered By Chatbase</em> cuesta 99 US$ al mes y añadir un agente extra 25 US$ al mes. En Botpress, ampliar almacenamiento son 40 US$ al mes por 100.000 filas, 1 GB vectorial y 10 GB de ficheros. En ninguno de los dos casos es una compra impulsiva: es una línea fija que aparece en el segundo año, cuando ya tienes el sistema en producción y dependes de él.</p>
+
+                <div class="callout callout-warning">
+                    <strong>Regla práctica antes de contratar:</strong> escribe los límites en la checklist de preguntas del paso 1 y compruébalos con datos, no de memoria. Cuántos megabytes o gigabytes de documentos necesita tu base hoy y dentro de un año, cuántas consultas al mes prevés, cuántas personas lo usarán y qué pasa si el servicio lleva dos semanas sin actividad. Si una respuesta te obliga a adivinar, todavía no estás listo para pagar.
+                </div>
 
                 <h2 id="paso-a-paso">Paso a paso: monta tu primer RAG esta semana</h2>
 
@@ -473,13 +644,13 @@
                 <p>Lista las 20-30 preguntas que el asistente debe resolver perfectamente: las más repetidas de tu cliente o de tu equipo. Son el contrato de aceptación: si el sistema no las responde bien, no pasa a producción.</p>
 
                 <h3>Paso 2. Prepara la documentación de verdad</h3>
-                <p>Junta los documentos fuente: FAQ, políticas, catálogos, tarifas, procedimientos. Elimina versiones antiguas, unifica formato y revisa que los precios y condiciones estén vigentes. Un RAG con documentos duplicados o caducados responde confiado con datos malos. Esta es la hora de mayor valor de todo el proyecto.</p>
+                <p>Junta los documentos fuente: FAQ, políticas, catálogos, tarifas, procedimientos. Elimina versiones antiguas, unifica formato y revisa que los precios y condiciones estén vigentes. Un RAG con documentos duplicados o caducados responde confiado con datos malos. ésta es la hora de mayor valor de todo el proyecto.</p>
 
                 <h3>Paso 3. Sube y estructura la base de conocimiento</h3>
                 <p>En Chatbase arrastras los archivos y la plataforma los indexa sola. En Dify creas una "base de conocimiento", subes los documentos y eliges parámetros de fragmentación. Regla práctica: trozos cortos con encabezados claros se comportan mejor que documentos gigantes sin estructura. Si tus documentos tienen títulos y secciones definidos, el sistema los respeta.</p>
 
                 <h3>Paso 4. Configura el prompt y las reglas</h3>
-                <p>Escribe la personalidad del asistente (rol, tono, idioma, español de España) y, sobre todo, una regla dura: <em>responde solo con la información recuperada de la base de conocimiento; si no la encuentras, di "no lo sé" y ofrece derivar a un humano</em>. Esa línea vale más que cualquier otra configuración.</p>
+                <p>Escribe la personalidad del asistente (rol, tono, idioma, español de España) y, sobre todo, una regla dura: <em>responde sólo con la información recuperada de la base de conocimiento; si no la encuentras, di "no lo sé" y ofrece derivar a un humano</em>. Esa línea vale más que cualquier otra configuración.</p>
 
                 <h3>Paso 5. Prueba con tu checklist de preguntas</h3>
                 <p>Lanza las 20-30 preguntas del paso 1, incluidas las tramposas ("¿cuánto cuesta un producto que ya no vendemos?"). Cada respuesta floja es un ajuste: añade documentación, refina la fragmentación o acota el prompt. No publiques hasta que el set de preguntas críticas pase al 90%.</p>
@@ -488,7 +659,7 @@
                 <p>Integra el widget en tu web (un fragmento de JavaScript antes de <code>&lt;/body&gt;</code>, en WordPress, Webflow, Wix o Shopify) o conecta el asistente interno donde tu equipo lo necesite. La primera semana revisa todas las conversaciones: las plataformas guardan registros que son tu guía para mejorar.</p>
 
                 <h3>Paso 7. Actualiza en calendario</h3>
-                <p>RAG brilla porque puede actualizarse al instante, pero solo si alguien lo hace. Fija una revisión mensual de la base de conocimiento (precios, políticas, productos) y una prueba rápida con 5 preguntas tras cada cambio. Un sistema RAG sin mantenimiento es un archivo en ruinas con apariencia de asistente.</p>
+                <p>RAG brilla porque puede actualizarse al instante, pero sólo si alguien lo hace. Fija una revisión mensual de la base de conocimiento (precios, políticas, productos) y una prueba rápida con 5 preguntas tras cada cambio. Un sistema RAG sin mantenimiento es un archivo en ruinas con apariencia de asistente.</p>
 
                 <div class="callout callout-tip">
                     <strong>Primer objetivo realista:</strong> que el asistente resuelva bien el 80-90% de las preguntas de tu checklist en el primer mes. El 100% no existe ni con los mejores modelos: por eso la derivación a humano nunca desaparece del diseño.
@@ -502,7 +673,7 @@
 
                 <h3>Error #2: no limitar las respuestas al contexto recuperado</h3>
                 <p><strong>El problema:</strong> el prompt no prohíbe inventar, y el modelo mezcla lo que recupera con lo que "recuerda". Resultado: respuestas que suenan oficiales pero contienen datos falsos de la memoria general del modelo.</p>
-                <p><strong>La solución:</strong> regla explícita de responder solo con lo recuperado y de declarar desconocimiento. Si tu plataforma lo permite, activa las fuentes citadas para que el usuario pueda comprobar cada respuesta.</p>
+                <p><strong>La solución:</strong> regla explícita de responder sólo con lo recuperado y de declarar desconocimiento. Si tu plataforma lo permite, activa las fuentes citadas para que el usuario pueda comprobar cada respuesta.</p>
 
                 <h3>Error #3: olvidar que los datos envejecen</h3>
                 <p><strong>El problema:</strong> el sistema responde genial en enero y en julio contesta con el catálogo de invierno. RAG no tiene calendario: refleja lo que hay en la base de conocimiento.</p>
@@ -524,7 +695,7 @@
 
                 <p><strong>Segundo, la exposición interna.</strong> El gran riesgo del RAG es más simple de lo que parece: un asistente que responde todo lo que hay en la biblioteca. Si metes nóminas, expedientes o datos de clientes en la misma base que usa un asistente público, estás abriendo una puerta. La solución práctica es la segmentación: bases de conocimiento separadas por finalidad y acceso, y nunca mezclar información personal sensible con asistentes orientados a clientes.</p>
 
-                <p><strong>Tercero, la Ley de Inteligencia Artificial de la UE.</strong> El <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" rel="noopener nofollow" target="_blank">Reglamento (UE) 2024/1689 (AI Act)</a> afecta de lleno a los sistemas de IA desplegados en la Unión desde su régimen de obligaciones generales: transparencia (el usuario debe saber que habla con un sistema de IA), supervisión humana y trazabilidad. El calendario de aplicación y las orientaciones para empresas los publica la <a href="https://digital-strategy.ec.europa.eu/en/policies/ai-act" rel="noopener nofollow" target="_blank">Comisión Europea</a>, y la <a href="https://www.aepd.es/" rel="noopener nofollow" target="_blank">AEPD</a> es la autoridad designada para supervisarlo en España junto con el RGPD. Un asistente RAG que se presenta como IA, cita fuentes y deriva a humano cuando toca cumple el espíritu de la norma; un bot que se hace pasar por persona no. En <a href="../../herramientas-ia/seguridad-etica-ia/">nuestra guía de seguridad y ética en IA</a> desarrollamos todo el marco.</p>
+                <p><strong>Tercero, la Ley de Inteligencia Artificial de la UE.</strong> El <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" rel="noopener nofollow" target="_blank">Reglamento (UE) 2024/1689 (AI Act)</a> afecta de lleno a los sistemas de IA desplegados en la Unión desde su régimen de obligaciones generales: transparencia (el usuario debe saber que habla con un sistema de IA), supervisión humana y trazabilidad. El calendario de aplicación y las orientaciones para Empresas los pública la <a href="https://digital-strategy.ec.europa.eu/en/policies/ai-act" rel="noopener nofollow" target="_blank">Comisión Europea</a>, y la <a href="https://www.aepd.es/" rel="noopener nofollow" target="_blank">AEPD</a> es la autoridad designada para supervisarlo en España junto con el RGPD. Un asistente RAG que se presenta como IA, cita fuentes y deriva a humano cuando toca cumple el espíritu de la norma; un bot que se hace pasar por persona no. En <a href="../../herramientas-ia/seguridad-etica-ia/">nuestra guía de seguridad y ética en IA</a> desarrollamos todo el marco.</p>
 
                 <div class="callout callout-warning">
                     <strong>Aviso:</strong> este apartado es orientación general, no asesoramiento jurídico. Si tu sector maneja datos personales sensibles (salud, RRHH, menores), consulta con un abogado especializado en protección de datos antes de desplegar cualquier sistema de IA con documentación interna.
@@ -535,11 +706,12 @@
                 <div class="tldr-box">
                     <h2>Resumen en 60 segundos</h2>
                     <ul>
-                        <li><strong>RAG</strong> es la técnica que conecta la IA con tus propios documentos: recupera la información relevante antes de responder, para que la IA hable con tus datos reales</li>
+                        <li><strong>TodoPyme</strong> es la técnica que conecta la IA con tus propios documentos: recupera la información relevante antes de responder, para que la IA hable con tus datos reales</li>
                         <li><strong>Resuelve el problema de las alucinaciones:</strong> reduce las respuestas inventadas y, con fuentes citadas, las convierte en auditable</li>
                         <li><strong>Casos de uso en tu pyme:</strong> asistente de atención al cliente, consultas internas, extracción de datos de facturas, buscador de documentos y resumen de contratos</li>
                         <li><strong>El camino más rápido:</strong> Chatbase para un asistente en una tarde; Dify para montar el pipeline a medida con control total</li>
-                        <li><strong>Stacks:</strong> 25-45 €/mes para una pyme típica con plataformas sin código; 50-150 €/mes si necesitas integraciones o nube gestionada (Vertex, Copilot Studio)</li>
+                        <li><strong>Stacks:</strong> con precios del 3 de octubre de 2026, 40 US$ al mes en Chatbase Hobby o 590 US$ al año en Dify Professional para una pyme con plataforma sin código; desde 15,60 € por usuario al mes en Microsoft 365 Copilot o 1,50 US$ por 1.000 consultas en Google Standard Search si vas a nube gestionada</li>
+                        <li><strong>Los límites importan más que el precio:</strong> 1 a 40 MB de contenido por agente en Chatbase, 50 MB a 20 GB de almacenamiento en Dify y 25 conversaciones al mes en Botpress Free. El techo de almacenamiento es un stopper, no un aviso</li>
                         <li><strong>La clave del éxito no es la IA:</strong> es la documentación. Limpia, vigente y bien estructurada, revisada cada mes</li>
                         <li><strong>Reglas de seguridad:</strong> nunca mezcles datos personales con asistentes públicos, activa la transparencia (Ley de IA de la UE) y controla los accesos</li>
                     </ul>
@@ -547,65 +719,59 @@
 
                 <h2 id="veredicto">Veredicto final</h2>
 
-                <div class="rating-box">
-                    <div class="rating-text">
-                        <p>RAG es, hoy, la forma más rentable de que la IA deje de hablar de memoria y empiece a hablar de tu negocio. No requiere contratar técnicos ni pagar fortunas: con una plataforma sin código, una base de conocimiento bien preparada y una tarde de configuración, tu pyme puede tener un asistente que responda con sus datos reales, citando sus documentos y sin inventar. Nuestra recomendación clara: empieza esta semana con Chatbase o Dify en su plan gratuito, sube tu FAQ y tu política de envíos, fija tu checklist de 20 preguntas y mide. Si el acierto pasa el 80-90%, paga el plan y automatiza; si no, corrige la documentación antes de culpar a la tecnología. RAG no es el futuro de la IA en tu pyme: es el presente más barato que existe.</p>
-                    </div>
+                <div class="callout callout-tip">
+                    <p>RAG es, hoy, la forma más rentable de que la IA deje de hablar de memoria y empiece a hablar de tu negocio. No requiere contratar técnicos ni pagar fortunas: con una plataforma sin código, una base de conocimiento bien preparada y una tarde de configuración, tu pyme puede tener un asistente que responda con sus datos reales, citando sus documentos y sin inventar. <strong>Nuestra recomendación es concreta: empieza con el plan gratuito de Chatbase o el Sandbox de Dify, sube tu FAQ y tu política de envíos, fija un checklist de 20 preguntas y mide.</strong> Si el acierto pasa del 80-90%, paga el plan y automatiza; si no, corrige la documentación antes de culpar a la tecnología. Y antes de subir la primera factura, revisa los límites del plan: los megabytes por agente, los gigabytes de almacenamiento y los créditos incluidos son los que deciden si el sistema sigue funcionando dentro de tres meses.</p>
                 </div>
 
                 <h2 id="faq">Preguntas frecuentes</h2>
+                <h3 id="faq-1">¿Qué es RAG y para qué sirve en una pyme?</h3>
+                <p>RAG (Retrieval-Augmented Generation) es una técnica que conecta un modelo de IA a tus propios documentos. Antes de responder, el sistema busca la información relevante en tu base de conocimiento (catálogos, tarifas, procedimientos, contratos) y genera la respuesta apoyándose en ella. El resultado es que la IA responde con tus datos reales en lugar de inventar.</p>
 
-                <details>
-                    <summary>¿Qué es RAG y para qué sirve en una pyme?</summary>
-                    <p>RAG (Retrieval-Augmented Generation) es una técnica que conecta un modelo de IA a tus propios documentos. Antes de responder, el sistema busca la información relevante en tu base de conocimiento (catálogos, tarifas, procedimientos, contratos) y genera la respuesta apoyándose en ella. El resultado es que la IA responde con tus datos reales en lugar de inventar.</p>
-                </details>
+                <h3 id="faq-2">¿Cuánto cuesta montar un sistema RAG en mi Empresa en euros?</h3>
+                <p>Puedes montar un primer sistema con 0 € de licencia usando plataformas con plan gratuito como Dify (open source) o Chatbase. Un plan de pago realista para una pyme ronda entre 25 y 100 € al mes según plataforma y volumen de mensajes. Las opciones gestionadas de grandes nubes (Google Vertex AI Search o Microsoft Copilot Studio) se facturan sobre todo por uso y para volúmenes bajos parten de decenas de euros al mes. A eso suma el tiempo de tu equipo y el coste de los modelos si se paga por token.</p>
 
-                <details>
-                    <summary>¿Cuánto cuesta montar un sistema RAG en mi empresa en euros?</summary>
-                    <p>Puedes montar un primer sistema con 0 € de licencia usando plataformas con plan gratuito como Dify (open source) o Chatbase. Un plan de pago realista para una pyme ronda entre 25 y 100 € al mes según plataforma y volumen de mensajes. Las opciones gestionadas de grandes nubes (Google Vertex AI Search o Microsoft Copilot Studio) se facturan sobre todo por uso y para volúmenes bajos parten de decenas de euros al mes. A eso suma el tiempo de tu equipo y el coste de los modelos si se paga por token.</p>
-                </details>
+                <h3 id="faq-3">¿RAG o fine-tuning: cuál necesito para usar mis datos con la IA?</h3>
+                <p>En la inmensa mayoría de casos de una pyme conviene RAG: añade tus documentos sin reentrenar el modelo, permite actualizar la información al instante y es más barato y auditable. El fine-tuning sirve para que el modelo adopte un tono o formato propios a partir de muchos ejemplos, pero no para meter datos factuales que cambian. Empieza siempre con RAG y sólo plantéate fine-tuning si necesitas un estilo muy definido.</p>
 
-                <details>
-                    <summary>¿RAG o fine-tuning: cuál necesito para usar mis datos con la IA?</summary>
-                    <p>En la inmensa mayoría de casos de una pyme conviene RAG: añade tus documentos sin reentrenar el modelo, permite actualizar la información al instante y es más barato y auditable. El fine-tuning sirve para que el modelo adopte un tono o formato propios a partir de muchos ejemplos, pero no para meter datos factuales que cambian. Empieza siempre con RAG y solo plantéate fine-tuning si necesitas un estilo muy definido.</p>
-                </details>
+                <h3 id="faq-4">¿Es seguro y legal usar RAG con datos de clientes en España?</h3>
+                <p>Sí, siempre que respetes el RGPD y la nueva normativa europea de IA. RAG devuelve información de tus documentos y, en las plataformas con garantías de no entrenamiento, los datos no se usan para entrenar modelos. Debes asegurarte de que el proveedor cumple el RGPD, controlar quién accede a la base de conocimiento, anonimizar cuando sea posible y supervisar lo que el asistente responde. Para datos personales sensibles, valora alojamiento o procesamiento en la Unión Europea.</p>
 
-                <details>
-                    <summary>¿Es seguro y legal usar RAG con datos de clientes en España?</summary>
-                    <p>Sí, siempre que respetes el RGPD y la nueva normativa europea de IA. RAG devuelve información de tus documentos y, en las plataformas con garantías de no entrenamiento, los datos no se usan para entrenar modelos. Debes asegurarte de que el proveedor cumple el RGPD, controlar quién accede a la base de conocimiento, anonimizar cuando sea posible y supervisar lo que el asistente responde. Para datos personales sensibles, valora alojamiento o procesamiento en la Unión Europea.</p>
-                </details>
+                <h3 id="faq-5">¿Necesito saber programar para montar un sistema RAG en mi pyme?</h3>
+                <p>No, para empezar. Plataformas como Chatbase permiten subir tus documentos y tener un asistente funcional en una tarde sin código. Dify, en su modo visual, también permite construir asistentes con tu base de conocimiento sin programar, aunque para integraciones avanzadas (CRM, bases de datos, APIs) conviene apoyo técnico. Programar sólo es imprescindible si quieres construir el pipeline completo por tu cuenta con modelos y bases vectoriales.</p>
 
-                <details>
-                    <summary>¿Necesito saber programar para montar un sistema RAG en mi pyme?</summary>
-                    <p>No, para empezar. Plataformas como Chatbase permiten subir tus documentos y tener un asistente funcional en una tarde sin código. Dify, en su modo visual, también permite construir asistentes con tu base de conocimiento sin programar, aunque para integraciones avanzadas (CRM, bases de datos, APIs) conviene apoyo técnico. Programar solo es imprescindible si quieres construir el pipeline completo por tu cuenta con modelos y bases vectoriales.</p>
-                </details>
-
-                <details>
-                    <summary>¿Cómo evito que mi asistente RAG invente respuestas o use datos desactualizados?</summary>
-                    <p>Con tres prácticas: dale documentos actualizados y bien estructurados, configura el prompt para que responda solo con la información recuperada y diga "no lo sé" en lugar de inventar, y revisa los registros de conversación las primeras semanas. Establece un calendario de actualización de la base de conocimiento y usa un set fijo de preguntas de prueba para detectar cuándo una respuesta deja de ser correcta.</p>
-                </details>
+                <h3 id="faq-6">¿Cómo evito que mi asistente RAG invente respuestas o use datos desactualizados?</h3>
+                <p>Con tres prácticas: dale documentos actualizados y bien estructurados, configura el prompt para que responda sólo con la información recuperada y diga "no lo sé" en lugar de inventar, y revisa los registros de conversación las primeras semanas. Establece un calendario de actualización de la base de conocimiento y usa un set fijo de preguntas de prueba para detectar cuándo una respuesta deja de ser correcta.</p>
 
                 <h2 id="fuentes">Fuentes</h2>
 
-                <p>Los precios en euros, el funcionamiento técnico de las plataformas y el marco normativo citado en esta guía proceden de la documentación oficial de los fabricantes y de las instituciones reguladoras siguientes:</p>
+                <p>Todos los precios, límites de plan y cifras de consumo que aparecen en ésta guía proceden de las páginas oficiales de los proveedores y de las instituciones reguladoras siguientes. <strong>Todas las páginas se consultaron el 3 de octubre de 2026.</strong> Los precios pueden cambiar: vuelve a la página oficial antes de contratar.</p>
 
                 <ul>
-                    <li><a href="https://docs.dify.ai/" rel="noopener nofollow" target="_blank">Dify — documentación oficial</a>: comportamiento de la base de conocimiento, del pipeline de fragmentación y vectorización y del sistema de citas de fuentes que explica esta guía.</li>
-                    <li><a href="https://platform.openai.com/docs" rel="noopener nofollow" target="_blank">OpenAI — documentación de la plataforma</a> y <a href="https://openai.com/chatgpt/pricing/" rel="noopener nofollow" target="_blank">precios oficiales de ChatGPT</a>: contraste de la comparativa de precios y del funcionamiento de la recuperación de contexto en la API.</li>
-                    <li><a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" rel="noopener nofollow" target="_blank">Anthropic — documentación de prompt engineering</a>: recomendación oficial de instruir al modelo para que responda solo con el contexto recuperado en lugar de completar con su memoria general.</li>
-                    <li><a href="https://www.aepd.es/" rel="noopener nofollow" target="_blank">AEPD — Agencia Española de Protección de Datos</a>: criterio oficial sobre qué datos personales pueden enviarse a una herramienta de IA y qué garantías exige un plan de empresa.</li>
-                    <li><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" rel="noopener nofollow" target="_blank">Reglamento (UE) 2024/1689 (AI Act) — texto oficial en EUR-Lex</a>: obligaciones de transparencia, supervisión humana y trazabilidad exigidas a los asistentes de IA en la Unión.</li>
-                    <li><a href="https://digital-strategy.ec.europa.eu/en/policies/ai-act" rel="noopener nofollow" target="_blank">Comisión Europea — AI Act</a>: calendario de aplicación del Reglamento y orientaciones para empresas.</li>
+                    <li><a href="https://www.chatbase.co/pricing" rel="noopener nofollow" target="_blank">Chatbase — precios</a> <strong>(consultado el 3 de octubre de 2026)</strong>: planes Free, Hobby, Standard, Pro y Enterprise; créditos de mensajes, asientos por plan, tamaño máximo del contenido de entrenamiento (1, 10, 20 y 40 MB), supresión de agentes tras 14 días de inactividad en el plan gratuito y complementos de recarga automática y agentes adicionales. Base de la tabla de precios y de los límites por plan.</li>
+                    <li><a href="https://dify.ai/pricing" rel="noopener nofollow" target="_blank">Dify — precios</a> <strong>(consultado el 3 de octubre de 2026)</strong>: planes Professional (590 US$ por workspace y año), Team (1.590 US$) y Sandbox gratuito; créditos de mensajes, número de documentos de conocimiento, almacenamiento de 50 MB, 5 GB y 20 GB, solicitudes de conocimiento por minuto y el hecho de que al agotar el almacenamiento los documentos nuevos dejan de subirse. También los planes self-hosted Community y Enterprise de pago bajo petición.</li>
+                    <li><a href="https://botpress.com/pricing" rel="noopener nofollow" target="_blank">Botpress — precios</a> <strong>(consultado el 3 de octubre de 2026)</strong>: planes Free (25 conversaciones al mes, sin complementos), Plus (150 US$ al mes con pago anual) y Team (750 US$ al mes con pago anual); paquetes de 100 conversaciones, recarga automática al 95% de la cuota que no puede desactivarse, caducidad de las conversaciones sin usar, consumo de IA incluido y complemento de almacenamiento de 40 US$ al mes.</li>
+                    <li><a href="https://cloud.google.com/generative-ai-app-builder/pricing" rel="noopener nofollow" target="_blank">Google Cloud — Vertex AI Search, precios</a> <strong>(consultado el 3 de octubre de 2026)</strong>: Standard Search a 1,50 US$ por 1.000 consultas, respuestas generativas de Enterprise a 4 US$ por 1.000 y Advanced Generative Answers con un recargo de 4 US$ más; indexación a 5 US$ por GB y mes tras 10 GB gratuitos; grounding sobre datos propios a 2,50 US$ por 1.000 solicitudes y con Google Search a 35,1375 US$ por 1.000 solicitudes. Base de la tabla de coste por 1.000 consultas.</li>
+                    <li><a href="https://developers.openai.com/api/docs/pricing" rel="noopener nofollow" target="_blank">OpenAI — precios de la API</a> <strong>(consultado el 3 de octubre de 2026)</strong>: precios de embeddings y del almacenamiento y las llamadas de File Search, que sostienen el cálculo de coste por consulta y de almacenamiento del apartado de coste real.</li>
+                    <li><a href="https://www.intercom.com/pricing" rel="noopener nofollow" target="_blank">Intercom — precios</a> <strong>(consultado el 3 de octubre de 2026)</strong>: planes Essential, Advanced y Expert por asiento y la tarifa de Fin por resolución, incluido el modo independiente a 0,99 US$ por resolución con mínimo mensual.</li>
+                    <li><a href="https://www.zendesk.com/pricing/" rel="noopener nofollow" target="_blank">Zendesk — precios</a> <strong>(consultado el 3 de octubre de 2026)</strong>: planes Support, Suite y Suite Professional por agente con pago anual, las resoluciones automatizadas incluidas por agente y mes y el precio de la resolución adicional por paquete o por uso.</li>
+                    <li><a href="https://www.microsoft.com/es-es/microsoft-365-copilot/pricing" rel="noopener nofollow" target="_blank">Microsoft — Microsoft 365 Copilot, precios</a> <strong>(consultado el 3 de octubre de 2026)</strong>: precio de 15,60 € por usuario al mes con pago anual en la promoción vigente hasta el 31 de diciembre de 2026, el precio anterior de 18,20 € y el requisito de disposer de una licencia de Microsoft 365.</li>
+                    <li><a href="https://www.voiceflow.com/pricing" rel="noopener nofollow" target="_blank">Voiceflow — precios</a> <strong>(consultado el 3 de octubre de 2026)</strong>: la sección para agencias ofrece prueba gratuita sin tarjeta y facturación transparente por uso, mientras que la sección para Empresas sólo invita a pedir una demo y un presupuesto: no hay ninguna tarifa de lista publicada. Base de la corrección que elimina las cifras antiguas de ésta guía.</li>
+                    <li><a href="https://docs.dify.ai/" rel="noopener nofollow" target="_blank">Dify — documentación oficial</a> <strong>(consultado el 3 de octubre de 2026)</strong>: comportamiento de la base de conocimiento, del pipeline de fragmentación y vectorización y del sistema de citas de fuentes que explica ésta guía.</li>
+                    <li><a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" rel="noopener nofollow" target="_blank">Anthropic — documentación de prompt engineering</a> <strong>(consultado el 3 de octubre de 2026)</strong>: recomendación oficial de instruir al modelo para que responda sólo con el contexto recuperado en lugar de completar con su memoria general.</li>
+                    <li><a href="https://www.aepd.es/" rel="noopener nofollow" target="_blank">AEPD — Agencia Española de Protección de Datos</a> <strong>(consultado el 3 de octubre de 2026)</strong>: criterio oficial sobre qué datos personales pueden enviarse a una herramienta de IA y qué garantías exige un plan de Empresa.</li>
+                    <li><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" rel="noopener nofollow" target="_blank">Reglamento (UE) 2024/1689 (AI Act) — texto oficial en EUR-Lex</a> <strong>(consultado el 3 de octubre de 2026)</strong>: obligaciones de transparencia, supervisión humana y trazabilidad exigidas a los asistentes de IA en la Unión.</li>
+                    <li><a href="https://digital-strategy.ec.europa.eu/en/policies/ai-act" rel="noopener nofollow" target="_blank">Comisión Europea — AI Act</a> <strong>(consultado el 3 de octubre de 2026)</strong>: calendario de aplicación del Reglamento y orientaciones para Empresas.</li>
                 </ul>
+
 
                 <div class="related-articles">
                     <h3>Artículos relacionados</h3>
                     <ul>
-                        <li><a href="../../herramientas-ia/dify-ai/">Dify.ai: flujos de IA sin código para empresas</a></li>
+                        <li><a href="../../herramientas-ia/dify-ai/">Dify.ai: flujos de IA sin código para Empresas</a></li>
                         <li><a href="../../herramientas-ia/chatbots-atencion-cliente/">Chatbots de atención al cliente: mejores herramientas</a></li>
                         <li><a href="../../guias/crear-chatbot-ia-web/">Cómo crear un chatbot IA para tu web</a></li>
-                        <li><a href="../../guias/prompt-engineering-empresas/">Guía de prompt engineering para empresas</a></li>
-                        <li><a href="../../herramientas-ia/seguridad-etica-ia/">Seguridad y ética en la IA para empresas</a></li>
+                        <li><a href="../../guias/prompt-engineering-Empresas/">Guía de prompt engineering para Empresas</a></li>
+                        <li><a href="../../herramientas-ia/seguridad-etica-ia/">Seguridad y ética en la IA para Empresas</a></li>
                         <li><a href="../../herramientas-ia/perplexity-ai/">Perplexity AI: búsqueda con fuentes</a></li>
                     </ul>
                 </div>

@@ -41,34 +41,7 @@
     <noscript><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="../../css/style.css">
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "SoftwareApplication",
-            "name": "Herramientas de IA para Logística",
-            "applicationCategory": "BusinessApplication",
-            "operatingSystem": "Web",
-            "offers": {
-                "@type": "Offer",
-                "price": "32",
-                "priceCurrency": "EUR",
-                "description": "Desde 32 EUR/mes por vehiculo (optimizacion de rutas) hasta soluciones enterprise"
-            }
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "4.2",
-            "bestRating": "5"
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "IA TodoPyme"
-        },
-        "datePublished": "2026-09-09"
-    }
-    </script>
+    
 
     <script type="application/ld+json">
     {
@@ -80,23 +53,63 @@
                 "name": "¿Qué IA se usa en logística en 2026?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Cinco familias: optimizacion de rutas de reparto (OptimoRoute, Route4Me), robots y automatizacion de almacen (Locus Robotics), previsión de demanda y planificacion (Blue Yonder), visibilidad en tiempo real de la cadena de suministro (FourKites) y procesamiento automatico de documentos (Rossum). A ellas se suman los asistentes generales para analisis de datos operativos."
+                    "text": "Cuatro familias y una quinta transversal. La primera es la optimización de rutas de reparto, que se contrata por conductor. La segunda es la captura documental de albaranes, CMR y facturas. La tercera es la previsión de demanda y la planificación de inventario. La cuarta es la visibilidad de la cadena de suministro. Y la quinta, transversal a todas, es el análisis con asistentes de uso general para informes de servicio e incidencias. Cada familia mide una cosa distinta y solo una de ellas tiene precio público por unidad física."
                 }
             },
             {
                 "@type": "Question",
-                "name": "¿Cuánto cuesta implementar IA en logística?",
+                "name": "¿Cuánto cuesta optimizar rutas con IA?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "La optimizacion de rutas es la entrada mas barata: desde unos 35 dolares por vehiculo y mes (unos 32 euros) en OptimoRoute o Route4Me. El procesamiento de documentos con IA parte de rangos de 300-800 euros al mes segun volumen. Los robots de almacen y las plataformas enterprise (Blue Yonder, FourKites) son proyectos desde decenas de miles de euros anuales, reservados a operaciones con volumen."
+                    "text": "OptimoRoute pública 35,10 US$ por conductor y mes en el plan Lite y 44,10 US$ en el plan Pro, ambos con facturación anual y con un descuento del 10 % declarado para la suscripción anual frente a la mensual. Una flota de cinco conductores en plan Lite cuesta 175,50 US$ al mes, y una de diez conductores en plan Pro cuesta 441 US$ al mes. El plan Custom, para más de mil pedidos de planificación simultáneos, se presupuesta. El precio es por conductor, no por empleado de oficina."
                 }
             },
             {
                 "@type": "Question",
-                "name": "¿Merece la pena la IA para una empresa de transporte pequena?",
+                "name": "¿Cuánto cuesta la digitalización de documentos en logística?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Si, y es de las aplicaciones de IA con retorno mas directo: una flota de 5 vehiculos que usa optimizacion de rutas recorta tipicamente un 10-20% de kilometros y tiempo de reparto, segun datos de los propios fabricantes — un ahorro que, segun esas mismas estimaciones, suele compensar con holgura los ≈128 euros mensuales de licencia. El siguiente paso rentable es la digitalizacion de documentos (albaranes y partes) con IA."
+                    "text": "Más de lo que suele decirse. Rossum pública su plan Starter desde 18.000 US$ al año, que equivalen a 1.500 US$ al mes antes de volumen, integración ni revisión de excepciones. No hay precio público para Route4Me ni para el resto de plataformas del sector. Por eso la comparación útil no es de importes, sino de condiciones: precio base anual, coste por documento a partir de qué volumen cambia, coste de integración, número de documentos incluidos y destino del histórico existente."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Un chatbot puede leer un albarán o un CMR escaneado?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Un asistente conversacional lee bien un documento digital, pero un escaneo es una imagen con texto dudoso. Y hay dos diferencias que van más allá de la calidad del escaneo: el albarán escaneado puede no tener firma de recepción visible, así que no prueba que la mercancía se recibiera; y el CMR manuscrito contiene reservas cuyo valor probatorio depende de la fecha y de la firma, elementos que la extracción de texto no conserva. Para eso existe la captura documental con validación, no el chat."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué cambia en aduanas a partir de 2026?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La reforma aduanera de la Unión Europea fue adoptada por el Parlamento Europeo y el Consejo el 16 de septiembre de 2026 y se publicó como Reglamento (UE) 2026/2108. El dato que afecta al importador es que desde el 1 de julio de 2026 se suprime la exención de derechos de aduanas para los envíos de hasta 150 euros y se aplica un arancel temporal de 3 euros a las compras en línea. Mientras el centro de datos aduanero no esté operativo, se aplicarán los aranceles ordinarios según la Comisión Europea. Eso convierte la clasificación del artículo en un dato con coste económico directo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿La IA en logística está sujeta al AI Act?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El calendario es el que hay que tener presente: prohibiciones y artículo 4 desde el 2 de febrero de 2025, modelos de propósito general desde el 2 de agosto de 2025, transparencia del artículo 50 desde el 2 de agosto de 2026, aplicación general y alto riesgo desde el 2 de agosto de 2027 y alto riesgo en productos regulados desde el 2 de agosto de 2028. Para un operador privado, el anexo III alcanza en el punto 2 al tráfico rodado como componente de seguridad, y en los puntos 6 y 7 a las autoridades garantes del cumplimiento del Derecho y al control fronterizo, ninguno de los cuales describe a una Empresa de reparto."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto tiempo tarda una herramienta de rutas en devolver el dinero?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El cálculo es directo y sale de dos números. El desembolso anual es doce por el número de conductores por el precio por conductor. El ahorro se mide en kilómetros sobre una línea base de dos semanas. Estimación propia: diez conductores que pierden un 8 % de rutas hechas a mano, unos 1.800 kilómetros mensuales en conjunto, con un desembolso de 4.212 US$ al año en plan Lite, dan un coste de 2,43 US$ por kilómetro ahorrado. Si tu operación gasta más por kilómetro, la compra se paga sola."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Hace falta integrar la IA con el ERP o el TMS?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Para analizar datos e informes, no. Para que el optimizador de rutas reciba pedidos y para que la captura documental volque al sistema contable, sí, y esa integración es el trabajo real. El umbral para contratar un integrador es simple: cuando el trabajo técnico que falta te impide empezar. Si el optimizador ya se usa y funciona, no necesitas a nadie; si no recibe pedidos porque nadie lo ha conectado al ERP, la herramienta que elijas es irrelevante hasta que se conecte."
                 }
             }
         ]
@@ -134,7 +147,7 @@
 
             <div class="methodology-banner">
                 <span class="methodology-icon" aria-hidden="true"></span>
-                <p><strong>Metodología:</strong> Análisis basado en documentación oficial de cada fabricante, datos del sector logístico y precios verificados en portales de compradores, actualizado a septiembre 2026.</p>
+                <p><strong>Metodología:</strong> Precios, condiciones y límites tomados de las páginas oficiales de cada proveedor y de la documentación de la Comisión Europea sobre la reforma aduanera. Verificado el <strong>3 de octubre de 2026</strong>. Sin puntuaciones propias y sin rangos de mercado sin fuente.</p>
             </div>
 
             <div class="article-header">
@@ -143,281 +156,670 @@
                 <p class="article-subtitle">El margen en logística vive en los detalles: kilómetros de más, esperas, documentos mal transcritos y previsiones que fallan. La IA de 2026 ataca exactamente esos cuatro puntos, con soluciones que van de 30 euros al mes a proyectos enterprise.</p>
                 <div class="article-meta-bar">
                     <span class="meta-author">Por el equipo de IA TodoPyme</span>
-                    <span class="meta-date">9 septiembre 2026</span>
-                    <span class="meta-reading">13 min de lectura</span>
-                    <span class="meta-updated">Actualizado: septiembre 2026</span>
+                    <span class="meta-date">7 octubre 2026</span>
+                    <span class="meta-reading">25 min de lectura</span>
+                    <span class="meta-updated">Actualizado: 7 octubre 2026</span>
                 </div>
             </div>
 
             <div class="article-content">
-
                 <div class="tldr-box">
-                    <h2>Resumen rápido</h2>
                     <ul>
-                        <li><strong>Precio de entrada:</strong> desde 32 €/mes por vehículo en optimización de rutas (OptimoRoute, Route4Me)</li>
-                        <li><strong>Ideal para:</strong> flotas de reparto, almacenes y operadores que quieren recortar kilómetros, esperas y errores de documentación</li>
-                        <li><strong>Puntos fuertes:</strong> retorno directo y medible (km, litros, horas), digitalización de documentos con IA, visibilidad de extremo a extremo</li>
-                        <li><strong>Puntos débiles:</strong> las soluciones de almacén y previsión son enterprise, la integración con el ERP es laboriosa y el sector arrastra brecha de digitalización</li>
+                        <li><strong>Veredicto en cuatro líneas:</strong> para una operación de reparto de menos de diez vehículos, la compra que se justifica sola es un optimizador de rutas por conductor. Todo lo demás se decide después de esa.</li>
+                        <li><strong>El precio verificado:</strong> OptimoRoute pública 35,10 US$ por conductor y mes en el plan Lite y 44,10 US$ en el plan Pro, ambos con facturación anual.</li>
+                        <li><strong>La advertencia:</strong> la digitalización de documentos no es una compra pequeña. Rossum pública su plan Starter desde 18.000 US$ al año, y esa cifra multiplicada debe entrar en el cálculo antes de ilusionarse.</li>
+                        <li><strong>El ángulo que nadie explica:</strong> un albarán, un CMR y una factura no son el mismo objeto. Un sistema lee el documento escaneado mucho peor de lo que sugiere la demostración comercial.</li>
                     </ul>
-                </div>
-
-                <div class="callout callout-info">
-                    <strong>Cómo leer esta guía:</strong> la logística tiene escalas muy distintas: la flota de 4 furgonetas de un distribuidor local y la red global de un 3PL no comparten herramientas. Hemos ordenado las soluciones por tamaño de operación para que encuentres tu escalón sin pagar de más.
                 </div>
 
                 <div class="toc">
                     <h3>Índice</h3>
                     <ol>
-                        <li><a href="#que-es">Dónde genera dinero la IA en logística</a></li>
-                        <li><a href="#herramientas">Las 8 herramientas por eslabón de la cadena</a></li>
-                        <li><a href="#como-elegir">Cómo elegir según tu operación</a></li>
-                        <li><a href="#precios">Tabla comparativa de precios</a></li>
-                        <li><a href="#errores">Errores habituales al digitalizar logística</a></li>
-                        <li><a href="#veredicto">Veredicto por perfil de operador</a></li>
-                        <li><a href="#faq">Preguntas frecuentes</a></li>
+                        <li><a href="#la-respuesta-corta">La respuesta corta en cuatro líneas</a></li>
+                        <li><a href="#por-que-las-comparativas-de-precio-de-logistica-no-sirven">Por qué las comparativas de precio de logística no sirven</a></li>
+                        <li><a href="#el-coste-real-de-diez-conductores">El coste real de diez conductores</a></li>
+                        <li><a href="#los-planes-de-Empresa-publicados-en-octubre-de-2026">Los planes de Empresa publicados en octubre de 2026</a></li>
+                        <li><a href="#dato-estructurado-o-documento-la-diferencia-que-decide-el-proyecto">Dato estructurado o documento: la diferencia que decide el proyecto</a></li>
+                        <li><a href="#los-precios-publicados-de-cada-fabricante">Los precios publicados de cada fabricante</a></li>
+                        <li><a href="#el-corte-que-decide-la-compra">El corte que decide la compra: SSO, SCIM, auditoría y SLA</a></li>
+                        <li><a href="#rgpd-en-la-ultima-milla">RGPD en la última milla: direcciones, teléfonos e historiales</a></li>
+                        <li><a href="#el-ai-act-y-la-reforma-aduanera-de-la-ue">El AI Act y la reforma aduanera de la UE</a></li>
+                        <li><a href="#tabla-comparativa-de-herramientas-de-logistica">Tabla comparativa de herramientas de logística</a></li>
+                        <li><a href="#tabla-por-caso-de-uso">Tabla por caso de uso: si haces esto, usa esto</a></li>
+                        <li><a href="#los-18000-dolares-de-rossum-no-son-una-compra-pequena">Los 18.000 dólares de Rossum no son una compra pequeña</a></li>
+                        <li><a href="#lo-que-debe-hacer-siempre-una-persona">Lo que debe hacer siempre una persona</a></li>
+                        <li><a href="#errores-de-implantacion-y-cuanto-cuestan">Errores de implantación y cuánto cuestan</a></li>
+                        <li><a href="#plan-de-90-dias">Plan de 90 días con hitos verificables</a></li>
+                        <li><a href="#cuando-contratar-un-integrador">Cuándo contratar un integrador</a></li>
+                        <li><a href="#veredicto-por-perfil-de-operador">Veredicto por perfil de operador</a></li>
+                        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                        <li><a href="#fuentes">Fuentes</a></li>
                     </ol>
                 </div>
 
-                <h2 id="que-es">Dónde genera dinero la IA en logística</h2>
+                <h2 id="la-respuesta-corta">La respuesta corta en cuatro líneas</h2>
 
-                <p>La logística es un negocio de márgenes sobre costes variables: combustible, horas de conductor, espacio de almacén, errores de picking y demoras. La IA genera dinero en cuatro puntos exactos. <strong>En la ruta:</strong> el algoritmo calcula la secuencia óptima de entregas considerando ventanas horarias, tráfico y capacidad, y recorta el 10-20% de kilómetros que el planner humano no ve. <strong>En el almacén:</strong> los robots y los sistemas de asignación de tareas reducen los recorridos de picking y los errores de preparación. <strong>En la previsión:</strong> la demanda prevista con IA ajusta compras, stock y capacidad de transporte, evitando el doble coste de la rotura y del excedente. <strong>En los datos:</strong> los documentos (albaranes, partes de entrega, facturas de transporte) se extraen y validan automáticamente, eliminando la tecleación y sus errores.</p>
+                <p><strong>IA para logística</strong> no es una categoría de producto: son cuatro problemas distintos con cuatro Compras distintas, y confundirlos es la razón más común de que una pyme pague una licencia de miles de euros al mes y no vea retorno. La respuesta corta empieza por separar los cuatro.</p>
 
-                <p>El detalle importante: la logística es de los sectores donde la IA tiene el retorno más directo y medible, porque la métrica ya existe (kilómetros, horas, tanto por ciento de error). No hace falta un modelo de atribución: se compara la ruta del martes antes y después. Esa misma medibilidad es la que permite decidir con datos si una herramienta se queda o se devuelve.</p>
+                <p>El primer problema es <strong>el reparto</strong>: rutas mal hechas, kilómetros de más y esperas. Aquí la herramienta se compra por conductor y se paga por conductor, y es la única compra de ésta lista que se amortiza con las mismas semanas en que se firma. El segundo es <strong>el almacén</strong>: recorridos de picking y errores de preparación. El tercero es <strong>la previsión</strong>: rotura y excedente, que cuestan dinero invisible en la cuenta de resultados. El cuarto es <strong>el documento</strong>: albaranes y facturas tecleados a mano.</p>
 
-                <h2 id="herramientas">Las 8 herramientas por eslabón de la cadena</h2>
+                <p>La cuarta línea es la que más se salta: <strong>el orden importa</strong>. Un operador de diez vehículos que compra previsión de demanda antes de tener el stock fiable va a tomar mejores decisiones sobre datos equivocados. Primero rutas, después datos, después almacén, y el documento cuando la operación ya tenga volumen suficiente para pagarlo.</p>
 
-                <h3>Optimización de rutas y reparto</h3>
+                <p>Y una advertencia de método antes de entrar en cifras: de las ocho herramientas que aparecen en este artículo, <strong>cuatro no publican ningún precio</strong>. Cualquier comparativa que rellene esa columna está inventing, y una invención en una tabla de precios se convierte en un presupuesto que no existe.</p>
 
-                <p><strong>1. OptimoRoute</strong> — Planificador de rutas con IA para flotas de reparto: introduce los pedidos del día, los vehículos y las ventanas horarias, y el algoritmo genera las rutas optimizadas (orden de paradas, tiempos, carga) en minutos. Incluye seguimiento GPS, prueba de entrega con foto y comunicación con el conductor desde su app. Es la herramienta de entrada estándar para distribuidores y repartos locales.</p>
-                <p><strong>Para qué sirve:</strong> flotas de 2 a 200 vehículos con entregas diarias. El retorno típico declarado por clientes: 10-20% menos de kilómetros y una hora o más por vehículo y día.</p>
-                <p><strong>Precio:</strong> desde 35,40 USD/vehículo/mes (≈32 €) en facturación anual; el primer vehículo y hasta 3.000 direcciones son gratis. Prueba de 30 días.</p>
-
-                <p><strong>2. Route4Me</strong> — Competidor directo con enfoque más flexible para operaciones que cambian de rutas sobre la marcha: optimización en tiempo real, planos de parada multivehículo y API para integrar con el ERP o el TMS propio. Popular entre empresas con flotas mixtas y rutas dinámicas (servicios técnicos, mensajería, mantenimiento).</p>
-                <p><strong>Para qué sirve:</strong> operaciones donde las paradas se añaden el mismo día (avisos, urgencias) y donde el planner necesita recalcular sobre la marcha.</p>
-                <p><strong>Precio:</strong> desde 39,95 USD/vehículo/mes (≈36 €) en el plan de pago; plan gratuito limitado de prueba. Precios por volumen para flotas grandes.</p>
-
-                <h3>Almacén y picking</h3>
-
-                <p><strong>3. Locus Robotics</strong> — Robots móviles autónomos (AMR) de picking colaborativo para almacenes: el robot lleva la estantería hasta el operario, que solo hace el pick sin caminar. La IA del sistema asigna tareas, equilibra rutas y prioriza pedidos en tiempo real. Es el líder del segmento con miles de robots desplegados y clientes como DHL o Boots.</p>
-                <p><strong>Para qué sirve:</strong> almacenes con picking de media y alta rotación (ecommerce, farma, retail) donde el operario pierde el 50-70% de su jornada caminando. El multiplicador típico declarado: 2-3 veces la productividad de picking por empleado.</p>
-                <p><strong>Precio:</strong> modelo robot-as-a-service: rango habitual de 2.000-4.000 €/mes por robot según contrato y volumen. Proyecto con análisis previo del almacén; no apto para operaciones de pocos miles de líneas diarias.</p>
-
-                <p><strong>4. Sistemas de gestión de almacén con IA (WMS inteligentes)</strong> — Los WMS modernos (tipo Manhattan Active, o en el mercado español Apli, Loginser, Grupo LDC) incorporan IA para asignar ubicaciones óptimas (slotting), equilibrar la carga de trabajo y prever picos. No es una herramienta, es una capa: si tu almacén ya tiene WMS, la pregunta es si tu versión incluye asignación inteligente de tareas, reconteo cíclico predictivo y optimización de picking por oleadas.</p>
-                <p><strong>Para qué sirve:</strong> almacenes que quieren sacar más de la infraestructura actual sin cambiar de sistema. El slotting con IA reduce los recorridos internos un 20-30% en almacenes mal ubicados.</p>
-                <p><strong>Precio:</strong> los módulos de IA vienen en los planes superiores de cada WMS; rango habitual de 500-2.000 €/mes adicionales según licencia y volumen.</p>
-
-                <h3>Previsión de demanda y planificación</h3>
-
-                <p><strong>5. Blue Yonder</strong> — La plataforma de planificación de la cadena de suministro (antes JDA): previsión de demanda, planificación de inventario, S&OP y transporte. Su IA combina histórico, estacionalidad, promociones y factores externos para prever la demanda con más precisión que los modelos manuales, y se usa en retail, gran consumo y fabricación.</p>
-                <p><strong>Para qué sirve:</strong> operaciones con catálogos amplios y estacionalidad marcada donde el excedente o la rotura cuestan mucho. Es una plataforma enterprise de implantación larga.</p>
-                <p><strong>Precio:</strong> sin precio público; proyectos enterprise con licencias anuales que según datos de mercado parten de 50.000-100.000 €/año según módulos y alcance.</p>
-
-                <h3>Visibilidad de la cadena de suministro</h3>
-
-                <p><strong>6. FourKites</strong> — Plataforma de visibilidad en tiempo real: conecta con transportistas, GPS, puertos y aduanas para mostrar dónde está cada envío y predecir cuándo llegará, con alertas de retraso y causas. Su IA estima la hora de llegada de cada movimiento y detecta anomalías antes de que impacten al cliente. Es el estándar para importadores y 3PL con cadenas internacionales.</p>
-                <p><strong>Para qué sirve:</strong> operaciones con envíos internacionales o multicanal donde la pregunta "¿dónde está mi pedido?" consume horas de seguimiento manual y donde el retraso mal comunicado cuesta clientes.</p>
-                <p><strong>Precio:</strong> sin precio público; suscripción enterprise por volumen de envíos, rango desde decenas de miles de euros anuales.</p>
-
-                <h3>Procesamiento de documentos con IA</h3>
-
-                <p><strong>7. Rossum</strong> — Plataforma de captura de datos con IA para documentos logísticos y financieros: albaranes, partes de entrega, facturas, CMR y conocimientos de embarque. Lee el documento, extrae los datos relevantes, los valida contra el ERP y los introduce sin tecleación manual, con revisión puntual del operador. Reduce el trabajo de captura en un 80-90% y elimina los errores de transcripción.</p>
-                <p><strong>Para qué sirve:</strong> operadores que gestionan cientos o miles de documentos al mes y pagan horas de administrativo para teclearlos. Es la aplicación de IA con mejor retorno en oficinas de transporte pequeñas y medianas.</p>
-                <p><strong>Precio:</strong> sin precio público en euros; rango habitual de 300-800 €/mes según volumen de documentos, con planes por página.</p>
-
-                <h3>Análisis de datos operativos</h3>
-
-                <p><strong>8. ChatGPT / Claude para análisis logístico</strong> — Los asistentes generales sirven para el análisis ad hoc de datos operativos: comparar costes por ruta, detectar patrones de retraso, redactar informes de servicio e interpretar datos exportados del TMS o del WMS. No sustituyen a las plataformas especializadas, pero cubren los análisis que no justifican una licencia enterprise.</p>
-                <p><strong>Para qué sirve:</strong> equipos pequeños que quieren sacar conclusiones de sus datos sin un departamento de analítica. La condición: los datos exportados no deben incluir información sensible de clientes sin control.</p>
-                <p><strong>Precio:</strong> 20 USD/mes (≈18 €) por asiento en ChatGPT Plus o Claude Pro.</p>
-
-                <h2 id="como-elegir">Cómo elegir según tu operación</h2>
-
-                <ul>
-                    <li><strong>Distribuidor local (1-10 vehículos):</strong> OptimoRoute o Route4Me (32-36 €/vehículo/mes) + digitalización de documentos con Rossum si la oficina ahoga en papel. La optimización de rutas sola ya paga la suscripción.</li>
-                    <li><strong>Operador mediano (10-100 vehículos, almacén propio):</strong> añade módulos de IA de tu WMS actual (slotting, asignación de tareas) y evalúa previsión de demanda si gestionas stock. Coste: 500-2.000 €/mes adicionales.</li>
-                    <li><strong>3PL o cadena internacional:</strong> FourKites para visibilidad, Blue Yonder para planificación, Locus Robotics si el picking es cuello de botella. Presupuesto: proyectos de seis cifras anuales con implantación medida en trimestres.</li>
-                </ul>
-
-                <div class="callout callout-tip">
-                    <strong>La métrica que decide:</strong> para cualquier herramienta logística define antes la unidad de medida (km por parada, líneas por hora, horas de captura de documentos, % de entregas a tiempo). Mide dos semanas sin la herramienta y dos semanas con ella. En logística, el retorno se ve en semanas, no en meses — si no se ve, no se renueva.
+                <div class="callout">
+                    <strong>Cómo leer ésta guía:</strong> la logística tiene escalas que no comparten herramientas. Una flota de cuatro furgonetas y una red global de un 3PL no se gestionan con el mismo producto ni con el mismo presupuesto. Cada sección indica el tamaño de operación para el que la decisión tiene sentido.
                 </div>
 
-                <h2 id="precios">Tabla comparativa de precios</h2>
+                <h2 id="por-que-las-comparativas-de-precio-de-logistica-no-sirven">Por qué las comparativas de precio de logística no sirven</h2>
 
-                <p>Precios en euros según tarifas oficiales de cada fabricante (septiembre 2026), con el valor en USD original entre paréntesis cuando aplica.</p>
+                <p>La comparación habitual empieza con la suscripción de una persona, la multiplica por el número de empleados y llama al resultado «coste de IA en logística». En logística eso falla por tres motivos que ninguna otra Comparación sectorial sufre.</p>
 
-                <div class="price-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Herramienta</th>
-                                <th>Precio de entrada</th>
-                                <th>Modelo</th>
-                                <th>Eslabón</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>OptimoRoute</strong></td>
-                                <td>~32 €/vehículo/mes (35,40 USD) anual</td>
-                                <td>Por vehículo</td>
-                                <td>Rutas y reparto</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Route4Me</strong></td>
-                                <td>~36 €/vehículo/mes (39,95 USD)</td>
-                                <td>Por vehículo</td>
-                                <td>Rutas dinámicas</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Locus Robotics</strong></td>
-                                <td>~2.000-4.000 €/mes por robot</td>
-                                <td>Robots como servicio</td>
-                                <td>Picking de almacén</td>
-                            </tr>
-                            <tr>
-                                <td><strong>WMS con IA</strong></td>
-                                <td>~500-2.000 €/mes adicionales</td>
-                                <td>Módulos sobre licencia</td>
-                                <td>Almacén</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Blue Yonder</strong></td>
-                                <td>Enterprise (50.000-100.000 €/año)</td>
-                                <td>Licencia enterprise</td>
-                                <td>Previsión y S&OP</td>
-                            </tr>
-                            <tr>
-                                <td><strong>FourKites</strong></td>
-                                <td>Enterprise (decenas de miles €/año)</td>
-                                <td>Por volumen de envíos</td>
-                                <td>Visibilidad internacional</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Rossum</strong></td>
-                                <td>~300-800 €/mes por volumen</td>
-                                <td>Por documento</td>
-                                <td>Documentos y datos</td>
-                            </tr>
-                            <tr>
-                                <td><strong>ChatGPT Plus / Claude Pro</strong></td>
-                                <td>18 €/mes por asiento</td>
-                                <td>Por asiento</td>
-                                <td>Análisis de datos</td>
-                            </tr>
-                            <tr class="highlight-row">
-                                <td><strong>Stack básico flota 5 vehículos</strong></td>
-                                <td colspan="3"><strong>≈128 €/mes:</strong> OptimoRoute x4 (≈128 €) = planificación de rutas con retorno en km y horas desde la primera semana</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h3>Motivo uno: la unidad de cobro no es la persona, es el recurso físico</h3>
+
+                <p>Un optimizador de rutas no se vende por usuario, sino por conductor, y eso tiene una consecuencia lógica: <strong>el coste escala con la flota, no con la oficina</strong>. Una Empresa con cuatro vehículos y un empleado de oficina paga cuatro licencias, no cinco. Una Empresa con veinte vehículos y tres planificadores paga veinte. El resultado es contraintuitivo: la operación pequeña tiene un coste por empleado mayor que la grande.</p>
+
+                <p>Ese rasgo hace inútil cualquier comparación hecha por empleado. La pregunta correcta es cuántos conductores hay, cuántas paradas hacen y cuántas ventanas horarias hay que respetar. Con esas tres respuestas y el precio por conductor se resuelve el 90 % de la decisión.</p>
+
+                <h3>Motivo dos: cuatro de las herramientas no tienen precio público</h3>
+
+                <p>La digitalización documental, la visibilidad de cadena de suministro, la previsión de demanda y la automatización de almacén son, todas ellas, productos de proyecto. Se cotizan por volumen de documentos, por número de envíos o por número de pedidos planificados, y el precio se negocia. Eso no es un defecto: es cómo se venden. Pero significa que la única comparación sería con ellas es de condiciones, no de importes.</p>
+
+                <p>El caso de la digitalización de documentos es el más engañoso, y por eso tiene su propia sección más abajo. Rossum pública su plan Starter desde 18.000 US$ al año. Esa cifra es pública, y cualquier artículo que describa la digitalización documental como una herramienta de trescientos o cuatrocientos euros al mes está simplemente equivocado, por muy bien escrito que esté.</p>
+
+                <h3>Motivo tres: el retorno depende de una métrica que nadie declara</h3>
+
+                <p>La pregunta que separa las compras buenas de las malas en logística es: <strong>¿cuál es el número que va a mejorar?</strong> Kilómetros por parada, líneas por hora, porcentaje de entregas a tiempo, minutos de captura por documento. Si la respuesta es «todos», la compra no está medida y probablemente no se pueda renovar con argumentos.</p>
+
+                <p>Hay además una trampa de medición que conviene conocer antes de empezar. Una ruta con menos kilómetros puede ser peor si acumula esperas en cada parada, y las esperas no se ven en el cuentakilómetros. La optimización se evalúa sobre el coste total del servicio, incluidos los incumplimientos de ventana horaria y el desgaste del vehículo por recorridos cortos y lentos.</p>
+
+                <h2 id="el-coste-real-de-diez-conductores">El coste real de diez conductores</h2>
+
+                <p>ésta es la tabla que casi no existe en el sector, y es la que permite decidir. Usa el precio por conductor que OptimoRoute pública, con su condición de pago, porque una comparación sin la condición de pago es una comparación falsa.</p>
+
+                <div class="callout">
+                    <strong>Precio por conductor verificado el 3 de octubre de 2026.</strong> OptimoRoute declara 35,10 US$ por conductor y mes en el plan Lite y 44,10 US$ por conductor y mes en el plan Pro, ambos con facturación anual, y advierte de un 10 % de descuento en la suscripción anual sobre la mensual. La facturación es en dólares y la aplica el proveedor.
                 </div>
-
-                <h2 id="errores">Errores habituales al digitalizar logística</h2>
-
-                <ul>
-                    <li><strong>Comprar el módulo de IA de un sistema que no se usa bien:</strong> el slotting con IA no arregla un WMS con stocks mal actualizados. Primero disciplina de datos, después IA.</li>
-                    <li><strong>Ignorar la integración con el ERP:</strong> la herramienta que planifica rutas debe hablar con el sistema de pedidos; la que extrae documentos debe volcar al ERP. Muchas licencias compradas “para probar” se abandonan porque la integración resultó más cara que la suscripción.</li>
-                    <li><strong>Evaluar la optimización de rutas solo por kilómetros:</strong> el ahorro real incluye horas del conductor, penalizaciones por ventanas horarias y desgaste. Una ruta con menos km pero con esperas en cada parada puede ser peor. Mide el coste total, no solo el cuentakilómetros.</li>
-                    <li><strong>Subestimar la resistencia del equipo:</strong> un planner experimentado puede ver la optimización con IA como una amenaza a su criterio. La implantación funciona cuando la herramienta “propone” y el planner “decide”, no cuando se impone sin explicación.</li>
-                    <li><strong>Datos de clientes en herramientas sin control:</strong> los datos de entregas (direcciones, destinatarios, referencias) son datos personales en muchos casos. La gestión de flotas y la documentación deben cumplir RGPD, incluidos los contratos con los proveedores de IA.</li>
-                </ul>
-
-                <div class="callout callout-warning">
-                    <strong>RGPD en la última milla:</strong> la dirección del destinatario, el teléfono y el histórico de entregas son datos personales. Los sistemas de rutas, visibilidad y documentos tratan esos datos: exige a cada proveedor su contrato de encargado de tratamiento (DPA) y verifica dónde se almacenan antes de conectar tu operación.
-                </div>
-
-                <h2 id="duelo">OptimoRoute vs Route4Me: el duelo</h2>
-
-                <p>Los dos planificadores de rutas que dominan el segmento de flotas de reparto, frente a frente:</p>
 
                 <div class="comparison-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Criterio</th>
                                 <th>OptimoRoute</th>
-                                <th>Route4Me</th>
+                                <th>Precio por conductor</th>
+                                <th>OptimoRoute</th>
+                                <th>10 conductores al mes</th>
+                                <th>10 conductores al año</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td><strong>Precio</strong></td>
-                                <td>Desde ~32 €/vehículo/mes (35,40 USD) en anual</td>
-                                <td>Desde ~36 €/vehículo/mes (39,95 USD)</td>
+                            <tr class="highlight-row">
+                                <td><strong>OptimoRoute Lite</strong></td>
+                                <td>35,10 US$</td>
+                                <td>Facturación anual, descuento del 10 % frente a la mensual</td>
+                                <td>351 US$</td>
+                                <td>4.212 US$</td>
                             </tr>
                             <tr>
-                                <td><strong>Optimización</strong></td>
-                                <td>Rutas optimizadas en minutos: paradas, tiempos y carga</td>
-                                <td>Optimización en tiempo real y planos de parada multivehículo</td>
+                                <td><strong>OptimoRoute Pro</strong></td>
+                                <td>44,10 US$</td>
+                                <td>Facturación anual, descuento del 10 % frente a la mensual</td>
+                                <td>441 US$</td>
+                                <td>5.292 US$</td>
                             </tr>
                             <tr>
-                                <td><strong>Flexibilidad en ruta</strong></td>
-                                <td>Orientada a entregas diarias planificadas</td>
-                                <td>Pensada para operaciones que cambian las paradas el mismo día</td>
+                                <td><strong>OptimoRoute Custom</strong></td>
+                                <td>Almacén</td>
+                                <td>Más de mil pedidos de planificación simultáneos</td>
+                                <td>Sin cifra</td>
+                                <td>Sin cifra</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Route4Me</strong></td>
+                                <td>Sin cifra pública en su página de planes</td>
+                                <td>Precios por volumen para flotas grandes</td>
+                                <td>Sin cifra</td>
+                                <td>Sin cifra</td>
                             </tr>
                             <tr>
                                 <td><strong>Integración</strong></td>
-                                <td>App de conductor con seguimiento GPS y prueba de entrega con foto</td>
-                                <td>API para integrar con tu ERP o TMS propio</td>
+                                <td>Desde 18.000 US$ al año</td>
+                                <td>Plan Starter de la página oficial de precios</td>
+                                <td>Desde 1.500 US$</td>
+                                <td>Desde 18.000 US$</td>
                             </tr>
                             <tr>
-                                <td><strong>Mejor para</strong></td>
-                                <td>Distribuidores y repartos locales con rutas estables</td>
-                                <td>Flotas mixtas y rutas dinámicas (servicios técnicos, mensajería)</td>
+                                <td><strong>Locus Robotics</strong></td>
+                                <td>Proyecto con análisis previo del almacén</td>
+                                <td>Robots como servicio</td>
+                                <td>Sin cifra</td>
+                                <td>Sin cifra</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Blue Yonder y FourKites</strong></td>
+                                <td>Proyecto enterprise</td>
+                                <td>Previsión, planificación y visibilidad</td>
+                                <td>Sin cifra</td>
+                                <td>Sin cifra</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <p><strong>Elige OptimoRoute</strong> si eres un distribuidor con entregas diarias planificadas y quieres la herramienta de entrada estándar del sector. <strong>Elige Route4Me</strong> si tu operación añade paradas sobre la marcha y necesitas una API para integrar la planificación con tu ERP o TMS.</p>
+                <p>Ahora la parte que convierte una tabla en una decisión. <strong>La fórmula del desembolso</strong> en una operación de reparto es sencilla: coste anual igual a doce multiplicado por el número de conductores por el precio por conductor, más el coste de integración con el sistema de pedidos si lo hay.</p>
 
-                <h2 id="veredicto">Veredicto por perfil de operador</h2>
+                <p>Y el número que decide es el inverso: <strong>coste anual dividido entre kilómetros ahorrados al año</strong> es lo que cuesta cada kilómetro que dejas de dar. Si ese valor es inferior al coste por kilómetro de tu operación, la compra gana. Y como el coste por kilómetro incluye combustible, mantenimiento y tiempo del conductor, la comparación sale favorable en la mayoría de las flotas de reparto que tienen rutas hechas a mano.</p>
 
-                <div class="rating-box">
-                    <div class="rating-text">
-                        <p>La IA logística de 2026 tiene la ventaja poco común de ser medible: cada herramienta de esta lista se evalúa en kilómetros, horas o líneas por hora, y el retorno aparece en semanas. Para el operador pequeño y mediano, la optimización de rutas y la digitalización documental son decisiones de compra casi automáticas por su relación coste-retorno. Las soluciones enterprise (robots, visibilidad global, previsión) exigen proceso y presupuesto, pero son las que protegen la competitividad en operaciones grandes. En todos los escalones, la regla es la misma: la IA decide con datos, el humano decide con criterio, y la disciplina de datos (stocks reales, documentos al día) es la condición previa de cualquier retorno.</p>
-                    </div>
+                <div class="callout">
+                    <strong>Estimación propia, con supuestos visibles.</strong> Una operación con diez conductores que pierde un 8 % de kilómetros por rutas hechas a mano recorre, <strong>Estimación propia</strong>, unos 1.800 kilómetros al mes en conjunto: dieciocho kilómetros al día por conductor en una ruta urbana de reparto. Un 8 % son 144 kilómetros al mes. Con el plan Lite a 35,10 US$ por conductor y mes, el desembolso anual es de 4.212 US$, y el coste por kilómetro ahorrado queda en <strong>2,43 US$</strong>. Si tu operación gasta más de eso por kilómetro, la compra se paga sola. Son supuestos, no una promesa: mide tus kilómetros antes de firmar.
                 </div>
 
-                <h3>Estas herramientas son para ti si:</h3>
-                <ul>
-                    <li>Planificas rutas a mano o con herramientas básicas y tu flota supera los 2-3 vehículos</li>
-                    <li>Tu oficina teclea albaranes, partes o facturas de transporte manualmente</li>
-                    <li>Sufres roturas o excedentes de stock que se podrían haber previsto</li>
-                    <li>Tus clientes preguntan “¿dónde está mi pedido?” más de lo que te gustaría</li>
-                </ul>
+                <h2 id="los-planes-de-Empresa-publicados-en-octubre-de-2026">Los planes de Empresa publicados en octubre de 2026</h2>
 
-                <h3>Estas herramientas NO son para ti si:</h3>
-                <ul>
-                    <li>Tus datos operativos están desactualizados y no estás dispuesto a disciplinarlos primero</li>
-                    <li>Tu operación es demasiado pequeña para amortizar la licencia (una flota de 1 vehículo no necesita optimizador)</li>
-                    <li>No tienes presupuesto para la integración con tu ERP (a menudo el coste olvidado)</li>
-                    <li>El equipo no está dispuesto a cambiar el flujo de trabajo (sin adopción, no hay retorno)</li>
-                </ul>
+                <p>La IA de uso general entra en la operación por la puerta de atrás: dos o tres personas la usan para analizar datos antes de que exista un sistema que la reparta. Esa puerta tiene un precio por asiento que es el mejor publicado del mercado, y una lista de funciones de gobierno que decide si el dato entra o no.</p>
 
-                <div class="callout callout-info">
-                    <strong>Nota de conversión:</strong> precios en USD según tarifas oficiales de cada fabricante (septiembre 2026). Equivalencia aproximada en EUR: 1 USD = 0,91 EUR. El precio final lo fija siempre la facturación del fabricante.
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Plan de Empresa</th>
+                                <th>Precio por asiento</th>
+                                <th>Condición y mínimo</th>
+                                <th>Dónde encaja en logística</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td><strong>ChatGPT Business Standard</strong></td>
+                                <td>21 €</td>
+                                <td>Euros, facturación anual, de 2 a 200 asientos</td>
+                                <td>Análisis de datos del TMS, informes de servicio, resúmenes de incidencias</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ChatGPT Business Premium</strong></td>
+                                <td>105 €</td>
+                                <td>Euros, facturación anual, de 2 a 200 asientos</td>
+                                <td>Uso intensivo de análisis sobre volúmenes grandes de datos de flota</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Claude Team</strong></td>
+                                <td>20 US$</td>
+                                <td>Dólares, pago anual (25 US$ si es mensual), de 2 a 150 asientos</td>
+                                <td>Lectura de documentos de carga largos y contratos de transporte</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Workspace Business Standard</strong></td>
+                                <td>13,60 €</td>
+                                <td>Euros, España, mínimo un usuario</td>
+                                <td>Cuando la operación ya vive entera en Gmail, Sheets y Drive</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Workspace Business Plus</strong></td>
+                                <td>21,10 €</td>
+                                <td>Euros, España, mínimo un usuario</td>
+                                <td>Igual, con más margen de almacenamiento y de identidad</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gemini Enterprise Business</strong></td>
+                                <td>Desde 21 US$</td>
+                                <td>Dólares, hasta 300 asientos</td>
+                                <td>Cuando la Empresa ya paga Google y sólo quiere añadir IA</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ChatGPT Enterprise</strong></td>
+                                <td>Precio a consultar</td>
+                                <td>Sin precio público</td>
+                                <td>sólo si hace falta residencia en la UE o cifrado con claves propias</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <h2 id="faq">Preguntas frecuentes</h2>
+                <p>Lo que esa tabla no dice es lo que más importa en una operación con datos de clientes. El acceso único y los registros de auditoría no vienen en ningún plan individual, sólo en los de Empresa, y en una operación de reparto esos datos no son usuarios tuyos: son direcciones de terceros, teléfonos y referencias de entrega. Sin un contrato de Empresa no hay quién responda, no hay registro y no hay plazo de retención conocido.</p>
 
-                <h3>¿Qué IA se usa en logística en 2026?</h3>
-                <p>Cinco familias: optimización de rutas de reparto (OptimoRoute, Route4Me), robots y automatización de almacén (Locus Robotics), previsión de demanda y planificación (Blue Yonder), visibilidad en tiempo real de la cadena de suministro (FourKites) y procesamiento automático de documentos (Rossum). A ellas se suman los asistentes generales para análisis de datos operativos.</p>
+                <h2 id="dato-estructurado-o-documento-la-diferencia-que-decide-el-proyecto">Dato estructurado o documento: la diferencia que decide el proyecto</h2>
 
-                <h3>¿Cuánto cuesta implementar IA en logística?</h3>
-                <p>La optimización de rutas es la entrada más barata: desde unos 35 dólares por vehículo y mes (unos 32 euros) en OptimoRoute o Route4Me. El procesamiento de documentos con IA parte de rangos de 300-800 euros al mes según volumen. Los robots de almacén y las plataformas enterprise (Blue Yonder, FourKites) son proyectos desde decenas de miles de euros anuales, reservados a operaciones con volumen.</p>
+                <p>Este es el punto técnico que separa un proyecto de digitalización documental que funciona de uno que se abandona al mes tres, y casi nunca aparece explicado en las páginas de los fabricantes. Un albarán, un CMR y una factura <strong>no son tres versiones del mismo objeto</strong>: tienen estructuras distintas, formas distintas de fallar y niveles de fiabilidad muy distintos cuando los lee una IA.</p>
 
-                <h3>¿Merece la pena la IA para una empresa de transporte pequeña?</h3>
-                <p>Sí, y es de las aplicaciones de IA con retorno más directo: una flota de 5 vehículos que usa optimización de rutas recorta típicamente un 10-20% de kilómetros y tiempo de reparto, según datos de los propios fabricantes — un ahorro que, según esas mismas estimaciones, suele compensar con holgura los ≈128 euros mensuales de licencia. El siguiente paso rentable es la digitalización de documentos (albaranes y partes) con IA.</p>
+                <h3>El albarán: el que mejor se lee y el peor se documenta</h3>
+
+                <p>El albarán es, en el mejor de los casos, un documento con campos: número, fecha, origen, destino, número de bultos, peso, referencias y a veces la firma del receptor. Si el emisor lo emite en formato electrónico con esos campos, la extracción es casi perfecta. Si llega en papel escaneado a través de un fax o de un móvil, la lectura depende de la calidad del escaneo y hay que revisar.</p>
+
+                <p>El riesgo del albarán no es la lectura: es la <strong>firma de recepción</strong>. Un albarán escaneado sin firma visible prueba que alguien lo escaneó, no que se recibió la mercancía. Un sistema que extrae las cantidades y las introduce en el ERP sin comprobar la firma está creando un registro de recepción que no tiene respaldo, y ese registro se usa para facturar.</p>
+
+                <h3>El CMR: el documento que más malentendidos genera</h3>
+
+                <p>El CMR es la carta de porte internacional por carretera y tiene una estructura formal, con apartados y reservas concretas sobre la mercancía y el transportista. En la práctica, el CMR se rellena a mano con frecuencia y se photographía. Ahí está el problema: una fotografía de un formulario manuscrito es el peor caso posible para la extracción automática, porque hay que interpretar escritura y además entender el contexto.</p>
+
+                <p>además, el CMR cumple una función probatoria que no se puede delegar en un extractor de texto. Las reservas del transportista —«daños en el embalaje», «falta un bulto»— son una declaración legal, y el momento en que se firma es el que determina la reclamación. Un sistema que extrae el texto de una reserva sin fecha ni firma está perdiendo el elemento más valioso del documento, y además está creando la impresión de que el sistema lo controló.</p>
+
+                <h3>La factura: el único de los tres que es un dato estructurado de verdad</h3>
+
+                <p>La factura es un caso distinto porque su contenido es aritmético y regulado: base imponible, tipo impositivo, cuota, total, número de serie, fecha y datos del emisor. Cuando llega en un formato estructurado, la extracción es precisa. Cuando llega en un PDF escaneado, es la tarea donde más sentido tiene una herramienta de captura documental, porque el error se detecta: las sumas cuadran o no cuadran.</p>
+
+                <p>ésta es la diferencia operativa que resume el problema: <strong>un albarán es un dato sobre un hecho físico y un CMR es una declaración; una factura es un dato con una validación interna</strong>. Las tres cosas sirven para automatizar, pero la confianza en el resultado no es la misma, y quien diseña el flujo tiene que decidir qué revisión humana cada uno exige.</p>
+
+                <h3>Lo que un asistente general no puede hacer con un PDF escaneado</h3>
+
+                <p>Un asistente de IA conversacional lee un documento digital con solvencia: el texto está ahí, es consultable y el modelo puede razonar sobre él. Un PDF escaneado es una imagen con un poco de texto incrustado de forma dudosa. La diferencia entre las dos cosas, en la práctica, es de minutos por documento cuando el escaneo es bueno y de una revisión completa cuando no lo es.</p>
+
+                <p>La consecuencia para el presupuesto es directa: <strong>cada punto de porcentaje que sube el escaneo degrada la automatización de forma no lineal</strong>. Y hay un efecto agregado que casi nadie calcula: un sistema de captura con un 95 % de automatización real no ahorra el 95 % del trabajo, porque el 5 % restante se lleva la mitad del tiempo de la cola. En la práctica, <strong>el ahorro por documento se parece más a un 70 % que a un 95 %</strong>, y es el número con el que hay que construir el presupuesto.</p>
+
+                <div class="callout">
+                    <strong>Prueba de los diez minutos antes de comprar nada.</strong> Coge veinte albaranes reales del último mes, diez escaneados y diez electrónicos, y pásalos por el sistema que te quieren vender. Cuenta cuántos campos salen correctos sin tocar una sola tecla y cuánto tardas en corregir los que salen mal. Ese número, multiplied por el volumen mensual de documentos, es tu verdadero ahorro y vale más que cualquier declaración del fabricante.
+                </div>
+
+                <h2 id="los-precios-publicados-de-cada-fabricante">Los precios publicados de cada fabricante</h2>
+
+                <p>El objetivo de ésta sección es que nadie tenga que buscar tabla por tabla para saber qué está verificado y qué no. Cuatro herramientas tienen precio público y cuatro no lo tienen. La distinction importa porque cambia por completo lo que puedes comparar y lo que tienes que negociar.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>OptimoRoute</th>
+                                <th>Precio público</th>
+                                <th>Unidad de cobro</th>
+                                <th>Eslabón de la cadena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td><strong>Integración</strong></td>
+                                <td>Sí: 35,10 US$ Lite y 44,10 US$ Pro por conductor y mes</td>
+                                <td>Por conductor</td>
+                                <td>Planificación de rutas y reparto</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Route4Me</strong></td>
+                                <td>No en su página de planes</td>
+                                <td>Por vehículo y por volumen</td>
+                                <td>Rutas dinámicas y API para ERP o TMS</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Integración</strong></td>
+                                <td>Sí: Starter desde 18.000 US$ al año</td>
+                                <td>Por volumen de documentos</td>
+                                <td>Captura de datos en documentos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Locus Robotics</strong></td>
+                                <td>No</td>
+                                <td>Proyecto con análisis del almacén</td>
+                                <td>Robots de picking colaborativo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Blue Yonder</strong></td>
+                                <td>No</td>
+                                <td>Licencia enterprise por módulos</td>
+                                <td>Previsión de demanda y S&OP</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Integración</strong></td>
+                                <td>No</td>
+                                <td>Proyecto por volumen de envíos</td>
+                                <td>Visibilidad de la cadena de suministro</td>
+                            </tr>
+                            <tr>
+                                <td><strong>WMS con módulos de IA</strong></td>
+                                <td>Depende de la marca y de la versión</td>
+                                <td>Módulo añadido a la licencia existente</td>
+                                <td>Slotting y asignación de tareas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ChatGPT Business y Claude Team</strong></td>
+                                <td>Sí: 21 € y 20 US$ por asiento al mes</td>
+                                <td>Por asiento, mínimo dos</td>
+                                <td>Análisis de datos y documentación operativa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La observación útil de ésta tabla es que <strong>las dos herramientas con precio más bajo son las de pago por uso físico</strong>, y eso no es casualidad: cuando el fabricante cobra por conductor o por documento, su modelo de ingresos está con el cliente. Cuando cobra por proyecto, su riesgo es de implantación. Los dos modelos cambian la conversación comercial entera.</p>
+
+                <h2 id="el-corte-que-decide-la-compra">El corte que decide la compra: SSO, SCIM, auditoría y SLA</h2>
+
+                <p>En logística el gobierno de acceso no es una función de seguridad de oficina: es una condición para poder trabajar con datos de terceros. Una dirección de entrega con teléfono es dato personal, y un operador que la tiene en una cuenta individual no puede explicar quién la ha visto.</p>
+
+                <p>El acceso único resuelve el problema de las altas y bajas, que en una operación con temporalidad alta —chóferes que entran y salen, refuerzos de verano, personal de sustitución— es un trabajo constante. El aprovisionamiento automático va un paso más allá y hace que el acceso muera con la persona, sin depender de que alguien recuerde hacerlo.</p>
+
+                <p>Los registros de auditoría resuelven una pregunta que aparece en cualquier reclamación: quién consultó el expediente de un envío concreto y cuándo. Sin ese registro, la respuesta a un cliente que dice que nadie le había dado el rastreo de su pedido es una opinion. Con él, es un dato.</p>
+
+                <p>El acuerdo de nivel de servicio importa por una razón muy concreta: en una operación con ventanas horarias, la indisponibilidad del sistema de rutas no cuesta una molestia, cuesta entregas fuera de plazo. Un proveedor que garantiza disponibilidad está asumiendo un coste de infraestructura que se refleja en el precio, y eso es una noticia buena para quien tiene una operación con Penalizaciones por retraso.</p>
+
+                <div class="callout">
+                    <strong>La pregunta que hay que hacer por escrito:</strong> ¿el contenido de mi organización se usa para entrenar modelos? ¿Dónde se almacena y cuánto tiempo se conserva? ¿Qué registro queda de qué ha consultado cada asiento? Una respuesta vaga a cualquiera de las tres es motivo suficiente para no firmar, y en una operación con datos de clientes esa respuesta no es negociable.
+                </div>
+
+                <h2 id="rgpd-en-la-ultima-milla">RGPD en la última milla: direcciones, teléfonos e historiales</h2>
+
+                <p>Un optimizador de rutas trabaja con el dato más sensible de una operación de reparto después del nombre del cliente: la dirección de entrega, el teléfono, el nombre del receptor, el horario de entrega y el historial de qué se entregó y cuándo. Todo eso es tratamiento de datos personales, y entra en el tratamiento cuando lo conectas a un sistema externo.</p>
+
+                <p>La Agencia Española de Protección de Datos ha publicado su criterio sobre adecuación al RGPD en el uso de IA, y la consecuencia práctica aquí es directa: la dirección del destinatario no puede estar en una herramienta de consumo que conserva historial y que puede usar esa información para entrenar. Cuando el optimizador de rutas está contratado como servicio de Empresa y tiene un contrato de encargado de tratamiento, el tratamiento está cubierto. Cuando es una cuenta personal, no lo está.</p>
+
+                <p>Hay un segundo punto que se olvida con frecuencia: <strong>el perfilado del conductor</strong>. Un sistema que recoge datos de posicionamiento y de conducción genera, sin querer, información sobre el comportamiento de una persona identificable. Eso sigue siendo tratamiento de datos personales aunque no se llame «IA» y aunque el nombre del producto no lo diga. La <a href="../../guias/ia-ai-act-cumplimiento/">guía de cumplimiento del AI Act</a> cubre el marco normativo que se aplica a partir de ahora.</p>
+
+                <h2 id="el-ai-act-y-la-reforma-aduanera-de-la-ue">El AI Act y la reforma aduanera de la UE</h2>
+
+                <p>Dos calendarios normativos condicionan la compra de IA en una operación con importación, y ninguno de los dos se puede ignorar hasta 2028. El primero es el Reglamento (UE) 2024/1689, el AI Act. El segundo es la reforma aduanera, adoptada por el Parlamento Europeo y el Consejo el 16 de septiembre de 2026 y publicada como Reglamento (UE) 2026/2108.</p>
+
+                <p>El calendario del AI Act que hay que tener delante arranca antes de lo que parece: las prohibiciones del artículo 5 y la alfabetización del artículo 4 son exigibles desde el <strong>2 de febrero de 2025</strong>, y las obligaciones sobre modelos de propósito general, desde el <strong>2 de agosto de 2025</strong>. Ese segundo hito es el que ya está en vigor y el que obliga a documentar el uso de IA en procesos logísticos. Quedan dos fechas por delante: la aplicación general del Reglamento y el régimen de alto riesgo, el <strong>2 de agosto de 2027</strong>, y el alto riesgo en productos ya regulados, el <strong>2 de agosto de 2028</strong>. Ninguna de las dos cambia lo que hay que hacer mañana, pero ambas condicionan los contratos de suministro y los plazos de renovación de licencia que firmas este año.</p>
+
+                <p>Para logística, el anexo III del Reglamento es relevante por dos puntos concretos. El punto 2 incluye los sistemas destinados a usarse como componentes de seguridad en la gestión y el funcionamiento del tráfico rodado. Los puntos 6 y 7 incluyen los sistemas empleados por autoridades garantes del cumplimiento del Derecho y los de gestión del control fronterizo. Ninguno de esos puntos alcanza a un operador privado que planifica sus propias rutas, pero conviene saber dónde está la línea.</p>
+
+                <p>La reforma aduanera sí alcanza directamente al importador, y el dato operativo que hay que retener es concreto: <strong>desde el 1 de julio de 2026 se suprime la exención de derechos de aduanas para los envíos de hasta 150 € y se aplica un arancel temporal de 3 € a las compras en línea</strong>. Mientras el centro de datos aduanero no esté plenamente operativo siguen aplicándose los aranceles ordinarios a partir de ese momento, según la Comisión Europea. Eso significa que la clasificación del artículo, el valor declarado y el país de origen pasan a ser datos que condicionan un coste real.</p>
+
+                <p>Aquí es donde la IA deja de ser una herramienta de rutas y se vuelve una herramienta de clasificación documental: los sistemas de captura de datos que conectan con expedientes aduaneros tienen que extraer códigos y valores sin margen de error, y ese es un problema de captura y validación, no de redacción. Cualquier proveedor de captura documental que ofrezca sólo extracción sin validación no debería modificar el arancel.</p>
+
+                <h2 id="tabla-comparativa-de-herramientas-de-logistica">Tabla comparativa de herramientas de logística</h2>
+
+                <p>La tabla maestra del artículo. Cada fila incluye lo que el fabricante pública y, cuando no pública nada, lo dice. La columna de la derecha es la que más se consulta y la que menos información tiene, precisamente porque es la que depende del proyecto.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>OptimoRoute</th>
+                                <th>Optimizador de rutas</th>
+                                <th>Captura documental</th>
+                                <th>Previsión y planificación</th>
+                                <th>Visibilidad de envíos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td><strong>Integración</strong></td>
+                                <td>35,10 US$ Lite y 44,10 US$ Pro por conductor al mes, anual</td>
+                                <td>Rossum pública Starter desde 18.000 US$ al año</td>
+                                <td>Proyecto enterprise, sin precio público</td>
+                                <td>Proyecto enterprise, sin precio público</td>
+                            </tr>
+                            <tr>
+                                <td><strong>métrica que devuelve dinero</strong></td>
+                                <td>Kilómetros y minutos por conductor</td>
+                                <td>Minutos de captura por documento</td>
+                                <td>Rotura de stock y excedente</td>
+                                <td>Entregas a tiempo y tiempo de respuesta</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tiempo de implantación</strong></td>
+                                <td>Almacén</td>
+                                <td>Meses, con histórico de documentos</td>
+                                <td>Almacén</td>
+                                <td>Almacén</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tamaño mínimo de operación</strong></td>
+                                <td>Desde tres conductores</td>
+                                <td>Volumen alto de documentos mensuales</td>
+                                <td>Catálogo amplio y estacionalidad marcada</td>
+                                <td>Envíos internacionales o multicanal</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dependencia de la calidad del dato</strong></td>
+                                <td>Media: direcciones y ventanas horarias</td>
+                                <td>Alta: si el escaneo es malo, no hay sistema que salve</td>
+                                <td>Muy alta: sin histórico fiable, hay poco que aprender</td>
+                                <td>Media: depende de la integración con transportistas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Documentos que procesa bien</strong></td>
+                                <td>No procesa documentos</td>
+                                <td>Facturas electrónicas estructuradas y escaneadas; albaranes y CMR con revisión</td>
+                                <td>No procesa documentos</td>
+                                <td>Consume documentos de transporte, no los lee</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Coste oculto principal</strong></td>
+                                <td>Formación de los planificadores</td>
+                                <td>Revisión de la cola de excepciones</td>
+                                <td>Depuración del histórico</td>
+                                <td>Conectores por transportista y país</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 id="tabla-por-caso-de-uso">Tabla por caso de uso: sí haces esto, usa esto</h2>
+
+                <p>La decisión se toma por tarea, no por producto. ésta tabla está ordenada por la pregunta que llega al soporte del proveedor, que siempre llega en forma de tarea concreta.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Si tu problema es…</th>
+                                <th>Herramienta adecuada</th>
+                                <th>Por qué</th>
+                                <th>Señal de que no funciona</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td>Las rutas se hacen a mano y sobra tiempo de conducción</td>
+                                <td>Optimizador de rutas por conductor</td>
+                                <td>Paga con los kilómetros que deja de recorrer</td>
+                                <td>Las paradas siguen las mismas rutas que antes</td>
+                            </tr>
+                            <tr>
+                                <td>La oficina teclea albaranes y facturas</td>
+                                <td>Captura documental con validación</td>
+                                <td>Elimina la tecleación y el error de transcripción</td>
+                                <td>La cola de excepciones crece cada mes</td>
+                            </tr>
+                            <tr>
+                                <td>Hay rotura y excedente a la vez</td>
+                                <td>Previsión de demanda, después de limpiar el histórico</td>
+                                <td>Sin histórico fiable no hay nada que aprender</td>
+                                <td>El histórico tiene huecos y no se puede reconstruir</td>
+                            </tr>
+                            <tr>
+                                <td>Los clientes preguntan dónde está el envío</td>
+                                <td>Visibilidad de la cadena de suministro</td>
+                                <td>Convierte el seguimiento en un dato, no en una llamada</td>
+                                <td>Los conectores con transportistas fallan más de lo que funcionan</td>
+                            </tr>
+                            <tr>
+                                <td>El picking es el cuello de botella del almacén</td>
+                                <td>Automatización de picking tras analizar el almacén</td>
+                                <td>Los robots sólo.rentables con recorridos largos y alta rotación</td>
+                                <td>El picking se hace en pocos minutos por línea</td>
+                            </tr>
+                            <tr>
+                                <td>Hay que clasificar artículos para aduanas</td>
+                                <td>Captura documental conectada al expediente aduanero</td>
+                                <td>El arancel depende de códigos que no admiten aproximación</td>
+                                <td>El sistema propone códigos y alguien los corrige a mano</td>
+                            </tr>
+                            <tr>
+                                <td>Hay que comparar una factura con su albarán</td>
+                                <td>Un sistema de datos, no un generador de texto</td>
+                                <td>Es una conciliación con regla, no una redacción</td>
+                                <td>Se intenta «preguntar al chat» qué falta en la factura</td>
+                            </tr>
+                            <tr>
+                                <td>Hay que redactar un informe de servicio</td>
+                                <td>Asistente general de Empresa</td>
+                                <td>Ningún producto de operación genera ese texto por ti</td>
+                                <td>El informe no sale de los datos del sistema</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La penúltima fila es la que evita el error más caro del sector. <strong>Una conciliación de facturas y albaranes es un problema de reglas, no de lenguaje</strong>. Se resuelve con un motor de reglas o con datos estructurados, no con un asistente conversacional, y la diferencia de coste entre las dos soluciones es de un orden de magnitud.</p>
+
+                <h2 id="los-18000-dolares-de-rossum-no-son-una-compra-pequena">Los 18.000 dólares de Rossum no son una compra pequeña</h2>
+
+                <p>La mayoría de artículos sobre digitalización de documentos en logística la describen como una compra de trescientos a ochocientos euros al mes. Rossum pública otra cosa en su página de precios: el plan Starter empieza en <strong>18.000 US$ al año</strong>. Dividido por doce, son 1.500 US$ al mes antes de cualquier coste de volumen, integración o revisión.</p>
+
+                <p>Eso no significa que Rossum sea caro: significa que es una herramienta de proyecto y que debe evaluarse como tal. El cambio de categoría tiene tres consecuencias que conviene asumir antes de pedir presupuesto. La primera es el <strong>compromiso anual</strong>: una plataforma de captura documental se integra con el sistema contable, y esa integración no se rehace cada doce meses. La segunda es el <strong>volumen mínimo razonable</strong>: a unos 1.500 US$ al mes, la herramienta sólo se justifica con miles de documentos mensuales.</p>
+
+                <p>La tercera consecuencia es la que casi nadie menciona: <strong>el coste de la revisión de excepciones es permanente</strong>. Ningún sistema de captura documental llega al cien por cien. Entre el escaneo malo, el documento ilegible y el campo que el sistema no se atreve a rellenar, siempre queda una cola. El presupuesto tiene que incluir a alguien que revise esa cola, y ese coste no aparece en la propuesta del fabricante.</p>
+
+                <div class="callout">
+                    <strong>Cómo se compara la captura documental sin tener precio:</strong> pide por escrito el precio base anual, el coste por documento o por página a partir de qué volumen cambia, el coste de la integración inicial, el número de documentos incluidos y qué pasa con el histórico ya existente. Con esos seis números, Rossum y cualquier competidor se pueden comparar en una sola tabla, aunque ninguno publique una tarifa completa.
+                </div>
+
+                <h2 id="lo-que-debe-hacer-siempre-una-persona">Lo que debe hacer siempre una persona</h2>
+
+                <p>Hay cuatro tareas en una operación logística con IA que no se cierran sin una persona, y la frontera está entre <strong>Integración</strong> y <strong>Integración</strong>. Ninguna tarea que comprometa la facturación, la reclamación o la declaración ante aduanas puede cerrarse automáticamente.</p>
+
+                <p>La primera es la <strong>verificación de la recepción</strong>: si un albarán va a generar una factura, alguien tiene que confirmar que la firma de recepción existe y corresponde a esa entrega. La segunda es la <strong>revisión de las reservas del CMR</strong>, porque son una declaración legal y su fecha determina la reclamación. La tercera es la <strong>clasificación aduanera</strong>: un código de producto equivocado tiene coste económico directo.</p>
+
+                <p>La cuarta es la <strong>validación del histórico antes de comprar previsión</strong>. Un sistema que aprende de datos que están sesgados no da error visible: da una previsión optimista, y la rotura aparece tres meses después, cuando ya has pedido el inventario. En un almacén de temporada, ese error se paga con la desconfianza del cliente.</p>
+
+                <div class="callout">
+                    <strong>La línea que no se cruza:</strong> ningún dato que entre en el sistema contable por extracción automática se usa para facturar sin una regla de validación que lo permita. Si esa regla no está escrita, la validación se hace con la memoria de la persona que la hace, y la memoria no es un sistema de control.
+                </div>
+
+                <h2 id="errores-de-implantacion-y-cuanto-cuestan">Errores de implantación y cuánto cuestan</h2>
+
+                <p>Los cinco errores siguientes se repiten en las operaciones de todos los tamaños, y ninguno es tecnológico. Todos tienen un coste medible, y en cuatro de los cinco el coste es dinero ya pagado que no produce nada.</p>
+
+                <ul>
+                    <li><strong>Comprar el módulo de IA de un sistema que no se usa bien.</strong> El slotting inteligente no arregla un almacén con stocks desactualizados. El coste es el módulo entero, y suele aparecer en el segundo trimestre, cuando ya no hay presupuesto para arreglar los datos.</li>
+                    <li><strong>Ignorar la integración con el ERP o el TMS.</strong> La herramienta que planifica rutas tiene que hablar con el sistema de pedidos. Muchas licencias compradas «para probar» se abandonan porque la integración costó más que la suscripción, y eso sólo se descubre en la semana seis.</li>
+                    <li><strong>Evaluar la optimización de rutas sólo en kilómetros.</strong> Una ruta más corta con esperas en cada parada es peor. El coste del error es un incumplimiento de ventanas horarias que no aparece en ningún informe de kilómetros.</li>
+                    <li><strong>Ignorar la disciplina de datos del proveedor de origen.</strong> Si las ventanas horarias del cliente no están actualizadas en el ERP, el optimizador planifica contra datos falsos. El coste es comprarte la herramienta correcta y descubrir que no hay herramienta que valga.</li>
+                    <li><strong>Subestimar la resistencia del equipo de planificación.</strong> Un planificador no se sustituye con un algoritmo. La implantación funciona cuando el sistema propone y el planificador decide; no funciona cuando se impone sin explicación. El coste de este error es silencioso y dura meses.</li>
+                </ul>
+
+                <p>Si sólo puedes corregir uno, corrige el primero. La disciplina de datos previa es la condición que hace que todas las demás herramientas sirvan, y es también la más barata de corregir: no cuesta licencias, cuesta <strong>Integración</strong> un proceso.</p>
+
+                <h2 id="plan-de-90-dias">Plan de 90 días con hitos verificables</h2>
+
+                <p>La secuencia que funciona empieza por rutas, sigue con datos y deja la previsión para el final, cuando ya hay histórico limpio. Cada hito tiene una condición de salida que se puede comprobar sin preguntar a nadie.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>OptimoRoute</th>
+                                <th>OptimoRoute</th>
+                                <th>Condición de salida verificable</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td>Días 1-15</td>
+                                <td>Línea base de kilómetros y tiempos</td>
+                                <td>Dos semanas de datos reales por conductor, sin cambiar nada</td>
+                            </tr>
+                            <tr>
+                                <td>Días 16-30</td>
+                                <td>Auditoría de ventanas horarias en el ERP</td>
+                                <td>Lista de clientes con la ventana desactualizada</td>
+                            </tr>
+                            <tr>
+                                <td>Días 31-45</td>
+                                <td>Prueba del optimizador con dos conductores</td>
+                                <td>Rutas comparadas y diferencia de kilómetros medida</td>
+                            </tr>
+                            <tr>
+                                <td>Días 46-60</td>
+                                <td>Despliegue al resto de la flota</td>
+                                <td>Todos los conductores con acceso y con formación</td>
+                            </tr>
+                            <tr>
+                                <td>Días 61-75</td>
+                                <td>Medición con herramienta activa</td>
+                                <td>Mismos indicadores de la línea base, medidos otra vez</td>
+                            </tr>
+                            <tr>
+                                <td>Días 76-90</td>
+                                <td>Decisión de continuidad</td>
+                                <td>Coste por kilómetro ahorrado calculado y comparado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La segunda fila es la que casi nadie pone y la que más valor tiene. Una auditoría de ventanas horarias de una tarde evita que todo el proyecto se construya sobre datos falsos. Y la última fila es la que evita una renovación automática: con la línea base del día 15 y la medición del día 75 tienes dos números y una división, y si el coste por kilómetro ahorrado es alto, la decisión de cancelar también sale de la aritmética.</p>
+
+                <h2 id="cuando-contratar-un-integrador">Cuándo contratar un integrador</h2>
+
+                <p>Un integrador tiene sentido cuando el cuello de botella es la conexión con lo que ya tienes: un ERP sin API, un TMS propietario, un sistema de almacén que no exporta datos o una factura que llega en un sistema heredado. En logística, esa conexión es el trabajo real, y ninguna herramienta de rutas la resuelve por ti.</p>
+
+                <p>El umbral que funciona es directo: <strong>contrata integrador cuando el trabajo técnico que falta te impide empezar, no cuando la herramienta te parezca mejor que la otra</strong>. Si el optimizador ya se está usando y el resultado es bueno, no necesitas un integrador. Si el optimizador no recibe pedidos porque nadie ha conectado el ERP, sí lo necesitas, y da igual cuál de los dos sea.</p>
+
+                <p>Hay una segunda razón, que no es técnica: <strong>la cobertura de la responsabilidad</strong>. Cuando un tercero configura tu sistema y escribe el procedimiento, hay contrato y hay un responsable al que reclamar. Cuando lo hace un planificador un viernes por la tarde, no hay nada firmado. Para una operación que factura a clientes finales, esa diferencia importa más de lo que parece.</p>
+
+                <p>Y hay un caso en el que <strong>no</strong> hay que contratar integrador: cuando el problema es que nadie usa la herramienta. Eso no se arregla conectando nada; se arregla retirando la herramienta y volviendo a planificar a mano hasta que la operación tenga el volumen que la justifica. La <a href="../../guias/elegir-herramienta-ia-negocio/">guía para elegir herramienta de IA</a> tiene el criterio para esa decisión.</p>
+
+                <h2 id="veredicto-por-perfil-de-operador">Veredicto por perfil de operador</h2>
+
+                <p>La conclusión no es que una herramienta sea la mejor del sector, sino que cada tamaño de operación tiene una compra distinta que sí funciona. Las cifras son las publicadas el 3 de octubre de 2026 y no incluyen licencias enterprise, que se cotizan por proyecto.</p>
+
+                <ul>
+                    <li><strong>Distribuidor local de uno a diez vehículos:</strong> optimizador de rutas por conductor. Con el plan Lite a 35,10 US$ por conductor y mes, una flota de cinco vehículos cuesta 175,50 US$ al mes. Si además hay más de un millar de documentos mensuales, evalúa la captura documental con un cálculo de retorno explícito.</li>
+                    <li><strong>Operador mediano, de diez a cien vehículos con almacén:</strong> optimizador de rutas más módulos de IA del WMS que ya usas, si el histórico de stock es fiable. El orden importa: primero el almacén, después la previsión.</li>
+                    <li><strong>Operación con importación y aduanas:</strong> captura documental conectada al expediente, con validación, antes que previsión. Desde el 1 de julio de 2026 el arancel de las compras en línea cambia el cálculo de coste de importar, y eso pide datos bien capturados.</li>
+                    <li><strong>3PL o cadena internacional:</strong> visibilidad y previsión son proyecto enterprise. A partir de ahí el cuello de botella no es la licencia, es la implantación y la integración con transportistas.</li>
+                    <li><strong>Operación con varias unidades de negocio:</strong> el acceso único deja de ser conveniente y pasa a ser necesario. A partir de ahí, un plan de Empresa con SSO y auditoría evita tener cinco copias de la base de datos de clientes.</li>
+                    <li><strong>Equipo de planning de dos o tres personas:</strong> un asistente general de Empresa a 21 € o 20 US$ por asiento, para informes de servicio y análisis de incidencias. Es la compra más barata de la lista y la que más rápido se pay back, porque no requiere integración.</li>
+                </ul>
+
+                <p>La conclusión que se puede sostener con datos es estrecha: <strong>en logística la IA devuelve dinero cuando la métrica ya existe antes de la compra</strong>. Kilómetros, líneas por hora, minutos de captura y entregas a tiempo son métricas que cualquier operación ya mide. La previsión de demanda y la visibilidad de envíos sólo funcionan cuando hay un histórico que aprender, y un histórico que no existe no se compra con una licencia.</p>
+
+                <div class="callout">
+                    <strong>Nota de conversión:</strong> las cifras en dólares son las que pública cada fabricante y el cobro lo aplica el proveedor en esa moneda. No hay conversión a euros en este artículo a propósito, porque no existe un tipo de cambio único al que atenerse y una conversión inventada falsea el cálculo de retorno por kilómetro.
+                </div>
+
+                <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+
+                <h3 id="faq-1">¿Qué IA se usa en logística en 2026?</h3>
+                <p>Cuatro familias y una quinta transversal. La primera es la optimización de rutas de reparto, que se contrata por conductor. La segunda es la captura documental de albaranes, CMR y facturas. La tercera es la previsión de demanda y la planificación de inventario. La cuarta es la visibilidad de la cadena de suministro. Y la quinta, transversal a todas, es el análisis con asistentes de uso general para informes de servicio e incidencias. Cada familia mide una cosa distinta y sólo una de ellas tiene precio público por unidad física.</p>
+
+                <h3 id="faq-2">¿Cuánto cuesta optimizar rutas con IA?</h3>
+                <p>OptimoRoute pública 35,10 US$ por conductor y mes en el plan Lite y 44,10 US$ en el plan Pro, ambos con facturación anual y con un descuento del 10 % declarado para la suscripción anual frente a la mensual. Una flota de cinco conductores en plan Lite cuesta 175,50 US$ al mes, y una de diez conductores en plan Pro cuesta 441 US$ al mes. El plan Custom, para más de mil pedidos de planificación simultáneos, se presupuesta. El precio es por conductor, no por empleado de oficina.</p>
+
+                <h3 id="faq-3">¿Cuánto cuesta la digitalización de documentos en logística?</h3>
+                <p>Más de lo que suele decirse. Rossum pública su plan Starter desde 18.000 US$ al año, que equivalen a 1.500 US$ al mes antes de volumen, integración ni revisión de excepciones. No hay precio público para Route4Me ni para el resto de plataformas del sector. Por eso la comparación útil no es de importes, sino de condiciones: precio base anual, coste por documento a partir de qué volumen cambia, coste de integración, número de documentos incluidos y destino del histórico existente.</p>
+
+                <h3 id="faq-4">¿Un chatbot puede leer un albarán o un CMR escaneado?</h3>
+                <p>Un asistente conversacional lee bien un documento digital, pero un escaneo es una imagen con texto dudoso. Y hay dos diferencias que van más allá de la calidad del escaneo: el albarán escaneado puede no tener firma de recepción visible, así que no prueba que la mercancía se recibiera; y el CMR manuscrito contiene reservas cuyo valor probatorio depende de la fecha y de la firma, elementos que la extracción de texto no conserva. Para eso existe la captura documental con validación, no el chat.</p>
+
+                <h3 id="faq-5">¿Qué cambia en aduanas a partir de 2026?</h3>
+                <p>La reforma aduanera de la Unión Europea fue adoptada por el Parlamento Europeo y el Consejo el 16 de septiembre de 2026 y se publicó como Reglamento (UE) 2026/2108. El dato que afecta al importador es que desde el 1 de julio de 2026 se suprime la exención de derechos de aduanas para los envíos de hasta 150 euros y se aplica un arancel temporal de 3 euros a las compras en línea. Mientras el centro de datos aduanero no esté operativo, se aplicarán los aranceles ordinarios según la Comisión Europea. Eso convierte la clasificación del artículo en un dato con coste económico directo.</p>
+
+                <h3 id="faq-6">¿La IA en logística está sujeta al AI Act?</h3>
+                <p>El calendario es el que hay que tener presente: prohibiciones y artículo 4 desde el 2 de febrero de 2025, modelos de propósito general desde el 2 de agosto de 2025, transparencia del artículo 50 desde el 2 de agosto de 2026, aplicación general y alto riesgo desde el 2 de agosto de 2027 y alto riesgo en productos regulados desde el 2 de agosto de 2028. Para un operador privado, el anexo III alcanza en el punto 2 al tráfico rodado como componente de seguridad, y en los puntos 6 y 7 a las autoridades garantes del cumplimiento del Derecho y al control fronterizo, ninguno de los cuales describe a una Empresa de reparto.</p>
+
+                <h3 id="faq-7">¿Cuánto tiempo tarda una herramienta de rutas en devolver el dinero?</h3>
+                <p>El cálculo es directo y sale de dos números. El desembolso anual es doce por el número de conductores por el precio por conductor. El ahorro se mide en kilómetros sobre una línea base de dos semanas. Estimación propia: diez conductores que pierden un 8 % de rutas hechas a mano, unos 1.800 kilómetros mensuales en conjunto, con un desembolso de 4.212 US$ al año en plan Lite, dan un coste de 2,43 US$ por kilómetro ahorrado. Si tu operación gasta más por kilómetro, la compra se paga sola.</p>
+
+                <h3 id="faq-8">¿Hace falta integrar la IA con el ERP o el TMS?</h3>
+                <p>Para analizar datos e informes, no. Para que el optimizador de rutas reciba pedidos y para que la captura documental volque al sistema contable, sí, y esa integración es el trabajo real. El umbral para contratar un integrador es simple: cuando el trabajo técnico que falta te impide empezar. Si el optimizador ya se usa y funciona, no necesitas a nadie; si no recibe pedidos porque nadie lo ha conectado al ERP, la herramienta que elijas es irrelevante hasta que se conecte.</p>
+
+                <h2 id="fuentes">Fuentes</h2>
+
+                <p>Todos los precios, condiciones, fechas y afirmaciones sobre funcionamiento de este artículo proceden de estas fuentes, consultadas el <strong>3 de octubre de 2026</strong>. Las estimaciones propias van etiquetadas como tales y con sus supuestos a la vista. No hay ninguna cifra de mercado sin fuente.</p>
+
+                <ul>
+                    <li><strong>OptimoRoute.</strong> <a href="https://optimoroute.com/pricing/" rel="noopener nofollow" target="_blank">Precios de OptimoRoute</a> — planes Lite a 35,10 US$ y Pro a 44,10 US$ por conductor y mes con facturación anual, plan Custom presupuestado y ausencia de contrato o cuota de alta. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>OptimoRoute.</strong> <a href="https://optimoroute.com/faq/" rel="noopener nofollow" target="_blank">Preguntas frecuentes de OptimoRoute</a> — funcionamiento del cobro por número de conductores, ampliación instantánea de licencias y descuento del 10 % en la suscripción anual. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Rossum.</strong> <a href="https://rossum.ai/pricing" rel="noopener nofollow" target="_blank">Precios de Rossum</a> — plan Starter desde 18.000 US$ al año. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Route4Me.</strong> <a href="https://www.route4me.com/pricing/" rel="noopener nofollow" target="_blank">Precios de Route4Me</a> — página de planes sin cifra pública y precios por volumen para flotas grandes. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Locus Robotics.</strong> <a href="https://www.locusrobotics.com/" rel="noopener nofollow" target="_blank">Locus Robotics</a> — robots de picking colaborativo y modelo de proyecto con análisis previo del almacén. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>FourKites.</strong> <a href="https://www.fourkites.com/" rel="noopener nofollow" target="_blank">FourKites</a> — plataforma de visibilidad de la cadena de suministro, contratada por proyecto. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>OpenAI.</strong> <a href="https://openai.com/business/pricing/" rel="noopener nofollow" target="_blank">Precios de ChatGPT Business y Enterprise</a> — 21 € por asiento en Standard y 105 € en Premium con facturación anual, de 2 a 200 asientos, y ausencia de precio público en Enterprise. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Anthropic.</strong> <a href="https://www.anthropic.com/pricing" rel="noopener nofollow" target="_blank">Precios de Claude</a> — Claude Team a 20 US$ por asiento al mes con pago anual y 25 US$ si es mensual, de 2 a 150 asientos. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Google.</strong> <a href="https://workspace.google.com/intl/es_es/pricing.html" rel="noopener nofollow" target="_blank">Precios de Google Workspace</a> — 13,60 € por usuario al mes en Business Standard y 21,10 € en Business Plus para España. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Comisión Europea.</strong> <a href="https://taxation-customs.ec.europa.eu/customs/eu-customs-reform_en" rel="noopener nofollow" target="_blank">Reforma aduanera de la Unión Europea</a> — adopción el 16 de septiembre de 2026, publicación como Reglamento (UE) 2026/2108, supresión de la exención de 150 euros y arancel temporal de 3 euros en compras en línea desde el 1 de julio de 2026. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Normativa europea.</strong> <a href="https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=OJ:L_202401689" rel="noopener nofollow" target="_blank">Reglamento (UE) 2024/1689 (AI Act)</a> — calendario de aplicación por fechas: 2 de febrero de 2025, 2 de agosto de 2025, 2 de agosto de 2026, 2 de agosto de 2027 y 2 de agosto de 2028. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Comisión Europea.</strong> <a href="https://ai-act-service-desk.ec.europa.eu/es/ai-act/annex-3" rel="noopener nofollow" target="_blank">Anexo III del AI Act</a> — sistemas de IA de alto riesgo, incluidos el punto 2 sobre tráfico rodado, el punto 6 sobre garantía del cumplimiento del Derecho y el punto 7 sobre control fronterizo. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>AEPD.</strong> <a href="https://www.aepd.es/sites/default/files/2020-02/adecuacion-rgpd-ia.pdf" rel="noopener nofollow" target="_blank">Criterio de adecuación al RGPD en el uso de IA</a> — tratamiento de datos personales con herramientas de inteligencia artificial. Consultado el 3 de octubre de 2026.</li>
+                </ul>
 
                 <div class="related-articles">
                     <h3>Artículos relacionados</h3>
                     <ul>
                         <li><a href="../../herramientas-ia/automatizacion-procesos-ia/">Automatización de procesos con IA: guía práctica</a></li>
-                        <li><a href="../../herramientas-ia/roi-ia-empresas/">Cómo calcular el ROI de las herramientas de IA</a></li>
+                        <li><a href="../../herramientas-ia/roi-ia-Empresas/">Cómo calcular el ROI de las herramientas de IA</a></li>
                         <li><a href="../../comparativas/ia-ecommerce-ventas/">IA para ecommerce: herramientas para aumentar ventas 2026</a></li>
-                        <li><a href="../../guias/guia-implementar-ia-pyme/">Guía completa para implementar IA en tu pyme</a></li>
+                        <li><a href="../../guias/cuanto-cuesta-implementar-ia/">Cuánto cuesta implementar IA en una Empresa</a></li>
                     </ul>
                 </div>
 

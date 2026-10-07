@@ -44,29 +44,17 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "SoftwareApplication",
-            "name": "Jasper AI",
-            "applicationCategory": "BusinessApplication",
-            "operatingSystem": "Web",
-            "offers": {
-                "@type": "Offer",
-                "price": "39",
-                "priceCurrency": "USD",
-                "description": "Plan Creator (1 usuario)"
-            }
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "8.0",
-            "bestRating": "10"
-        },
-        "author": {
+        "@type": "SoftwareApplication",
+        "name": "Jasper AI",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "IA para marketing y generación de contenido",
+        "operatingSystem": "Web",
+        "inLanguage": "es-ES",
+        "publisher": {
             "@type": "Organization",
-            "name": "IA TodoPyme"
+            "name": "Jasper"
         },
-        "datePublished": "2026-09-07"
+        "description": "Plataforma de IA especializada en contenido de marketing: plantillas por formato, voz de marca, campañas con calendario y aprobación, generación de imágenes, vídeo y voz."
     }
     </script>
 
@@ -80,15 +68,63 @@
                 "name": "¿Cuánto cuesta Jasper AI?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Jasper AI cuesta desde $39 USD/mes (Plan Creator, 1 usuario, con facturación anual) hasta $59 USD/mes (Plan Pro, 1 asiento, con facturación anual; $69 USD/mes con facturación mensual). No hay plan gratuito, solo prueba de 7 días."
+                    "text": "No reproducimos aquí las tarifas porque el proveedor las revisa varias veces al año y un importe copiado hace meses puede ser incorrecto: consúltalas el mismo día en su página oficial de precios. Lo que sí es estable es el modelo: suscripción por asiento, con precio distinto si se paga el año completo o mes a mes, sin plan gratuito permanente y con las unidades de imagen, vídeo y voz cobradas aparte del asiento. Para tener una cota de comparación verificada, un asiento de ChatGPT Business cuesta 21 € al mes con facturación anual y uno de Claude Team cuesta 20 US$ al mes también con factura anual, mientras que el nivel de empresa de Jasper se negocia sin tarifa pública."
                 }
             },
             {
                 "@type": "Question",
-                "name": "¿Vale la pena Jasper AI o mejor usar ChatGPT?",
+                "name": "¿Jasper AI tiene plan gratuito?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Jasper vale la pena si creas mucho contenido de marketing y quieres plantillas optimizadas. Para uso general, ChatGPT Plus (18 €/mes) es más versátil y barato."
+                    "text": "No hay un plan gratuito permanente. Jasper ofrece un periodo de prueba para que puedas recorrer las funciones, y a partir de ahí la contratación es de pago. Esto tiene una consecuencia práctica que conviene tener en cuenta antes de empezar: no puedes instalar la voz de marca, cargar tu manual de estilo y medir el ahorro durante meses. Vas a tener que decidir en pocos días si se contrata o no, lo que significa que la prueba debe usarse para una sola cosa: comprobar si el material de marca produce piezas que tu equipo puede publicar sin reescribirlas casi enteras."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Merece la pena Jasper o mejor ChatGPT Business o Claude Team?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depende de cuántas personas escriben sobre la misma marca. Con una sola persona, un asistente general con facturación anual es más barato y más versátil. Con varias personas, el valor de Jasper está en la coordinación: una voz de marca compartida, campañas con calendario y estados de aprobación que evitan el intercambio de correos para preguntar si un texto está aprobado. Con cuatro asientos, el punto de indiferencia de precio está en 21 € por asiento y mes, que es lo que cuesta ChatGPT Business; por encima de esa cifra, la decisión se justifica por horas ahorradas, no por la herramienta."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Jasper genera imágenes y vídeo de verdad?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, dentro de la misma plataforma, junto al texto. Eso es una ventaja de flujo: la pieza visual y la textual salen en la misma carpeta y con el mismo estado de revisión. En calidad, en cambio, no es su terreno: para maquetar y mantener plantillas de campaña hay herramientas de editor con IA más especializadas, y para ilustración original con control de estilo hay generadores de imágenes dedicados. Ten en cuenta además que estas unidades se cobran aparte del asiento, así que un equipo que produce mucho visual puede superar el precio base sin avisar."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es legal clonar la voz de una persona con Jasper?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La voz es un dato biométrico y, como tal, se considera dato especial: no basta con una base legal, hace falta consentimiento explícito de la persona cuya voz se clona y un archivo que lo demuestre. Si además la voz se usa en piezas que pueden inducir a error, entra el terreno de la transparencia del artículo 50 del AI Act, aplicable en la Unión Europea desde el 2 de agosto de 2026. Por eso la recomendación práctica es restrictiva: la voz clonada solo debe usarse en borradores internos y nunca en piezas publicadas sin revisión jurídica. Para vídeo corporativo hay alternativas más limpias, como los avatares de catálogo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Jasper sustituye a una herramienta de SEO o a un gestor de correo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Jasper redacta contenido, pero no aporta datos de búsqueda: no te dice cuántas búsquedas tiene una palabra clave, ni qué páginas enlazan a la tuya, ni el volumen de competencia. Eso sigue necesitando una herramienta de SEO. Tampoco es un gestor de campañas de envío ni un CRM: escribe el correo, pero no lo entrega, no optimiza la segmentación y no mide la apertura. Su valor está en la redacción y en la coordinación del equipo, no en la ejecución de la campaña."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué pasa con mis datos y con la información de mis clientes?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nada entra en la herramienta sin que haya una decisión previa. Si el equipo pega listados de contactos, tarifas de clientes o cualquier dato personal, eso es un tratamiento de datos que necesita base legal, información al interesado y un contrato de encargo con el proveedor. La práctica prudente para contenido de clientes es trabajar con datos agregados y anonimizados en lugar de con datos identificados. Y antes de firmar conviene pedir por escrito dónde se procesan los datos, cuánto se conservan y si hay transferencias fuera del Espacio Económico Europeo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Puedo cancelar Jasper y llevarme todo lo que he creado?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Puedes cancelar la suscripción, pero el material de marca que has configurado dentro de la plataforma no viaja contigo automáticamente. Por eso conviene desde el primer día guardar fuera la voz de marca y el manual de estilo en tu propia documentación, y conservar los mejores textos como pieza propia. Una prueba práctica y barata es cada seis meses: reescribe una campaña real en otra herramienta. Si tarda más de una tarde, tienes dependencia y hay que empezar a exportar el material."
                 }
             }
         ]
@@ -126,7 +162,7 @@
 
             <div class="methodology-banner">
                 <span class="methodology-icon" aria-hidden="true"></span>
-                <p><strong>Metodología:</strong> Análisis basado en uso real de Jasper AI, documentación oficial y comparativa directa con ChatGPT y Claude. Precios verificados a septiembre 2026.</p>
+                <p><strong>Metodología:</strong> Análisis basado en uso real de Jasper AI, documentación oficial y comparativa directa con ChatGPT y Claude. Precios verificados a octubre 2026.</p>
             </div>
 
             <div class="article-header">
@@ -135,189 +171,540 @@
                 <p class="article-subtitle">Review completa de Jasper AI: la plataforma de IA especializada en contenido de marketing. Precio real, plantillas, calidad de output y comparativa con alternativas más baratas.</p>
                 <div class="article-meta-bar">
                     <span class="meta-author">Por el equipo de IA TodoPyme</span>
-                    <span class="meta-date">7 septiembre 2026</span>
+                    <span class="meta-date">7 octubre 2026</span>
                     <span class="meta-reading">10 min de lectura</span>
                 </div>
             </div>
 
             <div class="article-content">
 
-                <div class="tldr-box">
+<div class="tldr-box">
                     <h2>Resumen rápido</h2>
                     <ul>
-                        <li><strong>Precio:</strong> Desde 35,50 €/mes aprox. ($39 USD, 1 usuario) — sin plan gratuito</li>
-                        <li><strong>Ideal para:</strong> Equipos de marketing que crean contenido a escala</li>
-                        <li><strong>Puntos fuertes:</strong> 50+ plantillas de marketing, brand voice, optimización SEO</li>
-                        <li><strong>Puntos débiles:</strong> Caro para lo que ofrece, ChatGPT hace lo mismo más barato</li>
+                        <li><strong>Qué es:</strong> una plataforma de IA vertical para marketing: plantillas por formato, voz de marca, campañas con calendario y aprobación, generación de imágenes, vídeo y clones de voz.</li>
+                        <li><strong>Cómo cobra:</strong> suscripción <strong>por asiento</strong>, con tarifa distinta según se pague el año completo o mes a mes, y varios niveles (uso individual, equipo y empresa, esta última con la denominación JasperONE). No hay plan gratuito permanente, solo periodo de prueba.</li>
+                        <li><strong>Precio:</strong> no reproducimos aquí las tarifas de Jasper porque la compañía las revisa varias veces al año; verifícalas en su página oficial de precios antes de presupuestar. Como referencia verificada para un equipo, <strong>ChatGPT Business cuesta 21 € por asiento y mes</strong> con facturación anual y <strong>Claude Team cuesta 20 US$ por asiento y mes</strong> también con factura anual.</li>
+                        <li><strong>Umbral de compra:</strong> con una sola persona y menos de veinte piezas al mes, un asistente general con plantillas propias sale más barato. A partir de varias personas tocando el mismo material, la voz de marca y el flujo de revisión empiezan a pagar.</li>
+                        <li><strong>Lo que no hace:</strong> no sustituye a tu gestor de correo ni a tu CRM, no aporta datos de palabras clave ni de enlaces, y no verifica cifras ni afirmaciones. Es un copiloto de redacción, no un departamento de marketing.</li>
                     </ul>
                 </div>
 
                 <div class="toc">
                     <h3>Índice</h3>
                     <ol>
-                        <li><a href="#que-es">¿Qué es Jasper AI?</a></li>
-                        <li><a href="#precio">Precio y planes</a></li>
-                        <li><a href="#funciones">Funciones principales</a></li>
-                        <li><a href="#calidad">Calidad del contenido generado</a></li>
-                        <li><a href="#vs">¿Jasper o ChatGPT?</a></li>
-                        <li><a href="#veredicto">Veredicto</a></li>
+                        <li><a href="#que-es-jasper">Qué es Jasper y a qué equipo existe</a></li>
+                        <li><a href="#diferencia-jasper-generalistas">Por qué una plataforma de marketing no es lo mismo que un chat</a></li>
+                        <li><a href="#plantillas-marketing">Las plantillas de marketing: cuándo ahorran tiempo de verdad</a></li>
+                        <li><a href="#brand-voice">Brand Voice: la parte que no se configura pegando tu web</a></li>
+                        <li><a href="#campanas-aprobacion">Campañas, calendario editorial y flujo de aprobación</a></li>
+                        <li><a href="#jasper-imagen">Imágenes y vídeo para campañas: dónde encaja Jasper</a></li>
+                        <li><a href="#jasper-voice">Clones de voz: la función con más riesgo legal de toda la plataforma</a></li>
+                        <li><a href="#integraciones">Integraciones: Shopify, WordPress, CRM y API</a></li>
+                        <li><a href="#planes-precios">Planes y precios: cómo funciona el modelo comercial de Jasper</a></li>
+                        <li><a href="#coste-total">El coste total real: asientos, créditos y complementos</a></li>
+                        <li><a href="#umbral-compensa">El umbral de compra, con la cuenta hecha</a></li>
+                        <li><a href="#jasper-vs-chatgpt">Jasper frente a ChatGPT y Claude, tarea por tarea</a></li>
+                        <li><a href="#que-no-hace">Qué no hace Jasper: los límites que nadie pone en la demo</a></li>
+                        <li><a href="#errores-implantacion">Siete errores de implantación y lo que cuesta cada uno</a></li>
+                        <li><a href="#rgpd-ai-act">RGPD, AI Act y contenido generado en Europa</a></li>
+                        <li><a href="#dependencia-proveedor">Dependencia del proveedor: cómo no quedar atrapado</a></li>
+                        <li><a href="#cuando-otra-herramienta">Cuándo conviene otra herramienta</a></li>
+                        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                        <li><a href="#fuentes">Fuentes</a></li>
                     </ol>
                 </div>
 
-                <h2 id="que-es">¿Qué es Jasper AI?</h2>
+                <h2 id="que-es-jasper">Qué es Jasper y a qué equipo existe</h2>
 
-                <p>Jasper AI es una plataforma de inteligencia artificial diseñada específicamente para equipos de marketing y contenido. A diferencia de ChatGPT o Claude, que son herramientas generales, Jasper está optimizada para crear contenido de marketing: emails, anuncios, posts de redes sociales, landing pages y descripciones de producto.</p>
+                <p>Jasper es una plataforma de inteligencia artificial <strong>construida para un departamento concreto</strong>: el de marketing. No es un modelo de lenguaje al que se le pregunta por chat, ni un copiloto que aparece dentro de una aplicación que ya usabas. Es un entorno de trabajo con plantillas, una voz de marca configurable, un calendario de campañas y varios tipos de contenido —texto, imagen, vídeo y voz— generados desde el mismo sitio.</p>
 
-                <p>Su diferenciador son las plantillas: en lugar de tener que escribir prompts complejos, seleccionas el tipo de contenido que necesitas (email, anuncio, blog post) y Jasper genera un borrador optimizado para ese formato específico.</p>
+                <p>La diferencia con un chat como ChatGPT o Claude está en <strong>dónde vive el trabajo terminado</strong>. En un chat, la conversación es el producto: se abre, se pregunta, se copia el texto y se cierra. En Jasper, lo que se guarda son piezas de contenido con estados, comentarios y responsables, asociadas a una campaña y a un calendario. Eso importa el día que la cuenta la usa alguien que no fuiste tú.</p>
 
-                <h2 id="precio">Precio y planes</h2>
+                <p>Por eso la pregunta correcta no es «qué modelo de IA usa Jasper», sino «qué pasa con el material de marca dentro de cuatro meses». La respuesta corta: vive en la cuenta del proveedor. Volveremos sobre esto porque es el riesgo estructural más serio de la herramienta.</p>
+
+                <div class="callout callout-info">
+                    <strong>Lo que Jasper sí es</strong>
+                    <ul>
+                        <li>Un generador de piezas de marketing con plantillas por formato y por canal.</li>
+                        <li>Un gestor de la <strong>voz de marca</strong> y de un manual de estilo operativo.</li>
+                        <li>Un espacio de campañas con calendario, estados y aprobación.</li>
+                        <li>Un conjunto de utilidades para imagen, vídeo y voz dentro del mismo entorno.</li>
+                    </ul>
+                </div>
+
+                <h2 id="diferencia-jasper-generalistas">Por qué una plataforma de marketing no es lo mismo que un chat</h2>
+
+                <p>Los asistentes generalistas se ganan por su <strong>versatilidad</strong>: razonan, calculan, leen un PDF de 80 páginas y responden preguntas que no estaban en tu guion. Las plataformas verticales se ganan por su <strong>repetibilidad</strong>: diez personas distintos producen piezas con la misma estructura y el mismo tono sin que nadie lo repita cada vez.</p>
+
+                <p>Ese segundo grupo de problemas es el que en una PYME consume el tiempo, porque no es el redactar, es el decidir si el texto puede publicarse. La tarea real de un equipo de marketing no es escribir una landing: es comprobar que la landing no contradice la ficha del producto, que no promete lo que la empresa no cumple y que el tono no se parece al de la competencia.</p>
+
+                <p>Una herramienta vertical no te ahorra el criterio, pero convierte el criterio en un <strong>control que se aplica por defecto</strong>. Ahí está su valor y también su techo: si el problema de tu equipo es de criterio y no de mecanización, ninguna plataforma lo arregla. En ese caso lo que suele faltar es un proceso editorial, no un software. Para el resto de decisiones de compra, la guía <a href="../../guias/elegir-herramienta-ia-negocio/">cómo elegir la herramienta IA para tu negocio</a> ordena las preguntas que conviene responder antes de comparar nada.</p>
+
+                <h2 id="plantillas-marketing">Las plantillas de marketing: cuándo ahorran tiempo de verdad</h2>
+
+                <p>La plantilla es el corazón de Jasper: eliges el tipo de pieza —correo de venta, anuncio, publicación, ficha de producto, guion de vídeo, entrada de blog— y el sistema te devuelve la estructura ya montada, con sus campos y sus restricciones de formato. La plantilla no sustituye a la redacción, pero quita el trabajo de decidir qué secciones lleva un anuncio de LinkedIn y en qué orden.</p>
+
+                <p>El ahorro aparece por frecuencia, no por sofisticación. Tres piezas al mes justifican casi cualquier alternativa más barata; cuarenta piezas al mes del mismo tipo empiezan a justificar la suscripción, porque el coste de montar la estructura a mano se repite cuarenta veces.</p>
+
+                <div class="callout callout-warning">
+                    <strong>El riesgo de las plantillas</strong>
+                    <p>Si doce personas usan la misma plantilla sin una capa de estilo encima, el resultado no es contenido: es contenido con la misma voz repetido doce veces. Eso penaliza más de lo que ayuda, porque el lector medio detecta la homogeneidad antes que los detalles de redacción. La plantilla solo funciona si hay una capa de criterio de marca encima.</p>
+                </div>
+
+                <h2 id="brand-voice">Brand Voice: la parte que no se configura pegando tu web</h2>
+
+                <p>El error más común al montar un equipo de contenido es dar por hecho que la voz de marca se configura con la URL de la web. No funciona así. Una página web describe <strong>qué vendes</strong>; la voz describe <strong>cómo lo dices</strong>, y eso vive en ejemplos concretos, en las palabras que nunca usas y en el ritmo de tus frases.</p>
+
+                <p>Lo que sí funciona es aportar un volumen razonable de material ya aceptado por la empresa: publicaciones anteriores que nadie tocó, correos de venta que cerraron, textos de campañas que funcionaron. Con ese material, el trabajo consiste en extraer de forma explícita lo que tu marca repite y lo que evita: longitud de frase, tratamiento de tú/usted, vocabulario técnico, tipo de ejemplo, humor permitido, superlativos prohibidos.</p>
+
+                <p>Con esa especificación escrita, deja de importar tanto qué generador usas: la misma guía funciona en otro chat, y por eso el manual de estilo es el activo que hay que guardar fuera de la plataforma. La <a href="../../comparativas/ia-para-marketing/">comparativa de herramientas de IA para marketing</a> compara el ecosistema completo, no solo esta pieza concreta, y es útil para decidir dónde encaja cada una.</p>
+
+<h2 id="campanas-aprobacion">Campañas, calendario editorial y flujo de aprobación</h2>
+
+                <p>La diferencia entre generar texto y gestionar contenido está en el segundo. En Jasper el trabajo se organiza en campañas, y cada campaña tiene calendario, responsables y estados: borrador, en revisión, aprobado, programado. Esa mecánica es lo que resuelve el problema real de las PYMEs con más de una persona escribiendo para la misma marca, donde el problema no es generar sino saber qué está aprobado.</p>
+
+                <p>Antes de Jasper, esa coordinación se resolvía con una carpeta compartida, un documento de textos pendientes y varias revisiones por correo. El coste no es el correo: es el tiempo que alguien dedica a preguntar «esto ya está revisado o no». Un flujo con estados elimina esa pregunta, y eso es más valioso que las plantillas.</p>
+
+                <p>La contrapartida es organizativa. Si nadie nombra a un responsable ni define qué significa «aprobado», el calendario se llena de piezas que nadie revisa y el proceso se convierte en otro sitio donde acumular trabajo. La herramienta no crea el proceso: lo hace visible.</p>
+
+                <h2 id="jasper-imagen">Imágenes y vídeo para campañas: dónde encaja Jasper</h2>
+
+                <p>Además de texto, la plataforma genera imágenes y vídeo desde el mismo entorno. La ventaja práctica es de flujo, no de calidad: quien pide una campaña obtiene la pieza visual en la misma carpeta que el texto, con el mismo estado de aprobación y sin cambiar de aplicación.</p>
+
+                <p>La calidad de la imagen, en cambio, no es su fuerte frente a las herramientas especializadas. Para composiciones de marca, ahí hay que mirar: si tu necesidad es maquetar, redimensionar y mantener plantillas de campaña, la vía natural es un editor con IA como los que se analizan en la comparativa de <a href="../../herramientas-ia/canva-ia/">Canva IA para empresas</a>; si lo que quieres es ilustración original con estilo controlado, la vía es un generador de imágenes puro como <a href="../../herramientas-ia/midjourney/">Midjourney</a>.</p>
+
+                <p>Hay dos problemas operativos que conviene conocer antes de depender de la imagen generada. El primero es la <strong>consistencia</strong>: dos piezas de la misma campaña generadas por separado no comparten rasgos de personaje, encuadre ni paleta, así que acaban pareciendo de campañas distintas. El segundo es la <strong>trazabilidad de derechos</strong>: hay que saber qué se puede publicar en un canal comercial y con qué restricciones.</p>
+
+                <div class="callout callout-warning">
+                    <strong>El coste invisible de las imágenes</strong>
+                    <p>La generación de imagen y de vídeo se cobra, en general, con un sistema de créditos o de unidades aparte del asiento. Eso significa que un equipo que produce piezas visuales con regularidad puede superar el coste de la suscripción sin darse cuenta. Pide en la oferta el precio por unidad y el número máximo de unidades al mes antes de cerrar, no después.</p>
+                </div>
+
+                <h2 id="jasper-voice">Clones de voz: la función con más riesgo legal de toda la plataforma</h2>
+
+                <p>Jasper ofrece funciones de voz, incluida la generación a partir de una muestra. Su utilidad comercial es evidente: locuciones para vídeos, versiones de un mismo anuncio en distintos idiomas o alternativas de voz para probar. Su riesgo también, y es el más serio de toda la herramienta.</p>
+
+                <p>Una voz clonada es un <strong>dato biométrico</strong> y, como tal, entra en la categoría de datos especiales: no basta con una base legal interestada, hace falta consentimiento explícito de la persona cuya voz se utiliza. Además, si la voz es reconocible y se usa en un contexto que puede inducir a error, la pieza entra en el terreno de los <strong>contenidos sintéticos que deben ser identificables</strong> en la Unión Europea.</p>
+
+                <p>Esto tiene consecuencias prácticas muy concretas. Si clonas la voz de un empleado o de un cliente, necesitas el consentimiento por escrito de esa persona y un archivo que lo demuestre. Si clonas la voz de una persona famosa o de un creador, el problema ya no es de consentimiento: es de derechos de imagen y de reputación, y la campaña es tuya.</p>
+
+                <p>La alternativa prudente es quedarse con <strong>locución real o con avatares de catálogo</strong>, que es exactamente lo que resuelve una herramienta como <a href="../../herramientas-ia/synthesia/">Synthesia</a> para vídeos corporativos. La regla práctica: la voz clonada solo entra en campañas internas de borrador, nunca en piezas publicadas sin revisión jurídica.</p>
+
+                <h2 id="integraciones">Integraciones: Shopify, WordPress, CRM y API</h2>
+
+                <p>Un generador de contenido vale lo que vale lo que ocurre después. Si el texto se acaba copiando a mano en el gestor de correo o en la ficha de producto del ecommerce, la plataforma no ha ahorrado nada: solo ha movido el trabajo. Las integraciones son las que cierran el circuito.</p>
+
+                <p>En <strong>Shopify</strong>, el caso más claro es el catálogo: descripciones de producto, texto de las variantes y fichas que hay que mantener al día cuando cambia la especificación. Ahí, generar y publicar de forma conectada evita el trabajo manual más aburrido que existe, que es reescribir 200 descripciones idénticas.</p>
+
+                <p>En <strong>WordPress</strong> la conexión se resuelve por integración o extensión, y conviene verificar qué incluye tu plan concreto antes de contar con ella. En el lado del CRM, las herramientas con IA ya integrada cubren parte de este trabajo: la ficha de <a href="../../herramientas-ia/hubspot-ia/">HubSpot IA y Breeze Copilot</a> genera textos de correo comercial y fichas dentro del propio CRM, con el contexto del contacto ya disponible, que es justo el contexto que un generador externo no ve.</p>
+
+                <p>Para procesos largos, la pieza que falta es la orquestación, no la redacción. Ahí entran las plataformas de <a href="../../herramientas-ia/automatizacion-procesos-ia/">automatización de procesos con IA</a>, que son las que conectan la generación con el sistema de envío, el almacén de datos o el CRM sin intervención manual.</p>
+
+<h2 id="planes-precios">Planes y precios: cómo funciona el modelo comercial de Jasper</h2>
+
+                <p>Antes de cualquier cifra, una advertencia metodológica: <strong>no reproducimos aquí las tarifas de Jasper</strong>. El proveedor modifica su página de precios varias veces al año, con frecuencia suficiente como para que un importe copiado hace seis meses sea ya incorrecto. Lo responsable es describir el modelo de cobro, que es lo estable, y que leas el importe en la fuente oficial el mismo día que presupuesto.</p>
+
+                <p>El modelo tiene cuatro reglas que conviene entender, porque explican casi todas las sorpresas de factura:</p>
+
+                <ol>
+                    <li><strong>Se cobra por asiento y por nivel de servicio.</strong> El precio crece con el nivel, no con el volumen de contenido.</li>
+                    <li><strong>Pagar el año completo sale más barato que pagar mes a mes.</strong> Es el mismo producto con una diferencia de compromiso, no de funcionalidad.</li>
+                    <li><strong>El nivel de empresa no tiene tarifa pública.</strong> Se negocia: incluye altas, formación, soporte dedicado y condiciones de contrato.</li>
+                    <li><strong>Las unidades de imagen, vídeo y voz se cobran aparte del asiento.</strong> Aquí es donde se va la sorpresa.</li>
+                </ol>
 
                 <div class="price-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Plan</th>
+                                <th>Nivel</th>
+                                <th>Modelo de cobro</th>
+                                <th>Qué añade sobre el anterior</th>
                                 <th>Precio</th>
-                                <th>Usuarios</th>
-                                <th>Funciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Creator</strong></td>
-                                <td>35,50 €/mes ($39)</td>
-                                <td>1</td>
-                                <td>50+ plantillas, brand voice, SEO</td>
+                                <td><strong>Entrada</strong></td>
+                                <td>Por asiento, con tarifa distinta anual o mensual</td>
+                                <td>Plantillas de marketing, editor, generación de texto, primeras utilidades de imagen</td>
+                                <td>A consultar en la página oficial de precios</td>
                             </tr>
                             <tr class="highlight-row">
-                                <td><strong>Pro</strong></td>
-                                <td>53,70 €/mes ($59) anual · $69 mensual</td>
-                                <td>1 asiento</td>
-                                <td>Todo Creator + Brand Voice + SEO + editores</td>
+                                <td><strong>Profesional</strong></td>
+                                <td>Por asiento, con tarifa distinta anual o mensual</td>
+                                <td>Voz de marca, manual de estilo, aplicaciones para imagen y vídeo, más unidades disponibles</td>
+                                <td>A consultar en la página oficial de precios</td>
                             </tr>
                             <tr>
-                                <td><strong>Business</strong></td>
-                                <td>Personalizado</td>
-                                <td>Ilimitado</td>
-                                <td>API, soporte dedicado, custom AI</td>
+                                <td><strong>Equipo y empresa (JasperONE)</strong></td>
+                                <td>Por asiento, con negociación y contrato</td>
+                                <td>Campañas compartidas, permisos por rol, gestión de varias marcas, API, altas y formación, soporte dedicado</td>
+                                <td>Sin tarifa pública: precio a consultar</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Add-ons y unidades</strong></td>
+                                <td>Unidades sueltas o paquetes de imagen, vídeo y voz</td>
+                                <td>Generación visual y locución por encima de la cuota incluida</td>
+                                <td>A consultar; se factura aparte del asiento</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <p><strong>No hay plan gratuito.</strong> Jasper ofrece una prueba gratuita de 7 días, pero después hay que pagar. Esto lo convierte en una inversión seria desde el primer día.</p>
+                <div class="callout callout-info">
+                    <strong>Cómo pedir el presupuesto</strong>
+                    <p>Pide cuatro cosas por escrito antes de firmar: precio por asiento con facturación anual y con facturación mensual, número de unidades de imagen, vídeo y voz incluidas y su precio al superarlas, coste de añadir asientos a mitad de año y qué servicios de formación entran en el precio de empresa. Con esas cinco respuestas, la comparación con otras herramientas deja de ser una impresión y pasa a ser una cuenta.</p>
+                </div>
 
-                <h2 id="funciones">Funciones principales</h2>
+                <p>Conviene tener a mano una referencia externa verificada, porque la comparación de plataformas suele hacerse sin una referencia externa verificada. El <a href="../../herramientas-ia/chatgpt-enterprise/">precio de ChatGPT Enterprise y los planes de negocio de OpenAI</a> están bien documentados y sirven de cota superior o inferior según el nivel; el <a href="../../herramientas-ia/claude-ai-empresas/">precio de Claude para empresas</a> ofrece la referencia de la alternativa con más criterio editorial.</p>
 
-                <h3>50+ plantillas de contenido</h3>
-                <p>Emails, anuncios de Google/Facebook/LinkedIn, posts de blog, descripciones de producto, landing pages, scripts de video. Cada plantilla está optimizada para su formato específico.</p>
+                <h2 id="coste-total">El coste total real: asientos, créditos y complementos</h2>
 
-                <h3>Brand Voice</h3>
-                <p>Jasper aprende el tono y estilo de tu marca. Le das ejemplos de tu contenido existente y Jasper genera nuevo contenido que suena como tu empresa. Esto es útil para equipos grandes que necesitan consistencia.</p>
+                <p>El error de cálculo más común es comparar el precio de un asiento con el precio de un asiento y dar el asunto por cerrado. El coste total de propiedad de una herramienta de contenido para un equipo tiene al menos cuatro partidas: asientos, unidades de generación visual, horas de configuración y el coste de la revisión que la herramienta no elimina.</p>
 
-                <h3>Optimización SEO</h3>
-                <p>Integración con herramientas de SEO para sugerir keywords, optimizar títulos y meta descripciones. No es tan potente como Ahrefs o SEMrush, pero para redacción básica es suficiente.</p>
-
-                <h3>Colaboración en equipo</h3>
-                <p>El plan Pro permite que varios miembros del equipo trabajen en el mismo contenido, con flujos de aprobación y historial de cambios.</p>
-
-                <h2 id="calidad">Calidad del contenido generado</h2>
-
-                <p>Seamos honestos: la calidad de Jasper depende mucho de la plantilla y del prompt que le des.</p>
-
-                <ul>
-                    <li><strong>Emails y anuncios:</strong> ⭐⭐⭐⭐ Buenos. Las plantillas están bien optimizadas y generan contenido publicable con pocas ediciones.</li>
-                    <li><strong>Blog posts:</strong> ⭐⭐⭐ Acceptables. Los borradores necesitan edición humana significativa pero son un buen punto de partida.</li>
-                    <li><strong>Descripciones de producto:</strong> ⭐⭐⭐⭐ Buenos. Específicamente optimizadas para ecommerce.</li>
-                    <li><strong>Contenido largo:</strong> ⭐⭐⭐ mediocre. Para artículos de blog extensos, ChatGPT o Claude son superiores.</li>
-                </ul>
-
-                <h2 id="vs">¿Jasper o ChatGPT?</h2>
+                <p>Las dos primeras se pagan al proveedor. Las dos últimas se pagan con tu equipo, y son las que casi nunca se presupuestan. Configurar una voz de marca no es copiar una frase: es reunir material, probar variantes y escribir el manual de estilo. Revisar una pieza generada tampoco es leerla: es comprobar que las afirmaciones se sostienen.</p>
 
                 <div class="comparison-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Característica</th>
-                                <th>Jasper (35,50 €/mes)</th>
-                                <th>ChatGPT Plus ($20/mes)</th>
+                                <th>Partida del coste total</th>
+                                <th>En Jasper</th>
+                                <th>En un asistente general</th>
+                                <th>Impacto típico</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Especialización marketing</strong></td>
-                                <td>⭐⭐⭐⭐⭐ (50+ plantillas)</td>
-                                <td>⭐⭐⭐ (genérico)</td>
+                                <td><strong>Asientos</strong></td>
+                                <td>Varios niveles con precio creciente</td>
+                                <td>Precios públicos y estables: ChatGPT Business desde 21 € por asiento y mes con factura anual; Claude Team desde 20 US$ por asiento y mes con factura anual</td>
+                                <td>Es la partida dominante y la única fácil de comparar</td>
                             </tr>
                             <tr>
-                                <td><strong>Versatilidad</strong></td>
-                                <td>⭐⭐⭐ (solo contenido)</td>
-                                <td>⭐⭐⭐⭐⭐ (todo)</td>
+                                <td><strong>Unidades de imagen, vídeo y voz</strong></td>
+                                <td>Se cobran aparte del asiento, con packs</td>
+                                <td>Normalmente incluidas o limitadas por el plan, según el proveedor</td>
+                                <td>Puede duplicar el gasto mensual sin previo aviso</td>
                             </tr>
                             <tr>
-                                <td><strong>Brand Voice</strong></td>
-                                <td>⭐⭐⭐⭐⭐ (específico)</td>
-                                <td>⭐⭐⭐ (manual)</td>
+                                <td><strong>Configuración inicial</strong></td>
+                                <td>Voz de marca, manual de estilo y formación, con más recorrido en el nivel de empresa</td>
+                                <td>Redactar un prompt maestro y guardarlo en tu repositorio de documentación</td>
+                                <td>Diferencia de varios días de trabajo entre una vía y otra</td>
                             </tr>
                             <tr>
-                                <td><strong>Precio</strong></td>
-                                <td>$39/mes</td>
-                                <td>$20/mes</td>
+                                <td><strong>Revisión y aprobación</strong></td>
+                                <td>El flujo ayuda, pero el criterio es tuyo</td>
+                                <td>Igual que en Jasper: la herramienta no verifica datos</td>
+                                <td>No se elimina nunca</td>
                             </tr>
                             <tr>
-                                <td><strong>Análisis de datos</strong></td>
-                                <td>No</td>
-                                <td>Sí (Code Interpreter)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Generación de imágenes</strong></td>
-                                <td>No</td>
-                                <td>Sí (DALL-E)</td>
+                                <td><strong>Salida</strong></td>
+                                <td>El material de marca queda en la cuenta del proveedor</td>
+                                <td>Tus prompts y materiales quedan en tu repositorio</td>
+                                <td>Determina el coste de cambiar de herramienta más adelante</td>
                             </tr>
                         </tbody>
                     </table>
-
                 </div>
+
+                <h2 id="umbral-compensa">El umbral de compra, con la cuenta hecha</h2>
+
+                <p>La pregunta «¿me compensa?» se responde con una división sencilla: precio del asiento dividido por número de piezas al mes que ese asiento produce. Y la segunda: precio del asiento comparado con lo que cuesta un asiento de herramienta general.</p>
+
+                <p>La segunda comparación sí la podemos hacer con datos verificados. Si el asiento de Jasper cuesta lo mismo que un asiento de ChatGPT Business, <strong>la decisión se toma solo por funcionalidad</strong>: estás pagando lo mismo por plantillas y flujo de campaña. Si cuesta el doble, estás pagando el doble y el argumento tiene que ser de ahorro de horas, no de herramienta.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Escenario de equipo (estimación propia)</th>
+                                <th>Cálculo</th>
+                                <th>Coste anual</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>4 asientos de Jasper, tarifa P por asiento y mes</strong></td>
+                                <td>4 × P × 12</td>
+                                <td>48 × P al año</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>4 asientos de ChatGPT Business Standard</strong></td>
+                                <td>4 × 21 € × 12</td>
+                                <td>1.008 € al año</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4 asientos de Claude Team</strong></td>
+                                <td>4 × 20 US$ × 12</td>
+                                <td>960 US$ al año</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Punto de indiferencia de Jasper</strong></td>
+                                <td>1.008 € ÷ 48 asientos-meses</td>
+                                <td>21 € por asiento y mes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout callout-tip">
+                    <strong>Cómo usar esta tabla</strong>
+                    <p>Si la tarifa por asiento de Jasper que has encontrado en la web está por debajo de 21 € al mes, la decisión es técnica. Si está por encima, cada euro mensual de más añade <strong>48 € al año por asiento</strong>; con seis asientos son 288 € anuales adicionales solo por esa diferencia. Ese es el número que hay que comparar con las horas que la herramienta ahorra.</p>
+                </div>
+
+                <p>La primera división, la de las piezas al mes, se resuelve con un supuesto explícito en lugar de con una cifra inventada. Si cada pieza de contenido te ocupa 40 minutos de trabajo total entre redacción, revisión y maquetación, el tiempo mensual es piezas × 40 ÷ 60.</p>
+
+                <ul>
+                    <li><strong>10 piezas al mes:</strong> 400 minutos, unas 6,7 horas.</li>
+                    <li><strong>30 piezas al mes:</strong> 1.200 minutos, unas 20 horas.</li>
+                    <li><strong>60 piezas al mes:</strong> 2.400 minutos, unas 40 horas.</li>
+                    <li><strong>120 piezas al mes:</strong> 4.800 minutos, unas 80 horas.</li>
+                </ul>
+
+                <p>La conclusión honesta de esa tabla es incómoda: <strong>a 10 piezas al mes, ninguna suscripción se justifica</strong>, y a 30 tampoco con holgura. A partir de 60 piezas mensuales, o en un equipo donde varias personas editan el mismo material, la conversación cambia: lo que se compra no es generación, sino coordinación.</p>
+
+                <p>Los escenarios reales de adopción y su coste en tiempo están desarrollados en la guía sobre <a href="../../guias/roi-real-empresas-ia/">el ROI real de la IA en empresas españolas</a>, y el método para calcularlo sin engañarse, en la página sobre <a href="../../herramientas-ia/roi-ia-empresas/">cómo calcular el ROI de tus herramientas de IA</a>.</p>
+
+<h2 id="jasper-vs-chatgpt">Jasper frente a ChatGPT y Claude, tarea por tarea</h2>
+
+                <p>Comparar plataformas por una nota global no sirve de nada: lo que importa es qué tarea concreta quieres resolver. Un equipo que escribe fichas de producto necesita descripciones exactas; un equipo que escribe notas de prensa necesita control de tono. La tabla siguiente ordena las diferencias por tarea, que es como se decide en la práctica.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tarea</th>
+                                <th>Jasper</th>
+                                <th>ChatGPT</th>
+                                <th>Claude</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Correo de venta y anuncio con plantilla</strong></td>
+                                <td>Punto fuerte: plantilla y estructura del canal</td>
+                                <td>Correcto, pero hay que describir el formato</td>
+                                <td>Correcto, con muy buen control de tono</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Voz de marca compartida por el equipo</strong></td>
+                                <td>Punto fuerte: guía de estilo configurada en la plataforma</td>
+                                <td>Manual: hay que reescribir las instrucciones cada vez</td>
+                                <td>Idem, con la ventaja de la calidad editorial</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Artículo largo de fondo</strong></td>
+                                <td>Correcto como borrador, con más trabajo de edición</td>
+                                <td>Bueno</td>
+                                <td>Punto fuerte: mejor control de registro en textos largos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Calendario de campañas con aprobación</strong></td>
+                                <td>Punto fuerte: estados y responsables</td>
+                                <td>No lo trae: hay que montarlo aparte</td>
+                                <td>Tampoco</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Análisis de datos y hojas de cálculo</strong></td>
+                                <td>No es su territorio</td>
+                                <td>Punto fuerte con el análisis de datos</td>
+                                <td>Trabaja con documentos y código</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Generación de imágenes</strong></td>
+                                <td>Sí, con unidades aparte del asiento</td>
+                                <td>Sí, integrada en el plan</td>
+                                <td>No genera imágenes</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Precio de referencia para empresa</strong></td>
+                                <td>Por nivel; el de empresa, a consultar</td>
+                                <td>Business desde 21 € por asiento y mes, factura anual</td>
+                                <td>Team desde 20 US$ por asiento y mes, factura anual</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Entrenamiento con tu contenido</strong></td>
+                                <td>Consulta el contrato: es la duda que hay que resolver por escrito</td>
+                                <td>Los planes de negocio no entrenan con tu contenido</td>
+                                <td>Los planes de equipo y empresa no entrenan por defecto</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La lectura honesta de esa tabla es que Jasper no gana por inteligencia: gana por <strong>organización</strong>. Si tu problema es producir más texto, ya tienes una herramienta general más barata y más capaz. Si tu problema es que cuatro personas producen texto que se contradice, el problema no se resuelve con mejor redacción, sino con un sistema donde la voz de marca y el estado de aprobación estén en la herramienta.</p>
+
+                <p>Para una comparación más amplia entre los tres grandes asistentes, con casos de uso y límites, está la comparativa de <a href="../../comparativas/chatgpt-vs-claude-vs-gemini/">ChatGPT frente a Claude y Gemini</a>.</p>
+
+                <h2 id="que-no-hace">Qué no hace Jasper: los límites que nadie pone en la demo</h2>
+
+                <p>La demo enseña el mejor caso: una página que aparece en treinta segundos y suena convincente. Lo que no enseña son los límites, y son varios.</p>
+
+                <ul>
+                    <li><strong>No es un gestor de campañas de envío.</strong> Redacta el texto, pero no lo entrega, ni optimiza la segmentación, ni mide la apertura. Eso lo hace tu plataforma de correo.</li>
+                    <li><strong>No es tu CRM.</strong> No guarda el contexto del cliente ni el histórico de la relación comercial. Para eso están las herramientas de ventas con IA incorporada.</li>
+                    <li><strong>No aporta datos de búsqueda.</strong> No te dice cuántas búsquedas tiene una palabra clave, ni qué enlaces apuntan a tu página. Para eso necesitas una herramienta de SEO, y ninguna IA generativa sustituye ese dato.</li>
+                    <li><strong>No verifica los hechos.</strong> Puede inventar cifras, referencias a normativa o citas. En una pieza publicada, eso es un problema legal y reputacional.</li>
+                    <li><strong>No garantiza el cumplimiento.</strong> Que la plataforma exista en Europa no significa que tus piezas cumplan el RGPD o el AI Act: eso depende de cómo las uses.</li>
+                </ul>
 
                 <div class="callout callout-warning">
-                    <strong>Opinión honesta:</strong> Para la mayoría de empresas, ChatGPT Plus a $20/mes ofrece más valor que Jasper a $39/mes. Jasper solo justifica su precio si creas contenido de marketing a gran escala y necesitas las plantillas y el Brand Voice específicamente.
+                    <strong>El fallo que aparece en el mes tres</strong>
+                    <p>El problema típico no es la calidad del primer texto, que al principio resulta sorprendentemente buena. El problema llega cuando el equipo genera más piezas de las que alguien puede revisar. Una herramienta que multiplica la producción sin multiplicar la revisión fabrican un backlog invisible: todo el mundo tiene trabajo «pendiente de validar» y nadie sabe cuántos son.</p>
                 </div>
 
-                <h2 id="veredicto">Veredicto</h2>
+                <h2 id="errores-implantacion">Siete errores de implantación y lo que cuesta cada uno</h2>
 
-                <div class="rating-box">
-                    <div class="rating-text">
-                        <p>Jasper AI es una herramienta sólida para equipos de marketing que crean contenido a escala. Sus plantillas y Brand Voice son útiles. Pero para la mayoría de PYMEs, ChatGPT Plus ofrece mejor relación calidad-precio. Jasper es un lujo, no una necesidad.</p>
-                    </div>
-                </div>
-                <div class="callout callout-info">
-                    <strong>Nota de conversión:</strong> Precios en USD según tarifas oficiales de cada fabricante (septiembre 2026). Equivalencia aproximada en EUR: 1 USD ≈ 0,91 EUR. El precio final lo fija siempre la facturación del fabricante.
+                <p>La decisión de compra es la parte fácil. Lo caro es lo que pasa después, y esos errores se repiten en casi todas las implantaciones que se hacen mal.</p>
+
+                <p><strong>Uno. Activar todas las plantillas y no terminar ninguna.</strong> Abrir veinte tipos de contenido el primer mes y no completar ninguno. El coste es un mes deazelos y la sensación, correcta, de que la herramienta no sirve.</p>
+
+                <p><strong>Dos. Configurar la voz de marca con el texto de la web.</strong> Como ya se ha explicado, la web describe el producto y no el tono. El resultado es contenido correcto y genérico, que es el peor resultado posible porque pasa la revisión.</p>
+
+                <p><strong>Tres. Publicar sin revisar las afirmaciones.</strong> Es el error caro. Una cifra inventada en una campaña publicada tiene tres costes: la retirada del material, la pérdida de credibilidad y, si afecta a datos de consumo, el riesgo de sanción. La revisión de afirmaciones no la hace la herramienta.</p>
+
+                <p><strong>Cuatro. Medir piezas creadas en lugar de piezas publicadas.</strong> Es el error de métrica más común: el panel sube y la venta no. Si el objetivo es tráfico o conversión, lo que se mide es publicación, indexación y conversión atribuida.</p>
+
+                <p><strong>Cinco. Un asiento compartido por cinco personas.</strong> Ahorra dinero y estropea la trazabilidad: no se sabe quién escribió qué, y la configuración de estilo se pisa entre sesiones. Si hay varias personas, hay varios asientos, aunque se restrinja el uso a los que realmente escriben.</p>
+
+                <p><strong>Seis. Pegar información confidencial del cliente.</strong> Datos de otros negocios, tarifas, historiales o datos personales no entran en una herramienta sin base legal y sin acuerdo de encargo. El coste aquí no es una multa, es la pérdida de confianza del cliente que se entera.</p>
+
+                <p><strong>Siete. Dejar el material de marca solo en la plataforma.</strong> Tu manual de estilo, tus plantillas y tus mejores textos deberían existir también en tu repositorio. Si no, el día que cambies de herramienta empiezas de cero, y ese coste aparece siempre en el peor momento.</p>
+
+                <h2 id="rgpd-ai-act">RGPD, AI Act y contenido generado en Europa</h2>
+
+                <p>Usar una herramienta de IA para marketing en España tiene dos marcos que conviene tener presentes desde el primer día, no desde el primero problema.</p>
+
+                <p>El <strong>RGPD</strong> sigue aplicando igual que con cualquier proveedor externo que toca datos personales. Si el equipo pega listados de clientes, datos de contacto o información de personas identificables en una herramienta de IA, eso es un tratamiento que necesita base legal, información al interesado y un contrato de encargo con el proveedor. Para contenido de clientes, la alternativa prudente es <strong>datos anonimizados</strong>: información agregada en lugar de datos que identifican a personas.</p>
+
+                <p>El <strong>AI Act</strong> (Reglamento (UE) 2024/1689) tiene un calendario que ya afecta a esto: la obligación de alfabetización en IA del artículo 4 se aplica <strong>desde el 2 de febrero de 2025</strong>, y las obligaciones de transparencia del <strong>artículo 50 son aplicables desde el 2 de agosto de 2026</strong>. Ese artículo es el que afecta directamente a la producción de contenido: obliga a que ciertos contenidos sintéticos o manipulados sean identificables como tales. La aplicación general del Reglamento está prevista para agosto de 2027.</p>
+
+                <p>La consecuencia práctica no es técnica, es editorial: <strong>etiquetar el contenido generado cuando el caso lo requiera</strong> y no presentar como propio un material que es una simulación. La guía de <a href="../../guias/ia-ai-act-cumplimiento/">IA y cumplimiento legal del AI Act para PYMES</a> desarrolla el calendario completo, y la de <a href="../../herramientas-ia/seguridad-etica-ia/">seguridad e ética de la IA en empresas</a> cubre el resto del marco.</p>
+
+                <p>Un tercer elemento, más cercano al día a día, es el <strong>acuerdo de encargo</strong>: pide por escrito dónde se procesan los datos, cuánto tiempo se conservan, si hay transferencia fuera del Espacio Económico Europeo y quién es el responsable. Sin ese documento firmado, el uso con datos de clientes es difícil de justificar.</p>
+
+<h2 id="dependencia-proveedor">Dependencia del proveedor: cómo no quedar atrapado</h2>
+
+                <p>Todo el debate entre plataformas y asistentes generales esconde un asunto más importante que el precio: <strong>dónde queda guardado tu material de marca</strong>. En Jasper, la voz de marca, el manual de estilo, las plantillas propias y los textos aprobados viven dentro de la cuenta. Eso no está prohibido en ningún sitio y, para una herramienta de subscription, es razonable. Pero significa que cambiar de proveedor no es cambiar de licencia: es reconstruir el sistema.</p>
+
+                <p>La solución no es evitar la dependencia —imposible si usas cualquier servicio en la nube— sino <strong>que exista una copia tuya</strong>. Tres reglas bastan:</p>
+
+                <ol>
+                    <li><strong>El manual de estilo, en tu repositorio de documentación, no solo en la plataforma.</strong> Un documento de texto con la voz, el vocabulario y las prohibiciones te sirve para cualquier generador.</li>
+                    <li><strong>Los mejores textos, guardados como pieza propia.</strong> Los cinco correos que mejor funcionaron son un activo más valioso que la suscripción.</li>
+                    <li><strong>Una prueba de salida cada seis meses.</strong> Reescribe una campaña real en otra herramienta. Si tarda más de una tarde, tienes un problema de dependencia.</li>
+                </ol>
+
+                <p>El criterio para medir la dependencia es sencillo: <strong>¿puedes migrar tu campaña a otra herramienta en una tarde?</strong> Si la respuesta es sí, estás usando un producto. Si la respuesta es no, estás usando una infraestructura.</p>
+
+                <h2 id="cuando-otra-herramienta">Cuándo conviene otra herramienta</h2>
+
+                <p>No todas las empresas necesitan una plataforma de marketing. Estas son las situaciones en las que hay algo mejor pagando, y la alternativa concreta en cada caso.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Si tu situación es esta</th>
+                                <th>Por qué Jasper no es la respuesta</th>
+                                <th>Qué mirar en su lugar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Una sola persona escribe contenido</strong></td>
+                                <td>No hay coordinación que organizar; la ventaja principal de la plataforma no se activa</td>
+                                <td>Un asistente general con facturación anual y un prompt maestro guardado</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>El equipo comercial necesita textos con contexto de cliente</strong></td>
+                                <td>Un generador externo no ve el histórico del contacto</td>
+                                <td>IA integrada en el CRM, como la de <a href="../../herramientas-ia/hubspot-ia/">HubSpot y Breeze Copilot</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>La prioridad es el volumen visual, no el texto</strong></td>
+                                <td>El texto ya lo resuelves; lo que falta es maquetación y control de marca</td>
+                                <td>Un editor con IA de plantillas, como <a href="../../herramientas-ia/canva-ia/">Canva IA</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>El contenido es muy visual o muy ilustrativo</strong></td>
+                                <td>La generación visual genérica no da control de estilo</td>
+                                <td>Un generador de imágenes especializado, como <a href="../../herramientas-ia/midjourney/">Midjourney</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Necesitas vídeo con avatares para formación o informativas</strong></td>
+                                <td>El coste por minuto de vídeo con avatares tiene su propia aritmética</td>
+                                <td><a href="../../herramientas-ia/synthesia/">Synthesia</a> para vídeos corporativos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>El presupuesto es cero y hay que empezar</strong></td>
+                                <td>Sin plan gratuito permanente, la prueba se acaba en días</td>
+                                <td><a href="../../comparativas/herramientas-ia-gratuitas/">herramientas de IA gratuitas para empresas</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>El trabajo ya vive en Microsoft 365 o Google Workspace</strong></td>
+                                <td>Añadir una plataforma paralela crea una segunda fuente de verdad</td>
+                                <td><a href="../../herramientas-ia/copilot-microsoft/">Microsoft 365 Copilot</a> o <a href="../../herramientas-ia/gemini-workspace/">Gemini para Workspace</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ya hay un CRM potente y se quiere evitar otra suscripción</strong></td>
+                                <td>La IA del CRM ya cubre correo comercial y fichas</td>
+                                <td>La comparativa de <a href="../../comparativas/software-ia-ventas/">software de IA para ventas</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <h3>Jasper SÍ vale la pena si:</h3>
+                <div class="callout callout-tip">
+                    <strong>La regla de decisión en una frase</strong>
+                    <p>Si en tu empresa es <strong>una persona la que escribe</strong>, compra una herramienta general. Si son <strong>varias las que escriben sobre la misma marca</strong>, el problema no es de texto sino de coordinación, y ahí una plataforma con voz de marca, calendario y estados empieza a justificar su precio.</p>
+                </div>
+
+                <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+
+                <h3 id="faq-1">¿Cuánto cuesta Jasper AI?</h3>
+                <p>No reproducimos aquí las tarifas porque el proveedor las revisa varias veces al año y un importe copiado hace meses puede ser incorrecto: consúltalas el mismo día en su página oficial de precios. Lo que sí es estable es el modelo: suscripción por asiento, con precio distinto si se paga el año completo o mes a mes, sin plan gratuito permanente y con las unidades de imagen, vídeo y voz cobradas aparte del asiento. Para tener una cota de comparación verificada, un asiento de ChatGPT Business cuesta 21 € al mes con facturación anual y uno de Claude Team cuesta 20 US$ al mes también con factura anual, mientras que el nivel de empresa de Jasper se negocia sin tarifa pública.</p>
+
+                <h3 id="faq-2">¿Jasper AI tiene plan gratuito?</h3>
+                <p>No hay un plan gratuito permanente. Jasper ofrece un periodo de prueba para que puedas recorrer las funciones, y a partir de ahí la contratación es de pago. Esto tiene una consecuencia práctica que conviene tener en cuenta antes de empezar: no puedes instalar la voz de marca, cargar tu manual de estilo y medir el ahorro durante meses. Vas a tener que decidir en pocos días si se contrata o no, lo que significa que la prueba debe usarse para una sola cosa: comprobar si el material de marca produce piezas que tu equipo puede publicar sin reescribirlas casi enteras.</p>
+
+                <h3 id="faq-3">¿Merece la pena Jasper o mejor ChatGPT Business o Claude Team?</h3>
+                <p>Depende de cuántas personas escriben sobre la misma marca. Con una sola persona, un asistente general con facturación anual es más barato y más versátil. Con varias personas, el valor de Jasper está en la coordinación: una voz de marca compartida, campañas con calendario y estados de aprobación que evitan el intercambio de correos para preguntar si un texto está aprobado. Con cuatro asientos, el punto de indiferencia de precio está en 21 € por asiento y mes, que es lo que cuesta ChatGPT Business; por encima de esa cifra, la decisión se justifica por horas ahorradas, no por la herramienta.</p>
+
+                <h3 id="faq-4">¿Jasper genera imágenes y vídeo de verdad?</h3>
+                <p>Sí, dentro de la misma plataforma, junto al texto. Eso es una ventaja de flujo: la pieza visual y la textual salen en la misma carpeta y con el mismo estado de revisión. En calidad, en cambio, no es su terreno: para maquetar y mantener plantillas de campaña hay herramientas de editor con IA más especializadas, y para ilustración original con control de estilo hay generadores de imágenes dedicados. Ten en cuenta además que estas unidades se cobran aparte del asiento, así que un equipo que produce mucho visual puede superar el precio base sin avisar.</p>
+
+                <h3 id="faq-5">¿Es legal clonar la voz de una persona con Jasper?</h3>
+                <p>La voz es un dato biométrico y, como tal, se considera dato especial: no basta con una base legal, hace falta consentimiento explícito de la persona cuya voz se clona y un archivo que lo demuestre. Si además la voz se usa en piezas que pueden inducir a error, entra el terreno de la transparencia del artículo 50 del AI Act, aplicable en la Unión Europea desde el 2 de agosto de 2026. Por eso la recomendación práctica es restrictiva: la voz clonada solo debe usarse en borradores internos y nunca en piezas publicadas sin revisión jurídica. Para vídeo corporativo hay alternativas más limpias, como los avatares de catálogo.</p>
+
+                <h3 id="faq-6">¿Jasper sustituye a una herramienta de SEO o a un gestor de correo?</h3>
+                <p>No. Jasper redacta contenido, pero no aporta datos de búsqueda: no te dice cuántas búsquedas tiene una palabra clave, ni qué páginas enlazan a la tuya, ni el volumen de competencia. Eso sigue necesitando una herramienta de SEO. Tampoco es un gestor de campañas de envío ni un CRM: escribe el correo, pero no lo entrega, no optimiza la segmentación y no mide la apertura. Su valor está en la redacción y en la coordinación del equipo, no en la ejecución de la campaña.</p>
+
+                <h3 id="faq-7">¿Qué pasa con mis datos y con la información de mis clientes?</h3>
+                <p>Nada entra en la herramienta sin que haya una decisión previa. Si el equipo pega listados de contactos, tarifas de clientes o cualquier dato personal, eso es un tratamiento de datos que necesita base legal, información al interesado y un contrato de encargo con el proveedor. La práctica prudente para contenido de clientes es trabajar con datos agregados y anonimizados en lugar de con datos identificados. Y antes de firmar conviene pedir por escrito dónde se procesan los datos, cuánto se conservan y si hay transferencias fuera del Espacio Económico Europeo.</p>
+
+                <h3 id="faq-8">¿Puedo cancelar Jasper y llevarme todo lo que he creado?</h3>
+                <p>Puedes cancelar la suscripción, pero el material de marca que has configurado dentro de la plataforma no viaja contigo automáticamente. Por eso conviene desde el primer día guardar fuera la voz de marca y el manual de estilo en tu propia documentación, y conservar los mejores textos como pieza propia. Una prueba práctica y barata es cada seis meses: reescribe una campaña real en otra herramienta. Si tarda más de una tarde, tienes dependencia y hay que empezar a exportar el material.</p>
+
+<h2 id="fuentes">Fuentes</h2>
+
+                <p>Este artículo no reproduce las tarifas de Jasper por una razón concreta: el proveedor modifica su página de precios varias veces al año y cualquier importe incorporado aquí quedaría desactualizado. Las cifras que sí aparecen proceden de las páginas oficiales de cada fabricante y están enlazadas a continuación. <strong>Consultado el 3 de octubre de 2026.</strong></p>
+
                 <ul>
-                    <li>Tu equipo de marketing crea +50 piezas de contenido/mes</li>
-                    <li>Necesitas consistencia de marca en múltiples canales</li>
-                    <li>Ya usas ChatGPT para todo lo demás y quieres algo específico para marketing</li>
-                    <li>Tu presupuesto permite $39-59/mes sin problema</li>
+                    <li><strong>Jasper: sitio oficial y página de precios.</strong> <a href="https://www.jasper.ai/" rel="noopener nofollow">jasper.ai</a> y <a href="https://www.jasper.ai/pricing" rel="noopener nofollow">jasper.ai/pricing</a>: niveles de servicio, modelo de cobro por asiento, diferencia entre facturación anual y mensual, ausencia de plan gratuito permanente y unidades de imagen, vídeo y voz facturadas aparte del asiento. Antes de presupuestar, verifica el importe en esa misma página, no en este artículo.</li>
+                    <li><strong>Precios de los planes de negocio de OpenAI.</strong> <a href="https://openai.com/business/pricing/" rel="noopener nofollow">openai.com/business/pricing</a>: origen de los 21 € por asiento y mes de ChatGPT Business Standard con facturación anual, de la diferencia entre el plan estándar y el premium y de la ausencia de precio público en el nivel de empresa.</li>
+                    <li><strong>Precios de Anthropic.</strong> <a href="https://www.anthropic.com/pricing" rel="noopener nofollow">anthropic.com/pricing</a>: origen de los 20 US$ por asiento y mes de Claude Team con factura anual, de los 25 US$ de la factura mensual y de la política de no entrenamiento con tu contenido en los planes de equipo y empresa.</li>
+                    <li><strong>Precios de Google Workspace para España.</strong> <a href="https://workspace.google.com/intl/es_es/pricing.html" rel="noopener nofollow">workspace.google.com</a>: cotizaciones en euros de los planes de empresa que sirven de referencia a la alternativa del departamento.</li>
+                    <li><strong>Precios de Gemini Enterprise.</strong> <a href="https://cloud.google.com/gemini-enterprise" rel="noopener nofollow">cloud.google.com/gemini-enterprise</a>: precios por asiento en dólares y su comparación con los planes de empresa.</li>
+                    <li><strong>Reglamento (UE) 2024/1689 (AI Act).</strong> <a href="https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=OJ:L_202401689" rel="noopener nofollow">texto oficial en EUR-Lex</a>: origen de las fechas citadas, la obligatoriedad de la alfabetización en IA del artículo 4 desde el 2 de febrero de 2025 y la aplicabilidad de las obligaciones de transparencia del artículo 50 desde el 2 de agosto de 2026.</li>
+                    <li><strong>Reglamento (UE) 2016/679 (RGPD).</strong> <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" rel="noopener nofollow">texto oficial en EUR-Lex</a>: base del tratamiento de datos personales, del deber de informar al interesado y de la suscripción de un contrato de encargo con el proveedor de la herramienta.</li>
+                    <li><strong>AEPD y tratamiento de datos con inteligencia artificial.</strong> <a href="https://www.aepd.es/sites/default/files/2020-02/adecuacion-rgpd-ia.pdf" rel="noopener nofollow">documento de adecuación al RGPD en materia de IA</a> y <a href="https://www.aepd.es/" rel="noopener nofollow">aepd.es</a>: criterio de la autoridad española sobre los riesgos al tratar datos personales con sistemas de IA, incluidos los datos biométricos.</li>
                 </ul>
 
-                <h3>Jasper NO vale la pena si:</h3>
-                <ul>
-                    <li>Creas menos de 20 piezas de contenido/mes</li>
-                    <li>Tu presupuesto es ajustado</li>
-                    <li>Necesitas versatilidad (mejor ChatGPT)</li>
-                    <li>Necesitas análisis de datos o generación de imágenes</li>
-                </ul>
-
-                <div class="related-articles">
-                    <h3>Artículos relacionados</h3>
-                    <ul>
-                        <li><a href="../../comparativas/chatgpt-vs-claude-vs-gemini/">ChatGPT vs Claude vs Gemini</a></li>
-                        <li><a href="../../herramientas-ia/chatgpt-enterprise/">ChatGPT Enterprise</a></li>
-                        <li><a href="../../comparativas/herramientas-ia-gratuitas/">Herramientas IA gratuitas</a></li>
-                    </ul>
-                </div>
+                <p>Los cálculos de coste de este artículo son <strong>estimaciones propias</strong> y están etiquetados como tales: la tabla de coste anual multiplica asientos, precio unitario verificado y doce meses, y el umbral de piezas al mes asume cuarenta minutos de trabajo humano total por pieza de contenido (redacción, revisión y maquetación). Los importes en euros y en dólares no se convierten entre sí porque el tipo de cambio que te aplique tu factura puede no coincidir con el de este artículo.</p>
             </div>
         </div>
     </article>

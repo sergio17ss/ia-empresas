@@ -41,66 +41,79 @@
     <noscript><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="../../css/style.css">
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "SoftwareApplication",
-            "name": "Herramientas de IA para Clínicas y Consultorios",
-            "applicationCategory": "HealthApplication",
-            "operatingSystem": "Web",
-            "offers": {
-                "@type": "Offer",
-                "price": "29",
-                "priceCurrency": "EUR",
-                "description": "Desde 29 EUR/mes (transcripcion clinica) hasta planes enterprise"
-            }
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "4.0",
-            "bestRating": "5"
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "IA TodoPyme"
-        },
-        "datePublished": "2026-09-09"
-    }
-    </script>
+    
 
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "¿Qué tareas de una clinica puede automatizar la IA?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Las de mayor retorno y menor riesgo son: agendado y recordatorios de citas por chat o SMS, transcripcion de la consulta a historia clinica, resumen de documentos, gestion de listas de espera y primeras respuestas a preguntas frecuentes de pacientes. Las tareas de diagnostico asistido o triaje clinico son posibles pero estan sujetas a regulacion (AI Act de alto riesgo) y exigen supervision medica."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "¿Cuánto cuesta implementar IA en una clinica privada?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Un consultorio pequeno puede empezar con 29-79 euros al mes: transcripcion clinica con IA (desde 29 EUR/mes por profesional) y un gestor de citas con recordatorios automaticos (desde 80 EUR/mes). Los asistentes conversacionales para pacientes con IA parten de 150-300 EUR/mes. Las soluciones de imagen o diagnostico asistido son proyectos enterprise con precios por volumen que rara vez bajan de miles de euros anuales."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "¿Es legal usar IA con datos de pacientes en Espana?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Si, con condiciones estrictas. Los datos de salud son categoria especial del RGPD: exigen base legal, evaluacion de impacto y garantias reforzadas. Desde el marco del AI Act, los sistemas de IA para diagnostico o triaje se clasifican como alto riesgo y necesitan supervision humana y registro. La regla practica: herramientas con contrato de tratamiento de datos (DPA), cifrado, y nunca datos de pacientes en cuentas gratuitas de IA de consumo."
-                }
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Puede la IA diagnosticar a un paciente?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Ninguna de las herramientas de este artículo diagnostica, y este artículo no propone hacerlo. Un modelo de lenguaje opera sobre texto: no ve al paciente, no le ausculta, no mide constantes y no conoce la exploración que el Profesional ha hecho. Puede resumir lo que el Profesional le cuenta o estructurar un informe, y ahí se acaba. El diagnóstico es un acto Profesional que requiere exploración, razonamiento clínico y responsabilidad. Además, los sistemas que apoyan decisiones diagnósticas entran en el régimen de alto riesgo del AI Act, con obligaciones plenas desde el 2 de agosto de 2027. Una pantalla no sustituye una consulta."
             }
-        ]
-    }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué tareas de una clínica puede automatizar la IA con seguridad?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Las de mayor retorno y menor riesgo son: agendado y recordatorios de citas por SMS o WhatsApp, transcripción de la consulta a historia clínica como borrador para revisión y firma, resumen de documentos e informes, gestión de listas de espera, primeras respuestas a preguntas administrativas de pacientes y propuestas de código de procedimiento. Todas comparten una característica: liberan trabajo repetitivo sin tomar ninguna decisión clínica. El triaje automático de urgencia y cualquier apoyo al diagnóstico no entran en este grupo."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Es legal usar IA con datos de pacientes en España?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, pero con un marco más estricto que en cualquier otro sector. Los datos de salud son categoría especial del RGPD (artículo 9) y su tratamiento está prohibido salvo que concurra una excepción, siendo la más relevante para una clínica la prestación de asistencia sanitaria bajo deber de secreto Profesional. A eso se suman dos requisitos propios de la IA: consentimiento expreso del paciente para grabar la consulta, porque grabar es una finalidad nueva que no está cubierta por la asistencia, y contrato de encargo (DPA) firmado con cada proveedor que toque esos datos. La guía de la AEPD para profesionales del sector sanitario desarrolla quién es responsable y cuándo procede evaluación de impacto. Nunca datos de pacientes en cuentas de consumo: los planes individuales no firman DPA y pueden usar tu contenido para entrenar."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Necesito pedir consentimiento al paciente para que se grabe la consulta?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. La base legal de la historia clínica es la prestación de asistencia sanitaria, no el consentimiento. Grabar la conversación para transcribirla es un tratamiento adicional con una finalidad nueva, y para eso hace falta consentimiento expreso del paciente. El texto de información debe recoger qué se graba, con qué herramienta, dónde se procesa el audio, cuánto tiempo se conserva y que una parte del borrador de la historia lo redacta un sistema de IA. Desde el 2 de agosto de 2026, además, las obligaciones de transparencia del artículo 50 del AI Act obligan a informar de la interacción con sistemas de IA. Sin ese texto, el uso de la transcripción es difícil de defender."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta la IA para un consultorio de dos profesionales?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "La parte que toca datos de pacientes —transcripción clínica— no tiene precio de lista público: cada fabricante lo factura por Profesional y lo cierra en presupuesto, así que la única cifra fiable es la que te den por escrito. Estimación propia para un consultorio de dos profesionales: entre 60 y 120 € al mes contando transcripción y agenda, y entre 100 y 250 € al mes si además contratas un asistente conversacional para pacientes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué diferencia hay entre transcripción clínica y dictado médico?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "La transcripción clínica automática graba la conversación con el paciente y genera un borrador de historia clínica estructurado que el Profesional revisa, corrige y firma. El dictado médico hace lo contrario en el sentido del flujo: el Profesional redacta la historia hablando y el sistema convierte la voz en texto con vocabulario de su especialidad. La diferencia práctica es de consentimiento y de control: la transcripción exige grabar, lo que requiere consentimiento expreso y aceptar que el sistema establezca una borrador; el dictado mantiene el control de la redacción y no necesita grabar. Ambas exigen supervisión humana y ninguna sustituye la responsabilidad clínica."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Puedo usar un asistente de IA gratuito o un plan individual con datos de pacientes?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Los planes individuales de ChatGPT, Claude y Gemini no firman contrato de encargo para datos de salud y su contenido puede usarse para entrenar; las cuentas personales de Google con el guardado de actividad activo usan la actividad para entrenar y conservan 18 meses. En una clínica, la respuesta es sencilla: si el proveedor no puede firmar un DPA para categoría especial, no se le entrega un solo dato identificable de paciente. La guía de la AEPD para profesionales sanitarios explica el marco de responsabilidad en los distintos supuestos."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿La IA reemplaza al médico o a la recepción de la clínica?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ni al médico ni a la recepción. La IA sustituye una tarea, no una persona. En el caso del médico, la documentación es la parte que más horas consume y la que menos valor clínico aporta; en el caso de recepción, las respuestas administrativas repetitivas son la mayor parte del volumen. Lo que hace la tecnología es liberar esas horas para que se dediquen a lo que sí requiere criterio: la exploración, el razonamiento clínico, la relación con el paciente y la organización del centro. En una consulta con falta de personal, ese es exactamente el efecto útil, y en ningún caso es una sustitución de profesionales."
+            }
+        }
+    ]
+}
     </script>
 
 </head>
@@ -134,273 +147,770 @@
 
             <div class="methodology-banner">
                 <span class="methodology-icon" aria-hidden="true"></span>
-                <p><strong>Metodología:</strong> Análisis basado en documentación oficial de los fabricantes, documentación de la AEMPS, AEPD y del AI Act (Reglamento UE 2024/1689), y precios verificados en portales de compradores, actualizado a septiembre 2026.</p>
+                <p><strong>Metodología:</strong> Análisis basado en la documentación oficial de cada fabricante, las guías de la Agencia Española de Protección de Datos sobre datos de salud, el Reglamento (UE) 2024/1689 (AI Act) y precios de Empresa verificados el 3 de octubre de 2026. Ninguna cifra de este artículo es estimada sin marca visible.</p>
             </div>
 
             <div class="article-header">
                 <span class="article-category-badge">Comparativas</span>
                 <h1>IA para Clínicas y Consultorios: Herramientas en 2026</h1>
-                <p class="article-subtitle">Una consulta privada pierde horas cada semana en citas, transcripción de consultas y gestión de pacientes. La IA resuelve esas tareas — pero en sanidad el error no perdona y la regulación es estricta. Esta guía separa lo que ya funciona de lo que conviene esperar.</p>
+                <p class="article-subtitle">Una consulta privada pierde horas cada semana en citas, transcripción de consultas y gestión de pacientes. La IA resuelve esas tareas, pero en sanidad el error no perdona y el marco legal es el más estricto del mercado español. ésta guía separa lo que la IA puede hacer de lo que exige un Profesional sanitario.</p>
                 <div class="article-meta-bar">
                     <span class="meta-author">Por el equipo de IA TodoPyme</span>
-                    <span class="meta-date">9 septiembre 2026</span>
+                    <span class="meta-date">7 octubre 2026</span>
                     <span class="meta-reading">12 min de lectura</span>
-                    <span class="meta-updated">Actualizado: septiembre 2026</span>
+                    <span class="meta-updated">Actualizado: 7 octubre 2026</span>
                 </div>
             </div>
 
             <div class="article-content">
 
-                <div class="tldr-box">
-                    <h2>Resumen rápido</h2>
-                    <ul>
-                        <li><strong>Precio de entrada:</strong> 29 €/mes por profesional en transcripción clínica con IA; la gestión de citas automatizada desde 80 €/mes</li>
-                        <li><strong>Ideal para:</strong> consultorios y clínicas privadas que quieren recuperar horas de administración sin ampliar plantilla</li>
-                        <li><strong>Puntos fuertes:</strong> la transcripción de consulta a historia clínica es la aplicación con mejor retorno medible (2-3 horas diarias por profesional)</li>
-                        <li><strong>Puntos débiles:</strong> regulación estricta (RGPD + AI Act), dependencia de contratos de tratamiento de datos, y las funciones de diagnóstico asistido siguen siendo proyectos enterprise</li>
-                    </ul>
+                <div class="callout callout-warning">
+                    <strong>Advertencia previa, y va en serio:</strong> este artículo separa de forma deliberada dos planos. En un plano está lo que la IA hace bien: documentar, agendar, resumir y responder. En el otro está lo que sólo puede hacer una persona con licencia y responsabilidad: explorar, diagnosticar, prescribir y decidir. Una pantalla no sustituye una consulta, un modelo de lenguaje no ve al paciente y no ausculta. Nada de lo que sigue debe interpretarse como que un sistema de IA diagnostica.
                 </div>
 
-                <div class="callout callout-warning">
-                    <strong>Aviso importante:</strong> este artículo es informativo y no sustituye el asesoramiento legal o sanitario. Los datos de salud son una categoría especial de datos personales: antes de implantar cualquier herramienta, consulta con tu delegado de protección de datos (DPO) y con el fabricante sobre el contrato de tratamiento (DPA).
+                <h2 id="la-respuesta-corta">La respuesta corta</h2>
+
+                <p>Si buscas <strong>IA para clínicas y consultorios</strong> y tienes entre uno y diez profesionales, la recomendación cabe en cuatro líneas: empieza por la documentación clínica, compra una capa de asistente con contrato de Empresa para la parte administrativa y escrita, y deja el diagnóstico completamente fuera del alcance durante el primer año. El orden importa más que la herramienta.</p>
+
+                <p>La razón es jurídica antes que técnica. Los datos de salud son una <strong>categoría especial de datos personales</strong> en el artículo 9 del RGPD, y eso cambia por completo el contrato que necesitas con el proveedor. En una asesoría puedes contratar un plan de equipo normal. En una clínica que graba conversaciones de consulta, cada proveedor es un <strong>encargado del tratamiento</strong> y necesitas un contrato de encargo (DPA) firmado, cifrado, información al paciente y un registro de qué sistema usas.</p>
+
+                <p>La segunda conclusión es sobre lo que la IA hace bien. Las tareas con mejor relación entre retorno y riesgo en consulta privada son, por orden: <strong>transcripción de la consulta a historia clínica</strong>, <strong>agenda y recordatorios</strong> y <strong>respuestas administrativas a pacientes</strong>. Las tres devuelven horas y ninguna toca una decisión clínica. Lo que viene después, el triaje automático y el apoyo al diagnóstico, pertenece a otra categoría legal y no se compra con una suscripción.</p>
+
+                <p>La tercera conclusión es la que casi nadie dice en voz alta: <strong>en sanidad, la licencia casi nunca es el coste relevante</strong>. La evaluación de impacto, la revisión jurídica del DPA, la formación del equipo médico y el tiempo de revisión de las firmas consumen más horas que la suscripción. El precio de cabecera es el dato menos útil del contrato.</p>
+
+                <div class="tldr-box">
+                    <ul>
+                        <li><strong>Empieza por aquí:</strong> transcripción de consulta a historia clínica y agenda con recordatorios. Son las dos tareas que devuelven horas sin tocar ninguna decisión clínica.</li>
+                        <li><strong>La frontera:</strong> la IA documenta, agenda, resume y responde. La exploración, el diagnóstico, la prescripción y la firma son de un Profesional sanitario, siempre.</li>
+                        <li><strong>El requisito que bloquea la compra:</strong> contrato de encargo (DPA) firmado. Si el proveedor no lo firma o no dice dónde se procesan los datos, no se compra, por bueno que sea el producto.</li>
+                        <li><strong>El coste que no está en la factura:</strong> evaluación de impacto, revisión jurídica, formación del equipo médico y horas de revisión de firmas.</li>
+                        <li><strong>El calendario:</strong> las obligaciones de transparencia del artículo 50 del AI Act son aplicables desde el 2 de agosto de 2026; el régimen de alto riesgo, desde el 2 de agosto de 2027.</li>
+                    </ul>
                 </div>
 
                 <div class="toc">
                     <h3>Índice</h3>
                     <ol>
-                        <li><a href="#que-es">Qué puede (y qué no puede) hacer la IA en una clínica</a></li>
-                        <li><a href="#herramientas">Las 7 herramientas por área</a></li>
-                        <li><a href="#regulacion">RGPD y AI Act: lo que toda clínica debe saber</a></li>
-                        <li><a href="#precios">Tabla comparativa de precios</a></li>
-                        <li><a href="#como-elegir">Cómo elegir sin poner en riesgo la clínica</a></li>
-                        <li><a href="#veredicto">Veredicto por perfil de clínica</a></li>
-                        <li><a href="#faq">Preguntas frecuentes</a></li>
+                        <li><a href="#la-respuesta-corta">La respuesta corta</a></li>
+                        <li><a href="#que-puede-hacer-la-ia-y-que-no">Qué puede hacer la IA en una clínica y qué no</a></li>
+                        <li><a href="#por-que-una-herramienta-no-sirve">Por qué una herramienta concreta no te sirve</a></li>
+                        <li><a href="#el-coste-real-para-un-consultorio-de-dos-profesionales">El coste real para un consultorio de dos profesionales</a></li>
+                        <li><a href="#precios-2026">Precios 2026 y la aritmética de los asientos</a></li>
+                        <li><a href="#datos-de-salud-y-confidencialidad">Datos de salud y confidencialidad: el artículo 9 del RGPD</a></li>
+                        <li><a href="#el-corte-que-decide-la-compra">El corte que decide la compra: SSO, auditoría, SLA y DPA</a></li>
+                        <li><a href="#residencia-y-cumplimiento">Residencia de datos y calendario del AI Act</a></li>
+                        <li><a href="#tabla-comparativa">Tabla comparativa de herramientas de IA para clínicas</a></li>
+                        <li><a href="#tabla-por-caso-de-uso">Qué usar según lo que tenga que hacer</a></li>
+                        <li><a href="#la-que-esta-casi-todo-esto-le-da-igual">La limitación que casi todo esto da por igual</a></li>
+                        <li><a href="#lo-que-debe-hacer-siempre-una-persona">Lo que debe hacer siempre una persona</a></li>
+                        <li><a href="#errores-de-implantacion">Los seis errores de implantación y lo que cuestan</a></li>
+                        <li><a href="#plan-de-90-dias">Plan de 90 días</a></li>
+                        <li><a href="#cuando-contratar-un-integrador">Cuándo contratar un integrador</a></li>
+                        <li><a href="#veredicto-por-perfil">Veredicto por perfil de clínica</a></li>
+                        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                        <li><a href="#fuentes">Fuentes</a></li>
                     </ol>
                 </div>
 
-                <h2 id="que-es">Qué puede (y qué no puede) hacer la IA en una clínica</h2>
+                <h2 id="que-puede-hacer-la-ia-y-que-no">Qué puede hacer la IA en una clínica y qué no</h2>
 
-                <p>El mito es que la IA en sanidad diagnostica mejor que el médico. La realidad en 2026 es más modesta y más útil: la IA está transformando primero la administración y la documentación, que es donde las clínicas pierden horas y dinero. El diagnóstico asistido existe, pero está confinado a proyectos con validación clínica, registro como producto sanitario y volúmenes de datos que una clínica privada pequeña no tiene.</p>
+                <p>Conviene separar las tareas por su grado de riesgo y por su madurez real, porque ahí está toda la decisión de compra. Estas son las que hoy funcionan de forma predecible en una consulta privada española con un sistema de historia clínica en la nube:</p>
 
-                <p>Las tres áreas con retorno inmediato y riesgo controlado son: <strong>citas y comunicación</strong> (agendado, recordatorios, respuestas a preguntas frecuentes), <strong>documentación clínica</strong> (transcripción de la consulta a historia clínica, resúmenes, informes) y <strong>gestión operativa</strong> (listas de espera, cancelaciones, no-shows). Las tres comparten característica: liberan al personal administrativo y clínico de trabajo repetitivo sin tomar decisiones clínicas.</p>
+                <ul>
+                    <li><strong>Transcripción de la consulta a historia clínica.</strong> Graba la conversación —con consentimiento previo del paciente— y genera un borrador estructurado: motivo de consulta, exploración, valoración y plan. El Profesional revisa, corrige y firma. El borrador no es la historia: la historia es lo que el Profesional firma.</li>
+                    <li><strong>Agenda, recordatorios y huecos.</strong> Confirmación por SMS o WhatsApp, recordatorio a las 48 horas, lista de espera que rellena una anulación a las 19:30. Aquí el retorno no es intangible: es dinero que estaba en la agenda y no se convirtió en ingreso.</li>
+                    <li><strong>Respuestas administrativas a pacientes.</strong> Horarios, preparación de pruebas, documentación necesaria para la primera visita, dónde está la clínica, cómo se paga. Es el volumen que hoy ocupa a recepción y que no requiere criterio clínico.</li>
+                    <li><strong>Resumen de documentos.</strong> Informes de otros centros, analíticas, recetas ajenas. El modelo extrae y estructura, y el Profesional decide qué incorporate a la historia.</li>
+                    <li><strong>Codificación y facturación.</strong> Propuesta de código de procedimiento a partir del texto de la consulta. Es una sugerencia, y su validación es del Profesional responsable.</li>
+                </ul>
 
-                <p>Lo que conviene no cruzar: un sistema que trie o diagnostique sin supervisión médica, o que tome decisiones sobre tratamiento. Además del riesgo para el paciente, el AI Act clasifica estos sistemas como alto riesgo y la ley española establece sanciones severas. La frontera práctica: la IA documenta y gestiona; el profesional decide.</p>
+                <p>Y estas son las que no deberían automatizarse en una clínica privada mientras no haya un marco específico:</p>
 
-                <h2 id="herramientas">Las 7 herramientas por área</h2>
+                <ul>
+                    <li><strong>El diagnóstico.</strong> Ninguna de las herramientas de este artículo diagnostica, y ninguna debería presentationarse como si lo hiciera. Un modelo de lenguaje opera sobre texto: no ve, no palpa, no ausculta y no mide.</li>
+                    <li><strong>La prescripción.</strong> Es una actuación Profesional que requiere licencia habilitante y que queda registrada bajo la responsabilidad de quien la firma.</li>
+                    <li><strong>La decisión de tratamiento.</strong> Incluido el esquema terapéutico, la rotación de antibióticos o la suspensión de un tratamiento.</li>
+                    <li><strong>El triaje sin supervisión.</strong> Clasificar la urgencia de un paciente sin que lo revise una persona es exactamente el uso que el <a href="#residencia-y-cumplimiento">AI Act somete a un régimen más estricto</a>.</li>
+                </ul>
 
-                <h3>Documentación clínica</h3>
-
-                <p><strong>1. Heidi Health</strong> — Asistente de transcripción clínica con IA, líder del segmento en Europa. Graba la conversación de la consulta (con consentimiento del paciente) y genera la historia clínica estructurada: motivo de consulta, exploración, diagnóstico y plan, en el formato de la clínica. El profesional revisa y corrige antes de firmar. Soporta español y se integra con los principales sistemas de historia clínica electrónica.</p>
-                <p><strong>Para qué sirve:</strong> eliminar las 2-3 horas diarias que un médico dedica a escribir historias fuera del horario de consulta. Es la aplicación de IA sanitaria con mejor retorno documentado en clínicas privadas.</p>
-                <p><strong>Precio:</strong> sin precio público en euros; rango estimado según datos de compradores desde 29-50 €/mes por profesional en planes anuales. Exige verificar el tratamiento de datos (alojamiento UE y DPA).</p>
-
-                <p><strong>2. Nuance Dragon Medical One</strong> — El veterano del dictado médico, ahora con IA de Microsoft. Permite dictar la historia clínica en lenguaje natural directamente al sistema de documentación, con vocabulario médico específico por especialidad. Es la opción de las clínicas que prefieren dictar en lugar de transcribir automáticamente.</p>
-                <p><strong>Para qué sirve:</strong> profesionales acostumbrados al dictado que quieren precisión de vocabulario médico sin depender de una transcripción automática de la conversación.</p>
-                <p><strong>Precio:</strong> sin precio público; rango estimado de 300-500 €/año por profesional según especialidad y contrato. Desplegado habitualmente a través de distribuidores.</p>
-
-                <h3>Citas y comunicación con pacientes</h3>
-
-                <p><strong>3. Doctolib (con funciones IA)</strong> — La plataforma de agendado más usada en Francia, Alemania e Italia, con presencia creciente en España. En 2026 incorpora asistentes de IA para responder preguntas frecuentes de pacientes, rellenar huecos de agenda y reducir no-shows con recordatorios inteligentes por canal preferido (SMS, email, WhatsApp).</p>
-                <p><strong>Para qué sirve:</strong> clínicas que quieren centralizar agenda, pagos online y recordatorios sin instalar cinco herramientas. El beneficio inmediato es la reducción de no-shows, que en consulta privada son ingresos perdidos directos.</p>
-                <p><strong>Precio:</strong> sin precio público en España; rango habitual de 80-150 €/mes por clínica según tamaño y módulos. Las funciones de IA pueden requerir plan superior.</p>
-
-                <p><strong>4. Asistentes conversacionales para pacientes (tipo Hyro)</strong> — Chatbots con IA generativa entrenados con la información de la clínica: horarios, especialidades, preparación de pruebas, documentación necesaria para la primera visita, ubicación y formas de pago. Responden en la web y en WhatsApp, y derivan al personal cuando la conversación lo requiere.</p>
-                <p><strong>Para qué sirve:</strong> absorber el volumen de preguntas repetitivas que hoy ocupa a la recepción. Un asistente bien configurado resuelve el 60-70% de las consultas administrativas sin intervención humana, según datos de los propios fabricantes (2026).</p>
-                <p><strong>Precio:</strong> desde 150-300 €/mes para una clínica según volumen de conversaciones y canales. Contrato anual habitual. Verifica que el fabricante ofrezca alojamiento UE y DPA.</p>
-
-                <h3>Gestión operativa</h3>
-
-                <p><strong>5. Sistemas de gestión de clínica con IA (tipo Pabau)</strong> — Los gestores de clínica modernos (citas, expedientes, facturación, marketing) incorporan IA para predecir no-shows, sugerir mejor horario de publicación de contenido y automatizar el recordatorio de las próximas visitas. Pabau es popular en clínicas estéticas y dentales del Reino Unido y Europa.</p>
-                <p><strong>Para qué sirve:</strong> una única plataforma donde la IA opera sobre los datos de la clínica sin integrar piezas sueltas. Ideal para clínicas que todavía gestionan con Excel y papel.</p>
-                <p><strong>Precio:</strong> sin precio público; rango estimado de 100-250 €/mes según módulos y número de usuarios.</p>
-
-                <h3>Diagnóstico e imagen (solo contexto)</h3>
-
-                <p><strong>6. Quibim</strong> — Empresa española (Valencia) que aplica IA al análisis de imagen médica (resonancia, TC): segmentación automática, cuantificación de biomarcadores y apoyo a la interpretación. Es la referencia nacional de la IA aplicada a imagen, con alianzas con hospitales y grandes proveedores.</p>
-                <p><strong>Para qué sirve:</strong> clínicas de diagnóstico por imagen que quieren acelerar la lectura y cuantificar hallazgos. Es un producto sanitario con marcado CE: no es un complemento que se instala por iniciativa propia, sino un proyecto con validación y protocolos.</p>
-                <p><strong>Precio:</strong> sin precio público; proyectos enterprise por volumen de estudios. No es una decisión de escaparate: requiere evaluación de la dirección médica y de compras.</p>
-
-                <h3>Marketing y captación con datos propios</h3>
-
-                <p><strong>7. ChatGPT Plus (solo para contenido, no para datos de pacientes)</strong> — Redacción de contenido informativo para la clínica (artículos de blog, respuestas a preguntas frecuentes, descripciones de tratamientos) y preparación de comunicaciones. Usado con la regla estricta de no subir ningún dato identificable de pacientes, es una herramienta segura y barata.</p>
-                <p><strong>Para qué sirve:</strong> contenido de marketing sanitario y material informativo. La generación de contenido con IA no toca datos de pacientes si se alimenta solo con información pública de la clínica.</p>
-                <p><strong>Precio:</strong> 20 USD/mes (≈18 €) en el plan Plus.</p>
-
-                <h2 id="regulacion">RGPD y AI Act: lo que toda clínica debe saber</h2>
-
-                <p>Los datos de salud son, en el RGPD, una categoría especial de datos personales. Eso significa: prohibido su tratamiento salvo base legal específica (consentimiento explícito, prestación de asistencia sanitaria, etc.), obligación de evaluación de impacto si el tratamiento es a gran escala o innovador, y contrato de encargado de tratamiento (DPA) con cada proveedor que toque esos datos. En la práctica, cualquier herramienta de IA que procese datos de pacientes requiere que el fabricante firme el DPA y demuestre dónde se alojan los datos.</p>
-
-                <p>El AI Act, en aplicación general desde agosto de 2026, clasifica los sistemas de IA de diagnóstico, triaje y soporte a decisiones clínicas como de <strong>alto riesgo</strong>. Las obligaciones incluyen supervisión humana, registro, documentación técnica y gestión de riesgos. Para una clínica que usa una herramienta de terceros, la responsabilidad del desplegador es demostrable: hay que saber qué sistema se usa, para qué y quién supervisa sus decisiones. La frontera con las tareas administrativas (citas, transcripción, recordatorios) es clara según la lectura de la norma: la documentación y la gestión no clínica no figuran en el Anexo III de alto riesgo.</p>
-
-                <p>En España, la AEMPS regula los productos sanitarios con IA (marcado CE) y la AEPD supervisa la protección de datos. Ninguna clínica debería usar una herramienta que "diagnostica" sin marcado CE y sin validación clínica, por muy impresionante que parezca en la demo.</p>
-
-                <h2 id="precios">Tabla comparativa de precios</h2>
-
-                <p>Precios en euros según tarifas y rangos de mercado (septiembre 2026). Las herramientas sin precio público muestran rango estimado según datos de compradores.</p>
-
-                <div class="price-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Herramienta</th>
-                                <th>Precio de entrada</th>
-                                <th>Modelo</th>
-                                <th>Área</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Heidi Health</strong></td>
-                                <td>Desde ~29-50 €/mes por profesional</td>
-                                <td>Por profesional</td>
-                                <td>Transcripción clínica</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Dragon Medical One</strong></td>
-                                <td>Desde ~300-500 €/año por profesional</td>
-                                <td>Por profesional</td>
-                                <td>Dictado médico</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Doctolib</strong></td>
-                                <td>Desde ~80-150 €/mes por clínica</td>
-                                <td>Por clínica y módulos</td>
-                                <td>Citas y recordatorios</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Asistentes conversacionales (Hyro)</strong></td>
-                                <td>Desde 150-300 €/mes</td>
-                                <td>Por volumen de conversaciones</td>
-                                <td>Atención al paciente</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Pabau</strong></td>
-                                <td>Desde ~100-250 €/mes</td>
-                                <td>Por módulos/usuarios</td>
-                                <td>Gestión de clínica</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Quibim</strong></td>
-                                <td>Proyecto enterprise (sin precio público)</td>
-                                <td>Por volumen de estudios</td>
-                                <td>Imagen médica</td>
-                            </tr>
-                            <tr>
-                                <td><strong>ChatGPT Plus</strong></td>
-                                <td>18 €/mes (20 USD)</td>
-                                <td>Suscripción</td>
-                                <td>Contenido (sin datos de pacientes)</td>
-                            </tr>
-                            <tr class="highlight-row">
-                                <td><strong>Stack básico consultorio 2 médicos</strong></td>
-                                <td colspan="3"><strong>≈150-250 €/mes:</strong> transcripción IA x2 (60-100 €) + gestor de citas (80-150 €) = documentación + reducción de no-shows</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="callout">
+                    <strong>La regla que resume las dos listas:</strong> la IA documenta, agenda, resume y propone; la persona explora, decide, firma y responde. Si una función no cabe en la primera columna, no la automatices por muy buena que sea la demostración.
                 </div>
 
-                <h2 id="como-elegir">Cómo elegir sin poner en riesgo la clínica</h2>
+                <p>Hay un matiz que conviene tener presente porque aparece en el primer mes de uso: <strong>un borrador de historia clínica no se puede archivar sin firma</strong>. Mientras el Profesional no lo valide, es un texto más. Si el equipo médico no acepta el flujo de revisión, la herramienta no se adopta y se convierte en coste puro. Este es el error de implantación número uno en el sector, y se desarrolla en <a href="#errores-de-implantacion">los seis errores de implantación</a>.</p>
 
-                <ol>
-                    <li><strong>Empieza por la documentación, no por el diagnóstico:</strong> la transcripción clínica es la aplicación con mejor retorno y riesgo acotado. El diagnóstico asistido espera a que la clínica tenga volumen y asesoramiento.</li>
-                    <li><strong>Exige el contrato de tratamiento (DPA) antes de la demo:</strong> si el fabricante no firma DPA o no aclara el alojamiento de datos (UE preferible), descártalo. En sanidad el DPA es tan importante como la funcionalidad.</li>
-                    <li><strong>Incluye al profesional desde el día uno:</strong> el médico que transcribe revisa y firma cada historia generada. Sin su aceptación del flujo de revisión, la herramienta no se adopta y se convierte en coste muerto.</li>
-                    <li><strong>Mide el no-show antes y después:</strong> la reducción de citas fallidas es la métrica más clara del retorno de la gestión de citas con IA en consulta privada.</li>
-                    <li><strong>Documenta el uso:</strong> anota qué sistema se usa, para qué, con qué datos y quién supervisa. Es el inventario mínimo que pediría una inspección de la AEPD o una auditoría del AI Act.</li>
-                </ol>
+                <h2 id="por-que-una-herramienta-no-sirve">Por qué una herramienta concreta no te sirve</h2>
 
-                <div class="callout callout-tip">
-                    <strong>Lo que funciona ya:</strong> transcripción de consulta, recordatorios y agendado inteligente, respuestas administrativas, gestión de listas de espera. <strong>Lo que conviene esperar:</strong> triaje automático sin supervisión, diagnóstico autónomo, recomendaciones de tratamiento. La línea que separa ambos grupos es exactamente la línea del AI Act.
-                </div>
+                <p>La razón más habitual para no comprar nada no es el precio: es que la herramienta que te presentan en la demo no encaja con el sistema de historia clínica que ya tienes instalado. Y en eso la IA no es una excepción, es el caso general.</p>
 
-                <h2 id="duelo">Heidi Health vs Dragon Medical One: el duelo</h2>
+                <p>Un producto de transcripción clínica que no escribe en tu historia clínica electrónica es un procesador de texto muy caro. El flujo real es: grabar → transcribir → <strong>volcar el resultado dentro del sistema donde ya vive la historia del paciente</strong> → que el Profesional revise → que firme. Si el paso intermedio no existe o se hace a mano, la herramienta sólo ha movido el problema. Y ese paso intermedio es una integración, no un ajuste de configuración.</p>
 
-                <p>Las dos formas de generar la historia clínica con IA, frente a frente: que la conversación se transcriba sola o dictar tú mismo.</p>
+                <p>Lo mismo aplica a la agenda. Si el sistema de gestión de pacientes no se comunica con el gestor de citas, los recordatorios salen de un sitio y los pacientes aparecen en otro, y cualquier hueco que la IA detecte no se puede rellenar porque el sistema de destino no lo ve.</p>
+
+                <p>Hay tres requisitos que conviene exigir en la <em>demo</em>, antes de hablar de precio:</p>
+
+                <ul>
+                    <li><strong>Escribir de verdad en tu historia clínica.</strong> No «exportar a PDF». Si el resultado no llega al sistema donde el Profesional firma, no hay cadena de trazabilidad y el trabajo se duplica.</li>
+                    <li><strong>Residencia y subencargados por escrito.</strong> Dónde se procesa el audio, quién lo almacena, cuánto tiempo lo retiene y quién más lo toca. El almacenamiento del audio es el punto que más se olvida y el que más conviene exigir por escrito.</li>
+                    <li><strong>Borrado verificable.</strong> Pide por escrito que el audio se elimina cuando se genera la transcripción, o que se conserva con plazo definido. Sin ese dato, cada consulta duplica tu almacenamiento de datos sensibles.</li>
+                </ul>
+
+                <p>Y hay una cuarta, que es la que más caro sale cuando falla: <strong>la reversibilidad</strong>. Si mañana cambias de proveedor, ¿se puede exportar el histórico de las transcripciones y las firmas? En una clínica con diez años de historias, quedar atado a un proveedor que cierra o cambia de condiciones es un coste que no aparece en la factura y que se paga en el mes treinta.</p>
+
+                <h2 id="el-coste-real-para-un-consultorio-de-dos-profesionales">El coste real para un consultorio de dos profesionales</h2>
+
+                <p>El error de cálculo más habitual en este sector empieza en una suscripción personal de 20 US$ al mes, la multiplica por el número de profesionales y llama al resultado «coste de IA para la clínica». La aritmética está bien; la unidad está mal. Un plan de Empresa no cobra por personas: cobra por <strong>Precio</strong>. Un asiento es una plaza en un espacio de trabajo con contrato único, factura única y lista de miembros, de modo que cuando entra el Profesional número tres se envía una invitación y cuando se va se revoca un acceso. Y los mínimos importan: ChatGPT Business exige 2 asientos y Claude Team también arranca en 2.</p>
+
+                <p>Estos son los precios de lista publicados por cada proveedor, sin ajuste de descuentos ni promociones, con la condición de facturación que declara cada uno. Todos están consultados el <strong>3 de octubre de 2026</strong>.</p>
 
                 <div class="comparison-table">
                     <table>
                         <thead>
                             <tr>
                                 <th>Criterio</th>
-                                <th>Heidi Health</th>
-                                <th>Dragon Medical One</th>
+                                <th>Criterio</th>
+                                <th>Precio por asiento y mes</th>
+                                <th>Condición de facturación</th>
+                                <th>Criterio</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Precio</strong></td>
-                                <td>Desde ~29-50 €/mes por profesional</td>
-                                <td>Desde ~300-500 €/año por profesional</td>
+                                <td><strong>ChatGPT Business Standard</strong></td>
+                                <td>Suscripción</td>
+                                <td>21 €</td>
+                                <td>EUR, facturación anual</td>
+                                <td>2 a 200</td>
                             </tr>
                             <tr>
-                                <td><strong>Forma de trabajo</strong></td>
-                                <td>Transcribe la conversación de la consulta y genera la historia estructurada</td>
-                                <td>Dictado por voz directo al sistema: el profesional redacta la historia</td>
+                                <td>ChatGPT Business Premium</td>
+                                <td>Suscripción</td>
+                                <td>105 €</td>
+                                <td>EUR, facturación anual</td>
+                                <td>2 a 200</td>
                             </tr>
                             <tr>
-                                <td><strong>Retorno típico</strong></td>
-                                <td>2-3 horas diarias recuperadas por profesional</td>
-                                <td>Ahorra el tecleado, pero exige dictar cada caso</td>
+                                <td>ChatGPT Enterprise</td>
+                                <td>Suscripción</td>
+                                <td>Precio a consultar</td>
+                                <td>Sin precio público</td>
+                                <td>—</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Claude Team</strong></td>
+                                <td>Suscripción</td>
+                                <td>20 US$</td>
+                                <td>USD, anual (25 US$ mensual)</td>
+                                <td>2 a 150</td>
                             </tr>
                             <tr>
-                                <td><strong>Idioma e integración</strong></td>
-                                <td>Soporta español y se integra con la historia clínica electrónica</td>
-                                <td>Vocabulario médico por especialidad, desplegado vía distribuidores</td>
+                                <td>Claude Team Premium</td>
+                                <td>Suscripción</td>
+                                <td>100 US$</td>
+                                <td>USD, anual (125 US$ mensual)</td>
+                                <td>2 a 150</td>
                             </tr>
                             <tr>
-                                <td><strong>Mejor para</strong></td>
-                                <td>Consultas que quieren automatizar toda la documentación</td>
-                                <td>Profesionales acostumbrados al dictado médico</td>
+                                <td>Google Workspace Business Starter</td>
+                                <td>Suscripción</td>
+                                <td>6,80 € por usuario</td>
+                                <td>EUR, España</td>
+                                <td>1 como mínimo</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Google Workspace Business Standard</strong></td>
+                                <td>Suscripción</td>
+                                <td>13,60 € por usuario</td>
+                                <td>EUR, España</td>
+                                <td>1 como mínimo</td>
+                            </tr>
+                            <tr>
+                                <td>Google Workspace Business Plus</td>
+                                <td>Suscripción</td>
+                                <td>21,10 € por usuario</td>
+                                <td>EUR, España</td>
+                                <td>1 como mínimo</td>
+                            </tr>
+                            <tr>
+                                <td>Gemini Enterprise Business</td>
+                                <td>Suscripción</td>
+                                <td>Desde 21 US$</td>
+                                <td>Suscripción</td>
+                                <td>Hasta 300</td>
+                            </tr>
+                            <tr>
+                                <td>Gemini Enterprise Standard / Plus</td>
+                                <td>Suscripción</td>
+                                <td>Desde 30 US$</td>
+                                <td>Suscripción</td>
+                                <td>—</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <p><strong>Elige Heidi Health</strong> si quieres que la consulta se documente sola y recuperar horas fuera del horario de atención. <strong>Elige Dragon Medical One</strong> si prefieres mantener el control y dictar tú la historia con precisión de vocabulario médico.</p>
+                <p>Ahora la fórmula, aplicada a un consultorio de dos profesionales que usan la herramienta de forma completa. No se paga un asiento para alguien que abre la herramienta dos veces al mes:</p>
 
-                <h2 id="veredicto">Veredicto por perfil de clínica</h2>
-
-                <div class="rating-box">
-                    <div class="rating-text">
-                        <p>La IA administrativa y de documentación es ya una decisión de negocio recomendable para cualquier clínica privada: recupera horas del profesional, reduce no-shows y mejora la experiencia del paciente con riesgo controlado y coste de entrada bajo. La IA clínica (diagnóstico, triaje) es un terreno en construcción regulado y reservado a proyectos con validación; meterla por la puerta de atrás en una clínica pequeña es la forma más rápida de generar un problema legal. Quien adopta en el orden correcto —documentación, citas, gestión; con DPA, supervisión humana y consentimiento del paciente— obtiene la ventaja real que la tecnología ofrece sin jugarse la licencia.</p>
-                    </div>
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Opción para 2 asientos</th>
+                                <th>Coste mensual</th>
+                                <th>Coste anual</th>
+                                <th>Qué incluye</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ChatGPT Business Standard</td>
+                                <td>42 €</td>
+                                <td>504 €</td>
+                                <td>Asientos de Empresa, sin entrenamiento con tu contenido</td>
+                            </tr>
+                            <tr>
+                                <td>Claude Team</td>
+                                <td>40 US$</td>
+                                <td>480 US$</td>
+                                <td>Asientos de Empresa, sin entrenamiento por defecto</td>
+                            </tr>
+                            <tr>
+                                <td>Google Workspace Business Standard</td>
+                                <td>27,20 €</td>
+                                <td>326,40 €</td>
+                                <td>Correo y ofimática con Gemini integrado</td>
+                            </tr>
+                            <tr>
+                                <td>Google Workspace Business Plus</td>
+                                <td>42,20 €</td>
+                                <td>506,40 €</td>
+                                <td>Todo lo anterior con más límites de uso</td>
+                            </tr>
+                            <tr>
+                                <td>Gemini Enterprise Business</td>
+                                <td>Desde 42 US$</td>
+                                <td>Desde 504 US$</td>
+                                <td>Conector sobre datos corporativos, techo de 300 asientos</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>ChatGPT Business Premium</td>
+                                <td>210 €</td>
+                                <td>2.520 €</td>
+                                <td>Para consultas que necesitan el modelo más potente en cada revisión</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
-                <h3>Estas herramientas son para ti si:</h3>
-                <ul>
-                    <li>Tu equipo médico pierde horas cada semana escribiendo historias clínicas fuera de consulta</li>
-                    <li>Sufres no-shows y huecos de agenda que no se rellenan solos</li>
-                    <li>La recepción dedica más tiempo a repetir horarios y preparaciones que a atender pacientes</li>
-                    <li>Estás dispuesto a firmar contratos de tratamiento de datos y a documentar el uso de IA</li>
-                </ul>
-
-                <h3>Estas herramientas NO son para ti si:</h3>
-                <ul>
-                    <li>Esperas que la IA diagnostique o trie sin supervisión médica (alto riesgo según el AI Act / sin marcado CE)</li>
-                    <li>No tienes DPO o asesoramiento sobre protección de datos y pretendes implantar sin contrato</li>
-                    <li>El equipo médico no aceptará revisar y firmar lo que la IA genere</li>
-                    <li>Tu volumen no justifica la suscripción: una clínica con menos de 10 citas diarias puede no amortizar el coste</li>
-                </ul>
 
                 <div class="callout callout-info">
-                    <strong>Nota:</strong> precios orientativos de septiembre 2026 según rangos de mercado y datos de compradores. En sanitario, el coste de licencia es la parte menor del coste total: la validación jurídica (DPA, evaluación de impacto) y la formación son parte del presupuesto real.
+                    <strong>Sobre la moneda:</strong> OpenAI factura en euros y Anthropic en dólares, y el cobro en tu moneda te lo aplica cada proveedor. No existe un tipo de cambio único al que atenerse, así que cualquier comparativa que convierta a una cifra única está inventándose un número. Compara en la moneda en la que te van a facturar y comprueba el tipo que te aparece en el propio proceso de alta.
                 </div>
 
-                <h2 id="faq">Preguntas frecuentes</h2>
+                <p>La conclusión aritmética es incómoda y conviene decirla sin rodeos: <strong>la capa de asistente de Empresa para un consultorio de dos profesionales cuesta entre 326 € y 506 € al año (Google Workspace Business Standard y Plus para dos usuarios, según la tabla), y casi todo ese dinero se va en la parte que no toca datos de pacientes</strong>. Porque la parte que sí los toca —transcripción de consulta, agenda, gestión— tiene precios de otro orden de magnitud y se factura por Profesional o por clínica, no por asiento de IA generalista.</p>
 
-                <h3>¿Qué tareas de una clínica puede automatizar la IA?</h3>
-                <p>Las de mayor retorno y menor riesgo son: agendado y recordatorios de citas por chat o SMS, transcripción de la consulta a historia clínica, resumen de documentos, gestión de listas de espera y primeras respuestas a preguntas frecuentes de pacientes. Las tareas de diagnóstico asistido o triaje clínico son posibles pero están sujetas a regulación (AI Act de alto riesgo) y exigen supervisión médica.</p>
+                <p>Esa es la razón por la que el orden que aparece en todas las guías de <a href="../../guias/elegir-herramienta-ia-negocio/">cómo elegir herramienta de IA para un negocio</a> sigue siendo válido aquí, con un añadido sanitario: empieza por las herramientas que tienen DPA firmado y verificación de alojamiento, no por la más barata. Un plan de equipo de 42 € al mes que el fabricante no puede firmar como encargado del tratamiento no sirve para datos de pacientes; y uno que sí puede, aunque se quede en la redacción de protocolos y consentimientos, te cubre el resto del trabajo. La <a href="../../herramientas-ia/chatgpt-enterprise/">ficha de ChatGPT Enterprise</a> explica en detalle qué cambia entre el plan de negocio y el plan grande.</p>
 
-                <h3>¿Cuánto cuesta implementar IA en una clínica privada?</h3>
-                <p>Un consultorio pequeño puede empezar con 29-79 euros al mes: transcripción clínica con IA (desde 29 €/mes por profesional) y un gestor de citas con recordatorios automáticos (desde 80 €/mes). Los asistentes conversacionales para pacientes con IA parten de 150-300 €/mes. Las soluciones de imagen o diagnóstico asistido son proyectos enterprise con precios por volumen que rara vez bajan de miles de euros anuales.</p>
+                <h2 id="precios-2026">Precios 2026 y la aritmética de los asientos</h2>
 
-                <h3>¿Es legal usar IA con datos de pacientes en España?</h3>
-                <p>Sí, con condiciones estrictas. Los datos de salud son categoría especial del RGPD: exigen base legal, evaluación de impacto y garantías reforzadas. Desde el marco del AI Act, los sistemas de IA para diagnóstico o triaje se clasifican como alto riesgo y necesitan supervisión humana y registro. La regla práctica: herramientas con contrato de tratamiento de datos (DPA), cifrado, y nunca datos de pacientes en cuentas gratuitas de IA de consumo.</p>
+                <p>ésta sección es la que decide la compra en la mayoría de los casos, así que conviene separar dos cosas que se mezclan en las comparativas: el precio de la <em>herramienta clínica</em>, que se factura por Profesional o por clínica, y el precio del <em>asistente generalista</em>, que se factura por asiento. Son mercados distintos con contratos distintos, y en sanidad el segundo es casi siempre opcional.</p>
+
+                <p>La tabla siguiente recoge los precios de lista del asistente generalista. Todos están consultados el <strong>3 de octubre de 2026</strong> y en la moneda en la que factura cada proveedor.</p>
+
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Criterio</th>
+                                <th>Modelo de cobro</th>
+                                <th>Precio de lista</th>
+                                <th>Encaja con datos de pacientes</th>
+                                <th>Lo que aporta en la clínica</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>ChatGPT Business Standard</strong></td>
+                                <td>Por asiento, mínimo 2</td>
+                                <td>21 € al mes por asiento, facturación anual</td>
+                                <td>Sí, con DPA y configuración de Empresa</td>
+                                <td>Redacción de consentimientos, protocolos, informes y contenido informativo</td>
+                            </tr>
+                            <tr>
+                                <td>Claude Team</td>
+                                <td>Por asiento, mínimo 2</td>
+                                <td>20 US$ al mes por asiento</td>
+                                <td>Sí, sin entrenamiento por defecto</td>
+                                <td>Análisis de textos largos: protocolos, normativa, informes de otros centros</td>
+                            </tr>
+                            <tr>
+                                <td>Google Workspace Business Standard</td>
+                                <td>Por usuario, mínimo 1</td>
+                                <td>13,60 € al mes por usuario en España</td>
+                                <td>Sí, con configuración de la organización</td>
+                                <td>Gemini en correo y ofimática, útil para la administración que no toca pacientes</td>
+                            </tr>
+                            <tr>
+                                <td>Gemini Enterprise Business</td>
+                                <td>Por asiento, hasta 300</td>
+                                <td>Desde 21 US$ al mes por asiento</td>
+                                <td>Sí, con conector sobre datos corporativos</td>
+                                <td>Búsqueda y preguntas sobre el corpus documental de la clínica</td>
+                            </tr>
+                            <tr>
+                                <td>Plan individual de cualquiera de los tres</td>
+                                <td>Por persona</td>
+                                <td>Precio de consumo</td>
+                                <td><strong>No.</strong> Sin contrato de encargo y con entrenamiento posible</td>
+                                <td>Nada que ver con datos de pacientes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout">
+                    <strong>La fecha que decide:</strong> todas estas cifras están consultadas el <strong>3 de octubre de 2026</strong> y son las que pública cada proveedor en su página de precios en ese momento. Las condiciones de facturación importan: el precio en euros de OpenAI que ves en la tabla es con pago anual, y el precio en dólares de Anthropic también. Si te contratan con pago mensual, la cifra cambia. Léelo en el checkout, no en una tabla.
+                </div>
+
+                <p>Y ahora la parte que las comparativas suelen esconder: el coste de los <strong>asientos que no usas</strong>. Un consultorio con dos profesionales que sólo quiere un asistente para la administración y la documentación no necesita veinte asientos de Empresa. Y una clínica de quince profesionales puede necesitar cuatro asientos de IA generalista y once licencias de la herramienta clínica, no al revés.</p>
+
+                <p>La guía de <a href="../../guias/cuanto-cuesta-implementar-ia/">cuánto cuesta implementar IA</a> desarrolla la metodología para calcular el coste total, y aquí aplica una regla específica del sector: <strong>el coste de la licencia es la parte más barata del proyecto</strong>. El coste real es el tiempo de revisión de firmas, la formación del equipo y el trabajo legal. Volvemos a ello en el apartado de errores, porque es donde se gastan los presupuestos que se agotan sobre la mesa.</p>
+
+                <h2 id="datos-de-salud-y-confidencialidad">Datos de salud y confidencialidad: el artículo 9 del RGPD</h2>
+
+                <p>Si hay un apartado que hay que leer entero antes de comprar nada, es este. Los datos relativos a la salud son una <strong>categoría especial de datos personales</strong> y su tratamiento está prohibido salvo que concurra alguna de las excepciones del artículo 9.2 del RGPD. Para una clínica, la excepción relevante es la que permite el tratamiento con fines de <strong>prestación de asistencia sanitaria y gestión de los servicios de asistencia sanitaria</strong>, siempre que el tratamiento se realice por un Profesional sujeto al deber de secreto Profesional o bajo su responsabilidad.</p>
+
+                <p>Eso significa que la base legal de la historia clínica no es el consentimiento del paciente: es la prestación de asistencia sanitaria. Y significa también que la <strong>grabación de la consulta con IA es un problema distinto</strong>. Grabar una conversación para transcribirla no es una actuación asistencial: es un tratamiento adicional con una finalidad nueva, y para eso sí necesitas <strong>consentimiento expreso del paciente</strong>, informado sobre qué se graba, con qué herramienta, dónde se procesa y cuánto tiempo se conserva.</p>
+
+                <p>La Agencia Española de Protección de Datos desarrolla el marco en dos documentos que conviene tener descargados en la clínica:</p>
+
+                <ul>
+                    <li><strong>La guía para profesionales del sector sanitario</strong>, que explica quién es responsable del tratamiento y quién encargado en las distintas formas de organización de la clínica, y qué evaluación de impacto hay que hacer. Si tu consulta es un Profesional individual que decide todo, el responsable eres tú; si hay sociedad, las responsabilidades cambian.</li>
+                    <li><strong>La sección de salud de la AEPD</strong>, que recoge el régimen general del artículo 9 y las bases de legitimación aplicables.</li>
+                </ul>
+
+                <p>Y hay una tercera pieza que casi todo el mundo pasa por alto y que la propia AEPD desarrolla en su <a href="https://www.aepd.es/sites/default/files/2020-02/adecuacion-rgpd-ia.pdf">guía sobre adecuación al RGPD de tratamientos que incorporan IA</a>: cuando el tratamiento se realiza en servidores fuera del Espacio Económico Europeo, eso puede constituir una <strong>transferencia internacional</strong>, con sus requisitos de garantías. En una clínica eso tiene una consecuencia práctica muy concreta: si el audio de tus pacientes se procesa en Estados Unidos, necesitas saberlo antes de empezar, no después de la primera auditoría.</p>
+
+                <div class="callout callout-warning">
+                    <strong>El error que no se ve:</strong> un Profesional que prueba una herramienta de transcripción durante dos semanas con el consentimiento informal de sus propios pacientes frecuentes. Está usando datos de salud con una base legal discutible, está usando un proveedor sin contrato de encargo y probablemente está entrenando un modelo con esas conversaciones. No ha costado nada y ha hecho las tres cosas que no había que hacer.
+                </div>
+
+                <p>El <a href="../../herramientas-ia/seguridad-etica-ia/">marco de seguridad y ética de la IA para Empresas</a> recoge el conjunto de controles que hay que documentar, y la <a href="../../guias/ia-ai-act-cumplimiento/">guía de cumplimiento del AI Act</a> desarrolla el calendario que se aplica a continuación.</p>
+
+                <h2 id="el-corte-que-decide-la-compra">El corte que decide la compra: SSO, auditoría, SLA y DPA</h2>
+
+                <p>Hay una línea que separa el software de consumo del software de Empresa, y no pasa por las funciones de IA. Pasa por cinco capacidades que <strong>no vienen en ningún plan individual</strong>:</p>
+
+                <ul>
+                    <li><strong>SSO (inicio de sesión único).</strong> Con SAML, el alta y la baja de acceso dejan de depender de que alguien se acuerde de cerrar una cuenta. En una clínica con rotación de personal, la diferencia entre una suscripción cancelada y un acceso abierto a historias clínicas es la diferencia entre un ahorro y un incidente.</li>
+                    <li><strong>SCIM (aprovisionamiento automático).</strong> Crea y da de baja cuentas desde el directorio corporativo. Es lo que evita que el acceso sobreviva a la persona.</li>
+                    <li><strong>Registro de auditoría.</strong> Saber quién accedió a qué, con fecha. Sin eso no puedes ni justificar un uso anómalo ni demostrar diligencia ante un paciente que reclama acceso a sus datos.</li>
+                    <li><strong>Control de acceso por roles (RBAC).</strong> Para que recepción no vea las historias clínicas y el Profesional sí.</li>
+                    <li><strong>SLA y cifrado con claves gestionadas por el cliente.</strong> sólo en los planes grandes, y no en todos.</li>
+                </ul>
+
+                <p>Dónde corta cada proveedor está bastante claro. En <strong>ChatGPT Business</strong> se conectan alrededor de 40 archivos por asiento; en <strong>Precio</strong>, unos 250, y sólo Enterprise tiene certificaciones ISO 27001, 27017, 27018 y 27701, aprovisionamiento SCIM, cifrado con claves gestionadas por el cliente, control de acceso por roles, registros de cumplimiento de API y residencia de datos en diez regiones con la UE incluida. En <strong>Precio</strong> no hay generación de imágenes, y en <a href="../../herramientas-ia/copilot-microsoft/">Microsoft 365 Copilot</a> los modelos de OpenAI se ejecutan dentro de Azure mientras que los de Claude salen hacia centros de datos en Estados Unidos: un detalle que importa si tu política de datos exige residencia.</p>
+
+                <p>Pero en el sector sanitario hay una sexta capacidad que no aparece en ninguna comparativa y que es, para una clínica privada, la más importante de todas: <strong>el contrato de encargo del tratamiento (DPA)</strong>. No es una función técnica, es un requisito legal. Un proveedor puede tener todas las capacidades de Empresa y no poder firmar un DPA para datos de salud, porque su producto no está diseñado para ese tipo de dato. Y un proveedor puede firmarlo y tener un producto mediocre. Son dos atributos independientes y hay que exigir los dos.</p>
+
+                <div class="callout">
+                    <strong>Las preguntas que cierran la venta:</strong> ¿pueden firmar un DPA para datos de salud? ¿dónde se procesa y se almacena el audio? ¿quién es el subencargado? ¿cuánto tiempo se conserva y cómo se borra? Si a cualquiera de las cuatro no hay respuesta escrita, no avances a la demo.
+                </div>
+
+                <h2 id="residencia-y-cumplimiento">Residencia de datos y calendario del AI Act</h2>
+
+                <p>El Reglamento (UE) 2024/1689, conocido como AI Act, no certifica productos ni culpa a los proveedores por lo que hace su cliente. Lo que hace es poner fechas y obligaciones sobre quien usa la tecnología, y en sanidad esas fechas son las que hay que tener en el calendario.</p>
+
+                <p>El calendario oficial empieza antes de lo que cree la mayoría: el artículo 4 sobre alfabetización en materia de IA y las prohibiciones del capítulo II se aplican desde el <strong>2 de febrero de 2025</strong>, y las obligaciones sobre modelos de propósito general, desde el <strong>2 de agosto de 2025</strong>.</p>
+
+                <p>A partir de ahí hay tres hitos que afectan a una clínica: la aplicación general del Reglamento y el artículo 50 de transparencia, desde el <strong>2 de agosto de 2026</strong>; el régimen de sistemas de alto riesgo, desde el <strong>2 de agosto de 2027</strong>; y el alto riesgo embebido en productos ya regulados, desde el <strong>2 de agosto de 2028</strong>.</p>
+
+                <p>Qué significa esto para una clínica privada. Desde agosto de 2026 estás sujeto a obligaciones de transparencia: si un paciente interactúa con un sistema de IA, hay que informarlo, y el contenido generado de forma artificial debe ser identificable como tal. Eso tiene una lectura práctica muy concreta en las herramientas de este artículo: <strong>el consentimiento para que se grabe la consulta debe incluir que hay un sistema de IALEASE</strong>, porque el paciente tiene derecho a saber que parte de su historial lo ha redactado una máquina.</p>
+
+                <p>El segundo bloque es el que la mayoría se salta. Si una clínica usa un sistema que <em>apoya decisiones diagnósticas</em> o hace <em>triaje</em>, ese uso se encuadra en el régimen de alto riesgo, con obligaciones plenas desde el 2 de agosto de 2027: gestión de riesgos, documentación técnica, registro de eventos y supervisión humana efectiva. No es una categoría de la que se pueda salir por mucho que la herramienta sea un producto sanitario con marcado CE; el marcado CE acredita el producto, el régimen recae sobre el uso que haces de él.</p>
+
+                <p>La razón por la que este artículo insiste tanto en no hablar de diagnóstico asistido es práctica y jurídica a la vez. Un sistema de transcripción de consulta y un sistema de apoyo al diagnóstico se parecen en que los dos usan IA sobre texto clínico, y se diferencian en para qué. El primero documenta lo que ya ha pasado; el segundo propone lo que hay que hacer. El primero no necesita que el Profesional esté mirando para actuar; el segundo sí. Esa línea es la que decide en qué régimen legal estás.</p>
+
+                <p>Sobre las multas, el artículo 99.3 del Reglamento prevé, para el incumplimiento de las prohibiciones del artículo 5, multas de hasta 35 millones de euros o, si el infractor es una Empresa, hasta el 7 % de su volumen de negocio anual total mundial del ejercicio anterior. La redacción del artículo es exacta y conviene citarla sin parafrasear, porque las reformulaciones «hasta el 7 % de la facturación» omiten el matiz de que la alternativa más alta es la que se aplica.</p>
+
+                <h2 id="tabla-comparativa">Tabla comparativa de herramientas de IA para clínicas</h2>
+
+                <p>ésta tabla junta las dos capas para que se vea cuál falta. Las primeras filas son herramientas con foreseeable cumplimiento normativo; las últimas, asistentes generalistas. Los datos de gobierno proceden de la documentación oficial de cada proveedor, consultada el 3 de octubre de 2026.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Criterio</th>
+                                <th>Criterio</th>
+                                <th>Qué hace realmente</th>
+                                <th>Datos y gobierno</th>
+                                <th>Qué no hace</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td><strong>Transcripción clínica con IA</strong></td>
+                                <td>Producto clínico</td>
+                                <td>Graba la consulta con consentimiento y genera un borrador de historia clínica que el Profesional revisa y firma</td>
+                                <td>Exige DPA y ubicación del procesamiento por escrito</td>
+                                <td>No explora, no diagnostica, no prescribe</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dictado médico con vocabulario por especialidad</strong></td>
+                                <td>Producto clínico</td>
+                                <td>Convierte la voz del Profesional en texto dentro del sistema de documentación</td>
+                                <td>Se integra en el sistema de historia clínica ya instalado</td>
+                                <td>No genera la historia: la redacta el Profesional</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gestor de agenda con recordatorios</strong></td>
+                                <td>Producto de gestión</td>
+                                <td>Agenda, SMS y recordatorios, lista de espera y relleno de huecos</td>
+                                <td>Trata datos de contacto: RGPD sin categoría especial</td>
+                                <td>No entra en la historia clínica ni en el diagnóstico</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Asistente conversacional para pacientes</strong></td>
+                                <td>Producto de atención al paciente</td>
+                                <td>Responde preguntas administrativas de la web y de WhatsApp en horario, derivando al personal cuando toca</td>
+                                <td>Verificar que no se catalogue con datos clínicos y que existe DPA firmado</td>
+                                <td>No da consejos médicos ni valoración de síntomas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ChatGPT Business Standard</strong></td>
+                                <td>Asistente de IA</td>
+                                <td>Redacción de consentimientos, protocolos, informes y contenido informativo</td>
+                                <td>No entrena con tu contenido de Empresa</td>
+                                <td>No diagnostica ni debe usarse con datos identificables sin DPA</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Claude Team</strong></td>
+                                <td>Asistente de IA</td>
+                                <td>Análisis de textos largos: normativa, protocolos, informes de otros centros</td>
+                                <td>Sin entrenamiento por defecto</td>
+                                <td>No genera imágenes y no diagnostica</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Workspace Business Standard</strong></td>
+                                <td>Suite con IA integrada</td>
+                                <td>Gemini en correo y ofimática para la administración no clínica</td>
+                                <td>Precios en euros, mínimo de un usuario</td>
+                                <td>No aporta nada específico de sanidad</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IA de imagen médica (proyecto enterprise)</strong></td>
+                                <td>Producto sanitario</td>
+                                <td>Segmentación y cuantificación sobre imagen, con marcado CE y validación clínica</td>
+                                <td>Producto sanitario regulado, con documentación propia</td>
+                                <td>No se instala por iniciativa propia: es un proyecto con protocolo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Si sólo vas a leer una fila de esa tabla, lee la primera. Una herramienta de transcripción clínica bien elegida resuelve el problema más caro de una consulta privada (el tiempo de documentación) sin entrar en el terreno donde el marco legal se endurece. La segunda fila es la alternativa si los profesionales quieren mantener el control del dictado. Las demás capas se añaden después.</p>
+
+                <h2 id="tabla-por-caso-de-uso">Qué usar según lo que tenga que hacer</h2>
+
+                <p>La pregunta útil no es «cuál es la mejor herramienta», sino «qué problema tengo y qué lo resuelve». ésta tabla traduce los casos reales a producto.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Si tu problema es…</th>
+                                <th>Herramienta adecuada</th>
+                                <th>Por qué no otra</th>
+                                <th>Exige DPA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Los profesionales escriben historias a mano después de la consulta</td>
+                                <td>Transcripción clínica con IA</td>
+                                <td>El dictado sigue obligando a teclear; la agenda no toca la historia</td>
+                                <td>Sí, siempre</td>
+                            </tr>
+                            <tr>
+                                <td>Los profesionales son buenos dictando y no quieren que se grabe la consulta</td>
+                                <td>Dictado médico con vocabulario por especialidad</td>
+                                <td>La transcripción automática exige consentimiento para grabar y cambia el flujo de la consulta</td>
+                                <td>Sí, si escribe en la historia clínica</td>
+                            </tr>
+                            <tr>
+                                <td>Se pierden citas por no-presentaciones y huecos vacíos</td>
+                                <td>Gestor de agenda con recordatorios y lista de espera</td>
+                                <td>El asistente de IA generalista no gestiona tu agenda</td>
+                                <td>Sí, aunque con datos de contacto basta con RGPD</td>
+                            </tr>
+                            <tr>
+                                <td>Recepción dedica horas a repetir horarios y preparaciones</td>
+                                <td>Asistente conversacional para pacientes</td>
+                                <td>Un asistente de texto no interactúa con el paciente ni conoce tu preparación de pruebas</td>
+                                <td>Sí</td>
+                            </tr>
+                            <tr>
+                                <td>Hay que resumir informes y analíticas de otros centros</td>
+                                <td>Claude Team o ChatGPT Business Standard</td>
+                                <td>La herramienta clínica documenta consultas, no interpreta documentos ajenos</td>
+                                <td>Sí, si los documentos son identificables</td>
+                            </tr>
+                            <tr>
+                                <td>Hay que redactar consentimientos, protocolos y contenido informativo</td>
+                                <td>ChatGPT Business Standard o Claude Team</td>
+                                <td>Ninguna herramienta clínica hace marketing ni redacción jurídica</td>
+                                <td>No, si no entran datos de pacientes</td>
+                            </tr>
+                            <tr>
+                                <td>Aparece un paciente con síntomas y hay que decidir la urgencia</td>
+                                <td>Ninguna de estas herramientas. Lo hace una persona</td>
+                                <td>El triaje sin supervisión es de alto riesgo y no está cubierto por estos productos</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>La clínica tiene una sección de diagnóstico por imagen</td>
+                                <td>Proyecto enterprise con producto sanitario</td>
+                                <td>Ninguna herramienta de este artículo lee imagen médica con validez clínica</td>
+                                <td>Sí, con su propio marco</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Un aviso sobre la lectura de esa tabla: casi todas las filas de asistente de IA tienen el mismo precio por asiento. Eso significa que la elección entre ChatGPT Business y Claude Team no la debería tomar el precio, sino dónde vive ya tu equipo y qué datos vas a conectar. Si usas Microsoft 365, mira antes <a href="../../herramientas-ia/copilot-microsoft/">Microsoft 365 Copilot</a>; si trabajas en Slack, Claude ya es el modelo por defecto de Slack AI.</p>
+
+                <h2 id="la-que-esta-casi-todo-esto-le-da-igual">La limitación que casi todo esto da por igual</h2>
+
+                <p>Hay un atributo que las nueve herramientas de ésta tabla comparten por igual, y como es igual en todas, las comparativas no lo mencionan: <strong>ninguna de ellas sabe si el paciente va a venir</strong>. Todas gestionan bien el contacto previo y posterior a la cita; ninguna resuelve el no-show en el momento en que ocurre, que es el único momento en que todavía se puede hacer algo.</p>
+
+                <p>La consecuencia es aritmética y conviene ponerla en números. Ejemplo con supuestos visibles: una consulta con 80 pacientes al día y un 15 % de no-shows deja 12 huecos al día (80 × 0,15). Un sistema de recordatorio reduce ese porcentaje, pero el aviso de la plataforma o el correo de confirmación ya lo hacen. Lo que ninguna herramienta hace es <strong>llamar al siguiente de la lista de espera en el minuto en que se libera el hueco</strong>, y ese hueco existe en casi todos los sistemas porque requiere que alguien lo ejecute.</p>
+
+                <p>Hay dos reasons por las que ese paso no está automatizado en casi ningún producto, y conviene entenderlas antes de comprar:</p>
+
+                <ul>
+                    <li><strong>El permiso no viene implícito.</strong> Para llamar a un paciente de la lista de espera necesitas su consentimiento para ese contacto, y ese dato vive en tu sistema, no en el de la plataforma. Si la lista se gestiona dentro de la herramienta, la llamada hay que hacerla desde fuera.</li>
+                    <li><strong>El hueco hay que confirmarlo primero.</strong> Entre que alguien cancela y se rellena hay una conversación: avisar al siguiente, ver si puede venir hoy,DARle la hora. Eso es una gestión, no una notificación, y por eso sigue siendo de una persona.</li>
+                </ul>
+
+                <p>La solución realista, y la que recomendamos, no es esperar a que una herramienta lo resuelva: es <strong>instrumentar el hueco</strong>. Registra a diario cuántos huecos se generan y cuántos se rellenan desde la lista de espera, durante cuatro semanas antes de instalar nada. Si el número de huecos rellenados ya es alto, la IA no te va a aportar mucho ahí y deberías mirar la documentación. Si es bajo, el retorno está en el proceso manual, no en el software.</p>
+
+                <div class="callout">
+                    <strong>La conclusión práctica:</strong> mide tu tasa de huecos rellenados antes de comprar la herramienta que promete rellenarlos. Es el ejemplo más claro de por qué en este sector conviene medir la línea base antes de instalar nada, como recomienda la <a href="../../herramientas-ia/roi-ia-Empresas/">guía de ROI de herramientas de IA</a>.
+                </div>
+
+                <h2 id="lo-que-debe-hacer-siempre-una-persona">Lo que debe hacer siempre una persona</h2>
+
+                <p>Hay un límite que no se compra con ningún plan y que conviene tener escrito en el procedimiento, no en la cabeza de nadie. En una clínica, ese límite no es tecnológico: es <strong>la responsabilidad Profesional de quien firma</strong>. Y en España, el tratamiento de datos de salud exige una base jurídica y, en los supuestos de intensidad y novedad, una evaluación de impacto; la <a href="https://www.aepd.es/guias/guia-profesionales-sector-sanitario.pdf">guía de la AEPD para profesionales del sector sanitario</a> lo desarrolla caso por caso.</p>
+
+                <p>La lista mínima de tareas que deben quedar en manos de una persona, con nombre y apellidos en el procedimiento:</p>
+
+                <ul>
+                    <li><strong>La exploración y el diagnóstico.</strong> La IA no ve al paciente. La anamnesis, la exploración física y el razonamiento clínico son actos profesionales.</li>
+                    <li><strong>La prescripción.</strong> redacción, firma, registro y seguimiento de cualquier prescripción son de un Profesional habilitado.</li>
+                    <li><strong>La validación y firma de cada historia clínica.</strong> El borrador generado por IA es un borrador hasta que alguien lo firma. Una historia sin firma no es historia.</li>
+                    <li><strong>El triaje y la decisión de urgencia.</strong> Clasificar la gravedad de un caso sin revisión humana no es una función admisible en consulta privada.</li>
+                    <li><strong>La respuesta al paciente sobre su estado.</strong> Un asistente puede decir que le vas a devolver la llamada. No puede decirle qué te pasa.</li>
+                    <li><strong>La respuesta a un reclamo o a un incidente.</strong> Nadie se defenderá con un chat abierto. Se reconstruye desde la historia firmada.</li>
+                </ul>
+
+                <p>Y hay un criterio general que resume el resto: <strong>la IA puede proponer, la persona decide y la persona responde</strong>. Cuando la IA acierta, el mérito no es de la IA; cuando falla, la responsabilidad sigue siendo de la clínica. Escribir ese principio en el procedimiento no es burocracia: es la diferencia entre un uso de IA defendible y uno que no lo es.</p>
+
+                <h2 id="errores-de-implantacion">Los seis errores de implantación y lo que cuestan</h2>
+
+                <p>Estos son los errores que aparecen de forma recurrente cuando una clínica pasa de procesos en papel a herramientas con IA, con su coste aproximado en tiempo y en dinero.</p>
+
+                <h3>1. Instalar sin DPA firmado</h3>
+
+                <p>Es el más grave y el más común. Se prueba una herramienta durante dos o tres semanas con pacientes reales, porque la demo no funciona con datos inventados, y el DPA se firma «después, cuando se vaya a renovar». <strong>Coste:</strong> el periodo de prueba ya ha realizado un tratamiento de datos de salud sin contrato de encargado. No hay sanción automática por ello, pero tampoco hay cobertura si un paciente reclama, y regularizarlo después significa repetir el proceso desde el principio.</p>
+
+                <h3>2. No medir la línea base antes de empezar</h3>
+
+                <p>Si no apuntas cuántos minutos de documentación se dedican al día, cuántos no-shows hay al mes y cuántos huecos se rellenan desde la lista de espera, no hay forma de demostrar que nada sirve. La métrica aquí es fácil y enorme. Anótala cuatro semanas antes de cambiar nada. <strong>Coste:</strong> la imposibilidad de defender la inversión en la siguiente revisión presupuestaria, que en una clínica pequeña significa que la herramienta no se renueva porque nadie sabe qué hacía.</p>
+
+                <h3>3. Comprar la licencia y no integrar con la historia clínica</h3>
+
+                <p>La herramienta transcribe, pero el resultado se pega a mano en el sistema de documentación. El ahorro se evapora y además queda el riesgo de copiar un texto con errores sin revisión. <strong>Coste:</strong> una suscripción mensual que se paga sin retorno, más el tiempo que el equipo sigue dedicando a lo mismo de siempre.</p>
+
+                <h3>4. No involucrar al equipo médico en la elección</h3>
+
+                <p>Si la herramienta se compra desde dirección y el Profesional que tiene que revisar cada historia no acepta el flujo, la adopción es cero en dos semanas. Y en una clínica pequeña no hay segunda oportunidad, porque la rotación es baja y el software se queda. <strong>Coste:</strong> el importe de la suscripción anual, más la confianza del equipo en cualquier proyecto futuro de digitalización.</p>
+
+                <h3>5. Subir la carpeta de pacientes a un asistente sin decidir qué entra</h3>
+
+                <p>Conectar el historical completo al chat de un asistente es la vía rápida y también la que genera una fuga que no aparece en ningún informe. <strong>Coste:</strong> difícil de medir, pero es el único de los seis que puede costar una sanción. Lo razonable es un conjunto acotado y un procedimiento para añadir documentos, como explica la <a href="../../guias/rag-ia-datos/">guía de RAG para datos de Empresa</a>.</p>
+
+                <h3>6. Pedir consejo clínico a un asistente generalista</h3>
+
+                <p>Preguntar a un modelo generalista qué hacer ante un caso concreto y seguir su respuesta. El modelo no tiene los datos del paciente, no ha hecho la exploración y no sabe qué se ha descartado. <strong>Coste:</strong> el más caro de todos, porque es el único que puede producir daño directo a un paciente. En una clínica esto no es un error de implantación, es una línea que no se cruza.</p>
+
+                <h2 id="plan-de-90-dias">Plan de 90 días</h2>
+
+                <p>Un despliegue que funciona tiene hitos verificables. Estos son los de una clínica que quiere recuperar horas de documentación sin tocar ninguna decisión clínica.</p>
+
+                <h3>Días 1 a 15 · Diagnóstico y decisión</h3>
+
+                <ul>
+                    <li>Contar pacientes al día, no-shows al mes y huecos que se rellanan desde la lista de espera. Anotar el dato, no la impresión.</li>
+                    <li>Identificar qué sistema de historia clínica y qué gestor de agenda tienes instalados, porque la integración parte de ahí.</li>
+                    <li>Pedir por escrito a cada proveedor candidato el DPA, la ubicación del procesamiento y el plazo de conservación del audio. Descartar a los que no respondan.</li>
+                    <li>Medir la línea base: minutos de documentación por Profesional y número de no-shows.</li>
+                </ul>
+
+                <h3>Días 16 a 45 · Configuración y formación</h3>
+
+                <ul>
+                    <li>Configurar la herramienta en modo de borrador: nada llega a la historia firmada sin revisión humana.</li>
+                    <li>Redactar el texto de información para el paciente sobre el uso de IA y el consentimiento para la grabación. Revisarlo con el DPO o con elasesoramiento jurídico.</li>
+                    <li>Formar al equipo médico en el flujo de revisión: leer, corregir y firmar. Sin ese paso, la adopción es cero.</li>
+                    <li>Contratar los asientos de IA generalista sólo para las personas que realmente los van a usar.</li>
+                </ul>
+
+                <h3>Días 46 a 75 · Puesta en marcha medida</h3>
+
+                <ul>
+                    <li>Activar la transcripción durante cuatro semanas completas, sin intervenir, y contar las correcciones necesarias sobre las firmas.</li>
+                    <li>Medir minutos de documentación por Profesional frente a la línea base.</li>
+                    <li>Medir no-shows y huecos rellenados frente a la línea base.</li>
+                    <li>Corregir los errores de transcripción más frecuentes, uno a uno, hasta bajar del nivel en el que la revisión humana es más cara que el ahorro.</li>
+                </ul>
+
+                <h3>Días 76 a 90 · Decisión sobre la ampliación</h3>
+
+                <ul>
+                    <li>Comparar el ahorro medido con el coste total de un año (licencia, horas de configuración, horas de formación, coste jurídico).</li>
+                    <li>Decidir si se amplía el número de asientos, se sube de plan o se para.</li>
+                    <li>Documentar el procedimiento de uso de la IA y dejarlo en un sitio donde el DPO y el resto del equipo lo encuentren.</li>
+                </ul>
+
+                <p>El criterio de éxito es aritmético, no emocional: si a los 90 días el tiempo de documentación ha bajado de forma medida y el procedimiento está documentado, la operación se sostiene sola. Si no ha bajado, el problema no era la herramienta, y eso también es un resultado útil.</p>
+
+                <h2 id="cuando-contratar-un-integrador">Cuándo contratar un integrador</h2>
+
+                <p>La respuesta corta es que no hace falta un integrador para esto, y en una consulta pequeña eso es una buena noticia. Un despliegue de una herramienta clínica más un asistente por asiento se resuelve sin ayuda externa en la mayoría de los casos. Pero hay umbrales claros a partir de los cuales sí conviene ayuda.</p>
+
+                <ul>
+                    <li><strong>Varias sedes o más de cinco profesionales.</strong> A partir de ahí hay varios centros, control de acceso por rol y segregación de datos entre profesionales que una configuración no resuelve sola.</li>
+                    <li><strong>Cuando el sistema de historia clínica no tiene conector oficial.</strong> Si el producto no está en la lista de integraciones del fabricante, alguien tiene que construir el enlace, y eso es trabajo de integrador, no de administración.</li>
+                    <li><strong>Cuando hay que integrar tres o más sistemas.</strong> Historia clínica, agenda, laboratorio, facturación y portal del paciente conectados no son una configuración, son un proyecto. La <a href="../../guias/cuanto-cuesta-implementar-ia/">guía de coste de implementación</a> pone cifras de referencia.</li>
+                    <li><strong>Cuando la pregunta es de cumplimiento, no de funcionalidad.</strong> Si lo que necesitas es un informe que justifique ante un paciente, un cliente corporativo o una inspección cómo tratas los datos y qué proveedores intervienen, eso es trabajo especializado.</li>
+                    <li><strong>Cuando la evaluación de impacto es obligatoria.</strong> Cuando el tratamiento de datos de salud alcanza gran escala, o cuando introduce una tecnología que no se había usado antes en el sector, la evaluación de impacto deja de ser opcional: hacerla bien exige perfiles que una clínica pequeña no tiene en la plantilla.; hacerla bien requiere perfiles que una clínica pequeña no tiene.</li>
+                </ul>
+
+                <p>Y hay un caso en el que contratar ayuda es casi siempre mala idea: si lo que quieres es conectar un asistente de IA a los datos de una clínica de una persona. Eso se hace en una tarde y el coste de un consultor para esa tarea es mayor que el de doce meses de licencias. Empieza por un plan de equipo con el mínimo de asientos, mide durante tres meses y, sólo entonces, decide si necesitas más.</p>
+
+                <h2 id="veredicto-por-perfil">Veredicto por perfil de clínica</h2>
+
+                <p>Seis perfiles reales, con su coste mensual estimado y la razón de la recomendación. Las cifras son sumatorio de licencia y, en la moneda en la que factura cada proveedor; no incluyen horas de configuración ni trabajo jurídico, que en este sector suelen ser mayores que la licencia.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Criterio</th>
+                                <th>Qué contratar</th>
+                                <th>Coste mensual estimado</th>
+                                <th>Por qué</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Consulta unipersonal sin agenda gestionada por software</td>
+                                <td>Nada de IA todavía</td>
+                                <td>0 €</td>
+                                <td>Con menos de 20 pacientes al día, el problema es de proceso, no de tecnología</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Consulta de 2 profesionales que escriben a mano</td>
+                                <td>Transcripción clínica con IA para los dos profesionales</td>
+                                <td>Entre 60 y 120 € al mes (estimación propia)</td>
+                                <td>Es la aplicación con mejor retorno y sin entrar en el régimen de alto riesgo</td>
+                            </tr>
+                            <tr>
+                                <td>Consulta de 2 a 4 profesionales con agenda propia</td>
+                                <td>Transcripción clínica más gestor de agenda con recordatorios</td>
+                                <td>Entre 100 y 200 € al mes (estimación propia)</td>
+                                <td>El no-show es ingreso perdido directo y la herramienta lo mide</td>
+                            </tr>
+                            <tr>
+                                <td>Clínica de 5 a 10 profesionales con recepción</td>
+                                <td>Transcripción clínica, gestor de agenda y asistente conversacional para pacientes</td>
+                                <td>Entre 250 y 400 € al mes de licencias (estimación propia)</td>
+                                <td>La recepción deja de repetir horarios y el equipo médico deja de teclear</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Clínica de 10 a 20 profesionales con varias agendas</td>
+                                <td>Lo anterior más un plan de asistente de Empresa para 4 a 6 asientos</td>
+                                <td>Desde 84 € de asistente (2 × 42 €) más las licencias clínicas</td>
+                                <td>La capa generalista cubre informes, protocolos y contenido, no datos de pacientes</td>
+                            </tr>
+                            <tr>
+                                <td>Grupo de clínicas con más de una sede</td>
+                                <td>Lo anterior más proyecto de integración y política de datos corporativa</td>
+                                <td>Proyecto, no suscripción</td>
+                                <td>La segregación de datos por Profesional y centro deja de ser configurable</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout callout-info">
+                    <strong>Sobre las cifras de ésta tabla:</strong> los rangos de transcripción clínica, gestor de agenda y asistente conversacional son <strong>estimación propia</strong> —ningún fabricante pública precio de lista para productos clínicos por Profesional—, y se calculan como tarifa por Profesional × número de profesionales más licencia por clínica, con supuestos visibles de una a cuatro horas de uso diario y una a tres clínicas de tamaño medio. El precio final depende de especialidad, módulos y condiciones contractuales. Los importes del asistente de Empresa (21 € o 20 US$ por asiento) sí son precios de lista públicos consultados el 3 de octubre de 2026. Ninguna cifra de ésta tabla incluye horas de configuración, formación ni coste legal.
+                </div>
+
+                <p>La conclusión que se repite en los seis perfiles es la misma y es la más importante del artículo: <strong>en una clínica, la IA entra por la documentación y sale por la agenda</strong>. El orden correcto es tener el DPA firmado, medir la línea base, instalar la transcripción, medir otra vez y sólo entonces añadir la capa generalista. Al revés se acaba pagando dos veces y sin poder demostrar nada.</p>
+
+                <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+
+                <h3 id="faq-1">¿Puede la IA diagnosticar a un paciente?</h3>
+                <p>No. Ninguna de las herramientas de este artículo diagnostica, y este artículo no propone hacerlo. Un modelo de lenguaje opera sobre texto: no ve al paciente, no le ausculta, no mide constantes y no conoce la exploración que el Profesional ha hecho. Puede resumir lo que el Profesional le cuenta o estructurar un informe, y ahí se acaba. El diagnóstico es un acto Profesional que requiere exploración, razonamiento clínico y responsabilidad. además, los sistemas que apoyan decisiones diagnósticas entran en el régimen de alto riesgo del AI Act, con obligaciones plenas desde el 2 de agosto de 2027. Una pantalla no sustituye una consulta.</p>
+
+                <h3 id="faq-2">¿Qué tareas de una clínica puede automatizar la IA con seguridad?</h3>
+                <p>Las de mayor retorno y menor riesgo son: agendado y recordatorios de citas por SMS o WhatsApp, transcripción de la consulta a historia clínica como borrador para revisión y firma, resumen de documentos e informes, gestión de listas de espera, primeras respuestas a preguntas administrativas de pacientes y propuestas de código de procedimiento. Todas comparten una característica: liberan trabajo repetitivo sin tomar ninguna decisión clínica. El triaje automático de urgencia y cualquier apoyo al diagnóstico no entran en este grupo.</p>
+
+                <h3 id="faq-3">¿Es legal usar IA con datos de pacientes en España?</h3>
+                <p>Sí, pero con un marco más estricto que en cualquier otro sector. Los datos de salud son categoría especial del RGPD (artículo 9) y su tratamiento está prohibido salvo que concurra una excepción, siendo la más relevante para una clínica la prestación de asistencia sanitaria bajo deber de secreto Profesional. A eso se suman dos requisitos propios de la IA: consentimiento expreso del paciente para grabar la consulta, porque grabar es una finalidad nueva que no está cubierta por la asistencia, y contrato de encargo (DPA) firmado con cada proveedor que toque esos datos. La guía de la AEPD para profesionales del sector sanitario desarrolla quién es responsable y cuándo procede evaluación de impacto. Nunca datos de pacientes en cuentas de consumo: los planes individuales no firman DPA y pueden usar tu contenido para entrenar.</p>
+
+                <h3 id="faq-4">¿Necesito pedir consentimiento al paciente para qué se grabe la consulta?</h3>
+                <p>Sí. La base legal de la historia clínica es la prestación de asistencia sanitaria, no el consentimiento. Grabar la conversación para transcribirla es un tratamiento adicional con una finalidad nueva, y para eso hace falta consentimiento expreso del paciente. El texto de información debe recoger qué se graba, con qué herramienta, dónde se procesa el audio, cuánto tiempo se conserva y que una parte del borrador de la historia lo redacta un sistema de IA. Desde el 2 de agosto de 2026, además, las obligaciones de transparencia del artículo 50 del AI Act obligan a informar de la interacción con sistemas de IA. Sin ese texto, el uso de la transcripción es difícil de defender.</p>
+
+                <h3 id="faq-5">¿Cuánto cuesta la IA para un consultorio de dos profesionales?</h3>
+                <p>La parte que toca datos de pacientes —transcripción clínica— no tiene precio de lista público: cada fabricante lo factura por Profesional y lo cierra en presupuesto, así que la única cifra fiable es la que te den por escrito. Estimación propia para un consultorio de dos profesionales: entre 60 y 120 € al mes contando transcripción y agenda, y entre 100 y 250 € al mes si además contratas un asistente conversacional para pacientes.</p>
+
+                    <p>La fórmula es tarifa por Profesional × número de profesionales, más licencia de agenda por clínica. Si añades una capa de asistente generalista con plan de Empresa, son 42 € al mes por dos asientos en ChatGPT Business Standard o 40 US$ en Claude Team, importes consultados el 3 de octubre de 2026. Ninguna de esas estimaciones incluye configuración, formación ni coste legal.</p>
+
+                <h3 id="faq-6">¿Qué diferencia hay entre transcripción clínica y dictado médico?</h3>
+                <p>La transcripción clínica automática graba la conversación con el paciente y genera un borrador de historia clínica estructurado que el Profesional revisa, corrige y firma. El dictado médico hace lo contrario en el sentido del flujo: el Profesional redacta la historia hablando y el sistema convierte la voz en texto con vocabulario de su especialidad. La diferencia práctica es de consentimiento y de control: la transcripción exige grabar, lo que requiere consentimiento expreso y aceptar que el sistema establezca una borrador; el dictado mantiene el control de la redacción y no necesita grabar. Ambas exigen supervisión humana y ninguna sustituye la responsabilidad clínica.</p>
+
+                <h3 id="faq-7">¿Puedo usar un asistente de IA gratuito o un plan individual con datos de pacientes?</h3>
+                <p>No. Los planes individuales de ChatGPT, Claude y Gemini no firman contrato de encargo para datos de salud y su contenido puede usarse para entrenar; las cuentas personales de Google con el guardado de actividad activo usan la actividad para entrenar y conservan 18 meses. En una clínica, la respuesta es sencilla: si el proveedor no puede firmar un DPA para categoría especial, no se le entrega un sólo dato identificable de paciente. La <a href="https://www.aepd.es/guias/guia-profesionales-sector-sanitario.pdf">guía de la AEPD para profesionales sanitarios</a> explica el marco de responsabilidad en los distintos supuestos.</p>
+
+                <h3 id="faq-8">¿La IA reemplaza al médico o a la recepción de la clínica?</h3>
+                <p>Ni al médico ni a la recepción. La IA sustituye una tarea, no una persona. En el caso del médico, la documentación es la parte que más horas consume y la que menos valor clínico aporta; en el caso de recepción, las respuestas administrativas repetitivas son la mayor parte del volumen. Lo que hace la tecnología es liberar esas horas para que se dediquen a lo que sí requiere criterio: la exploración, el razonamiento clínico, la relación con el paciente y la organización del centro. En una consulta con falta de personal, ese es exactamente el efecto útil, y en ningún caso es una sustitución de profesionales.</p>
+
+                <h2 id="fuentes">Fuentes</h2>
+
+                <p>Todos los precios, fechas, condiciones y datos normativos de este artículo proceden de estas fuentes, consultadas el <strong>3 de octubre de 2026</strong>. No hay ninguna cifra estimada sin marca visible, ni ninguna afirmación atribuida a un estudio sin enlace.</p>
+
+                <ul>
+                    <li><strong>AEPD.</strong> <a href="https://www.aepd.es/areas-de-actuacion/salud/tus-derechos-en-relacion-con-tus-datos-de-salud" rel="noopener nofollow" target="_blank">Tus derechos en relación con tus datos de salud</a> — régimen general del artículo 9 del RGPD y excepciones aplicables a la atención sanitaria. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>AEPD.</strong> <a href="https://www.aepd.es/guias/guia-profesionales-sector-sanitario.pdf" rel="noopener nofollow" target="_blank">Guía para profesionales del sector sanitario</a> — quién es responsable y quién encargado en las distintas formas de organización de la clínica, y criterios sobre evaluación de impacto. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>AEPD.</strong> <a href="https://www.aepd.es/preguntas-frecuentes/2-tus-obligaciones-como-responsable-del-tratamiento/5-bases-legitimadoras-del-tratamiento/FAQ-0215-cuales-son-las-bases-de-legitimacion-para-el-tratamiento-de-las-categorias-especiales-de-datos" rel="noopener nofollow" target="_blank">Bases de legitimación para las categorías especiales de datos</a> — enumeración de las excepciones del artículo 9.2, incluido el supuesto de prestación de asistencia sanitaria bajo deber de secreto Profesional. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>AEPD.</strong> <a href="https://www.aepd.es/sites/default/files/2020-02/adecuacion-rgpd-ia.pdf" rel="noopener nofollow" target="_blank">Adecuación al RGPD de tratamientos que incorporan IA</a> — base jurídica, información al interesado, decisiones automatizadas y transferencias internacionales. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Unión Europea.</strong> <a href="https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=OJ:L_202401689" rel="noopener nofollow" target="_blank">Reglamento (UE) 2024/1689 (AI Act)</a> — calendario de aplicación, artículo 50 de transparencia, régimen de alto riesgo y redacción del artículo 99.3 sobre multas. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>OpenAI.</strong> <a href="https://openai.com/business/pricing/" rel="noopener nofollow" target="_blank">Precios de ChatGPT Business y Enterprise</a> — precio por asiento de Business Standard y Premium, facturación anual en euros, rango de asientos y ausencia de precio público en Enterprise. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>OpenAI.</strong> <a href="https://openai.com/business-data/" rel="noopener nofollow" target="_blank">Datos de Empresa de OpenAI</a> — garantía de que el contenido de Empresa no se usa para entrenar modelos. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Anthropic.</strong> <a href="https://www.anthropic.com/pricing" rel="noopener nofollow" target="_blank">Precios de Claude</a> — precios de Claude Team y Claude Team Premium, condición de pago anual o mensual y rango de asientos. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Anthropic.</strong> <a href="https://privacy.claude.com/en/articles/10023555-how-do-you-use-personal-data-in-model-training" rel="noopener nofollow" target="_blank">Uso de datos personales en el entrenamiento</a> — ausencia de entrenamiento por defecto en los planes de organización. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Google.</strong> <a href="https://workspace.google.com/intl/es_es/pricing.html" rel="noopener nofollow" target="_blank">Precios de Google Workspace en España</a> — precios en euros por usuario y mes de Business Starter, Standard y Plus, con su mínimo de un usuario. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Google.</strong> <a href="https://cloud.google.com/gemini-enterprise" rel="noopener nofollow" target="_blank">Gemini Enterprise</a> — precio por asiento desde 21 US$ en Business y desde 30 US$ en Standard y Plus, con techo de 300 asientos. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Google.</strong> <a href="https://support.google.com/gemini/answer/13594961?hl=es" rel="noopener nofollow" target="_blank">Uso de datos en Gemini</a> — entrenamiento con la actividad de las cuentas personales y retención de 18 meses. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Internas de la web.</strong> <a href="../../comparativas/ia-dentistas/">IA para dentistas</a> — el mismo marco de datos de salud aplicado a un perfil de clínica con alto volumen de imagen, útil para contrastar el tratamiento de la documentación clínica. Consultado el 3 de octubre de 2026.</li>
+                </ul>
 
                 <div class="related-articles">
                     <h3>Artículos relacionados</h3>
                     <ul>
-                        <li><a href="../../herramientas-ia/seguridad-etica-ia/">Seguridad y ética de la IA en empresas: guía de cumplimiento 2026</a></li>
+                        <li><a href="../../herramientas-ia/seguridad-etica-ia/">Seguridad y ética de la IA en Empresas: guía de cumplimiento 2026</a></li>
                         <li><a href="../../herramientas-ia/chatbots-atencion-cliente/">Los 8 mejores chatbots IA para atención al cliente</a></li>
                         <li><a href="../../guias/guia-implementar-ia-pyme/">Guía completa para implementar IA en tu pyme</a></li>
                         <li><a href="../../comparativas/ia-rrhh-reclutamiento/">IA para RRHH y reclutamiento: herramientas en 2026</a></li>

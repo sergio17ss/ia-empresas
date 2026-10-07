@@ -134,16 +134,17 @@
     }
     </script>
 
-    <script type="application/ld+json">{
+    <script type="application/ld+json">
+{
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
         {
             "@type": "Question",
-            "name": "¿Cuánto cuesta Intercom con Fin?",
+            "name": "¿Cuánto cuesta Intercom con Fin al mes?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Tres planes por asiento y mes: Essential a 29 USD anuales o 39 mensuales, Advanced a 85 o 99 USD, y Expert a 132 o 139 USD. Los tres incluyen el Fin AI Agent y el helpdesk completo. A eso se suma Fin por outcome: 0,99 USD por Resolution, Procedure handoff, Disqualification y Self-serve routing, y 9,99 USD por Qualification. Precios consultados el 29 de septiembre de 2026 en intercom.com/pricing."
+                "text": "Tres planes por asiento y mes: Essential a 29 USD anuales o 39 mensuales, Advanced a 85 o 99 USD, y Expert a 132 o 139 USD. Los tres incluyen el Fin AI Agent y el helpdesk completo. A eso se suma Fin por outcome: 0,99 USD por Resolution, Procedure handoff, Disqualification y Self-serve routing, y 9,99 USD por Qualification. Si necesitas SMS, WhatsApp o teléfono, se cobra por uso y sin tarifa plana publicada. Precios consultados el 3 de octubre de 2026."
             }
         },
         {
@@ -151,7 +152,7 @@
             "name": "¿Fin cobra por pasar la conversación a un agente humano?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Un handoff a humano ordinario no se cobra. Un «Procedure» configurado que termina en handoff sí se factura, a 0,99 USD. Intercom cobra una vez por outcome y una vez por conversación, y no cobra cuando el outcome es una mala clasificación por fallo de precisión. Lo que determina el cargo no es quién contesta, sino si hay un procedimiento configurado detrás del traspaso."
+                "text": "Un traspaso a humano ordinario no se cobra. Un Procedure configurado que termina en traspaso sí se factura, a 0,99 USD. Intercom cobra una vez por outcome y una vez por conversación, y no cobra cuando el outcome registrado es una mala clasificación por fallo de precisión. Lo que determina el cargo no es quién contesta, sino si hay un procedimiento configurado detrás del traspaso."
             }
         },
         {
@@ -159,7 +160,7 @@
             "name": "¿Qué porcentaje de consultas resuelve Intercom Fin?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Intercom publica que Fin resuelve más del 76% de su propio volumen de soporte. Es un dato de la empresa sobre su volumen, no una previsión para tu cuenta. La métrica es la Automation Rate (Involvement × Resolution), y en 2026 las conversaciones «Fin Constrained» —en las que Fin no actúa porque no tiene los datos o no está configurado— quedaron excluidas de ese cálculo. Contarlas inflaría la tasa, porque en el numerador no hay resolución que las compense. Que la empresa decida excluirlas responde a una intención que su documentación no detalla, así que conviene tomar el 76% como lo que es: un dato del fabricante sobre su propio volumen."
+                "text": "Intercom publica que Fin resuelve más del 76% de su propio volumen de soporte. Es un dato de la empresa sobre su volumen, no una previsión para tu cuenta. La métrica es la Automation Rate, que es Involvement por Resolution, y en 2026 las conversaciones Fin Constrained, en las que Fin no actúa porque no tiene datos o no está configurado, quedaron excluidas de ese cálculo. Contarlas inflaría la tasa, porque en el numerador no hay resolución que las compense."
             }
         },
         {
@@ -167,7 +168,7 @@
             "name": "¿Por qué no se puede comparar Intercom y Zendesk solo por precio?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Porque no cobran por la misma unidad. Zendesk factura por «resoluciones automatizadas», las que no escalan a un agente humano. Fin factura, además, los Procedure handoff: una conversación que ejecuta un procedimiento configurado y aun así termina en una persona también es facturable. Con el mismo volumen y el mismo número de escalados, las dos facturas no coinciden."
+                "text": "Porque no cobran por la misma unidad. Zendesk factura por resoluciones automatizadas, las que no escalan a un agente humano. Fin factura además los Procedure handoff: una conversación que ejecuta un procedimiento configurado y aun así termina en una persona también es facturable. Con el mismo volumen y el mismo número de escalados, las dos facturas no coinciden aunque los precios unitarios parezcan parecidos."
             }
         },
         {
@@ -175,11 +176,36 @@
             "name": "¿Cuándo aplica el precio de Fin standalone?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "El standalone se publica a 0,99 USD por outcome, con un mínimo de 50 outcomes al mes, sin coste por asiento ni cargos de setup y con usuarios ilimitados. No es self-serve: hay que hablar con el equipo comercial. Los planes con helpdesk completo añaden el precio por asiento, y se pueden contratar sin hablar con nadie: Essential y Advanced tienen alta self-serve. En Expert, la vía publicada es el contacto con el equipo comercial."
+                "text": "El standalone se publica a 0,99 USD por outcome, con un mínimo de 50 outcomes al mes, sin coste por asiento ni cargos de setup y con usuarios ilimitados. No es self-serve: hay que hablar con el equipo comercial. Los planes con helpdesk completo añaden el precio por asiento y se pueden contratar sin hablar con nadie, porque Essential y Advanced tienen alta self-serve. En Expert, la vía publicada es el contacto con el equipo comercial."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Intercom Fin sustituye a una persona en atención al cliente?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Fin está diseñado como primera línea y como filtro, no como sustituto de la persona, y su precio no premia la autonomía: se factura por outcome aunque el desenlace termine en una persona. Lo que sí cambia es el trabajo de quien contesta, porque recibe menos consultas repetitivas y más casos con contexto ya recogido. Además, la documentación excluye de la Automation Rate las conversaciones en las que Fin no actúa por falta de datos o de configuración, así que la autonomía nunca es total."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué pasa con los datos personales de los clientes al usar Fin?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hay tres obligaciones concretas. La primera es la base legal del tratamiento: si el bot recoge categorías especiales de datos, como datos de salud, el consentimiento genérico del contacto comercial no sirve. La segunda es el papel de cada parte, responsable y encargado, que hay que definir en el acuerdo de protección de datos. La tercera es la transparencia: desde el 2 de agosto de 2026 el artículo 50 del Reglamento (UE) 2024/1689 obliga a informar de que la persona está hablando con un sistema de IA. Plazos de conservación e información al interesado hay que decidirlos y redactarlos tú."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Merece la pena Intercom Fin en una pyme con cinco personas?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Solo con un umbral claro: volumen alto de consultas repetitivas y documentables. En el escenario propio de este artículo, con 1.500 conversaciones facturables al mes, Fin se lleva 17.820 USD al año y el plan 3.060 USD, así que cerca del 85% de la factura son outcomes. Si tu equipo tiene tres o cuatro personas y las consultas se resuelven en dos o tres intercambios, una mesa de helpdesk compartida con un asistente de IA general sale mucho más barata. Si hay miles de conversaciones mensuales y respuestas documentables, el modelo por outcome empieza a compensar."
             }
         }
     ]
-}</script>
+}
+    </script>
 
 </head>
 <body>
@@ -212,7 +238,7 @@
 
             <div class="methodology-banner">
                 <span class="methodology-icon" aria-hidden="true"></span>
-                <p><strong>Metodología:</strong> Referencia de precios construida a partir de intercom.com/pricing y de los artículos de soporte de Intercom (Pricing FAQs y Automation Rate), consultados el 29 de septiembre de 2026. Todos los importes se muestran en la moneda original de publicación, el dólar. La sección de coste incluye un escenario propio, marcado como estimación.</p>
+                <p><strong>Metodología:</strong> Referencia de precios construida a partir de intercom.com/pricing y de los artículos de soporte de Intercom (Pricing FAQs y Automation Rate), consultados el 7 de octubre de 2026. Todos los importes se muestran en la moneda original de publicación, el dólar. La sección de coste incluye un escenario propio, marcado como estimación.</p>
             </div>
 
             <div class="article-header">
@@ -221,21 +247,22 @@
                 <p class="article-subtitle">Intercom Fin no se factura como un asiento más. Se cobra por «outcome», y hay cinco tipos de outcome distintos con precios distintos. Esta es una referencia de precios: los tres planes por asiento, el precio unitario de cada outcome, la prueba de 14 días, cuándo aplica el modo standalone y cómo comparar la factura de Fin con la de otras herramientas.</p>
                 <div class="article-meta-bar">
                     <span class="meta-author">Por el equipo de IA TodoPyme</span>
-                    <span class="meta-date">Publicado el 7 de septiembre 2026 · Actualizado el 29 septiembre 2026</span>
+                    <span class="meta-date">Publicado el 7 de octubre 2026 · Actualizado el 7 octubre 2026</span>
                     <span class="meta-reading">20 min de lectura</span>
                 </div>
             </div>
 
             <div class="article-content">
-
-                <div class="tldr-box">
+<div class="tldr-box">
                     <h2>Resumen rápido</h2>
                     <ul>
                         <li><strong>Precio del plan:</strong> desde 29 USD por asiento y mes (Essential, facturación anual) hasta 132 USD (Expert, anual). En mensual, de 39 a 139 USD. Los tres planes incluyen el Fin AI Agent y el helpdesk completo.</li>
                         <li><strong>Precio de Fin:</strong> 0,99 USD por outcome, con una única excepción: <strong>Qualification cuesta 9,99 USD</strong>.</li>
-                        <li><strong>Un outcome, un cobro:</strong> se cobra una vez por outcome y una vez por conversación.</li>
-                        <li><strong>Handoff a humano:</strong> el handoff ordinario no se cobra; un «Procedure» configurado que termina en handoff, sí: 0,99 USD.</li>
+                        <li><strong>Un outcome, un cobro:</strong> se cobra una vez por outcome y una vez por conversación, incluso si la conversación acaba en una persona.</li>
+                        <li><strong>Handoff a humano:</strong> el traspaso ordinario no se cobra; un Procedure configurado que termina en handoff, sí: 0,99 USD.</li>
+                        <li><strong>Fin no es un sustituto del agente:</strong> se factura por desenlace, no por persona ahorrada. Lo que baja es la carga repetitiva, no el coste por caso.</li>
                         <li><strong>Prueba:</strong> 14 días gratis sin tarjeta, con todas las funciones del plan y sin cargos por uso de Fin. No existe un plan gratuito permanente.</li>
+                        <li><strong>Umbral de compra:</strong> por debajo de unos 250 outcomes facturables al mes, el plan por asiento pesa más que el propio Fin.</li>
                     </ul>
 
                     <div class="price-table">
@@ -261,16 +288,28 @@
                     <h3>Índice</h3>
                     <ol>
                         <li><a href="#que-es-fin">Qué es Intercom Fin y qué factura</a></li>
-                        <li><a href="#cinco-outcomes">Los 5 tipos de outcome y su precio unitario</a></li>
+                        <li><a href="#deflector-y-conocimiento">Autoayuda, deflector y base de conocimiento</a></li>
+                        <li><a href="#que-no-hace-fin">Qué no hace Fin: los límites que no salen en la tabla</a></li>
+                        <li><a href="#cinco-outcomes">Los cinco tipos de outcome y su precio unitario</a></li>
                         <li><a href="#como-se-factura">Cómo se construye la factura real</a></li>
                         <li><a href="#automation-rate">Automation Rate: Involvement × Resolution</a></li>
-                        <li><a href="#planes-y-asientos">Planes por asiento, add-ons y asientos Lite</a></li>
+                        <li><a href="#planes-y-asientos">Planes por asiento y coste anual</a></li>
+                        <li><a href="#add-ons">Add-ons: Copilot, Pro y Proactive Support Plus</a></li>
+                        <li><a href="#asientos-lite">Asientos Lite y el coste por persona del equipo</a></li>
                         <li><a href="#standalone-vs-helpdesk">Fin standalone frente a helpdesk completo</a></li>
+                        <li><a href="#canales">SMS, WhatsApp y teléfono: la tercera variable</a></li>
+                        <li><a href="#umbral-de-compra">El umbral de compra: cuándo el plan deja de importar</a></li>
+                        <li><a href="#coste-total">Coste total de propiedad a doce meses</a></li>
                         <li><a href="#unidad-de-cobro">Comparar con otras herramientas: la unidad de cobro</a></li>
-                        <li><a href="#evaluar-intercom-fin">Prueba de 14 días y Early Stage</a></li>
+                        <li><a href="#vs-chatbot-sencillo">Cuándo compensa frente a un chatbot sencillo</a></li>
+                        <li><a href="#vs-helpdesk-compartido">Cuándo compensa frente a una mesa de helpdesk compartida</a></li>
+                        <li><a href="#integraciones-y-limites">Integraciones y límites técnicos</a></li>
+                        <li><a href="#rgpd-y-ai-act">Datos personales, RGPD y el AI Act</a></li>
+                        <li><a href="#errores-implantacion">Los cinco errores de implantación más caros</a></li>
+                        <li><a href="#prueba-14-dias">Prueba de 14 días y Early Stage</a></li>
                         <li><a href="#faq">Preguntas frecuentes</a></li>
-                        <li><a href="#fuentes">Fuentes</a></li>
                         <li><a href="#relacionados">Artículos relacionados</a></li>
+                        <li><a href="#fuentes">Fuentes</a></li>
                     </ol>
                 </div>
 
@@ -278,22 +317,42 @@
 
                 <p>Para quien busca el <strong>precio de Intercom Fin</strong>, la definición importa menos que una frase de la documentación de facturación: Fin se factura <strong>por outcome</strong>. No por conversación, ni por usuario, ni por asiento, sino por el desenlace que se le haya configurado y completado. La consecuencia práctica es que el precio unitario no es uno solo: hay cinco tipos de outcome, cuatro a 0,99 USD y uno a 9,99 USD. Con el mismo número de conversaciones y las mismas personas en el equipo, la factura cambia según el reparto entre los cinco tipos.</p>
 
-                <h3>Un cambio de contexto: Salesforce ya es dueña de Intercom</h3>
+                <p>Fin es, en la práctica, un <strong>agente de soporte</strong> que vive dentro de un helpdesk. No es un modelo de lenguaje al que se le añade una bandeja: es una bandeja de entrada completa con una IA que contesta al cliente por dentro. Eso tiene dos consecuencias que no aparecen en la lista de funciones. La primera es que el precio del asiento no compra «IA»: compra el helpdesk, y el agente viene dentro. La segunda es que la conversación con el cliente es el producto facturable, no el asiento.</p>
 
                 <p>Conviene separar tres fechas, porque se confunden con facilidad. En <strong>mayo de 2026</strong> la empresa cambió su nombre de Intercom a Fin; el software de atención al cliente siguió llamándose Intercom. El <strong>15 de junio de 2026</strong> Salesforce anunció un acuerdo definitivo para adquirir Fin por aproximadamente <strong>3.600 millones de dólares</strong>, y la operación se completó el <strong>10 de septiembre de 2026</strong>, con una cartera conjunta de más de 30.000 empresas clientes.</p>
-                <p>El cambio de nombre y la compra son hechos distintos y conviene no confundirlos: la primera ocurrió antes del acuerdo. El importe procede del comunicado de Salesforce del 15 de junio de 2026, y la fecha de cierre y la cifra de clientes, del comunicado de cierre del 10 de septiembre de 2026. Reuters y CNBC cubrieron el acuerdo de junio con las mismas cifras.</p>
 
-                <p>Para una referencia de precios esto significa dos cosas: que la documentación de Intercom sigue publicada y mantenida en intercom.com, la fuente de todas las cifras de este artículo, y que los precios de una herramienta absorbida por una compañía mayor son los que esa compañía publica el día que consultas. Por eso este documento lleva su fecha de consulta —29 de septiembre de 2026— en cada bloque.</p>
+                <p>El cambio de nombre y la compra son hechos distintos y conviene no confundirlos: la primera ocurrió antes del acuerdo. El importe procede del comunicado de Salesforce del 15 de junio de 2026, y la fecha de cierre y la cifra de clientes, del comunicado de cierre del 10 de septiembre de 2026. Reuters y CNBC cubrieron el acuerdo de junio con las mismas cifras. Para una referencia de precios esto significa que los precios de una herramienta absorbida por una compañía mayor son los que esa compañía publica el día que consultas, y por eso este documento lleva su fecha de consulta en cada bloque.</p>
 
                 <h3>Las cuatro partidas de una factura de Intercom</h3>
 
-                <p>Una factura puede tener hasta cuatro partidas: el <strong>plan por asiento y mes</strong>, <strong>Fin por outcome</strong>, los <strong>add-ons por mes</strong> y el <strong>consumo de canales</strong>, que en el caso de SMS, WhatsApp y teléfono no tiene tarifa plana.</p>
+                <p>Una factura puede tener hasta cuatro partidas: el <strong>plan por asiento y mes</strong>, <strong>Fin por outcome</strong>, los <strong>add-ons por mes</strong> y el <strong>consumo de canales</strong>, que en el caso de SMS, WhatsApp y teléfono no tiene tarifa plana. Dos excepciones cambian qué producto se está presupuestando: para clientes que no usan Intercom, la versión <strong>standalone</strong> de Fin es un caso especial que se resuelve contactando con el equipo comercial, y para los casos de uso de <strong>Sales</strong> y <strong>Ecommerce</strong> Fin requiere el conjunto completo de Intercom.</p>
 
-                <p>Dos excepciones cambian qué producto se está presupuestando: para clientes que no usan Intercom, la versión <strong>standalone</strong> de Fin es un caso especial que se resuelve contactando con el equipo comercial, y para los casos de uso de <strong>Sales</strong> y <strong>Ecommerce</strong> Fin requiere el conjunto completo de Intercom.</p>
+                <h2 id="deflector-y-conocimiento">Autoayuda, deflector y base de conocimiento</h2>
 
-                <h2 id="cinco-outcomes">Los 5 tipos de outcome y su precio unitario</h2>
+                <p>Lo que suele llamarse deflector es el mecanismo por el que el contacto <strong>no llega a la bandeja</strong>: antes de que un agente humano lea nada, el sistema ofrece al cliente el contenido de la base de conocimiento o deja que Fin lo resuelva con ese mismo contenido. La <a href="https://www.intercom.com/fin">página de producto de Fin</a> describe ese recorrido, y la diferencia con un chatbot genérico está exactamente en la base de conocimiento: no hay un modelo entrenado con tu empresa, hay un contenido escrito por tu equipo al que el agente consulta.</p>
 
-                <p>La documentación de precios de Intercom no habla de «conversaciones» ni de «resoluciones» a secas, sino de <em>outcomes</em>: un desenlace de la conversación que se configura en Fin y que, cuando se cumple, se factura. Hay cinco, con esta nomenclatura exacta y estos precios unitarios:</p>
+                <p>Ese matiz tiene una consecuencia práctica que se nota en el mes tres. Un chatbot que no encuentra la respuesta <strong>se inventa</strong> una; un agente que consulta tu contenido y no lo encuentra <strong>no debería contestarle al cliente</strong> y debería escalar. Esa diferencia de comportamiento no aparece en la tabla de precios y es la razón principal por la que un producto como este cuesta más que un script con una IA detrás. Para entender cómo se estructura ese contenido hay <a href="../../guias/rag-ia-datos/">la guía de RAG con datos de empresa</a>.</p>
+
+                <div class="callout callout-info">
+                    <strong>Lo que la página de precios no cobra por separado</strong>
+                    <p>Ni el deflector, ni la base de conocimiento, ni las acciones o workflows que Fin puede ejecutar aparecen como partida independiente en la tabla de precios. Lo único que se factura de forma unitaria es el outcome, y lo único que se factura de forma fija es el asiento. Si alguien te presenta un coste «de la IA» en Intercom, ese número tiene que salir de una de estas dos partidas, no de una tercera.</p>
+                </div>
+
+                <p>El resultado que se busca con esa arquitectura se llama en la documentación de Intercom <strong>Resolution</strong>: el desenlace en el que la conversación termina resuelta sin intervención humana. Es el outcome más barato y el más numeroso en una operación sana. Todo lo demás —Procedure handoff, Disqualification, Self-serve routing, Qualification— son desenlaces de segundo orden que se configuran para que existan, porque el sistema necesita saber qué hacer cuando la vía principal no funciona.</p>
+
+                <h2 id="que-no-hace-fin">Qué no hace Fin: los límites que no salen en la tabla</h2>
+
+                <p>El primer límite es el más importante para decidir: <strong>Fin no sustituye a una persona en el servicio de atención al cliente</strong>, y el modelo de precios lo dice sin decirlo. Se cobra por outcome aunque el desenlace termine en una persona. Automatizar no abarata la factura por sí solo: lo que abarata es evitar el trabajo repetitivo de quien contesta, y ese ahorro aparece en horas de persona, no en la línea de Fin.</p>
+
+                <p>El segundo límite es la cobertura. Fin solo puede resolver lo que está documentado y lo que sus <strong>workflows</strong> saben ejecutar. Hay conversaciones que no son un problema de conocimiento sino de permisos: una devolución que hay que comprobar contra un ERP, una cita que hay que mover en un sistema de citas, una descarga de datos que hay que contrastar con un contrato. Ahí Fin puede clasificar, recopilar y entregar el caso bien preparado, y eso ya cuenta, pero el desenlace acaba igualmente en una persona.</p>
+
+                <p>El tercero es la calidad del contenido. Un deflector sin base de conocimiento escrita, con artículos desactualizados o con respuestas que se contradicen entre sí, no da problemas visibles: da <strong>resoluciones erróneas</strong>. El cliente recibe una respuesta que parece válida y que no lo es, y el daño aparece semanas después, cuando ya no sabes qué conversación lo causó.</p>
+
+                <p>El cuarto es la curva de adopción. Un equipo que lleva años con plantillas y macros ve como Fin cambia su forma de trabajar: menos macros, más configuración de outcomes y más criterio sobre qué se resuelve y qué no. Ese tiempo de cambio no está en ningún precio, pero es la partida más cara de la lista.</p>
+
+                <h2 id="cinco-outcomes">Los cinco tipos de outcome y su precio unitario</h2>
+
+                <p>La documentación de precios de Intercom no habla de «conversaciones» ni de «resoluciones» a secas, sino de <em>outcomes</em>: un desenlace de la conversación que se configura en Fin y que, cuando se cumple, se factura. Hay cinco, con esta nomenclatura exacta y estos precios unitarios, y la tabla siguiente es la pieza que hace falta tener delante antes de montar nada.</p>
 
                 <div class="price-table">
                     <table>
@@ -338,29 +397,24 @@
 
                 <p>Cuatro de los cinco desenlaces se facturan al mismo precio unitario, 0,99 USD; lo que cambia entre ellos es el desenlace que registras, y con él el reparto de la factura. El quinto, <strong>Qualification</strong>, tiene precio propio: 9,99 USD, diez veces más. La documentación no explica el motivo, así que el 9,99 USD es un dato publicado, no una consecuencia derivable del comportamiento del agente.</p>
 
-                <p>Una advertencia sobre cómo leer los nombres: la documentación define los outcomes por su nombre y por su precio. Lo que cada nombre represente en tu operación —qué cuenta como Self-serve routing, cuándo una conversación está descalificada— depende de cómo configures cada outcome en Fin.</p>
+                <p>Una advertencia sobre cómo leer los nombres: la documentación define los outcomes por su nombre y por su precio. Lo que cada nombre represente en tu operación —qué cuenta como Self-serve routing, cuándo una conversación está descalificada— depende de cómo configures cada outcome en Fin. Esa configuración es tuya, y es la variable que más mueve la factura.</p>
 
                 <h3>Resolution y Procedure handoff</h3>
-                <p><strong>Resolution</strong> es el desenlace base y el precio de referencia del modelo: 0,99 USD, facturados una vez por conversación, de modo que una resuelta nunca puede costar más de un outcome.</p>
 
-                <p><strong>Procedure handoff</strong> es el que más sorprende en la factura. Un handoff a humano ordinario no se cobra: si Fin entrega la conversación a una persona y ahí termina, ese traspaso no genera cargo. Pero si llega después de ejecutar un «Procedure» configurado en Fin, sí se factura, a 0,99 USD. La diferencia no está en el cliente, ni en el resultado, ni en quién acaba contestando: está en si hay un procedimiento configurado detrás del traspaso.</p>
+                <p><strong>Resolution</strong> es el desenlace base y el precio de referencia del modelo: 0,99 USD, facturados una vez por conversación, de modo que una resuelta nunca puede costar más de un outcome. <strong>Procedure handoff</strong> es el que más sorprende en la factura: un traspaso a humano ordinario no se cobra, pero si llega después de ejecutar un «Procedure» configurado en Fin, sí se factura, a 0,99 USD.</p>
 
-                <p>Por si quieres el criterio literal, la página de precios define cuándo se cuenta un outcome en tres casos: el cliente confirma que su asunto está resuelto, no pide más ayuda después de que Fin responda, o Fin completa un flujo («Procedure»), incluidos los handoffs. En los tres casos se cobra <strong>una sola vez por conversación</strong>, aunque la conversación contenga varias preguntas.</p>
-
-                <h3>Disqualification, Self-serve routing y Qualification</h3>
-
-                <p>Disqualification y Self-serve routing cuestan 0,99 USD y se facturan con la misma regla que Resolution y Procedure handoff: una vez por outcome y una vez por conversación. Lo que los diferencia no está en la tarifa, sino en el desenlace que registras, y por eso dos operaciones con el mismo número de conversaciones pueden tener facturas distintas. Qualification rompe la tarifa plana, a 9,99 USD, y su peso es proporcional a cuántos contactos registras con ese outcome, no a cuántos resuelves.</p>
+                <p>Por si quieres el criterio literal, la página de precios define cuándo se cuenta un outcome en tres casos: el cliente confirma que su asunto está resuelto, no pide más ayuda después de que Fin responda, o Fin completa un flujo, incluidos los traspasos. En los tres casos se cobra <strong>una sola vez por conversación</strong>, aunque la conversación contenga varias preguntas.</p>
 
                 <h2 id="como-se-factura">Cómo se construye la factura real</h2>
 
-                <p>La factura se construye sumando los bloques anteriores. La dificultad no está en la suma: está en determinar <strong>qué conversaciones cuentan como outcome facturable</strong>, porque ahí la configuración manda sobre el número.</p>
+                <p>La factura se construye sumando los bloques anteriores. La dificultad no está en la suma: está en determinar <strong>qué conversaciones cuentan como outcome facturable</strong>, porque ahí la configuración manda sobre el número. Dos reglas acortan el cálculo:</p>
 
                 <ul>
                     <li><strong>Una vez por outcome, una vez por conversación.</strong> Aunque una conversación pase por varios pasos internos, la factura solo puede contener un outcome para esa conversación.</li>
                     <li><strong>No se cobra si el outcome es una mala clasificación.</strong> Cuando el desenlace registrado no se corresponde con lo que ocurrió —un fallo de precisión de la clasificación—, no hay cargo.</li>
                 </ul>
 
-                <p>A esto se suma la tercera regla, ya citada, que es la que más presupuesto mueve: el handoff ordinario no se cobra, el Procedure handoff sí.</p>
+                <p>A esto se suma la tercera regla, ya citada, que es la que más presupuesto mueve: el traspaso ordinario no se cobra, el Procedure handoff sí. Y hay una cuarta consecuencia, menos evidente: como la configuración decide qué desenlace se registra, <strong>el mismo tráfico puede costar entre un 40% y un 100% más</strong> según cómo estén definidos los outcomes.</p>
 
                 <h3>Estimación propia: cómo calcular la factura antes de contratar</h3>
 
@@ -407,7 +461,7 @@
                     </table>
                 </div>
 
-                <p>Las tres filas tienen las mismas conversaciones y las mismas personas atendidas. La factura va de 2.165 a 3.110 USD al mes: <strong>945 USD</strong> que no dependen del volumen de trabajo, sino de la configuración. 495 vienen de que 500 conversaciones acaben en un Procedure handoff en lugar de en un handoff ordinario; los otros 450, de que 50 terminen en Qualification en lugar de en Resolution. El escenario no calcula ahorro, ni retorno, ni número de agentes: solo suma precios publicados sobre supuestos declarados, y ese es el único tipo de conclusión que este artículo puede extraer de unos precios publicados.</p>
+                <p>Las tres filas tienen las mismas conversaciones y las mismas personas atendidas. La factura va de 2.165 a 3.110 USD al mes: <strong>945 USD</strong> que no dependen del volumen de trabajo, sino de la configuración. 495 vienen de que 500 conversaciones acaben en un Procedure handoff en lugar de en un traspaso ordinario; los otros 450, de que 50 terminen en Qualification en lugar de en Resolution.</p>
 
                 <h2 id="automation-rate">Automation Rate: Involvement × Resolution</h2>
 
@@ -415,32 +469,33 @@
 
                 <div class="callout callout-tip">
                     <strong>La fórmula no ha cambiado</strong>
-                    <p>Lo que cambió en 2026 no fue la ecuación, sino qué conversaciones entran en ella: se excluyó todo lo que Intercom marca como «Fin Constrained». La definición exacta está en el artículo de soporte <a href="https://www.intercom.com/help/en/articles/15599377">Automation Rate</a>.</p>
+                    <p>Lo que cambió en 2026 no fue la ecuación, sino qué conversaciones entran en ella: se excluyó todo lo que Intercom marca como «Fin Constrained». La definición exacta está en el <a href="https://www.intercom.com/help/en/articles/15599377">artículo de soporte sobre Automation Rate</a>.</p>
                 </div>
 
                 <h3>Qué es una conversación «Fin Constrained»</h3>
 
-                <p>Es una conversación en la que Fin no actúa: no porque falle, sino porque no tiene los datos que necesita o no está configurado para ese caso. Contarlas dentro de la tasa infla el resultado, porque se suman al denominador conversaciones que Fin nunca llegó a gestionar. La documentación explica <strong>qué</strong> se excluye, no <strong>por qué</strong>: nuestra lectura es que una no intervención no equivale a un fallo de resolución, pero la cifra de 2026 ya no es comparable con años anteriores sin tener eso en cuenta.</p>
+                <p>Es una conversación en la que Fin no actúa: no porque falle, sino porque no tiene los datos que necesita o no está configurado para ese caso. Contarlas dentro de la tasa inflaría el resultado, porque se suman al denominador conversaciones que Fin nunca llegó a gestionar. La documentación explica <strong>qué</strong> se excluye, no <strong>por qué</strong>: una no intervención no equivale a un fallo de resolución, pero la cifra de 2026 ya no es comparable con años anteriores sin tener eso en cuenta.</p>
 
                 <h3>El 76% y qué mide exactamente</h3>
 
-                <p>Intercom publica que <strong>Fin resuelve más del 76%</strong> de su volumen de soporte. Es un dato de la empresa sobre su propio volumen, no una previsión para tu cuenta. Publica además su metodología, que es la ecuación anterior: por eso la métrica es verificable aunque el número sea propio.</p>
+                <p>Intercom publica que <strong>Fin resuelve más del 76%</strong> de su volumen de soporte. Es un dato de la empresa sobre su propio volumen, no una previsión para tu cuenta. Publica además su metodología, que es la ecuación anterior: por eso la métrica es verificable aunque el número sea propio. Y hay que leerlo con el matiz de la exclusión: el 76% mide la resolución <strong>entre las conversaciones en las que Fin interviene</strong>.</p>
 
                 <h3>Métrica y factura son dos cosas distintas</h3>
 
-                <p>La Automation Rate describe el comportamiento del agente; la factura describe desenlaces concretos con precios concretos. Son dos métricas que no se leen igual: la documentación de Automation Rate explica qué conversaciones entran en el denominador de la tasa, y la de precios, qué desenlaces se facturan. Esta última no publica una tarifa para conversaciones en las que Fin no actúa, así que su coste no se deriva de la tabla de precios.</p>
+                <p>La Automation Rate describe el comportamiento del agente; la factura describe desenlaces concretos con precios concretos. La documentación de Automation Rate explica qué conversaciones entran en el denominador de la tasa, y la de precios, qué desenlaces se facturan. Esta última no publica una tarifa para conversaciones en las que Fin no actúa, así que su coste no se deriva de la tabla de precios: es el hueco invisible del modelo.</p>
 
-                <h2 id="planes-y-asientos">Planes por asiento, add-ons y asientos Lite</h2>
+                <h2 id="planes-y-asientos">Planes por asiento y coste anual</h2>
 
-                <p>El precio del plan es por asiento y por mes, y hay tres niveles. Todos incluyen el Fin AI Agent y el helpdesk completo, así que el acceso a Fin no es lo que diferencia un plan de otro: lo que cambia es el precio del asiento.</p>
+                <p>El precio del plan es por asiento y por mes, y hay tres niveles. Todos incluyen el Fin AI Agent y el helpdesk completo, así que el acceso a Fin no es lo que diferencia un plan de otro: lo que cambia es el precio del asiento y lo que incluye para el equipo.</p>
 
                 <div class="price-table">
                     <table>
                         <thead>
                             <tr>
                                 <th>Plan</th>
-                                <th>Facturación anual (USD/asiento/mes)</th>
-                                <th>Facturación mensual (USD/asiento/mes)</th>
+                                <th>Anual (USD/asiento/mes)</th>
+                                <th>Mensual (USD/asiento/mes)</th>
+                                <th>Año pagando a mensual (USD/asiento)</th>
                                 <th>Incluye</th>
                             </tr>
                         </thead>
@@ -449,27 +504,32 @@
                                 <td><strong>Essential</strong></td>
                                 <td>29</td>
                                 <td>39</td>
+                                <td>468</td>
                                 <td>Fin AI Agent y helpdesk completo</td>
                             </tr>
                             <tr>
                                 <td><strong>Advanced</strong></td>
                                 <td>85</td>
                                 <td>99</td>
+                                <td>1.188</td>
                                 <td>Fin AI Agent y helpdesk completo</td>
                             </tr>
-                            <tr>
+                            <tr class="highlight-row">
                                 <td><strong>Expert</strong></td>
                                 <td>132</td>
                                 <td>139</td>
+                                <td>1.668</td>
                                 <td>Fin AI Agent y helpdesk completo</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <p>La distancia entre facturación anual y mensual no es uniforme. En absoluto el salto mayor está en Advanced (+14 USD) y el menor en Expert (+7 USD); en relativo, al revés, porque la diferencia pesa más cuanto más bajo es el plan. Cualquier condición comercial adicional se negocia aparte.</p>
+                <p>La distancia entre facturación anual y mensual no es uniforme. En absoluto el salto mayor está en Advanced (+14 USD) y el menor en Expert (+7 USD); en relativo, al revés, porque la diferencia pesa más cuanto más bajo es el plan: un 34% sobre Essential frente a un 5% sobre Expert. Cualquier condición comercial adicional se negocia aparte.</p>
 
-                <h3>Add-ons</h3>
+                <p>Traducido a coste de doce meses, la diferencia entre pagar anual y pagar mensual es de 120 USD por asiento en Essential (348 frente a 468), 168 USD en Advanced (1.020 frente a 1.188) y 84 USD en Expert (1.584 frente a 1.668). Con tres asientos, esa decisión son entre 252 y 504 USD al año: no es la partida dominante, pero tampoco es ruido.</p><h2 id="add-ons">Add-ons: Copilot, Pro y Proactive Support Plus</h2>
+
+                <p>Los add-ons son las únicas partidas mensuales que se pueden añadir a un plan ya contratado, y conviene revisarlos uno a uno porque no todos responden a la misma lógica. Dos son ayuda al agente, uno es contacto saliente y uno no tiene tarifa pública.</p>
 
                 <div class="price-table">
                     <table>
@@ -496,53 +556,59 @@
                                 <td>99 USD/mes</td>
                                 <td>Precio fijo mensual</td>
                             </tr>
-                            <tr>
+                            <tr class="highlight-row">
                                 <td><strong>Fin Voice</strong></td>
                                 <td>Precio a consultar</td>
-                                <td>No aparece con tarifa pública</td>
+                                <td>No aparece con tarifa pública en la página de precios</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
+                <p>Copilot es el add-on con la aritmética más fácil de calcular: se paga <strong>por agente y mes</strong>, así que con ocho agentes son 232 USD al mes pagando anual (8 × 29) o 280 USD pagando mensual (8 × 35). Los diez gratis incluidos son la puerta de entrada: si tu equipo supera las diez conversaciones de Copilot al mes por persona, el resto entra en la parte facturable.</p>
+
+                <p>Proactive Support Plus y Pro cuestan lo mismo y no son intercambiables: uno es contacto saliente, el otro es la ampliación del producto para casos que no entran en los planes de helpdesk. Fin Voice es la excepción honesta de la tabla: <strong>no hay tarifa pública</strong>, hay que pedirla. Si tu operación tiene llamadas entrantes y quieres que el agente atienda por voz, ese número tiene que entrar en el presupuesto como un dato a confirmar, no como una estimación.</p>
+
                 <p>Aparte de los add-ons, los canales de SMS, WhatsApp y teléfono se consumen <strong>por uso</strong>, sin tarifa plana. Quedan así tres variables distintas: el <strong>asiento</strong>, fijo; el <strong>outcome</strong>, variable con el trabajo y además con el tipo de desenlace; y el <strong>canal</strong>, variable con el uso. Un modelo de coste que las mezcle sin separarlas fallará en cuanto el volumen se mueva.</p>
 
-                <h3>Asientos Lite incluidos y el mínimo de un asiento completo</h3>
+                <h2 id="asientos-lite">Asientos Lite y el coste por persona del equipo</h2>
 
-                <p>Un detalle que suele mover la factura más de lo que parece: los asientos <strong>Lite</strong>, de acceso limitado para colaboración interna, vienen incluidos en los planes altos y no en el básico.</p>
+                <p>Un detalle que suele mover la factura más de lo que parece: los asientos <strong>Lite</strong>, de acceso limitado para colaboración interna, vienen incluidos en los planes altos y no en el básico. La diferencia entre pagar o no pagar a quien no habla con el cliente es la que decide si un plan tiene sentido para un equipo pequeño.</p>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Plan</th>
-                            <th>Asientos Lite incluidos</th>
-                            <th>Quién paga</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Essential</strong></td>
-                            <td>Ninguno</td>
-                            <td>Todo el que necesite acceso, a precio de asiento completo</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Advanced</strong></td>
-                            <td>20 Lite gratis</td>
-                            <td>Solo el personal con interlocución directa paga asiento completo</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Expert</strong></td>
-                            <td>50 Lite gratis</td>
-                            <td>Idéntico, con más margen para equipos distribuidos</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Plan</th>
+                                <th>Asientos Lite incluidos</th>
+                                <th>Quién paga asiento completo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Essential</strong></td>
+                                <td>Ninguno</td>
+                                <td>Todo el que necesite acceso, incluido el personal interno</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Advanced</strong></td>
+                                <td>20 Lite gratis</td>
+                                <td>Solo el personal con interlocución directa</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Expert</strong></td>
+                                <td>50 Lite gratis</td>
+                                <td>Idéntico, con más margen para equipos distribuidos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                <p>Los asientos Lite no pueden enviar mensajes al cliente ni usar funciones como el contenido saliente; son para consultar la bandeja. El mínimo es de <strong>un asiento completo</strong> en cualquier caso, porque es lo que permite operar el helpdesk.</p>
+                <p>Los asientos Lite no pueden enviar mensajes al cliente ni usar funciones como el contenido saliente; son para consultar la bandeja. El mínimo es de <strong>un asiento completo</strong> en cualquier caso, porque es lo que permite operar el helpdesk. Para una pyme con dos personas de atención al cliente y cuatro personas de dirección, ventas o finanzas mirando la bandeja, la comparación real es de 6 × 29 = 174 USD al mes en Essential frente a 2 × 85 = 170 USD al mes en Advanced: prácticamente lo mismo en el plan, pero el Essential obliga a pagar los cuatro internos.</p>
 
                 <h2 id="standalone-vs-helpdesk">Fin standalone frente a helpdesk completo</h2>
 
-                <p>Hasta aquí, todo lo descrito es el precio de Fin dentro de Intercom: un plan por asiento, con helpdesk completo, más los outcomes. Existe una segunda forma de contratar Fin, que cambia por completo la estructura de la factura.</p>
+                <p>Hasta aquí, todo lo descrito es el precio de Fin dentro de Intercom: un plan por asiento, con helpdesk completo, más los outcomes. Existe una segunda forma de contratar Fin, que cambia por completo la estructura de la factura y que solo aplica a quien ya tiene otro helpdesk.</p>
 
                 <div class="price-table">
                     <table>
@@ -590,11 +656,147 @@
 
                 <h3>Qué cambia en la factura</h3>
 
-                <p>En el standalone desaparece la variable del asiento: la factura pasa a tener un único componente recurrente por uso, con un suelo de 50 outcomes al mes. A cambio, el acceso no es self-serve, de modo que el precio que se aplique es el que se acuerde en esa conversación, no el publicado.</p>
+                <p>En el standalone desaparece la variable del asiento: la factura pasa a tener un único componente recurrente por uso, con un suelo de 50 outcomes al mes. El mínimo importa poco en términos absolutos —50 outcomes son 49,50 USD—, pero importa como señal: es un producto pensado para volumen, no para una conversación al día.</p>
 
-                <p>Un matiz que conviene verificar antes de cerrar el cálculo: la documentación consultada no detalla un precio diferenciado para el outcome de Qualification en modo standalone. Si en tu operación se generan muchos de ese tipo conviene confirmarlo con el equipo comercial en lugar de asumirlo. Lo mismo ocurre con el alcance del modo: los clientes que no usan Intercom lo resuelven por la vía comercial, y para Sales y Ecommerce no hay standalone.</p>
+                <p>A cambio, el acceso no es self-serve, de modo que el precio que se aplique es el que se acuerde en esa conversación, no el publicado. Y hay un matiz que conviene verificar antes de cerrar el cálculo: la documentación consultada no detalla un precio diferenciado para el outcome de <strong>Qualification</strong> en modo standalone. Si en tu operación se generan muchos de ese tipo conviene confirmarlo en lugar de asumirlo.</p>
 
-                <p>La pregunta que decide entre una vía y otra es una sola: ¿necesitas también el helpdesk de Intercom? Si es sí, estás en los tres planes por asiento. Si es no y ya tienes otro helpdesk, el standalone elimina el coste por asiento, aunque haya que negociarlo.</p>
+                <p>La pregunta que decide entre una vía y otra es una sola: <strong>¿necesitas también el helpdesk de Intercom?</strong> Si es sí, estás en los tres planes por asiento. Si es no y ya tienes otro helpdesk, el standalone elimina el coste por asiento, aunque haya que negociarlo. Y para Sales y Ecommerce no hay standalone.</p>
+
+                <h2 id="canales">SMS, WhatsApp y teléfono: la tercera variable</h2>
+
+                <p>Las tres variables de la factura —asiento, outcome y canal— se calculan de forma distinta, y la tercera es la que más sorprende porque <strong>no tiene tarifa plana publicada</strong>. SMS, WhatsApp y teléfono se consumen por uso. Eso significa dos cosas: que el coste unitario del canal no aparece en esta referencia y no se puede estimar con una fuente pública, y que cualquier conversación que llegue por un canal de pago entra en la factura con una partida más.</p>
+
+                <p>La consecuencia práctica es que <strong>migrar un volumen de consultas del correo al WhatsApp no es gratis</strong>, aunque la conversación se resuelva igual y cueste 0,99 USD en outcomes. El desenlace se factura una vez; el transporte del mensaje, cada vez. Para una pyme que recibe 2.000 consultas al mes, la pregunta que hay que llevar al presupuesto no es cuánto cuesta el agente, sino cuántos de esos contactos van a llegar por un canal de pago.</p>
+
+                <p>Fin Voice encaja en este mismo apartado. Es el add-on que lleva al agente al teléfono y aparece en la página de precios como <strong>precio a consultar</strong>, sin cifra. Cualquier modelo de coste que incluya llamadas tiene que marcar esa partida como desconocida, no como cero.</p>
+
+                <h2 id="umbral-de-compra">El umbral de compra: cuándo el plan deja de importar</h2>
+
+                <p>El error más caro al evaluar Fin es mirar el precio por asiento y asumir que es el coste principal. No lo es. El plan es una partida fija; el outcome es variable con el volumen. En cuanto el volumen crece, el fijo se diluye y la decisión deja de ser «qué plan compro» para ser «cuántas conversaciones tengo al mes».</p>
+
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Outcomes facturables al mes</th>
+                                <th>Coste de Fin</th>
+                                <th>Plan Advanced, 3 asientos</th>
+                                <th>Total mensual</th>
+                                <th>Peso del plan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>250</td>
+                                <td>247,50 USD</td>
+                                <td>255 USD</td>
+                                <td>502,50 USD</td>
+                                <td>50,7 %</td>
+                            </tr>
+                            <tr>
+                                <td>500</td>
+                                <td>495,00 USD</td>
+                                <td>255 USD</td>
+                                <td>750,00 USD</td>
+                                <td>34,0 %</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>1.000</td>
+                                <td>990,00 USD</td>
+                                <td>255 USD</td>
+                                <td>1.245,00 USD</td>
+                                <td>20,5 %</td>
+                            </tr>
+                            <tr>
+                                <td>2.000</td>
+                                <td>1.980 USD</td>
+                                <td>255 USD</td>
+                                <td>2.235 USD</td>
+                                <td>11,4 %</td>
+                            </tr>
+                            <tr>
+                                <td>4.000</td>
+                                <td>3.960 USD</td>
+                                <td>255 USD</td>
+                                <td>4.215 USD</td>
+                                <td>6,0 %</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout callout-info">
+                    <strong>Estimación propia — no es una factura ni una oferta</strong>
+                    <p><b>Fórmula:</b> total mensual = (outcomes facturables × 0,99 USD) + (3 asientos × 85 USD). <b>Supuestos:</b> plan Advanced con facturación anual, tres asientos completos, todos los desenlaces al precio de Resolution, sin add-ons ni consumo de canales. Los volúmenes son hipotéticos: solo sirven para ver cómo se mueve el reparto entre fijo y variable.</p>
+                </div>
+
+                <p>La lectura de la tabla es directa y es la que debería governar la decisión. Por debajo de unos 250 outcomes al mes, la decisión real es <strong>cuál de los tres planes</strong> quieres, porque el fijo manda. A partir de unos 1.000, la decisión real es <strong>qué tasa de resolución vas a conseguir</strong>: cada punto de resolución sobre 1.000 conversaciones al mes son 9,90 USD mensuales y 118,80 USD al año. Cada punto de resolución a 4.000 conversaciones son 39,60 USD al mes, 475,20 USD al año.</p>
+
+                <p>Ese es el número que no está en ninguna tabla de precios y que decide el proyecto: <strong>el valor de la automatización se mide en puntos de resolución, y cada punto cuesta tu volumen mensual multiplicado por 0,99 USD</strong>. Con 2.000 conversaciones al mes, subir del 50% al 70% de resolución cuesta 792 USD al año en Fin y ahorra el equivalente a 800 conversaciones resueltas por personas.</p>
+
+                <h2 id="coste-total">Coste total de propiedad a doce meses</h2>
+
+                <p>Con los precios unitarios cerrados, el coste de doce meses de una operación concreta es una suma de cinco cifras conocidas. La tabla siguiente lleva un equipo de tres personas de atención al cliente con 1.500 conversaciones facturables al mes, y compara las cuatro formas de comprarlo.</p>
+
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Escenario</th>
+                                <th>Coste del plan (12 meses)</th>
+                                <th>Coste de Fin (12 meses)</th>
+                                <th>Total 12 meses</th>
+                                <th>Peso del plan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Essential anual, 3 completos + 4 internos a Lite contratado</td>
+                                <td>7 × 29 × 12 = 2.436 USD</td>
+                                <td>17.820 USD</td>
+                                <td>20.256 USD</td>
+                                <td>12,0 %</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Advanced anual, 3 completos + 4 Lite gratis</td>
+                                <td>3 × 85 × 12 = 3.060 USD</td>
+                                <td>17.820 USD</td>
+                                <td>20.880 USD</td>
+                                <td>14,7 %</td>
+                            </tr>
+                            <tr>
+                                <td>Advanced mensual, 3 completos</td>
+                                <td>3 × 99 × 12 = 3.564 USD</td>
+                                <td>17.820 USD</td>
+                                <td>21.384 USD</td>
+                                <td>16,7 %</td>
+                            </tr>
+                            <tr>
+                                <td>Expert anual, 3 completos</td>
+                                <td>3 × 132 × 12 = 4.752 USD</td>
+                                <td>17.820 USD</td>
+                                <td>22.572 USD</td>
+                                <td>21,1 %</td>
+                            </tr>
+                            <tr>
+                                <td>Standalone (sin helpdesk de Intercom)</td>
+                                <td>Sin coste por asiento publicado</td>
+                                <td>17.820 USD</td>
+                                <td>17.820 USD + condiciones comerciales a confirmar</td>
+                                <td>0 %</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout callout-info">
+                    <strong>Estimación propia — no es una factura ni una oferta</strong>
+                    <p><b>Fórmula:</b> total anual = [(asientos × precio del plan) + (15.000 outcomes × 0,99 USD)] × 12 meses para el bloque de Fin, y asientos × precio × 12 para el plan. <b>Supuestos:</b> 1.500 conversaciones facturables al mes, todas al precio de Resolution, sin Qualification, sin add-ons y sin consumo de canales. El mínimo de 50 outcomes del standalone queda cubierto de sobra.</p>
+                </div>
+
+                <p>La conclusión de la tabla es incómoda para quien evalúa por el precio del asiento: <strong>en un escenario de volumen, entre el 79% y el 88% de la factura son outcomes</strong>, no plan. Cambiar de Essential a Expert cuesta 2.316 USD más al año (22.572 − 20.256) y no cambia ni un céntimo de la partida de Fin. Elegir el plan correcto es una decisión de unos miles de euros; conseguir que los mismos 1.500 contactos se resuelvan como Resolution en lugar de como Procedure handoff vale mucho más.</p>
+
+                <p>Y hay una conclusión incómoda en la última fila. El standalone sale 17.820 USD al año, es decir, <strong>2.436 USD menos</strong> que la opción Essential con siete asientos, sin coste por persona y con usuarios ilimitados. La contrapartida es que hay que negociar con el equipo comercial, que no hay tarifa pública de contrato y que no incluye el helpdesk. Quien ya tiene otra mesa de helpdesk y solo quiere el agente tiene aquí la mejor aritmética de todo el producto.</p>
 
                 <h2 id="unidad-de-cobro">Comparar con otras herramientas: la unidad de cobro</h2>
 
@@ -604,7 +806,7 @@
 
                 <p>Zendesk factura por lo que llama <strong>«resoluciones automatizadas»</strong>: las conversaciones que el sistema resuelve y que, por definición, <em>no</em> escalan a un agente humano. Fin, además de las resoluciones, factura el <strong>Procedure handoff</strong>: conversaciones que ejecutan un procedimiento configurado y terminan igualmente en una persona.</p>
 
-                <p>La consecuencia es directa: con el mismo volumen y el mismo número de escalados, las dos facturas no coinciden. En Zendesk esas conversaciones no cuentan como resolución automatizada; en Fin, las que lo hacen por procedimiento sí se facturan. La diferencia no está en el precio unitario, está en qué conversaciones entran en la factura.</p>
+                <p>La consecuencia es directa: con el mismo volumen y el mismo número de escalados, las dos facturas no coinciden. En Zendesk esas conversaciones no cuentan como resolución automatizada; en Fin, las que lo hacen por procedimiento sí se facturan. La diferencia no está en el precio unitario, está en <strong>qué conversaciones entran en la factura</strong>.</p>
 
                 <p>Para su catálogo y su estructura de suite, la referencia completa está en <a href="../../herramientas-ia/zendesk-ai/">Zendesk AI: análisis y funciones</a>; para el marco general de qué es un agente de soporte, en la <a href="../../herramientas-ia/chatbots-atencion-cliente/">guía de chatbots para atención al cliente</a>. Aquí lo relevante es solo la unidad de cobro.</p>
 
@@ -616,9 +818,136 @@
                     <li><strong>Solo entonces compara precios,</strong> y sobre la misma base: mismo período, mismo volumen, mismo criterio de escalado.</li>
                 </ol>
 
-                <p>El orden importa: comparar primero los precios y luego las unidades lleva a conclusiones que no se sostienen. El mismo 0,99 USD puede estar midiendo cosas distintas en cada herramienta, porque en una cuenta conversaciones que en la otra no se facturan.</p>
+                <p>El orden importa: comparar primero los precios y luego las unidades lleva a conclusiones que no se sostienen. El mismo 0,99 USD puede estar midiendo cosas distintas en cada herramienta, porque en una cuenta conversaciones que en la otra no se facturan. Para el marco completo de coste de un proyecto de IA hay <a href="../../guias/cuanto-cuesta-implementar-ia/">la guía de cuánto cuesta implementar IA</a>.</p><h2 id="vs-chatbot-sencillo">Cuándo compensa frente a un chatbot sencillo</h2>
 
-                <h2 id="evaluar-intercom-fin">Prueba de 14 días y Early Stage</h2>
+                <p>La comparación que más se pide es con un chatbot sencillo: un script de árboles de decisión con una IA detrás, montado sobre la web, sin helpdesk y sin base de conocimiento. La diferencia de precio entre ese montaje y Fin es de un orden de magnitud, así que la pregunta no es cuál es mejor, sino qué pasa si el problema real no es «responder» sino «gestionar».</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Criterio</th>
+                                <th>Intercom Fin</th>
+                                <th>Chatbot sencillo con IA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Unidad de cobro</strong></td>
+                                <td>Por outcome, a 0,99 USD (9,99 USD en Qualification), más el plan por asiento</td>
+                                <td>Por el proveedor que elijas: créditos, conversaciones o un plan fijo de la herramienta</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Coste fijo</strong></td>
+                                <td>De 29 a 132 USD por asiento y mes</td>
+                                <td>El de la herramienta o el del desarrollo, según cómo se monte</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bandeja de entrada</strong></td>
+                                <td>Helpdesk completo con asignación, estados y colaboración interna</td>
+                                <td>No la trae: hay que construirla o integrarla en el CRM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cuando no encuentra la respuesta</strong></td>
+                                <td>Configura el outcome que corresponde, incluido el traspaso a humano</td>
+                                <td>Suele salirse del guion: se inventa una respuesta o se rinde</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Compensa cuando</strong></td>
+                                <td>Hay volumen alto, FAQs escritas y un equipo que necesita gestionar el resultado</td>
+                                <td>El problema es encauzar, el volumen es bajo y el contenido cabe en veinte preguntas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La señal que separa los dos casos es <strong>qué ocurre cuando el bot falla</strong>. Si tu pregunta frecuente es siempre la misma y la respuesta cabe en un párrafo, un chatbot sencillo la resuelve con una fracción del coste y con menos mantenimiento. Si tu pregunta frecuente tiene variantes, o el cliente llega a mitad de un proceso, o necesitas saber <em>qué</em> se ha resuelto y <em>qué</em> no, estás ante un problema de gestión de casos y ahí el helpdesk deja de ser opcional.</p>
+
+                <p>Hay también una diferencia de plazo. Un chatbot sencillo se puede tener funcionando en semanas sobre la <a href="../../guias/crear-chatbot-ia-web/">guía de creación de chatbot para web</a>. Un agente con deflector, base de conocimiento y outcomes configurados necesita que existan esas respuestas escritas: ese trabajo previo es la partida de tiempo que rara vez aparece en las comparativas de precio. Para ver las alternativas de código abierto está la comparativa de <a href="../../herramientas-ia/dify-ai/">Dify</a> y el catálogo de <a href="../../comparativas/herramientas-ia-gratuitas/">herramientas de IA gratuitas</a>.</p>
+
+                <h2 id="vs-helpdesk-compartido">Cuándo compensa frente a una mesa de helpdesk compartida</h2>
+
+                <p>La tercera opción es la que casi nunca se pone sobre la mesa y suele ser la más barata: mantener la mesa de helpdesk que ya tienes, comprarle un asistente de IA general por asiento y seguir usando las plantillas. Es una comparación justa porque el problema es el mismo —el agente pierde tiempo en lo repetitivo— y el precio por asiento es mucho más bajo.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Herramienta de IA general para el equipo</th>
+                                <th>Precio por asiento y mes</th>
+                                <th>Condición publicada</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ChatGPT Business (OpenAI)</td>
+                                <td>21 €</td>
+                                <td>Facturación anual, de 2 a 200 asientos</td>
+                            </tr>
+                            <tr>
+                                <td>Claude Team (Anthropic)</td>
+                                <td>20 US$</td>
+                                <td>Facturación anual, de 2 a 150 asientos (25 US$ al mes si se paga mensual)</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Google Workspace Business Standard (Google)</td>
+                                <td>13,60 €</td>
+                                <td>España, 1 usuario como mínimo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Con tres asientos, la mesa de helpdesk con asistente general cuesta 63 € al mes con ChatGPT Business o 60 US$ con Claude Team, frente a los 255 USD del plan Advanced de Intercom para el mismo número de asientos. <strong>No son el mismo producto</strong>: el asistente general redacta y responde, no contesta al cliente por dentro del helpdesk. Pero el orden de magnitud importa, y la conclusión honesta es que si tu problema es «mis agentes tardan diez minutos de más en cada respuesta», el asistente general resuelve mucho más barato que Fin.</p>
+
+                <p>Lo que no resuelve el asistente general es la medición. Con un asistente por asiento no tienes una tasa de resolución, ni outcomes, ni una factura que pueda atribuirse a la automatización. Eso tiene dos efectos: no puedes dimensionar la mejora con números y no puedes calcular el umbral de compra. Para el método completo de medición hay <a href="../../guias/roi-real-empresas-ia/">la guía de ROI real de la IA en empresas</a> y, para el detalle de por qué los números de ahorro publicados hay que rehacerlos, el análisis de <a href="../../herramientas-ia/roi-ia-empresas/">ROI de IA en empresas</a>.</p>
+
+                <p>Y una tercera diferencia, la más difícil de medir: un asistente general no contesta. Si tu volumen de contactos es alto y lo que quieres es que el cliente obtenga una respuesta sin esperar, el asistente es irrelevante por bien pagado que esté. La decisión se reduce a una pregunta: <strong>¿el problema es la productividad de quien atiende o la espera de quien escribe?</strong></p>
+
+                <h2 id="integraciones-y-limites">Integraciones y límites técnicos</h2>
+
+                <p>Lo que hace útil a un helpdesk no suele ser el agente, sino lo que hay alrededor. Un agente que resuelve bien y no puede consultar el pedido del cliente, mover una cita o abrir una reclamación en el CRM resuelve la mitad de los casos. Esa integración es la que decide si el desenlace se registra como Resolution o como Procedure handoff, y por tanto si pagas 0,99 USD por el desenlace bueno o por el desenlace que acaba en una persona.</p>
+
+                <p>El punto que hay que mirar antes de firmar es concreto: <strong>qué sistemas tiene que leer el agente para poder cerrar un caso por sí mismo</strong>. Cada sistema que no tiene acceso es un Procedure handoff garantizado. Un catálogo de herramientas de gestión es el punto de partida para ordenar esa lista; para el flujo de trabajo, <a href="../../herramientas-ia/automatizacion-procesos-ia/">automatización de procesos con IA</a>.</p>
+
+                <p>El segundo límite técnico es el idioma. La documentación de precios incluye el add-on Copilot con <strong>10 conversaciones de traducción automática gratis por agente al mes</strong>. Es una cifra pequeña y define el tamaño real del soporte multilingüe de esta herramienta: más allá de diez conversaciones al mes por agente, la traducción entra en la parte facturable del add-on.</p>
+
+                <p>El tercero es la dependencia de un único proveedor. Con la adquisición por parte de Salesforce cerrada en septiembre de 2026, las condiciones comerciales, el roadmap y hasta el nombre del producto pueden cambiar de forma más rápida de lo habitual. Para una pyme que dependa de Fin para toda su atención al cliente, la mitigación no es técnica: es <strong>saber qué parte de tu operación vive dentro de la herramienta</strong> y cuánto costaría reconstruirla fuera.</p>
+
+                <h2 id="rgpd-y-ai-act">Datos personales, RGPD y el AI Act</h2>
+
+                <p>Un agente de soporte lee conversaciones completas, y una conversación completa contiene datos personales: nombre, dirección, número de pedido, historial de compras y, en una parte no trivial de los casos, datos de salud o categorías especiales. Eso convierte a Fin en una herramienta de tratamiento de datos y al responsable del tratamiento —tú— en alguien que tiene que definir base legal, información al interesado, plazos de conservación y contrato con el encargado.</p>
+
+                <p>El primer punto no es Intercom, es el <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">Reglamento (UE) 2016/679</a>. El segundo es la base legal de cada categoría de dato: si el bot recoge información de salud, el consentimiento genérico de un formulario de contacto no sirve y hace falta una base propia. La <a href="https://www.aepd.es/sites/default/files/2020-02/adecuacion-rgpd-ia.pdf">guía de la AEPD sobre adecuación del RGPD a la IA</a> y su <a href="https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa/la-aepd-publica-una-guia-sobre-la-utilizacion-de-datos">nota sobre la utilización de datos</a> son el marco que hay que seguir.</p>
+
+                <p>El tercero es el papel de cada parte. El acuerdo de protección de datos del proveedor es el documento que hay que revisar antes de firmar, y es también el que hay que releer cuando la empresa cambia de manos: una adquisición no modifica por sí sola el contrato, pero sí cambia quién debe firmarlo y con qué instrucciones de tratamiento.</p>
+
+                <h3>La obligación de transparencia desde el 2 de agosto de 2026</h3>
+
+                <p>Desde el <strong>2 de agosto de 2026</strong> está en vigor el artículo 50 del <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj">Reglamento (UE) 2024/1689</a> (AI Act), en su parte de transparencia: quien interactúe con un sistema de IA debe saberlo. Para un agente de soporte significa que el cliente tiene que estar informado de que está hablando con una IA antes de empezar, no en un aviso al final de una página de privacidad.</p>
+
+                <div class="callout callout-info">
+                    <strong>Calendario del AI Act que aplica a un agente de soporte</strong>
+                    <p>Art. 4 y prohibiciones: desde el 2 de febrero de 2025. Modelos de propósito general: desde el 2 de agosto de 2025. <b>Transparencia (art. 50): desde el 2 de agosto de 2026</b>. Aplicación general y alto riesgo: 2 de agosto de 2027. Alto riesgo en productos regulados: 2 de agosto de 2028.</p>
+                </div>
+
+                <p>El marco completo de este calendario está en <a href="../../guias/ia-ai-act-cumplimiento/">la guía de cumplimiento del AI Act</a>, y los aspectos que no son legales en <a href="../../herramientas-ia/seguridad-etica-ia/">seguridad y ética con IA para empresas</a>. Lo que hay que decidir aquí, en concreto, son tres cosas: qué datos personales puede ver el agente, cuánto tiempo se conservan las conversaciones y qué se le dice al cliente en el primer mensaje.</p>
+
+                <h2 id="errores-implantacion">Los cinco errores de implantación más caros</h2>
+
+                <p>El precio de Fin es público y sus reglas de facturación están documentadas. Lo que no lo está es la forma correcta de implantarlo, y los errores que se repiten tienen un coste en tiempo y en dinero que suele superar la partida del plan.</p>
+
+                <ol>
+                    <li><strong>Activar Fin sin escribir la base de conocimiento.</strong> Es el error más caro porque no falla: produce resoluciones erróneas. El agente contesta, el cliente se va satisfecho y el problema aparece semanas después. La factura parece correcta, que es precisamente el problema.</li>
+                    <li><strong>Definir mal los outcomes.</strong> Cada Procedure handoff innecesario cuesta 0,99 USD por conversación, y en el escenario de 2.000 conversaciones del apartado anterior, 500 Procedures de más son 495 USD al mes. Configurar para que se registre el desenlace real, no el desenlace que te conviene registrar.</li>
+                    <li><strong>Migrar canales sin mirar el coste.</strong> Llevar el tráfico de correo a WhatsApp multiplica las partidas: mismo outcome, más consumo de canal. Y si entra el teléfono, hay que sumar el precio a consultar de Fin Voice.</li>
+                    <li><strong>Comparar con la competencia por precio.</strong> Si no se han identificado las unidades de cobro de cada herramienta, cualquier tabla comparativa es decorativa. Es exactamente lo que se explica en el apartado de la unidad de cobro.</li>
+                    <li><strong>Olvidar la transparencia del artículo 50.</strong> Desde el 2 de agosto de 2026 es una obligación vigente, no un requisito futuro, y es la más fácil de incumplir sin darse cuenta porque el agente puede empezar a responder antes de que nadie haya escrito el mensaje de identificación.</li>
+                </ol>
+
+                <p>El patrón común de los cinco es que ninguno produce un error visible el primer día. Todos producen una factura correcta y un problema difícil de diagnosticar. Si quieres el catálogo más amplio, está en <a href="../../herramientas-ia/errores-implementar-ia/">errores al implementar IA en empresas</a>.</p>
+
+                <h2 id="prueba-14-dias">Prueba de 14 días y Early Stage</h2>
 
                 <p>Antes de contratar hay una vía de prueba, y sus condiciones publicadas determinan qué se puede comprobar antes de firmar:</p>
 
@@ -629,68 +958,83 @@
                     <li><strong>Sin cargos por uso de Fin ni por resoluciones,</strong> y sin cargos de setup.</li>
                 </ul>
 
-                <p>Si la prueba la abrió el equipo de Sales, hay que hablar con el Account Manager: el alta deja de ser autoservicio.</p>
-
-                <h3>Qué pasa al terminar</h3>
-
-                <p>Al terminar la prueba se pasa al precio publicado, y es entonces cuando la factura empieza a reflejar el uso real. <strong>No existe un plan gratuito permanente</strong>: la prueba es un periodo de cortesía, no un nivel de servicio, y la factura del primer mes puede no parecerse en nada a lo visto durante los 14 días.</p>
+                <p>Si la prueba la abrió el equipo de Sales, hay que hablar con el Account Manager: el alta deja de ser autoservicio. Y hay un límite importante de lo que la prueba puede demostrar, que es exactamente el mismo que impide hacer una proyección de gasto.</p>
 
                 <div class="callout callout-info">
                     <strong>Qué no te dice la prueba</strong>
-                    <p>Como durante los 14 días no se cobra por el uso de Fin, la prueba no produce ningún consumo facturable del que extraer una proyección. Sirve para ver cómo se comporta el agente, no para estimar la factura: para eso hay que modelar el coste con la fórmula de la sección anterior.</p>
+                    <p>Como durante los 14 días no se cobra por el uso de Fin, la prueba no produce ningún consumo facturable del que extraer una proyección. Sirve para ver cómo se comporta el agente, no para estimar la factura: para eso hay que modelar el coste con la fórmula de la sección de cálculo.</p>
                 </div>
 
-                <h3>Early Stage</h3>
-
-                <p>Para startups elegibles existe el programa <strong>Early Stage</strong>, con hasta un <strong>93% de descuento</strong> y <strong>un año de Fin gratis</strong>. Es el techo del programa, no una tarifa fija: qué partidas cubre el descuento no se especifica en la página de precios y hay que confirmarlo en la solicitud, que se tramita por el equipo comercial.</p>
+                <p>Al terminar la prueba se pasa al precio publicado, y es entonces cuando la factura empieza a reflejar el uso real. <strong>No existe un plan gratuito permanente</strong>: la prueba es un periodo de cortesía, no un nivel de servicio. Para startups elegibles existe además el programa <strong>Early Stage</strong>, con hasta un <strong>93% de descuento</strong> y <strong>un año de Fin gratis</strong>. Es el techo del programa, no una tarifa fija: qué partidas cubre el descuento no se especifica en la página de precios y hay que confirmarlo en la solicitud.</p>
 
                 <h2 id="faq">Preguntas frecuentes</h2>
 
-                <h3>¿Cuánto cuesta Intercom con Fin?</h3>
+                <h3 id="faq-1">¿Cuánto cuesta Intercom con Fin al mes?</h3>
 
-                <p>Tres planes por asiento y mes: <strong>Essential a 29 USD</strong> anuales o 39 mensuales, <strong>Advanced a 85</strong> o 99 USD, y <strong>Expert a 132</strong> o 139 USD. Los tres incluyen el Fin AI Agent y el helpdesk completo. A eso se suma Fin por outcome: 0,99 USD por Resolution, Procedure handoff, Disqualification y Self-serve routing, y 9,99 USD por Qualification. Precios consultados el 29 de septiembre de 2026 en intercom.com/pricing.</p>
+                <p>Tres planes por asiento y mes: Essential a 29 USD anuales o 39 mensuales, Advanced a 85 o 99 USD, y Expert a 132 o 139 USD. Los tres incluyen el Fin AI Agent y el helpdesk completo. A eso se suma Fin por outcome: 0,99 USD por Resolution, Procedure handoff, Disqualification y Self-serve routing, y 9,99 USD por Qualification. Si necesitas SMS, WhatsApp o teléfono, se cobra por uso y sin tarifa plana publicada. Precios consultados el 3 de octubre de 2026.</p>
 
-                <h3>¿Fin cobra por pasar la conversación a un agente humano?</h3>
+                <h3 id="faq-2">¿Fin cobra por pasar la conversación a un agente humano?</h3>
 
-                <p>Un handoff a humano ordinario <strong>no se cobra</strong>. Un «Procedure» configurado que termina en handoff <strong>sí se factura</strong>, a 0,99 USD. Intercom cobra una vez por outcome y una vez por conversación, y no cobra cuando el outcome es una mala clasificación por fallo de precisión. Lo que determina el cargo no es quién contesta, sino si hay un procedimiento configurado detrás del traspaso.</p>
+                <p>Un traspaso a humano ordinario no se cobra. Un Procedure configurado que termina en traspaso sí se factura, a 0,99 USD. Intercom cobra una vez por outcome y una vez por conversación, y no cobra cuando el outcome registrado es una mala clasificación por fallo de precisión. Lo que determina el cargo no es quién contesta, sino si hay un procedimiento configurado detrás del traspaso.</p>
 
-                <h3>¿Qué porcentaje de consultas resuelve Intercom Fin?</h3>
+                <h3 id="faq-3">¿Qué porcentaje de consultas resuelve Intercom Fin?</h3>
 
-                <p>Intercom publica que <strong>Fin resuelve más del 76% de su propio volumen de soporte</strong>. Es un dato de la empresa sobre su volumen, no una previsión para tu cuenta. La métrica es la Automation Rate (Involvement × Resolution), y en 2026 las conversaciones «Fin Constrained» —en las que Fin no actúa porque no tiene los datos o no está configurado— quedaron excluidas de ese cálculo. Contarlas inflaría la tasa, porque en el numerador no hay resolución que las compense. Que la empresa decida excluirlas responde a una intención que su documentación no detalla, así que conviene tomar el 76% como lo que es: un dato del fabricante sobre su propio volumen.</p>
+                <p>Intercom publica que Fin resuelve más del 76% de su propio volumen de soporte. Es un dato de la empresa sobre su volumen, no una previsión para tu cuenta. La métrica es la Automation Rate, que es Involvement por Resolution, y en 2026 las conversaciones Fin Constrained, en las que Fin no actúa porque no tiene datos o no está configurado, quedaron excluidas de ese cálculo. Contarlas inflaría la tasa, porque en el numerador no hay resolución que las compense.</p>
 
-                <h3>¿Por qué no se puede comparar Intercom y Zendesk solo por precio?</h3>
+                <h3 id="faq-4">¿Por qué no se puede comparar Intercom y Zendesk solo por precio?</h3>
 
-                <p>Porque no cobran por la misma unidad. Zendesk factura por «resoluciones automatizadas», las que <em>no</em> escalan a un agente humano. Fin factura, además, los Procedure handoff: una conversación que ejecuta un procedimiento configurado y aun así termina en una persona también es facturable. Con el mismo volumen y el mismo número de escalados, las dos facturas no coinciden.</p>
+                <p>Porque no cobran por la misma unidad. Zendesk factura por resoluciones automatizadas, las que no escalan a un agente humano. Fin factura además los Procedure handoff: una conversación que ejecuta un procedimiento configurado y aun así termina en una persona también es facturable. Con el mismo volumen y el mismo número de escalados, las dos facturas no coinciden aunque los precios unitarios parezcan parecidos.</p>
 
-                <h3>¿Cuándo aplica el precio de Fin standalone?</h3>
+                <h3 id="faq-5">¿Cuándo aplica el precio de Fin standalone?</h3>
 
-                <p>El standalone se publica a <strong>0,99 USD por outcome</strong>, con un mínimo de <strong>50 outcomes al mes</strong>, sin coste por asiento ni cargos de setup y con usuarios ilimitados. No es self-serve: hay que hablar con el equipo comercial. Los planes con helpdesk completo añaden el precio por asiento, y se pueden contratar sin hablar con nadie: Essential y Advanced tienen alta self-serve. En Expert, la vía publicada es el contacto con el equipo comercial.</p>
+                <p>El standalone se publica a 0,99 USD por outcome, con un mínimo de 50 outcomes al mes, sin coste por asiento ni cargos de setup y con usuarios ilimitados. No es self-serve: hay que hablar con el equipo comercial. Los planes con helpdesk completo añaden el precio por asiento y se pueden contratar sin hablar con nadie, porque Essential y Advanced tienen alta self-serve. En Expert, la vía publicada es el contacto con el equipo comercial.</p>
 
-                <h2 id="fuentes">Fuentes</h2>
+                <h3 id="faq-6">¿Intercom Fin sustituye a una persona en atención al cliente?</h3>
 
-                <p>Todos los precios y condiciones proceden de estas fuentes, consultadas el <strong>29 de septiembre de 2026</strong>:</p>
+                <p>No. Fin está diseñado como primera línea y como filtro, no como sustituto de la persona, y su precio no premia la autonomía: se factura por outcome aunque el desenlace termine en una persona. Lo que sí cambia es el trabajo de quien contesta, porque recibe menos consultas repetitivas y más casos con contexto ya recogido. Además, la documentación excluye de la Automation Rate las conversaciones en las que Fin no actúa por falta de datos o de configuración, así que la autonomía nunca es total.</p>
 
-                <ul>
-                    <li><a href="https://www.intercom.com/pricing">intercom.com/pricing</a> — planes por asiento, add-ons y modo standalone.</li>
-                    <li><a href="https://www.intercom.com/help/en/articles/8344190">Intercom Help — Pricing FAQs</a> — los cinco tipos de outcome, el Procedure handoff, las reglas de facturación, la prueba de 14 días y Early Stage.</li>
-                    <li><a href="https://www.intercom.com/help/en/articles/15599377">Intercom Help — Automation Rate</a> — Involvement × Resolution y la exclusión de las conversaciones Fin Constrained.</li>
-                    <li><a href="https://www.salesforce.com/in/news/press-releases/2026/06/16/salesforce-signs-definitive-agreement-to-acquire-fin/">Salesforce — acuerdo definitivo para adquirir Fin</a> (15-jun-2026) — importe de la operación, unos 3.600 millones de dólares.</li>
-                    <li><a href="https://www.salesforce.com/news/press-releases/2026/09/10/salesforce-completes-acquisition-of-fin/">Salesforce — cierre de la adquisición de Fin</a> (10-sep-2026) — fecha de cierre y cartera de más de 30.000 empresas.</li>
-                    <li><a href="https://www.reuters.com/business/salesforce-buy-fin-about-36-billion-2026-06-15/">Reuters</a> y <a href="https://www.cnbc.com/2026/06/15/salesforce-ai-customer-service-fin-acquistion.html">CNBC</a> (15-jun-2026) — cobertura del acuerdo y cifra de 3.600 millones de dólares.</li>
-                </ul>
+                <h3 id="faq-7">¿Qué pasa con los datos personales de los clientes al usar Fin?</h3>
 
-                <p>Los importes se reproducen en la moneda de publicación, el dólar; la conversión a euros la aplica la entidad emisora de la factura. Los precios pueden cambiar: la fecha de consulta que aparece arriba es la que da vigencia a las cifras.</p>
+                <p>Hay tres obligaciones concretas. La primera es la base legal del tratamiento: si el bot recoge categorías especiales de datos, como datos de salud, el consentimiento genérico del contacto comercial no sirve. La segunda es el papel de cada parte, responsable y encargado, que hay que definir en el acuerdo de protección de datos. La tercera es la transparencia: desde el 2 de agosto de 2026 el artículo 50 del Reglamento (UE) 2024/1689 obliga a informar de que la persona está hablando con un sistema de IA. Plazos de conservación e información al interesado hay que decidirlos y redactarlos tú.</p>
+
+                <h3 id="faq-8">¿Merece la pena Intercom Fin en una pyme con cinco personas?</h3>
+
+                <p>Solo con un umbral claro: volumen alto de consultas repetitivas y documentables. En el escenario propio de este artículo, con 1.500 conversaciones facturables al mes, Fin se lleva 17.820 USD al año y el plan 3.060 USD, así que cerca del 85% de la factura son outcomes. Si tu equipo tiene tres o cuatro personas y las consultas se resuelven en dos o tres intercambios, una mesa de helpdesk compartida con un asistente de IA general sale mucho más barata. Si hay miles de conversaciones mensuales y respuestas documentables, el modelo por outcome empieza a compensar.</p>
 
                 <div class="related-articles">
                     <h2 id="relacionados">Artículos relacionados</h2>
                     <ul>
                         <li><a href="../../herramientas-ia/chatbots-atencion-cliente/">Chatbots para atención al cliente: guía completa</a></li>
                         <li><a href="../../herramientas-ia/zendesk-ai/">Zendesk AI: análisis y funciones</a></li>
-                        <li><a href="../../herramientas-ia/hubspot-ia/">HubSpot IA: funciones y precio</a></li>
+                        <li><a href="../../guias/ia-ai-act-cumplimiento/">AI Act en la empresa: calendario y obligaciones</a></li>
+                        <li><a href="../../guias/rag-ia-datos/">RAG con datos de empresa: cómo se monta</a></li>
                     </ul>
                 </div>
 
-            </div>
+                <h2 id="fuentes">Fuentes</h2>
+
+                <p>Todos los precios, condiciones y datos citados proceden de estas fuentes. <strong>Consultado el 3 de octubre de 2026.</strong></p>
+
+                <ul>
+                    <li><a href="https://www.intercom.com/pricing">intercom.com/pricing</a> — planes por asiento, add-ons, asientos Lite incluidos y modo standalone.</li>
+                    <li><a href="https://www.intercom.com/help/en/articles/8344190-pricing-faqs">Intercom Help — Pricing FAQs</a> — los cinco tipos de outcome, el Procedure handoff, las reglas de facturación, la prueba de 14 días y Early Stage.</li>
+                    <li><a href="https://www.intercom.com/help/en/articles/15599377">Intercom Help — Automation Rate</a> — Involvement × Resolution y la exclusión de las conversaciones Fin Constrained.</li>
+                    <li><a href="https://www.intercom.com/fin">Intercom — Fin</a> — descripción del producto, autoayuda y base de conocimiento.</li>
+                    <li><a href="https://www.zendesk.com/pricing/">Zendesk — Pricing</a> — unidad de cobro por resoluciones automatizadas usada en la comparación.</li>
+                    <li><a href="https://openai.com/business/pricing/">OpenAI — ChatGPT Business pricing</a> — 21 € por asiento al mes con facturación anual.</li>
+                    <li><a href="https://www.anthropic.com/pricing">Anthropic — Claude pricing</a> — 20 US$ por asiento al mes con facturación anual en Claude Team.</li>
+                    <li><a href="https://workspace.google.com/intl/es_es/pricing.html">Google Workspace — precios</a> — 13,60 € por usuario al mes en Business Standard para España.</li>
+                    <li><a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">EUR-Lex — Reglamento (UE) 2016/679 (RGPD)</a> — marco del tratamiento de datos personales.</li>
+                    <li><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj">EUR-Lex — Reglamento (UE) 2024/1689 (AI Act)</a> — artículo 50, en vigor desde el 2 de agosto de 2026.</li>
+                    <li><a href="https://www.aepd.es/sites/default/files/2020-02/adecuacion-rgpd-ia.pdf">AEPD — Adecuación del RGPD a la IA</a> — guía de la Agencia Española de Protección de Datos.</li>
+                    <li><a href="https://www.salesforce.com/in/news/press-releases/2026/06/16/salesforce-signs-definitive-agreement-to-acquire-fin/">Salesforce — acuerdo definitivo para adquirir Fin</a> (15-jun-2026) — importe de la operación, unos 3.600 millones de dólares.</li>
+                    <li><a href="https://www.salesforce.com/news/press-releases/2026/09/10/salesforce-completes-acquisition-of-fin/">Salesforce — cierre de la adquisición de Fin</a> (10-sep-2026) — fecha de cierre y cartera de más de 30.000 empresas.</li>
+                    <li><a href="https://www.reuters.com/business/salesforce-buy-fin-about-36-billion-2026-06-15/">Reuters</a> y <a href="https://www.cnbc.com/2026/06/15/salesforce-ai-customer-service-fin-acquistion.html">CNBC</a> (15-jun-2026) — cobertura del acuerdo y cifra de 3.600 millones de dólares.</li>
+                </ul>
+
+                <p>Los importes se reproducen en la moneda de publicación, el dólar; la conversión a euros la aplica la entidad emisora de la factura. Los precios pueden cambiar: la fecha de consulta que aparece arriba es la que da vigencia a las cifras. Los dos escenarios de coste y el umbral de compra son estimaciones propias, con fórmula y supuestos declarados en el apartado correspondiente.</p>
+
+</div>
         </div>
     </article>
 

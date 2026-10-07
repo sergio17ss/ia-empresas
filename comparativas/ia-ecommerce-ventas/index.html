@@ -44,35 +44,6 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "SoftwareApplication",
-            "name": "Herramientas de IA para Ecommerce",
-            "applicationCategory": "BusinessApplication",
-            "operatingSystem": "Web",
-            "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "EUR",
-                "description": "Desde planes gratuitos (Klaviyo, Tidio) hasta ~546 EUR/mes (Triple Whale)"
-            }
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "4.3",
-            "bestRating": "5"
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "IA TodoPyme"
-        },
-        "datePublished": "2026-09-09"
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
             {
@@ -80,23 +51,63 @@
                 "name": "¿Qué IA usan las tiendas online para vender más?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Las cinco areas con mejor retorno son: email predictivo (Klaviyo), busqueda interna con IA (Algolia), personalizacion de recomendaciones (Nosto), chatbots de atencion (Tidio) y campanas publicitarias automaticas (Performance Max). Con las funciones de IA integradas en Shopify o WooCommerce puedes empezar sin herramientas adicionales y anadir especializadas segun crezca el volumen."
+                    "text": "Las cinco capas con mejor retorno son el email y SMS con flujos automatizados, la búsqueda interna que entiende lenguaje natural, los sistemas de recomendación que suben el ticket medio, los chatbots que resuelven consultas de estado y la publicidad que reparte presupuesto de forma automática. Conviene instalarlas por ese orden, porque cada capa necesita los datos que produce la anterior. Para empezar sin coste adicional está la IA que ya incluye la plataforma."
                 }
             },
             {
                 "@type": "Question",
-                "name": "¿Cuánto cuesta implementar IA en una tienda online?",
+                "name": "¿Cuánto cuesta montar un stack de IA en una tienda online?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Se puede empezar con 0 euros extra si usas las funciones de IA de tu plataforma (Shopify Magic, WooCommerce). Un stack basico con Klaviyo (gratis hasta 250 contactos) y Tidio (gratis limitado) no suma coste. El salto a herramientas especializadas de pago va de 27 a 200 euros al mes segun volumen: Algolia desde 0,91 EUR por 1.000 busquedas (1 USD), Nosto desde 90 euros/mes y Klaviyo desde 20 euros/mes al superar 250 contactos."
+                    "text": "El coste de entrada puede ser cero si se aprovechan las funciones de IA de la propia plataforma. A partir de ahí, un stack de email más chat más un asistente de redacción se mueve entre 40 y 60 euros al mes. Los escalones cara aparecen en el email por volumen de contactos, desde 18 euros al mes hasta superar los 250 contactos, y en la búsqueda con IA, que tiene un mínimo mensual de unos 23 euros. Las plataformas de personalización no publican tarifa y suelen exigir contrato anual."
                 }
             },
             {
                 "@type": "Question",
-                "name": "¿Merece la pena la IA para un ecommerce pequeno?",
+                "name": "¿Merece la pena la IA para un e-commerce pequeño?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Si, pero empezando por lo gratuito. Un ecommerce pequeno suele obtener el mayor retorno con tres aplicaciones sin coste adicional: descripciones de producto generadas con IA, emails automaticos de carrito abandonado de la propia plataforma y un chatbot basico. Las herramientas especializadas de pago se justifican a partir de unos 5.000 euros mensuales de facturacion o cuando el email y la busqueda son canales principales."
+                    "text": "Sí, si empieza por lo que ya está pagado y por el canal de mayor retorno, el email. Con menos de 250 contactos, el plan gratuito de email cubre el caso completo; con poco tráfico interno, el buscador nativo suele ser suficiente; y las licencias de un asistente para redactar fichas van de 18 a 21 euros por persona y mes según el plan. La personalización no se justifica hasta que hay volumen de tráfico y catálogo estable."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Shopify Magic o una herramienta de email? ¿Cuál instalo primero?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El email primero. Shopify Magic sirve para redactar fichas, títulos y resúmenes de pedidos, y su valor real está en el ahorro de tiempo, no en los ingresos directos. La herramienta de email especializada decide a quién escribir, cuándo y con qué mensaje sobre la base del historial de compra, y ese es el canal con mayor retorno por euro invertido en una tienda con tráfico estable. La IA de la plataforma conviene tenerla activa igualmente, porque no añade coste."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es legal usar IA para responder a los clientes y redactar fichas de producto?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, con condiciones. Desde el 2 de agosto de 2026 el artículo 50 del Reglamento (UE) 2024/1689 obliga a informar de que la persona está interactuando con un sistema de IA y a marcar el contenido sintético publicado. En materia de protección de datos sigue aplicando el RGPD, con su base legal, su información al interesado y sus requisitos si hay decisiones automatizadas. Y en las fichas hay una obligación material: los datos técnicos del producto deben ser ciertos, porque una descripción con atributos falsos genera devoluciones y responsabilidad."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Funciona la IA igual en WooCommerce o PrestaShop que en Shopify?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La diferencia está en el punto de integración, no en la calidad del resultado. Shopify incluye las funciones de IA en la suscripción, sin coste adicional por uso. WooCommerce y PrestaShop llegan a lo mismo mediante plugins o módulos, lo que añade una capa de mantenimiento y una dependencia del desarrollador. En las dos plataformas de código abierto, el coste total de la IA no está en el plugin, sino en el alojamiento, en las horas de quien lo actualiza y en el trabajo de integrar las herramientas especializadas."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto tarda una tienda online en ver resultados con la IA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El email de carrito abandonado es lo más rápido: de siete a catorce días, porque se apoya en datos que ya existen y el efecto es inmediato. La búsqueda interna tarda entre cuatro y ocho semanas, porque necesita que el catálogo esté completo y que el tráfico de búsqueda interna tenga volumen. La publicidad automatizada no debe evaluarse antes de unas ocho semanas, cuando ha salido de la fase de aprendizaje. La previsión de existencias necesita al menos un ciclo completo de compra por referencia antes de ser fiable."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿La IA evita las devoluciones o las aumenta?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depende de para qué se use, y ese es el punto. Una descripción de producto generada y no verificada aumenta las devoluciones, porque inventa o generaliza atributos que el cliente no esperaba. Un chatbot bien acotado a consultas de estado las reduce, porque evita que el cliente compre sin saber las condiciones de envío o de devolución. En ambos casos la variable que decide es la verificación, no la herramienta."
                 }
             }
         ]
@@ -134,7 +145,7 @@
 
             <div class="methodology-banner">
                 <span class="methodology-icon" aria-hidden="true"></span>
-                <p><strong>Metodología:</strong> Análisis basado en documentación oficial de cada fabricante, uso real de las plataformas y precios verificados en portales de compradores, actualizado a septiembre 2026.</p>
+                <p><strong>Metodología:</strong> Análisis basado en documentación oficial de cada fabricante, uso real de las plataformas y precios verificados en portales de compradores, actualizado a octubre 2026.</p>
             </div>
 
             <div class="article-header">
@@ -143,122 +154,326 @@
                 <p class="article-subtitle">Descripciones de producto, email predictivo, búsqueda inteligente, recomendaciones y publicidad automatizada: esto es lo que la IA puede hacer hoy por una tienda online y cuánto cuesta cada pieza.</p>
                 <div class="article-meta-bar">
                     <span class="meta-author">Por el equipo de IA TodoPyme</span>
-                    <span class="meta-date">9 septiembre 2026</span>
+                    <span class="meta-date">7 octubre 2026</span>
                     <span class="meta-reading">14 min de lectura</span>
-                    <span class="meta-updated">Actualizado: septiembre 2026</span>
+                    <span class="meta-updated">Actualizado: 7 octubre 2026</span>
                 </div>
             </div>
 
             <div class="article-content">
-
-                <div class="tldr-box">
+<div class="tldr-box">
                     <h2>Resumen rápido</h2>
                     <ul>
-                        <li><strong>Precio de entrada:</strong> 0 euros extra si usas la IA integrada de tu plataforma (Shopify Magic, WooCommerce)</li>
-                        <li><strong>Ideal para:</strong> tiendas online que quieren subir conversión sin ampliar plantilla de marketing</li>
-                        <li><strong>Puntos fuertes:</strong> automatización de email con ingresos medibles, búsqueda que entiende al cliente, recomendaciones que suben el ticket medio</li>
-                        <li><strong>Puntos débiles:</strong> los precios escalan con el volumen de contactos o búsquedas, y ninguna herramienta compensa un producto o una web deficientes</li>
+                        <li><strong>Coste de entrada real: 0 € adicionales</strong> si aprovechas la IA que ya viene dentro de tu plataforma (Shopify Magic, plugins de WooCommerce, módulos de PrestaShop).</li>
+                        <li><strong>Mayor retorno por euro invertido:</strong> email y SMS con flujos automatizados de carrito abandonado y recompra, seguido del chatbot que resuelve consultas repetitivas.</li>
+                        <li><strong>Mayor retorno por tráfico existente:</strong> búsqueda interna que entiende lenguaje natural y sistemas de recomendación que suben el ticket medio.</li>
+                        <li><strong>Flaw más caro:</strong> contratar la herramienta antes de tener los datos que la hacen funcionar. Sin histórico de compras, sin catálogo limpio y sin tráfico estable, la IA solo multiplica el ruido.</li>
+                        <li><strong>Obligación que ya está vigente:</strong> desde el <strong>2 de agosto de 2026</strong> el artículo 50 del Reglamento (UE) 2024/1689 exige transparencia en la interacción con sistemas de IA y marcado del contenido sintético.</li>
                     </ul>
                 </div>
 
-                <div class="callout callout-info">
-                    <strong>Antes de empezar:</strong> la IA en ecommerce no vende un mal producto. Multiplica el resultado de una tienda que ya convierte, pero no inventa demanda donde no hay propuesta de valor. Todas las herramientas de esta guía se evaluaron sobre ese criterio.
+                <div class="callout">
+                    <strong>Antes de empezar:</strong> la IA en e-commerce multiplica un embudo que ya convierte, pero no crea demanda donde no hay propuesta de valor. Ninguna de las herramientas de esta guía arregla un producto que no se vende, una ficha que no informa o una entrega que se retrasa. Todas las recomendaciones que siguen parten de esa condición previa.
                 </div>
 
                 <div class="toc">
                     <h3>Índice</h3>
                     <ol>
-                        <li><a href="#que-es">Qué es la IA en ecommerce y dónde genera ventas</a></li>
-                        <li><a href="#herramientas">Las 8 herramientas por categoría</a></li>
-                        <li><a href="#como-elegir">Cómo elegir según tu plataforma y volumen</a></li>
-                        <li><a href="#precios">Tabla comparativa de precios</a></li>
-                        <li><a href="#errores">Errores habituales al usar IA en ecommerce</a></li>
-                        <li><a href="#veredicto">Veredicto por perfil de tienda</a></li>
+                        <li><a href="#ia-en-ecommerce-embudo">Qué hace la IA en una tienda online y en qué cinco puntos se mide</a></li>
+                        <li><a href="#plataformas-ia-nativa">Qué IA trae de serie cada plataforma: Shopify, WooCommerce, PrestaShop y Adobe Commerce</a></li>
+                        <li><a href="#recomendacion-productos">Recomendación de productos: cómo sube el ticket medio y por qué falla</a></li>
+                        <li><a href="#busqueda-interna-ia">Búsqueda interna con IA: la fuga de conversión que no aparece en el informe</a></li>
+                        <li><a href="#chatbots-atencion-cliente">Chatbots y atención al cliente: dónde ahorran horas y dónde se rompen</a></li>
+                        <li><a href="#descripciones-producto-ia">Descripciones de producto con IA: velocidad real y riesgo de datos falsos</a></li>
+                        <li><a href="#email-predictivo-ecommerce">Email y SMS predictivo: el mayor retorno, con un coste que escala</a></li>
+                        <li><a href="#publicidad-automatizada-ia">Performance Max y Advantage+: qué necesita la IA publicitaria para no gastar en balde</a></li>
+                        <li><a href="#forecast-stock-ia">Forecasting de stock y roturas de inventario</a></li>
+                        <li><a href="#fraude-y-bots-tienda">Fraude, bots y ataques de credenciales contra tu tienda</a></li>
+                        <li><a href="#marketplaces-ia">IA en marketplaces y en la gestión multicanal</a></li>
+                        <li><a href="#tabla-precios-ia-ecommerce">Tabla comparativa de precios de herramientas de IA para e-commerce</a></li>
+                        <li><a href="#coste-total-propiedad">El coste total que no aparece en la tarifa</a></li>
+                        <li><a href="#licencias-ia-equipo">Las licencias de IA para el equipo que lleva la tienda</a></li>
+                        <li><a href="#umbrales-de-compra">Umbrales de compra: cuándo una herramienta NO está justificada</a></li>
+                        <li><a href="#calculo-roi-ia-ecommerce">Cómo calcular el ROI de cada herramienta sin engañarte</a></li>
+                        <li><a href="#errores-implantacion-ia">Los errores de implantación que se pagan en meses de trabajo</a></li>
+                        <li><a href="#rgpd-ai-act-ecommerce">RGPD, AI Act y las obligaciones que ya están vigentes</a></li>
+                        <li><a href="#veredicto-por-perfil">Veredicto por perfil de tienda: qué instalar primero</a></li>
                         <li><a href="#faq">Preguntas frecuentes</a></li>
+                        <li><a href="#fuentes">Fuentes</a></li>
                     </ol>
                 </div>
 
-                <h2 id="que-es">Qué es la IA en ecommerce y dónde genera ventas</h2>
+                <h2 id="ia-en-ecommerce-embudo">Qué hace realmente la IA en una tienda online y en qué cinco puntos se mide</h2>
 
-                <p>La inteligencia artificial aplicada al comercio electrónico no es un extra futurista: es la capa que decide qué producto mostramos, qué mensaje enviamos y cuánto cobramos por cada visita. En 2026, prácticamente todas las plataformas de ecommerce incluyen funciones de IA de serie, y las herramientas especializadas se han consolidado en cinco áreas con retorno medible.</p>
+                <p>La inteligencia artificial aplicada al comercio electrónico no es un añadido decorativo ni una etiqueta de modernize. Es la capa que decide <strong>qué producto se muestra a cada visitante</strong>, <strong>qué mensaje se le envía</strong> y <strong>cuánto se gasta en captarlo</strong>. Lo que cambia con la IA no es el catálogo ni la tarifa de producto: cambia la asignación de decisiones dentro del funnel, que hasta ahora se hacía con reglas fijas o a mano.</p>
 
-                <p><strong>La primera es la conversión de tráfico:</strong> búsqueda interna que entiende "vestido para boda invitada" aunque el catálogo diga otra cosa, recomendaciones que suben el ticket medio y páginas de producto con descripciones que responden a las objeciones reales del comprador. La <strong>segunda es la recuperación de venta:</strong> el email predictivo decide a quién enviar el recordatorio de carrito abandonado y con qué descuento, en el momento en que el dato dice que es más probable que compre. La <strong>tercera es el coste de adquisición:</strong> la publicidad automatizada (Performance Max, Meta Advantage+) reparte el presupuesto entre canales sin intervención diaria.</p>
+                <p>Hay cinco puntos donde esa decisión se traduce directamente en euros, y conviene mantenerlos separados porque cada uno exige un tipo de herramienta distinto y un tipo de dato distinto. El primero es la <strong>conversión del tráfico que ya entra</strong>: una búsqueda interna que entiende «vestido para boda de invitada» aunque el artículo se llame de otra forma, o una ficha que responde a las tres objeciones que aparecen en las reseñas. El segundo es la <strong>recuperación de venta</strong>: el email que sale a las 21:30 hacia la gente que tiene un carrito a medias y una alta probabilidad de comprar.</p>
 
-                <p>No todas las tiendas necesitan las cinco áreas a la vez. Un ecommerce con 30 pedidos al mes se beneficia más de la IA de su propia plataforma que de cinco suscripciones especializadas. Uno que factura 50.000 euros al mes necesita las piezas especializadas porque el volumen de contactos y búsquedas ya no se gestiona bien a mano. Esta guía ordena las herramientas por ese criterio de retorno.</p>
+                <p>El tercer punto es el <strong>coste de adquisición</strong>: los sistemas publicitarios que reparten presupuesto entre canales sin que nadie toque las pujas cada mañana. El cuarto es el <strong>inventario</strong>: cuánto pedir de cada referencia antes de romperla y cuánto dejar de pedir para no inmovilizar caja. El quinto es la <strong>defensa</strong>: detectar el robot que se registra, prueba tarjetas y se va con un pedido que nunca llegará.</p>
 
-                <h2 id="herramientas">Las 8 herramientas por categoría</h2>
+                <p>Conviene ser claro con el orden, porque es el error que más dinero cuesta en este sector. La IA <strong>no crea demanda</strong>: mejora el porcentaje de personas que, ya estando dentro, hacen lo que querías que hicieran. Si el tráfico no entra o entra y no encuentra lo que busca, la mejor IA del mundo devuelve el mismo resultado. Y hay un segundo matiz importante: <strong>cada una de estas cinco capas necesita datos distintos</strong>, y ninguna los tiene todos. Por eso el orden de implantación no es caprichoso.</p>
 
-                <h3>Plataforma con IA integrada</h3>
-
-                <p><strong>1. Shopify (Magic + Sidekick)</strong> — La plataforma de ecommerce más usada en España junto a WooCommerce. Desde 2025 integra Magic, un asistente de IA para descripciones de producto, títulos, respuestas de email y resúmenes de pedidos, y Sidekick, un agente que responde preguntas de negocio sobre tus datos (ventas, stock, clientes) en lenguaje natural. La IA está incluida en todos los planes sin coste adicional por palabra generada.</p>
-                <p><strong>Para qué sirve:</strong> tiendas en Shopify que quieren empezar con IA sin instalar nada. La generación de descripciones de producto funciona bien en español y el resumen de métricas ahorra tiempo real de gestión.</p>
-                <p><strong>Precio:</strong> Shopify Basic 39 USD/mes (≈36 €), Shopify 105 USD/mes (≈96 €), Advanced 399 USD/mes (≈363 €). La IA de Magic y Sidekick está incluida. No existe plan gratuito permanente: la prueba son 3 días más 1 mes por 1 €.</p>
-
-                <h3>Email marketing predictivo</h3>
-
-                <p><strong>2. Klaviyo</strong> — La herramienta de email y SMS para ecommerce más extendida entre tiendas Shopify y WooCommerce. Su IA analiza el historial de compra y navegación para predecir qué clientes van a comprar (predictive analytics), segmentar automáticamente y enviar flujos de carrito abandonado, bienvenida, recompra y recuperación con el mensaje y el momento adecuados.</p>
-                <p><strong>Para qué sirve:</strong> automatizar el email sin un especialista. Los flujos de carrito abandonado y recompra son los que más ingresos generan por hora invertida de cualquier herramienta de esta lista, siempre que la tienda tenga tráfico mínimamente estable.</p>
-                <p><strong>Precio:</strong> plan gratuito hasta 250 contactos y 500 envíos mensuales. El plan de pago empieza en 20 USD/mes (≈18 €) hasta 500 contactos y sube con el volumen: 1.000 contactos ≈ 45 USD/mes, 5.000 ≈ 90 USD/mes, 10.000 ≈ 150 USD/mes (≈137 €). Se paga por contactos, no por envíos, y el coste escala si la lista crece rápido.</p>
-
-                <h3>Búsqueda interna con IA</h3>
-
-                <p><strong>3. Algolia</strong> — Motor de búsqueda en tiempo real usado por las tiendas que necesitan resultados instantáneos y semánticos. Entiende sinónimos, errores tipográficos y lenguaje natural ("zapatillas running mujer talla 38" sin escribir el nombre exacto del producto), y en 2026 incorpora respuestas generativas que resuelven dudas del cliente dentro de la propia búsqueda.</p>
-                <p><strong>Para qué sirve:</strong> catálogos grandes o con nomenclatura interna confusa. Una búsqueda interna que no encuentra productos es la fuga de conversión más silenciosa del ecommerce: el cliente que no encuentra, no compra, y no vuelve.</p>
-                <p><strong>Precio:</strong> modelo por uso: desde 1 USD por 1.000 búsquedas (≈0,91 €), con un mínimo de 25 USD/mes (≈23 €) para el primer millón de búsquedas anuales. El plan gratuito de desarrollo no aplica a producción. Para una tienda pequeña puede resultar caro; para un catálogo de miles de SKUs es la diferencia entre vender o no lo que el cliente busca.</p>
-
-                <h3>Personalización y recomendaciones</h3>
-
-                <p><strong>4. Nosto</strong> — Plataforma de personalización de ecommerce que decide qué producto recomendar en cada página, qué email enviar y qué ofrecer en el checkout, basándose en el comportamiento individual de cada visitante. Incluye motores de recomendación, pop-ups con intención de salida y segmentación por datos de navegación en tiempo real.</p>
-                <p><strong>Para qué sirve:</strong> subir el ticket medio con "los clientes también compraron" y cross-selling inteligente. Nosto reemplaza a los plugins de recomendaciones básicos cuando estos ya no escalan con el catálogo.</p>
-                <p><strong>Precio:</strong> sin precio público; rango estimado según CostBench desde 90-100 USD/mes (≈82-91 €) para tiendas pequeñas, escalando por facturación. Suele exigir contrato anual, lo que lo convierte en una decisión de mayor compromiso que el resto de la lista.</p>
-
-                <h3>Chatbots de atención y venta</h3>
-
-                <p><strong>5. Tidio</strong> — Chatbot y chat en vivo para tiendas online con IA generativa. Responde preguntas frecuentes sobre envíos, devoluciones y seguimiento de pedidos las 24 horas, deriva a humano cuando no sabe, y puede recuperar ventas respondiendo dudas de producto en el momento de la compra.</p>
-                <p><strong>Para qué sirve:</strong> tiendas con volumen de consultas repetitivas que no justifican un agente a jornada completa. Es la herramienta de entrada más barata de la lista y no requiere conocimientos técnicos. La analizamos en profundidad en nuestra guía de chatbots para atención al cliente.</p>
-                <p><strong>Precio:</strong> plan gratuito con funciones básicas y límite de asistentes; el plan con IA generativa parte de 29 USD/mes (≈26 €). El plan gratuito es suficiente para empezar a medir cuántas consultas resuelve sin intervención humana.</p>
-
-                <h3>Publicidad automatizada</h3>
-
-                <p><strong>6. Google Performance Max + Merchant Center</strong> — Las campañas de Performance Max de Google usan IA para repartir el presupuesto entre búsqueda, shopping, display, YouTube y discovery, optimizando por conversión con el feed de productos como entrada. Combinado con el feed de Merchant Center (ahora con generación de títulos de producto por IA), es la vía estándar de publicidad para ecommerce en 2026.</p>
-                <p><strong>Para qué sirve:</strong> tiendas que quieren vender en Google sin gestionar cinco tipos de campaña. La IA de Performance Max decide pujas, creatividades y canales; el anunciante define el objetivo (ROAS o conversiones) y el presupuesto.</p>
-                <p><strong>Precio:</strong> se paga por clic o por conversión según el modelo elegido, sin coste de licencia. El presupuesto mínimo diario recomendado es de unos 10 €/día (300 €/mes) para que la IA tenga datos suficientes.</p>
-
-                <h3>Contenido y creatividad</h3>
-
-                <p><strong>7. ChatGPT Plus para ecommerce</strong> — El comodín de la lista: redacción de descripciones de producto en volumen, análisis de reviews para detectar objeciones, generación de ideas de campaña y respuestas de atención al cliente con tono de marca. No se integra con la tienda, pero es la herramienta más versátil por coste para un equipo pequeño.</p>
-                <p><strong>Para qué sirve:</strong> producción de contenido de producto y ficha de marca. Muchas tiendas generan con ChatGPT las 200 descripciones de un catálogo nuevo en dos tardes y luego las revisan antes de publicar. Su límite: no tiene acceso a tus datos de ventas, así que no sustituye a las herramientas especializadas para decisiones de automatización.</p>
-                <p><strong>Precio:</strong> 20 USD/mes (≈18 €) en el plan Plus. El plan gratuito sirve para probar, pero el Plus desbloquea el volumen y la consistencia que un catálogo necesita.</p>
-
-                <h3>Analítica de negocio</h3>
-
-                <p><strong>8. Triple Whale</strong> — Panel de control de ecommerce que centraliza datos de Shopify, Meta, Google y TikTok para medir el coste real de adquisición (eACOS, blended ROAS) con atribución unificada. Sus asistentes de IA resumen qué está funcionando y qué canal debe recibir más presupuesto, sin montar un Excel de atribución a mano.</p>
-                <p><strong>Para qué sirve:</strong> tiendas que gestionan varios canales publicitarios y necesitan saber, cada semana, de dónde viene la rentabilidad. La atribución precisa es el punto donde la IA ahorra más horas a un ecommerce mediano.</p>
-                <p><strong>Precio:</strong> sin precio público; rango estimado según el volumen de la tienda entre 99 y 600 USD/mes (≈90-546 €). Para tiendas por debajo de 20.000 € mensuales de facturación, las analíticas nativas de Shopify o GA4 suelen bastar.</p>
-
-                <h2 id="como-elegir">Cómo elegir según tu plataforma y volumen</h2>
-
-                <h3>Por plataforma</h3>
-                <ul>
-                    <li><strong>Shopify:</strong> empieza con Shopify Magic y Sidekick (incluidos), añade Klaviyo para email y Tidio para chat. Algolia o Nosto solo cuando el catálogo o la conversión lo justifiquen.</li>
-                    <li><strong>WooCommerce:</strong> el ecosistema es más fragmentado. Klaviyo (o MailPoet con IA), un buscador tipo SearchWP y ChatGPT para contenido son la ruta económica.</li>
-                    <li><strong>PrestaShop o Magento:</strong> la integración de herramientas especializadas (Algolia, Nosto) es más laboriosa que en Shopify y suele requerir desarrollador. Presupuesta ese coste antes de decidir.</li>
-                </ul>
-
-                <h3>Por volumen de actividad</h3>
-                <ul>
-                    <li><strong>Menos de 100 pedidos/mes:</strong> IA de la plataforma + ChatGPT Plus + plan gratuito de Klaviyo. Coste: 18 €/mes.</li>
-                    <li><strong>100-1.000 pedidos/mes:</strong> añade Klaviyo de pago (según contactos) y Tidio con IA. Coste: entre 45 y 120 €/mes.</li>
-                    <li><strong>1.000+ pedidos/mes o catálogo de miles de SKUs:</strong> añade Algolia y, si el ticket medio lo sostiene, Nosto o Triple Whale. Coste: desde 300 €/mes en adelante.</li>
-                </ul>
-
-                <div class="callout callout-tip">
-                    <strong>Regla práctica:</strong> instala primero las herramientas con retorno directo en 60 días (email de carrito abandonado, chatbot, IA de la plataforma) y mide. Solo sube a herramientas de contrato anual (Nosto, Triple Whale) cuando tengas datos propios de que la función resuelve un embudo concreto. Según datos de Klaviyo (2026), los flujos automatizados representan alrededor del 30% de los ingresos de email de sus clientes de ecommerce.
+                <div class="callout">
+                    <strong>La regla que ordena todo lo demás:</strong> el email necesita historial de compras, la búsqueda necesita catálogo indexado y tráfico de búsqueda interna, la publicidad necesita conversiones registradas y el pronóstico necesita histórico de ventas por referencia. Instalar la herramienta antes de tener el dato produce una suscripción que no se puede evaluar, porque no hay contra qué compararla.
                 </div>
 
-                <h2 id="precios">Tabla comparativa de precios</h2>
+                <h2 id="plataformas-ia-nativa">Qué IA trae de serie cada plataforma: Shopify, WooCommerce, PrestaShop y Adobe Commerce</h2>
 
-                <p>Precios en euros según tarifas oficiales de cada fabricante (septiembre 2026), con el valor en USD original entre paréntesis. Equivalencia aproximada: 1 USD = 0,91 EUR.</p>
+                <p>La primera decisión no es qué herramienta comprar, sino qué plataforma estás usando y qué IA <strong>viene ya dentro</strong>. En 2026 las cuatro plataformas principales tienen funciones de IA integradas en el precio base de la suscripción, y esa es la razón por la que el error más común es pagar por una herramienta que ya se está pagando.</p>
+
+                <p><strong>Shopify</strong> es la que más superficie de IA expone sin coste adicional por palabra generada: generación de textos de producto, títulos, resúmenes de pedidos, respuestas de correo y un asistente que responde preguntas de negocio sobre ventas, stock y clientes en lenguaje natural. Esa última parte es la que más valor tiene y la que menos se usa, porque casi nadie separa el momento de la persona que escribe el texto publicitario del momento de la responsable que pregunta «¿qué producto se me está agotando?». Los planes van de 39 USD/mes el básico a 399 USD/mes el avanzado, y la IA viene en los tres.</p>
+
+                <p><strong>WooCommerce</strong> funciona al revés: el núcleo es gratuito y la IA llega por capas. El plugin en sí no cuesta, pero el alojamiento, el mantenimiento y la conexión con un proveedor de modelos sí. Eso significa que el coste total de WooCommerce con IA no aparece en la tarifa del plugin, sino en la factura del servidor y en las horas de quien lo mantiene. <strong>PrestaShop</strong> tiene un modelo parecido, con módulos de pago que añaden funciones y un ecosistema donde la calidad de la integración depende del desarrollador.</p>
+
+                <p><strong>Adobe Commerce</strong> es el caso distinto: es la única de las cuatro que se licencia por proyecto y no por suscripción de tienda, con precio negociado a través del distribuidor y sin tarifa pública. A cambio da un nivel de control y una capacidad de personalización que las otras no alcanzan. Para una operación con varios países, varios catálogos o varios B2B, esa diferencia suele justificar el coste; para una tienda de un solo país con un catálogo simple, es sobreingeniería.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Plataforma</th>
+                                <th>Modelo de coste</th>
+                                <th>IA incluida de serie</th>
+                                <th>Dónde se atasca</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Shopify</strong></td>
+                                <td>Suscripción por tienda: desde 39 USD/mes (Basic) a 399 USD/mes (Advanced)</td>
+                                <td>Generación de fichas y títulos, resúmenes de pedidos, asistente de datos de negocio</td>
+                                <td>Las funciones avanzadas de merchandising y las apps de terceros requieren <strong>contrato anual</strong> y coste aparte</td>
+                            </tr>
+                            <tr>
+                                <td><strong>WooCommerce</strong></td>
+                                <td>Núcleo gratuito + alojamiento + plugins + coste de mantenimiento</td>
+                                <td>Solo vía plugins (contenido, chat, recomendaciones) o conexión directa a un modelo</td>
+                                <td><strong>Dependencia del hosting</strong> y de que alguien actualice la pila de plugins</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PrestaShop</strong></td>
+                                <td>Núcleo gratuito + módulos de pago + desarrollo a medida</td>
+                                <td>Contenido y soporte mediante módulos; IA avanzada con desarrollo propio</td>
+                                <td>Calidad desigual de los módulos oficiales y de la comunidad</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adobe Commerce</strong></td>
+                                <td>Licencia comercial por proyecto, negociada con el distribuidor, sin tarifa pública</td>
+                                <td>Personalización profunda, catálogos complejos, multitienda y reglas de precio por cliente</td>
+                                <td>Coste de implantación y dependencia del integrador</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Regla práctica</strong></td>
+                                <td colspan="3">Antes de comprar una herramienta de IA, escribe una lista de lo que ya hace tu plataforma. Si la lista cubre el caso de uso, no compres.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+<h2 id="recomendacion-productos">Recomendación de productos: cómo sube el ticket medio y por qué falla</h2>
+
+                <p>Un motor de recomendación no «vende más productos»: <strong>agrupa más productos en el mismo pedido</strong>. Esa distinción importa, porque el efecto real aparece sobre el ticket medio y sobre el número de líneas por pedido, no sobre el número de pedidos. Si el ticket medio sube un 8 %, el mismo tráfico y el mismo coste de adquisición generan un 8 % más de facturación, sin tocar un solo euro de publicidad.</p>
+
+                <p>Hay tres familias de recomendación con muy distinto nivel de exigencia. La <strong>regla fija</strong> —«si ha comprado esto, mira esto»— es la más barata y ya funciona en catálogos pequeños; ese sistema de reglas no necesita modelo de IA y se configura en una tarde. La <strong>similitud de contenido</strong> agrupa artículos parecidos por atributos y atributos de texto, y mejora cuando el catálogo tiene ficha completa. La <strong>personalización por comportamiento</strong> —recomendar según lo que ha mirado esta persona concreta, en esta sesión— es la que aporta el salto real, y es la que necesita volumen de datos para dejar de adivinar.</p>
+
+                <p>Y aquí está el flaw que casi nadie menciona en las páginas de producto: <strong>un motor de recomendación solo es tan bueno como la taxonomía del catálogo</strong>. Si tu tienda tiene tres mil referencias sin categoría, sin etiqueta de material, sin talla unificada y con sinónimos distintos para el mismo producto, el motor va a recomendar cosas parecidas en apariencia y distintas en función. No es un problema del algoritmo: es un problema del dato de entrada, y se corrige antes de comprar la herramienta.</p>
+
+                <div class="callout">
+                    <strong>Diagnóstico previo a la compra:</strong> cuenta cuántas referencias tienes sin categoría asignada, cuántas tienen menos de tres atributos relevantes y cuántas descripciones no mencionan material, medidas o compatibilidad. Si ese número supera el 15 % del catálogo, el primer proyecto no es IA: es limpieza de catálogo. Una plataforma de personalización como Nosto no publica tarifa pública y suele trabajar con contrato anual, así que comprometerte antes de ordenar el dato es comprometerte a pagar dos veces.
+                </div>
+
+                <p>La segunda variable que decide el retorno es <strong>dónde se coloca el bloque</strong>. Los módulos «los clientes también compraron» colocados en la ficha de producto convierten a la espera de compra; los mismos módulos puestos en la home, muy arriba, capando la atención antes de que la persona tenga contexto, convierten peor. Si tienes el mismo motor en cuatro posiciones distintas, vas a medir cuatro resultados mezclados y no vas a poder decidir qué configuración funciona. Empieza por una, mídela y multiplica después.</p>
+
+                <p>Hay también un riesgo comercial que conviene tener presente: <strong>las recomendaciones pueden acelerar la venta de algo que no querías empujar</strong>. En moda, en farmacia o en productos con tallas, un motor que optimiza solo la probabilidad de conversión tenderá a empujar el artículo más fácil de comprar, no el de mayor margen. Si tu objetivo es margen y no volumen, hay que decirlo explícitamente en la configuración y monitorizarlo por separado, porque por defecto las plataformas optimizan a conversión.</p>
+
+                <h2 id="busqueda-interna-ia">Búsqueda interna con IA: la fuga de conversión que no aparece en el informe</h2>
+
+                <p>La búsqueda interna es el caso más claro de retorno silencioso. Cuando un visitante escribe en el buscador interno y no encuentra lo que busca, <strong>no hay ningún evento de error en el panel de analítica</strong>: simplemente no hay compra, y la sesión termina sin conversión. En una tienda grande, ese volumen de abandonos suele ser invisible porque se diluye entre el resto de tráfico, y por eso la búsqueda nativa no suele subir en la lista de problemas que se investigan.</p>
+
+                <p>Un buscador nativo —el que viene con la plataforma— suele funcionar con coincidencia literal de palabras clave. Falla en los tres casos más habituales del comercio electrónico español: <strong>el cliente escribe el resultado que busca</strong> («zapatillas para correr»), el cliente escribe con error tipográfico, y el cliente escribe la categoría en lugar del artículo. Un buscador con tolerancia a sinónimos, corrección de errores y embeddings resuelve los tres, y es exactamente lo que aporta una capa como Algolia.</p>
+
+                <p>Su modelo de coste es el más escalonado de toda esta guía y merece una explicación, porque es donde aparecen las sorpresas de factura. <strong>No se paga por licencia de búsqueda</strong>: se paga por número de búsquedas, con una tarifa de partida de 1 USD por cada mil búsquedas y un mínimo mensual de 25 USD. Para una tienda con poco tráfico interno, ese mínimo puede superar lo que la herramienta aporta. Para un catálogo amplio con visitantes que ya saben lo que buscan, cambia la conversión de forma notable.</p>
+
+                <div class="callout">
+                    <strong>Estimación propia — coste mensual de búsqueda con IA:</strong> sesiones mensuales × porcentaje de sesiones que usan el buscador interno (estimación: 3–8 % en tienda con búsqueda visible) × búsquedas por sesión (estimación: 1,8) × 1 USD por mil búsquedas, más el mínimo mensual de 25 USD. Con 10.000 sesiones, un 5 % de uso y 1,8 búsquedas por sesión salen 900 búsquedas al mes: el mínimo de 25 USD domina el cálculo y la factura ronda los 25 USD, unos 23 € al cambio que se indica en la tabla. A partir de unos 50.000 sesiones mensuales la parte variable empieza a pesar de verdad.
+                </div>
+
+                <p>La búsqueda generativa, que ya aparece en varios productos de este segmento, va un paso más allá: en lugar de devolver una lista de productos, redacta una respuesta en lenguaje natural con enlaces. El riesgo aquí no es técnico sino de <strong>experiencia y de confianza</strong>: una respuesta redactada que menciona un producto que no está disponible, o que no está en tu catálogo, es un problema directo. Por eso conviene que toda respuesta generativa se apoye únicamente en el índice real de productos y que cualquier referencia sin stock se marque como tal.</p>
+
+                <h2 id="chatbots-atencion-cliente">Chatbots y atención al cliente: dónde ahorran horas y dónde se rompen</h2>
+
+                <p>El chatbot es la herramienta que más rápido se implanta y la que más rápido incumple. La razón está en el reparto real de las consultas de una tienda online: una parte grande son <strong>preguntas de estado</strong> —envíos, devoluciones, seguimiento, disponibilidad— que se resuelven con un dato y que cualquier sistema automático contesta bien; y otra parte son <strong>consultas de decisión</strong> —«¿me encaja esto con esto otro?», «¿me lo puedes cambiar por otra talla?»— que dependen de criterio humano y donde un bot hace daño.</p>
+
+                <p>Si el sistema solo cubre lo primero, el ahorro es real y medible: consultas resueltas sin agente, horario de cobertura de noches y fines de semana, y tiempo de primera respuesta. Si intenta cubrir lo segundo con una respuesta inventada, el resultado es peor que no tener nada, porque genera <strong>desconfianza, devoluciones y reseñas negativas</strong>. La diferencia entre ambos casos no está en el modelo de lenguaje, está en hasta dónde le dejas llegar.</p>
+
+                <p>El coste de entrada es también el más bajo del conjunto. Tidio tiene un plan gratuito con funciones básicas y su nivel con IA generativa parte de 29 USD/mes, unos 26 € al cambio que se usa en esta guía. Las soluciones de <a href="../../herramientas-ia/zendesk-ai/">Zendesk AI</a> y <a href="../../herramientas-ia/intercom-fin/">Intercom Fin</a> tienen otra lógica: no cobran por sí mismos, cobran porque sustituyen o escalan un helpdesk que ya se paga. La elección entre ellos no es de IA, es de si ya tienes sistema de tickets.</p>
+
+                <p>Antes de instalar cualquiera de ellos, el ejercicio útil es <strong>contar las veinte consultas más frecuentes de la última semana</strong> y clasificarlas en estado o decisión. Si el porcentaje de estado está por encima del 60 %, hay caso de uso. Si está por debajo del 35 %, lo que falta no es un bot: es una respuesta clara en la propia ficha de producto y una revisión de las condiciones de envío publicadas en la web. Lo explicamos en nuestra guía de <a href="../../herramientas-ia/chatbots-atencion-cliente/">chatbots de IA para atención al cliente</a>.</p>
+
+                <h2 id="descripciones-producto-ia">Descripciones de producto con IA: velocidad real y riesgo de datos falsos</h2>
+
+                <p>La generación de textos de producto es el uso más extendido de la IA en e-commerce y también el que tiene la peor relación entre velocidad y riesgo. La velocidad es real: una tienda con doscientas referencias nuevas describe el catálogo entero en días en lugar de semanas. El riesgo es que el texto generado <strong>suena plausible y no está contrastado</strong>, y en una ficha de producto cualquier afirmación falsa es un problema legal y comercial a la vez.</p>
+
+                <p>El fallo típico no es la invención de cifras de negocio, sino el de <strong>atributos del producto</strong>: peso, dimensiones, materiales, compatibilidad, contenido del paquete, garantía, requisitos de instalación. Un modelo de lenguaje no consulta tu ERP, deduce a partir de patrones, y un patrón puede ser erróneo. Una descripción que dice «fabricado en acero inoxidable» cuando es acero pintado devuelve una devolución, una reseña negativa y, si el atributo es esencial, un problema de información al consumidor.</p>
+
+                <div class="callout callout-warning">
+                    <strong>Protocolo de uso responsable:</strong> la IA redacta, una persona verifica. Limita la generación a lo que no se puede falsear —tono, estructura, beneficios, orden de la información— y obliga a que todo dato técnico (medidas, materiales, compatibilidad, garantía) se copie de la ficha maestra del producto, no se escriba. En la práctica eso significa que la plantilla va rellena con datos estructurados y la IA solo trabaja sobre el texto alrededor.
+                </div>
+
+                <p>El segundo cuidado es de tono. Una ficha generada sin las directrices de la marca produce texto genérico que diluye el posicionamiento y que termina pareciéndose a la competencia, porque el modelo se ha limitado a devolver la media de lo que se escribe en el sector. Para evitarlo, conviene dar al sistema <strong>tres o cuatro fichas propias ya validadas</strong> como referencia de estilo y un listado de términos prohibidos. Es el mismo principio que se explica en <a href="../../guias/prompt-engineering-empresas/">prompt engineering para empresas</a>, aplicado a un caso concreto.</p>
+
+                <p>En el stack editorial hay dos rutas y conviene elegir una. La primera es <strong>un asistente general con licencia de equipo</strong>, útil para la tienda pequeña que necesita producir fichas y campañas sin integrar nada: es exactamente el caso de uso que describimos en <a href="../../herramientas-ia/chatgpt-enterprise/">ChatGPT Enterprise</a> y en <a href="../../herramientas-ia/claude-ai-empresas/">Claude para empresas</a>. La segunda es una <strong>herramienta editorial específica</strong> como Jasper, que trae plantillas de ficha, controles de tono y conectores de catálogo. La segunda rinde más a partir de varios redactores; con una sola persona, la diferencia real es el volumen de trabajo que te ahorra por hora.</p>
+
+                <h2 id="email-predictivo-ecommerce">Email y SMS predictivo: el mayor retorno, con un coste que escala</h2>
+
+                <p>Si hubiera que quedarse con un solo caso de uso de IA en una tienda online pequeña, sería el email. La razón no es la sofisticación del modelo, es la estructura del canal: <strong>el email no cuesta por contacto cuando ya está en tu lista</strong>, llega a la propia bandeja del cliente y no depende de ninguna plataforma externa para que un tercero lo lea. Las cifras de conversión del canal de email se sitúan muy por encima de las de cualquier red social, y un flujo automatizado no cuesta horas de trabajo.</p>
+
+                <p>La parte «predictiva» de la etiqueta significa, en la práctica, dos cosas concretas. La primera es <strong>segmentación por comportamiento</strong>: el sistema separa a quien compró una vez, a quien repite, a quien está a punto de dejar de comprar y a quien nunca ha convertido, y adapta el mensaje a cada grupo. La segunda es <strong>momento y contenido del envío</strong>: en lugar de programar un carrito abandonado a las dos horas de forma idéntica para todos, la herramienta decide el momento según el patrón histórico de compra de ese cliente concreto, que en muchas categorías es un patrón claramente nocturno y de fin de semana.</p>
+
+                <p>El modelo de costes es lo que hay que vigilar con atención, porque aquí está el principal error de cálculo de las tiendas. <strong>No se paga por envío, se paga por contactos</strong>. El plan gratuito cubre hasta 250 contactos y 500 envíos mensuales; a partir de ahí, el precio escala con el tamaño de la lista, no con la actividad. El efecto práctico es que una campaña de captación de suscriptores puede disparar la factura del mes siguiente sin haber generado ni un pedido, porque cada nuevo suscriptor mantiene el listón del siguiente escalón durante doce meses.</p>
+
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Plan de email (Klaviyo)</th>
+                                <th>Contactos incluidos</th>
+                                <th>Precio de lista</th>
+                                <th>Equivalente aproximado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gratuito</td>
+                                <td>Hasta 250 contactos</td>
+                                <td>0 € (500 envíos al mes)</td>
+                                <td>Suficiente para validar los primeros flujos</td>
+                            </tr>
+                            <tr>
+                                <td>Entrada</td>
+                                <td>Hasta 500 contactos</td>
+                                <td>Desde 20 USD/mes</td>
+                                <td>Unos 18 € al mes</td>
+                            </tr>
+                            <tr>
+                                <td>Intermedio</td>
+                                <td>1.000 contactos</td>
+                                <td>45 USD/mes</td>
+                                <td>Unos 41 € al mes</td>
+                            </tr>
+                            <tr>
+                                <td>Avanzado</td>
+                                <td>5.000 contactos</td>
+                                <td>90 USD/mes</td>
+                                <td>Unos 82 € al mes</td>
+                            </tr>
+                            <tr>
+                                <td>Alto volumen</td>
+                                <td>10.000 contactos</td>
+                                <td>150 USD/mes</td>
+                                <td>Unos 137 € al mes</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Coste real del año</strong></td>
+                                <td colspan="3">Con 1.000 contactos que crecen un 8 % anual, el primer año se factura a 45 USD/mes los doce meses (540 USD al año) y el salto al escalón de 5.000 contactos no llega hasta el tercer año. El coste real es la factura del mes sobre el tamaño actual de la lista, no el precio de portada.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La segunda partida del email es el <strong>SMS</strong>, que funciona de forma distinta y con otro criterio económico. Tiene mejor tasa de apertura, pero también peor percepción y coste por mensaje más alto, así que el uso sensato es <strong>transaccional y de aviso</strong> —pedido confirmado, envío en salida, falta de stock— más algún flujo de recuperación de carrito de alto valor, nunca con newsletters de marketing. Mezclar marketing en SMS es la vía rápida para que el volumen de bajas supere al de ventas.</p>
+
+                <p>La tercera es el cumplimiento. En España, el envío de comunicaciones comerciales por correo electrónico se apoya en el <strong>consentimiento previo del destinatario</strong> y la Ley de Servicios de la Sociedad de la Información obliga a identificar la opción de baja de forma clara. Una segmentación por comportamiento hecha con IA no cambia nada de eso: <strong>sigue haciendo falta una base legal para contactar y un registro de cómo se obtuvo</strong>. Los perfiles que se calculan para decidir a quién escribir no exoneran de nada. Lo explicamos con detalle en la sección legal.</p>
+<h2 id="publicidad-automatizada-ia">Performance Max y Advantage+: qué necesita la IA publicitaria para no gastar en balde</h2>
+
+                <p>La publicidad automatizada es donde la IA genera las cifras más llamativas y también donde se pierde más dinero sin saberlo. El motivo está en el funcionamiento: en lugar de crear campañas separadas por canal, el sistema <strong>decide por su cuenta dónde mostrar tu presupuesto</strong> —búsqueda, shopping, display, vídeo, descubrimiento— y en qué proporción. El anunciante fija el objetivo y la cantidad diaria; el reparto lo hace el algoritmo.</p>
+
+                <p>Ese automatismo funciona cuando hay datos, y falla de forma cara cuando no los hay. Una campaña de Performance Max necesita un volumen mínimo de conversiones por grupo de productos para salir de la fase de aprendizaje; por debajo de ese umbral, el sistema no tiene con qué comparar y acaba repartiendo presupuesto hacia contextos que no convierten. Performance Max en una tienda con veinte pedidos al mes no está automatizando mejor: está automatizando la dispersión.</p>
+
+                <div class="callout">
+                    <strong>Estimación propia — presupuesto mínimo viable para Performance Max:</strong> presupuesto mensual ÷ CPA objetivo = conversiones necesarias. El CPA objetivo sale del margen: valor medio de pedido × margen bruto × porcentaje del margen disponible para adquisición. Si el valor medio de pedido es 80 €, el margen bruto del 55 % y dedicas un 25 % de ese margen a publicidad, el CPA objetivo es 11 €, y si el sistema necesita 50 conversiones para abandonar la fase de aprendizaje, <strong>el presupuesto mínimo mensual ronda los 550 €</strong>. Por debajo de esa cifra, una campaña de búsqueda manual con control de términos suele rendir mejor.
+                </div>
+
+                <p>La otra mitad del trabajo publicitario con IA es la <strong>calidad del feed de producto</strong>. Performance Max multiplica el valor de un catálogo bien descrito y multiplica el desperdicio de uno mal descrito. Título, atributos, disponibilidad y precio tienen que estar sincronizados y completos; si el feed llega con datos obsoletos, la campaña se optimiza sobre un inventario que ya no existe y el resultado es dinero quemado en impresiones de productos agotados. Es el mismo principio de <strong>datos antes que automatización</strong>, aplicado a un canal distinto.</p>
+
+                <p>Un matiz importante para el mercado español: <strong>el feed también alimenta el panel de Shopping y los resultados con precios que aparecen en el buscador</strong>, así que su calidad no solo afecta a la campaña de pago, sino a la visibilidad orgánica del catálogo. Invertir una tarde en completar atributos de producto tiene un retorno que ninguna campaña de Display iguala.</p>
+
+                <h2 id="forecast-stock-ia">Forecasting de stock y roturas de inventario</h2>
+
+                <p>La previsión de existencias usa el histórico de ventas para responder a una pregunta muy concreta: <strong>¿qué cantidad pedir de cada referencia y cuándo?</strong> Hasta hace poco eso se resolvía con una regla fija —reponer cuando quedan dos unidades, pedir la misma cantidad— y esa regla es exactamente lo que un modelo mejora, porque el patrón de venta por referencia casi nunca es uniforme.</p>
+
+                <p>El beneficio no es teórico, y tiene dos componentes que se miden por separado. El primero es <strong>evitar roturas</strong>: una referencia popular que se queda a cero pierde las ventas que habrían ocurrido y además empuja al cliente a comprar el competidor. El segundo es <strong>liberar caja inmovilizada</strong>: pedir de más no cuesta solo el capital, también cuesta almacén y, en muchas categorías, caducidad. Una herramienta de previsión de stock bien usada mejora las dos cosas a la vez, y esa segunda es la que suele ignorar el departamento de finanzas.</p>
+
+                <div class="callout">
+                    <strong>Dónde está el límite real del forecasting en e-commerce:</strong> el modelo predice sobre tu histórico, y tu histórico no contiene la campaña puntual que hiciste en noviembre, ni el cambio de proveedor, ni la rotura del competidor. En artículos de larga vida y venta estable predice bien; en artículos de tendencia, recogidas de temporada y productos con campaña ya planificada, el error sube y la utilidad baja. La regla es: <strong>no automatices la compra de lo que sabes que es impredecible</strong>, automatiza la reposición de lo que tiene demanda estable.
+                </div>
+
+                <p>Hay además una condición técnica que no se puede saltar: <strong>el histórico tiene que tener datos de demanda suficientes y no solo de venta</strong>. Si llevas dos años vendiendo siempre lo mismo porque solo había stock, tu histórico no te dice qué habría ocurrido con más unidades. Un forecasting instalado sobre ese histórico va a devolver exactamente la misma decisión que dabas a mano, y vas a pagar por confirmar lo que ya sabías.</p>
+
+                <p>Y un último matiz de integración que suele descubrirse tarde: <strong>el pronóstico solo vale si puede reponer rápido</strong>. Si el proveedor tarda quince días en servir y tú tardas tres en pedir, un pronóstico perfecto produce una previsión de rotura que no puedes corregir. El retorno de esta categoría depende menos del modelo que de <strong>la velocidad de la cadena de suministro</strong>. La conectamos con la vertiente de <a href="../../comparativas/ia-logistica/">IA para logística</a>, donde el mismo problema aparece en la gestión del transporte.</p>
+
+                <h2 id="fraude-y-bots-tienda">Fraude, bots y ataques de credenciales contra tu tienda online</h2>
+
+                <p>La otra cara de tener una tienda abierta en internet es que también atrae automatización hostil. Los tres vectores que más se ven en comercio electrónico son el <strong>fraude de tarjeta</strong> —pedidos con datos que no llegan, cobros rechazados y contracargos—, el <strong>uso de tarjetas robadas en cuentas nuevas</strong>, conocido como secuestro de cuentas, y el <strong>tráfico de bots</strong>: registros masivos, publicación de reseñas falsas, acaparamiento de stock y raspado de catálogo para reventa.</p>
+
+                <p>La IA aporta aquí dos cosas distintas. La <strong>detección de patrones</strong> es la útil: modelos que combinan señales del pedido —localización de la IP frente a la dirección de envío, patrón de navegación, velocidad de creación de la cuenta, histórico del dispositivo, importe y método de pago— detectan tramas que una regla fija no ve, porque las tramas cambian y la regla no. La segunda es más discutible: <strong>el scoring automático de pedidos</strong>, que puede rechazar pedidos legítimos de clientes que no parecen el perfil habitual. Ese riesgo es real y hay que medirlo.</p>
+
+                <div class="callout callout-warning">
+                    <strong>El coste oculto del falso positivo:</strong> un pedido legítimo bloqueado no produce una queja visible sino una compra perdida, y en una tienda con ticket medio bajo puede pasar desapercibido durante meses. Si activas scoring automático, <strong>mide el porcentaje de pedidos rechazados y el porcentaje de devoluciones por contracargo al mismo tiempo</strong>. Si sube el rechazo y no baja la incidencia de fraude, el sistema está funcionando al revés.
+                </div>
+
+                <p>El punto que casi no se trata en las tiendas pequeñas es distinto: <strong>la exposición de credenciales</strong>. Paneles de administración con contraseña reutilizada, accesos de terceros que llevan años dados de alta y sin registro de quién accede. Antes de invertir en detección de fraude, cerrar el panel de administración con <strong>doble factor, usuarios individuales y registro de auditoría</strong> cuesta cero y elimina la mayoría de la exposición. Lo ampliamos en <a href="../../herramientas-ia/seguridad-etica-ia/">seguridad y ética en IA</a>.</p>
+
+                <h2 id="marketplaces-ia">IA en marketplaces y en la gestión multicanal</h2>
+
+                <p>Una parte creciente de la facturación de las tiendas online multivendedor no pasa por su propia web, sino por marketplaces: marketplaces de gigantes del retail, plataformas de grupos de compra o el propio perfil de tu marca dentro de un marketplace ajeno. Cada uno aplica <strong>su propia lógica de contenido y su propio sistema de recomendación</strong>, y esa lógica ya es IA.</p>
+
+                <p>La consecuencia práctica es que optimizas dos motores a la vez. El tuyo, con las reglas que hemos descrito en recomendación, búsqueda y email. Y el del marketplace, sobre el que <strong>tienes mucha menos palanca</strong>: el título, las imágenes, el precio y las variantes determinan dónde te colocas, y las reseñas determinan tu conversión con más peso que tu descripción. La consecuencia práctica para el presupuesto es que una parte de tu inversión en IA vuelve como merchandising, no como publicidad pagada.</p>
+
+                <p>El segundo problema de la gestión multicanal es de <strong>consistencia de precio</strong>. El mismo artículo con tres precios distintos en tres canales genera la fricción más cara que existe: el cliente encuentra el más barato en otro sitio y te compra con desconfianza cuando ve la diferencia. Ahí la IA aporta menos que un ERP bien configurado, y conviene ser honesto sobre eso: <strong>ninguna herramienta de IA resuelve un problema de datos maestros</strong>.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tarea</th>
+                                <th>Qué decide la IA de tu tienda</th>
+                                <th>Qué decides tú en un marketplace</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Descubrimiento</strong></td>
+                                <td>Recomienda y posiciona según comportamiento de visita</td>
+                                <td>Título, imágenes, atributos y palabras clave del listado</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Conversión</strong></td>
+                                <td>Personaliza la página y el carrito</td>
+                                <td>Precio, Prime, cupón, número de reseñas y valoración</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Conversión</strong></td>
+                                <td>Recupera el carrito abandonado por email y SMS</td>
+                                <td>Mensajería del marketplace y herramientas de cupón</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Stock</strong></td>
+                                <td>Previsión de stock por referencia</td>
+                                <td>Compromiso de entrega y penalización por rotura</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Coste real</strong></td>
+                                <td>Visible en tu factura de herramientas</td>
+                                <td><strong>Directo en comisión por venta</strong>, que suele ser el margen entero de un producto de bajo ticket</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La conclusión operativa de esta sección es poco popular: <strong>antes de multiplicar canales, hay que tener el catálogo resuelto</strong>. Un marketplace con trescientas fichas incompletas vende peor que uno con ochenta completas, porque el buscador interno del marketplace solo puede pasarte clientes que encuentra, y solo encuentra lo que está bien descrito.</p>
+<h2 id="tabla-precios-ia-ecommerce">Tabla comparativa de precios de herramientas de IA para e-commerce</h2>
+
+                <p>La tabla siguiente recoge los precios de entrada de las herramientas que han aparecido en las secciones anteriores, con el importe original en dólares entre paréntesis cuando la tarifa oficial está publicada en esa moneda. La equivalencia utilizada es <strong>1 USD = 0,91 EUR</strong> y es aproximada: la factura se emite en la moneda de origen y el tipo de cambio real lo aplica el proveedor en el momento del cobro. Todas las tarifas están tomadas de las páginas oficiales de cada fabricante recogidas en el apartado de fuentes.</p>
 
                 <div class="price-table">
                     <table>
@@ -266,172 +481,337 @@
                             <tr>
                                 <th>Herramienta</th>
                                 <th>Precio de entrada</th>
-                                <th>Modelo</th>
-                                <th>Mejor para</th>
+                                <th>Modelo de coste</th>
+                                <th>Función principal</th>
+                                <th>Trampa de coste</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Shopify (IA incluida)</strong></td>
-                                <td>36 €/mes (39 USD) Basic</td>
-                                <td>Suscripción plataforma</td>
-                                <td>Tienda completa con IA de serie</td>
+                                <td><strong>Shopify</strong></td>
+                                <td>39 USD/mes el plan Basic (unos 36 €)</td>
+                                <td>Suscripción por tienda</td>
+                                <td>IA de contenido y de datos de negocio incluida</td>
+                                <td>Las apps y funciones avanzadas se contratan aparte</td>
                             </tr>
                             <tr>
                                 <td><strong>Klaviyo</strong></td>
-                                <td>Gratis hasta 250 contactos; desde 18 €/mes (20 USD)</td>
-                                <td>Por contactos</td>
-                                <td>Email y SMS predictivo</td>
+                                <td>Gratis hasta 250 contactos; desde 20 USD/mes (unos 18 €)</td>
+                                <td>Por contactos, no por envíos</td>
+                                <td>Email y SMS con flujos y segmentación</td>
+                                <td><strong>La lista crece y la factura sube sola</strong>, incluso sin más envíos</td>
                             </tr>
                             <tr>
                                 <td><strong>Algolia</strong></td>
-                                <td>Desde 23 €/mes (25 USD) + 0,91 €/1.000 búsquedas</td>
+                                <td>1 USD por mil búsquedas, con mínimo de 25 USD/mes (unos 23 €)</td>
                                 <td>Por uso</td>
-                                <td>Búsqueda interna con IA</td>
+                                <td>Búsqueda interna con tolerancia a error y sinónimos</td>
+                                <td>El mínimo mensual pesa en tiendas con poco tráfico interno</td>
                             </tr>
                             <tr>
                                 <td><strong>Nosto</strong></td>
-                                <td>Desde ~82 €/mes (90 USD)</td>
-                                <td>Por facturación, anual</td>
-                                <td>Recomendaciones y personalización</td>
+                                <td>Sin tarifa pública</td>
+                                <td>Por volumen de facturación, con contrato anual</td>
+                                <td>Recomendaciones y personalización por comportamiento</td>
+                                <td>Compromiso anual antes de tener el catálogo limpio</td>
                             </tr>
                             <tr>
                                 <td><strong>Tidio</strong></td>
-                                <td>Gratis básico; desde 26 €/mes (29 USD) con IA</td>
+                                <td>Plan gratuito limitado; desde 29 USD/mes con IA (unos 26 €)</td>
                                 <td>Suscripción</td>
-                                <td>Chat y chatbot de venta</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Performance Max</strong></td>
-                                <td>Sin licencia; presupuesto desde 300 €/mes</td>
-                                <td>Puja por clic/conversión</td>
-                                <td>Publicidad automatizada</td>
+                                <td>Chat en vivo y chatbot</td>
+                                <td>Las conversaciones adicionales se cobran por volumen</td>
                             </tr>
                             <tr>
                                 <td><strong>ChatGPT Plus</strong></td>
-                                <td>18 €/mes (20 USD)</td>
-                                <td>Suscripción</td>
-                                <td>Contenido y análisis</td>
+                                <td>20 USD/mes (unos 18 €)</td>
+                                <td>Suscripción individual</td>
+                                <td>Redacción de fichas y campañas</td>
+                                <td>Sin acceso a los datos de la tienda: no automatiza nada</td>
                             </tr>
                             <tr>
                                 <td><strong>Triple Whale</strong></td>
-                                <td>Desde ~90 €/mes (99 USD)</td>
-                                <td>Por facturación, anual</td>
-                                <td>Atribución multicanal</td>
+                                <td>Sin tarifa pública</td>
+                                <td>Por facturación, con contrato anual</td>
+                                <td>Atribución unificada multicanal</td>
+                                <td>Justificado solo con varios canales con presupuesto</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Performance Max</strong></td>
+                                <td>Sin coste de licencia; presupuesto publicitario</td>
+                                <td>Presupuesto diario definido por el anunciante</td>
+                                <td>Reparto automático de inversión entre canales</td>
+                                <td><strong>Sin volumen de conversiones, dispersa el presupuesto</strong></td>
                             </tr>
                             <tr class="highlight-row">
-                                <td><strong>Stack básico recomendado</strong></td>
-                                <td colspan="3"><strong>18-36 €/mes:</strong> ChatGPT Plus (18 €) + Klaviyo (gratis/18 €) + IA de tu plataforma = contenido + email + conversión</td>
+                                <td><strong>Stack mínimo</strong></td>
+                                <td>Entre 18 € y 36 € al mes</td>
+                                <td colspan="3">ChatGPT Plus más el plan gratuito de email más la IA de la propia plataforma: cubre contenido, email de carrito abandonado y consultas básicas sin compromiso anual.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <h2 id="errores">Errores habituales al usar IA en ecommerce</h2>
+                <p>Un par de precisiones sobre cómo leer esa tabla. La primera es que <strong>las herramientas sin tarifa pública no son secretas por capricho</strong>: en los dos casos de esta lista, la ausencia de precio corresponde a un modelo comercial de contrato anual vinculado al volumen de facturación, donde el precio se calcula en la negociación. Eso no significa que sean caras; significa que <strong>no puedes compararlas por tarifa</strong>, solo por retorno una vez implantadas.</p>
 
-                <ul>
-                    <li><strong>Publicar descripciones sin revisar:</strong> la IA genera texto plausible pero también inventa. Una ficha que afirma características falsas del producto (peso, materiales, garantía) genera devoluciones y reseñas negativas. Regla: IA redacta, humano verifica, siempre.</li>
-                    <li><strong>Pagar por contactos que no compran:</strong> Klaviyo cobra por el tamaño de la lista, no por el número de envíos. Una lista inflada con suscriptores inactivos encarece el plan sin aportar ingresos. Limpia tu lista antes de escalar de plan.</li>
-                    <li><strong>Instalar algo para cada problema:</strong> cinco herramientas que se solapan (recomendaciones, emails, pop-ups) canibalizan presupuesto y confunden la medición. Una herramienta bien configurada por embudo ganador vale más que cinco a medias.</li>
-                    <li><strong>Olvidar que la IA aprende de datos:</strong> Performance Max sin histórico de conversiones, Nosto sin tráfico o Algolia sin catálogo completo son herramientas vacías. Primero datos, después automatización.</li>
-                    <li><strong>No medir el retorno:</strong> antes del descuento por volumen y del contrato anual, exige a cada herramienta un piloto con métrica de referencia: ingresos por email, conversión de búsqueda, ticket medio. Si en 60 días no hay mejora medible, no renueves.</li>
-                </ul>
+                <p>La segunda precisión es sobre los umbrales del plan gratuito. El de email cubre hasta 250 contactos y 500 envíos mensuales; el de chat tiene límites de asistentes y de conversaciones. Los dos sirven para <strong>medir antes de pagar</strong>, que es la forma correcta de usarlos: dejar los flujos activos sesenta días con el plan gratuito, medir la conversión de verdad y solo entonces decidir si el salto a plan de pago devuelve lo que cuesta.</p>
 
-                <div class="callout callout-warning">
-                    <strong>Cuidado con el RGPD en email:</strong> el envío de email comercial en España requiere consentimiento explícito y un registro de cómo se obtuvo. Importar listas compradas o enviar sin base legal a contactos que no dieron su consentimiento expone a sanciones de la AEPD que superan con creces el coste de la herramienta de email.
+                <div class="callout">
+                    <strong>Sobre la conversión de moneda:</strong> todos los importes en euros de esta tabla son una aproximación calculada a 1 USD = 0,91 EUR para hacer comparables tarifas de fabricantes distintos. El importe que pagas es el de la factura en su moneda original, y una variación del tipo de cambio de un 5 % modifica el coste anual de una suscripción de 100 USD en unos 55 €. En contratos anuales eso es irrelevante frente al coste de cambiar de herramienta, pero en planes mensuales de pago automático es un argumento para factura anual.
                 </div>
 
-                <h2 id="duelo">Shopify Magic vs Klaviyo: el duelo</h2>
+                <h2 id="coste-total-propiedad">El coste total que no aparece en la tarifa</h2>
 
-                <p>La IA integrada de la plataforma frente al especialista en email predictivo: las dos herramientas con las que casi toda tienda empieza en 2026.</p>
+                <p>El coste real de una herramienta de IA para e-commerce no es la tarifa mensual, y esa es la razón por la que dos tiendas con la misma suscripción acaban con resultados opuestos. La tarifa es solo la parte que se ve en la factura. Las otras cuatro aparecen en el tiempo, y se pagan en horas.</p>
 
-                <div class="comparison-table">
+                <ul>
+                    <li><strong>Implantación e integración.</strong> Cuantas más piezas toque (catálogo, pedidos, CRM, pasarela de pago, ERP), más cuesta la conexión inicial y más probable es que aparezca una actualización de la plataforma que la rompa.</li>
+                    <li><strong>Mantenimiento mensual.</strong> Una herramienta conectada al catálogo necesita revisión de campos, de reglas y de resultados. Si nadie lo hace en dos meses, el resultado es una configuración que ya no refleja la tienda.</li>
+                    <li><strong>Contenido y formación.</strong> Los planes de pago de los grandes proveedores de IA no entrenan con el contenido de la empresa; los planes individuales pueden hacerlo, y ese matiz se desarrolla más abajo porque tiene consecuencias legales.</li>
+                    <li><strong>Licencias de equipo.</strong> El coste que casi nunca se presupuesta: cuántas personas de la empresa necesitan acceso a un asistente y a qué plan.</li>
+                    <li><strong>Formación y adopción.</strong> Una herramienta que nadie usa tiene un retorno exactamente igual a cero, independientemente de lo que diga la ficha del fabricante.</li>
+                </ul>
+
+                <p>El quinto punto merece desarrollo porque es el que decide el proyecto. <strong>Una suscripción que nadie usa es un coste fijo mensual y ningún beneficio</strong>. Esto es especialmente cierto en la IA, donde el valor no está en el acceso al modelo sino en el criterio de la persona que lo usa: la misma herramienta produce resultados muy distintos según si quien la escribe sabe pedir bien lo que quiere. Por eso una guía de <a href="../../guias/prompt-engineering-empresas/">instrucciones para empresas</a> no es documentación opcional antes de un despliegue, es parte del coste.</p>
+
+                <p>El error de cálculo más habitual al presupuestar es tratar las horas internas como gratis porque no salen de la nómina. <strong>Una hora de la persona responsable de marketing no vale cero</strong>, vale su coste horario ya cargado más el coste de oportunidad de lo que habría hecho con esa hora. En una operación pequeña ese coste de oportunidad suele ser el más grande del proyecto y el único que nadie incluye en la hoja de cálculo.</p>
+
+                <h2 id="licencias-ia-equipo">Las licencias de IA para el equipo que lleva la tienda</h2>
+
+                <p>Hay una partida que rara vez aparece en las comparativas de herramientas de e-commerce y que condiciona el resultado: <strong>la licencia con la que trabaja el equipo</strong>. Alguien tiene que escribir las fichas, alguien las campañas, alguien responde a los clientes y alguien revisa el catálogo. Si esas cuatro personas usan cuentas individuales gratuitas, se pierde justamente lo que hace útil a la IA en un equipo: el contexto compartido, el control de qué se comparte y el registro de lo que se ha hecho.</p>
+
+                <p>La tabla siguiente recoge los precios de los planes de equipo verificados a fecha de hoy. Todos están expresados <strong>por usuario y por mes</strong>, y varios solo tienen precio en dólares con facturación anual, lo que es un detalle relevante para una pyme con presupuesto anual ya cerrado.</p>
+
+                <div class="price-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Criterio</th>
-                                <th>Shopify (Magic + Sidekick)</th>
-                                <th>Klaviyo</th>
+                                <th>Plan</th>
+                                <th>Proveedor</th>
+                                <th>Precio por asiento y mes</th>
+                                <th>Condición</th>
+                                <th>Asientos</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Precio de entrada</strong></td>
-                                <td>Incluida en los planes: desde 36 €/mes (Basic)</td>
-                                <td>Gratis hasta 250 contactos; desde 18 €/mes</td>
+                                <td><strong>ChatGPT Business Standard</strong></td>
+                                <td>OpenAI</td>
+                                <td>21 €</td>
+                                <td>Facturación anual</td>
+                                <td>De 2 a 200</td>
                             </tr>
                             <tr>
-                                <td><strong>Función principal</strong></td>
-                                <td>Descripciones de producto, resúmenes de pedidos y respuestas de negocio sobre tus datos</td>
-                                <td>Email y SMS predictivo: carrito abandonado, recompra y segmentación automática</td>
+                                <td><strong>ChatGPT Business Premium</strong></td>
+                                <td>OpenAI</td>
+                                <td>105 €</td>
+                                <td>Facturación anual</td>
+                                <td>De 2 a 200</td>
                             </tr>
                             <tr>
-                                <td><strong>Dónde actúa</strong></td>
-                                <td>Dentro de la plataforma, sobre tu catálogo y pedidos</td>
-                                <td>Sobre tu lista de contactos y su historial de compra</td>
+                                <td><strong>ChatGPT Enterprise</strong></td>
+                                <td>OpenAI</td>
+                                <td>Precio a consultar</td>
+                                <td>Sin precio público</td>
+                                <td>Sin mínimo publicado</td>
                             </tr>
                             <tr>
-                                <td><strong>Retorno principal</strong></td>
-                                <td>Ahorro de tiempo en fichas y gestión</td>
-                                <td>Ingresos directos: los flujos automatizados suponen ~30% del email</td>
+                                <td><strong>Claude Team</strong></td>
+                                <td>Anthropic</td>
+                                <td>20 US$ (25 US$ si se factura mensual)</td>
+                                <td>Facturación anual</td>
+                                <td>De 2 a 150</td>
                             </tr>
                             <tr>
-                                <td><strong>Mejor para</strong></td>
-                                <td>Tiendas que empiezan y quieren IA de serie sin instalar nada</td>
-                                <td>Tiendas con tráfico estable que quieren atacar el email</td>
+                                <td><strong>Claude Team Premium</strong></td>
+                                <td>Anthropic</td>
+                                <td>100 US$ (125 US$ si se factura mensual)</td>
+                                <td>Facturación anual</td>
+                                <td>De 2 a 150</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Claude Enterprise</strong></td>
+                                <td>Anthropic</td>
+                                <td>20 US$ más consumo de API a tarifa</td>
+                                <td>Facturación anual</td>
+                                <td>Consultar</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Workspace Business Starter</strong></td>
+                                <td>Google</td>
+                                <td>6,80 € por usuario</td>
+                                <td>Tarifa en euros para España</td>
+                                <td>Mínimo 1 usuario</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Workspace Business Standard</strong></td>
+                                <td>Google</td>
+                                <td>13,60 € por usuario</td>
+                                <td>Tarifa en euros para España</td>
+                                <td>Mínimo 1 usuario</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Workspace Business Plus</strong></td>
+                                <td>Google</td>
+                                <td>21,10 € por usuario</td>
+                                <td>Tarifa en euros para España</td>
+                                <td>Mínimo 1 usuario</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gemini Enterprise Business</strong></td>
+                                <td>Google</td>
+                                <td>Desde 21 US$ por asiento</td>
+                                <td>Facturación en dólares</td>
+                                <td>Hasta 300</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <p><strong>Elige Shopify Magic</strong> si empiezas y quieres IA de serie dentro de tu plataforma sin instalar nada. <strong>Elige Klaviyo</strong> si ya tienes tráfico y volumen de contactos: el email predictivo y el carrito abandonado son la pieza con retorno más directo de todo el stack.</p>
+                <p>La aritmética para una tienda online de tamaño pequeño es sencilla y conviene hacerla antes de elegir. Con <strong>tres personas</strong> —contenidos, atención al cliente y dirección comercial— un plan de equipo de OpenAI Standard cuesta <strong>63 € al mes</strong> (21 € × 3) facturados anualmente, y la alternativa equivalente en Claude Team cuesta <strong>60 US$ al mes</strong> (20 US$ × 3) más impuestos. Si se elige la factura mensual, la misma cifra en Claude sube a 75 US$. En una empresa de seis personas, ChatGPT Standard ya son 126 € al mes.</p>
 
-                <h2 id="veredicto">Veredicto por perfil de tienda</h2>
+                <p>Ahora las dos diferencias que no aparecen en la tabla y que para una tienda online sí importan. La primera es <strong>el tratamiento de los datos</strong>: los planes de negocio de ChatGPT no entrenan con el contenido de la empresa, y Claude Team y Enterprise operan sin entrenamiento por defecto; los planes individuales de los tres sí pueden usar ese contenido para entrenar, salvo que se desactive expresamente. Para una tienda que maneja listas de clientes y fichas de proveedores, esa diferencia no es un matiz: es la frontera entre <strong>un dato que sale de la casa con contrato y otro que sale sin contrato</strong>.</p>
 
-                <div class="rating-box">
-                    <div class="rating-text">
-                        <p>La IA para ecommerce en 2026 es la palanca de conversión más rentable que tiene una tienda online: el email predictivo y el chatbot devuelven varias veces su coste cuando el embudo básico ya funciona, y la IA de las plataformas permite empezar sin desembolso. El error no es quedarse atrás en IA, es pagar por herramientas especializadas antes de tener los datos y el volumen que las hacen funcionar. El recorrido recomendado es siempre el mismo: primero la plataforma, luego el email, después el chatbot, y solo al final las capas premium de personalización y atribución.</p>
-                    </div>
+                <p>La segunda es <strong>la gobernanza</strong>. El inicio de sesión único, el aprovisionamiento automático de usuarios, los registros de auditoría, el acuerdo de nivel de servicio y la residencia de datos en la Unión Europea no vienen en ningún plan individual, ni de ningún proveedor: solo existen en planes de empresa. Para una tienda con dos personas, eso no importa. Para una operación con veinte personas y varios proveedores accediendo al mismo catálogo, es la diferencia entre poder responder a «quién accedió a qué» o no poder responderlo.</p>
+
+                <div class="callout">
+                    <strong>Estimación propia — coste de licencias para una tienda de cinco personas:</strong> ChatGPT Business Standard: 21 € × 5 = 105 €/mes, facturado en un único pago de 1.260 € al año. Claude Team: 20 US$ × 5 = 100 US$/mes en pago anual, o 125 US$/mes en pago mensual. Google Workspace Business Standard aporta además el correo corporativo de la empresa por 13,60 € por usuario y mes, lo que en cinco personas son 68 €/mes y <strong>puede sustituir a un plan de IA si el uso real es resumen de correos y redacción</strong>. Conviene evaluar ambas cosas antes de pagar dos suscripciones que se solapan.
                 </div>
 
-                <h3>Estas herramientas son para ti si:</h3>
-                <ul>
-                    <li>Tienes una tienda online con tráfico estable y el email de carrito abandonado lo envías a mano o no lo envías</li>
-                    <li>Tu búsqueda interna no encuentra productos o los clientes se van sin comprar lo que buscaban</li>
-                    <li>Recibes consultas repetitivas de envíos y devoluciones que te roban horas de gestión</li>
-                    <li>Quieres reducir el coste por pedido sin contratar más personal de marketing</li>
-                </ul>
+                <p>El criterio de elección, en una frase: <strong>si el uso de la IA es redactar y resumir, empieza por el plan de correo corporativo que ya pagas; si es analizar catálogo, pedidos y documentación interna, necesitas un plan de IA con contexto y sin entrenamiento</strong>. Y si vas a conectarlo a los datos de la tienda para automatizar, eso ya no es un caso de uso de licencia: es un proyecto de integración, y se presupuesta como tal. Lo explicamos con detalle en la guía sobre <a href="../../guias/cuanto-cuesta-implementar-ia/">cuánto cuesta implementar IA en una empresa</a>.</p>
+<h2 id="umbrales-de-compra">Umbrales de compra: cuándo una herramienta NO está justificada</h2>
 
-                <h3>Estas herramientas NO son para ti si:</h3>
-                <ul>
-                    <li>Tu tienda todavía no tiene datos: ni tráfico estable, ni histórico de conversiones, ni volumen de contactos</li>
-                    <li>El problema de fondo es el producto, la logística o la web, y esperas que la IA lo disimule</li>
-                    <li>Tu presupuesto no cubre la gestión activa que requiere cada herramienta (nadie vende solo por instalar algo)</li>
-                    <li>No quieres o no puedes medir el retorno de cada suscripción</li>
-                </ul>
+                <p>La mayor parte del gasto innecesario en IA para e-commerce no viene de elegir mal entre dos herramientas, sino de contratar una que no debía todavía. Estas cuatro preguntas, contestadas con un número, sirven de filtro antes de cualquier tarjeta de crédito.</p>
 
-                <div class="callout callout-info">
-                    <strong>Nota de conversión:</strong> precios en USD según tarifas oficiales de cada fabricante (septiembre 2026). Equivalencia aproximada en EUR: 1 USD = 0,91 EUR. El precio final lo fija siempre la facturación del fabricante.
+                <p><strong>1. ¿Cuántos contactos activos tienes?</strong> Por debajo de 250 contactos, el plan gratuito de email cubre el caso completo y cualquier plan de pago es dinero por volumen que todavía no tienes. La pregunta relevante no es «¿cuántos suscriptores tengo?», sino <strong>«¿cuántos han comprado alguna vez en los últimos doce meses?»</strong>. Un suscriptor que se darse de baja en 2023 no es un contacto que valga un escalón de tarifa.</p>
+
+                <p><strong>2. ¿Cuánto volumen de búsquedas internas genera tu web?</strong> Si el buscador nativo recupera ya la mayoría de las búsquedas, el salto a un motor con IA no aporta y se paga igual. Haz la prueba contraria: mide en la consola de búsqueda las consultas que <strong>terminan en cero resultados</strong> y calcula el valor medio de pedido. Ese producto es lo que la herramienta te devuelve si funciona.</p>
+
+                <p><strong>3. ¿Cuántos pedidos al mes tienes?</strong> Por debajo de unos 30 pedidos mensuales, las herramientas de atribución y de publicidad automatizada no tienen datos suficientes para producir una lectura. No es que sean malas herramientas: es que <strong>necesitan una muestra mínima para decidir y tu operación todavía no la tiene</strong>.</p>
+
+                <p><strong>4. ¿Alguien va a revisar lo que produce?</strong> Sin una persona que valide fichas, respuestas de bot y predicciones, el sistema propaga errores a una velocidad que nadie puede corregir. En una tienda con cinco referencias y una persona a media jornada, la revisión es asumible. En una tienda con dos mil referencias y nadie dedicado, no lo es, y el resultado neto es negativo.</p>
+
+                <div class="callout">
+                    <strong>Estimación propia — umbral de ruptura de la herramienta de búsqueda:</strong> la herramienta de búsqueda es viable cuando el valor recuperado por búsquedas fallidas iguala o supera su coste. Fórmula: búsquedas fallidas mensuales × tasa de conversión de búsqueda × margen bruto por pedido ≥ coste anual de la herramienta. Con 400 búsquedas fallidas al mes, un 20 % de conversión y un margen de 22 € por pedido, el margen recuperado es de 1.760 € al mes, que sostiene de sobra una factura de 25 USD. Con 60 búsquedas fallidas al mes, el margen recuperado baja a 264 € al mes, que no cubre una suscripción de 250 € anuales más el mínimo mensual.
                 </div>
+
+                <h2 id="calculo-roi-ia-ecommerce">Cómo calcular el ROI de cada herramienta sin engañarte</h2>
+
+                <p>El error más común al medir el retorno de una herramienta de IA es atribuirle ventas que se habrían producido igual. Una tienda que instala email de carrito abandonado el mismo mes que lanza un producto estrella registra un alza en ventas y la atribuye al email. Para evitar eso hace falta una medición con estructura, y hay tres niveles de fiabilidad que conviene no confundir.</p>
+
+                <p><strong>Nivel 1, el más simple:</strong> los ingresos que el propio sistema etiqueta. Los flujos de email identifican qué contacto y qué envío abren el flujo, y el sistema atribuye esa venta. Es útil para saber qué flujo funciona, no para saber cuánto ha generado la herramienta, porque el cálculo se limita a lo que se puede medir y deja fuera lo que no.</p>
+
+                <p><strong>Nivel 2, la comparación de periodos:</strong> los mismos flujos con la herramienta activada frente al mismo periodo anterior sin ella, sobre el mismo grupo de clientes. Es más fiable que el nivel 1 y tiene una limitación evidente: <strong>cualquier otro cambio ocurrido en ese periodo queda atribuido a la herramienta</strong>. Funciona bien en una tienda estable y mal en una tienda en crecimiento acelerado.</p>
+
+                <p><strong>Nivel 3, el test controlado:</strong> un grupo de clientes que no recibe el flujo y otro que sí, con el resto de condiciones iguales. Es el único que da un número defendible, y el más raro en la pyme porque hay que aceptar perder un poco de venta en el grupo de control. La contrapartida es que <strong>los resultados negativos se ven en el propio negocio</strong>, que es el motivo por el que casi nadie lo hace.</p>
+
+                <div class="callout">
+                    <strong>La fórmula mínima que conviene tener escrita:</strong> retorno neto en un periodo = (ingresos atribuibles - ingresos que se habrían producido sin la herramienta) - coste de la herramienta - horas internas de gestión. La tercera cifra es la que más se olvida y la que más cambia el resultado. Con las cuatro sumadas y restadas, si el retorno neto sale negativo tres meses seguidos, la decisión correcta es cancelar, no optimizar.
+                </div>
+
+                <p>El detalle que convierte una medición en útil es <strong>dejar constancia del punto de partida antes de instalar</strong>. Apunta el número de pedidos, el ticket medio, la tasa de conversión de email y el porcentaje de búsquedas sin resultados la semana anterior a la instalación. Sin esa foto, cualquier resultado posterior es discutible. El problema no es la IA en ese caso: es que <strong>nadie ha medido la línea de base</strong>. Más detalle en <a href="../../guias/roi-real-empresas-ia/">el análisis de ROI real en empresas</a> y en la ficha de <a href="../../herramientas-ia/roi-ia-empresas/">cálculo de ROI con IA</a>.</p>
+
+                <h2 id="errores-implantacion-ia">Los errores de implantación que se pagan en meses de trabajo</h2>
+
+                <p>Los errores que siguen no son de elección de herramienta, sino de ejecución, y son los que separan una instalación que funciona de una suscripción que caduca. Están ordenados por lo caro que resulta corregirlos.</p>
+
+                <ul>
+                    <li><strong>Publicar descripciones generadas sin revisar.</strong> Es el más caro porque el coste aparece semanas después, en forma de devoluciones, reseñas negativas y, cuando el atributo inventado es esencial, un problema de información al consumidor. La IA redacta, una persona verifica: sin excepción.</li>
+                    <li><strong>Activar flujos de email sobre una lista sin limpiar.</strong> Cada suscriptor inactivo paga un escalón de tarifa durante doce meses. Una limpieza previa de la lista es trabajo de una tarde y es, con frecuencia, la medida de ahorro más rentable disponible.</li>
+                    <li><strong>Lanzar una campaña automatizada sin datos previos.</strong> Publicidad automatizada sin histórico de conversiones reparte presupuesto a ciegas. Es la forma más cara de tirar dinero bajo la excusa de que la herramienta no funciona.</li>
+                    <li><strong>Instalar cinco herramientas que se solapan.</strong> Dos sistemas de recomendaciones o dos de pop-ups dividen el presupuesto, confunden la atribución y acaban compitiendo entre sí. Una herramienta bien configurada por etapa del embudo rinde más que cinco a medias.</li>
+                    <li><strong>Dejar la configuración sin dueño.</strong> Una regla de recomendación que nadie revisa se queda funcionando con precios, stock y textos que ya no existen. Sin un responsable y una revisión mensual, la herramienta se degrada en silencio.</li>
+                    <li><strong>Medir la herramienta por su uso y no por su efecto.</strong> Una herramienta con muchos eventos y ninguna variación en ingresos no ha producido un resultado: solo ha producido actividad.</li>
+                    <li><strong>Ignorar la dependencia técnica.</strong> Una actualización de la plataforma puede romper una integración hecha a medida. Las integraciones estables son las que usan mecanismos propios de la plataforma; las frágiles son las que se apoyan en funciones internas no documentadas.</li>
+                </ul>
+
+                <p>Siete errores, ninguno de ellos técnico, y todos evitables con un poco de disciplina de proceso. La lista completa de <a href="../../herramientas-ia/errores-implementar-ia/">errores al implementar IA en una empresa</a> amplía este inventario a casos que no son de e-commerce.</p>
+
+                <h2 id="rgpd-ai-act-ecommerce">RGPD, AI Act y las obligaciones que ya están vigentes</h2>
+
+                <p>La parte legal de esta guía no es accesoria, y hay una fecha que cambia el panorama: <strong>desde el 2 de agosto de 2026 está en vigor el artículo 50 del Reglamento (UE) 2024/1689</strong>, el Reglamento Europeo de IA. Ese artículo es el de <strong>transparencia</strong>, y tiene dos consecuencias directas para una tienda online.</p>
+
+                <p>La primera es que <strong>una persona tiene que saber que está hablando con un sistema de IA</strong>. Si tu chatbot de atención al cliente es una IA generativa, esa condición debe ser visible para la persona que interactúa con él. La segunda es el <strong>marcado del contenido sintético</strong>: los textos e imágenes generados artificialmente que se publican con fines informativos deben poder identificarse como tales, y cuando el contenido sintético reproduce la voz o la imagen de una persona real, el marcado debe ser explícito. Para una tienda, eso afecta a las fotos de producto generadas, a los modelos de catálogo y a los vídeos de campaña.</p>
+
+                <div class="callout">
+                    <strong>Calendario del AI Act que aplica a una tienda online:</strong> obligaciones de alfabetización y prohibiciones desde el 2 de febrero de 2025; obligaciones para modelos de propósito general desde el 2 de agosto de 2025; <strong>transparencia del artículo 50 desde el 2 de agosto de 2026</strong>; aplicación general y obligaciones de alto riesgo desde el 2 de agosto de 2027; alto riesgo en productos ya regulados desde el 2 de agosto de 2028. Una tienda online no es, en general, un caso de alto riesgo: el artículo 4 y el artículo 50 son los que le aplican. El desarrollo completo está en <a href="../../guias/ia-ai-act-cumplimiento/">la guía de cumplimiento del AI Act</a>.
+                </div>
+
+                <p>El segundo bloque legal es el <strong>RGPD</strong>, y ahí la lista de tareas pendientes es más larga y más fácil de incumplir por desconocimiento. En una tienda online con IA hay tres frentes abiertos: la <strong>base legal para el tratamiento</strong> de los datos de clientes, la <strong>información al interesado</strong> sobre el tratamiento y, si hay decisiones automatizadas, el artículo 22, que regula las decisiones tomadas únicamente por medios automatizados con efectos jurídicos o significativos sobre la persona.</p>
+
+                <p>Ese último punto toca de lleno a la segmentación de email. Clasificar a un cliente como «va a dejar de comprar» y alterar el trato comercial según esa clasificación no suele llegar a ser una decisión con efectos jurídicos en sentido estricto, pero <strong>la línea es más fina de lo que parece</strong>, y lo razonable es poder explicar cómo se ha construido la clasificación y con qué datos. La <a href="https://www.aepd.es/sites/default/files/2020-02/adecuacion-rgpd-ia.pdf" rel="nofollow">AEPD publicó criterios de adecuación del RGPD a los usos de IA</a> y es el documento que conviene tener a mano al revisar cualquier segmentación automatizada.</p>
+
+                <p>El tercer frente es la <strong>transferencia internacional de datos</strong>. Cuando una IA generativa procesa fichas, reseñas o datos de clientes fuera del espacio europeo, eso es una transferencia internacional, y tiene requisitos propios. Ahí es donde la elección del plan importa: la residencia de datos en la Unión Europea es una característica de los planes de empresa de los grandes proveedores y no aparece en los planes individuales. Una tienda que empieza con cuentas personales de un asistente y acaba pegando datos de clientes en ellas ha abierto un problema que no existía cuando contrató.</p>
+
+                <p>Y un cuarto punto que también es español y que las tiendas online suelen pasar por alto: <strong>la facturación electrónica</strong>. El Reglamento Federal de Facturación y Registro, aprobado mediante el Real Decreto-ley 15/2025 y publicado en el <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2025-27314" rel="nofollow">Boletín Oficial del Estado</a>, introduce requisitos técnicos para el software que emite facturas en España, con plazos de aplicación escalonados según el tipo de empresa. Si tu herramienta de IA toca el proceso de facturación —una IA que valida albaranes o extrae datos de facturas es un caso cada vez más habitual— conviene comprobar si ese software entra en el alcance del reglamento.</p>
+
+                <h2 id="veredicto-por-perfil">Veredicto por perfil de tienda: qué instalar primero</h2>
+
+                <p>El orden de implantación es el mismo en todos los perfiles, y por eso lo merece una sección propia. Primero la <strong>IA de la plataforma</strong>, porque ya está pagada y no requiere ninguna decisión. Segundo el <strong>email de carrito abandonado y recompra</strong>, porque es el que devuelve más por euro invertido cuando el tráfico ya existe. Tercero el <strong>chatbot acotado a consultas de estado</strong>. Cuarto la <strong>búsqueda interna</strong>, en cuanto el catálogo esté ordenado. Solo a partir de ahí, las capas de personalización y atribución.</p>
+
+                <p>Hay una razón técnica detrás de ese orden y merece entenderse: <strong>cada paso da datos para el siguiente</strong>. La IA de la plataforma genera contenido; el contenido mejora el email; el email produce compras y esas compras entrenan la segmentación; el historial de compras alimenta el pronóstico de existencias; las roturas de stock te dicen qué referencias merecen más posición en el buscador. Instalar en orden inverso es instalar herramientas que se quedan sin insumo.</p>
+
+                <p>Y hay una advertencia simétrica que es más valiosa que la recomendación: <strong>ninguna de estas herramientas arregla una tienda que no convierte por su producto, su precio o su entrega</strong>. Si el problema de fondo es otro, la IA lo convierte en un problema más caro y más difícil de diagnosticar, porque a partir de cierto punto cualquier resultado se atribuye a la herramienta. La primera pregunta antes de invertir no es qué IA instalo, sino qué está fallando antes de la herramienta.</p>
 
                 <h2 id="faq">Preguntas frecuentes</h2>
 
-                <h3>¿Qué IA usan las tiendas online para vender más?</h3>
-                <p>Las cinco áreas con mejor retorno son: email predictivo (Klaviyo), búsqueda interna con IA (Algolia), personalización de recomendaciones (Nosto), chatbots de atención (Tidio) y campañas publicitarias automáticas (Performance Max). Con las funciones de IA integradas en Shopify o WooCommerce puedes empezar sin herramientas adicionales y añadir especializadas según crezca el volumen.</p>
+                <h3 id="faq-1">¿Qué IA usan las tiendas online para vender más?</h3>
+                <p>Las cinco capas con mejor retorno son el email y SMS con flujos automatizados, la búsqueda interna que entiende lenguaje natural, los sistemas de recomendación que suben el ticket medio, los chatbots que resuelven consultas de estado y la publicidad que reparte presupuesto de forma automática. Conviene instalarlas por ese orden, porque cada capa necesita los datos que produce la anterior. Para empezar sin coste adicional está la IA que ya incluye la plataforma.</p>
 
-                <h3>¿Cuánto cuesta implementar IA en una tienda online?</h3>
-                <p>Se puede empezar con 0 euros extra si usas las funciones de IA de tu plataforma (Shopify Magic, WooCommerce). Un stack básico con Klaviyo (gratis hasta 250 contactos) y Tidio (gratis limitado) no suma coste. El salto a herramientas especializadas de pago va de 27 a 200 euros al mes según volumen: Algolia desde 0,91 € por 1.000 búsquedas (1 USD), Nosto desde 90 €/mes y Klaviyo desde 20 €/mes al superar 250 contactos.</p>
+                <h3 id="faq-2">¿Cuánto cuesta montar un stack de IA en una tienda online?</h3>
+                <p>El coste de entrada puede ser cero si se aprovechan las funciones de IA de la propia plataforma. A partir de ahí, un stack de email más chat más un asistente de redacción se mueve entre 40 y 60 euros al mes. Los escalones cara aparecen en el email por volumen de contactos, desde 18 euros al mes hasta superar los 250 contactos, y en la búsqueda con IA, que tiene un mínimo mensual de unos 23 euros. Las plataformas de personalización no publican tarifa y suelen exigir contrato anual.</p>
 
-                <h3>¿Merece la pena la IA para un ecommerce pequeño?</h3>
-                <p>Sí, pero empezando por lo gratuito. Un ecommerce pequeño suele obtener el mayor retorno con tres aplicaciones sin coste adicional: descripciones de producto generadas con IA, emails automáticos de carrito abandonado de la propia plataforma y un chatbot básico. Las herramientas especializadas de pago se justifican a partir de unos 5.000 euros mensuales de facturación o cuando el email y la búsqueda son canales principales.</p>
+                <h3 id="faq-3">¿Merece la pena la IA para un e-commerce pequeño?</h3>
+                <p>Sí, si empieza por lo que ya está pagado y por el canal de mayor retorno, el email. Con menos de 250 contactos, el plan gratuito de email cubre el caso completo; con poco tráfico interno, el buscador nativo suele ser suficiente; y las licencias de un asistente para redactar fichas van de 18 a 21 euros por persona y mes según el plan. La personalización no se justifica hasta que hay volumen de tráfico y catálogo estable.</p>
+
+                <h3 id="faq-4">¿Shopify Magic o una herramienta de email? ¿Cuál instalo primero?</h3>
+                <p>El email primero. Shopify Magic sirve para redactar fichas, títulos y resúmenes de pedidos, y su valor real está en el ahorro de tiempo, no en los ingresos directos. La herramienta de email especializada decide a quién escribir, cuándo y con qué mensaje sobre la base del historial de compra, y ese es el canal con mayor retorno por euro invertido en una tienda con tráfico estable. La IA de la plataforma conviene tenerla activa igualmente, porque no añade coste.</p>
+
+                <h3 id="faq-5">¿Es legal usar IA para responder a los clientes y redactar fichas de producto?</h3>
+                <p>Sí, con condiciones. Desde el 2 de agosto de 2026 el artículo 50 del Reglamento (UE) 2024/1689 obliga a informar de que la persona está interactuando con un sistema de IA y a marcar el contenido sintético publicado. En materia de protección de datos sigue aplicando el RGPD, con su base legal, su información al interesado y sus requisitos si hay decisiones automatizadas. Y en las fichas hay una obligación material: los datos técnicos del producto deben ser ciertos, porque una descripción con atributos falsos genera devoluciones y responsabilidad.</p>
+
+                <h3 id="faq-6">¿Funciona la IA igual en WooCommerce o PrestaShop que en Shopify?</h3>
+                <p>La diferencia está en el punto de integración, no en la calidad del resultado. Shopify incluye las funciones de IA en la suscripción, sin coste adicional por uso. WooCommerce y PrestaShop llegan a lo mismo mediante plugins o módulos, lo que añade una capa de mantenimiento y una dependencia del desarrollador. En las dos plataformas de código abierto, el coste total de la IA no está en el plugin, sino en el alojamiento, en las horas de quien lo actualiza y en el trabajo de integrar las herramientas especializadas.</p>
+
+                <h3 id="faq-7">¿Cuánto tarda una tienda online en ver resultados con la IA?</h3>
+                <p>El email de carrito abandonado es lo más rápido: de siete a catorce días, porque se apoya en datos que ya existen y el efecto es inmediato. La búsqueda interna tarda entre cuatro y ocho semanas, porque necesita que el catálogo esté completo y que el tráfico de búsqueda interna tenga volumen. La publicidad automatizada no debe evaluarse antes de unas ocho semanas, cuando ha salido de la fase de aprendizaje. La previsión de existencias necesita al menos un ciclo completo de compra por referencia antes de ser fiable.</p>
+
+                <h3 id="faq-8">¿La IA evita las devoluciones o las aumenta?</h3>
+                <p>Depende de para qué se use, y ese es el punto. Una descripción de producto generada y no verificada aumenta las devoluciones, porque inventa o generaliza atributos que el cliente no esperaba. Un chatbot bien acotado a consultas de estado las reduce, porque evita que el cliente compre sin saber las condiciones de envío o de devolución. En ambos casos la variable que decide es la verificación, no la herramienta.</p>
+
+                <h2 id="fuentes">Fuentes</h2>
+
+                <p>Todas las cifras de precios, condiciones de servicio y fechas normativas de este artículo proceden de las fuentes públicas siguientes. Se han consultado directamente las páginas oficiales de cada fabricante y los textos oficiales en el diario o en el portal de la Unión Europea.</p>
+
+                <ul>
+                    <li><strong>Precios de Shopify y funciones de IA integradas:</strong> <a href="https://www.shopify.com/pricing" rel="nofollow">shopify.com/pricing</a> y <a href="https://help.shopify.com/en/manual/promoting-marketing/ai-marketing/shopify-magic" rel="nofollow">ayuda de Shopify sobre Shopify Magic</a>.</li>
+                    <li><strong>Precios de Klaviyo y modelo de cobro por contactos:</strong> <a href="https://www.klaviyo.com/pricing" rel="nofollow">klaviyo.com/pricing</a>.</li>
+                    <li><strong>Precios de Algolia y modelo de cobro por número de búsquedas:</strong> <a href="https://www.algolia.com/pricing/" rel="nofollow">algolia.com/pricing</a>.</li>
+                    <li><strong>Precios de Tidio y planes con IA generativa:</strong> <a href="https://www.tidio.com/pricing/" rel="nofollow">tidio.com/pricing</a>.</li>
+                    <li><strong>Nosto y ausencia de tarifa pública:</strong> <a href="https://nosto.com/" rel="nofollow">nosto.com</a>.</li>
+                    <li><strong>Triple Whale y modelo de precio por facturación:</strong> <a href="https://www.triplewhale.com/" rel="nofollow">triplewhale.com</a>.</li>
+                    <li><strong>Precios de los planes de empresa de OpenAI:</strong> <a href="https://openai.com/business/pricing/" rel="nofollow">openai.com/business/pricing</a>.</li>
+                    <li><strong>Precios de los planes de Anthropic:</strong> <a href="https://www.anthropic.com/pricing" rel="nofollow">anthropic.com/pricing</a>.</li>
+                    <li><strong>Precios de Google Workspace para España:</strong> <a href="https://workspace.google.com/intl/es_es/pricing.html" rel="nofollow">workspace.google.com</a>.</li>
+                    <li><strong>Precios de Gemini Enterprise:</strong> <a href="https://cloud.google.com/gemini-enterprise" rel="nofollow">cloud.google.com/gemini-enterprise</a>.</li>
+                    <li><strong>Reglamento (UE) 2024/1689 (AI Act), artículo 4, artículo 50 y calendario de aplicación:</strong> <a href="https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=OJ:L_202401689" rel="nofollow">EUR-Lex</a>.</li>
+                    <li><strong>Reglamento (UE) 2016/679 (RGPD), artículo 22 y capítulos de transferencias:</strong> <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2016-679" rel="nofollow">Boletín Oficial del Estado</a>.</li>
+                    <li><strong>Criterios de adecuación del RGPD a los usos de inteligencia artificial:</strong> <a href="https://www.aepd.es/sites/default/files/2020-02/adecuacion-rgpd-ia.pdf" rel="nofollow">Agencia Española de Protección de Datos</a>.</li>
+                    <li><strong>Ley de Servicios de la Sociedad de la Información, artículo 22 (comunicaciones comerciales y consentimiento previo):</strong> <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758" rel="nofollow">Boletín Oficial del Estado</a>.</li>
+                    <li><strong>Real Decreto-ley 15/2025, Reglamento Federal de Facturación y Registro:</strong> <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2025-27314" rel="nofollow">Boletín Oficial del Estado</a>.</li>
+                </ul>
+
+                <p><strong>Consultado el 3 de octubre de 2026.</strong> Las tarifas de los fabricantes cambian con frecuencia y varios de ellos las publica en dólares con facturación anual, por lo que los importes en euros de este artículo son una conversión aproximada a 1 USD = 0,91 EUR. <strong>Verifica siempre el precio en la página oficial el mismo mes en el que vas a contratar</strong> y pide tres presupuestos con el mismo alcance antes de cerrar un acuerdo anual. Las cifras marcadas como «Estimación propia» son cálculos derivados de los precios publicados, con la fórmula y los supuestos indicados en cada caso, y no proceden de ningún fabricante.</p>
 
                 <div class="related-articles">
                     <h3>Artículos relacionados</h3>
                     <ul>
-                        <li><a href="../../herramientas-ia/chatbots-atencion-cliente/">Los 8 mejores chatbots IA para atención al cliente</a></li>
-                        <li><a href="../../comparativas/software-ia-ventas/">Software de IA para ventas: las mejores herramientas en 2026</a></li>
-                        <li><a href="../../herramientas-ia/hubspot-ia/">HubSpot con IA: cómo usar inteligencia artificial en tu CRM</a></li>
-                        <li><a href="../../guias/guia-implementar-ia-pyme/">Guía completa para implementar IA en tu pyme</a></li>
+                        <li><a href="../../herramientas-ia/chatbots-atencion-cliente/">Los chatbots de IA para atención al cliente, comparados</a></li>
+                        <li><a href="../../comparativas/software-ia-ventas/">Software de IA para ventas: las mejores herramientas</a></li>
+                        <li><a href="../../guias/roi-real-empresas-ia/">ROI real de la IA en empresas: cómo se mide sin engañarse</a></li>
+                        <li><a href="../../guias/ia-ai-act-cumplimiento/">AI Act: calendario y obligaciones para las empresas europeas</a></li>
+                        <li><a href="../../herramientas-ia/errores-implementar-ia/">Errores al implementar IA y cómo evitarlos</a></li>
+                        <li><a href="../../comparativas/ia-logistica/">IA para logística y gestión de almacenes</a></li>
                     </ul>
                 </div>
 

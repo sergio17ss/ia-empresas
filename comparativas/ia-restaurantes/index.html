@@ -41,66 +41,63 @@
     <noscript><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="../../css/style.css">
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "SoftwareApplication",
-            "name": "Herramientas de IA para Restaurantes",
-            "applicationCategory": "BusinessApplication",
-            "operatingSystem": "Web",
-            "offers": {
-                "@type": "Offer",
-                "price": "20",
-                "priceCurrency": "EUR",
-                "description": "Desde 20 EUR/mes (pedidos por WhatsApp con IA) hasta soluciones enterprise de previsión"
-            }
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "4.1",
-            "bestRating": "5"
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "IA TodoPyme"
-        },
-        "datePublished": "2026-09-09"
-    }
-    </script>
+    
 
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "¿Cómo usa la IA un restaurante para ganar más dinero?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Las cuatro aplicaciones con mejor retorno son: previsión de demanda para ajustar compras y personal (reducir mermas y horas de mas), gestión de reservas y listas de espera con IA (TheFork), analisis de resenas para detectar problemas repetidos antes de que bajen la nota media, y automatizacion de pedidos por WhatsApp o web. Juntas atacan los dos grandes escapes de margen de la hosteleria: la merma y el no-show."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "¿Cuánto cuesta implementar IA en un restaurante?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Se puede empezar con coste cero: TheFork Manager tiene plan gratuito y las funciones de analisis de resenas basicas vienen incluidas en la mayoria de plataformas de gestion. Un TPV con IA (tipo Toast o su equivalente europeo) cuesta entre 50 y 200 euros al mes segun modulos. La previsión de demanda profesional (PreciTaste, Avero) es una solucion enterprise con precios desde miles de euros anuales, justificada en cadenas o restaurantes con volumen alto."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "¿La IA puede sustituir al personal de un restaurante?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No sustituye a cocina ni sala, pero si reasigna trabajo administrativo: la IA responde reservas, gestiona listas de espera, resume resenas y preve cuanta gente vendra cada dia. El hostelero deja de hacer de administrativo y vuelve a gestionar personas y producto. En un sector con falta cronica de personal, la IA reduce la carga de los puestos que si hay, en lugar de eliminar puestos."
-                }
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Cuál es el coste real de la IA en un restaurante?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El coste de la licencia va de cero a unos cientos de euros al mes según el canal y las herramientas: el gestor de reservas tiene plan gratuito y cobra comisión por reserva cubierta, el canal de pedidos por WhatsApp o web propia se mueve en el orden de decenas de euros más posibles cuotas por transacción, y el análisis de reseñas en el mismo orden de magnitud. Pero el coste importante no es ese. La partida grande es la integración con el terminal de punto de venta y con el sistema de pedidos, y puede ser un proyecto de varios miles de euros o directamente inviable si tu TPV no tiene API. En una cadena con tres o más locales, la analítica y la previsión son un proyecto, no una suscripción. La regla práctica es sencilla: en hostelería, la licencia es la partida más barata del proyecto."
             }
-        ]
-    }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Por qué una herramienta de IA no funciona con mi TPV?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Porque un modelo de IA no puede leer el ticket de un terminal de punto de venta que no tiene API. Y la mayoría de los TPV que hay en las cocinas españolas no la tienen: son sistemas propietarios instalados por el distribuidor hace años, sin API pública documentada, que solo sacan datos en PDF o en un fichero que hay que pedir. Una herramienta de previsión o de analítica de margen necesita histórico de ventas accesible de forma continua; si el dato llega con quince días de retraso y en un formato que hay que limpiar a mano, el análisis pierde su valor. Por eso la primera pregunta antes de comprar es al distribuidor del TPV: «¿tiene API abierta?». Si no, el orden de compra cambia y el proyecto de previsión se pospone hasta cambiar el TPV."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Puedo usar los datos de mis clientes para entrenar una IA?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Con mucho cuidado, porque el comensal no es un usuario registrado. En un SaaS de oficina hay cuenta, hay condiciones aceptadas y hay baja; en un restaurante no hay nada de eso. El comensal paga, come y se va, y sus datos aparecen igualmente en tu ticket, tu reserva y tu factura. Eso significa que no hay una base jurídica automática para entrenar con ellos."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué herramienta de IA le conviene a un restaurante independiente?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende de tu perfil, pero hay un orden bastante claro. Si tienes reservas, el gestor de reservas con IA es lo primero: coste de entrada cero, retorno medible en semanas y atacan el no-show y el hueco vacío sin depender del TPV. Si tienes takeaway o delivery, el canal de pedidos por WhatsApp o web propia es lo segundo, porque convierte una conversación en un pedido con los productos ya identificados y entra directo en tu TPV."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Necesito un plan de Empresa de IA para mi restaurante?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Casi con seguridad no, y esa es una conclusión que ahorra dinero. Un plan de Empresa cobra por asientos y aporta SSO, aprovisionamiento SCIM, registros de auditoría, control de acceso por roles, SLA y residencia de datos por región, que no vienen en ningún plan individual. En un restaurante de un solo local, el número de personas que realmente usarían un asistente de IA es de dos o tres: el gerente y el jefe de cocina, para la carta, las descripciones y los pliegos. Dos asientos de ChatGPT Business Standard son 42 € al mes, y para eso no hace falta nada más. Donde sí tiene sentido el plan de Empresa es en una cadena, con varios locales y varios ingredientes que dar de baja cuando alguien se va."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿La IA puede sustituir al personal de un restaurante?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No sustituye a cocina ni a sala, pero sí reasigna trabajo administrativo, y esa es la diferencia real. La IA responde reservas, gestiona listas de espera, resume reseñas y ayuda a dimensionar turnos. El hostelero deja de hacer de administrativo y vuelve a gestionar personas y producto, que es donde está su criterio. En un sector con falta crónica de personal, el efecto de la IA es reducir la carga de los puestos que sí hay, en lugar de eliminar puestos. Y hay una cosa que ningún bot debe hacer nunca: decidir qué se cocina, cuánto se compra a cada proveedor ni qué precio se pone a un plato. Eso depende de la calidad del producto y de tu relación con el proveedor, y no hay modelo que lo sepa."
+            }
+        }
+    ]
+}
     </script>
 
 </head>
@@ -134,270 +131,821 @@
 
             <div class="methodology-banner">
                 <span class="methodology-icon" aria-hidden="true"></span>
-                <p><strong>Metodología:</strong> Análisis basado en documentación oficial de cada fabricante, datos del sector hostelero y precios verificados, actualizado a septiembre 2026.</p>
+                <p><strong>Metodología:</strong> Análisis basado en la documentación oficial de cada fabricante, la normativa española de facturación electrónica y protección de datos, y precios de Empresa verificados el 3 de octubre de 2026. Ninguna cifra de este artículo es estimada sin marca visible.</p>
             </div>
 
             <div class="article-header">
                 <span class="article-category-badge">Comparativas</span>
                 <h1>IA para Restaurantes: Herramientas para Hostelería en 2026</h1>
-                <p class="article-subtitle">La hostelería tiene dos escapes de margen crónicos: la merma de producto y las horas muertas de personal. La IA ataca ambos con datos: prever cuánta gente vendrá, qué se va a pedir y qué dicen las reseñas antes de que el problema escale.</p>
+                <p class="article-subtitle">La hostelería tiene dos escapes de margen crónicos: la merma de producto y las horas muertas de personal. La IA ataca ambos con datos, pero en un restaurante el coste real casi nunca está en la licencia: está en si tu terminal de punto de venta tiene API.</p>
                 <div class="article-meta-bar">
                     <span class="meta-author">Por el equipo de IA TodoPyme</span>
-                    <span class="meta-date">9 septiembre 2026</span>
+                    <span class="meta-date">7 octubre 2026</span>
                     <span class="meta-reading">11 min de lectura</span>
-                    <span class="meta-updated">Actualizado: septiembre 2026</span>
+                    <span class="meta-updated">Actualizado: 7 octubre 2026</span>
                 </div>
             </div>
 
             <div class="article-content">
 
-                <div class="tldr-box">
-                    <h2>Resumen rápido</h2>
-                    <ul>
-                        <li><strong>Precio de entrada:</strong> 0 € con las funciones de IA incluidas en plataformas de reservas y gestión (TheFork, TPV modernos)</li>
-                        <li><strong>Ideal para:</strong> restaurantes con margen justo que quieren recortar merma, no-shows y trabajo administrativo</li>
-                        <li><strong>Puntos fuertes:</strong> previsión de demanda que ajusta compras y personal, análisis automático de reseñas, reservas y listas de espera gestionadas sin fricción</li>
-                        <li><strong>Puntos débiles:</strong> la previsión profesional es cara (enterprise), el sector sufre brecha digital y ninguna herramienta sustituye la gestión del producto y del equipo</li>
-                    </ul>
+                <div class="callout callout-warning">
+                    <strong>La advertencia más importante de este artículo:</strong> un modelo de IA no puede leer el ticket de un terminal de punto de venta que no tiene API. Y la mayoría de los TPV que hay en las cocinas españolas no la tienen. Todo lo que leas a partir de aquí está condicionado por esa frase, y el apartado <a href="#la-que-esta-casi-todo-esto-le-da-igual">el fallo que casi todo esto da por igual</a> la desarrolla con el detalle que ninguna comparativa te dice.
                 </div>
 
-                <div class="callout callout-info">
-                    <strong>Contexto del sector:</strong> en 2026, la hostelería española sigue con estrechez de márgenes y falta de personal. La IA no resuelve esas dos, pero elimina las horas administrativas que el hostelero dedica a cosas que una máquina hace mejor, y afina las dos variables que sí controla: cuánto se compra y cuánta gente se agenda.
+                <h2 id="la-respuesta-corta">La respuesta corta</h2>
+
+                <p>Si buscas <strong>IA para restaurantes</strong> y tienes un local independiente, la recomendación cabe en cuatro líneas: empieza por el canal que ya tienes conectado —la plataforma de reservas y el gestor de pedidos—, mide la línea base durante cuatro semanas y sólo después decide qué más instalar. Y antes de nada, comprueba si tu TPV tiene API.</p>
+
+                <p>La razón es técnica y económica a la vez. Casi todas las herramientas de IA para hostelería prometen lo mismo: reducir merma, reducir no-shows, automatizar pedidos. Pero todas necesitan <strong>leer los datos de venta</strong> para cumplir esa promesa. Y si tu TPV no expone datos por API, no hay integración que lo arregle: no es cuestión de contratar a alguien.</p>
+
+                <p>La segunda conclusión es que el coste de ésta tecnología <strong>no está en la licencia</strong>. Las licencias de reserva, reseñas o chatbot van de 0 a unos pocos cientos de euros al mes. La partida grande es la integración con el punto de venta y el sistema de pedidos, y esa puede ser un proyecto de varios miles de euros o directamente inviable. Volvemos a ello en dos sitios, porque es el dato que cambia la decisión más que cualquier precio de cabecera.</p>
+
+                <p>Y la tercera es sobre el modelo de negocio del dato, que en hostelería tiene una virtud: <strong>los comensales no son usuarios registrados</strong>. No hay cuenta, no hay consentimiento informado y no hay relación. Eso significa que el entrenamiento con sus datos no se plantea igual que en un SaaS de oficina, y que cualquier herramienta que prometa «aprender de tus clientes» está hablando de algo que en el RGPD requiere una base jurídica que el comensal no te ha dado.</p>
+
+                <div class="tldr-box">
+                    <ul>
+                        <li><strong>Antes de comprar nada:</strong> comprueba si tu TPV tiene API abierta. Sin API, la mitad de estas herramientas no puede funcionar contigo.</li>
+                        <li><strong>Empieza por donde ya estás conectado:</strong> reservas y pedidos. Es la parte con menor coste de entrada y el retorno más rápido de medir.</li>
+                        <li><strong>El coste real:</strong> la licencia va de 0 a unos cientos de euros al mes; la integración con TPV y pedidos es un proyecto aparte, y a veces es imposible.</li>
+                        <li><strong>Datos:</strong> los comensales no son usuarios registrados. No hay base jurídica automática para entrenar con sus datos, y eso aplica igual a las reseñas y a los tickets.</li>
+                        <li><strong>El plazo que ya está en marcha:</strong> los sistemas de facturación computerizados están obligados a adaptarse antes del 1 de enero de 2027 (Sociedades) o del 1 de julio de 2027 (autónomos).</li>
+                    </ul>
                 </div>
 
                 <div class="toc">
                     <h3>Índice</h3>
                     <ol>
-                        <li><a href="#que-es">Dónde genera dinero la IA en un restaurante</a></li>
-                        <li><a href="#herramientas">Las 7 herramientas por área</a></li>
-                        <li><a href="#como-elegir">Cómo elegir según el tipo de local</a></li>
-                        <li><a href="#precios">Tabla comparativa de precios</a></li>
-                        <li><a href="#errores">Errores habituales al digitalizar un restaurante</a></li>
-                        <li><a href="#veredicto">Veredicto por perfil de negocio</a></li>
-                        <li><a href="#faq">Preguntas frecuentes</a></li>
+                        <li><a href="#la-respuesta-corta">La respuesta corta</a></li>
+                        <li><a href="#donde-genera-dinero-la-ia">Dónde genera dinero la IA en un restaurante</a></li>
+                        <li><a href="#por-que-una-herramienta-no-sirve">Por qué una herramienta concreta no te sirve</a></li>
+                        <li><a href="#el-coste-real-para-un-restaurante-de-50-servicios">El coste real para un restaurante de 50 servicios al día</a></li>
+                        <li><a href="#precios-2026">Precios 2026: licencias, integraciones y el coste que no está en la factura</a></li>
+                        <li><a href="#datos-y-confidencialidad">Datos de comensales y confidencialidad: el problema sin usuarios</a></li>
+                        <li><a href="#el-corte-que-decide-la-compra">El corte que decide la compra: SSO, auditoría y SLA</a></li>
+                        <li><a href="#residencia-y-cumplimiento">Residencia de datos y calendario del AI Act</a></li>
+                        <li><a href="#tabla-comparativa">Tabla comparativa de herramientas de IA para restaurantes</a></li>
+                        <li><a href="#tabla-por-caso-de-uso">Qué usar según lo que tengas que hacer</a></li>
+                        <li><a href="#la-que-esta-casi-todo-esto-le-da-igual">El fallo oculto: cuando el TPV no tiene API</a></li>
+                        <li><a href="#lo-que-debe-hacer-siempre-una-persona">Lo que debe hacer siempre una persona</a></li>
+                        <li><a href="#errores-de-implantacion">Los seis errores de implantación y lo que cuestan</a></li>
+                        <li><a href="#plan-de-90-dias">Plan de 90 días</a></li>
+                        <li><a href="#cuando-contratar-un-integrador">Cuándo contratar un integrador</a></li>
+                        <li><a href="#veredicto-por-perfil">Veredicto por perfil de negocio</a></li>
+                        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                        <li><a href="#fuentes">Fuentes</a></li>
                     </ol>
                 </div>
 
-                <h2 id="que-es">Dónde genera dinero la IA en un restaurante</h2>
+                <h2 id="donde-genera-dinero-la-ia">Dónde genera dinero la IA en un restaurante</h2>
 
-                <p>Un restaurante no vende comida: vende ocupación de mesas con el menor coste posible. La IA entra en esa ecuación en tres puntos exactos. <strong>Primero, la previsión:</strong> cuántos clientes vendrán mañana y qué pedirán, para comprar lo justo y cuadrar los turnos. Un 5% menos de merma y un 5% menos de horas de más suelen equivaler a más beneficio que un punto más de ticket medio. <strong>Segundo, la captación y la fidelización:</strong> la plataforma de reservas con IA llena huecos, recupera no-shows y convierte la lista de espera en clientes. <strong>Tercero, la reputación:</strong> leer 200 reseñas al mes a mano es imposible; la IA las resume, agrupa por tema y avisa de lo que está fallando (espera, trato, temperatura de la comida) antes de que la nota media caiga.</p>
+                <p>Un restaurante no vende comida: vende ocupación de mesas con el menor coste posible. La IA entra en esa ecuación en cuatro puntos exactos, y conviene ordenarlos por retorno decreciente, porque no todos valen lo mismo.</p>
 
-                <p>En la práctica, la mayoría de restaurantes españoles ya convive con una parte de esta tecnología sin llamarla IA: TheFork gestiona reservas con algoritmos, los TPV modernos incluyen informes de ventas predictivos y Google Business Profile clasifica automáticamente los temas de las reseñas. El salto en 2026 es integrar esas piezas y usar las herramientas que toman decisiones: cuánto comprar, a quién llamar para cubrir un hueco y qué responder a una reseña.</p>
+                <h3>1. La reserva y el no-show</h3>
 
-                <h2 id="herramientas">Las 7 herramientas por área</h2>
+                <p>Es el punto de entrada de casi todo el sector y el retorno más fácil de medir, porque se cuenta en euros. Un no-show es una mesa que se pagó en personal y en producto y no ingressó. Las plataformas de reserva con IA atacan tres cosas: el aviso previo, la confirmación en el momento del turno y el relleno de huecos desde la lista de espera. El coste de entrada puede ser cero si ya estás en la plataforma.</p>
 
-                <h3>Reservas y gestión de sala</h3>
+                <h3>2. El pedido por WhatsApp y la web propia</h3>
 
-                <p><strong>1. TheFork Manager (con IA)</strong> — La plataforma de reservas dominante en España (grupo TripAdvisor). Su gestor permite gestionar reservas, listas de espera, promociones y no-shows desde un panel, y sus algoritmos de IA recomiendan a qué clientes ofrecer descuento para llenar huecos, cuándo abrir franjas y cómo reducir cancelaciones. Incluye el perfil del restaurante en la app, que sigue siendo la principal fuente de reservas online en el país.</p>
-                <p><strong>Para qué sirve:</strong> cualquier restaurante que acepte reservas. La reducción de no-shows y el relleno de huecos se notan directamente en la ocupación semanal.</p>
-                <p><strong>Precio:</strong> TheFork Manager tiene plan gratuito con funciones básicas; los planes de pago combinan una suscripción mensual (TheFork Pay, módulos de marketing y analítica, desde unos 40 €/mes) con una comisión por reserva cubierta, hasta unos 150 €/mes según servicios y volumen de reservas.</p>
+                <p>Aquí la IA conversacional hace un trabajo muy concreto: convertir una conversación en un pedido bien formado. El cliente elige del menú, el sistema confirma, calcula el total y lo manda a cocina. El retorno no está en el margen, está en las horas de sala que se deje de dedicar a tomar pedidos a mano. Y tiene un segundo beneficio que a menudo se olvida: <strong>el pedido por chat entra en tu TPV con los productos ya identificados</strong>, que es exactamente lo contrario de lo que pasa con una tableta de delivery.</p>
 
-                <h3>Previsión de demanda y compras</h3>
+                <h3>3. El análisis de reseñas</h3>
 
-                <p><strong>2. PreciTaste</strong> — Plataforma de previsión de demanda para restauración: combina histórico de ventas, meteorología, festivos y eventos locales para predecir cuántos clientes habrá y qué platos se pedirán, ajustando los pedidos a proveedores y la producción de cocina. Es la herramienta de referencia en cadenas y grupos de restauración que quieren atacar la merma con datos.</p>
-                <p><strong>Para qué sirve:</strong> cocinas con volumen (cadenas, colectividades, centrales) donde la merma de frescos y la sobreproducción son miles de euros al mes. En un restaurante independiente pequeño, la previsión manual con un buen histórico en Excel sigue siendo razonable.</p>
-                <p><strong>Precio:</strong> sin precio público; proyectos enterprise por número de locales. Rango habitual de varios miles de euros anuales por cadena.</p>
+                <p>Leer doscientas reseñas al mes a mano es imposible, así que nadie las lee, y por eso los problemas se enteran por la nota media cuando ya es tarde. Una herramienta que agrupa por tema —espera, trato, temperatura, ruido— convierte la reputación en un dato accionable con aviso temprano. Coste bajo, plazo corto, retorno visible en la ficha de Google.</p>
 
-                <p><strong>3. Avero</strong> — La plataforma de análisis de datos para hostelería, ahora integrada en el ecosistema de Toast. Cruza datos de TPV, inventario, personal y marketing para detectar dónde se escapa el margen: coste de food cost por plato, productividad por turno y rendimiento de promociones. Sus paneles con IA señalan anomalías antes de que se conviertan en pérdidas.</p>
-                <p><strong>Para qué sirve:</strong> restaurantes con varios locales o volumen alto que necesitan visibilidad de margen en tiempo real, no el resumen del cierre de mes.</p>
-                <p><strong>Precio:</strong> sin precio público; suscripción anual por local, rango habitual de 200-500 €/mes según módulos.</p>
+                <h3>4. La previsión de demanda</h3>
 
-                <h3>Análisis de reseñas y reputación</h3>
+                <p>Es la de mayor retorno potencial y la de peor encaje para el local independiente. Prever cuántos clientes vendrán y qué se pedirá reduce merma y horas de más, pero necesita histórico de ventas fiable, productos estandarizados y un TPV del que sacar datos. Es un proyecto para cadenas o para locales que ya tienen un sistema orderly.</p>
 
-                <p><strong>4. MARA</strong> — Plataforma de análisis de reseñas para hostelería: agrupa las reseñas de Google, TripAdvisor, TheFork y redes en temas, mide la evolución de la nota por dimensión (servicio, comida, ambiente, espera) y genera respuestas sugeridas con el tono del local. Es la herramienta que convierte la reputación de "intuición" a "dato accionable".</p>
-                <p><strong>Para qué sirve:</strong> locales que reciben decenas o cientos de reseñas al mes y no pueden leerlas todas. El aviso temprano de un problema repetido (p. ej. "la espera el sábado") permite corregir antes de que la nota media baje una décima.</p>
-                <p><strong>Precio:</strong> sin precio público; rango habitual de 40-120 €/mes por local según volumen de reseñas y funciones.</p>
+                <div class="callout">
+                    <strong>El orden correcto de inversión:</strong> reserva y WhatsApp primero (coste bajo, efecto inmediato), reseñas después (coste bajo, efecto reputacional), previsión de demanda al final (coste alto, necesita datos que todavía no tienes). Saltarse ese orden es el error más caro del sector.
+                </div>
 
-                <h3>Pedidos y delivery</h3>
+                <p>Y hay una cuarta vía que casi no se menciona y que es gratis: <strong>la ficha de negocio de Google ya clasifica automáticamente los temas de las reseñas</strong> sin que instales nada. Antes de pagar por una herramienta de análisis de reseñas, mira qué te da ya la plataforma que usas. Para un local con veinte reseñas al mes, puede ser suficiente.</p>
 
-                <p><strong>5. Deliverect</strong> — Centraliza los pedidos de delivery (Glovo, Just Eat, Uber Eats, Deliveroo) y los envía directamente a la impresora de cocina o al TPV, eliminando la tableta por plataforma y los errores de transcripción. En 2026 incorpora IA para clasificar pedidos, detectar anomalías de precio y sugerir tiempos de preparación. Es la capa que hace viable gestionar el delivery sin un empleado dedicado a mirar tabletas.</p>
-                <p><strong>Para qué sirve:</strong> restaurantes que venden por varias plataformas de delivery y pierden pedidos o tiempo en la gestión manual de cada tableta.</p>
-                <p><strong>Precio:</strong> desde unos 29-49 €/mes por local según volumen de pedidos y plataformas conectadas en España.</p>
+                <h2 id="por-que-una-herramienta-no-sirve">Por qué una herramienta concreta no te sirve</h2>
 
-                <p><strong>6. Pedidos por WhatsApp con IA</strong> — Las herramientas que convierten WhatsApp Business en canal de pedido automatizado: el cliente elige del menú por chat, la IA confirma el pedido, calcula el total y lo envía a cocina. Es la fórmula que más rápido están adoptando restaurantes de comida para llevar y pizzerías en España, donde WhatsApp ya es el canal de comunicación habitual.</p>
-                <p><strong>Para qué sirve:</strong> locales de takeaway y delivery propio que quieren dejar de gestionar pedidos por WhatsApp a mano y cobrar sin fricción.</p>
-                <p><strong>Precio:</strong> plataformas de menú digital y chat con IA desde 20-60 €/mes según funciones y transacciones.</p>
+                <p>La razón más habitual para no comprar nada no es el precio: es que la herramienta no se puede conectar con el sistema que ya tienes. Y en hostelería ese sistema casi siempre es el TPV.</p>
 
-                <h3>Gestión integral con TPV inteligente</h3>
+                <p>Un TPV es, en la mayoría de locales españoles, un caja con un software propietario y una impresora de tickets. Tiene tres años de antigüedad, lo instaló un distribuidor, no tiene API pública documentada y su único modo de salida es un informe en PDF o un fichero de ventas que nadie sabe cómo exportar. Mientras sea así, cualquier herramienta que prometa analizar tus ventas, predecir la demanda o calcular el coste real por plato <strong>no puede cumplir lo que promete contigo</strong>.</p>
 
-                <p><strong>7. Toast (o sus equivalentes europeos)</strong> — El TPV estadounidense de referencia para hostelería, con IA en informes de ventas, predicción de demanda y sugerencias de menú. En España el ecosistema equivalente son TPVs como Táctica, Terminal BTP o TheFork Pay integrado, que ya incorporan módulos de analítica predictiva y gestión de stock. La diferencia con un TPV clásico: los informes dejan de ser historia y pasan a ser previsión.</p>
-                <p><strong>Para qué sirve:</strong> centralizar TPV, stock, personal y marketing en una sola plataforma con capa de datos. Es la base sobre la que después se montan las herramientas especializadas.</p>
-                <p><strong>Precio:</strong> TPV de hostelería con módulos de analítica: rango habitual de 50-200 €/mes según el número de terminales y módulos, más comisión por operación en los de pago integrado.</p>
+                <p>Esto no es un detalle técnico menor: es la diferencia entre una herramienta que funciona y una suscripción que paga el hostelero por escribir informes que nadie lee. Y es la razón por la que el orden de compra correcto para la previsión de demanda empieza por <em>cambiar el TPV</em>, no por contratar el software de previsión.</p>
 
-                <h2 id="como-elegir">Cómo elegir según el tipo de local</h2>
+                <p>Los tres requisitos que conviene exigir antes de firmar nada:</p>
 
                 <ul>
-                    <li><strong>Bar o cafetería (sin reservas):</strong> TPV con analítica básica + análisis de reseñas con IA (40-120 €/mes). La prioridad es el control de margen y la reputación local.</li>
-                    <li><strong>Restaurante con reservas (independiente):</strong> TheFork Manager (gratis/pago) + respuestas de reseñas con IA + WhatsApp Business para pedidos si tiene takeaway. Coste: 0-200 €/mes.</li>
-                    <li><strong>Cadena o grupo (3+ locales):</strong> añade Avero o PreciTaste para control de margen y previsión centralizada, y Deliverect si el delivery es canal relevante. Coste: desde 500 €/mes en adelante.</li>
+                    <li><strong>API abierta y documentada, con tu modelo concreto.</strong> No basta con que el fabricante diga «tenemos API»: hay que confirmar que cubre el TPV que tú tienes instalado, con su versión de software. Si sólo hay integración con TPV de otro fabricante, para ti no existe.</li>
+                    <li><strong>Salida de datos propia.</strong> Si mañana cambias de herramienta, ¿puedes exportar el histórico de ventas y de pedidos? Los pedidos que un sistema no te deja exportar son una factura de proveedor que no puedes discutir.</li>
+                    <li><strong>Coste de la integración, por escrito.</strong> Cuántas horas de desarrollo, quién las hace y qué pasa si el TPV se actualiza y rompe la conexión. Un fabricante que no responde a eso no tiene un producto pensado para durar.</li>
                 </ul>
 
-                <div class="callout callout-tip">
-                    <strong>La métrica que debes seguir:</strong> antes de implantar cualquier herramienta, anota tu food cost (coste de materia prima sobre ventas, objetivo 28-32%), tu porcentaje de no-shows y tu nota media de reseñas. Tres meses después, la herramienta debe haber movido al menos una de las tres. Si no, no la renueves.
-                </div>
+                <p>Y hay una cuarta que es específica de hostelería y que ningún proveedor de IA va a decirte: <strong>la coherencia del catálogo</strong>. Si tu TPV tiene treinta productos con nombres distintos a los de tu carta y a los de tu canal de delivery, cualquier herramienta que intente cruzar esos datos va a fallar. La limpieza de catálogo es trabajo previo, no un extra del proveedor.</p>
 
-                <h2 id="precios">Tabla comparativa de precios</h2>
+                <h2 id="el-coste-real-para-un-restaurante-de-50-servicios">El coste real para un restaurante de 50 servicios al día</h2>
 
-                <p>Precios en euros según tarifas y rangos de mercado (septiembre 2026). Las herramientas sin precio público muestran rango estimado según datos de compradores.</p>
+                <p>El error de cálculo más habitual en este sector empieza en una suscripción personal de 20 US$ al mes, la multiplica por el número de locales y llama al resultado «coste de IA para el restaurante». La aritmética está bien; la unidad está mal. Un plan de Empresa no cobra por personas: cobra por <strong>Público</strong>, y en un restaurante el número de asientos es pequeño porque el trabajo es de sala, no de oficina.</p>
 
-                <div class="price-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Herramienta</th>
-                                <th>Precio de entrada</th>
-                                <th>Modelo</th>
-                                <th>Área</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>TheFork Manager</strong></td>
-                                <td>Gratis básico; 40-150 €/mes según módulos</td>
-                                <td>Suscripción + comisiones</td>
-                                <td>Reservas y ocupación</td>
-                            </tr>
-                            <tr>
-                                <td><strong>PreciTaste</strong></td>
-                                <td>Enterprise (varios miles €/año)</td>
-                                <td>Por local, contrato anual</td>
-                                <td>Previsión de demanda</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Avero</strong></td>
-                                <td>Desde ~200-500 €/mes</td>
-                                <td>Por local</td>
-                                <td>Análisis de margen</td>
-                            </tr>
-                            <tr>
-                                <td><strong>MARA</strong></td>
-                                <td>Desde ~40-120 €/mes por local</td>
-                                <td>Por volumen de reseñas</td>
-                                <td>Reputación y reseñas</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Deliverect</strong></td>
-                                <td>Desde ~29-49 €/mes por local</td>
-                                <td>Por volumen de pedidos</td>
-                                <td>Integración delivery</td>
-                            </tr>
-                            <tr>
-                                <td><strong>WhatsApp IA para pedidos</strong></td>
-                                <td>Desde 20-60 €/mes</td>
-                                <td>Suscripción</td>
-                                <td>Pedidos de takeaway</td>
-                            </tr>
-                            <tr>
-                                <td><strong>TPV con analítica</strong></td>
-                                <td>Desde ~50-200 €/mes + comisiones</td>
-                                <td>Por terminal/módulos</td>
-                                <td>Gestión integral</td>
-                            </tr>
-                            <tr class="highlight-row">
-                                <td><strong>Stack básico restaurante independiente</strong></td>
-                                <td colspan="3"><strong>≈100-250 €/mes:</strong> TheFork Manager (gratis/40-150 €) + análisis de reseñas (40-120 €) = ocupación + reputación</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <p>Esto es lo que cambia respecto a otros sectores: <strong>en un restaurante de un local casi nunca tiene sentido comprar un plan de asistente de Empresa</strong>. ¿Para qué? Siete personas usándolo para redactar un menú o traducir una carta justifican dos suscripciones personales como mucho. El coste grande del restaurante no es el asiento, es la integración.</p>
 
-                <h2 id="errores">Errores habituales al digitalizar un restaurante</h2>
-
-                <ul>
-                    <li><strong>Comprar previsión enterprise antes de tener datos:</strong> PreciTaste o Avero necesitan historia de ventas fiable y procesos estandarizados. Un local que cambia el menú cada semana o no registra bien el stock no puede aprovecharlas.</li>
-                    <li><strong>Depender de una sola plataforma de reservas:</strong> delegar toda la ocupación en TheFork o en Google es cómodo, pero la comisión y la dependencia crecen. Diversifica canales (web propia, WhatsApp, teléfono) y usa la IA para consolidar.</li>
-                    <li><strong>Automatizar respuestas de reseñas sin supervisión:</strong> responder con IA a una reseña de una intoxicación o de un incidente grave con plantilla genérica es un error de reputación importante. La IA responde lo trivial; lo delicado lo responde el dueño.</li>
-                    <li><strong>Ignorar la brecha digital del equipo:</strong> si el personal de sala no usa el TPV nuevo, la inversión no retorna. El coste de formación es parte del coste de la herramienta, no un extra.</li>
-                    <li><strong>Tratar los datos de clientes sin cuidado:</strong> los datos de reservas y pedidos son datos personales (RGPD). El fichero de clientes para marketing requiere consentimiento explícito, algo que muchas plataformas solicitan por defecto pero que el local debe poder demostrar.</li>
-                </ul>
-
-                <div class="callout callout-warning">
-                    <strong>Plataformas terceras:</strong> un restaurante que vende por Glovo, Just Eat o Uber Eats depende de los términos, comisiones y datos de esas plataformas. Diversifica y no construyas tu base de clientes exclusivamente sobre canales que controlan la relación con el cliente final.
-                </div>
-
-                <h2 id="duelo">TheFork Manager vs PreciTaste: el duelo</h2>
-
-                <p>Las dos herramientas líderes de la hostelería en 2026 atacan los dos escapes de margen crónicos del sector: la ocupación y la merma. Frente a frente:</p>
+                <p>Estos son los precios de lista publicados por cada proveedor, sin ajuste de descuentos ni promociones, con la condición de facturación que declara cada uno. Todos están consultados el <strong>3 de octubre de 2026</strong>.</p>
 
                 <div class="comparison-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Criterio</th>
-                                <th>TheFork Manager</th>
+                                <th>PreciTaste</th>
+                                <th>PreciTaste</th>
+                                <th>Precio por asiento y mes</th>
+                                <th>Condición de facturación</th>
                                 <th>PreciTaste</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Precio</strong></td>
-                                <td>Gratis básico; 40-150 €/mes según módulos</td>
-                                <td>Enterprise: varios miles de €/año por cadena</td>
+                                <td><strong>ChatGPT Business Standard</strong></td>
+                                <td>Suscripción</td>
+                                <td>21 €</td>
+                                <td>EUR, facturación anual</td>
+                                <td>2 a 200</td>
                             </tr>
                             <tr>
-                                <td><strong>Función principal</strong></td>
-                                <td>Reservas, listas de espera, no-shows y relleno de huecos</td>
-                                <td>Previsión de demanda: cuántos clientes vendrán y qué se pedirá</td>
+                                <td>ChatGPT Business Premium</td>
+                                <td>Suscripción</td>
+                                <td>105 €</td>
+                                <td>EUR, facturación anual</td>
+                                <td>2 a 200</td>
                             </tr>
                             <tr>
-                                <td><strong>Retorno que ataca</strong></td>
-                                <td>El no-show y la ocupación de las horas punta</td>
-                                <td>La merma de frescos y la sobreproducción de cocina</td>
+                                <td>ChatGPT Enterprise</td>
+                                <td>Suscripción</td>
+                                <td>Precio a consultar</td>
+                                <td>Sin precio público</td>
+                                <td>—</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Claude Team</strong></td>
+                                <td>Suscripción</td>
+                                <td>20 US$</td>
+                                <td>USD, anual (25 US$ mensual)</td>
+                                <td>2 a 150</td>
                             </tr>
                             <tr>
-                                <td><strong>Público</strong></td>
-                                <td>Cualquier restaurante que acepte reservas</td>
-                                <td>Cadenas, colectividades y cocinas centrales con volumen</td>
+                                <td>Claude Team Premium</td>
+                                <td>Suscripción</td>
+                                <td>100 US$</td>
+                                <td>USD, anual (125 US$ mensual)</td>
+                                <td>2 a 150</td>
                             </tr>
                             <tr>
-                                <td><strong>Datos que usa</strong></td>
-                                <td>Tu agenda de reservas y el comportamiento de los clientes</td>
-                                <td>Histórico de ventas, meteorología, festivos y eventos locales</td>
+                                <td>Google Workspace Business Starter</td>
+                                <td>Suscripción</td>
+                                <td>6,80 € por usuario</td>
+                                <td>EUR, España</td>
+                                <td>1 como mínimo</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Google Workspace Business Standard</strong></td>
+                                <td>Suscripción</td>
+                                <td>13,60 € por usuario</td>
+                                <td>EUR, España</td>
+                                <td>1 como mínimo</td>
+                            </tr>
+                            <tr>
+                                <td>Google Workspace Business Plus</td>
+                                <td>Suscripción</td>
+                                <td>21,10 € por usuario</td>
+                                <td>EUR, España</td>
+                                <td>1 como mínimo</td>
+                            </tr>
+                            <tr>
+                                <td>Gemini Enterprise Business</td>
+                                <td>Suscripción</td>
+                                <td>Desde 21 US$</td>
+                                <td>Suscripción</td>
+                                <td>Hasta 300</td>
+                            </tr>
+                            <tr>
+                                <td>Gemini Enterprise Standard / Plus</td>
+                                <td>Suscripción</td>
+                                <td>Desde 30 US$</td>
+                                <td>Suscripción</td>
+                                <td>—</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <p><strong>Elige TheFork Manager</strong> si eres un restaurante independiente con reservas y quieres reducir no-shows y llenar huecos desde ya, con coste de entrada casi nulo. <strong>Elige PreciTaste</strong> si eres cadena o grupo con volumen y la merma o la sobreproducción te cuestan miles de euros al mes.</p>
+                <p>Y ahora la fórmula aplicada al caso real. Un restaurante de un local con 50 servicios al día, donde la IA entra por dos vías distintas con dos lógicas de coste opuestas:</p>
 
-                <h2 id="veredicto">Veredicto por perfil de negocio</h2>
-
-                <div class="rating-box">
-                    <div class="rating-text">
-                        <p>Para la hostelería española, la IA de 2026 no es una revolución de laboratorio: es la consolidación de herramientas que ya están en el sector (reservas, TPV, reseñas, delivery) con una capa de decisión que antes no existía. El retorno más rápido para un independiente está en la gestión de reservas y el análisis de reseñas, con coste de entrada casi nulo. La previsión de demanda profesional sigue siendo un terreno para cadenas con volumen y procesos estandarizados. El error generalizado sería esperar que la IA gestione el restaurante sola: lo que hace es liberar al hostelero de la burocracia para que vuelva a donde sí aporta — el producto, el equipo y el cliente.</p>
-                    </div>
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Vía de entrada</th>
+                                <th>Qué pagas</th>
+                                <th>Coste mensual estimado</th>
+                                <th>Coste anual</th>
+                                <th>PreciTaste</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Reservas y listas de espera</td>
+                                <td>Plan gratuito o de pago de la plataforma</td>
+                                <td>De 0 € a unos pocos cientos, más comisión por reserva cubierta</td>
+                                <td>Variable con el volumen</td>
+                                <td>La comisión se paga por cada reserva que entra por su canal</td>
+                            </tr>
+                            <tr>
+                                <td>Pedidos por WhatsApp o web propia</td>
+                                <td>Suscripción del servicio más cuota por transacción, si la hay</td>
+                                <td>Orden de decenas de euros</td>
+                                <td>Orden de cientos de euros</td>
+                                <td>Verificar si hay cuota por transacción: cambia mucho el total</td>
+                            </tr>
+                            <tr>
+                                <td>Análisis de reseñas</td>
+                                <td>Suscripción por local o por volumen de reseñas</td>
+                                <td>Orden de decenas de euros</td>
+                                <td>Orden de cientos de euros</td>
+                                <td>Antes de pagar, mira qué ofrece ya el perfil de Google</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Asistente de IA para el equipo</td>
+                                <td>ChatGPT Business Standard con 2 asientos</td>
+                                <td>42 €</td>
+                                <td>504 €</td>
+                                <td>sólo tiene sentido para redacción, cartas y contenido</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Previsión de demanda</td>
+                                <td>Proyecto enterprise más integración con el TPV</td>
+                                <td>No comparable con una suscripción</td>
+                                <td>Varios miles de euros</td>
+                                <td>sólo viable si el TPV tiene API y el catálogo está limpio</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
-                <h3>Estas herramientas son para ti si:</h3>
-                <ul>
-                    <li>Sufres no-shows y huecos libres en hora punta que no se rellenan</li>
-                    <li>No sabes cuánto te cuesta realmente cada plato (food cost sin control)</li>
-                    <li>Recibes tantas reseñas que no puedes leerlas todas y los problemas se enteran por la nota</li>
-                    <li>Gestionas el delivery con tabletas y errores de transcripción</li>
-                </ul>
-
-                <h3>Estas herramientas NO son para ti si:</h3>
-                <ul>
-                    <li>Tu operación no está estandarizada (menú, stock, horarios cambiantes) y no tienes datos que alimentar</li>
-                    <li>El equipo no está dispuesto a formarse en el TPV o las plataformas nuevas</li>
-                    <li>Tu volumen no justifica la suscripción: un local pequeño puede cubrir lo esencial con las funciones gratuitas</li>
-                    <li>Esperas que la IA sustituya la gestión del producto y del personal (no lo hace, y no debe)</li>
-                </ul>
 
                 <div class="callout callout-info">
-                    <strong>Nota:</strong> precios orientativos de septiembre 2026 según tarifas públicas y rangos de mercado. La hostelería es un sector con comisiones variables por canal; pide siempre la simulación con tu volumen real antes de firmar.
+                    <strong>Sobre la moneda:</strong> OpenAI factura en euros y Anthropic en dólares, y el cobro en tu moneda te lo aplica cada proveedor. No existe un tipo de cambio único al que atenerse, así que cualquier comparativa que convierta a una cifra única está inventándose un número. Compara en la moneda en la que te van a facturar.
                 </div>
 
-                <h2 id="faq">Preguntas frecuentes</h2>
+                <p>La conclusión aritmética es la que casi ningún artículo dice en voz alta: <strong>para un restaurante independiente, la parte de IA por asiento es una partida menor y la integración es la partida mayor</strong>. Dos asientos de ChatGPT Business son 42 € al mes. Un proyecto de previsión con integración en un TPV propietario puede costar cinco o seis veces esa cifra en un sólo mes de trabajo externo. Elegir mal el orden de compra significa gastar el presupuesto en la partida pequeña.</p>
 
-                <h3>¿Cómo usa la IA un restaurante para ganar más dinero?</h3>
-                <p>Las cuatro aplicaciones con mejor retorno son: previsión de demanda para ajustar compras y personal (reducir mermas y horas de más), gestión de reservas y listas de espera con IA (TheFork), análisis de reseñas para detectar problemas repetidos antes de que bajen la nota media, y automatización de pedidos por WhatsApp o web. Juntas atacan los dos grandes escapes de margen de la hostelería: la merma y el no-show.</p>
+                <p>Por eso la recomendación que aparece en las guías de <a href="../../guias/elegir-herramienta-ia-negocio/">cómo elegir herramienta de IA para un negocio</a> se aplica aquí con una condición previa: <strong>antes de elegir herramienta, elige qué datos vas a poder leer</strong>. La <a href="../../herramientas-ia/chatgpt-enterprise/">ficha de ChatGPT Enterprise</a> explica qué cambia entre el plan de negocio y el plan grande, aunque en un restaurante de un local rara vez lo vas a necesitar.</p>
 
-                <h3>¿Cuánto cuesta implementar IA en un restaurante?</h3>
-                <p>Se puede empezar con coste cero: TheFork Manager tiene plan gratuito y las funciones de análisis de reseñas básicas vienen incluidas en la mayoría de plataformas de gestión. Un TPV con IA (tipo Toast o su equivalente europeo) cuesta entre 50 y 200 euros al mes según módulos. La previsión de demanda profesional (PreciTaste, Avero) es una solución enterprise con precios desde miles de euros anuales, justificada en cadenas o restaurantes con volumen alto.</p>
+                <h2 id="precios-2026">Precios 2026: licencias, integraciones y el coste que no está en la factura</h2>
 
-                <h3>¿La IA puede sustituir al personal de un restaurante?</h3>
-                <p>No sustituye a cocina ni sala, pero sí reasigna trabajo administrativo: la IA responde reservas, gestiona listas de espera, resume reseñas y prevé cuánta gente vendrá cada día. El hostelero deja de hacer de administrativo y vuelve a gestionar personas y producto. En un sector con falta crónica de personal, la IA reduce la carga de los puestos que sí hay, en lugar de eliminar puestos.</p>
+                <p>ésta sección separa lo que cuesta un clic de lo que cuesta un proyecto, porque en hostelería confundirlos es el error que más dinero cuesta.</p>
+
+                <p>La tabla siguiente recoge los precios de lista del asistente generalista. Todos están consultados el <strong>3 de octubre de 2026</strong> y en la moneda en la que factura cada proveedor.</p>
+
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>PreciTaste</th>
+                                <th>Modelo de cobro</th>
+                                <th>Precio de lista</th>
+                                <th>Encaja en un restaurante</th>
+                                <th>Lo que aporta de verdad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>ChatGPT Business Standard</strong></td>
+                                <td>Por asiento, mínimo 2</td>
+                                <td>21 € al mes por asiento, facturación anual</td>
+                                <td>Sí, para el equipo de gerencia</td>
+                                <td>Redacción de cartas, menú en varios idiomas, descripciones para plataformas y contenido</td>
+                            </tr>
+                            <tr>
+                                <td>Claude Team</td>
+                                <td>Por asiento, mínimo 2</td>
+                                <td>20 US$ al mes por asiento</td>
+                                <td>Sí, mismo uso</td>
+                                <td>Textos largos: pliegos de condiciones, ajuste de descripciones, informes</td>
+                            </tr>
+                            <tr>
+                                <td>Google Workspace Business Standard</td>
+                                <td>Por usuario, mínimo 1</td>
+                                <td>13,60 € al mes por usuario en España</td>
+                                <td>Sí, si ya lo usáis para el correo</td>
+                                <td>Gemini en correo y ofimática, útil para el parte y los turnos</td>
+                            </tr>
+                            <tr>
+                                <td>Gemini Enterprise Business</td>
+                                <td>Por asiento, hasta 300</td>
+                                <td>Desde 21 US$ al mes por asiento</td>
+                                <td>sólo para cadenas con varios locales</td>
+                                <td>Preguntas sobre el corpus documental del negocio</td>
+                            </tr>
+                            <tr>
+                                <td>Plan individual de cualquiera de los tres</td>
+                                <td>Por persona</td>
+                                <td>Precio de consumo</td>
+                                <td><strong>Con reservas.</strong> Sin SSO ni auditoría centralizada</td>
+                                <td>Nada que ver con tickets ni con reservas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout">
+                    <strong>La fecha que decide:</strong> todas estas cifras están consultadas el <strong>3 de octubre de 2026</strong> y son las que pública cada proveedor en su página de precios en ese momento. Los precios en euros de OpenAI de la tabla son con pago anual, y los de Anthropic también. Si te contratan con pago mensual, la cifra cambia. Léelo en el checkout, no en una tabla.
+                </div>
+
+                <p>Y ahora la tabla que ninguna comparativa del sector incluye: <strong>los costes que aparecen después de la firma</strong>. Estos son reales, se pueden calcular antes de comprar y casi nadie los calcula.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Coste diferido</th>
+                                <th>Cuándo aparece</th>
+                                <th>Cómo se calcula</th>
+                                <th>Se puede evitar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Integración con el TPV</strong></td>
+                                <td>Antes de empezar, en la fase de despliegue</td>
+                                <td>Horas de desarrollo más el coste del TPV nuevo si resulta que el actual no tiene API</td>
+                                <td>Sí: verificando la API antes de comprar el software</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Limpieza de catálogo</strong></td>
+                                <td>En el primer mes</td>
+                                <td>Horas para unificar productos entre TPV, carta y canales de delivery</td>
+                                <td>No: es trabajo previo obligatorio</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cuota por transacción</strong></td>
+                                <td>En la factura mensual, desde el primer mes</td>
+                                <td>Número de pedidos o de reservas por el precio unitario de la cuota</td>
+                                <td>A veces, comparando proveedores antes de firmar</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Comisión por reserva cubierta</strong></td>
+                                <td>En cada reserva que entra por el canal</td>
+                                <td>Número de reservas por el porcentaje de comisión</td>
+                                <td>Sí: negociando o diversificando canales</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Formación del equipo de sala</strong></td>
+                                <td>En el primer mes</td>
+                                <td>Horas de formación más la pérdida de cobertura durante el aprendizaje</td>
+                                <td>No: es coste del proyecto, no del software</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sustitución de equipos al cambiar de TPV</strong></td>
+                                <td>Al migrar, una sola vez</td>
+                                <td>Coste del terminal, del software y de la formación, más el día de caída</td>
+                                <td>sólo decidiendo antes, no después</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La conclusión es la misma que en el resto de artículos de ésta sección, y aquí es todavía más cierta: <strong>la licencia es la partida más barata del proyecto</strong>. La <a href="../../guias/cuanto-cuesta-implementar-ia/">guía de cuánto cuesta implementar IA</a> desarrolla la metodología de cálculo, y la <a href="../../guias/roi-real-Empresas-ia/">guía de ROI real en Empresas</a> propone cómo medir si el retorno existe. En hostelería hay que añadirle una variable que no aparece en ninguna: la temporada.</p>
+
+                <h2 id="datos-y-confidencialidad">Datos de comensales y confidencialidad: el problema sin usuarios</h2>
+
+                <p>Este es el punto donde la hostelería se sale del patrón de los otros sectores, y conviene entenderlo bien antes de firmar nada.</p>
+
+                <p>En un SaaS de oficina, el tratamiento de datos personales tiene una estructura cómoda: hay usuarios registrados, que han aceptado condiciones, que están registrados y que se pueden dar de baja. En un restaurante, <strong>no hay nada de eso</strong>. El comensal paga, come y se va. No hay cuenta, no hay registro, no hay consentimiento informado y no hay relación. Y sus datos aparecen igualmente en tus sistemas: el ticket con lo que pidió, la reserva con su teléfono, la factura con su nombre, y si paga con tarjeta, el identificador de la operación.</p>
+
+                <p>La consecuencia directa es que <strong>no puedes dar por hecho que puedes entrenar un modelo con esos datos</strong>. La <a href="https://www.aepd.es/sites/default/files/2020-02/adecuacion-rgpd-ia.pdf" rel="noopener nofollow" target="_blank">guía de la AEPD sobre adecuación al RGPD de tratamientos que incorporan IA</a> es el documento que hay que leer antes de diseñar nada, y su criterio es simple: tiene que haber base jurídica y, si el tratamiento supera los umbrales de riesgo que fija la propia guía, evaluación de impacto.</p>
+
+                <p>Y hay cuatro contextos distintos que se mezclan todo el tiempo en hostelería, cada uno con su regla:</p>
+
+                <ul>
+                    <li><strong>Los datos del contrato con la plataforma de reservas.</strong> Aquí el comensal sí ha aceptado las condiciones de esa plataforma, y ella es la responsable del fichero mientras dura la relación. Tu relación con la plataforma es de encargado a encargado.</li>
+                    <li><strong>Tu fichero propio de clientes.</strong> Si guardas datos de contacto para mandar promociones, estás haciendo marketing y necesitas una base jurídica. La más discutible en hostelería es el interés legítimo, porque una relación de atención en sala no genera una expectativa de recibir promociones.</li>
+                    <li><strong>Las reseñas públicas.</strong> No son datos confidenciales en el sentido GDPR de un dato sensible, pero sí pueden contener datos de salud si alguien comenta una restricción alimentaria, y eso cambia el tratamiento.</li>
+                    <li><strong>Los tickets y las facturas.</strong> Son documentos contables con obligación de conservación, y su tratamiento es distinto del de un fichero de clientes. No se pueden borrar porque el plazo legal no ha vencido.</li>
+                </ul>
+
+                <div class="callout callout-warning">
+                    <strong>El error que no se ve:</strong> importar el histórico de tickets de tres años a una herramienta de IA para «ver qué vende más» y que esa herramienta lo use para entrenar. Has metido datos de comensales sin base jurídica, has hecho una transferencia a un proveedor que puede estar fuera del Espacio Económico Europeo, y has creado un fichero que nadie ha declarado. Se arregla, pero cuesta más que no hacerlo.
+                </div>
+
+                <p>Y hay un punto regulatorio adicional que en hostelería se olvida constantemente y que ya tiene fecha: <strong>la facturación electrónica obligatoria</strong>. Los sistemas de computerized facturación están obligados a adaptarse antes del <strong>1 de enero de 2027</strong> para las entidades que presentan el Impuesto sobre Sociedades y antes del <strong>1 de julio de 2027</strong> para autónomos y profesionales en IRPF, según el <a href="#fuentes">Real Decreto-ley 15/2025</a>. Ese calendario condiciona el TPV que vas a instalar en 2026, y por eso tiene que estar en ésta conversación y no en la de compras del año que viene.</p>
+
+                <h2 id="el-corte-que-decide-la-compra">El corte que decide la compra: SSO, auditoría y SLA</h2>
+
+                <p>Hay una línea que separa el software de consumo del software de Empresa, y no pasa por las funciones de IA. Pasa por cinco capacidades que <strong>no vienen en ningún plan individual</strong>:</p>
+
+                <ul>
+                    <li><strong>SSO (inicio de sesión único).</strong> Con SAML, el alta y la baja de acceso dejan de depender de que alguien se acuerde de cerrar una cuenta. En un restaurante con rotación de personal —y en hostelería rota—, esto evita que el acceso de un empleado que se vaya siga vivo.</li>
+                    <li><strong>SCIM (aprovisionamiento automático).</strong> Crea y da de baja cuentas desde el directorio corporativo. Es lo que evita que el acceso sobreviva a la persona.</li>
+                    <li><strong>Registro de auditoría.</strong> Saber quién accede a qué y con qué fecha. En hostelería tiene una utilidad adicional concreta: es lo que te permite demostrar que nadie ha accedido al histórico de pedidos de un empleado que se fue.</li>
+                    <li><strong>Control de acceso por roles (RBAC).</strong> Para que el personal de barra no vea los márgenes de la carta y el de sala sí vea las reservas.</li>
+                    <li><strong>SLA y cifrado con claves gestionadas por el cliente.</strong> sólo en los planes grandes, y no en todos.</li>
+                </ul>
+
+                <p>Dónde corta cada proveedor está bastante claro. En <strong>ChatGPT Business</strong> se conectan alrededor de 40 archivos por asiento; en <strong>Público</strong>, unos 250, y sólo Enterprise tiene certificaciones ISO 27001, 27017, 27018 y 27701, aprovisionamiento SCIM, cifrado con claves gestionadas por el cliente, control de acceso por roles, registros de cumplimiento de API y residencia de datos en diez regiones con la UE incluida. En <strong>Público</strong> no hay generación de imágenes, y en <a href="../../herramientas-ia/copilot-microsoft/">Microsoft 365 Copilot</a> los modelos de OpenAI se ejecutan dentro de Azure mientras que los de Claude salen hacia centros de datos en Estados Unidos: un detalle que importa si tu política de datos exige residencia.</p>
+
+                <p>Pero en hostelería hay una sexta capacidad que decide más que todas las demás juntas, y no es técnica: <strong>la continuidad de la operación cuando la herramienta falla</strong>. Si tu canal de pedidos por WhatsApp se cae un sábado noche, ¿qué pasa? Necesitas un proceso de reserva manual que funcione sin conexión, y eso es una decisión de diseño que hay que tomar antes, no un requisito que se pueda añadir después.</p>
+
+                <div class="callout">
+                    <strong>Las preguntas que cierran la venta:</strong> ¿qué pasa si la herramienta cae un sábado noche? ¿puedo exportar mis datos? ¿quién da de baja el acceso cuando alguien se va? Si la primera respuesta es «depende», no cierres la compra.
+                </div>
+
+                <h2 id="residencia-y-cumplimiento">Residencia de datos y calendario del AI Act</h2>
+
+                <p>El Reglamento (UE) 2024/1689, conocido como AI Act, no certifica productos ni culpa a los proveedores por lo que hace su cliente. Lo que hace es poner fechas y obligaciones sobre quien usa la tecnología, y en hostelería la conclusión es más favorable de lo que parece.</p>
+
+                <p>El calendario oficial empieza antes de lo que cree la mayoría: el artículo 4 sobre alfabetización en materia de IA y las prohibiciones del capítulo II se aplican desde el <strong>2 de febrero de 2025</strong>, y las obligaciones sobre modelos de propósito general, desde el <strong>2 de agosto de 2025</strong>.</p>
+
+                <p>A partir de ahí hay tres hitos que afectan a un restaurante: la aplicación general del Reglamento y el artículo 50 de transparencia, desde el <strong>2 de agosto de 2026</strong>; el régimen de sistemas de alto riesgo, desde el <strong>2 de agosto de 2027</strong>; y el alto riesgo embebido en productos ya regulados, desde el <strong>2 de agosto de 2028</strong>.</p>
+
+                <p>Qué significa para un restaurante. Lo primero, y es la buena noticia: <strong>un restaurante no está en el ámbito de alto riesgo</strong>. El régimen de alto riesgo del AI Act alcanza usos como el reclutamiento, la evaluación crediticia, la educación o la gestión de infraestructuras críticas, no la gestión de un bar. Si tu uso es previsión de ventas, gestión de reservas, atención al cliente y análisis de reseñas, estás en el ámbito general del Reglamento, no en el de alto riesgo.</p>
+
+                <p>Lo segundo es lo que sí te aplica desde el <strong>2 de agosto de 2026</strong>: las obligaciones de transparencia del artículo 50. En la práctica, esto significa que si un comensal interactúa con un chatbot que se presenta como si fuera una persona, hay que decirlo, y el contenido generado de forma artificial debe ser identificable. No es un problema serio en hostelería, pero sí es un problema real: <strong>un bot que se hace pasar por camarero es un problema reputacional y ahora también es una obligación</strong>.</p>
+
+                <p>Lo tercero, y es lo que muchos ignoran: el AI Act también obliga a los que usan IA a tener <strong>competencia de su personal</strong> para usar esas herramientas correctamente. En un restaurante eso significa que la persona que gestiona las respuestas del bot tiene que saber qué puede decir y qué no. Es barato de hacer y evita el peor escenario: que el bot conteste algo que no puede.</p>
+
+                <p>La residencia de datos funciona con otra lógica, más sosa y más importante: dónde se ejecutan físicamente las tareas y quién puede acceder a ellas. Si un proveedor procesa el histórico de tus tickets fuera del Espacio Económico Europeo, eso puede constituir una transferencia internacional, con sus requisitos de garantías. En un local con un sólo responsable de datos, casi ningún proveedor responde a esa pregunta. Pregúntalo por escrito antes de exportar nada.</p>
+
+                <h2 id="tabla-comparativa">Tabla comparativa de herramientas de IA para restaurantes</h2>
+
+                <p>ésta tabla junta las dos capas para que se vea cuál falta. Las primeras filas son herramientas con previsión de datos; las últimas, asistentes generalistas. Los datos de gobierno proceden de la documentación oficial de cada proveedor, consultada el 3 de octubre de 2026.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>PreciTaste</th>
+                                <th>PreciTaste</th>
+                                <th>Qué hace realmente</th>
+                                <th>Qué necesita de tu TPV</th>
+                                <th>Riesgo de cumplimiento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td><strong>Gestor de reservas con IA</strong></td>
+                                <td>Plataforma de reservas</td>
+                                <td>Reservas, recordatorios, lista de espera y relleno de huecos dentro de su propio canal</td>
+                                <td>Ninguno: funciona con su propia agenda</td>
+                                <td>Bajo: datos de contacto del comensal</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Centralizador de pedidos de delivery</strong></td>
+                                <td>Integrador de plataformas</td>
+                                <td>Envía los pedidos de varias apps a tu impresora o a tu TPV en un formato común</td>
+                                <td>Integración con las plataformas de delivery; con el TPV, según el caso</td>
+                                <td>Bajo: datos de contacto</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pedidos por WhatsApp o web propia</strong></td>
+                                <td>Canal de venta conversacional</td>
+                                <td>Convierte una conversación en un pedido con productos identificados y total</td>
+                                <td>Entrada de pedidos al TPV, que es su gran ventaja</td>
+                                <td>Bajo, si el cliente consents</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Análisis de reseñas</strong></td>
+                                <td>Herramienta de reputación</td>
+                                <td>Agrupa por temas y avisa de problemas repetidos antes de que bajen la nota</td>
+                                <td>Ninguno: lee reseñas públicas</td>
+                                <td>Bajo, salvo que las reseñas contengan datos de salud</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Previsión de demanda</strong></td>
+                                <td>Suscripción</td>
+                                <td>Predice clientes y productos para ajustar compras y turnos</td>
+                                <td><strong>Histórico de ventas accesible por API.</strong> Sin eso, no funciona</td>
+                                <td>Medio: trata el histórico de tickets, que es dato personal</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Análisis de margen por plato</strong></td>
+                                <td>Suscripción</td>
+                                <td>Calcula el coste real de cada plato cruzando escandallos con ventas</td>
+                                <td><strong>Escandallo digital y ventas por API.</strong> Si el coste vive en una hoja de cálculo, no hay integración</td>
+                                <td>Medio, por el mismo motivo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ChatGPT Business Standard</strong></td>
+                                <td>Asistente de IA</td>
+                                <td>Redacción de cartas, menú multilingüe, descripciones y contenido</td>
+                                <td>Suscripción</td>
+                                <td>Bajo: no toca datos de comensales</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Claude Team</strong></td>
+                                <td>Asistente de IA</td>
+                                <td>Textos largos: pliegos de condiciones, informes, descripciones</td>
+                                <td>Suscripción</td>
+                                <td>Bajo, si no se le pasan datos de comensales</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Si sólo vas a leer una fila de esa tabla, lee la primera. Un gestor de reservas bien configurado ataca el no-show y el hueco vacío sin tocar tu TPV, sin proyecto de integración y con coste de entrada casi nulo. Las dos filas de analítica son las únicas que dependen de la API del TPV, y por eso son las que más se retrasan en la decisión.</p>
+
+                <h2 id="tabla-por-caso-de-uso">Qué usar según lo que tengas que hacer</h2>
+
+                <p>La pregunta útil no es «cuál es la mejor herramienta», sino «qué problema tengo y qué lo resuelve». ésta tabla traduce los casos reales a producto.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Si tu problema es…</th>
+                                <th>Herramienta adecuada</th>
+                                <th>Por qué no otra</th>
+                                <th>Requiere API del TPV</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Se te pierden reservas por no-show y huecos vacíos</td>
+                                <td>Gestor de reservas con IA</td>
+                                <td>El asistente de texto no gestiona tu agenda ni conoce tu sala</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>El delivery se gestiona con una tableta por plataforma</td>
+                                <td>Centralizador de pedidos</td>
+                                <td>El bot de WhatsApp no trae pedidos de las plataformas de delivery</td>
+                                <td>Según el producto</td>
+                            </tr>
+                            <tr>
+                                <td>Perdemos pedidos de takeaway por WhatsApp</td>
+                                <td>Canal de pedidos por WhatsApp o web propia</td>
+                                <td>Una plataforma de reservas no procesa pedidos de comida para llevar</td>
+                                <td>No, si el canal gestiona el pedido por su cuenta</td>
+                            </tr>
+                            <tr>
+                                <td>No sabes qué plato pierde dinero</td>
+                                <td>Analítica de margen por plato</td>
+                                <td>El escandallo en papel no se puede analizar con IA</td>
+                                <td><strong>Sí, y escandallo digital</strong></td>
+                            </tr>
+                            <tr>
+                                <td>La merma de frescos es incontrolable</td>
+                                <td>Previsión de demanda</td>
+                                <td>Ninguna herramienta de reservas o reseñas toca las compras</td>
+                                <td><strong>Sí, y es el requisito que más falla</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Los problemas se enteran por la nota de Google</td>
+                                <td>Análisis de reseñas</td>
+                                <td>Antes de pagar, mira qué agrupa ya tu perfil de negocio en Google</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Necesitas la carta en varios idiomas</td>
+                                <td>ChatGPT Business Standard o Claude Team</td>
+                                <td>Ninguna herramienta de gestión de sala traduce nada</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>El equipo de sala tarda en aprender el sistema nuevo</td>
+                                <td>Nada de IA: formación presencial</td>
+                                <td>La IA no enseña a usar un TPV</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Quiero saber qué cocinan menos y por qué</td>
+                                <td>Analítica, pero con escandallo primero</td>
+                                <td>Sin datos de escandallo, cualquier análisis es suposición</td>
+                                <td>Sí</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Un aviso sobre la lectura de esa tabla: las dos filas de analítica comparten el mismo requisito y son las que más se compran con expectativas equivocadas. Ambas necesitan <strong>datos de TPV accesibles por API</strong>, y en un restaurante independiente ese requisito no se cumple casi nunca con el equipo actual. La recomendación honesta es: empieza por las filas que no lo necesitan y vuelve a ésta tabla cuando el TPV haya cambiado.</p>
+
+                <h2 id="la-que-esta-casi-todo-esto-le-da-igual">El fallo oculto: cuando el TPV no tiene API</h2>
+
+                <p>Este es el apartado que le falta a todas las comparativas del sector, y es el que más dinero ahorra. Lo vamos a decir sin rodeos: <strong>un modelo de IA no puede leer el ticket de un terminal de punto de venta que no tiene API</strong>. Y la mayoría de los TPV que hay en las cocinas españolas no la tienen.</p>
+
+                <p>Por qué. Un TPV de hostelería típico es un <em>caja</em> con un software propietario que instaló el distribuidor hace tres o cinco años. No tiene API pública documentada; a veces tiene una interfaz local que el fabricante no quiere exponer. Lo más común es que tenga dos formas de sacar datos: un informe impreso en PDF y un fichero de ventas que hay que pedir al distribuidor. Ninguna de las dos sirve para alimentar un modelo en tiempo real.</p>
+
+                <p>La consecuencia es concreta, y conviene ponerla en números con un caso de cálculo propio. Una herramienta de previsión de demanda promete reducir la merma de frescos. <strong>Estimación propia</strong>: si acierta, el recorrido razonable va de 2 a 4 puntos porcentuales sobre la materia prima, con los supuestos de una facturación mensual de 30.000 € y un 30 % de coste de materia prima. La fórmula es 30.000 € × 30 % × 2 a 4 puntos, es decir, entre 180 € y 360 € al mes. Ese es el techo del retorno, con la herramienta funcionando perfectamente.</p>
+
+                <p>Ahora el coste de la alternativa. Si tu TPV no tiene API y quieres que la herramienta funcione, hay dos caminos, y los dos cuestan dinero:</p>
+
+                <ul>
+                    <li><strong>Cambiar el TPV por uno que tenga API abierta.</strong> Eso implica terminal, software, formación, y un día de caída. Estimación propia: en un local de 50 servicios al día y un ticket medio de 10 a 30 €, ese día de caída son entre 500 € y 1.500 € de ingresos. Y hay que hacerlo igual por la <a href="#datos-y-confidencialidad">obligación de facturación electrónica de 2027</a>, así que la pregunta es si lo haces ahora por la IA o en 2027 por la ley.</li>
+                    <li><strong>Pedir al distribuidor una exportación periódica.</strong> Es más barato y funciona si el volumen es pequeño, pero el dato llega con retraso y en un formato que casi siempre hay que limpiar a mano. Predecir con datos de hace quince días es predecir mal.</li>
+                </ul>
+
+                <p>Ese es el fallo oculto, y por eso la recomendación de este artículo es clara: <strong>para un restaurante independiente sin API en el TPV, la previsión de demanda no es una compra, es una consecuencia del cambio de TPV</strong>. Y hasta que eso ocurra, el retorno está en las tres filas que no dependen del TPV: reservas, pedidos por WhatsApp y reseñas.</p>
+
+                <div class="callout">
+                    <strong>La conclusión práctica:</strong> antes de comprar previsión de demanda, haz una sola pregunta al distribuidor de tu TPV: «¿tiene API abierta?». Si la respuesta es no o es un silencio, el orden de compra cambia por completo. Y ten en cuenta el calendario de facturación electrónica, que te va a obligar a cambiarlo igualmente.
+                </div>
+
+                <h2 id="lo-que-debe-hacer-siempre-una-persona">Lo que debe hacer siempre una persona</h2>
+
+                <p>Hay cosas en un restaurante que no se pueden automatizar por una razón distinta a la técnica, y conviene tenerlas escritas en el procedimiento. En hostelería el límite no es el marco de alto riesgo del AI Act, que no aplica a un bar; es el criterio Profesional y la responsabilidad.</p>
+
+                <p>La lista mínima de tareas que deben quedar en manos de una persona, con nombre y apellidos en el procedimiento:</p>
+
+                <ul>
+                    <li><strong>La compra y el escandallo.</strong> Qué se pide, en qué cantidad y a qué proveedor es una decisión que depende de la calidad del producto y de la relación con el proveedor, no de un modelo. Ningún sistema de previsión decide a quién se le compra.</li>
+                    <li><strong>La ficha técnica y lainesis de un plato nuevo.</strong> Cuánto cuesta de verdad, cuánto rinde y qué pasa si el proveedor sube el precio. Se puede ayudar con un cálculo, pero la decisión es del jefe de cocina.</li>
+                    <li><strong>La respuesta a un cliente quejándose.</strong> Un bot puede reconocer el problema y abrir una incidencia, pero la respuesta a una intoxicación, a un error en el allergy o a una queja pública la escribe una persona.</li>
+                    <li><strong>La respuesta a una reseña que menciona un problema de salud.</strong> Si alguien comenta que el servicio fue un desastre o que le diagnosticaron una alergia, eso es un dato de salud y además es un riesgo reputacional. Lo trata una persona.</li>
+                    <li><strong>La contratación y el turno.</strong> La previsión ayuda a dimensionar, pero quién entra a trabajar en tu local es una decisión con responsabilidades laborales.</li>
+                    <li><strong>El menú y el precio de venta.</strong> La IA ayuda a redactar la descripción; el precio lo pones tú, y ahí es donde está tu margen.</li>
+                </ul>
+
+                <p>Y hay un criterio general que resume el resto: <strong>la IA puede proponer, la persona decide y la persona responde</strong>. Cuando la IA acierta, el mérito no es de la IA; cuando falla, la responsabilidad sigue siendo del restaurante. Escribir ese principio en el procedimiento no es burocracia: es la diferencia entre un uso de IA defendible y uno que no lo es.</p>
+
+                <h2 id="errores-de-implantacion">Los seis errores de implantación y lo que cuestan</h2>
+
+                <p>Estos son los errores que aparecen de forma recurrente cuando un restaurante digitaliza su operación con IA, con su coste aproximado en tiempo y en dinero.</p>
+
+                <h3>1. Comprar previsión antes de tener datos ni API</h3>
+
+                <p>Es el error más caro en términos absolutos y el más común. Se contrata una solución enterprise de previsión porque «hay que estar al día», sin comprobar que el TPV tiene API, que el escandallo está digitalizado y que hay histórico de ventas fiable. <strong>Coste:</strong> el contrato anual más el tiempo de implantação, y el resultado es un informe que nadie usa porque los datos llegan con retraso.</p>
+
+                <h3>2. No medir la línea base antes de empezar</h3>
+
+                <p>Si no apuntas tu food cost, tu porcentaje de no-shows, tu merma y tu nota media antes de instalar nada, no hay forma de demostrar que nada sirve. La métrica aquí es fácil. Anótala cuatro semanas antes de cambiar nada. <strong>Coste:</strong> la imposibilidad de defender la inversión cuando toca renovar, y el efecto real es que la herramienta no se renueva porque nadie sabe qué hacía.</p>
+
+                <h3>3. Ignorar la brecha digital del equipo de sala</h3>
+
+                <p>Si el personal no usa el TPV nuevo ni responde al bot, la inversión no retorna. Y en hostelería la rotación es alta, así que cada persona nueva necesita formación. <strong>Coste:</strong> el coste de formación, que es parte del coste de la herramienta y no un extra, más la pérdida de cobertura durante el aprendizaje.</p>
+
+                <h3>4. Automatizar la respuesta a reseñas graves con plantilla</h3>
+
+                <p>Responder con IA a una reseña de intoxicación o de incidente con una plantilla genérica es el error de reputación más caro de la lista, porque se paga en la nota media y en la sala. <strong>Coste:</strong> difícil de medir en euros y muy fácil de medir en clientes que no vuelven.</p>
+
+                <h3>5. Depender de una sola plataforma de reservas</h3>
+
+                <p>Delegar toda la ocupación en un sólo canal es cómodo, y a la vez aumenta tu dependencia de sus condiciones y comisiones. <strong>Coste:</strong> cuando cambias las condiciones, no tienes margen de negociación. Diversificar canales es barato si lo haces desde el principio y carísimo si lo haces después.</p>
+
+                <h3>6. Importar el histórico de tickets a una herramienta sin base jurídica</h3>
+
+                <p>Subir tres años de ventas a una herramienta de IA para «ver qué vende más» es un tratamiento de datos personales sin base jurídica, y probablemente una transferencia internacional. <strong>Coste:</strong> es el único de los seis que puede costar una sanción, y regularizarlo después cuesta más que no hacerlo.</p>
+
+                <h2 id="plan-de-90-dias">Plan de 90 días</h2>
+
+                <p>Un despliegue que funciona tiene hitos verificables. Estos son los de un restaurante que quiere recuperar margen sin convertir la operación en un proyecto de tecnología.</p>
+
+                <h3>Días 1 a 15 · Diagnóstico y decisión</h3>
+
+                <ul>
+                    <li>Preguntar al distribuidor del TPV si tiene API abierta y documentada. Es la pregunta que ordena todo lo demás.</li>
+                    <li>Contar servicios al día, no-shows, número de pedidos por canal y merma estimada de frescos.</li>
+                    <li>Medir la línea base: food cost, porcentaje de no-shows, nota media y horas de sala dedicadas a tomar pedidos.</li>
+                    <li>Revisar en qué canal estás y qué te da ya de graça. Antes de pagar por análisis de reseñas, mira el perfil de negocio de Google.</li>
+                </ul>
+
+                <h3>Días 16 a 45 · Canal de venta y formación</h3>
+
+                <ul>
+                    <li>Configurar el canal de pedidos por WhatsApp o web propia, con el menú y los horarios sincronizados con la carta.</li>
+                    <li>Formar al equipo de sala en el flujo nuevo. La formación es parte del presupuesto, no un extra.</li>
+                    <li>Dejar un proceso de reserva manual que funcione si la herramienta cae. Un sábado por la noche no es el momento de descubrir que no hay plan B.</li>
+                    <li>Revisar la base jurídica del fichero de clientes antes de empezar a mandar promociones nuevas.</li>
+                </ul>
+
+                <h3>Días 46 a 75 · Puesta en marcha medida</h3>
+
+                <ul>
+                    <li>Activar recordatorios y lista de espera durante cuatro semanas completas, sin intervenir.</li>
+                    <li>Medir no-shows, huecos rellenados y pedidos por chat frente a la línea base.</li>
+                    <li>Corregir los errores de los bots más frecuentes, uno a uno, hasta bajar del nivel en el que la revisión manual es más cara que el ahorro.</li>
+                </ul>
+
+                <h3>Días 76 a 90 · Decisión sobre la ampliación</h3>
+
+                <ul>
+                    <li>Comparar el ahorro medido con el coste total de un año (licencia, integración, formación, horas de sala).</li>
+                    <li>Decidir si se amplía, se sube de plan o se para.</li>
+                    <li>Si el TPV no tiene API, tomar la decisión del cambio con el calendario de facturación electrónica en mente: es un coste que vas a asumir igualmente.</li>
+                </ul>
+
+                <p>El criterio de éxito es aritmético, no emocional: si a los 90 días el no-show ha bajado de forma medida y el canal de pedidos funciona, la operación se sostiene sola. Si no ha bajado, el problema no era la herramienta, y eso también es un resultado útil.</p>
+
+                <h2 id="cuando-contratar-un-integrador">Cuándo contratar un integrador</h2>
+
+                <p>La respuesta corta es que para un local independiente casi nunca hace falta un integrador, y eso es una buena noticia. Un despliegue de un canal de pedidos más un gestor de reservas se resuelve sin ayuda externa en la mayoría de los casos. Pero hay umbrales claros.</p>
+
+                <ul>
+                    <li><strong>Cuando el TPV no tiene API y quieres que sí la tenga.</strong> Ahí no hay atajo: o se cambia el TPV o se trabaja con exportaciones periódicas. Un integrador puede diseñar ese puente, pero conviene entender antes que es una decisión de sistema, no un desarrollo.</li>
+                    <li><strong>Cadenas con tres o más locales.</strong> A partir de ahí hay varios centros, procesos distintos por local y una necesidad de consolidación que ninguna configuración resuelve sola.</li>
+                    <li><strong>Cuando hay que integrar cuatro o más sistemas.</strong> TPV, plataformas de delivery, canal propio, compras, personal y facturación conectados no son una configuración, son un proyecto. La <a href="../../guias/cuanto-cuesta-implementar-ia/">guía de coste de implementación</a> pone cifras de referencia.</li>
+                    <li><strong>Cuando la previsión va a la cocina.</strong> Si la previsión va a generar órdenes de compra automáticas, necesitas alguien que verifique que el sistema no pide cosas raras en domingo. Es un control de negocio, no técnico.</li>
+                    <li><strong>Cuando la pregunta es de cumplimiento.</strong> Si lo que necesitas es un informe que justifique cómo tratas los datos de comensales y qué proveedores intervienen, eso es trabajo especializado.</li>
+                </ul>
+
+                <p>Y hay un caso en el que contratar ayuda es casi siempre mala idea: si lo que quieres es conectar un asistente de IA a los datos de un restaurante de un sólo local. Eso se hace en una tarde y el coste de un consultor para esa tarea es mayor que el de doce meses de licencias. Empieza por el canal de pedidos, mide durante tres meses y, sólo entonces, decide si necesitas más.</p>
+
+                <h2 id="veredicto-por-perfil">Veredicto por perfil de negocio</h2>
+
+                <p>Seis perfiles reales, con su coste mensual estimado y la razón de la recomendación. Las cifras son sumatorio de licencia y, en la moneda en la que factura cada proveedor; no incluyen integración, que en hostelería es la partida grande.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>PreciTaste</th>
+                                <th>Qué contratar</th>
+                                <th>Coste mensual estimado</th>
+                                <th>Por qué</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bar o cafetería sin reservas y sin delivery</td>
+                                <td>Nada de IA todavía</td>
+                                <td>0 €</td>
+                                <td>Sin volumen de datos, cualquier herramienta devuelve humo. Empieza por el TPV con API</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Restaurante independiente con reservas</td>
+                                <td>Gestor de reservas con IA + canal de pedidos por WhatsApp</td>
+                                <td>De 0 a unos pocos cientos, más comisión por reserva</td>
+                                <td>Ataca el no-show sin depender del TPV y con retorno medible en semanas</td>
+                            </tr>
+                            <tr>
+                                <td>Local con mucho delivery</td>
+                                <td>Centralizador de pedidos + canal de pedidos propios</td>
+                                <td>Orden de decenas de euros más las comisiones de cada canal</td>
+                                <td>Elimina la tableta por plataforma y los errores de transcripción</td>
+                            </tr>
+                                <tr>
+                                <td>Local que recibe muchas reseñas</td>
+                                <td>Análisis de reseñas</td>
+                                <td>Orden de decenas de euros</td>
+                                <td>Avisa de problemas repetidos antes de que bajen la nota. Antes, mira qué da ya Google</td>
+                            </tr>
+                            <tr>
+                                <td>Local con volumen y problemas de merma</td>
+                                <td>Previsión de demanda</td>
+                                <td>Varios miles de euros al año, más la integración</td>
+                                <td>sólo tiene sentido con API en el TPV, escandallo digital y catálogo limpio</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Cadena con tres o más locales</td>
+                                <td>Analítica de margen por plato + previsión + consolidador de pedidos</td>
+                                <td>Proyecto, no suscripción</td>
+                                <td>A partir de tres locales la consolidación deja de ser configurable y necesita diseño previo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout callout-info">
+                    <strong>Sobre las cifras de ésta tabla:</strong> los importes de licencias de reserva, reseñas, canal de pedidos y centralización de pedidos proceden de las páginas de precio de cada fabricante y de rangos de mercado publicados, consultados el 3 de octubre de 2026; se presentan como órdenes de magnitud porque el precio final depende del volumen, del número de locales y de las condiciones contractuales, y varias de estas herramientas cobran además comisión por reserva o por transacción. El importe del asistente de Empresa (21 € o 20 US$ por asiento) sí es precio de lista público. Ninguna cifra de ésta tabla incluye horas de integración ni de formación, que en hostelería suelen ser mayores que la licencia.
+                </div>
+
+                <p>La conclusión que se repite en los seis perfiles es la misma y es la más importante del artículo: <strong>en un restaurante, la IA entra por las reservas y sale por la previsión</strong>, y la previsión no está disponible hasta que el TPV tenga API. El orden correcto es medir, conectar el canal propio, llegar a un TPV que cumpla la obligación de facturación de 2027 y con API, y sólo entonces mirar la analítica. Al revés se acaba pagando un año de suscripción por un informe que no se puede generar.</p>
+
+                <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+
+                <h3 id="faq-1">¿Cuál es el coste real de la IA en un restaurante?</h3>
+                <p>El coste de la licencia va de cero a unos cientos de euros al mes según el canal y las herramientas: el gestor de reservas tiene plan gratuito y cobra comisión por reserva cubierta, el canal de pedidos por WhatsApp o web propia se mueve en el orden de decenas de euros más posibles cuotas por transacción, y el análisis de reseñas en el mismo orden de magnitud. Pero el coste importante no es ese. La partida grande es la integración con el terminal de punto de venta y con el sistema de pedidos, y puede ser un proyecto de varios miles de euros o directamente inviable si tu TPV no tiene API. En una cadena con tres o más locales, la analítica y la previsión son un proyecto, no una suscripción. La regla práctica es sencilla: en hostelería, la licencia es la partida más barata del proyecto.</p>
+
+                <h3 id="faq-2">¿Por qué una herramienta de IA no funciona con mi TPV?</h3>
+                <p>Porque un modelo de IA no puede leer el ticket de un terminal de punto de venta que no tiene API. Y la mayoría de los TPV que hay en las cocinas españolas no la tienen: son sistemas propietarios instalados por el distribuidor hace años, sin API pública documentada, que sólo sacan datos en PDF o en un fichero que hay que pedir. Una herramienta de previsión o de analítica de margen necesita histórico de ventas accesible de forma continua; si el dato llega con quince días de retraso y en un formato que hay que limpiar a mano, el análisis pierde su valor. Por eso la primera pregunta antes de comprar es al distribuidor del TPV: «¿tiene API abierta?». Si no, el orden de compra cambia y el proyecto de previsión se pospone hasta cambiar el TPV.</p>
+
+                <h3 id="faq-3">¿Puedo usar los datos de mis clientes para entrenar una IA?</h3>
+                <p>Con mucho cuidado, porque el comensal no es un usuario registrado. En un SaaS de oficina hay cuenta, hay condiciones aceptadas y hay baja; en un restaurante no hay nada de eso. El comensal paga, come y se va, y sus datos aparecen igualmente en tu ticket, tu reserva y tu factura. Eso significa que no hay una base jurídica automática para entrenar con ellos.</p>
+
+                    <p>Los contextos son cuatro y cada uno tiene su regla: los datos de una reserva los controla la plataforma mientras dura la relación; tu fichero de clientes para promociones necesita una base jurídica, y el interés legítimo es difícil de sostener en hostelería porque nadie espera promociones al reservar una mesa; las reseñas públicas pueden contener datos de salud si alguien comenta una alergia o una intolerancia; y los tickets son documentos contables con obligación de conservación, no un fichero que puedas borrar cuando quieras. Antes de exportar nada, lee la guía de la AEPD sobre adecuación al RGPD en tratamientos con IA.</p>
+
+                <h3 id="faq-4">¿Qué herramienta de IA le conviene a un restaurante independiente?</h3>
+                <p>Depende de tu perfil, pero hay un orden bastante claro. Si tienes reservas, el gestor de reservas con IA es lo primero: coste de entrada cero, retorno medible en semanas y atacan el no-show y el hueco vacío sin depender del TPV. Si tienes takeaway o delivery, el canal de pedidos por WhatsApp o web propia es lo segundo, porque convierte una conversación en un pedido con los productos ya identificados y entra directo en tu TPV.</p>
+
+                    <p>El análisis de reseñas es lo tercero, y sólo después de mirar qué te ofrece ya el perfil de negocio de Google sin pagar nada. La previsión de demanda y la analítica de margen van al final, porque son las dos que dependen de la API del TPV y del escandallo digital. Para un local independiente, casi nunca tiene sentido comprar un plan de asistente de Empresa: siete personas no justifican veinte asientos, y para redactar una carta bastan dos suscripciones.</p>
+
+                <h3 id="faq-5">¿Necesito un plan de Empresa de IA para mi restaurante?</h3>
+                <p>Casi con seguridad no, y esa es una conclusión que ahorra dinero. Un plan de Empresa cobra por asientos y aporta SSO, aprovisionamiento SCIM, registros de auditoría, control de acceso por roles, SLA y residencia de datos por región, que no vienen en ningún plan individual. En un restaurante de un sólo local, el número de personas que realmente usarían un asistente de IA es de dos o tres: el gerente y el jefe de cocina, para la carta, las descripciones y los pliegos. Dos asientos de ChatGPT Business Standard son 42 € al mes, y para eso no hace falta nada más. Donde sí tiene sentido el plan de Empresa es en una cadena, con varios locales y varios ingredientes que dar de baja cuando alguien se va.</p>
+
+                <h3 id="faq-6">¿La IA puede sustituir al personal de un restaurante?</h3>
+                <p>No sustituye a cocina ni a sala, pero sí reasigna trabajo administrativo, y esa es la diferencia real. La IA responde reservas, gestiona listas de espera, resume reseñas y ayuda a dimensionar turnos. El hostelero deja de hacer de administrativo y vuelve a gestionar personas y producto, que es donde está su criterio. En un sector con falta crónica de personal, el efecto de la IA es reducir la carga de los puestos que sí hay, en lugar de eliminar puestos. Y hay una cosa que ningún bot debe hacer nunca: decidir qué se cocina, cuánto se compra a cada proveedor ni qué precio se pone a un plato. Eso depende de la calidad del producto y de tu relación con el proveedor, y no hay modelo que lo sepa.</p>
+
+                <h2 id="fuentes">Fuentes</h2>
+
+                <p>Todos los precios, fechas, condiciones y datos normativos de este artículo proceden de estas fuentes, consultadas el <strong>3 de octubre de 2026</strong>. No hay ninguna cifra estimada sin marca visible, ni ninguna afirmación atribuida a un estudio sin enlace.</p>
+
+                <ul>
+                    <li><strong>BOE.</strong> <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2025-24446" rel="noopener nofollow" target="_blank">Real Decreto-ley 15/2025, de 2 de diciembre</a> — publicación en el BOE núm. 290 de 3 de diciembre de 2025 y modificación de la disposición final cuarta del Real Decreto 1007/2023 con los nuevos plazos del 1 de enero de 2027 (entidades del Impuesto sobre Sociedades) y del 1 de julio de 2027 (resto de obligados del artículo 3.1). Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>BOE.</strong> <a href="https://www.boe.es/eli/es/rd/2023/12/05/1007" rel="noopener nofollow" target="_blank">Real Decreto 1007/2023, de 5 de diciembre</a> — requisitos de los sistemas informáticos de facturación y ámbito subjetivo de los obligados. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Agencia Tributaria.</strong> <a href="https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/cuestiones-generales.html" rel="noopener nofollow" target="_blank">Sistemas informáticos de facturación: cuestiones generales</a> — objeto del Reglamento, las dos modalidades de cumplimiento y capacidad de exportación de los registros. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>AEPD.</strong> <a href="https://www.aepd.es/sites/default/files/2020-02/adecuacion-rgpd-ia.pdf" rel="noopener nofollow" target="_blank">Adecuación al RGPD de tratamientos que incorporan IA</a> — base jurídica, información al interesado, decisiones automatizadas y transferencias internacionales. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>AEPD.</strong> <a href="https://www.aepd.es/preguntas-frecuentes/16-salud" rel="noopener nofollow" target="_blank">Categoría especial: datos de salud</a> — régimen reforzado aplicable cuando las reseñas o los ficheros contienen datos relativos a la salud. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Unión Europea.</strong> <a href="https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=OJ:L_202401689" rel="noopener nofollow" target="_blank">Reglamento (UE) 2024/1689 (AI Act)</a> — calendario de aplicación, artículo 50 de transparencia y ámbito del régimen de alto riesgo. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>OpenAI.</strong> <a href="https://openai.com/business/pricing/" rel="noopener nofollow" target="_blank">Precios de ChatGPT Business y Enterprise</a> — precio por asiento de Business Standard y Premium, facturación anual en euros, rango de asientos y ausencia de precio público en Enterprise. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>OpenAI.</strong> <a href="https://openai.com/business-data/" rel="noopener nofollow" target="_blank">Datos de Empresa de OpenAI</a> — garantía de que el contenido de Empresa no se usa para entrenar modelos. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Anthropic.</strong> <a href="https://www.anthropic.com/pricing" rel="noopener nofollow" target="_blank">Precios de Claude</a> — precios de Claude Team y Claude Team Premium, condición de pago anual o mensual y rango de asientos. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Google.</strong> <a href="https://workspace.google.com/intl/es_es/pricing.html" rel="noopener nofollow" target="_blank">Precios de Google Workspace en España</a> — precios en euros por usuario y mes de Business Starter, Standard y Plus, con su mínimo de un usuario. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Google.</strong> <a href="https://cloud.google.com/gemini-enterprise" rel="noopener nofollow" target="_blank">Gemini Enterprise</a> — precio por asiento desde 21 US$ en Business y desde 30 US$ en Standard y Plus, con techo de 300 asientos. Consultado el 3 de octubre de 2026.</li>
+                    <li><strong>Interna de la web.</strong> <a href="../../guias/elegir-herramienta-ia-negocio/">Cómo elegir herramienta de IA para un negocio</a> — el criterio de asignar asientos reales y medir el uso antes de ampliar, aplicado aquí al caso de hostelería. Consultado el 3 de octubre de 2026.</li>
+                </ul>
 
                 <div class="related-articles">
                     <h3>Artículos relacionados</h3>
@@ -405,7 +953,7 @@
                         <li><a href="../../herramientas-ia/chatbots-atencion-cliente/">Los 8 mejores chatbots IA para atención al cliente</a></li>
                         <li><a href="../../herramientas-ia/automatizacion-procesos-ia/">Automatización de procesos con IA: guía práctica</a></li>
                         <li><a href="../../guias/guia-implementar-ia-pyme/">Guía completa para implementar IA en tu pyme</a></li>
-                        <li><a href="../../herramientas-ia/roi-ia-empresas/">Cómo calcular el ROI de las herramientas de IA</a></li>
+                        <li><a href="../../herramientas-ia/roi-ia-Empresas/">Cómo calcular el ROI de las herramientas de IA</a></li>
                     </ul>
                 </div>
 

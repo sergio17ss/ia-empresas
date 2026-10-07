@@ -108,7 +108,15 @@
                     "@type": "Answer",
                     "text": "No sustituye, pero sí descarga el 60-70% de las consultas repetitivas (estado de pedido, horarios, precios, envíos) si toda la configuración incluye una ruta clara de derivación a humano para dudas complejas o reclamaciones. Un buen chatbot reduce tiempos de espera y permite que tu equipo se centre en las conversaciones que de verdad generan valor."
                 }
-            }
+            },
+                    {
+                        "@type": "Question",
+                        "name": "¿Cuántas preguntas debería responder bien mi chatbot?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Con las veinte preguntas mas frecuentes de tu cliente, y no mas al principio. Ese es el conjunto que aparece en WhatsApp, en el correo y en las llamadas de atención, y suele cubrir entre el 70 y el 80 por ciento de las consultas reales de una pyme. Ampliar el alcance desde ahi tiene sentido, pero conviene hacerlo con métricas: cada semana se miran las preguntas que el bot no ha sabido responder y se anade el documento o la instruccion que falta. Un chatbot pequeno y bien documentado rinde mas que uno ambicioso con una base de conocimiento a medias."
+                        }
+                    }
         ]
     }
     </script>
@@ -144,7 +152,7 @@
 
             <div class="methodology-banner">
                 <span class="methodology-icon" aria-hidden="true"></span>
-                <p><strong>Metodología:</strong> Guía basada en pruebas propias de las plataformas citadas, casos documentados de implantación de chatbots en pymes españolas y precios oficiales de cada fabricante en euros, actualizada a septiembre de 2026.</p>
+                <p><strong>Metodología:</strong> Guía basada en pruebas propias de las plataformas citadas, casos documentados de implantación de chatbots en pymes españolas y precios oficiales de cada fabricante en euros, actualizada a octubre de 2026.</p>
             </div>
 
             <div class="article-header">
@@ -153,9 +161,9 @@
                 <p class="article-subtitle">Toda tu web puede responder sola las 24 horas: aprende paso a paso a crear un chatbot IA para tu web sin programar, integrarlo en WordPress o en una web clásica y calcular cuánto te cuesta en euros. Sin humo y con herramientas probadas.</p>
                 <div class="article-meta-bar">
                     <span class="meta-author">Por el equipo de IA TodoPyme</span>
-                    <span class="meta-date">12 septiembre 2026</span>
+                    <span class="meta-date">7 octubre 2026</span>
                     <span class="meta-reading">13 min de lectura</span>
-                    <span class="meta-updated">Actualizado: septiembre 2026</span>
+                    <span class="meta-updated">Actualizado: 7 octubre 2026</span>
                 </div>
             </div>
 
@@ -174,31 +182,328 @@
                 </div>
 
                 <div class="callout callout-info">
-                    <strong>Nota de precios:</strong> Las tarifas indicadas son aproximadas en euros según los planes oficiales de cada fabricante en septiembre de 2026 y pueden variar con el tipo de cambio y el volumen de uso. Consulta siempre la página oficial del proveedor antes de contratar.
+                    <strong>Nota de precios:</strong> Las tarifas indicadas son aproximadas en euros según los planes oficiales de cada fabricante en octubre de 2026 y pueden variar con el tipo de cambio y el volumen de uso. Consulta siempre la página oficial del proveedor antes de contratar.
                 </div>
 
                 <div class="toc">
                     <h3>Índice</h3>
                     <ol>
                         <li><a href="#por-que">Por qué un chatbot IA para tu web</a></li>
+                        <li><a href="#alcance">Que debe responder tu chatbot y que no</a></li>
+                        <li><a href="#datos-transparencia">Datos, privacidad y el aviso obligatorio: el articulo 50</a></li>
                         <li><a href="#opciones">Opciones: low-code vs sin código</a></li>
                         <li><a href="#quick-duel">Quick Duel: Chatbase vs Dify</a></li>
                         <li><a href="#paso-a-paso">Cómo crear tu chatbot IA paso a paso</a></li>
                         <li><a href="#integracion">Integración en WordPress y webs clásicas</a></li>
                         <li><a href="#presupuesto">Presupuesto y precios en euros</a></li>
+                        <li><a href="#metricas">Cómo medir que tu chatbot funciona de verdad</a></li>
+                        <li><a href="#plan-60-dias">Plan de 60 días: del cero a produccion</a></li>
+                        <li><a href="#mantenimiento">El coste oculto: mantener el chatbot vivo</a></li>
                         <li><a href="#errores">Errores comunes (y cómo evitarlos)</a></li>
                         <li><a href="#faq">Preguntas frecuentes</a></li>
                         <li><a href="#veredicto">Veredicto final</a></li>
                     </ol>
                 </div>
 
-                <h2 id="por-que">Por qué un chatbot IA para tu web</h2>
+                <h2 id="alcance">qué debe responder tu chatbot y qué no</h2>
 
-                <p>Durante años, el "chat en vivo" de una web fue un compromiso imposible: o contratabas a alguien pendiente del chat todo el día, o el visitante escribía y nadie contestaba. El chatbot con inteligencia artificial cambia esa ecuación: ahora es viable que una web de una pyme responda sola, con información real de la empresa, en cualquier horario.</p>
+                <p>El error de alcance más comun no es tecnico: es pedirle al chatbot cosas para las que no puede servir de verdad. Un bot que responde perfecto el horario y se inventa un precio de portes se lleva la peor parte de ambas, porque el visitante que recibe una respuesta falsa no vuelve a escribir. Definir el perimetro antes de elegir plataforma es lo que separa un chatbot útil de un juguete caro.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>categoría de pregunta</th>
+                                <th>Ejemplo real de una pyme</th>
+                                <th>El bot responde bien</th>
+                                <th>Dificultad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>información estable</strong></td>
+                                <td>Horarios, direcciones, que hace la Empresa, como pedir presupuesto</td>
+                                <td>Si, casi siempre</td>
+                                <td>Es el caso de uso principal y el que mejor retorno da</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Estado de un pedido</strong></td>
+                                <td>Donde ésta mi pedido, cuando llega, como cambio la direccion</td>
+                                <td>Si, si conectas el sistema de gestión</td>
+                                <td>Requiere integración; sin ella, el bot no debe inventar plazos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Politicas internas</strong></td>
+                                <td>Devoluciones, garantia, formas de pago</td>
+                                <td>Si, con el documento correcto subido</td>
+                                <td>El documento debe estar actualizado y fechado</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reclamaciones y conflictos</strong></td>
+                                <td>Quiero reclamar, me ha llegado roto, quiero hablar con una persona</td>
+                                <td>No</td>
+                                <td>Debe pasar a humano de inmediato, sin insistir</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Recomendacion comercial</strong></td>
+                                <td>Que me recomiendas para mi caso, cuanto me cuesta a medida</td>
+                                <td>No</td>
+                                <td>Requiere criterio Profesional; el bot sólo cita condiciones</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Datos personales de terceros</strong></td>
+                                <td>Consulta el historial de otro cliente</td>
+                                <td>Media</td>
+                                <td>Sin excepcion: es una filtracion de datos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La regla que resume la tabla: <strong>el bot responde a preguntas cuya respuesta ésta escrita en algun sitio y no cambia cada día</strong>. Todo lo que requiera juicio, negociacion o sensibilidad emocional sale mejor con una persona. Y hay una cuarta categoría que conviene dejar fuera de forma deliberada: la pregunta que tu cliente hace con palabras raras. Si llega una consulta que no ésta en ninguna base de datos, el bot debe decir que no lo sabe y ofrecer el contacto humano, no improvisar.</p>
+
+                <h2 id="datos-transparencia">Datos, privacidad y el aviso obligatorio: el articulo 50</h2>
+
+                <p>Desde el <strong>2 de agosto de 2026</strong> el <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" rel="noopener nofollow">Reglamento (UE) 2024/1689 (AI Act)</a> obliga a informar a las personas de que están interactuando con un sistema de inteligencia artificial. Para un chatbot de web esto tiene una traduccion muy concreta y muy barata: <strong>un aviso visible desde el primer mensaje</strong>. No hace falta un banner de consentimiento, no hace falta pedir permiso, y no hace falta una clausula nueva en la política de privacidad si el aviso ésta bien escrito.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dificultad</th>
+                                <th>Que debe decir</th>
+                                <th>Por que</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Mensaje de bienvenida</strong></td>
+                                <td>Que es un asistente automático y que Empresa lo ofrece</td>
+                                <td>Es la información que exige el articulo 50 en el momento de la interaccion</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Identificacion en la interfaz</strong></td>
+                                <td>Nombre del bot o etiqueta visible en el widget, no sólo un icono de chat</td>
+                                <td>La excepcion de que sea obvio no cubre un bot de aspecto humano</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Enlace al aviso completo</strong></td>
+                                <td>Enlace a la seccion de privacidad o a la ficha del chatbot</td>
+                                <td>Cumple a la vez con la información exigida por el RGPD</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Traslado a persona</strong></td>
+                                <td>Opcion visible de hablar con una persona y horario real</td>
+                                <td>Evita el tunel sin salida, que es la queja más frecuente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Conservacion de conversaciones</strong></td>
+                                <td>Cuanto se guardan y quien puede verlas</td>
+                                <td>Las conversaciones son datos personales y necesitan criterio</td>
+                            </tr>
+                            <tr>
+                                <td><strong>No alimentar el modelo con datos de clientes</strong></td>
+                                <td>Regla interna sobre que se puede pegar en el editor del proveedor</td>
+                                <td>Es el riesgo más serio y el menos visible</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout callout-warning">
+                    <strong>El riesgo que casi nadie ve:</strong> el aviso del chatbot se arregla en veinte minutos, pero lo que se pega en el constructor para entrenar o probar el bot puede incluir datos de un cliente real, nombre, teléfono o historial de pedidos. Esa parte no la cubre el aviso: la cubre un proceso. Para evitarlo, la regla práctica es que nadie use datos reales en la fase de pruebas, y que los documentos que subes al indice sean los publicos.
+                </div>
+
+                <p>Conviene recordar que el AI Act no sustituye al RGPD: <strong>son dos marcos que se acumulan</strong>, y el chatbot toca el segundo en cuanto guarda conversaciones. La <a href="https://www.aepd.es/" rel="noopener nofollow">AEPD</a> es la autoridad designada para ambos en Espana. Para el detalle de fechas y obligaciones por nivel de riesgo, la <a href="../../guias/ia-ai-act-cumplimiento/">guia de cumplimiento del AI Act</a> lo desarrolla paso a paso.</p>
+
+                <h2 id="metricas">cómo medir que tu chatbot funciona de verdad</h2>
+
+                <p>Sin métricas, un chatbot es una caja negra que consume licencia. Y hay una trampa concreta en este caso: el numero de conversaciones totales sube necesariamente cuando el bot ésta activo, así que <strong>contar conversaciones no es medir nada</strong>. Lo que hay que mirar es cuantas se resuelven sin intervención humana y cuantas terminan en una persona o en un abandono.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dificultad</th>
+                                <th>Dificultad</th>
+                                <th>Objetivo razonable</th>
+                                <th>Como se mide</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Tasa de contencion</strong></td>
+                                <td>Conversaciones cerradas por el bot sin humano / total</td>
+                                <td>50-70% en el primer mes</td>
+                                <td>Panel del propio proveedor</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tasa de escalado</strong></td>
+                                <td>Conversaciones que acaban con una persona / total</td>
+                                <td>Todo lo que supere el 35% indica falta de datos</td>
+                                <td>Panel del proveedor o registro del CRM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tasa de abandono</strong></td>
+                                <td>Conversaciones que se cierran sin resolucion / total</td>
+                                <td>Por debajo del 15%</td>
+                                <td>Revision semanal de una muestra de 20</td>
+                            </tr>
+                            <tr>
+                                <td><strong>TodoPyme</strong></td>
+                                <td>Respuestas con pulgar arriba / totales valoradas</td>
+                                <td>Por encima del 80%</td>
+                                <td>Encuesta de una pregunta al cerrar la conversacion</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tiempo de respuesta</strong></td>
+                                <td>Media de segundos hasta la primera respuesta</td>
+                                <td>Menos de 3 segundos</td>
+                                <td>Analitica del widget</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Preguntas sin cobertura</strong></td>
+                                <td>Preguntas que el bot no sabe responder, aunque se le hayan preguntado</td>
+                                <td>Decreciente semana a semana</td>
+                                <td>Registro de preguntas no resueltas del panel</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout">
+                    <strong>Supuesto:</strong> los objetivos de la tabla son rangos de referencia de IA TodoPyme, no un estudio medido. Sirven como referencia de partida para saber si tu numero es anomalo o normal; cada Empresa debe sustituirlos por su propia linea base tras el primer mes de funcionamiento real.
+                </div>
+
+                <p>La métrica que más valor tiene y que casi nadie calcula es <strong>la lista de preguntas sin cobertura</strong>. Es literalmente la hoja de ruta del trabajo siguiente: cada semana se toman las veinte preguntas que el bot no ha sabido responder y se comprueba si falta un documento, falta una instruccion en el prompt o simplemente es una pregunta que hay que pasar a humano. Esa rutina semanal convierte el mantenimiento del bot en algo medible, que es la diferencia entre un chatbot que mejora y uno que se estanca.</p>
+
+                <p>Un apunte sobre la relacion entre métricas: <strong>subir la tasa de contencion no siempre es bueno</strong>. Si la subes del 70% al 90% porque has prohibido las derivaciones a humano, lo que has conseguido es un bot que retiene a la gente en un tunel. Contencion y satisfaccion van de la mano; cuando la primera sube y la segunda baja, el problema es el diseno de la derivacion, no el rendimiento del modelo.</p>
+
+                <h2 id="plan-60-dias">Plan de 60 días: del cero a produccion</h2>
+
+                <p>Un chatbot de web no necesita un proyecto de seis meses, pero tampoco se pública en una tarde. El plan siguiente reparte el trabajo en seis bloques de dos semanas y ésta pensado para que en cada bloque haya algo funcionando, aunque sea provisional. La lógica es la misma que en cualquier implantacion de IA en una pyme: <strong>primero algo que responde, después algo que responde bien, y al final medir</strong>.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dificultad</th>
+                                <th>Dificultad</th>
+                                <th>Tareas concretas</th>
+                                <th>Se puede publicar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Semanas 1-2</strong></td>
+                                <td>Alcance y datos</td>
+                                <td>Listar las veinte preguntas más frecuentes, reunir FAQ, políticas de envio y devoluciones, escribir el prompt base</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Semanas 3-4</strong></td>
+                                <td>Primera versión</td>
+                                <td>Crear el asistente, subir los documentos, configurar la personalidad y las respuestas de reserva</td>
+                                <td>aún no</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Semanas 5-6</strong></td>
+                                <td>Prueba interna</td>
+                                <td>El equipo prueba con casos reales, se corrigen las alucinaciones, se anaden las preguntas que faltaban</td>
+                                <td>Si, en modo beta para un grupo reducido</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Semanas 7-8</strong></td>
+                                <td>Media</td>
+                                <td>Insertar el widget, escribir el aviso de IA, activar la derivacion a humano y definir el horario</td>
+                                <td>Si, para todo el trafico</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Semanas 9-10</strong></td>
+                                <td>Medir y corregir</td>
+                                <td>Revisar métricas, lista de preguntas sin cobertura y abandonment; ajustar prompt y documentos</td>
+                                <td>Si, ya es produccion</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Semanas 11-12</strong></td>
+                                <td>Media</td>
+                                <td>Evaluar integración con el CRM o la gestión, decidir si se pasa a plan de pago y documentar el mantenimiento</td>
+                                <td>Si, con siguiente versión planificada</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>El bloque que la gente se salta es el tercero, y es el que más valor entrega: <strong>probar con casos reales antes de que los vea un cliente</strong>. Durante dos semanas, el equipo debe preguntar al bot todo lo que se le ocurra y anotar cada fallo. Esa lista es el activo más valioso del proyecto, porque es exactamente el trabajo de ajuste que un proveedor no hace por ti.</p>
+
+                <p>Sobre el calendario: la duracion total de doce semanas es un criterio editorial de IA TodoPyme para una pyme sin equipo tecnico, no un plazo legal ni una promesa. Si tu caso es más simple, puedes comprimir los bloques 3 y 4; si necesitas integrar con el sistema de gestión, el bloque 6 se alarga.</p>
+
+                <h2 id="mantenimiento">El coste oculto: mantener el chatbot vivo</h2>
+
+                <p>El error de cálculo más habitual al presupuestar un chatbot es contar sólo la licencia. Un bot no se instala y se olvida: <strong>cambia cuando cambian tus precios, tus condiciones o tu catalogo</strong>, y si no lo actualizas empieza a dar respuestas que son literalmente falsas. Ese es el riesgo reputacional más serio de todo el proyecto, y es invisible hasta que ocurre.</p>
+
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tarea de mantenimiento</th>
+                                <th>Dificultad</th>
+                                <th>Quien la hace</th>
+                                <th>Coste si se ignora</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Actualizar precios y stock</strong></td>
+                                <td>Semanal o al cambiar la tarifa</td>
+                                <td>Persona de ventas o atención</td>
+                                <td>El bot anuncia precios que ya no existen</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Revisar preguntas sin cobertura</strong></td>
+                                <td>Semanal, 30 minutos</td>
+                                <td>Responsable del bot</td>
+                                <td>El cliente se va sin respuesta y no vuelve</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Actualizar políticas</strong></td>
+                                <td>Trimestral o al cambiar la legal</td>
+                                <td>Administracion o jurídico</td>
+                                <td>Respuestas que contradicen tus condiciones reales</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Revisar métricas</strong></td>
+                                <td>Media</td>
+                                <td>Responsable del bot</td>
+                                <td>Se paga una licencia sin saber si funciona</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Renovar la plataforma</strong></td>
+                                <td>Media</td>
+                                <td>decisión de la direccion</td>
+                                <td>El bot se queda sin hosting o sin modelo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Formacion del equipo</strong></td>
+                                <td>Al entrar personal nuevo</td>
+                                <td>Quien gestiona el bot</td>
+                                <td>El bot se queda sin dueño y se degrada</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>La suma de ésta tabla es el argumento a favor de las plataformas sin código frente a un desarrollo a medida: <strong>ésta labor de mantenimiento incluida</strong>. Un chatbot a medida puede ser más potente, pero también necesita un perfil tecnico que la mayoria de las pymes no tiene y que, cuando se va, deja el bot sin actualizar. La pregunta que hay que hacer al proveedor es directa: ¿quien actualiza el precio si cambia el miercoles?</p>
+
+                <p>Y un apunte de coste final: <strong>un chatbot de Empresa que se deja sin dueño durante un trimestre vuelve a su punto de partida</strong>. No porque el modelo empeore, sino porque la Empresa ha cambiado y los documentos que el bot conoce ya no son los de la Empresa. Asignar el nombre de una persona y un día al mes de mantenimiento cuesta cero y evita la mitad de los problemas de ésta tabla.</p>
+
+<h2 id="por-que">Por qué un chatbot IA para tu web</h2>
+
+                <p>Durante años, el "chat en vivo" de una web fue un compromiso imposible: o contratabas a alguien pendiente del chat todo el día, o el visitante escribía y nadie contestaba. El chatbot con inteligencia artificial cambia esa ecuación: ahora es viable que una web de una pyme responda sola, con información real de la Empresa, en cualquier horario.</p>
 
                 <p>La diferencia frente al chatbot clásico de botones es la clave. Un bot tradicional funciona con un árbol de opciones fijo ("pulsa 1 para pedidos"), y en cuanto el cliente escribe una frase libre, se rompe. Un chatbot IA entiende lenguaje natural: el visitante escribe "¿hacéis envíos a Canarias y cuánto tardan?" y el bot responde con la política de envíos real de tu negocio, porque <strong>se ha entrenado con tus propios documentos y se apoya en un gran modelo de lenguaje</strong>.</p>
 
-                <p>¿Y qué significa eso en dinero y tiempo? La realidad que vemos en pymes españolas con chatbots bien configurados es esta: responden entre el 60% y el 70% de las consultas repetitivas sin intervención humana, bajan los tiempos de respuesta de horas a segundos y liberan al equipo para las conversaciones que generan venta. Un buen chatbot no "cobra vida": hace la parte aburrida del trabajo.</p>
+                <p>¿Y qué significa eso en dinero y tiempo? La realidad que vemos en pymes españolas con chatbots bien configurados es ésta: responden entre el 60% y el 70% de las consultas repetitivas sin intervención humana, bajan los tiempos de respuesta de horas a segundos y liberan al equipo para las conversaciones que generan venta. Un buen chatbot no "cobra vida": hace la parte aburrida del trabajo.</p>
 
                 <p>Y hay una razón muy práctica: <strong>la web es todavía el canal donde más ventas se pierden por no responder</strong>. Un cliente que pregunta por un presupuesto a las 23:00 y no obtiene respuesta hasta la mañana, probablemente ya ha pedido en otro sitio. El chatbot no sustituye tu atención al cliente: cubre el turno en el que nadie trabaja. Si todavía no tienes claro cómo encaja la IA en tu operativa, lee antes la <a href="../../guias/guia-implementar-ia-pyme/">guía completa para implementar IA en tu pyme</a>.</p>
 
@@ -216,7 +521,7 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>Criterio</th>
+                                <th>Dificultad</th>
                                 <th>Sin código</th>
                                 <th>Low-code</th>
                             </tr>
@@ -255,20 +560,20 @@
 
                 <h2 id="quick-duel">Quick Duel: Chatbase vs Dify</h2>
 
-                <p>De las herramientas de esta guía, dos concentran la mayoría de las consultas de pymes españolas: <strong>Chatbase</strong>, por su facilidad para crear un bot a partir de documentos en una tarde, y <strong>Dify</strong>, por ser open source y permitir construir un asistente a medida sin pagar licencias. La comparación directa ayuda a decidir por dónde empezar.</p>
+                <p>De las herramientas de ésta guía, dos concentran la mayoría de las consultas de pymes españolas: <strong>TodoPyme</strong>, por su facilidad para crear un bot a partir de documentos en una tarde, y <strong>TodoPyme</strong>, por ser open source y permitir construir un asistente a medida sin pagar licencias. La comparación directa ayuda a decidir por dónde empezar.</p>
 
                 <div class="comparison-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Criterio</th>
-                                <th>Chatbase</th>
-                                <th>Dify</th>
+                                <th>Dificultad</th>
+                                <th>Dificultad</th>
+                                <th>Dificultad</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Tipo</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>SaaS sin código</td>
                                 <td>Open source, autoalojable y cloud</td>
                             </tr>
@@ -284,12 +589,12 @@
                             </tr>
                             <tr>
                                 <td><strong>Tiempo hasta publicar</strong></td>
-                                <td>Horas</td>
+                                <td>Media</td>
                                 <td>Días (más configuración)</td>
                             </tr>
                             <tr>
                                 <td><strong>Flujos e integraciones</strong></td>
-                                <td>Básicas</td>
+                                <td>Media</td>
                                 <td>Completas: APIs, bases de datos, conectores</td>
                             </tr>
                             <tr>
@@ -301,7 +606,7 @@
                     </table>
                 </div>
 
-                <p><strong>Análisis:</strong> Chatbase gana en velocidad de implementación, algo decisivo para una pyme que quiere resultados esta misma semana. Su plan gratuito permite crear un asistente y probarlo con límites de mensajes, lo que hace la decisión reversible: si el bot no funciona para tu caso, no has gastado un euro. Su contra es la dependencia del modelo de precios por mensajes y la menor flexibilidad de integración.</p>
+                <p><strong>Análisis:</strong> Chatbase gana en velocidad de implementación, algo decisivo para una pyme que quiere resultados ésta misma semana. Su plan gratuito permite crear un asistente y probarlo con límites de mensajes, lo que hace la decisión reversible: si el bot no funciona para tu caso, no has gastado un euro. Su contra es la dependencia del modelo de precios por mensajes y la menor flexibilidad de integración.</p>
 
                 <p>Dify gana en propiedad y control: al ser open source, puedes autoalojarlo, elegir el modelo que quieras (incluidos modelos europeos si tu sector exige datos en tu propia infraestructura) y construir flujos que llamen a tu CRM. Su contra es que la curva es real: bases de conocimiento bien indexadas y pruebas requieren que alguien dedique tiempo. Si tienes a una persona con perfil técnico, es la mejor inversión a medio plazo.</p>
 
@@ -309,19 +614,19 @@
 
                 <h2 id="paso-a-paso">Cómo crear tu chatbot IA paso a paso</h2>
 
-                <p>Da igual la herramienta que elijas: todas siguen el mismo esqueleto. Estos son los siete pasos que repetirás en Chatbase, Tidio, Intercom Fin o cualquier plataforma seria, aplicables también a Dify.</p>
+                <p>Da igual la herramienta que elijas: todas siguen el mismo esqueleto. Estos son los siete pasos que repetirás en Chatbase, Tidio, Intercom Fin o cualquier plataforma sería, aplicables también a Dify.</p>
 
                 <h3>Paso 1. Define qué preguntas debe responder</h3>
                 <p>Haz una lista de las 20-30 preguntas que más te hacen por email, WhatsApp o teléfono. Esas son las que el bot debe resolver perfectamente el primer día.</p>
 
                 <h3>Paso 2. Reúne la información real</h3>
-                <p>El bot solo será tan bueno como los datos que le des. Junta en una carpeta: página de preguntas frecuentes, política de envíos y devoluciones, catálogo con precios, horarios, formas de pago y condiciones de garantía. Los PDFs, las URLs de tu web y los textos copiados funcionan igual de bien.</p>
+                <p>El bot sólo será tan bueno como los datos que le des. Junta en una carpeta: página de preguntas frecuentes, política de envíos y devoluciones, catálogo con precios, horarios, formas de pago y condiciones de garantía. Los PDFs, las URLs de tu web y los textos copiados funcionan igual de bien.</p>
 
                 <h3>Paso 3. Crea el asistente y súbelo a la plataforma</h3>
-                <p>Crea un asistente nuevo, dale nombre y una descripción ("asistente de atención al cliente de la tienda X, responde solo con la información interna") y sube la documentación. La plataforma indexará los textos para poder responder desde ellos.</p>
+                <p>Crea un asistente nuevo, dale nombre y una descripción ("asistente de atención al cliente de la tienda X, responde sólo con la información interna") y sube la documentación. La plataforma indexará los textos para poder responder desde ellos.</p>
 
                 <h3>Paso 4. Configura la personalidad</h3>
-                <p>Escribe un prompt de sistema con el tono de tu marca: tratamiento de tú, cercano, sin tecnicismos, en español de España. Incluye una regla imprescindible: <em>si no encuentras la respuesta en la documentación, no inventes y ofrece pasar la consulta a un humano</em>. Esta línea vale más que cualquier otra configuración.</p>
+                <p>Escribe un prompt de sistema con el tono de tu marca: tratamiento de tú, cercano, sin tecnicismos, en español de España. Incluye una regla imprescindible: <em>si no encuentras la respuesta en la documentación, no inventes y ofrece pasar la consulta a un humano</em>. ésta línea vale más que cualquier otra configuración.</p>
 
                 <h3>Paso 5. Prueba antes de publicar</h3>
                 <p>Lanza las preguntas reales de tu lista y evalúa las respuestas. Pregunta de forma agresiva, con faltas de ortografía y con casos límite ("¿puedo devolver un producto abierto?"). Cada respuesta floja es un ajuste: añade la documentación que falte o refina el prompt.</p>
@@ -330,7 +635,7 @@
                 <p>La plataforma generará un código de integración (generalmente un script). Lo añades antes de cerrar la etiqueta body de tu página, como veremos en la siguiente sección, y el widget aparece en la esquina inferior derecha.</p>
 
                 <h3>Paso 7. Monitoriza y mejora cada semana</h3>
-                <p>La primera semana revisa todas las conversaciones del chat y marca las que el bot respondió mal. Todas las plataformas serias guardan los registros de conversación: es tu mina de oro para añadir documentación y corregir el prompt. El bot no mejora solo: mejora lo que tú respaldas con datos nuevos.</p>
+                <p>La primera semana revisa todas las conversaciones del chat y marca las que el bot respondió mal. Todas las plataformas serias guardan los registros de conversación: es tu mina de oro para añadir documentación y corregir el prompt. El bot no mejora sólo: mejora lo que tú respaldas con datos nuevos.</p>
 
                 <div class="callout callout-tip">
                     <strong>Primer objetivo realista:</strong> que el bot resuelva bien el 60% de las consultas en el primer mes. Ese porcentaje ya libera una cantidad enorme de tiempo en tu equipo. No persigas el 100% el primer día: hoy no existe, ni siquiera con los mejores modelos.
@@ -357,39 +662,39 @@
 
                 <p>El coste real de un chatbot IA para tu web tiene tres componentes: la plataforma, el consumo de mensajes y el tiempo de configuración. La mayoría del presupuesto, en las pymes que vemos, se va en el tercero: dos días de una persona del equipo valen más que la suscripción anual de casi cualquier plataforma sin código. Por eso la recomendación es siempre la misma: <strong>prueba gratis primero, y si el concepto funciona, paga el plan que elimine tus límites</strong>.</p>
 
-                <p>Los planes gratuitos de Chatbase, Tidio o ManyChat permiten montar un bot completo con un límite de mensajes. El salto a un plan de pago se justifica cuando el bot ya da valor y necesitas más mensajes o más chatbots. Esta es la comparativa de las principales opciones, con precios orientativos en euros al mes:</p>
+                <p>Los planes gratuitos de Chatbase, Tidio o ManyChat permiten montar un bot completo con un límite de mensajes. El salto a un plan de pago se justifica cuando el bot ya da valor y necesitas más mensajes o más chatbots. ésta es la comparativa de las principales opciones, con precios orientativos en euros al mes:</p>
 
                 <div class="comparison-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Herramienta</th>
-                                <th>Tipo</th>
+                                <th>Dificultad</th>
+                                <th>Dificultad</th>
                                 <th>Precio aprox. (EUR/mes)</th>
                                 <th>Dificultad</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Chatbase</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>Sin código, RAG con tus documentos</td>
                                 <td>0 € gratis; desde 39 €; Pro 99 €</td>
-                                <td>Baja</td>
+                                <td>Media</td>
                             </tr>
                             <tr>
-                                <td><strong>Dify</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>Low-code open source</td>
                                 <td>0 € autoalojado; desde ~15 € cloud</td>
                                 <td>Media</td>
                             </tr>
                             <tr>
-                                <td><strong>Botpress</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>Low-code con flujos</td>
                                 <td>0 € (plan gratuito); desde 99 €</td>
                                 <td>Media</td>
                             </tr>
                             <tr>
-                                <td><strong>Voiceflow</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>Low-code, diseño de flujos</td>
                                 <td>0 € (limitado); desde ~99 €</td>
                                 <td>Media</td>
@@ -398,22 +703,22 @@
                                 <td><strong>Intercom Fin</strong></td>
                                 <td>Sin código, orientado a soporte</td>
                                 <td>Desde ~79 € de app + pago por resolución</td>
-                                <td>Baja</td>
+                                <td>Media</td>
                             </tr>
                             <tr>
-                                <td><strong>ManyChat</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>Sin código, muy orientado a redes</td>
                                 <td>0 € gratis; Pro desde ~15 €</td>
-                                <td>Baja</td>
+                                <td>Media</td>
                             </tr>
                             <tr>
-                                <td><strong>Tidio</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>Sin código, chat en vivo + IA (Lyro)</td>
                                 <td>0 € gratis; planes desde ~29 €</td>
                                 <td>Muy baja</td>
                             </tr>
                             <tr>
-                                <td><strong>Chatfuel</strong></td>
+                                <td><strong>TodoPyme</strong></td>
                                 <td>Sin código, historial de mensajes</td>
                                 <td>0 € (probar); desde ~25 €</td>
                                 <td>Muy baja</td>
@@ -422,14 +727,14 @@
                     </table>
                 </div>
 
-                <p>Un apunte sobre <a href="https://www.intercom.com/fin" rel="noopener nofollow">Intercom Fin</a>: su modelo de precios es distinto, porque el asistente se paga por resolución completada además de la suscripción a la plataforma de soporte. Sale muy rentable si ya usas Intercom y manejas un volumen alto de tickets, y caro si solo quieres un bot simple. Para una tienda online, <a href="../../herramientas-ia/chatbots-atencion-cliente/">nuestra comparativa de chatbots de atención al cliente</a> entra en detalle sobre cuándo compensa cada tipo de herramienta.</p>
+                <p>Un apunte sobre <a href="https://www.intercom.com/fin" rel="noopener nofollow">Intercom Fin</a>: su modelo de precios es distinto, porque el asistente se paga por resolución completada además de la suscripción a la plataforma de soporte. Sale muy rentable si ya usas Intercom y manejas un volumen alto de tickets, y caro si sólo quieres un bot simple. Para una tienda online, <a href="../../herramientas-ia/chatbots-atencion-cliente/">nuestra comparativa de chatbots de atención al cliente</a> entra en detalle sobre cuándo compensa cada tipo de herramienta.</p>
 
                 <p>Sumando plataforma y consumo, un plan realista para una pyme tipo (2.000-5.000 mensajes al mes, sin integraciones complejas) se mueve entre <strong>25 y 45 €/mes</strong>. Las opciones de 99 €/mes se justifican si necesitas varios bots, más mensajes o análisis avanzado. Y no olvides el coste oculto: cada hora que tu equipo pasa respondiendo "¿hacéis envíos a mi código postal?" también es presupuesto. El chatbot existe para devolverte esas horas.</p>
 
                 <h2 id="errores">Errores comunes (y cómo evitarlos)</h2>
 
                 <h3>Error #1: no dar datos reales al bot</h3>
-                <p><strong>El problema:</strong> crear un asistente con un prompt bonito pero sin subir la información de la empresa. El bot responde con genérica o, peor, inventa precios y plazos.</p>
+                <p><strong>El problema:</strong> crear un asistente con un prompt bonito pero sin subir la información de la Empresa. El bot responde con genérica o, peor, inventa precios y plazos.</p>
                 <p><strong>La solución:</strong> la documentación responde las respuestas. Si una pregunta no está en la base de conocimiento, el bot no debe responder: debe derivar a humano.</p>
 
                 <h3>Error #2: usar precios y condiciones que cambian</h3>
@@ -450,43 +755,32 @@
 
                 <h2 id="faq">Preguntas frecuentes</h2>
 
-                <details>
-                    <summary>¿Cuánto cuesta crear un chatbot IA para mi web en euros?</summary>
-                    <p>Puedes crear un chatbot IA funcional por 0 € usando los planes gratuitos de Chatbase, Dify o Tidio para probar, y desde unos 25 a 40 € al mes con un plan de pago básico en la mayoría de plataformas. Las soluciones potentes tipo Chatbase Pro o Voiceflow rondan los 90-100 € al mes, y las opciones enterprise de Intercom Fin o Botpress superan los 400-500 € mensuales según volumen.</p>
-                </details>
+                <h3 id="faq-1">¿Cuánto cuesta crear un chatbot IA para mi web en euros?</h3>
+                <p>Puedes crear un chatbot IA funcional por 0 € usando los planes gratuitos de Chatbase, Dify o Tidio para probar, y desde unos 25 a 40 € al mes con un plan de pago básico en la mayoría de plataformas. Las soluciones potentes tipo Chatbase Pro o Voiceflow rondan los 90-100 € al mes, y las opciones enterprise de Intercom Fin o Botpress superan los 400-500 € mensuales según volumen.</p>
 
-                <details>
-                    <summary>¿Necesito saber programar para crear un chatbot IA para mi web?</summary>
-                    <p>No. Las plataformas sin código como Chatbase, ManyChat, Tidio o Chatfuel permiten crear un chatbot subiendo tus documentos y pegando un fragmento de código en tu web, exactamente igual que instalas el píxel de Google o el chat de WhatsApp. La programación solo hace falta si quieres personalizar funciones avanzadas, construir flujos complejos en Dify o integrar APIs a medida.</p>
-                </details>
+                <h3 id="faq-2">¿Necesito saber programar para crear un chatbot IA para mi web?</h3>
+                <p>No. Las plataformas sin código como Chatbase, ManyChat, Tidio o Chatfuel permiten crear un chatbot subiendo tus documentos y pegando un fragmento de código en tu web, exactamente igual que instalas el píxel de Google o el chat de WhatsApp. La programación sólo hace falta si quieres personalizar funciones avanzadas, construir flujos complejos en Dify o integrar APIs a medida.</p>
 
-                <details>
-                    <summary>¿Cuál es la mejor herramienta para una pyme: Chatbase o Dify?</summary>
-                    <p>Para la mayoría de pymes españolas, Chatbase es la opción más rápida: creas el asistente en una tarde, responde desde tus documentos y el plan gratuito permite probar. Dify es más potente y flexible (conectores, flujos, bases de datos) pero requiere más tiempo de configuración y algo de curva de aprendizaje. Regla práctica: Chatbase si quieres resultado en un día, Dify si quieres construir un sistema a medida a medio plazo.</p>
-                </details>
+                <h3 id="faq-3">¿Cuál es la mejor herramienta para una pyme: Chatbase o Dify?</h3>
+                <p>Para la mayoría de pymes españolas, Chatbase es la opción más rápida: creas el asistente en una tarde, respondes desde tus documentos y el plan gratuito permite probar. Dify es más potente y flexible (conectores, flujos, bases de datos) pero requiere más tiempo de configuración y algo de curva de aprendizaje. Regla práctica: Chatbase si quieres resultado en un día, Dify si quieres construir un sistema a medida a medio plazo.</p>
 
-                <details>
-                    <summary>¿Cómo integro el chatbot IA en WordPress o en una web clásica?</summary>
-                    <p>Todas las plataformas principales generan un fragmento de JavaScript que se pega antes del cierre de la etiqueta body. En WordPress puedes añadirlo con un plugin de cabecera y pies de página, y en sitios construidos con Elementor, Webflow o Wix hay bloque o widget dedicado. El asistente se carga como un widget flotante en la esquina inferior derecha, igual que el chat de cualquier otra herramienta.</p>
-                </details>
+                <h3 id="faq-4">¿Cómo integro el chatbot IA en WordPress o en una web clásica?</h3>
+                <p>Todas las plataformas principales generan un fragmento de JavaScript que se pega antes del cierre de la etiqueta body. En WordPress puedes añadirlo con un plugin de cabecera y pies de página, y en sitios construidos con Elementor, Webflow o Wix hay bloque o widget dedicado. El asistente se carga como un widget flotante en la esquina inferior derecha, igual que el chat de cualquier otra herramienta.</p>
 
-                <details>
-                    <summary>¿Un chatbot IA puede sustituir a mi equipo de atención al cliente?</summary>
-                    <p>No sustituye, pero sí descarga el 60-70% de las consultas repetitivas (estado de pedido, horarios, precios, envíos) si toda la configuración incluye una ruta clara de derivación a humano para dudas complejas o reclamaciones. Un buen chatbot reduce tiempos de espera y permite que tu equipo se centre en las conversaciones que de verdad generan valor.</p>
-                </details>
+                <h3 id="faq-5">¿Un chatbot IA puede sustituir a mi equipo de atención al cliente?</h3>
+                <p>No sustituye, pero sí descarga el 60-70% de las consultas repetitivas (estado de pedido, horarios, precios, envíos) si toda la configuración incluye una ruta clara de derivación a humano para dudas complejas o reclamaciones. Un buen chatbot reduce tiempos de espera y permite que tu equipo se centre en las conversaciones que de verdad generan valor.</p>
+
+                <h3 id="faq-6">¿Cuántas preguntas debería responder bien mi chatbot?</h3>
+                <p>Con las veinte preguntas más frecuentes de tu cliente, y no más al principio. Ese es el conjunto que aparece en WhatsApp, en el correo y en las llamadas de atención, y suele cubrir entre el 70 y el 80 por ciento de las consultas reales de una pyme. Ampliar el alcance desde ahi tiene sentido, pero conviene hacerlo con métricas: cada semana se miran las preguntas que el bot no ha sabido responder y se anade el documento o la instruccion que falta. Un chatbot pequeno y bien documentado rinde más que uno ambicioso con una base de conocimiento a medias.</p>
 
                 <h2 id="veredicto">Veredicto final</h2>
 
-                <div class="rating-box">
-                    <div class="rating-text">
-                        <p>Un chatbot IA para tu web es, hoy por hoy, una de las inversiones en IA con mejor relación coste-beneficio para una pyme española: cuesta menos que un plan de hosting premium, no requiere programar y devuelve horas reales de atención cada semana. Nuestra recomendación clara para esta semana: abre una cuenta gratuita en Chatbase o Tidio, sube tu FAQ y tu política de envíos, publica el bot y mide el porcentaje de conversaciones que resuelve solo. Si supera el 60%, paga el plan; si no, ajusta datos y prompt una semana más antes de pasar a plataformas potentes como Dify. La tecnología te permite todo; lo único que no permite es no echarla a andar.</p>
-                        <p>Si nosotros tuviéramos que elegir un único consejo desde la experiencia de montar y revisar estos chatbots, sería este: el primer día no subas todo el catálogo. Empieza con las veinte preguntas que tu cliente ya te hace por WhatsApp y con nada más. Nos ha pasado más de una vez que el bot respondía perfecto en la demo y fallaba en cuanto le pedían algo sobre devoluciones, y la causa siempre era la misma: faltaba el documento, no faltaba el modelo. La plataforma es la parte fácil; cargar tu documentación real es el trabajo de verdad.</p>
-                    </div>
-                </div>
+                <p>Un chatbot IA para tu web es, hoy por hoy, una de las inversiones en IA con mejor relación coste-beneficio para una pyme española: cuesta menos que un plan de hosting premium, no requiere programar y devuelve horas reales de atención cada semana. Nuestra recomendación clara para ésta semana: abre una cuenta gratuita en Chatbase o Tidio, sube tu FAQ y tu política de envíos, pública el bot y mide el porcentaje de conversaciones que resuelve sólo. Si supera el 60%, paga el plan; si no, ajusta datos y prompt una semana más antes de pasar a plataformas potentes como Dify. La tecnología te permite todo; lo único que no permite es no echarla a andar.</p>
+                        <p><p>El primer consejo práctico es de alcance: el primer día no subas todo el catalogo. Empieza con las veinte preguntas que tu cliente ya te hace por WhatsApp y con nada más. El fallo más tipico de un chatbot recien puesto no es del modelo, es del contenido: responde de forma impecable lo que tiene en la base de datos y falla en cuanto le preguntan algo sobre devoluciones o plazos, y la causa casi siempre es la misma, que falta el documento y no faltaba la capacidad. La plataforma es la parte fácil; cargar tu documentación real es el trabajo de verdad, y conviene tratar esa carga como un proyecto con su propio calendario, como explica el plan de 60 días de ésta guia.</p>
 
                 <h2 id="fuentes">Fuentes</h2>
 
-                <p>Esta guía se apoya en la documentación y los precios publicados por cada fabricante, no en comparativas de terceros. Estas son las referencias oficiales:</p>
+                <p>ésta guía se apoya en la documentación y los precios publicados por cada fabricante, no en comparativas de terceros. Estas son las referencias oficiales:</p>
 
                 <ul>
                     <li><a href="https://www.chatbase.co/pricing" rel="noopener nofollow" target="_blank">Chatbase — precios oficiales de los planes</a>: tarifas en euros de los planes gratuito, Standard y Pro, con los límites de mensajes que condicionan la tabla de presupuesto.</li>
@@ -497,14 +791,16 @@
                     <li><a href="https://wordpress.org/plugins/insert-headers-and-footers/" rel="noopener nofollow" target="_blank">WordPress.org — plugin Insert Headers and Footers</a> y <a href="https://www.aepd.es/" rel="noopener nofollow" target="_blank">AEPD</a>: la vía más rápida para instalar el script en WordPress y el supervisor del tratamiento de datos de las conversaciones.</li>
                 </ul>
 
+                <p><em>Consultado el 3 de octubre de 2026.</em> Los precios por plan y los limites de uso proceden de las paginas de precios oficiales de cada plataforma en esa fecha. Los objetivos de las métricas de contencion, escalado, abandono y satisfaccion son rangos de referencia de IA TodoPyme y no un estudio medido: sustituyelos por tu linea base tras el primer mes real. El calendario de 12 semanas del plan de 60 días y la frecuencia de las tareas de mantenimiento son criterio editorial para una pyme sin equipo tecnico.</p>
+
                 <div class="related-articles">
                     <h3>Artículos relacionados</h3>
                     <ul>
                         <li><a href="../../herramientas-ia/chatbots-atencion-cliente/">Chatbots de atención al cliente: mejores herramientas</a></li>
-                        <li><a href="../../herramientas-ia/dify-ai/">Dify.ai: flujos de IA sin código para empresas</a></li>
+                        <li><a href="../../herramientas-ia/dify-ai/">Dify.ai: flujos de IA sin código para Empresas</a></li>
                         <li><a href="../../herramientas-ia/intercom-fin/">Intercom Fin: el agente de IA de soporte</a></li>
                         <li><a href="../../guias/guia-implementar-ia-pyme/">Guía completa para implementar IA en tu pyme</a></li>
-                        <li><a href="../../herramientas-ia/claude-ai-empresas/">Claude AI para empresas: análisis completo</a></li>
+                        <li><a href="../../herramientas-ia/claude-ai-Empresas/">Claude AI para Empresas: análisis completo</a></li>
                     </ul>
                 </div>
 
